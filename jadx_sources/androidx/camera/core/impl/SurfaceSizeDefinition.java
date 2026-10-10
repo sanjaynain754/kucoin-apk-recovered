@@ -1,0 +1,55 @@
+package androidx.camera.core.impl;
+
+import android.util.Size;
+import com.google.auto.value.AutoValue;
+import java.util.Map;
+
+/* JADX INFO: loaded from: classes23.dex */
+@AutoValue
+public abstract class SurfaceSizeDefinition {
+    public abstract Size getAnalysisSize();
+
+    public abstract Map<Integer, Size> getMaximum16x9SizeMap();
+
+    public abstract Map<Integer, Size> getMaximum4x3SizeMap();
+
+    public abstract Map<Integer, Size> getMaximumSizeMap();
+
+    public abstract Size getPreviewSize();
+
+    public abstract Size getRecordSize();
+
+    public abstract Map<Integer, Size> getS1440pSizeMap();
+
+    public abstract Map<Integer, Size> getS720pSizeMap();
+
+    public abstract Map<Integer, Size> getUltraMaximumSizeMap();
+
+    public static SurfaceSizeDefinition create(Size size, Map<Integer, Size> map, Size size2, Map<Integer, Size> map2, Size size3, Map<Integer, Size> map3, Map<Integer, Size> map4, Map<Integer, Size> map5, Map<Integer, Size> map6) {
+        return new AutoValue_SurfaceSizeDefinition(size, map, size2, map2, size3, map3, map4, map5, map6);
+    }
+
+    public Size getMaximum16x9Size(int i11) {
+        return getMaximumSizeMap().get(Integer.valueOf(i11));
+    }
+
+    public Size getMaximum4x3Size(int i11) {
+        return getMaximumSizeMap().get(Integer.valueOf(i11));
+    }
+
+    public Size getMaximumSize(int i11) {
+        return getMaximumSizeMap().get(Integer.valueOf(i11));
+    }
+
+    public Size getS1440pSize(int i11) {
+        return getS1440pSizeMap().get(Integer.valueOf(i11));
+    }
+
+    public Size getS720pSize(int i11) {
+        return getS720pSizeMap().get(Integer.valueOf(i11));
+    }
+
+    public Size getUltraMaximumSize(int i11) {
+        return getUltraMaximumSizeMap().get(Integer.valueOf(i11));
+    }
+}

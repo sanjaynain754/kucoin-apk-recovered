@@ -1,0 +1,9 @@
+package com.kubi.network.core.socket;
+
+/* JADX INFO: loaded from: classes63.dex */
+public final class R$xml {
+    public static final int util_code_provider_paths = 2132213775;
+
+    private R$xml() {
+    }
+}

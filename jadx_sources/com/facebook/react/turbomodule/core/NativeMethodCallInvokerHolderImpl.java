@@ -1,0 +1,43 @@
+package com.facebook.react.turbomodule.core;
+
+import com.facebook.jni.HybridData;
+import com.facebook.react.common.annotations.FrameworkAPI;
+import com.facebook.react.internal.turbomodule.core.NativeModuleSoLoader;
+import com.facebook.react.turbomodule.core.interfaces.NativeMethodCallInvokerHolder;
+import org.jetbrains.annotations.NotNull;
+import p633t6.InterfaceC44695a;
+import p852kotlin.Metadata;
+import p852kotlin.jvm.internal.DefaultConstructorMarker;
+
+/* JADX INFO: compiled from: NativeMethodCallInvokerHolderImpl.kt */
+/* JADX INFO: loaded from: classes45.dex */
+@Metadata(m90083d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0007\u0018\u0000 \u00062\u00020\u0001:\u0001\u0006B\u0011\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005R\u0010\u0010\u0002\u001a\u00020\u00038\u0002X\u0083\u0004¢\u0006\u0002\n\u0000¨\u0006\u0007"}, m90084d2 = {"Lcom/facebook/react/turbomodule/core/NativeMethodCallInvokerHolderImpl;", "Lcom/facebook/react/turbomodule/core/interfaces/NativeMethodCallInvokerHolder;", "mHybridData", "Lcom/facebook/jni/HybridData;", "<init>", "(Lcom/facebook/jni/HybridData;)V", "Companion", "ReactAndroid_release"}, m90085k = 1, m90086mv = {2, 0, 0}, m90088xi = 48)
+@FrameworkAPI
+public final class NativeMethodCallInvokerHolderImpl implements NativeMethodCallInvokerHolder {
+
+    @NotNull
+    private static final Companion Companion = new Companion(null);
+
+    @NotNull
+    @InterfaceC44695a
+    private final HybridData mHybridData;
+
+    /* JADX INFO: compiled from: NativeMethodCallInvokerHolderImpl.kt */
+    @Metadata(m90083d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\b\u0082\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, m90084d2 = {"Lcom/facebook/react/turbomodule/core/NativeMethodCallInvokerHolderImpl$Companion;", "", "<init>", "()V", "ReactAndroid_release"}, m90085k = 1, m90086mv = {2, 0, 0}, m90088xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+    }
+
+    static {
+        NativeModuleSoLoader.INSTANCE.maybeLoadSoLibrary();
+    }
+
+    private NativeMethodCallInvokerHolderImpl(HybridData hybridData) {
+        this.mHybridData = hybridData;
+    }
+}

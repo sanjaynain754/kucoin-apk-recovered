@@ -1,0 +1,9 @@
+package com.kubi.network.core.retrofit;
+
+/* JADX INFO: loaded from: classes63.dex */
+public final class R$plurals {
+    public static final int mtrl_badge_content_description = 2131820547;
+
+    private R$plurals() {
+    }
+}

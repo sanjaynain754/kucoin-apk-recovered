@@ -1,0 +1,80 @@
+package com.google.android.gms.identitycredentials;
+
+import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.os.ResultReceiver;
+import androidx.annotation.NonNull;
+import com.google.android.gms.common.internal.ReflectedParcelable;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
+import java.util.List;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import p852kotlin.Metadata;
+import p852kotlin.jvm.JvmField;
+import p852kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-identity-credentials@@16.0.0-alpha08 */
+/* JADX INFO: loaded from: classes45.dex */
+@Metadata(m90083d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0007\u0018\u0000 !2\u00020\u00012\u00020\u0002:\u0001!B9\b\u0007\u0012\u000e\b\u0001\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004\u0012\b\b\u0001\u0010\u0006\u001a\u00020\u0007\u0012\n\b\u0003\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\b\u0001\u0010\n\u001a\u00020\u000b¢\u0006\u0004\b\f\u0010\rB\u0011\b\u0017\u0012\u0006\u0010\u000e\u001a\u00020\u0007¢\u0006\u0004\b\f\u0010\u000fJ\b\u0010\u001a\u001a\u00020\u0007H\u0007J\u0018\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020 H\u0016R\u001c\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00048\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0016\u0010\u0006\u001a\u00020\u00078\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0018\u0010\b\u001a\u0004\u0018\u00010\t8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u001c\u0010\n\u001a\u00020\u000b8\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0016\u0010\u0017\u001a\u0004\b\u0018\u0010\u0019¨\u0006\""}, m90084d2 = {"Lcom/google/android/gms/identitycredentials/GetCredentialRequest;", "Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;", "Lcom/google/android/gms/common/internal/ReflectedParcelable;", "credentialOptions", "", "Lcom/google/android/gms/identitycredentials/CredentialOption;", "data", "Landroid/os/Bundle;", "origin", "", "resultReceiver", "Landroid/os/ResultReceiver;", "<init>", "(Ljava/util/List;Landroid/os/Bundle;Ljava/lang/String;Landroid/os/ResultReceiver;)V", "bundle", "(Landroid/os/Bundle;)V", "getCredentialOptions", "()Ljava/util/List;", "getData", "()Landroid/os/Bundle;", "getOrigin", "()Ljava/lang/String;", "getResultReceiver$annotations", "()V", "getResultReceiver", "()Landroid/os/ResultReceiver;", "toBundle", "writeToParcel", "", "dest", "Landroid/os/Parcel;", "flags", "", "Companion", "java.com.google.android.gmscore.integ.client.identity_credentials_identity_credentials"}, m90085k = 1, m90086mv = {2, 1, 0}, m90088xi = 48)
+@SafeParcelable.Class(creator = "GetCredentialRequestCreator")
+public final class GetCredentialRequest extends AbstractSafeParcelable implements ReflectedParcelable {
+
+    @SafeParcelable.Field(getter = "getCredentialOptions", m12889id = 1)
+    @NotNull
+    private final List<CredentialOption> credentialOptions;
+
+    @SafeParcelable.Field(getter = "getData", m12889id = 2)
+    @NotNull
+    private final Bundle data;
+
+    @SafeParcelable.Field(getter = "getOrigin", m12889id = 3)
+    @Nullable
+    private final String origin;
+
+    @SafeParcelable.Field(getter = "getResultReceiver", m12889id = 4)
+    @NotNull
+    private final ResultReceiver resultReceiver;
+
+    @JvmField
+    @NotNull
+    public static final Parcelable.Creator<GetCredentialRequest> CREATOR = new GetCredentialRequestCreator();
+
+    @SafeParcelable.Constructor
+    public GetCredentialRequest(@NonNull @SafeParcelable.Param(m12890id = 1) List<CredentialOption> credentialOptions, @NonNull @SafeParcelable.Param(m12890id = 2) Bundle data, @SafeParcelable.Param(m12890id = 3) @Nullable String str, @NonNull @SafeParcelable.Param(m12890id = 4) ResultReceiver resultReceiver) {
+        Intrinsics.checkNotNullParameter(credentialOptions, "credentialOptions");
+        Intrinsics.checkNotNullParameter(data, "data");
+        Intrinsics.checkNotNullParameter(resultReceiver, "resultReceiver");
+        this.credentialOptions = credentialOptions;
+        this.data = data;
+        this.origin = str;
+        this.resultReceiver = resultReceiver;
+    }
+
+    @NotNull
+    public final List<CredentialOption> getCredentialOptions() {
+        return this.credentialOptions;
+    }
+
+    @NotNull
+    public final Bundle getData() {
+        return this.data;
+    }
+
+    @androidx.annotation.Nullable
+    public final String getOrigin() {
+        return this.origin;
+    }
+
+    @NotNull
+    public final ResultReceiver getResultReceiver() {
+        return this.resultReceiver;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(@NonNull Parcel dest, int flags) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        GetCredentialRequestCreator.writeToParcel(this, dest, flags);
+    }
+}

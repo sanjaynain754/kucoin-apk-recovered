@@ -1,0 +1,123 @@
+package com.fasterxml.jackson.databind.node;
+
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonToken;
+import com.fasterxml.jackson.core.p062io.C6314h;
+import com.fasterxml.jackson.databind.AbstractC6446m;
+import java.io.IOException;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+
+/* JADX INFO: loaded from: classes45.dex */
+public class LongNode extends NumericNode {
+    protected final long _value;
+
+    @Override // com.fasterxml.jackson.databind.node.NumericNode, com.fasterxml.jackson.databind.AbstractC6391f
+    public boolean canConvertToLong() {
+        return true;
+    }
+
+    @Override // com.fasterxml.jackson.databind.AbstractC6391f
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        return obj != null && (obj instanceof LongNode) && ((LongNode) obj)._value == this._value;
+    }
+
+    @Override // com.fasterxml.jackson.databind.AbstractC6391f
+    public boolean isIntegralNumber() {
+        return true;
+    }
+
+    @Override // com.fasterxml.jackson.databind.AbstractC6391f
+    public boolean isLong() {
+        return true;
+    }
+
+    public static LongNode valueOf(long j11) {
+        return new LongNode(j11);
+    }
+
+    @Override // com.fasterxml.jackson.databind.AbstractC6391f
+    public boolean asBoolean(boolean z11) {
+        return this._value != 0;
+    }
+
+    @Override // com.fasterxml.jackson.databind.node.NumericNode, com.fasterxml.jackson.databind.AbstractC6391f
+    public String asText() {
+        return C6314h.m11045x(this._value);
+    }
+
+    @Override // com.fasterxml.jackson.databind.node.ValueNode, com.fasterxml.jackson.databind.node.BaseJsonNode, com.fasterxml.jackson.core.InterfaceC6320l
+    public JsonToken asToken() {
+        return JsonToken.VALUE_NUMBER_INT;
+    }
+
+    @Override // com.fasterxml.jackson.databind.node.NumericNode, com.fasterxml.jackson.databind.AbstractC6391f
+    public BigInteger bigIntegerValue() {
+        return BigInteger.valueOf(this._value);
+    }
+
+    @Override // com.fasterxml.jackson.databind.node.NumericNode, com.fasterxml.jackson.databind.AbstractC6391f
+    public boolean canConvertToInt() {
+        long j11 = this._value;
+        return j11 >= -2147483648L && j11 <= 2147483647L;
+    }
+
+    @Override // com.fasterxml.jackson.databind.node.NumericNode, com.fasterxml.jackson.databind.AbstractC6391f
+    public BigDecimal decimalValue() {
+        return BigDecimal.valueOf(this._value);
+    }
+
+    @Override // com.fasterxml.jackson.databind.node.NumericNode, com.fasterxml.jackson.databind.AbstractC6391f
+    public double doubleValue() {
+        return this._value;
+    }
+
+    @Override // com.fasterxml.jackson.databind.AbstractC6391f
+    public float floatValue() {
+        return this._value;
+    }
+
+    @Override // com.fasterxml.jackson.databind.node.BaseJsonNode
+    public int hashCode() {
+        long j11 = this._value;
+        return ((int) (j11 >> 32)) ^ ((int) j11);
+    }
+
+    @Override // com.fasterxml.jackson.databind.node.NumericNode, com.fasterxml.jackson.databind.AbstractC6391f
+    public int intValue() {
+        return (int) this._value;
+    }
+
+    @Override // com.fasterxml.jackson.databind.node.NumericNode, com.fasterxml.jackson.databind.AbstractC6391f
+    public long longValue() {
+        return this._value;
+    }
+
+    @Override // com.fasterxml.jackson.databind.node.NumericNode, com.fasterxml.jackson.databind.node.BaseJsonNode, com.fasterxml.jackson.core.InterfaceC6320l
+    public JsonParser.NumberType numberType() {
+        return JsonParser.NumberType.LONG;
+    }
+
+    @Override // com.fasterxml.jackson.databind.node.NumericNode, com.fasterxml.jackson.databind.AbstractC6391f
+    public Number numberValue() {
+        return Long.valueOf(this._value);
+    }
+
+    @Override // com.fasterxml.jackson.databind.node.BaseJsonNode, com.fasterxml.jackson.databind.InterfaceC6392g
+    public final void serialize(JsonGenerator jsonGenerator, AbstractC6446m abstractC6446m) throws IOException {
+        jsonGenerator.mo10816f0(this._value);
+    }
+
+    @Override // com.fasterxml.jackson.databind.AbstractC6391f
+    public short shortValue() {
+        return (short) this._value;
+    }
+
+    public LongNode(long j11) {
+        this._value = j11;
+    }
+}

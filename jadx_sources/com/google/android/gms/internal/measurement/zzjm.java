@@ -1,0 +1,95 @@
+package com.google.android.gms.internal.measurement;
+
+import android.annotation.TargetApi;
+import android.content.Context;
+import android.os.Process;
+import android.os.UserManager;
+import android.util.Log;
+import androidx.annotation.ChecksSdkIntAtLeast;
+import androidx.annotation.GuardedBy;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-measurement-impl@@22.5.0 */
+/* JADX INFO: loaded from: classes45.dex */
+public final class zzjm {
+
+    @Nullable
+    @GuardedBy("DirectBootUtils.class")
+    private static UserManager zza;
+    private static volatile boolean zzb = !zza();
+
+    @ChecksSdkIntAtLeast(api = 24)
+    public static boolean zza() {
+        return true;
+    }
+
+    /* JADX WARN: Code duplicated, block: B:32:0x0050 A[Catch: all -> 0x000f, TryCatch #1 {all -> 0x000f, blocks: (B:7:0x0009, B:9:0x000d, B:16:0x0017, B:18:0x001b, B:19:0x0025, B:32:0x0050, B:33:0x0052, B:22:0x002b, B:24:0x0031, B:28:0x003e, B:30:0x004c), top: B:39:0x0009, inners: #0 }] */
+    @RequiresApi(24)
+    @TargetApi(24)
+    private static boolean zzd(Context context) {
+        if (zzb) {
+            return true;
+        }
+        synchronized (zzjm.class) {
+            try {
+                if (zzb) {
+                    return true;
+                }
+                int i11 = 1;
+                while (true) {
+                    boolean z11 = false;
+                    if (i11 <= 2) {
+                        if (zza == null) {
+                            zza = (UserManager) context.getSystemService(UserManager.class);
+                        }
+                        UserManager userManager = zza;
+                        if (userManager == null) {
+                            z11 = true;
+                        } else {
+                            try {
+                                if (userManager.isUserUnlocked() || !userManager.isUserRunning(Process.myUserHandle())) {
+                                    z11 = true;
+                                }
+                            } catch (NullPointerException e11) {
+                                Log.w("DirectBootUtils", "Failed to check if user is unlocked.", e11);
+                                zza = null;
+                                i11++;
+                            }
+                        }
+                        if (z11) {
+                            zzb = true;
+                        }
+                        return z11;
+                    }
+                    if (z11) {
+                        zza = null;
+                    }
+                    if (z11) {
+                        zzb = true;
+                    }
+                    return z11;
+                }
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+    }
+
+    private zzjm() {
+    }
+
+    public static boolean zzb(Context context) {
+        if (zza() && !zzd(context)) {
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean zzc(Context context) {
+        if (zza() && !zzd(context)) {
+            return false;
+        }
+        return true;
+    }
+}

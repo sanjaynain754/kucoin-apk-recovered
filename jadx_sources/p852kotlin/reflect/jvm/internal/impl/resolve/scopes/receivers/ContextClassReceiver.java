@@ -1,0 +1,39 @@
+package p852kotlin.reflect.jvm.internal.impl.resolve.scopes.receivers;
+
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import p852kotlin.jvm.internal.Intrinsics;
+import p852kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor;
+import p852kotlin.reflect.jvm.internal.impl.name.Name;
+import p852kotlin.reflect.jvm.internal.impl.types.KotlinType;
+
+/* JADX INFO: compiled from: ContextClassReceiver.kt */
+/* JADX INFO: loaded from: classes61.dex */
+public final class ContextClassReceiver extends AbstractReceiverValue implements ImplicitContextReceiver {
+
+    @NotNull
+    private final ClassDescriptor classDescriptor;
+
+    @Nullable
+    private final Name customLabelName;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ContextClassReceiver(@NotNull ClassDescriptor classDescriptor, @NotNull KotlinType receiverType, @Nullable Name name, @Nullable ReceiverValue receiverValue) {
+        super(receiverType, receiverValue);
+        Intrinsics.checkNotNullParameter(classDescriptor, "classDescriptor");
+        Intrinsics.checkNotNullParameter(receiverType, "receiverType");
+        this.classDescriptor = classDescriptor;
+        this.customLabelName = name;
+    }
+
+    @Override // p852kotlin.reflect.jvm.internal.impl.resolve.scopes.receivers.ImplicitContextReceiver
+    @Nullable
+    public Name getCustomLabelName() {
+        return this.customLabelName;
+    }
+
+    @NotNull
+    public String toString() {
+        return getType() + ": Ctx { " + this.classDescriptor + " }";
+    }
+}

@@ -1,0 +1,171 @@
+package com.tencent.bugly.traffic.custom;
+
+import com.tencent.bugly.common.network.NetworkWatcher;
+import com.tencent.bugly.proguard.C33975v7;
+import com.tencent.rmonitor.common.logger.Logger;
+import java.io.IOException;
+import java.net.UnknownHostException;
+import java.util.HashMap;
+import java.util.Map;
+
+/* JADX INFO: compiled from: BUGLY */
+/* JADX INFO: loaded from: classes59.dex */
+public class SocketInfo {
+
+    /* JADX INFO: renamed from: a */
+    public static final String f72677a = "SocketInfo";
+
+    /* JADX INFO: renamed from: b */
+    public static final long f72678b = 20000;
+    public boolean chunked;
+    public long connEnd;
+    public long connStart;
+    public long contentLength;
+    public long dnsEnd;
+    public long dnsStart;
+    public long dnsTime;
+    public long duringTime;
+    public long endTimeStamp;
+
+    /* JADX INFO: renamed from: fd */
+    public String f72679fd;
+    public long firstPacketPeriod;
+    public int frontState;
+    public boolean gzip;
+    public String host;
+    public int implHashCode;
+    public boolean isEnd;
+    public long lastWriteStamp;
+    public int networkType;
+    public String path;
+    public int port;
+    public String protocol;
+    public long receivedBytes;
+    public long redirectEnd;
+    public long redirectStart;
+    public long reqEnd;
+    public long reqStart;
+    public long respEnd;
+    public long respStart;
+    public long sendBytes;
+    public boolean ssl;
+    public long sslConnEnd;
+    public long sslConnStart;
+    public long sslTime;
+    public long startTimeStamp;
+    public long tcpTime;
+    public long threadId;
+    public long totalConnectPeriod;
+    public String type;
+    public String version;
+    public boolean isProxy = false;
+    public boolean isDnsCache = false;
+    public String url = "";
+
+    /* JADX INFO: renamed from: ip */
+    public String f72680ip = "";
+    public String method = "";
+    public String contentType = "";
+    public int errorCode = 0;
+    public int statusCode = 0;
+    public String apnType = NetworkWatcher.INSTANCE.getNetworkState(true).getValue();
+    public String pageId = "";
+    public Exception exception = null;
+    public boolean hasSaved = false;
+    public Map<String, String> requestHeaders = new HashMap();
+    public Map<String, String> responseHeaders = new HashMap();
+
+    public void resetForInput() {
+        this.gzip = false;
+        this.chunked = false;
+        this.contentLength = 0L;
+    }
+
+    public void resetForOutput() {
+        this.gzip = false;
+        this.chunked = false;
+        this.contentLength = 0L;
+    }
+
+    public static int getErrorCode(Exception exc) {
+        if (exc instanceof IOException) {
+            if (C33975v7.m75289a().m75290a(exc)) {
+                return C33975v7.f72336i;
+            }
+            String message = exc.getMessage();
+            if (message != null && message.contains("ftruncate failed: ENOENT (No such file or directory)")) {
+                return C33975v7.f72337j;
+            }
+        }
+        return exc instanceof UnknownHostException ? 901 : 903;
+    }
+
+    public SocketInfo cloneSocketInfo() {
+        SocketInfo socketInfo = new SocketInfo();
+        socketInfo.ssl = this.ssl;
+        socketInfo.url = this.url;
+        socketInfo.protocol = this.protocol;
+        socketInfo.host = this.host;
+        socketInfo.f72680ip = this.f72680ip;
+        socketInfo.port = this.port;
+        socketInfo.version = this.version;
+        socketInfo.method = this.method;
+        socketInfo.path = this.path;
+        socketInfo.f72679fd = this.f72679fd;
+        socketInfo.implHashCode = this.implHashCode;
+        socketInfo.threadId = this.threadId;
+        socketInfo.networkType = this.networkType;
+        socketInfo.frontState = this.frontState;
+        socketInfo.contentType = this.contentType;
+        socketInfo.startTimeStamp = this.startTimeStamp;
+        socketInfo.firstPacketPeriod = this.firstPacketPeriod;
+        socketInfo.totalConnectPeriod = this.totalConnectPeriod;
+        socketInfo.lastWriteStamp = this.lastWriteStamp;
+        socketInfo.gzip = this.gzip;
+        socketInfo.chunked = this.chunked;
+        socketInfo.contentLength = this.contentLength;
+        socketInfo.errorCode = this.errorCode;
+        socketInfo.statusCode = this.statusCode;
+        socketInfo.apnType = this.apnType;
+        socketInfo.pageId = this.pageId;
+        socketInfo.exception = this.exception;
+        socketInfo.isEnd = this.isEnd;
+        socketInfo.hasSaved = this.hasSaved;
+        socketInfo.reqStart = this.reqStart;
+        socketInfo.reqEnd = this.reqEnd;
+        socketInfo.respStart = this.respStart;
+        socketInfo.respEnd = this.respEnd;
+        socketInfo.sslConnStart = this.sslConnStart;
+        socketInfo.sslConnEnd = this.sslConnEnd;
+        socketInfo.redirectStart = this.redirectStart;
+        socketInfo.redirectEnd = this.redirectEnd;
+        socketInfo.connStart = this.connStart;
+        socketInfo.connEnd = this.connEnd;
+        socketInfo.dnsStart = this.dnsStart;
+        socketInfo.dnsEnd = this.dnsEnd;
+        return socketInfo;
+    }
+
+    public void readStamp(long j11) {
+        long j12 = this.lastWriteStamp;
+        if (j11 <= j12) {
+            Logger.INSTANCE.mo77130d(f72677a, "get first package", ", firstReadTime:", String.valueOf(j11), ", lastWriteStamp:", String.valueOf(this.lastWriteStamp), ", hostName:", this.host);
+            return;
+        }
+        long j13 = j11 - j12;
+        if (j13 >= 20000) {
+            Logger.INSTANCE.mo77130d(f72677a, "first package is too big", ", firstReadTime:", String.valueOf(j11), ", lastWriteStamp:", String.valueOf(this.lastWriteStamp), ", hostName:", this.host);
+            return;
+        }
+        if (!this.isEnd) {
+            this.isEnd = true;
+            this.firstPacketPeriod = (int) j13;
+        }
+        this.totalConnectPeriod = j13;
+    }
+
+    public void writeStamp(long j11) {
+        this.lastWriteStamp = j11;
+        this.isEnd = false;
+    }
+}

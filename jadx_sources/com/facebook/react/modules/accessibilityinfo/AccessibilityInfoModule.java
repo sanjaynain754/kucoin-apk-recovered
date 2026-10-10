@@ -1,0 +1,386 @@
+package com.facebook.react.modules.accessibilityinfo;
+
+import android.annotation.TargetApi;
+import android.content.ContentResolver;
+import android.database.ContentObserver;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Handler;
+import android.provider.Settings;
+import android.view.accessibility.AccessibilityEvent;
+import android.view.accessibility.AccessibilityManager;
+import com.facebook.fbreact.specs.NativeAccessibilityInfoSpec;
+import com.facebook.react.bridge.Callback;
+import com.facebook.react.bridge.LifecycleEventListener;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.UiThreadUtil;
+import com.facebook.react.module.annotations.ReactModule;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import p852kotlin.Metadata;
+import p852kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: AccessibilityInfoModule.kt */
+/* JADX INFO: loaded from: classes45.dex */
+@ReactModule(name = "AccessibilityInfo")
+@Metadata(m90083d1 = {"\u0000d\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\b\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0013\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0006\n\u0002\b\u0006\b\u0001\u0018\u0000 ?2\u00020\u00012\u00020\u0002:\u0003=>?B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0004¢\u0006\u0004\b\u0005\u0010\u0006J\u0010\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0016J\u0010\u0010$\u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0016J\u0010\u0010%\u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0016J\u0010\u0010&\u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0016J\u0010\u0010'\u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0016J\u0010\u0010(\u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0016J\b\u0010)\u001a\u00020!H\u0002J\b\u0010*\u001a\u00020!H\u0002J\b\u0010+\u001a\u00020!H\u0002J\u0010\u0010,\u001a\u00020!2\u0006\u0010-\u001a\u00020\u0013H\u0002J\u0010\u0010.\u001a\u00020!2\u0006\u0010-\u001a\u00020\u0013H\u0002J\b\u0010/\u001a\u00020!H\u0002J\b\u00100\u001a\u00020!H\u0017J\b\u00101\u001a\u00020!H\u0017J\b\u00102\u001a\u00020!H\u0016J\b\u00103\u001a\u00020!H\u0016J\b\u00104\u001a\u00020!H\u0016J\u0012\u00105\u001a\u00020!2\b\u00106\u001a\u0004\u0018\u000107H\u0016J\u0010\u00108\u001a\u00020!2\u0006\u00109\u001a\u00020:H\u0016J\u0018\u0010;\u001a\u00020!2\u0006\u0010<\u001a\u00020:2\u0006\u0010\"\u001a\u00020#H\u0016R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\n\u001a\u0004\u0018\u00010\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\f\u001a\u00060\rR\u00020\u0000X\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\u000e\u001a\u00060\u000fR\u00020\u0000X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0018X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u001b\u001a\u00020\u00138CX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u001b\u0010\u001cR\u0014\u0010\u001d\u001a\u00020\u00138CX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u001d\u0010\u001cR\u0014\u0010\u001e\u001a\u00020\u00138CX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u001e\u0010\u001cR\u0014\u0010\u001f\u001a\u00020\u00138CX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u001f\u0010\u001c¨\u0006@"}, m90084d2 = {"Lcom/facebook/react/modules/accessibilityinfo/AccessibilityInfoModule;", "Lcom/facebook/fbreact/specs/NativeAccessibilityInfoSpec;", "Lcom/facebook/react/bridge/LifecycleEventListener;", "context", "Lcom/facebook/react/bridge/ReactApplicationContext;", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "animationScaleObserver", "Landroid/database/ContentObserver;", "highTextContrastObserver", "accessibilityManager", "Landroid/view/accessibility/AccessibilityManager;", "touchExplorationStateChangeListener", "Lcom/facebook/react/modules/accessibilityinfo/AccessibilityInfoModule$ReactTouchExplorationStateChangeListener;", "accessibilityServiceChangeListener", "Lcom/facebook/react/modules/accessibilityinfo/AccessibilityInfoModule$ReactAccessibilityServiceChangeListener;", "contentResolver", "Landroid/content/ContentResolver;", "reduceMotionEnabled", "", "highTextContrastEnabled", "touchExplorationEnabled", "accessibilityServiceEnabled", "recommendedTimeout", "", "invertColorsEnabled", "grayscaleModeEnabled", "isReduceMotionEnabledValue", "()Z", "isInvertColorsEnabledValue", "isGrayscaleEnabledValue", "isHighTextContrastEnabledValue", "isReduceMotionEnabled", "", "successCallback", "Lcom/facebook/react/bridge/Callback;", "isInvertColorsEnabled", "isGrayscaleEnabled", "isHighTextContrastEnabled", "isTouchExplorationEnabled", "isAccessibilityServiceEnabled", "updateAndSendReduceMotionChangeEvent", "updateAndSendInvertColorsChangeEvent", "updateAndSendHighTextContrastChangeEvent", "updateAndSendTouchExplorationChangeEvent", "enabled", "updateAndSendAccessibilityServiceChangeEvent", "updateAndSendGrayscaleModeChangeEvent", "onHostResume", "onHostPause", "initialize", "invalidate", "onHostDestroy", "announceForAccessibility", "message", "", "setAccessibilityFocus", "reactTag", "", "getRecommendedTimeoutMillis", "originalTimeout", "ReactTouchExplorationStateChangeListener", "ReactAccessibilityServiceChangeListener", "Companion", "ReactAndroid_release"}, m90085k = 1, m90086mv = {2, 0, 0}, m90088xi = 48)
+public final class AccessibilityInfoModule extends NativeAccessibilityInfoSpec implements LifecycleEventListener {
+
+    @NotNull
+    private static final String ACCESSIBILITY_HIGH_TEXT_CONTRAST_ENABLED_CONSTANT = "high_text_contrast_enabled";
+
+    @NotNull
+    private static final String ACCESSIBILITY_SERVICE_EVENT_NAME = "accessibilityServiceDidChange";
+
+    @NotNull
+    private static final String GRAYSCALE_MODE_EVENT_NAME = "grayscaleModeDidChange";
+
+    @NotNull
+    private static final String HIGH_TEXT_CONTRAST_EVENT_NAME = "highTextContrastDidChange";
+
+    @NotNull
+    private static final String INVERT_COLOR_EVENT_NAME = "invertColorDidChange";
+
+    @NotNull
+    public static final String NAME = "AccessibilityInfo";
+
+    @NotNull
+    private static final String REDUCE_MOTION_EVENT_NAME = "reduceMotionDidChange";
+
+    @NotNull
+    private static final String TOUCH_EXPLORATION_EVENT_NAME = "touchExplorationDidChange";
+
+    @Nullable
+    private final AccessibilityManager accessibilityManager;
+
+    @NotNull
+    private final ReactAccessibilityServiceChangeListener accessibilityServiceChangeListener;
+    private boolean accessibilityServiceEnabled;
+
+    @NotNull
+    private final ContentObserver animationScaleObserver;
+
+    @NotNull
+    private final ContentResolver contentResolver;
+    private boolean grayscaleModeEnabled;
+    private boolean highTextContrastEnabled;
+
+    @NotNull
+    private final ContentObserver highTextContrastObserver;
+    private boolean invertColorsEnabled;
+    private int recommendedTimeout;
+    private boolean reduceMotionEnabled;
+    private boolean touchExplorationEnabled;
+
+    @NotNull
+    private final ReactTouchExplorationStateChangeListener touchExplorationStateChangeListener;
+
+    /* JADX INFO: compiled from: AccessibilityInfoModule.kt */
+    @Metadata(m90083d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\b\u0083\u0004\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J\u0010\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, m90084d2 = {"Lcom/facebook/react/modules/accessibilityinfo/AccessibilityInfoModule$ReactAccessibilityServiceChangeListener;", "Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;", "<init>", "(Lcom/facebook/react/modules/accessibilityinfo/AccessibilityInfoModule;)V", "onAccessibilityStateChanged", "", "enabled", "", "ReactAndroid_release"}, m90085k = 1, m90086mv = {2, 0, 0}, m90088xi = 48)
+    @TargetApi(21)
+    public final class ReactAccessibilityServiceChangeListener implements AccessibilityManager.AccessibilityStateChangeListener {
+        public ReactAccessibilityServiceChangeListener() {
+        }
+
+        @Override // android.view.accessibility.AccessibilityManager.AccessibilityStateChangeListener
+        public void onAccessibilityStateChanged(boolean enabled) {
+            AccessibilityInfoModule.this.updateAndSendAccessibilityServiceChangeEvent(enabled);
+        }
+    }
+
+    /* JADX INFO: compiled from: AccessibilityInfoModule.kt */
+    @Metadata(m90083d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\b\u0083\u0004\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J\u0010\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, m90084d2 = {"Lcom/facebook/react/modules/accessibilityinfo/AccessibilityInfoModule$ReactTouchExplorationStateChangeListener;", "Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;", "<init>", "(Lcom/facebook/react/modules/accessibilityinfo/AccessibilityInfoModule;)V", "onTouchExplorationStateChanged", "", "enabled", "", "ReactAndroid_release"}, m90085k = 1, m90086mv = {2, 0, 0}, m90088xi = 48)
+    @TargetApi(21)
+    public final class ReactTouchExplorationStateChangeListener implements AccessibilityManager.TouchExplorationStateChangeListener {
+        public ReactTouchExplorationStateChangeListener() {
+        }
+
+        @Override // android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener
+        public void onTouchExplorationStateChanged(boolean enabled) {
+            AccessibilityInfoModule.this.updateAndSendTouchExplorationChangeEvent(enabled);
+        }
+    }
+
+    @TargetApi(21)
+    private final boolean isGrayscaleEnabledValue() {
+        try {
+            return Settings.Secure.getInt(this.contentResolver, "accessibility_display_daltonizer_enabled") == 1 && Settings.Secure.getInt(this.contentResolver, "accessibility_display_daltonizer") == 0;
+        } catch (Settings.SettingNotFoundException unused) {
+        }
+    }
+
+    @TargetApi(21)
+    private final boolean isInvertColorsEnabledValue() {
+        try {
+            return Settings.Secure.getInt(this.contentResolver, "accessibility_display_inversion_enabled") == 1;
+        } catch (Settings.SettingNotFoundException unused) {
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public AccessibilityInfoModule(@NotNull ReactApplicationContext context) {
+        super(context);
+        Intrinsics.checkNotNullParameter(context, "context");
+        final Handler uiThreadHandler = UiThreadUtil.getUiThreadHandler();
+        this.animationScaleObserver = new ContentObserver(uiThreadHandler) { // from class: com.facebook.react.modules.accessibilityinfo.AccessibilityInfoModule$animationScaleObserver$1
+            @Override // android.database.ContentObserver
+            public void onChange(boolean selfChange) {
+                onChange(selfChange, null);
+            }
+
+            @Override // android.database.ContentObserver
+            public void onChange(boolean selfChange, Uri uri) {
+                if (this.this$0.getReactApplicationContext().hasActiveReactInstance()) {
+                    this.this$0.updateAndSendReduceMotionChangeEvent();
+                }
+            }
+        };
+        final Handler uiThreadHandler2 = UiThreadUtil.getUiThreadHandler();
+        this.highTextContrastObserver = new ContentObserver(uiThreadHandler2) { // from class: com.facebook.react.modules.accessibilityinfo.AccessibilityInfoModule$highTextContrastObserver$1
+            @Override // android.database.ContentObserver
+            public void onChange(boolean selfChange) {
+                onChange(selfChange, null);
+            }
+
+            @Override // android.database.ContentObserver
+            public void onChange(boolean selfChange, Uri uri) {
+                if (this.this$0.getReactApplicationContext().hasActiveReactInstance()) {
+                    this.this$0.updateAndSendHighTextContrastChangeEvent();
+                }
+            }
+        };
+        this.touchExplorationStateChangeListener = new ReactTouchExplorationStateChangeListener();
+        this.accessibilityServiceChangeListener = new ReactAccessibilityServiceChangeListener();
+        Object systemService = context.getApplicationContext().getSystemService("accessibility");
+        Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.view.accessibility.AccessibilityManager");
+        AccessibilityManager accessibilityManager = (AccessibilityManager) systemService;
+        this.accessibilityManager = accessibilityManager;
+        this.contentResolver = getReactApplicationContext().getContentResolver();
+        this.touchExplorationEnabled = accessibilityManager.isTouchExplorationEnabled();
+        this.accessibilityServiceEnabled = accessibilityManager.isEnabled();
+        this.reduceMotionEnabled = isReduceMotionEnabledValue();
+        this.highTextContrastEnabled = isHighTextContrastEnabledValue();
+        this.grayscaleModeEnabled = isGrayscaleEnabledValue();
+    }
+
+    @TargetApi(21)
+    private final boolean isHighTextContrastEnabledValue() {
+        return Settings.Secure.getInt(this.contentResolver, ACCESSIBILITY_HIGH_TEXT_CONTRAST_ENABLED_CONSTANT, 0) != 0;
+    }
+
+    @TargetApi(21)
+    private final boolean isReduceMotionEnabledValue() {
+        String string = Settings.Global.getString(this.contentResolver, "transition_animation_scale");
+        return (string != null ? Float.parseFloat(string) : 1.0f) == 0.0f;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final void updateAndSendAccessibilityServiceChangeEvent(boolean enabled) {
+        if (this.accessibilityServiceEnabled != enabled) {
+            this.accessibilityServiceEnabled = enabled;
+            if (getReactApplicationContextIfActiveOrWarn() != null) {
+                getReactApplicationContext().emitDeviceEvent(ACCESSIBILITY_SERVICE_EVENT_NAME, Boolean.valueOf(this.accessibilityServiceEnabled));
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final void updateAndSendTouchExplorationChangeEvent(boolean enabled) {
+        if (this.touchExplorationEnabled != enabled) {
+            this.touchExplorationEnabled = enabled;
+            if (getReactApplicationContextIfActiveOrWarn() != null) {
+                getReactApplicationContext().emitDeviceEvent(TOUCH_EXPLORATION_EVENT_NAME, Boolean.valueOf(this.touchExplorationEnabled));
+            }
+        }
+    }
+
+    @Override // com.facebook.fbreact.specs.NativeAccessibilityInfoSpec
+    public void announceForAccessibility(@Nullable String message) {
+        AccessibilityManager accessibilityManager = this.accessibilityManager;
+        if (accessibilityManager == null || !accessibilityManager.isEnabled()) {
+            return;
+        }
+        AccessibilityEvent accessibilityEventObtain = AccessibilityEvent.obtain(16384);
+        accessibilityEventObtain.getText().add(message);
+        accessibilityEventObtain.setClassName(AccessibilityInfoModule.class.getName());
+        accessibilityEventObtain.setPackageName(getReactApplicationContext().getPackageName());
+        this.accessibilityManager.sendAccessibilityEvent(accessibilityEventObtain);
+    }
+
+    @Override // com.facebook.react.bridge.LifecycleEventListener
+    @TargetApi(21)
+    public void onHostPause() {
+        AccessibilityManager accessibilityManager = this.accessibilityManager;
+        if (accessibilityManager != null) {
+            accessibilityManager.removeTouchExplorationStateChangeListener(this.touchExplorationStateChangeListener);
+        }
+        AccessibilityManager accessibilityManager2 = this.accessibilityManager;
+        if (accessibilityManager2 != null) {
+            accessibilityManager2.removeAccessibilityStateChangeListener(this.accessibilityServiceChangeListener);
+        }
+        this.contentResolver.unregisterContentObserver(this.animationScaleObserver);
+        this.contentResolver.unregisterContentObserver(this.highTextContrastObserver);
+    }
+
+    @Override // com.facebook.react.bridge.LifecycleEventListener
+    @TargetApi(21)
+    public void onHostResume() {
+        AccessibilityManager accessibilityManager = this.accessibilityManager;
+        if (accessibilityManager != null) {
+            accessibilityManager.addTouchExplorationStateChangeListener(this.touchExplorationStateChangeListener);
+        }
+        AccessibilityManager accessibilityManager2 = this.accessibilityManager;
+        if (accessibilityManager2 != null) {
+            accessibilityManager2.addAccessibilityStateChangeListener(this.accessibilityServiceChangeListener);
+        }
+        boolean z11 = false;
+        this.contentResolver.registerContentObserver(Settings.Global.getUriFor("transition_animation_scale"), false, this.animationScaleObserver);
+        this.contentResolver.registerContentObserver(Settings.Global.getUriFor(ACCESSIBILITY_HIGH_TEXT_CONTRAST_ENABLED_CONSTANT), false, this.highTextContrastObserver);
+        AccessibilityManager accessibilityManager3 = this.accessibilityManager;
+        updateAndSendTouchExplorationChangeEvent(accessibilityManager3 != null && accessibilityManager3.isTouchExplorationEnabled());
+        AccessibilityManager accessibilityManager4 = this.accessibilityManager;
+        if (accessibilityManager4 != null && accessibilityManager4.isEnabled()) {
+            z11 = true;
+        }
+        updateAndSendAccessibilityServiceChangeEvent(z11);
+        updateAndSendReduceMotionChangeEvent();
+        updateAndSendHighTextContrastChangeEvent();
+        updateAndSendInvertColorsChangeEvent();
+        updateAndSendGrayscaleModeChangeEvent();
+    }
+
+    private final void updateAndSendGrayscaleModeChangeEvent() {
+        boolean zIsGrayscaleEnabledValue = isGrayscaleEnabledValue();
+        if (this.grayscaleModeEnabled != zIsGrayscaleEnabledValue) {
+            this.grayscaleModeEnabled = zIsGrayscaleEnabledValue;
+            ReactApplicationContext reactApplicationContextIfActiveOrWarn = getReactApplicationContextIfActiveOrWarn();
+            if (reactApplicationContextIfActiveOrWarn != null) {
+                reactApplicationContextIfActiveOrWarn.emitDeviceEvent(GRAYSCALE_MODE_EVENT_NAME, Boolean.valueOf(this.grayscaleModeEnabled));
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final void updateAndSendHighTextContrastChangeEvent() {
+        boolean zIsHighTextContrastEnabledValue = isHighTextContrastEnabledValue();
+        if (this.highTextContrastEnabled != zIsHighTextContrastEnabledValue) {
+            this.highTextContrastEnabled = zIsHighTextContrastEnabledValue;
+            ReactApplicationContext reactApplicationContextIfActiveOrWarn = getReactApplicationContextIfActiveOrWarn();
+            if (reactApplicationContextIfActiveOrWarn != null) {
+                reactApplicationContextIfActiveOrWarn.emitDeviceEvent(HIGH_TEXT_CONTRAST_EVENT_NAME, Boolean.valueOf(this.highTextContrastEnabled));
+            }
+        }
+    }
+
+    private final void updateAndSendInvertColorsChangeEvent() {
+        boolean zIsInvertColorsEnabledValue = isInvertColorsEnabledValue();
+        if (this.invertColorsEnabled != zIsInvertColorsEnabledValue) {
+            this.invertColorsEnabled = zIsInvertColorsEnabledValue;
+            ReactApplicationContext reactApplicationContextIfActiveOrWarn = getReactApplicationContextIfActiveOrWarn();
+            if (reactApplicationContextIfActiveOrWarn != null) {
+                reactApplicationContextIfActiveOrWarn.emitDeviceEvent(INVERT_COLOR_EVENT_NAME, Boolean.valueOf(this.invertColorsEnabled));
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final void updateAndSendReduceMotionChangeEvent() {
+        boolean zIsReduceMotionEnabledValue = isReduceMotionEnabledValue();
+        if (this.reduceMotionEnabled != zIsReduceMotionEnabledValue) {
+            this.reduceMotionEnabled = zIsReduceMotionEnabledValue;
+            ReactApplicationContext reactApplicationContextIfActiveOrWarn = getReactApplicationContextIfActiveOrWarn();
+            if (reactApplicationContextIfActiveOrWarn != null) {
+                reactApplicationContextIfActiveOrWarn.emitDeviceEvent(REDUCE_MOTION_EVENT_NAME, Boolean.valueOf(this.reduceMotionEnabled));
+            }
+        }
+    }
+
+    @Override // com.facebook.fbreact.specs.NativeAccessibilityInfoSpec
+    public void getRecommendedTimeoutMillis(double originalTimeout, @NotNull Callback successCallback) {
+        int recommendedTimeoutMillis;
+        Intrinsics.checkNotNullParameter(successCallback, "successCallback");
+        if (Build.VERSION.SDK_INT < 29) {
+            successCallback.invoke(Integer.valueOf((int) originalTimeout));
+            return;
+        }
+        AccessibilityManager accessibilityManager = this.accessibilityManager;
+        if (accessibilityManager != null) {
+            recommendedTimeoutMillis = accessibilityManager.getRecommendedTimeoutMillis((int) originalTimeout, 4);
+        } else {
+            recommendedTimeoutMillis = 0;
+        }
+        this.recommendedTimeout = recommendedTimeoutMillis;
+        successCallback.invoke(Integer.valueOf(recommendedTimeoutMillis));
+    }
+
+    @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule, com.facebook.react.turbomodule.core.interfaces.TurboModule
+    public void initialize() {
+        boolean z11;
+        getReactApplicationContext().addLifecycleEventListener(this);
+        AccessibilityManager accessibilityManager = this.accessibilityManager;
+        boolean z12 = false;
+        if (accessibilityManager != null && accessibilityManager.isTouchExplorationEnabled()) {
+            z11 = true;
+        } else {
+            z11 = false;
+        }
+        updateAndSendTouchExplorationChangeEvent(z11);
+        AccessibilityManager accessibilityManager2 = this.accessibilityManager;
+        if (accessibilityManager2 != null && accessibilityManager2.isEnabled()) {
+            z12 = true;
+        }
+        updateAndSendAccessibilityServiceChangeEvent(z12);
+        updateAndSendReduceMotionChangeEvent();
+        updateAndSendHighTextContrastChangeEvent();
+    }
+
+    @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule, com.facebook.react.turbomodule.core.interfaces.TurboModule
+    public void invalidate() {
+        getReactApplicationContext().removeLifecycleEventListener(this);
+        super.invalidate();
+    }
+
+    @Override // com.facebook.fbreact.specs.NativeAccessibilityInfoSpec
+    public void isAccessibilityServiceEnabled(@NotNull Callback successCallback) {
+        Intrinsics.checkNotNullParameter(successCallback, "successCallback");
+        successCallback.invoke(Boolean.valueOf(this.accessibilityServiceEnabled));
+    }
+
+    @Override // com.facebook.fbreact.specs.NativeAccessibilityInfoSpec
+    public void isGrayscaleEnabled(@NotNull Callback successCallback) {
+        Intrinsics.checkNotNullParameter(successCallback, "successCallback");
+        successCallback.invoke(Boolean.valueOf(this.grayscaleModeEnabled));
+    }
+
+    @Override // com.facebook.fbreact.specs.NativeAccessibilityInfoSpec
+    public void isHighTextContrastEnabled(@NotNull Callback successCallback) {
+        Intrinsics.checkNotNullParameter(successCallback, "successCallback");
+        successCallback.invoke(Boolean.valueOf(this.highTextContrastEnabled));
+    }
+
+    @Override // com.facebook.fbreact.specs.NativeAccessibilityInfoSpec
+    public void isInvertColorsEnabled(@NotNull Callback successCallback) {
+        Intrinsics.checkNotNullParameter(successCallback, "successCallback");
+        successCallback.invoke(Boolean.valueOf(this.invertColorsEnabled));
+    }
+
+    @Override // com.facebook.fbreact.specs.NativeAccessibilityInfoSpec
+    public void isReduceMotionEnabled(@NotNull Callback successCallback) {
+        Intrinsics.checkNotNullParameter(successCallback, "successCallback");
+        successCallback.invoke(Boolean.valueOf(this.reduceMotionEnabled));
+    }
+
+    @Override // com.facebook.fbreact.specs.NativeAccessibilityInfoSpec
+    public void isTouchExplorationEnabled(@NotNull Callback successCallback) {
+        Intrinsics.checkNotNullParameter(successCallback, "successCallback");
+        successCallback.invoke(Boolean.valueOf(this.touchExplorationEnabled));
+    }
+
+    @Override // com.facebook.react.bridge.LifecycleEventListener
+    public void onHostDestroy() {
+    }
+
+    @Override // com.facebook.fbreact.specs.NativeAccessibilityInfoSpec
+    public void setAccessibilityFocus(double reactTag) {
+    }
+}

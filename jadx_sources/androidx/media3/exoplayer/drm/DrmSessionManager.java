@@ -1,0 +1,63 @@
+package androidx.media3.exoplayer.drm;
+
+import android.os.Looper;
+import androidx.annotation.Nullable;
+import androidx.media3.common.Format;
+import androidx.media3.common.util.UnstableApi;
+import androidx.media3.exoplayer.analytics.PlayerId;
+
+/* JADX INFO: loaded from: classes34.dex */
+@UnstableApi
+public interface DrmSessionManager {
+    public static final DrmSessionManager DRM_UNSUPPORTED = new DrmSessionManager() { // from class: androidx.media3.exoplayer.drm.DrmSessionManager.1
+        @Override // androidx.media3.exoplayer.drm.DrmSessionManager
+        @Nullable
+        public DrmSession acquireSession(@Nullable DrmSessionEventListener.EventDispatcher eventDispatcher, Format format) {
+            if (format.drmInitData == null) {
+                return null;
+            }
+            return new ErrorStateDrmSession(new DrmSession.DrmSessionException(new UnsupportedDrmException(1), 6001));
+        }
+
+        @Override // androidx.media3.exoplayer.drm.DrmSessionManager
+        public int getCryptoType(Format format) {
+            return format.drmInitData != null ? 1 : 0;
+        }
+
+        @Override // androidx.media3.exoplayer.drm.DrmSessionManager
+        public void setPlayer(Looper looper, PlayerId playerId) {
+        }
+    };
+
+    @Nullable
+    DrmSession acquireSession(@Nullable DrmSessionEventListener.EventDispatcher eventDispatcher, Format format);
+
+    int getCryptoType(Format format);
+
+    void setPlayer(Looper looper, PlayerId playerId);
+
+    default DrmSessionReference preacquireSession(@Nullable DrmSessionEventListener.EventDispatcher eventDispatcher, Format format) {
+        return DrmSessionReference.EMPTY;
+    }
+
+    public interface DrmSessionReference {
+        public static final DrmSessionReference EMPTY = new DrmSessionReference() { // from class: androidx.media3.exoplayer.drm.o
+            @Override // androidx.media3.exoplayer.drm.DrmSessionManager.DrmSessionReference
+            public final void release() {
+                DrmSessionManager.DrmSessionReference.m3285a();
+            }
+        };
+
+        void release();
+
+        /* JADX INFO: renamed from: a */
+        static /* synthetic */ void m3285a() {
+        }
+    }
+
+    default void prepare() {
+    }
+
+    default void release() {
+    }
+}

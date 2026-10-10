@@ -1,0 +1,22 @@
+package com.kubi.sdk.startup;
+
+import p852kotlin.Metadata;
+
+/* JADX INFO: compiled from: TaskStartType.kt */
+/* JADX INFO: loaded from: classes45.dex */
+@Metadata(m90083d1 = {"\u0000\n\n\u0000\n\u0002\u0010\b\n\u0002\b\r\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0003\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0005\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000\"\u000e\u0010\b\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000\"\u000e\u0010\f\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000¨\u0006\u000e"}, m90084d2 = {"TASK_START_TYPE_BACKGROUND", "", "TASK_START_TYPE_MAIN_ATTACH_BLOCK", "TASK_START_TYPE_MAIN_BLOCK", "TASK_START_TYPE_MAIN_LOAD", "TASK_START_TYPE_MAIN_RPE_BLOCK", "TASK_START_TYPE_NORMAL", "TASK_START_TYPE_PRE_SPLASH", "TASK_START_TYPE_RESTART", "TASK_START_TYPE_RESUME", "TASK_START_TYPE_SPLASH", "TASK_START_TYPE_SPLASH_ATTACH", "TASK_START_TYPE_SPLASH_LOAD", "TASK_START_TYPE_SPLASH_PAUSED", "Startup_release"}, m90085k = 2, m90086mv = {1, 8, 0}, m90088xi = 48)
+public final class TaskStartTypeKt {
+    public static final int TASK_START_TYPE_BACKGROUND = 100;
+    public static final int TASK_START_TYPE_MAIN_ATTACH_BLOCK = 10;
+    public static final int TASK_START_TYPE_MAIN_BLOCK = 12;
+    public static final int TASK_START_TYPE_MAIN_LOAD = 13;
+    public static final int TASK_START_TYPE_MAIN_RPE_BLOCK = 11;
+    public static final int TASK_START_TYPE_NORMAL = 0;
+    public static final int TASK_START_TYPE_PRE_SPLASH = 2;
+    public static final int TASK_START_TYPE_RESTART = 22;
+    public static final int TASK_START_TYPE_RESUME = 21;
+    public static final int TASK_START_TYPE_SPLASH = 3;
+    public static final int TASK_START_TYPE_SPLASH_ATTACH = 1;
+    public static final int TASK_START_TYPE_SPLASH_LOAD = 4;
+    public static final int TASK_START_TYPE_SPLASH_PAUSED = 5;
+}

@@ -1,0 +1,32 @@
+package com.google.android.gms.auth.blockstore;
+
+import androidx.annotation.NonNull;
+import com.google.android.gms.common.api.Api;
+import com.google.android.gms.common.api.HasApiKey;
+import com.google.android.gms.tasks.Task;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-blockstore@@16.4.0 */
+/* JADX INFO: loaded from: classes45.dex */
+public interface BlockstoreClient extends HasApiKey<Api.ApiOptions.NoOptions> {
+
+    @NonNull
+    public static final String DEFAULT_BYTES_DATA_KEY = "com.google.android.gms.auth.blockstore.DEFAULT_BYTES_DATA_KEY";
+    public static final int MAX_ENTRY_COUNT = 16;
+    public static final int MAX_SIZE = 4096;
+
+    @NonNull
+    Task<Boolean> deleteBytes(@NonNull DeleteBytesRequest deleteBytesRequest);
+
+    @NonNull
+    Task<Boolean> isEndToEndEncryptionAvailable();
+
+    @NonNull
+    @Deprecated
+    Task<byte[]> retrieveBytes();
+
+    @NonNull
+    Task<RetrieveBytesResponse> retrieveBytes(@NonNull RetrieveBytesRequest retrieveBytesRequest);
+
+    @NonNull
+    Task<Integer> storeBytes(@NonNull StoreBytesData storeBytesData);
+}

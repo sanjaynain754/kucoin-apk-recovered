@@ -1,0 +1,33 @@
+package p852kotlin.reflect.jvm.internal.impl.platform;
+
+import org.jetbrains.annotations.NotNull;
+
+/* JADX INFO: compiled from: TargetPlatform.kt */
+/* JADX INFO: loaded from: classes61.dex */
+public abstract class SimplePlatform {
+
+    @NotNull
+    private final String platformName;
+
+    @NotNull
+    private final TargetPlatformVersion targetPlatformVersion;
+
+    @NotNull
+    public TargetPlatformVersion getTargetPlatformVersion() {
+        return this.targetPlatformVersion;
+    }
+
+    @NotNull
+    public String getTargetName() {
+        return getTargetPlatformVersion().getDescription();
+    }
+
+    @NotNull
+    public String toString() {
+        String targetName = getTargetName();
+        if (targetName.length() > 0) {
+            return this.platformName + " (" + targetName + ')';
+        }
+        return this.platformName;
+    }
+}

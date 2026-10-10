@@ -1,0 +1,80 @@
+package com.kubi.spot.quote.market;
+
+import com.kubi.data.entity.TradeItemBean;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import kotlinx.coroutines.InterfaceC41709m0;
+import o00.C42917g;
+import p852kotlin.Metadata;
+import p852kotlin.ResultKt;
+import p852kotlin.Unit;
+import p852kotlin.coroutines.Continuation;
+import p852kotlin.coroutines.intrinsics.IntrinsicsKt;
+import p852kotlin.coroutines.jvm.internal.DebugMetadata;
+import p852kotlin.coroutines.jvm.internal.SuspendLambda;
+import p852kotlin.jvm.functions.Function2;
+import p852kotlin.jvm.internal.Intrinsics;
+import p852kotlin.jvm.internal.SourceDebugExtension;
+
+/* JADX INFO: compiled from: ToggleSymbolsListFragment.kt */
+/* JADX INFO: loaded from: classes47.dex */
+@Metadata(m90083d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m90084d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m90085k = 3, m90086mv = {2, 2, 0}, m90088xi = 48)
+@DebugMetadata(m90121c = "com.kubi.spot.quote.market.ToggleSymbolsListFragment$lazyLoad$2$1", m90122f = "ToggleSymbolsListFragment.kt", m90123i = {}, m90124l = {}, m90125m = "invokeSuspend", m90126n = {}, m90127s = {})
+@SourceDebugExtension({"SMAP\nToggleSymbolsListFragment.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ToggleSymbolsListFragment.kt\ncom/kubi/spot/quote/market/ToggleSymbolsListFragment$lazyLoad$2$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 KThreadPoolEx.kt\ncom/kubi/sdk/thread/KThreadPoolExKt\n*L\n1#1,652:1\n774#2:653\n865#2,2:654\n19#3,2:656\n*S KotlinDebug\n*F\n+ 1 ToggleSymbolsListFragment.kt\ncom/kubi/spot/quote/market/ToggleSymbolsListFragment$lazyLoad$2$1\n*L\n447#1:653\n447#1:654,2\n450#1:656,2\n*E\n"})
+public final class ToggleSymbolsListFragment$lazyLoad$2$1 extends SuspendLambda implements Function2<InterfaceC41709m0, Continuation<? super Unit>, Object> {
+    final /* synthetic */ String $filterKey;
+    final /* synthetic */ Collection<TradeItemBean> $it;
+    int label;
+    final /* synthetic */ ToggleSymbolsListFragment this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* JADX WARN: Multi-variable type inference failed */
+    public ToggleSymbolsListFragment$lazyLoad$2$1(Collection<? extends TradeItemBean> collection, String str, ToggleSymbolsListFragment toggleSymbolsListFragment, Continuation<? super ToggleSymbolsListFragment$lazyLoad$2$1> continuation) {
+        super(2, continuation);
+        this.$it = collection;
+        this.$filterKey = str;
+        this.this$0 = toggleSymbolsListFragment;
+    }
+
+    @Override // p852kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new ToggleSymbolsListFragment$lazyLoad$2$1(this.$it, this.$filterKey, this.this$0, continuation);
+    }
+
+    @Override // p852kotlin.jvm.functions.Function2
+    public final Object invoke(InterfaceC41709m0 interfaceC41709m0, Continuation<? super Unit> continuation) {
+        return ((ToggleSymbolsListFragment$lazyLoad$2$1) create(interfaceC41709m0, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+
+    /* JADX INFO: renamed from: f */
+    public static final void m62514f(ToggleSymbolsListFragment toggleSymbolsListFragment, List list) {
+        toggleSymbolsListFragment.m62429a5().replaceData(list);
+    }
+
+    @Override // p852kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        if (this.label == 0) {
+            ResultKt.throwOnFailure(obj);
+            Collection<TradeItemBean> collection = this.$it;
+            Intrinsics.checkNotNull(collection);
+            String str = this.$filterKey;
+            final ArrayList arrayList = new ArrayList();
+            for (Object obj2 : collection) {
+                if (Intrinsics.areEqual(((TradeItemBean) obj2).getSymbolInfoEntity().getQuoteCurrency(), str)) {
+                    arrayList.add(obj2);
+                }
+            }
+            final ToggleSymbolsListFragment toggleSymbolsListFragment = this.this$0;
+            C42917g.m94139e().execute(new Runnable() { // from class: com.kubi.spot.quote.market.y1
+                @Override // java.lang.Runnable
+                public final void run() {
+                    ToggleSymbolsListFragment$lazyLoad$2$1.m62514f(toggleSymbolsListFragment, arrayList);
+                }
+            });
+            return Unit.INSTANCE;
+        }
+        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+    }
+}

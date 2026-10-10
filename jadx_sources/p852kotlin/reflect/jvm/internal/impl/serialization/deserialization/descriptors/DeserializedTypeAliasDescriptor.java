@@ -1,0 +1,197 @@
+package p852kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors;
+
+import java.util.List;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import p852kotlin.jvm.internal.Intrinsics;
+import p852kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor;
+import p852kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor;
+import p852kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor;
+import p852kotlin.reflect.jvm.internal.impl.descriptors.DescriptorVisibility;
+import p852kotlin.reflect.jvm.internal.impl.descriptors.SourceElement;
+import p852kotlin.reflect.jvm.internal.impl.descriptors.TypeAliasDescriptor;
+import p852kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor;
+import p852kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterUtilsKt;
+import p852kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations;
+import p852kotlin.reflect.jvm.internal.impl.descriptors.impl.AbstractTypeAliasDescriptor;
+import p852kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf;
+import p852kotlin.reflect.jvm.internal.impl.metadata.deserialization.NameResolver;
+import p852kotlin.reflect.jvm.internal.impl.metadata.deserialization.TypeTable;
+import p852kotlin.reflect.jvm.internal.impl.metadata.deserialization.VersionRequirementTable;
+import p852kotlin.reflect.jvm.internal.impl.name.Name;
+import p852kotlin.reflect.jvm.internal.impl.storage.StorageManager;
+import p852kotlin.reflect.jvm.internal.impl.types.KotlinType;
+import p852kotlin.reflect.jvm.internal.impl.types.KotlinTypeKt;
+import p852kotlin.reflect.jvm.internal.impl.types.SimpleType;
+import p852kotlin.reflect.jvm.internal.impl.types.TypeSubstitutionKt;
+import p852kotlin.reflect.jvm.internal.impl.types.TypeSubstitutor;
+import p852kotlin.reflect.jvm.internal.impl.types.Variance;
+
+/* JADX INFO: compiled from: DeserializedMemberDescriptor.kt */
+/* JADX INFO: loaded from: classes61.dex */
+public final class DeserializedTypeAliasDescriptor extends AbstractTypeAliasDescriptor implements DeserializedMemberDescriptor {
+
+    @Nullable
+    private final DeserializedContainerSource containerSource;
+    private SimpleType defaultTypeImpl;
+    private SimpleType expandedType;
+
+    @NotNull
+    private final NameResolver nameResolver;
+
+    @NotNull
+    private final ProtoBuf.TypeAlias proto;
+    private List<? extends TypeParameterDescriptor> typeConstructorParameters;
+
+    @NotNull
+    private final TypeTable typeTable;
+    private SimpleType underlyingType;
+
+    @NotNull
+    private final VersionRequirementTable versionRequirementTable;
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    public DeserializedTypeAliasDescriptor(@NotNull StorageManager storageManager, @NotNull DeclarationDescriptor containingDeclaration, @NotNull Annotations annotations, @NotNull Name name, @NotNull DescriptorVisibility visibility, @NotNull ProtoBuf.TypeAlias proto, @NotNull NameResolver nameResolver, @NotNull TypeTable typeTable, @NotNull VersionRequirementTable versionRequirementTable, @Nullable DeserializedContainerSource deserializedContainerSource) {
+        Intrinsics.checkNotNullParameter(storageManager, "storageManager");
+        Intrinsics.checkNotNullParameter(containingDeclaration, "containingDeclaration");
+        Intrinsics.checkNotNullParameter(annotations, "annotations");
+        Intrinsics.checkNotNullParameter(name, "name");
+        Intrinsics.checkNotNullParameter(visibility, "visibility");
+        Intrinsics.checkNotNullParameter(proto, "proto");
+        Intrinsics.checkNotNullParameter(nameResolver, "nameResolver");
+        Intrinsics.checkNotNullParameter(typeTable, "typeTable");
+        Intrinsics.checkNotNullParameter(versionRequirementTable, "versionRequirementTable");
+        SourceElement NO_SOURCE = SourceElement.NO_SOURCE;
+        Intrinsics.checkNotNullExpressionValue(NO_SOURCE, "NO_SOURCE");
+        super(storageManager, containingDeclaration, annotations, name, NO_SOURCE, visibility);
+        this.proto = proto;
+        this.nameResolver = nameResolver;
+        this.typeTable = typeTable;
+        this.versionRequirementTable = versionRequirementTable;
+        this.containerSource = deserializedContainerSource;
+    }
+
+    @Override // p852kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberDescriptor
+    @Nullable
+    public DeserializedContainerSource getContainerSource() {
+        return this.containerSource;
+    }
+
+    @Override // p852kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
+    @NotNull
+    public SimpleType getDefaultType() {
+        SimpleType simpleType = this.defaultTypeImpl;
+        if (simpleType != null) {
+            return simpleType;
+        }
+        Intrinsics.throwUninitializedPropertyAccessException("defaultTypeImpl");
+        return null;
+    }
+
+    @Override // p852kotlin.reflect.jvm.internal.impl.descriptors.TypeAliasDescriptor
+    @NotNull
+    public SimpleType getExpandedType() {
+        SimpleType simpleType = this.expandedType;
+        if (simpleType != null) {
+            return simpleType;
+        }
+        Intrinsics.throwUninitializedPropertyAccessException("expandedType");
+        return null;
+    }
+
+    @Override // p852kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberDescriptor
+    @NotNull
+    public NameResolver getNameResolver() {
+        return this.nameResolver;
+    }
+
+    @Override // p852kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberDescriptor
+    @NotNull
+    public ProtoBuf.TypeAlias getProto() {
+        return this.proto;
+    }
+
+    @Override // p852kotlin.reflect.jvm.internal.impl.descriptors.impl.AbstractTypeAliasDescriptor
+    @NotNull
+    public List<TypeParameterDescriptor> getTypeConstructorTypeParameters() {
+        List list = this.typeConstructorParameters;
+        if (list != null) {
+            return list;
+        }
+        Intrinsics.throwUninitializedPropertyAccessException("typeConstructorParameters");
+        return null;
+    }
+
+    @Override // p852kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberDescriptor
+    @NotNull
+    public TypeTable getTypeTable() {
+        return this.typeTable;
+    }
+
+    @Override // p852kotlin.reflect.jvm.internal.impl.descriptors.TypeAliasDescriptor
+    @NotNull
+    public SimpleType getUnderlyingType() {
+        SimpleType simpleType = this.underlyingType;
+        if (simpleType != null) {
+            return simpleType;
+        }
+        Intrinsics.throwUninitializedPropertyAccessException("underlyingType");
+        return null;
+    }
+
+    @NotNull
+    public VersionRequirementTable getVersionRequirementTable() {
+        return this.versionRequirementTable;
+    }
+
+    public final void initialize(@NotNull List<? extends TypeParameterDescriptor> declaredTypeParameters, @NotNull SimpleType underlyingType, @NotNull SimpleType expandedType) {
+        Intrinsics.checkNotNullParameter(declaredTypeParameters, "declaredTypeParameters");
+        Intrinsics.checkNotNullParameter(underlyingType, "underlyingType");
+        Intrinsics.checkNotNullParameter(expandedType, "expandedType");
+        initialize(declaredTypeParameters);
+        this.underlyingType = underlyingType;
+        this.expandedType = expandedType;
+        this.typeConstructorParameters = TypeParameterUtilsKt.computeConstructorTypeParameters(this);
+        this.defaultTypeImpl = computeDefaultType();
+    }
+
+    @Override // p852kotlin.reflect.jvm.internal.impl.descriptors.Substitutable
+    @NotNull
+    public TypeAliasDescriptor substitute(@NotNull TypeSubstitutor substitutor) {
+        Intrinsics.checkNotNullParameter(substitutor, "substitutor");
+        if (substitutor.isEmpty()) {
+            return this;
+        }
+        StorageManager storageManager = getStorageManager();
+        DeclarationDescriptor containingDeclaration = getContainingDeclaration();
+        Intrinsics.checkNotNullExpressionValue(containingDeclaration, "getContainingDeclaration(...)");
+        Annotations annotations = getAnnotations();
+        Intrinsics.checkNotNullExpressionValue(annotations, "<get-annotations>(...)");
+        Name name = getName();
+        Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
+        DeserializedTypeAliasDescriptor deserializedTypeAliasDescriptor = new DeserializedTypeAliasDescriptor(storageManager, containingDeclaration, annotations, name, getVisibility(), getProto(), getNameResolver(), getTypeTable(), getVersionRequirementTable(), getContainerSource());
+        List<TypeParameterDescriptor> declaredTypeParameters = getDeclaredTypeParameters();
+        SimpleType underlyingType = getUnderlyingType();
+        Variance variance = Variance.INVARIANT;
+        KotlinType kotlinTypeSafeSubstitute = substitutor.safeSubstitute(underlyingType, variance);
+        Intrinsics.checkNotNullExpressionValue(kotlinTypeSafeSubstitute, "safeSubstitute(...)");
+        SimpleType simpleTypeAsSimpleType = TypeSubstitutionKt.asSimpleType(kotlinTypeSafeSubstitute);
+        KotlinType kotlinTypeSafeSubstitute2 = substitutor.safeSubstitute(getExpandedType(), variance);
+        Intrinsics.checkNotNullExpressionValue(kotlinTypeSafeSubstitute2, "safeSubstitute(...)");
+        deserializedTypeAliasDescriptor.initialize(declaredTypeParameters, simpleTypeAsSimpleType, TypeSubstitutionKt.asSimpleType(kotlinTypeSafeSubstitute2));
+        return deserializedTypeAliasDescriptor;
+    }
+
+    @Override // p852kotlin.reflect.jvm.internal.impl.descriptors.TypeAliasDescriptor
+    @Nullable
+    public ClassDescriptor getClassDescriptor() {
+        if (KotlinTypeKt.isError(getExpandedType())) {
+            return null;
+        }
+        ClassifierDescriptor classifierDescriptorMo105126getDeclarationDescriptor = getExpandedType().getConstructor().mo105126getDeclarationDescriptor();
+        if (!(classifierDescriptorMo105126getDeclarationDescriptor instanceof ClassDescriptor)) {
+            return null;
+        }
+        return (ClassDescriptor) classifierDescriptorMo105126getDeclarationDescriptor;
+    }
+}

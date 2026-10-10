@@ -1,0 +1,87 @@
+package com.kubi.sdk.viewbindingdelegate;
+
+/* JADX INFO: loaded from: classes43.dex */
+public final class R$id {
+    public static final int accessibility_action_clickable_span = 2131361888;
+    public static final int accessibility_custom_action_0 = 2131361892;
+    public static final int accessibility_custom_action_1 = 2131361893;
+    public static final int accessibility_custom_action_10 = 2131361894;
+    public static final int accessibility_custom_action_11 = 2131361895;
+    public static final int accessibility_custom_action_12 = 2131361896;
+    public static final int accessibility_custom_action_13 = 2131361897;
+    public static final int accessibility_custom_action_14 = 2131361898;
+    public static final int accessibility_custom_action_15 = 2131361899;
+    public static final int accessibility_custom_action_16 = 2131361900;
+    public static final int accessibility_custom_action_17 = 2131361901;
+    public static final int accessibility_custom_action_18 = 2131361902;
+    public static final int accessibility_custom_action_19 = 2131361903;
+    public static final int accessibility_custom_action_2 = 2131361904;
+    public static final int accessibility_custom_action_20 = 2131361905;
+    public static final int accessibility_custom_action_21 = 2131361906;
+    public static final int accessibility_custom_action_22 = 2131361907;
+    public static final int accessibility_custom_action_23 = 2131361908;
+    public static final int accessibility_custom_action_24 = 2131361909;
+    public static final int accessibility_custom_action_25 = 2131361910;
+    public static final int accessibility_custom_action_26 = 2131361911;
+    public static final int accessibility_custom_action_27 = 2131361912;
+    public static final int accessibility_custom_action_28 = 2131361913;
+    public static final int accessibility_custom_action_29 = 2131361914;
+    public static final int accessibility_custom_action_3 = 2131361915;
+    public static final int accessibility_custom_action_30 = 2131361916;
+    public static final int accessibility_custom_action_31 = 2131361917;
+    public static final int accessibility_custom_action_4 = 2131361918;
+    public static final int accessibility_custom_action_5 = 2131361919;
+    public static final int accessibility_custom_action_6 = 2131361920;
+    public static final int accessibility_custom_action_7 = 2131361921;
+    public static final int accessibility_custom_action_8 = 2131361922;
+    public static final int accessibility_custom_action_9 = 2131361923;
+    public static final int action_container = 2131361960;
+    public static final int action_divider = 2131361962;
+    public static final int action_image = 2131361965;
+    public static final int action_text = 2131361973;
+    public static final int actions = 2131361974;
+    public static final int async = 2131362116;
+    public static final int blocking = 2131362258;
+    public static final int chronometer = 2131362642;
+    public static final int dialog_button = 2131363088;
+    public static final int forever = 2131363676;
+    public static final int fragment_container_view_tag = 2131363694;
+    public static final int icon = 2131363954;
+    public static final int icon_group = 2131363962;
+    public static final int info = 2131364047;
+    public static final int italic = 2131364167;
+    public static final int item_touch_helper_previous_elevation = 2131364179;
+    public static final int line1 = 2131365124;
+    public static final int line3 = 2131365126;
+    public static final int normal = 2131365845;
+    public static final int notification_background = 2131365855;
+    public static final int notification_main_column = 2131365856;
+    public static final int notification_main_column_container = 2131365857;
+    public static final int right_icon = 2131366448;
+    public static final int right_side = 2131366452;
+    public static final int special_effects_controller_view_tag = 2131367151;
+    public static final int tag_accessibility_actions = 2131367384;
+    public static final int tag_accessibility_clickable_spans = 2131367385;
+    public static final int tag_accessibility_heading = 2131367386;
+    public static final int tag_accessibility_pane_title = 2131367387;
+    public static final int tag_on_apply_window_listener = 2131367389;
+    public static final int tag_on_receive_content_listener = 2131367390;
+    public static final int tag_on_receive_content_mime_types = 2131367391;
+    public static final int tag_screen_reader_focusable = 2131367395;
+    public static final int tag_state_description = 2131367396;
+    public static final int tag_transition_group = 2131367398;
+    public static final int tag_unhandled_key_event_manager = 2131367399;
+    public static final int tag_unhandled_key_listeners = 2131367400;
+    public static final int tag_window_insets_animation_callback = 2131367402;
+    public static final int text = 2131367438;
+    public static final int text2 = 2131367440;
+    public static final int time = 2131367475;
+    public static final int title = 2131367504;
+    public static final int view_tree_lifecycle_owner = 2131370660;
+    public static final int view_tree_saved_state_registry_owner = 2131370662;
+    public static final int view_tree_view_model_store_owner = 2131370663;
+    public static final int visible_removing_fragment_view_tag = 2131370677;
+
+    private R$id() {
+    }
+}

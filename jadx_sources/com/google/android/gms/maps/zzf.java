@@ -1,0 +1,25 @@
+package com.google.android.gms.maps;
+
+import com.google.android.gms.dynamic.IObjectWrapper;
+import com.google.android.gms.dynamic.ObjectWrapper;
+import com.google.android.gms.maps.model.Marker;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-maps@@18.0.0 */
+/* JADX INFO: loaded from: classes45.dex */
+final class zzf extends com.google.android.gms.maps.internal.zzh {
+    final /* synthetic */ GoogleMap.InfoWindowAdapter zza;
+
+    public zzf(GoogleMap googleMap, GoogleMap.InfoWindowAdapter infoWindowAdapter) {
+        this.zza = infoWindowAdapter;
+    }
+
+    @Override // com.google.android.gms.maps.internal.zzi
+    public final IObjectWrapper zzb(com.google.android.gms.internal.maps.zzx zzxVar) {
+        return ObjectWrapper.wrap(this.zza.getInfoContents(new Marker(zzxVar)));
+    }
+
+    @Override // com.google.android.gms.maps.internal.zzi
+    public final IObjectWrapper zzc(com.google.android.gms.internal.maps.zzx zzxVar) {
+        return ObjectWrapper.wrap(this.zza.getInfoWindow(new Marker(zzxVar)));
+    }
+}

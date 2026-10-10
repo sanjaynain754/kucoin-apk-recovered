@@ -1,0 +1,39 @@
+package p055c9;
+
+import android.graphics.Rect;
+import android.util.Log;
+import p037b9.C4519m;
+
+/* JADX INFO: renamed from: c9.e */
+/* JADX INFO: compiled from: CenterCropStrategy.java */
+/* JADX INFO: loaded from: classes56.dex */
+public class C4911e extends AbstractC4916j {
+
+    /* JADX INFO: renamed from: b */
+    public static final String f5447b = "e";
+
+    @Override // p055c9.AbstractC4916j
+    /* JADX INFO: renamed from: c */
+    public float mo5132c(C4519m c4519m, C4519m c4519m2) {
+        if (c4519m.f3949b <= 0 || c4519m.f3950c <= 0) {
+            return 0.0f;
+        }
+        C4519m c4519mM4352c = c4519m.m4352c(c4519m2);
+        float fPow = (c4519mM4352c.f3949b * 1.0f) / c4519m.f3949b;
+        if (fPow > 1.0f) {
+            fPow = (float) Math.pow(1.0f / fPow, 1.1d);
+        }
+        float f11 = ((c4519mM4352c.f3949b * 1.0f) / c4519m2.f3949b) + ((c4519mM4352c.f3950c * 1.0f) / c4519m2.f3950c);
+        return fPow * ((1.0f / f11) / f11);
+    }
+
+    @Override // p055c9.AbstractC4916j
+    /* JADX INFO: renamed from: d */
+    public Rect mo5133d(C4519m c4519m, C4519m c4519m2) {
+        C4519m c4519mM4352c = c4519m.m4352c(c4519m2);
+        Log.i(f5447b, "Preview: " + c4519m + "; Scaled: " + c4519mM4352c + "; Want: " + c4519m2);
+        int i11 = (c4519mM4352c.f3949b - c4519m2.f3949b) / 2;
+        int i12 = (c4519mM4352c.f3950c - c4519m2.f3950c) / 2;
+        return new Rect(-i11, -i12, c4519mM4352c.f3949b - i11, c4519mM4352c.f3950c - i12);
+    }
+}

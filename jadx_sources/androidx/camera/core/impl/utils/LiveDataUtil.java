@@ -1,0 +1,32 @@
+package androidx.camera.core.impl.utils;
+
+import androidx.annotation.MainThread;
+import androidx.arch.core.util.Function;
+import androidx.lifecycle.LiveData;
+import org.jetbrains.annotations.NotNull;
+import p852kotlin.Metadata;
+import p852kotlin.jvm.JvmStatic;
+import p852kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: LiveDataUtil.kt */
+/* JADX INFO: loaded from: classes23.dex */
+@Metadata(m90083d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J<\u0010\u0004\u001a\b\u0012\u0004\u0012\u0002H\u00060\u0005\"\u0004\b\u0000\u0010\u0007\"\u0004\b\u0001\u0010\u00062\f\u0010\b\u001a\b\u0012\u0004\u0012\u0002H\u00070\u00052\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u0002H\u0007\u0012\u0004\u0012\u0002H\u00060\nH\u0007¨\u0006\u000b"}, m90084d2 = {"Landroidx/camera/core/impl/utils/LiveDataUtil;", "", "<init>", "()V", "map", "Landroidx/lifecycle/LiveData;", "O", "I", "source", "mapFunction", "Landroidx/arch/core/util/Function;", "camera-core_release"}, m90085k = 1, m90086mv = {2, 0, 0}, m90088xi = 48)
+public final class LiveDataUtil {
+
+    @NotNull
+    public static final LiveDataUtil INSTANCE = new LiveDataUtil();
+
+    private LiveDataUtil() {
+    }
+
+    @JvmStatic
+    @MainThread
+    @NotNull
+    public static final <I, O> LiveData<O> map(@NotNull LiveData<I> source, @NotNull Function<I, O> mapFunction) {
+        Intrinsics.checkNotNullParameter(source, "source");
+        Intrinsics.checkNotNullParameter(mapFunction, "mapFunction");
+        MappingRedirectableLiveData mappingRedirectableLiveData = new MappingRedirectableLiveData(mapFunction.apply(source.getValue()), mapFunction);
+        mappingRedirectableLiveData.redirectTo(source);
+        return mappingRedirectableLiveData;
+    }
+}

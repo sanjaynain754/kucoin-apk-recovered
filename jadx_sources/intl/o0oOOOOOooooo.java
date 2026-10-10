@@ -1,0 +1,14 @@
+package intl;
+
+/* JADX INFO: loaded from: classes60.dex */
+public enum o0oOOOOOooooo {
+    INIT,
+    FINAL,
+    CHECK_FACE_FRONTAL,
+    MOTION_DETECTION,
+    DISTANT_FACE_CALIBRATE,
+    DISTANT_FACE_CAPTURE,
+    NEAR_FACE_CALIBRATE,
+    NEAR_FACE_CAPTURE,
+    BLINK_DETECTION
+}

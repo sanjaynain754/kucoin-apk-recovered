@@ -1,0 +1,58 @@
+package com.kubi.network.socket.utils;
+
+import androidx.media3.exoplayer.upstream.CmcdData;
+import org.jetbrains.annotations.Nullable;
+import p852kotlin.Metadata;
+
+/* JADX INFO: renamed from: com.kubi.network.socket.utils.i */
+/* JADX INFO: compiled from: SuccessRateEvaluator.kt */
+/* JADX INFO: loaded from: classes12.dex */
+@Metadata(m90083d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u000b\u0018\u00002\u00020\u0001B\u0011\u0012\b\b\u0002\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u0017\u0010\t\u001a\u0004\u0018\u00010\b2\u0006\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\t\u0010\nJ\u000f\u0010\f\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\f\u0010\rR\u0014\u0010\u0003\u001a\u00020\u00028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\t\u0010\u000eR\u0016\u0010\u000f\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\f\u0010\u000eR\u0016\u0010\u0011\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0010\u0010\u000eR\u0016\u0010\u0013\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0012\u0010\u000eR\u0016\u0010\u0015\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0014\u0010\u000e¨\u0006\u0016"}, m90084d2 = {"Lcom/kubi/network/socket/utils/i;", "", "", "windowSize", "<init>", "(J)V", "", "success", "Lcom/kubi/network/socket/utils/j;", CmcdData.Factory.OBJECT_TYPE_AUDIO_ONLY, "(Z)Lcom/kubi/network/socket/utils/j;", "", "b", "()V", "J", "windowSuccessCount", "c", "windowTotalCount", "d", "totalSuccessCount", "e", "totalRequestCount", "network-core-socket_release"}, m90085k = 1, m90086mv = {1, 8, 0}, m90088xi = 48)
+public final class C19393i {
+
+    /* JADX INFO: renamed from: a, reason: from kotlin metadata */
+    public final long windowSize;
+
+    /* JADX INFO: renamed from: b, reason: from kotlin metadata */
+    public long windowSuccessCount;
+
+    /* JADX INFO: renamed from: c, reason: from kotlin metadata */
+    public long windowTotalCount;
+
+    /* JADX INFO: renamed from: d, reason: from kotlin metadata */
+    public long totalSuccessCount;
+
+    /* JADX INFO: renamed from: e, reason: from kotlin metadata */
+    public long totalRequestCount;
+
+    @Nullable
+    /* JADX INFO: renamed from: a */
+    public final SuccessRateStats m43070a(boolean success) {
+        if (success) {
+            this.windowSuccessCount++;
+            this.totalSuccessCount++;
+        }
+        long j11 = this.windowTotalCount + 1;
+        this.windowTotalCount = j11;
+        long j12 = this.totalRequestCount + 1;
+        this.totalRequestCount = j12;
+        long j13 = this.windowSuccessCount;
+        if (j11 < this.windowSize) {
+            return null;
+        }
+        double d11 = j13 / j11;
+        double d12 = this.totalSuccessCount / j12;
+        m43071b();
+        return new SuccessRateStats(d11, d12);
+    }
+
+    /* JADX INFO: renamed from: b */
+    public final void m43071b() {
+        this.windowSuccessCount = 0L;
+        this.windowTotalCount = 0L;
+    }
+
+    public C19393i(long j11) {
+        this.windowSize = j11;
+    }
+}

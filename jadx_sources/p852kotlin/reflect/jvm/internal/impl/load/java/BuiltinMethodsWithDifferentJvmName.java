@@ -1,0 +1,62 @@
+package p852kotlin.reflect.jvm.internal.impl.load.java;
+
+import java.util.Map;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import p852kotlin.jvm.functions.Function1;
+import p852kotlin.jvm.internal.Intrinsics;
+import p852kotlin.reflect.jvm.internal.impl.builtins.KotlinBuiltIns;
+import p852kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor;
+import p852kotlin.reflect.jvm.internal.impl.descriptors.SimpleFunctionDescriptor;
+import p852kotlin.reflect.jvm.internal.impl.load.kotlin.MethodSignatureMappingKt;
+import p852kotlin.reflect.jvm.internal.impl.name.Name;
+import p852kotlin.reflect.jvm.internal.impl.resolve.descriptorUtil.DescriptorUtilsKt;
+
+/* JADX INFO: compiled from: specialBuiltinMembers.kt */
+/* JADX INFO: loaded from: classes61.dex */
+public final class BuiltinMethodsWithDifferentJvmName extends SpecialGenericSignatures {
+
+    @NotNull
+    public static final BuiltinMethodsWithDifferentJvmName INSTANCE = new BuiltinMethodsWithDifferentJvmName();
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final boolean isBuiltinFunctionWithDifferentNameInJvm$lambda$0(SimpleFunctionDescriptor simpleFunctionDescriptor, CallableMemberDescriptor it) {
+        Intrinsics.checkNotNullParameter(it, "it");
+        return SpecialGenericSignatures.Companion.getSIGNATURE_TO_JVM_REPRESENTATION_NAME().containsKey(MethodSignatureMappingKt.computeJvmSignature(simpleFunctionDescriptor));
+    }
+
+    @Nullable
+    public final Name getJvmName(@NotNull SimpleFunctionDescriptor functionDescriptor) {
+        Intrinsics.checkNotNullParameter(functionDescriptor, "functionDescriptor");
+        Map<String, Name> signature_to_jvm_representation_name = SpecialGenericSignatures.Companion.getSIGNATURE_TO_JVM_REPRESENTATION_NAME();
+        String strComputeJvmSignature = MethodSignatureMappingKt.computeJvmSignature(functionDescriptor);
+        if (strComputeJvmSignature == null) {
+            return null;
+        }
+        return signature_to_jvm_representation_name.get(strComputeJvmSignature);
+    }
+
+    public final boolean isBuiltinFunctionWithDifferentNameInJvm(@NotNull final SimpleFunctionDescriptor functionDescriptor) {
+        Intrinsics.checkNotNullParameter(functionDescriptor, "functionDescriptor");
+        return KotlinBuiltIns.isBuiltIn(functionDescriptor) && DescriptorUtilsKt.firstOverridden$default(functionDescriptor, false, new Function1(functionDescriptor) { // from class: kotlin.reflect.jvm.internal.impl.load.java.BuiltinMethodsWithDifferentJvmName$$Lambda$0
+            private final SimpleFunctionDescriptor arg$0;
+
+            @Override // p852kotlin.jvm.functions.Function1
+            public Object invoke(Object obj) {
+                return Boolean.valueOf(BuiltinMethodsWithDifferentJvmName.isBuiltinFunctionWithDifferentNameInJvm$lambda$0(this.arg$0, (CallableMemberDescriptor) obj));
+            }
+
+            {
+                this.arg$0 = functionDescriptor;
+            }
+        }, 1, null) != null;
+    }
+
+    public final boolean isRemoveAtByIndex(@NotNull SimpleFunctionDescriptor simpleFunctionDescriptor) {
+        Intrinsics.checkNotNullParameter(simpleFunctionDescriptor, "<this>");
+        return Intrinsics.areEqual(simpleFunctionDescriptor.getName().asString(), "removeAt") && Intrinsics.areEqual(MethodSignatureMappingKt.computeJvmSignature(simpleFunctionDescriptor), SpecialGenericSignatures.Companion.getREMOVE_AT_NAME_AND_SIGNATURE().getSignature());
+    }
+
+    private BuiltinMethodsWithDifferentJvmName() {
+    }
+}

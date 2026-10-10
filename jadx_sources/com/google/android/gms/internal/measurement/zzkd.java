@@ -1,0 +1,36 @@
+package com.google.android.gms.internal.measurement;
+
+import android.util.Log;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-measurement-impl@@22.5.0 */
+/* JADX INFO: loaded from: classes.dex */
+final class zzkd extends zzkl {
+    public zzkd(zzkf zzkfVar, String str, Double d11, boolean z11) {
+        super(zzkfVar, "measurement.test.double_flag", d11, true, null);
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzkl
+    public final /* synthetic */ Object zza(Object obj) {
+        if (obj instanceof Double) {
+            return (Double) obj;
+        }
+        if (obj instanceof Float) {
+            return Double.valueOf(((Float) obj).doubleValue());
+        }
+        if (obj instanceof String) {
+            try {
+                return Double.valueOf(Double.parseDouble((String) obj));
+            } catch (NumberFormatException unused) {
+            }
+        }
+        String str = this.zzb;
+        String string = obj.toString();
+        StringBuilder sb2 = new StringBuilder(str.length() + 27 + string.length());
+        sb2.append("Invalid double value for ");
+        sb2.append(str);
+        sb2.append(": ");
+        sb2.append(string);
+        Log.e("PhenotypeFlag", sb2.toString());
+        return null;
+    }
+}

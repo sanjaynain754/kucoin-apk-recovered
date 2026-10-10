@@ -1,0 +1,29 @@
+package com.google.android.gms.internal.mlkit_vision_barcode;
+
+import java.util.Objects;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-mlkit-barcode-scanning@@18.3.1 */
+/* JADX INFO: loaded from: classes45.dex */
+final class zzdo extends zzcs {
+    private final transient Object[] zza;
+    private final transient int zzb;
+    private final transient int zzc = 1;
+
+    @Override // java.util.List
+    public final Object get(int i11) {
+        zzaz.zza(i11, this.zzc, "index");
+        Object obj = this.zza[i11 + i11 + this.zzb];
+        Objects.requireNonNull(obj);
+        return obj;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final int size() {
+        return this.zzc;
+    }
+
+    public zzdo(Object[] objArr, int i11, int i12) {
+        this.zza = objArr;
+        this.zzb = i11;
+    }
+}

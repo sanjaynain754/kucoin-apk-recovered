@@ -1,0 +1,40 @@
+package com.kubi.widget.web.exception;
+
+import com.kubi.monitor.BaseIssueException;
+import java.util.Arrays;
+import org.jetbrains.annotations.NotNull;
+import p852kotlin.Metadata;
+import p852kotlin.jvm.internal.DefaultConstructorMarker;
+import p852kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: KNBHybridException.kt */
+/* JADX INFO: loaded from: classes59.dex */
+@Metadata(m90083d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0003\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0004\b\u0000\u0018\u00002\u00020\u0001B+\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0007\u001a\u00020\b¢\u0006\u0004\b\t\u0010\nB#\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0007\u001a\u00020\b¢\u0006\u0004\b\t\u0010\u000b¨\u0006\f"}, m90084d2 = {"Lcom/kubi/widget/web/exception/KNBHybridException;", "Lcom/kubi/monitor/BaseIssueException;", "msg", "", "thr", "", "source", "ignore", "", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;Z)V", "(Ljava/lang/String;Ljava/lang/String;Z)V", "LWebWidget_googleRelease"}, m90085k = 1, m90086mv = {2, 2, 0}, m90088xi = 48)
+public final class KNBHybridException extends BaseIssueException {
+    /* JADX WARN: Illegal instructions before constructor call */
+    public KNBHybridException(@NotNull String msg, @NotNull Throwable thr, @NotNull String source, boolean z11) {
+        Intrinsics.checkNotNullParameter(msg, "msg");
+        Intrinsics.checkNotNullParameter(thr, "thr");
+        Intrinsics.checkNotNullParameter(source, "source");
+        String str = String.format("base|knb|%s|ignore=%s", Arrays.copyOf(new Object[]{source, Boolean.valueOf(z11)}, 2));
+        Intrinsics.checkNotNullExpressionValue(str, "format(...)");
+        super(str, msg, thr);
+    }
+
+    public /* synthetic */ KNBHybridException(String str, Throwable th2, String str2, boolean z11, int i11, DefaultConstructorMarker defaultConstructorMarker) {
+        this(str, th2, str2, (i11 & 8) != 0 ? false : z11);
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    public KNBHybridException(@NotNull String msg, @NotNull String source, boolean z11) {
+        Intrinsics.checkNotNullParameter(msg, "msg");
+        Intrinsics.checkNotNullParameter(source, "source");
+        String str = String.format("base|knb|%s|ignore=%s", Arrays.copyOf(new Object[]{source, Boolean.valueOf(z11)}, 2));
+        Intrinsics.checkNotNullExpressionValue(str, "format(...)");
+        super(str, msg);
+    }
+
+    public /* synthetic */ KNBHybridException(String str, String str2, boolean z11, int i11, DefaultConstructorMarker defaultConstructorMarker) {
+        this(str, str2, (i11 & 4) != 0 ? false : z11);
+    }
+}

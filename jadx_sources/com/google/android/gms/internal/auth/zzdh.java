@@ -1,0 +1,19 @@
+package com.google.android.gms.internal.auth;
+
+import java.io.Serializable;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* JADX INFO: loaded from: classes45.dex */
+public abstract class zzdh implements Serializable {
+    public abstract Object zza();
+
+    public abstract boolean zzb();
+
+    public static zzdh zzc() {
+        return zzdf.zza;
+    }
+
+    public static zzdh zzd(Object obj) {
+        return new zzdi(obj);
+    }
+}

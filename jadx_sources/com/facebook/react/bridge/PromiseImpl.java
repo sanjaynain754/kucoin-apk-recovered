@@ -1,0 +1,140 @@
+package com.facebook.react.bridge;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import p633t6.InterfaceC44695a;
+
+/* JADX INFO: loaded from: classes45.dex */
+@InterfaceC44695a
+public class PromiseImpl implements Promise {
+    private static final String ERROR_DEFAULT_CODE = "EUNSPECIFIED";
+    private static final String ERROR_DEFAULT_MESSAGE = "Error not specified.";
+    private static final String ERROR_MAP_KEY_CODE = "code";
+    private static final String ERROR_MAP_KEY_MESSAGE = "message";
+    private static final String ERROR_MAP_KEY_NAME = "name";
+    private static final String ERROR_MAP_KEY_NATIVE_STACK = "nativeStackAndroid";
+    private static final String ERROR_MAP_KEY_USER_INFO = "userInfo";
+    private static final int ERROR_STACK_FRAME_LIMIT = 50;
+    private static final String STACK_FRAME_KEY_CLASS = "class";
+    private static final String STACK_FRAME_KEY_FILE = "file";
+    private static final String STACK_FRAME_KEY_LINE_NUMBER = "lineNumber";
+    private static final String STACK_FRAME_KEY_METHOD_NAME = "methodName";
+
+    @Nullable
+    private Callback mReject;
+
+    @Nullable
+    private Callback mResolve;
+
+    @Override // com.facebook.react.bridge.Promise
+    public void reject(String str, String str2) {
+        reject(str, str2, null, null);
+    }
+
+    @Override // com.facebook.react.bridge.Promise
+    public void reject(String str, Throwable th2) {
+        reject(str, null, th2, null);
+    }
+
+    @Override // com.facebook.react.bridge.Promise
+    public void resolve(Object obj) {
+        Callback callback = this.mResolve;
+        if (callback != null) {
+            callback.invoke(obj);
+            this.mResolve = null;
+            this.mReject = null;
+        }
+    }
+
+    @InterfaceC44695a
+    public PromiseImpl(@Nullable Callback callback, @Nullable Callback callback2) {
+        this.mResolve = callback;
+        this.mReject = callback2;
+    }
+
+    @Override // com.facebook.react.bridge.Promise
+    public void reject(String str, String str2, Throwable th2) {
+        reject(str, str2, th2, null);
+    }
+
+    @Override // com.facebook.react.bridge.Promise
+    public void reject(Throwable th2) {
+        reject(null, null, th2, null);
+    }
+
+    @Override // com.facebook.react.bridge.Promise
+    public void reject(Throwable th2, WritableMap writableMap) {
+        reject(null, null, th2, writableMap);
+    }
+
+    @Override // com.facebook.react.bridge.Promise
+    public void reject(String str, @NonNull WritableMap writableMap) {
+        reject(str, null, null, writableMap);
+    }
+
+    @Override // com.facebook.react.bridge.Promise
+    public void reject(String str, Throwable th2, WritableMap writableMap) {
+        reject(str, null, th2, writableMap);
+    }
+
+    @Override // com.facebook.react.bridge.Promise
+    public void reject(String str, String str2, @NonNull WritableMap writableMap) {
+        reject(str, str2, null, writableMap);
+    }
+
+    @Override // com.facebook.react.bridge.Promise
+    public void reject(@Nullable String str, @Nullable String str2, @Nullable Throwable th2, @Nullable WritableMap writableMap) {
+        if (this.mReject == null) {
+            this.mResolve = null;
+            return;
+        }
+        WritableNativeMap writableNativeMap = new WritableNativeMap();
+        if (str == null) {
+            writableNativeMap.putString("code", ERROR_DEFAULT_CODE);
+        } else {
+            writableNativeMap.putString("code", str);
+        }
+        if (str2 != null) {
+            writableNativeMap.putString("message", str2);
+        } else if (th2 == null) {
+            writableNativeMap.putString("message", ERROR_DEFAULT_MESSAGE);
+        } else {
+            String message = th2.getMessage();
+            if (message == null || message.isEmpty()) {
+                message = th2.getClass().getCanonicalName();
+            }
+            writableNativeMap.putString("message", message);
+        }
+        if (writableMap != null) {
+            writableNativeMap.putMap(ERROR_MAP_KEY_USER_INFO, writableMap);
+        } else {
+            writableNativeMap.putNull(ERROR_MAP_KEY_USER_INFO);
+        }
+        if (th2 == null) {
+            writableNativeMap.putArray(ERROR_MAP_KEY_NATIVE_STACK, new WritableNativeArray());
+        } else {
+            writableNativeMap.putString("name", th2.getClass().getCanonicalName());
+            StackTraceElement[] stackTrace = th2.getStackTrace();
+            WritableNativeArray writableNativeArray = new WritableNativeArray();
+            for (int i11 = 0; i11 < stackTrace.length && i11 < 50; i11++) {
+                StackTraceElement stackTraceElement = stackTrace[i11];
+                WritableNativeMap writableNativeMap2 = new WritableNativeMap();
+                writableNativeMap2.putString(STACK_FRAME_KEY_CLASS, stackTraceElement.getClassName());
+                writableNativeMap2.putString("file", stackTraceElement.getFileName());
+                writableNativeMap2.putInt("lineNumber", stackTraceElement.getLineNumber());
+                writableNativeMap2.putString("methodName", stackTraceElement.getMethodName());
+                writableNativeArray.pushMap(writableNativeMap2);
+            }
+            writableNativeMap.putArray(ERROR_MAP_KEY_NATIVE_STACK, writableNativeArray);
+        }
+        this.mReject.invoke(writableNativeMap);
+        this.mResolve = null;
+        this.mReject = null;
+    }
+
+    @Override // com.facebook.react.bridge.Promise
+    @Deprecated
+    public void reject(String str) {
+        reject(null, str, null, null);
+    }
+}

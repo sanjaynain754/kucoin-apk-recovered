@@ -1,0 +1,42 @@
+package com.kubi.loan;
+
+import android.app.Application;
+import androidx.media3.common.MimeTypes;
+import com.kubi.loan.BLoanKitStartupTask;
+import com.kubi.sdk.site.C24129b;
+import com.kubi.sdk.site.SiteVisibleConfigKey;
+import com.kubi.sdk.startup.IStartupTask;
+import com.kubi.sdk.startup.StartupOption;
+import com.kubi.sdk.startup.StartupStepType;
+import com.kubi.sdk.startup.StartupThreadType;
+import org.jetbrains.annotations.NotNull;
+import p406ko.C41086j;
+import p852kotlin.Metadata;
+import p852kotlin.Unit;
+import p852kotlin.jvm.functions.Function0;
+import p852kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: BLoanKitStartupTask.kt */
+/* JADX INFO: loaded from: classes12.dex */
+@Metadata(m90083d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0007\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J\u0010\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, m90084d2 = {"Lcom/kubi/loan/BLoanKitStartupTask;", "Lcom/kubi/sdk/startup/IStartupTask;", "<init>", "()V", "run", "", MimeTypes.BASE_TYPE_APPLICATION, "Landroid/app/Application;", "LoanLib_googleRelease"}, m90085k = 1, m90086mv = {2, 2, 0}, m90088xi = 48)
+@StartupOption(name = "b_loan", priority = 300, stepType = StartupStepType.FirstPage, threadType = StartupThreadType.Await)
+public final class BLoanKitStartupTask implements IStartupTask {
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit run$lambda$0() {
+        C41086j c41086j = C41086j.f91299a;
+        c41086j.m90079k();
+        c41086j.m90080l();
+        return Unit.INSTANCE;
+    }
+
+    @Override // com.kubi.sdk.startup.IStartupTask
+    public void run(@NotNull Application application) {
+        Intrinsics.checkNotNullParameter(application, "application");
+        C24129b.m58033e(SiteVisibleConfigKey.Margin, new Function0() { // from class: ho.a
+            @Override // p852kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                return BLoanKitStartupTask.run$lambda$0();
+            }
+        });
+    }
+}

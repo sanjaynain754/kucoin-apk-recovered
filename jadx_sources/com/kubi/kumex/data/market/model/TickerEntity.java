@@ -1,0 +1,681 @@
+package com.kubi.kumex.data.market.model;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import androidx.annotation.Keep;
+import cn.jiguang.privates.push.constants.JPushConstants;
+import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.gson.annotations.SerializedName;
+import java.math.BigDecimal;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import p852kotlin.Metadata;
+import p852kotlin.jvm.internal.DefaultConstructorMarker;
+import p852kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: TickerEntity.kt */
+/* JADX INFO: loaded from: classes20.dex */
+@Keep
+@Metadata(m90083d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\bd\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0087\b\u0018\u00002\u00020\u0001B§\u0002\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0003\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u0007¢\u0006\u0004\b\u001d\u0010\u001eJ\u000b\u0010T\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010U\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010V\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0010\u0010W\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010'J\u0010\u0010X\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010'J\u000b\u0010Y\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010Z\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010[\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010\\\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010]\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010^\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010_\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010`\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010a\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010b\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010c\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010d\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010e\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010f\u001a\u0004\u0018\u00010\nHÆ\u0003J\u0010\u0010g\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010'J\u000b\u0010h\u001a\u0004\u0018\u00010\nHÆ\u0003J\u0010\u0010i\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010'J\u0010\u0010j\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010'J\u0010\u0010k\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010'J®\u0002\u0010l\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010\u0005\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u0007HÆ\u0001¢\u0006\u0002\u0010mJ\u0006\u0010n\u001a\u00020oJ\u0013\u0010p\u001a\u00020q2\b\u0010r\u001a\u0004\u0018\u00010sHÖ\u0003J\t\u0010t\u001a\u00020oHÖ\u0001J\t\u0010u\u001a\u00020\u0003HÖ\u0001J\u0016\u0010v\u001a\u00020w2\u0006\u0010x\u001a\u00020y2\u0006\u0010z\u001a\u00020oR\u001c\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010 \"\u0004\b!\u0010\"R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b#\u0010 R\u001c\u0010\u0005\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b$\u0010 \"\u0004\b%\u0010\"R\"\u0010\u0006\u001a\u0004\u0018\u00010\u00078\u0006@\u0006X\u0087\u000e¢\u0006\u0010\n\u0002\u0010*\u001a\u0004\b&\u0010'\"\u0004\b(\u0010)R\u001e\u0010\b\u001a\u0004\u0018\u00010\u0007X\u0086\u000e¢\u0006\u0010\n\u0002\u0010*\u001a\u0004\b+\u0010'\"\u0004\b,\u0010)R\u001c\u0010\t\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b-\u0010.\"\u0004\b/\u00100R\u001c\u0010\u000b\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b1\u0010.\"\u0004\b2\u00100R\u001c\u0010\f\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b3\u0010.\"\u0004\b4\u00100R\u001c\u0010\r\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b5\u0010.\"\u0004\b6\u00100R\u001c\u0010\u000e\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b7\u0010.\"\u0004\b8\u00100R\u001c\u0010\u000f\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b9\u0010.\"\u0004\b:\u00100R\u001c\u0010\u0010\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b;\u0010.\"\u0004\b<\u00100R\u001c\u0010\u0011\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b=\u0010.\"\u0004\b>\u00100R\u001c\u0010\u0012\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b?\u0010.\"\u0004\b@\u00100R\u001c\u0010\u0013\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bA\u0010.\"\u0004\bB\u00100R\u001c\u0010\u0014\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bC\u0010.\"\u0004\bD\u00100R\u001c\u0010\u0015\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bE\u0010.\"\u0004\bF\u00100R\u001c\u0010\u0016\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bG\u0010.\"\u0004\bH\u00100R\u001c\u0010\u0017\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bI\u0010.\"\u0004\bJ\u00100R\u001e\u0010\u0018\u001a\u0004\u0018\u00010\u0007X\u0086\u000e¢\u0006\u0010\n\u0002\u0010*\u001a\u0004\bK\u0010'\"\u0004\bL\u0010)R\u001c\u0010\u0019\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bM\u0010.\"\u0004\bN\u00100R\u001e\u0010\u001a\u001a\u0004\u0018\u00010\u0007X\u0086\u000e¢\u0006\u0010\n\u0002\u0010*\u001a\u0004\bO\u0010'\"\u0004\bP\u0010)R\u001e\u0010\u001b\u001a\u0004\u0018\u00010\u0007X\u0086\u000e¢\u0006\u0010\n\u0002\u0010*\u001a\u0004\bQ\u0010'\"\u0004\bR\u0010)R\u0015\u0010\u001c\u001a\u0004\u0018\u00010\u0007¢\u0006\n\n\u0002\u0010*\u001a\u0004\bS\u0010'¨\u0006{"}, m90084d2 = {"Lcom/kubi/kumex/data/market/model/TickerEntity;", "Landroid/os/Parcelable;", "tradeId", "", "symbol", "side", "timestamp", "", JPushConstants.Operation.KEY_SEQUENCE, "bestAskPrice", "Ljava/math/BigDecimal;", "bestAskSize", "bestBidPrice", "bestBidSize", "lowPrice", "highPrice", FirebaseAnalytics.Param.PRICE, "priceChgPct", "turnover", "volume", "size", "lastFundingRate", "totalPositionQty", "fundingRate", "remainSettleTime", "predictedFundingRate", "granularity", "currentFundingRateGranularity", "effectiveFundingRateCycleStartTime", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/lang/Long;Ljava/math/BigDecimal;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;)V", "getTradeId", "()Ljava/lang/String;", "setTradeId", "(Ljava/lang/String;)V", "getSymbol", "getSide", "setSide", "getTimestamp", "()Ljava/lang/Long;", "setTimestamp", "(Ljava/lang/Long;)V", "Ljava/lang/Long;", "getSequence", "setSequence", "getBestAskPrice", "()Ljava/math/BigDecimal;", "setBestAskPrice", "(Ljava/math/BigDecimal;)V", "getBestAskSize", "setBestAskSize", "getBestBidPrice", "setBestBidPrice", "getBestBidSize", "setBestBidSize", "getLowPrice", "setLowPrice", "getHighPrice", "setHighPrice", "getPrice", "setPrice", "getPriceChgPct", "setPriceChgPct", "getTurnover", "setTurnover", "getVolume", "setVolume", "getSize", "setSize", "getLastFundingRate", "setLastFundingRate", "getTotalPositionQty", "setTotalPositionQty", "getFundingRate", "setFundingRate", "getRemainSettleTime", "setRemainSettleTime", "getPredictedFundingRate", "setPredictedFundingRate", "getGranularity", "setGranularity", "getCurrentFundingRateGranularity", "setCurrentFundingRateGranularity", "getEffectiveFundingRateCycleStartTime", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component19", "component20", "component21", "component22", "component23", "component24", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/lang/Long;Ljava/math/BigDecimal;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;)Lcom/kubi/kumex/data/market/model/TickerEntity;", "describeContents", "", "equals", "", "other", "", "hashCode", "toString", "writeToParcel", "", "dest", "Landroid/os/Parcel;", "flags", "KumexLib_googleRelease"}, m90085k = 1, m90086mv = {2, 2, 0}, m90088xi = 48)
+public final /* data */ class TickerEntity implements Parcelable {
+
+    @NotNull
+    public static final Parcelable.Creator<TickerEntity> CREATOR = new C15787a();
+
+    @Nullable
+    private BigDecimal bestAskPrice;
+
+    @Nullable
+    private BigDecimal bestAskSize;
+
+    @Nullable
+    private BigDecimal bestBidPrice;
+
+    @Nullable
+    private BigDecimal bestBidSize;
+
+    @Nullable
+    private Long currentFundingRateGranularity;
+
+    @Nullable
+    private final Long effectiveFundingRateCycleStartTime;
+
+    @Nullable
+    private BigDecimal fundingRate;
+
+    @Nullable
+    private Long granularity;
+
+    @Nullable
+    private BigDecimal highPrice;
+
+    @Nullable
+    private BigDecimal lastFundingRate;
+
+    @Nullable
+    private BigDecimal lowPrice;
+
+    @Nullable
+    private BigDecimal predictedFundingRate;
+
+    @Nullable
+    private BigDecimal price;
+
+    @Nullable
+    private BigDecimal priceChgPct;
+
+    @Nullable
+    private Long remainSettleTime;
+
+    @Nullable
+    private Long sequence;
+
+    @Nullable
+    private String side;
+
+    @Nullable
+    private BigDecimal size;
+
+    @Nullable
+    private final String symbol;
+
+    @SerializedName("time")
+    @Nullable
+    private Long timestamp;
+
+    @Nullable
+    private BigDecimal totalPositionQty;
+
+    @Nullable
+    private String tradeId;
+
+    @Nullable
+    private BigDecimal turnover;
+
+    @Nullable
+    private BigDecimal volume;
+
+    /* JADX INFO: renamed from: com.kubi.kumex.data.market.model.TickerEntity$a */
+    /* JADX INFO: compiled from: TickerEntity.kt */
+    @Metadata(m90085k = 3, m90086mv = {2, 2, 0}, m90088xi = 48)
+    public static final class C15787a implements Parcelable.Creator<TickerEntity> {
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        public final TickerEntity createFromParcel(Parcel parcel) {
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            return new TickerEntity(parcel.readString(), parcel.readString(), parcel.readString(), parcel.readInt() == 0 ? null : Long.valueOf(parcel.readLong()), parcel.readInt() == 0 ? null : Long.valueOf(parcel.readLong()), (BigDecimal) parcel.readSerializable(), (BigDecimal) parcel.readSerializable(), (BigDecimal) parcel.readSerializable(), (BigDecimal) parcel.readSerializable(), (BigDecimal) parcel.readSerializable(), (BigDecimal) parcel.readSerializable(), (BigDecimal) parcel.readSerializable(), (BigDecimal) parcel.readSerializable(), (BigDecimal) parcel.readSerializable(), (BigDecimal) parcel.readSerializable(), (BigDecimal) parcel.readSerializable(), (BigDecimal) parcel.readSerializable(), (BigDecimal) parcel.readSerializable(), (BigDecimal) parcel.readSerializable(), parcel.readInt() == 0 ? null : Long.valueOf(parcel.readLong()), (BigDecimal) parcel.readSerializable(), parcel.readInt() == 0 ? null : Long.valueOf(parcel.readLong()), parcel.readInt() == 0 ? null : Long.valueOf(parcel.readLong()), parcel.readInt() != 0 ? Long.valueOf(parcel.readLong()) : null);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
+        public final TickerEntity[] newArray(int i11) {
+            return new TickerEntity[i11];
+        }
+    }
+
+    public TickerEntity() {
+        this(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 16777215, null);
+    }
+
+    public static /* synthetic */ TickerEntity copy$default(TickerEntity tickerEntity, String str, String str2, String str3, Long l11, Long l12, BigDecimal bigDecimal, BigDecimal bigDecimal2, BigDecimal bigDecimal3, BigDecimal bigDecimal4, BigDecimal bigDecimal5, BigDecimal bigDecimal6, BigDecimal bigDecimal7, BigDecimal bigDecimal8, BigDecimal bigDecimal9, BigDecimal bigDecimal10, BigDecimal bigDecimal11, BigDecimal bigDecimal12, BigDecimal bigDecimal13, BigDecimal bigDecimal14, Long l13, BigDecimal bigDecimal15, Long l14, Long l15, Long l16, int i11, Object obj) {
+        Long l17;
+        Long l18;
+        String str4 = (i11 & 1) != 0 ? tickerEntity.tradeId : str;
+        String str5 = (i11 & 2) != 0 ? tickerEntity.symbol : str2;
+        String str6 = (i11 & 4) != 0 ? tickerEntity.side : str3;
+        Long l19 = (i11 & 8) != 0 ? tickerEntity.timestamp : l11;
+        Long l21 = (i11 & 16) != 0 ? tickerEntity.sequence : l12;
+        BigDecimal bigDecimal16 = (i11 & 32) != 0 ? tickerEntity.bestAskPrice : bigDecimal;
+        BigDecimal bigDecimal17 = (i11 & 64) != 0 ? tickerEntity.bestAskSize : bigDecimal2;
+        BigDecimal bigDecimal18 = (i11 & 128) != 0 ? tickerEntity.bestBidPrice : bigDecimal3;
+        BigDecimal bigDecimal19 = (i11 & 256) != 0 ? tickerEntity.bestBidSize : bigDecimal4;
+        BigDecimal bigDecimal20 = (i11 & 512) != 0 ? tickerEntity.lowPrice : bigDecimal5;
+        BigDecimal bigDecimal21 = (i11 & 1024) != 0 ? tickerEntity.highPrice : bigDecimal6;
+        BigDecimal bigDecimal22 = (i11 & 2048) != 0 ? tickerEntity.price : bigDecimal7;
+        BigDecimal bigDecimal23 = (i11 & 4096) != 0 ? tickerEntity.priceChgPct : bigDecimal8;
+        BigDecimal bigDecimal24 = (i11 & 8192) != 0 ? tickerEntity.turnover : bigDecimal9;
+        String str7 = str4;
+        BigDecimal bigDecimal25 = (i11 & 16384) != 0 ? tickerEntity.volume : bigDecimal10;
+        BigDecimal bigDecimal26 = (i11 & 32768) != 0 ? tickerEntity.size : bigDecimal11;
+        BigDecimal bigDecimal27 = (i11 & 65536) != 0 ? tickerEntity.lastFundingRate : bigDecimal12;
+        BigDecimal bigDecimal28 = (i11 & 131072) != 0 ? tickerEntity.totalPositionQty : bigDecimal13;
+        BigDecimal bigDecimal29 = (i11 & 262144) != 0 ? tickerEntity.fundingRate : bigDecimal14;
+        Long l22 = (i11 & 524288) != 0 ? tickerEntity.remainSettleTime : l13;
+        BigDecimal bigDecimal30 = (i11 & 1048576) != 0 ? tickerEntity.predictedFundingRate : bigDecimal15;
+        Long l23 = (i11 & 2097152) != 0 ? tickerEntity.granularity : l14;
+        Long l24 = (i11 & 4194304) != 0 ? tickerEntity.currentFundingRateGranularity : l15;
+        if ((i11 & 8388608) != 0) {
+            l18 = l24;
+            l17 = tickerEntity.effectiveFundingRateCycleStartTime;
+        } else {
+            l17 = l16;
+            l18 = l24;
+        }
+        return tickerEntity.copy(str7, str5, str6, l19, l21, bigDecimal16, bigDecimal17, bigDecimal18, bigDecimal19, bigDecimal20, bigDecimal21, bigDecimal22, bigDecimal23, bigDecimal24, bigDecimal25, bigDecimal26, bigDecimal27, bigDecimal28, bigDecimal29, l22, bigDecimal30, l23, l18, l17);
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(@Nullable Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof TickerEntity)) {
+            return false;
+        }
+        TickerEntity tickerEntity = (TickerEntity) other;
+        return Intrinsics.areEqual(this.tradeId, tickerEntity.tradeId) && Intrinsics.areEqual(this.symbol, tickerEntity.symbol) && Intrinsics.areEqual(this.side, tickerEntity.side) && Intrinsics.areEqual(this.timestamp, tickerEntity.timestamp) && Intrinsics.areEqual(this.sequence, tickerEntity.sequence) && Intrinsics.areEqual(this.bestAskPrice, tickerEntity.bestAskPrice) && Intrinsics.areEqual(this.bestAskSize, tickerEntity.bestAskSize) && Intrinsics.areEqual(this.bestBidPrice, tickerEntity.bestBidPrice) && Intrinsics.areEqual(this.bestBidSize, tickerEntity.bestBidSize) && Intrinsics.areEqual(this.lowPrice, tickerEntity.lowPrice) && Intrinsics.areEqual(this.highPrice, tickerEntity.highPrice) && Intrinsics.areEqual(this.price, tickerEntity.price) && Intrinsics.areEqual(this.priceChgPct, tickerEntity.priceChgPct) && Intrinsics.areEqual(this.turnover, tickerEntity.turnover) && Intrinsics.areEqual(this.volume, tickerEntity.volume) && Intrinsics.areEqual(this.size, tickerEntity.size) && Intrinsics.areEqual(this.lastFundingRate, tickerEntity.lastFundingRate) && Intrinsics.areEqual(this.totalPositionQty, tickerEntity.totalPositionQty) && Intrinsics.areEqual(this.fundingRate, tickerEntity.fundingRate) && Intrinsics.areEqual(this.remainSettleTime, tickerEntity.remainSettleTime) && Intrinsics.areEqual(this.predictedFundingRate, tickerEntity.predictedFundingRate) && Intrinsics.areEqual(this.granularity, tickerEntity.granularity) && Intrinsics.areEqual(this.currentFundingRateGranularity, tickerEntity.currentFundingRateGranularity) && Intrinsics.areEqual(this.effectiveFundingRateCycleStartTime, tickerEntity.effectiveFundingRateCycleStartTime);
+    }
+
+    public TickerEntity(@Nullable String str, @Nullable String str2, @Nullable String str3, @Nullable Long l11, @Nullable Long l12, @Nullable BigDecimal bigDecimal, @Nullable BigDecimal bigDecimal2, @Nullable BigDecimal bigDecimal3, @Nullable BigDecimal bigDecimal4, @Nullable BigDecimal bigDecimal5, @Nullable BigDecimal bigDecimal6, @Nullable BigDecimal bigDecimal7, @Nullable BigDecimal bigDecimal8, @Nullable BigDecimal bigDecimal9, @Nullable BigDecimal bigDecimal10, @Nullable BigDecimal bigDecimal11, @Nullable BigDecimal bigDecimal12, @Nullable BigDecimal bigDecimal13, @Nullable BigDecimal bigDecimal14, @Nullable Long l13, @Nullable BigDecimal bigDecimal15, @Nullable Long l14, @Nullable Long l15, @Nullable Long l16) {
+        this.tradeId = str;
+        this.symbol = str2;
+        this.side = str3;
+        this.timestamp = l11;
+        this.sequence = l12;
+        this.bestAskPrice = bigDecimal;
+        this.bestAskSize = bigDecimal2;
+        this.bestBidPrice = bigDecimal3;
+        this.bestBidSize = bigDecimal4;
+        this.lowPrice = bigDecimal5;
+        this.highPrice = bigDecimal6;
+        this.price = bigDecimal7;
+        this.priceChgPct = bigDecimal8;
+        this.turnover = bigDecimal9;
+        this.volume = bigDecimal10;
+        this.size = bigDecimal11;
+        this.lastFundingRate = bigDecimal12;
+        this.totalPositionQty = bigDecimal13;
+        this.fundingRate = bigDecimal14;
+        this.remainSettleTime = l13;
+        this.predictedFundingRate = bigDecimal15;
+        this.granularity = l14;
+        this.currentFundingRateGranularity = l15;
+        this.effectiveFundingRateCycleStartTime = l16;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component1, reason: from getter */
+    public final String getTradeId() {
+        return this.tradeId;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component10, reason: from getter */
+    public final BigDecimal getLowPrice() {
+        return this.lowPrice;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component11, reason: from getter */
+    public final BigDecimal getHighPrice() {
+        return this.highPrice;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component12, reason: from getter */
+    public final BigDecimal getPrice() {
+        return this.price;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component13, reason: from getter */
+    public final BigDecimal getPriceChgPct() {
+        return this.priceChgPct;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component14, reason: from getter */
+    public final BigDecimal getTurnover() {
+        return this.turnover;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component15, reason: from getter */
+    public final BigDecimal getVolume() {
+        return this.volume;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component16, reason: from getter */
+    public final BigDecimal getSize() {
+        return this.size;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component17, reason: from getter */
+    public final BigDecimal getLastFundingRate() {
+        return this.lastFundingRate;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component18, reason: from getter */
+    public final BigDecimal getTotalPositionQty() {
+        return this.totalPositionQty;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component19, reason: from getter */
+    public final BigDecimal getFundingRate() {
+        return this.fundingRate;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component2, reason: from getter */
+    public final String getSymbol() {
+        return this.symbol;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component20, reason: from getter */
+    public final Long getRemainSettleTime() {
+        return this.remainSettleTime;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component21, reason: from getter */
+    public final BigDecimal getPredictedFundingRate() {
+        return this.predictedFundingRate;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component22, reason: from getter */
+    public final Long getGranularity() {
+        return this.granularity;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component23, reason: from getter */
+    public final Long getCurrentFundingRateGranularity() {
+        return this.currentFundingRateGranularity;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component24, reason: from getter */
+    public final Long getEffectiveFundingRateCycleStartTime() {
+        return this.effectiveFundingRateCycleStartTime;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component3, reason: from getter */
+    public final String getSide() {
+        return this.side;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component4, reason: from getter */
+    public final Long getTimestamp() {
+        return this.timestamp;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component5, reason: from getter */
+    public final Long getSequence() {
+        return this.sequence;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component6, reason: from getter */
+    public final BigDecimal getBestAskPrice() {
+        return this.bestAskPrice;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component7, reason: from getter */
+    public final BigDecimal getBestAskSize() {
+        return this.bestAskSize;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component8, reason: from getter */
+    public final BigDecimal getBestBidPrice() {
+        return this.bestBidPrice;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component9, reason: from getter */
+    public final BigDecimal getBestBidSize() {
+        return this.bestBidSize;
+    }
+
+    @NotNull
+    public final TickerEntity copy(@Nullable String tradeId, @Nullable String symbol, @Nullable String side, @Nullable Long timestamp, @Nullable Long sequence, @Nullable BigDecimal bestAskPrice, @Nullable BigDecimal bestAskSize, @Nullable BigDecimal bestBidPrice, @Nullable BigDecimal bestBidSize, @Nullable BigDecimal lowPrice, @Nullable BigDecimal highPrice, @Nullable BigDecimal price, @Nullable BigDecimal priceChgPct, @Nullable BigDecimal turnover, @Nullable BigDecimal volume, @Nullable BigDecimal size, @Nullable BigDecimal lastFundingRate, @Nullable BigDecimal totalPositionQty, @Nullable BigDecimal fundingRate, @Nullable Long remainSettleTime, @Nullable BigDecimal predictedFundingRate, @Nullable Long granularity, @Nullable Long currentFundingRateGranularity, @Nullable Long effectiveFundingRateCycleStartTime) {
+        return new TickerEntity(tradeId, symbol, side, timestamp, sequence, bestAskPrice, bestAskSize, bestBidPrice, bestBidSize, lowPrice, highPrice, price, priceChgPct, turnover, volume, size, lastFundingRate, totalPositionQty, fundingRate, remainSettleTime, predictedFundingRate, granularity, currentFundingRateGranularity, effectiveFundingRateCycleStartTime);
+    }
+
+    @Nullable
+    public final BigDecimal getBestAskPrice() {
+        return this.bestAskPrice;
+    }
+
+    @Nullable
+    public final BigDecimal getBestAskSize() {
+        return this.bestAskSize;
+    }
+
+    @Nullable
+    public final BigDecimal getBestBidPrice() {
+        return this.bestBidPrice;
+    }
+
+    @Nullable
+    public final BigDecimal getBestBidSize() {
+        return this.bestBidSize;
+    }
+
+    @Nullable
+    public final Long getCurrentFundingRateGranularity() {
+        return this.currentFundingRateGranularity;
+    }
+
+    @Nullable
+    public final Long getEffectiveFundingRateCycleStartTime() {
+        return this.effectiveFundingRateCycleStartTime;
+    }
+
+    @Nullable
+    public final BigDecimal getFundingRate() {
+        return this.fundingRate;
+    }
+
+    @Nullable
+    public final Long getGranularity() {
+        return this.granularity;
+    }
+
+    @Nullable
+    public final BigDecimal getHighPrice() {
+        return this.highPrice;
+    }
+
+    @Nullable
+    public final BigDecimal getLastFundingRate() {
+        return this.lastFundingRate;
+    }
+
+    @Nullable
+    public final BigDecimal getLowPrice() {
+        return this.lowPrice;
+    }
+
+    @Nullable
+    public final BigDecimal getPredictedFundingRate() {
+        return this.predictedFundingRate;
+    }
+
+    @Nullable
+    public final BigDecimal getPrice() {
+        return this.price;
+    }
+
+    @Nullable
+    public final BigDecimal getPriceChgPct() {
+        return this.priceChgPct;
+    }
+
+    @Nullable
+    public final Long getRemainSettleTime() {
+        return this.remainSettleTime;
+    }
+
+    @Nullable
+    public final Long getSequence() {
+        return this.sequence;
+    }
+
+    @Nullable
+    public final String getSide() {
+        return this.side;
+    }
+
+    @Nullable
+    public final BigDecimal getSize() {
+        return this.size;
+    }
+
+    @Nullable
+    public final String getSymbol() {
+        return this.symbol;
+    }
+
+    @Nullable
+    public final Long getTimestamp() {
+        return this.timestamp;
+    }
+
+    @Nullable
+    public final BigDecimal getTotalPositionQty() {
+        return this.totalPositionQty;
+    }
+
+    @Nullable
+    public final String getTradeId() {
+        return this.tradeId;
+    }
+
+    @Nullable
+    public final BigDecimal getTurnover() {
+        return this.turnover;
+    }
+
+    @Nullable
+    public final BigDecimal getVolume() {
+        return this.volume;
+    }
+
+    public int hashCode() {
+        String str = this.tradeId;
+        int iHashCode = (str == null ? 0 : str.hashCode()) * 31;
+        String str2 = this.symbol;
+        int iHashCode2 = (iHashCode + (str2 == null ? 0 : str2.hashCode())) * 31;
+        String str3 = this.side;
+        int iHashCode3 = (iHashCode2 + (str3 == null ? 0 : str3.hashCode())) * 31;
+        Long l11 = this.timestamp;
+        int iHashCode4 = (iHashCode3 + (l11 == null ? 0 : l11.hashCode())) * 31;
+        Long l12 = this.sequence;
+        int iHashCode5 = (iHashCode4 + (l12 == null ? 0 : l12.hashCode())) * 31;
+        BigDecimal bigDecimal = this.bestAskPrice;
+        int iHashCode6 = (iHashCode5 + (bigDecimal == null ? 0 : bigDecimal.hashCode())) * 31;
+        BigDecimal bigDecimal2 = this.bestAskSize;
+        int iHashCode7 = (iHashCode6 + (bigDecimal2 == null ? 0 : bigDecimal2.hashCode())) * 31;
+        BigDecimal bigDecimal3 = this.bestBidPrice;
+        int iHashCode8 = (iHashCode7 + (bigDecimal3 == null ? 0 : bigDecimal3.hashCode())) * 31;
+        BigDecimal bigDecimal4 = this.bestBidSize;
+        int iHashCode9 = (iHashCode8 + (bigDecimal4 == null ? 0 : bigDecimal4.hashCode())) * 31;
+        BigDecimal bigDecimal5 = this.lowPrice;
+        int iHashCode10 = (iHashCode9 + (bigDecimal5 == null ? 0 : bigDecimal5.hashCode())) * 31;
+        BigDecimal bigDecimal6 = this.highPrice;
+        int iHashCode11 = (iHashCode10 + (bigDecimal6 == null ? 0 : bigDecimal6.hashCode())) * 31;
+        BigDecimal bigDecimal7 = this.price;
+        int iHashCode12 = (iHashCode11 + (bigDecimal7 == null ? 0 : bigDecimal7.hashCode())) * 31;
+        BigDecimal bigDecimal8 = this.priceChgPct;
+        int iHashCode13 = (iHashCode12 + (bigDecimal8 == null ? 0 : bigDecimal8.hashCode())) * 31;
+        BigDecimal bigDecimal9 = this.turnover;
+        int iHashCode14 = (iHashCode13 + (bigDecimal9 == null ? 0 : bigDecimal9.hashCode())) * 31;
+        BigDecimal bigDecimal10 = this.volume;
+        int iHashCode15 = (iHashCode14 + (bigDecimal10 == null ? 0 : bigDecimal10.hashCode())) * 31;
+        BigDecimal bigDecimal11 = this.size;
+        int iHashCode16 = (iHashCode15 + (bigDecimal11 == null ? 0 : bigDecimal11.hashCode())) * 31;
+        BigDecimal bigDecimal12 = this.lastFundingRate;
+        int iHashCode17 = (iHashCode16 + (bigDecimal12 == null ? 0 : bigDecimal12.hashCode())) * 31;
+        BigDecimal bigDecimal13 = this.totalPositionQty;
+        int iHashCode18 = (iHashCode17 + (bigDecimal13 == null ? 0 : bigDecimal13.hashCode())) * 31;
+        BigDecimal bigDecimal14 = this.fundingRate;
+        int iHashCode19 = (iHashCode18 + (bigDecimal14 == null ? 0 : bigDecimal14.hashCode())) * 31;
+        Long l13 = this.remainSettleTime;
+        int iHashCode20 = (iHashCode19 + (l13 == null ? 0 : l13.hashCode())) * 31;
+        BigDecimal bigDecimal15 = this.predictedFundingRate;
+        int iHashCode21 = (iHashCode20 + (bigDecimal15 == null ? 0 : bigDecimal15.hashCode())) * 31;
+        Long l14 = this.granularity;
+        int iHashCode22 = (iHashCode21 + (l14 == null ? 0 : l14.hashCode())) * 31;
+        Long l15 = this.currentFundingRateGranularity;
+        int iHashCode23 = (iHashCode22 + (l15 == null ? 0 : l15.hashCode())) * 31;
+        Long l16 = this.effectiveFundingRateCycleStartTime;
+        return iHashCode23 + (l16 != null ? l16.hashCode() : 0);
+    }
+
+    public final void setBestAskPrice(@Nullable BigDecimal bigDecimal) {
+        this.bestAskPrice = bigDecimal;
+    }
+
+    public final void setBestAskSize(@Nullable BigDecimal bigDecimal) {
+        this.bestAskSize = bigDecimal;
+    }
+
+    public final void setBestBidPrice(@Nullable BigDecimal bigDecimal) {
+        this.bestBidPrice = bigDecimal;
+    }
+
+    public final void setBestBidSize(@Nullable BigDecimal bigDecimal) {
+        this.bestBidSize = bigDecimal;
+    }
+
+    public final void setCurrentFundingRateGranularity(@Nullable Long l11) {
+        this.currentFundingRateGranularity = l11;
+    }
+
+    public final void setFundingRate(@Nullable BigDecimal bigDecimal) {
+        this.fundingRate = bigDecimal;
+    }
+
+    public final void setGranularity(@Nullable Long l11) {
+        this.granularity = l11;
+    }
+
+    public final void setHighPrice(@Nullable BigDecimal bigDecimal) {
+        this.highPrice = bigDecimal;
+    }
+
+    public final void setLastFundingRate(@Nullable BigDecimal bigDecimal) {
+        this.lastFundingRate = bigDecimal;
+    }
+
+    public final void setLowPrice(@Nullable BigDecimal bigDecimal) {
+        this.lowPrice = bigDecimal;
+    }
+
+    public final void setPredictedFundingRate(@Nullable BigDecimal bigDecimal) {
+        this.predictedFundingRate = bigDecimal;
+    }
+
+    public final void setPrice(@Nullable BigDecimal bigDecimal) {
+        this.price = bigDecimal;
+    }
+
+    public final void setPriceChgPct(@Nullable BigDecimal bigDecimal) {
+        this.priceChgPct = bigDecimal;
+    }
+
+    public final void setRemainSettleTime(@Nullable Long l11) {
+        this.remainSettleTime = l11;
+    }
+
+    public final void setSequence(@Nullable Long l11) {
+        this.sequence = l11;
+    }
+
+    public final void setSide(@Nullable String str) {
+        this.side = str;
+    }
+
+    public final void setSize(@Nullable BigDecimal bigDecimal) {
+        this.size = bigDecimal;
+    }
+
+    public final void setTimestamp(@Nullable Long l11) {
+        this.timestamp = l11;
+    }
+
+    public final void setTotalPositionQty(@Nullable BigDecimal bigDecimal) {
+        this.totalPositionQty = bigDecimal;
+    }
+
+    public final void setTradeId(@Nullable String str) {
+        this.tradeId = str;
+    }
+
+    public final void setTurnover(@Nullable BigDecimal bigDecimal) {
+        this.turnover = bigDecimal;
+    }
+
+    public final void setVolume(@Nullable BigDecimal bigDecimal) {
+        this.volume = bigDecimal;
+    }
+
+    @NotNull
+    public String toString() {
+        return "TickerEntity(tradeId=" + this.tradeId + ", symbol=" + this.symbol + ", side=" + this.side + ", timestamp=" + this.timestamp + ", sequence=" + this.sequence + ", bestAskPrice=" + this.bestAskPrice + ", bestAskSize=" + this.bestAskSize + ", bestBidPrice=" + this.bestBidPrice + ", bestBidSize=" + this.bestBidSize + ", lowPrice=" + this.lowPrice + ", highPrice=" + this.highPrice + ", price=" + this.price + ", priceChgPct=" + this.priceChgPct + ", turnover=" + this.turnover + ", volume=" + this.volume + ", size=" + this.size + ", lastFundingRate=" + this.lastFundingRate + ", totalPositionQty=" + this.totalPositionQty + ", fundingRate=" + this.fundingRate + ", remainSettleTime=" + this.remainSettleTime + ", predictedFundingRate=" + this.predictedFundingRate + ", granularity=" + this.granularity + ", currentFundingRateGranularity=" + this.currentFundingRateGranularity + ", effectiveFundingRateCycleStartTime=" + this.effectiveFundingRateCycleStartTime + ')';
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(@NotNull Parcel dest, int flags) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeString(this.tradeId);
+        dest.writeString(this.symbol);
+        dest.writeString(this.side);
+        Long l11 = this.timestamp;
+        if (l11 == null) {
+            dest.writeInt(0);
+        } else {
+            dest.writeInt(1);
+            dest.writeLong(l11.longValue());
+        }
+        Long l12 = this.sequence;
+        if (l12 == null) {
+            dest.writeInt(0);
+        } else {
+            dest.writeInt(1);
+            dest.writeLong(l12.longValue());
+        }
+        dest.writeSerializable(this.bestAskPrice);
+        dest.writeSerializable(this.bestAskSize);
+        dest.writeSerializable(this.bestBidPrice);
+        dest.writeSerializable(this.bestBidSize);
+        dest.writeSerializable(this.lowPrice);
+        dest.writeSerializable(this.highPrice);
+        dest.writeSerializable(this.price);
+        dest.writeSerializable(this.priceChgPct);
+        dest.writeSerializable(this.turnover);
+        dest.writeSerializable(this.volume);
+        dest.writeSerializable(this.size);
+        dest.writeSerializable(this.lastFundingRate);
+        dest.writeSerializable(this.totalPositionQty);
+        dest.writeSerializable(this.fundingRate);
+        Long l13 = this.remainSettleTime;
+        if (l13 == null) {
+            dest.writeInt(0);
+        } else {
+            dest.writeInt(1);
+            dest.writeLong(l13.longValue());
+        }
+        dest.writeSerializable(this.predictedFundingRate);
+        Long l14 = this.granularity;
+        if (l14 == null) {
+            dest.writeInt(0);
+        } else {
+            dest.writeInt(1);
+            dest.writeLong(l14.longValue());
+        }
+        Long l15 = this.currentFundingRateGranularity;
+        if (l15 == null) {
+            dest.writeInt(0);
+        } else {
+            dest.writeInt(1);
+            dest.writeLong(l15.longValue());
+        }
+        Long l16 = this.effectiveFundingRateCycleStartTime;
+        if (l16 == null) {
+            dest.writeInt(0);
+        } else {
+            dest.writeInt(1);
+            dest.writeLong(l16.longValue());
+        }
+    }
+
+    public /* synthetic */ TickerEntity(String str, String str2, String str3, Long l11, Long l12, BigDecimal bigDecimal, BigDecimal bigDecimal2, BigDecimal bigDecimal3, BigDecimal bigDecimal4, BigDecimal bigDecimal5, BigDecimal bigDecimal6, BigDecimal bigDecimal7, BigDecimal bigDecimal8, BigDecimal bigDecimal9, BigDecimal bigDecimal10, BigDecimal bigDecimal11, BigDecimal bigDecimal12, BigDecimal bigDecimal13, BigDecimal bigDecimal14, Long l13, BigDecimal bigDecimal15, Long l14, Long l15, Long l16, int i11, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i11 & 1) != 0 ? null : str, (i11 & 2) != 0 ? null : str2, (i11 & 4) != 0 ? null : str3, (i11 & 8) != 0 ? null : l11, (i11 & 16) != 0 ? null : l12, (i11 & 32) != 0 ? null : bigDecimal, (i11 & 64) != 0 ? null : bigDecimal2, (i11 & 128) != 0 ? null : bigDecimal3, (i11 & 256) != 0 ? null : bigDecimal4, (i11 & 512) != 0 ? null : bigDecimal5, (i11 & 1024) != 0 ? null : bigDecimal6, (i11 & 2048) != 0 ? null : bigDecimal7, (i11 & 4096) != 0 ? null : bigDecimal8, (i11 & 8192) != 0 ? null : bigDecimal9, (i11 & 16384) != 0 ? null : bigDecimal10, (i11 & 32768) != 0 ? null : bigDecimal11, (i11 & 65536) != 0 ? null : bigDecimal12, (i11 & 131072) != 0 ? null : bigDecimal13, (i11 & 262144) != 0 ? null : bigDecimal14, (i11 & 524288) != 0 ? null : l13, (i11 & 1048576) != 0 ? null : bigDecimal15, (i11 & 2097152) != 0 ? null : l14, (i11 & 4194304) != 0 ? null : l15, (i11 & 8388608) != 0 ? null : l16);
+    }
+}

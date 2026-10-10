@@ -1,0 +1,130 @@
+package com.kubi.payment.chat;
+
+import com.kubi.chat.service.ChatClient;
+import com.kubi.network.retrofit.utils.C19334f;
+import com.kubi.network.retrofit.utils.RetrofitFlowExKt;
+import com.kubi.payment.chat.entity.ChatInfo;
+import com.kubi.utils.ToastCompat;
+import com.kubi.utils.extensions.C27041f;
+import kotlinx.coroutines.InterfaceC41709m0;
+import kotlinx.coroutines.flow.InterfaceC41634e;
+import p852kotlin.Metadata;
+import p852kotlin.ResultKt;
+import p852kotlin.Unit;
+import p852kotlin.coroutines.Continuation;
+import p852kotlin.coroutines.intrinsics.IntrinsicsKt;
+import p852kotlin.coroutines.jvm.internal.DebugMetadata;
+import p852kotlin.coroutines.jvm.internal.SuspendLambda;
+import p852kotlin.jvm.functions.Function0;
+import p852kotlin.jvm.functions.Function2;
+import p852kotlin.jvm.internal.SourceDebugExtension;
+import ro.C44128b;
+
+/* JADX INFO: compiled from: OrderChatHelper.kt */
+/* JADX INFO: loaded from: classes33.dex */
+@Metadata(m90083d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m90084d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m90085k = 3, m90086mv = {2, 2, 0}, m90088xi = 48)
+@DebugMetadata(m90121c = "com.kubi.payment.chat.OrderChatHelper$connectChat$1", m90122f = "OrderChatHelper.kt", m90123i = {}, m90124l = {72}, m90125m = "invokeSuspend", m90126n = {}, m90127s = {})
+@SourceDebugExtension({"SMAP\nOrderChatHelper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 OrderChatHelper.kt\ncom/kubi/payment/chat/OrderChatHelper$connectChat$1\n+ 2 RetrofitFlowEx.kt\ncom/kubi/network/retrofit/utils/RetrofitFlowExKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,123:1\n25#2:124\n26#2:126\n1#3:125\n*S KotlinDebug\n*F\n+ 1 OrderChatHelper.kt\ncom/kubi/payment/chat/OrderChatHelper$connectChat$1\n*L\n79#1:124\n79#1:126\n79#1:125\n*E\n"})
+public final class OrderChatHelper$connectChat$1 extends SuspendLambda implements Function2<InterfaceC41709m0, Continuation<? super Unit>, Object> {
+    final /* synthetic */ Function0<Unit> $action;
+    int label;
+    final /* synthetic */ OrderChatHelper this$0;
+
+    /* JADX INFO: renamed from: com.kubi.payment.chat.OrderChatHelper$connectChat$1$1 */
+    /* JADX INFO: compiled from: OrderChatHelper.kt */
+    @Metadata(m90083d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n"}, m90084d2 = {"<anonymous>", "", "it", "Lcom/kubi/payment/chat/entity/ChatInfo;"}, m90085k = 3, m90086mv = {2, 2, 0}, m90088xi = 48)
+    @DebugMetadata(m90121c = "com.kubi.payment.chat.OrderChatHelper$connectChat$1$1", m90122f = "OrderChatHelper.kt", m90123i = {}, m90124l = {}, m90125m = "invokeSuspend", m90126n = {}, m90127s = {})
+    public static final class C204071 extends SuspendLambda implements Function2<ChatInfo, Continuation<? super Unit>, Object> {
+        final /* synthetic */ Function0<Unit> $action;
+        /* synthetic */ Object L$0;
+        int label;
+        final /* synthetic */ OrderChatHelper this$0;
+
+        @Override // p852kotlin.jvm.functions.Function2
+        public final Object invoke(ChatInfo chatInfo, Continuation<? super Unit> continuation) {
+            return ((C204071) create(chatInfo, continuation)).invokeSuspend(Unit.INSTANCE);
+        }
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public C204071(OrderChatHelper orderChatHelper, Function0<Unit> function0, Continuation<? super C204071> continuation) {
+            super(2, continuation);
+            this.this$0 = orderChatHelper;
+            this.$action = function0;
+        }
+
+        @Override // p852kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+            C204071 c204071 = new C204071(this.this$0, this.$action, continuation);
+            c204071.L$0 = obj;
+            return c204071;
+        }
+
+        @Override // p852kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Object invokeSuspend(Object obj) {
+            ChatInfo chatInfo = (ChatInfo) this.L$0;
+            IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            if (this.label != 0) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            ResultKt.throwOnFailure(obj);
+            String from = chatInfo.getFrom();
+            if (from == null || from.length() == 0) {
+                return Unit.INSTANCE;
+            }
+            this.this$0.f38406d = chatInfo;
+            ChatClient.Companion companion = ChatClient.INSTANCE;
+            companion.init(new ChatConfig(chatInfo.getFrom()));
+            OrderChatHelper orderChatHelper = this.this$0;
+            ChatClient chatClient = companion.get();
+            orderChatHelper.f38407e = chatClient != null ? chatClient.m20390e(chatInfo.getTo()) : null;
+            this.this$0.m46073u();
+            this.$action.invoke();
+            return Unit.INSTANCE;
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public OrderChatHelper$connectChat$1(OrderChatHelper orderChatHelper, Function0<Unit> function0, Continuation<? super OrderChatHelper$connectChat$1> continuation) {
+        super(2, continuation);
+        this.this$0 = orderChatHelper;
+        this.$action = function0;
+    }
+
+    @Override // p852kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new OrderChatHelper$connectChat$1(this.this$0, this.$action, continuation);
+    }
+
+    @Override // p852kotlin.jvm.functions.Function2
+    public final Object invoke(InterfaceC41709m0 interfaceC41709m0, Continuation<? super Unit> continuation) {
+        return ((OrderChatHelper$connectChat$1) create(interfaceC41709m0, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+
+    @Override // p852kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i11 = this.label;
+        if (i11 != 0) {
+            if (i11 == 1) {
+                ResultKt.throwOnFailure(obj);
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+        } else {
+            ResultKt.throwOnFailure(obj);
+            InterfaceC41634e<ChatInfo> interfaceC41634eM95806a = this.this$0.m46070o().m95806a(this.this$0.f38404b);
+            C204071 c204071 = new C204071(this.this$0, this.$action, null);
+            this.label = 1;
+            obj = RetrofitFlowExKt.m42824e(interfaceC41634eM95806a, false, c204071, this, 1, null);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        }
+        Throwable throwable = ((C19334f) obj).getThrowable();
+        if (throwable != null) {
+            ToastCompat.m66441G(C27041f.m66668h(throwable.getMessage()), new Object[0]);
+            C44128b.m97268l("im_connect_error", throwable.getMessage());
+        }
+        return Unit.INSTANCE;
+    }
+}

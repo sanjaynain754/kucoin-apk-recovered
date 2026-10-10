@@ -1,0 +1,19 @@
+package intl;
+
+/* JADX INFO: loaded from: classes60.dex */
+public enum OOOoooooo {
+    FACE_MISSING,
+    ACTION_TIMEOUT,
+    MULTIPLE_FACE,
+    MUCH_MOTION,
+    WEAK_LIGHT,
+    STRONG_LIGHT,
+    AUTH_BAD_NETWORK,
+    CHECKING_BAD_NETWORK,
+    DEVICE_NOT_SUPPORT,
+    MODEL_ERROR,
+    ALREADY_INIT,
+    USER_GIVE_UP,
+    NO_UPLOAD_IMAGE,
+    UNDEFINED
+}

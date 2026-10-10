@@ -1,0 +1,8 @@
+package p852kotlin.reflect.jvm.internal;
+
+/* JADX INFO: loaded from: classes61.dex */
+class Util {
+    public static Object getEnumConstantByName(Class<? extends Enum<?>> cls, String str) {
+        return Enum.valueOf(cls, str);
+    }
+}

@@ -1,0 +1,258 @@
+package androidx.media3.exoplayer.source;
+
+import androidx.annotation.Nullable;
+import androidx.media3.common.C2711C;
+import androidx.media3.common.MediaItem;
+import androidx.media3.common.Timeline;
+import androidx.media3.common.util.Assertions;
+import androidx.media3.common.util.UnstableApi;
+import androidx.media3.common.util.Util;
+import androidx.media3.exoplayer.upstream.Allocator;
+import java.io.IOException;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+import java.util.ArrayList;
+
+/* JADX INFO: loaded from: classes34.dex */
+@UnstableApi
+public final class ClippingMediaSource extends WrappingMediaSource {
+    private final boolean allowDynamicClippingUpdates;
+
+    @Nullable
+    private IllegalClippingException clippingError;
+
+    @Nullable
+    private ClippingTimeline clippingTimeline;
+    private final boolean enableInitialDiscontinuity;
+    private final long endUs;
+    private final ArrayList<ClippingMediaPeriod> mediaPeriods;
+    private long periodEndUs;
+    private long periodStartUs;
+    private final boolean relativeToDefaultPosition;
+    private final long startUs;
+    private final Timeline.Window window;
+
+    public static final class ClippingTimeline extends ForwardingTimeline {
+        private final long durationUs;
+        private final long endUs;
+        private final boolean isDynamic;
+        private final long startUs;
+
+        public ClippingTimeline(Timeline timeline, long j11, long j12) throws IllegalClippingException {
+            super(timeline);
+            boolean z11 = false;
+            if (timeline.getPeriodCount() != 1) {
+                throw new IllegalClippingException(0);
+            }
+            Timeline.Window window = timeline.getWindow(0, new Timeline.Window());
+            long jMax = Math.max(0L, j11);
+            if (!window.isPlaceholder && jMax != 0 && !window.isSeekable) {
+                throw new IllegalClippingException(1);
+            }
+            long jMax2 = j12 == Long.MIN_VALUE ? window.durationUs : Math.max(0L, j12);
+            long j13 = window.durationUs;
+            if (j13 != C2711C.TIME_UNSET) {
+                long j14 = jMax2 > j13 ? j13 : jMax2;
+                if (jMax > j14) {
+                    throw new IllegalClippingException(2, jMax, j14);
+                }
+                jMax2 = j14;
+            }
+            this.startUs = jMax;
+            this.endUs = jMax2;
+            this.durationUs = jMax2 == C2711C.TIME_UNSET ? -9223372036854775807L : jMax2 - jMax;
+            if (window.isDynamic && (jMax2 == C2711C.TIME_UNSET || (j13 != C2711C.TIME_UNSET && jMax2 == j13))) {
+                z11 = true;
+            }
+            this.isDynamic = z11;
+        }
+
+        @Override // androidx.media3.exoplayer.source.ForwardingTimeline, androidx.media3.common.Timeline
+        public Timeline.Period getPeriod(int i11, Timeline.Period period, boolean z11) {
+            this.timeline.getPeriod(0, period, z11);
+            long positionInWindowUs = period.getPositionInWindowUs() - this.startUs;
+            long j11 = this.durationUs;
+            long j12 = C2711C.TIME_UNSET;
+            if (j11 != C2711C.TIME_UNSET) {
+                j12 = j11 - positionInWindowUs;
+            }
+            return period.set(period.f2792id, period.uid, 0, j12, positionInWindowUs);
+        }
+
+        @Override // androidx.media3.exoplayer.source.ForwardingTimeline, androidx.media3.common.Timeline
+        public Timeline.Window getWindow(int i11, Timeline.Window window, long j11) {
+            this.timeline.getWindow(0, window, 0L);
+            long j12 = window.positionInFirstPeriodUs;
+            long j13 = this.startUs;
+            window.positionInFirstPeriodUs = j12 + j13;
+            window.durationUs = this.durationUs;
+            window.isDynamic = this.isDynamic;
+            long j14 = window.defaultPositionUs;
+            if (j14 != C2711C.TIME_UNSET) {
+                long jMax = Math.max(j14, j13);
+                window.defaultPositionUs = jMax;
+                long j15 = this.endUs;
+                if (j15 != C2711C.TIME_UNSET) {
+                    jMax = Math.min(jMax, j15);
+                }
+                window.defaultPositionUs = jMax - this.startUs;
+            }
+            long jUsToMs = Util.usToMs(this.startUs);
+            long j16 = window.presentationStartTimeMs;
+            if (j16 != C2711C.TIME_UNSET) {
+                window.presentationStartTimeMs = j16 + jUsToMs;
+            }
+            long j17 = window.windowStartTimeMs;
+            if (j17 != C2711C.TIME_UNSET) {
+                window.windowStartTimeMs = j17 + jUsToMs;
+            }
+            return window;
+        }
+    }
+
+    public static final class IllegalClippingException extends IOException {
+        public static final int REASON_INVALID_PERIOD_COUNT = 0;
+        public static final int REASON_NOT_SEEKABLE_TO_START = 1;
+        public static final int REASON_START_EXCEEDS_END = 2;
+        public final int reason;
+
+        @Target({ElementType.TYPE_USE})
+        @Documented
+        @Retention(RetentionPolicy.SOURCE)
+        public @interface Reason {
+        }
+
+        public IllegalClippingException(int i11) {
+            this(i11, C2711C.TIME_UNSET, C2711C.TIME_UNSET);
+        }
+
+        public IllegalClippingException(int i11, long j11, long j12) {
+            super("Illegal clipping: " + getReasonDescription(i11, j11, j12));
+            this.reason = i11;
+        }
+
+        private static String getReasonDescription(int i11, long j11, long j12) {
+            if (i11 == 0) {
+                return "invalid period count";
+            }
+            if (i11 == 1) {
+                return "not seekable to start";
+            }
+            if (i11 != 2) {
+                return "unknown";
+            }
+            Assertions.checkState((j11 == C2711C.TIME_UNSET || j12 == C2711C.TIME_UNSET) ? false : true);
+            return "start exceeds end. Start time: " + j11 + ", End time: " + j12;
+        }
+    }
+
+    public ClippingMediaSource(MediaSource mediaSource, long j11, long j12) {
+        this(mediaSource, j11, j12, true, false, false);
+    }
+
+    public ClippingMediaSource(MediaSource mediaSource, long j11) {
+        this(mediaSource, 0L, j11, true, false, true);
+    }
+
+    private void refreshClippedTimeline(Timeline timeline) {
+        long j11;
+        timeline.getWindow(0, this.window);
+        long positionInFirstPeriodUs = this.window.getPositionInFirstPeriodUs();
+        long j12 = Long.MIN_VALUE;
+        if (this.clippingTimeline == null || this.mediaPeriods.isEmpty() || this.allowDynamicClippingUpdates) {
+            j11 = this.startUs;
+            long j13 = this.endUs;
+            if (this.relativeToDefaultPosition) {
+                long defaultPositionUs = this.window.getDefaultPositionUs();
+                j11 += defaultPositionUs;
+                j13 += defaultPositionUs;
+            }
+            this.periodStartUs = positionInFirstPeriodUs + j11;
+            this.periodEndUs = this.endUs != Long.MIN_VALUE ? positionInFirstPeriodUs + j13 : Long.MIN_VALUE;
+            int size = this.mediaPeriods.size();
+            for (int i11 = 0; i11 < size; i11++) {
+                this.mediaPeriods.get(i11).updateClipping(this.periodStartUs, this.periodEndUs);
+            }
+            j12 = j13;
+        } else {
+            j11 = this.periodStartUs - positionInFirstPeriodUs;
+            if (this.endUs != Long.MIN_VALUE) {
+                j12 = this.periodEndUs - positionInFirstPeriodUs;
+            }
+        }
+        try {
+            ClippingTimeline clippingTimeline = new ClippingTimeline(timeline, j11, j12);
+            this.clippingTimeline = clippingTimeline;
+            refreshSourceInfo(clippingTimeline);
+        } catch (IllegalClippingException e11) {
+            this.clippingError = e11;
+            for (int i12 = 0; i12 < this.mediaPeriods.size(); i12++) {
+                this.mediaPeriods.get(i12).setClippingError(this.clippingError);
+            }
+        }
+    }
+
+    @Override // androidx.media3.exoplayer.source.WrappingMediaSource, androidx.media3.exoplayer.source.MediaSource
+    public MediaPeriod createPeriod(MediaSource.MediaPeriodId mediaPeriodId, Allocator allocator, long j11) {
+        ClippingMediaPeriod clippingMediaPeriod = new ClippingMediaPeriod(this.mediaSource.createPeriod(mediaPeriodId, allocator, j11), this.enableInitialDiscontinuity, this.periodStartUs, this.periodEndUs);
+        this.mediaPeriods.add(clippingMediaPeriod);
+        return clippingMediaPeriod;
+    }
+
+    @Override // androidx.media3.exoplayer.source.CompositeMediaSource, androidx.media3.exoplayer.source.MediaSource
+    public void maybeThrowSourceInfoRefreshError() throws IOException {
+        IllegalClippingException illegalClippingException = this.clippingError;
+        if (illegalClippingException != null) {
+            throw illegalClippingException;
+        }
+        super.maybeThrowSourceInfoRefreshError();
+    }
+
+    @Override // androidx.media3.exoplayer.source.WrappingMediaSource
+    public void onChildSourceInfoRefreshed(Timeline timeline) {
+        if (this.clippingError != null) {
+            return;
+        }
+        refreshClippedTimeline(timeline);
+    }
+
+    @Override // androidx.media3.exoplayer.source.WrappingMediaSource, androidx.media3.exoplayer.source.MediaSource
+    public void releasePeriod(MediaPeriod mediaPeriod) {
+        Assertions.checkState(this.mediaPeriods.remove(mediaPeriod));
+        this.mediaSource.releasePeriod(((ClippingMediaPeriod) mediaPeriod).mediaPeriod);
+        if (!this.mediaPeriods.isEmpty() || this.allowDynamicClippingUpdates) {
+            return;
+        }
+        refreshClippedTimeline(((ClippingTimeline) Assertions.checkNotNull(this.clippingTimeline)).timeline);
+    }
+
+    public ClippingMediaSource(MediaSource mediaSource, long j11, long j12, boolean z11, boolean z12, boolean z13) {
+        super((MediaSource) Assertions.checkNotNull(mediaSource));
+        Assertions.checkArgument(j11 >= 0);
+        this.startUs = j11;
+        this.endUs = j12;
+        this.enableInitialDiscontinuity = z11;
+        this.allowDynamicClippingUpdates = z12;
+        this.relativeToDefaultPosition = z13;
+        this.mediaPeriods = new ArrayList<>();
+        this.window = new Timeline.Window();
+    }
+
+    @Override // androidx.media3.exoplayer.source.WrappingMediaSource, androidx.media3.exoplayer.source.MediaSource
+    public boolean canUpdateMediaItem(MediaItem mediaItem) {
+        if (getMediaItem().clippingConfiguration.equals(mediaItem.clippingConfiguration) && this.mediaSource.canUpdateMediaItem(mediaItem)) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // androidx.media3.exoplayer.source.CompositeMediaSource, androidx.media3.exoplayer.source.BaseMediaSource
+    public void releaseSourceInternal() {
+        super.releaseSourceInternal();
+        this.clippingError = null;
+        this.clippingTimeline = null;
+    }
+}

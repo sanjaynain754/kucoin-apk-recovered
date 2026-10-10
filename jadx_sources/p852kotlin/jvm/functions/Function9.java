@@ -1,0 +1,11 @@
+package p852kotlin.jvm.functions;
+
+import p852kotlin.Function;
+import p852kotlin.Metadata;
+
+/* JADX INFO: compiled from: Functions.kt */
+/* JADX INFO: loaded from: classes23.dex */
+@Metadata(m90083d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\f\bf\u0018\u0000*\u0006\b\u0000\u0010\u0001 \u0000*\u0006\b\u0001\u0010\u0002 \u0000*\u0006\b\u0002\u0010\u0003 \u0000*\u0006\b\u0003\u0010\u0004 \u0000*\u0006\b\u0004\u0010\u0005 \u0000*\u0006\b\u0005\u0010\u0006 \u0000*\u0006\b\u0006\u0010\u0007 \u0000*\u0006\b\u0007\u0010\b \u0000*\u0006\b\b\u0010\t \u0000*\u0006\b\t\u0010\n \u00012\b\u0012\u0004\u0012\u0002H\n0\u000bJV\u0010\f\u001a\u00028\t2\u0006\u0010\r\u001a\u00028\u00002\u0006\u0010\u000e\u001a\u00028\u00012\u0006\u0010\u000f\u001a\u00028\u00022\u0006\u0010\u0010\u001a\u00028\u00032\u0006\u0010\u0011\u001a\u00028\u00042\u0006\u0010\u0012\u001a\u00028\u00052\u0006\u0010\u0013\u001a\u00028\u00062\u0006\u0010\u0014\u001a\u00028\u00072\u0006\u0010\u0015\u001a\u00028\bH¦\u0002¢\u0006\u0002\u0010\u0016¨\u0006\u0017"}, m90084d2 = {"Lkotlin/jvm/functions/Function9;", "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "R", "Lkotlin/Function;", "invoke", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", "kotlin-stdlib"}, m90085k = 1, m90086mv = {2, 2, 0}, m90088xi = 48)
+public interface Function9<P1, P2, P3, P4, P5, P6, P7, P8, P9, R> extends Function<R> {
+    R invoke(P1 p11, P2 p12, P3 p13, P4 p14, P5 p15, P6 p16, P7 p17, P8 p18, P9 p19);
+}

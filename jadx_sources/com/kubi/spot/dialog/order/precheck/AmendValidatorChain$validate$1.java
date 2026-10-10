@@ -1,0 +1,41 @@
+package com.kubi.spot.dialog.order.precheck;
+
+import com.tencent.qcloud.tuicore.TUIConstants;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import p852kotlin.Metadata;
+import p852kotlin.coroutines.Continuation;
+import p852kotlin.coroutines.jvm.internal.ContinuationImpl;
+import p852kotlin.coroutines.jvm.internal.DebugMetadata;
+
+/* JADX INFO: compiled from: AmendValidatorChain.kt */
+/* JADX INFO: loaded from: classes47.dex */
+@Metadata(m90085k = 3, m90086mv = {2, 2, 0}, m90088xi = 48)
+@DebugMetadata(m90121c = "com.kubi.spot.dialog.order.precheck.AmendValidatorChain", m90122f = "AmendValidatorChain.kt", m90123i = {0, 0, 0, 0, 0, 0, 0}, m90124l = {16}, m90125m = "validate", m90126n = {"context", TUIConstants.TIMPush.NOTIFICATION.ENTITY, "$this$forEach$iv", "element$iv", "v", "$i$f$forEach", "$i$a$-forEach-AmendValidatorChain$validate$2"}, m90127s = {"L$0", "L$1", "L$2", "L$4", "L$5", "I$0", "I$1"})
+public final class AmendValidatorChain$validate$1 extends ContinuationImpl {
+    int I$0;
+    int I$1;
+    Object L$0;
+    Object L$1;
+    Object L$2;
+    Object L$3;
+    Object L$4;
+    Object L$5;
+    int label;
+    /* synthetic */ Object result;
+    final /* synthetic */ AmendValidatorChain this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public AmendValidatorChain$validate$1(AmendValidatorChain amendValidatorChain, Continuation<? super AmendValidatorChain$validate$1> continuation) {
+        super(continuation);
+        this.this$0 = amendValidatorChain;
+    }
+
+    @Override // p852kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    @Nullable
+    public final Object invokeSuspend(@NotNull Object obj) {
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        return this.this$0.m61740a(null, null, this);
+    }
+}

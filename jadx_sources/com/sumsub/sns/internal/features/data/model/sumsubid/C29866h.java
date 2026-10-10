@@ -1,0 +1,26 @@
+package com.sumsub.sns.internal.features.data.model.sumsubid;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+
+/* JADX INFO: renamed from: com.sumsub.sns.internal.features.data.model.sumsubid.h */
+/* JADX INFO: compiled from: r8-map-id-e8070c335b728e491f9067563c2bfcb5588b777f644873c971594ef64ebda208 */
+/* JADX INFO: loaded from: classes59.dex */
+public final class C29866h implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final Object createFromParcel(Parcel parcel) {
+        Boolean boolValueOf;
+        String string = parcel.readString();
+        if (parcel.readInt() == 0) {
+            boolValueOf = null;
+        } else {
+            boolValueOf = Boolean.valueOf(parcel.readInt() != 0);
+        }
+        return new C29872m(string, boolValueOf, parcel.readString(), parcel.readInt() != 0 ? C29871l.CREATOR.createFromParcel(parcel) : null);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final Object[] newArray(int i11) {
+        return new C29872m[i11];
+    }
+}

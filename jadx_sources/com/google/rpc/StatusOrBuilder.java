@@ -1,0 +1,21 @@
+package com.google.rpc;
+
+import com.google.protobuf.Any;
+import com.google.protobuf.ByteString;
+import com.google.protobuf.MessageLiteOrBuilder;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes56.dex */
+public interface StatusOrBuilder extends MessageLiteOrBuilder {
+    int getCode();
+
+    Any getDetails(int i11);
+
+    int getDetailsCount();
+
+    List<Any> getDetailsList();
+
+    String getMessage();
+
+    ByteString getMessageBytes();
+}

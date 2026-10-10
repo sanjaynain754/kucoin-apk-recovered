@@ -1,0 +1,15 @@
+package com.kubi.kumex.helper;
+
+import androidx.fragment.app.FragmentManager;
+import org.jetbrains.annotations.NotNull;
+import p852kotlin.Metadata;
+
+/* JADX INFO: renamed from: com.kubi.kumex.helper.u, reason: from Kotlin metadata */
+/* JADX INFO: compiled from: TradePwdHelper.kt */
+/* JADX INFO: loaded from: classes20.dex */
+@Metadata(m90083d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b&\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J\b\u0010\u0004\u001a\u00020\u0005H\u0016J\b\u0010\u0006\u001a\u00020\u0005H\u0016J\b\u0010\u0007\u001a\u00020\bH&J\u0010\u0010\t\u001a\u00020\u00052\u0006\u0010\n\u001a\u00020\u000bH\u0016¨\u0006\f"}, m90084d2 = {"Lcom/kubi/kumex/helper/ITradeWrapper;", "", "<init>", "()V", "showLoading", "", "hideLoading", "getSupportManager", "Landroidx/fragment/app/FragmentManager;", "addDisposable", "disposable", "Lio/reactivex/disposables/Disposable;", "KumexLib_googleRelease"}, m90085k = 1, m90086mv = {2, 2, 0}, m90088xi = 48)
+public abstract class ITradeWrapper {
+    @NotNull
+    /* JADX INFO: renamed from: a */
+    public abstract FragmentManager mo33947a();
+}

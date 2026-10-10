@@ -1,0 +1,179 @@
+package androidx.media3.datasource.cache;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.WorkerThread;
+import androidx.media3.common.util.UnstableApi;
+import androidx.media3.datasource.DataSourceUtil;
+import androidx.media3.datasource.DataSpec;
+import java.io.IOException;
+import java.io.InterruptedIOException;
+
+/* JADX INFO: loaded from: classes34.dex */
+@UnstableApi
+public final class CacheWriter {
+    public static final int DEFAULT_BUFFER_SIZE_BYTES = 131072;
+    private long bytesCached;
+    private final Cache cache;
+    private final String cacheKey;
+    private final CacheDataSource dataSource;
+    private final DataSpec dataSpec;
+    private long endPosition;
+    private volatile boolean isCanceled;
+    private long nextPosition;
+
+    @Nullable
+    private final ProgressListener progressListener;
+    private final byte[] temporaryBuffer;
+
+    public interface ProgressListener {
+        void onProgress(long j11, long j12, long j13);
+    }
+
+    public void cancel() {
+        this.isCanceled = true;
+    }
+
+    private long getLength() {
+        long j11 = this.endPosition;
+        if (j11 == -1) {
+            return -1L;
+        }
+        return j11 - this.dataSpec.position;
+    }
+
+    private void onNewBytesCached(long j11) {
+        this.bytesCached += j11;
+        ProgressListener progressListener = this.progressListener;
+        if (progressListener != null) {
+            progressListener.onProgress(getLength(), this.bytesCached, j11);
+        }
+    }
+
+    private void onRequestEndPosition(long j11) {
+        if (this.endPosition == j11) {
+            return;
+        }
+        this.endPosition = j11;
+        ProgressListener progressListener = this.progressListener;
+        if (progressListener != null) {
+            progressListener.onProgress(getLength(), this.bytesCached, 0L);
+        }
+    }
+
+    private long readBlockToCache(long j11, long j12) throws IOException {
+        long jOpen;
+        boolean z11 = true;
+        boolean z12 = j11 + j12 == this.endPosition || j12 == -1;
+        if (j12 != -1) {
+            try {
+                jOpen = this.dataSource.open(this.dataSpec.buildUpon().setPosition(j11).setLength(j12).build());
+            } catch (IOException unused) {
+                DataSourceUtil.closeQuietly(this.dataSource);
+                z11 = false;
+                jOpen = -1;
+            }
+        } else {
+            z11 = false;
+            jOpen = -1;
+        }
+        if (!z11) {
+            throwIfCanceled();
+            try {
+                jOpen = this.dataSource.open(this.dataSpec.buildUpon().setPosition(j11).setLength(-1L).build());
+            } catch (IOException e11) {
+                DataSourceUtil.closeQuietly(this.dataSource);
+                throw e11;
+            }
+        }
+        if (z12 && jOpen != -1) {
+            try {
+                onRequestEndPosition(jOpen + j11);
+            } catch (IOException e12) {
+                DataSourceUtil.closeQuietly(this.dataSource);
+                throw e12;
+            }
+        }
+        int i11 = 0;
+        int i12 = 0;
+        while (i11 != -1) {
+            throwIfCanceled();
+            CacheDataSource cacheDataSource = this.dataSource;
+            byte[] bArr = this.temporaryBuffer;
+            i11 = cacheDataSource.read(bArr, 0, bArr.length);
+            if (i11 != -1) {
+                onNewBytesCached(i11);
+                i12 += i11;
+            }
+        }
+        if (z12) {
+            onRequestEndPosition(j11 + ((long) i12));
+        }
+        this.dataSource.close();
+        return i12;
+    }
+
+    private void throwIfCanceled() throws InterruptedIOException {
+        if (this.isCanceled) {
+            throw new InterruptedIOException();
+        }
+    }
+
+    public CacheWriter(CacheDataSource cacheDataSource, DataSpec dataSpec, @Nullable byte[] bArr, @Nullable ProgressListener progressListener) {
+        this.dataSource = cacheDataSource;
+        this.cache = cacheDataSource.getCache();
+        this.dataSpec = dataSpec;
+        this.temporaryBuffer = bArr == null ? new byte[131072] : bArr;
+        this.progressListener = progressListener;
+        this.cacheKey = cacheDataSource.getCacheKeyFactory().buildCacheKey(dataSpec);
+        this.nextPosition = dataSpec.position;
+    }
+
+    @WorkerThread
+    public void cache() throws IOException {
+        long j11;
+        throwIfCanceled();
+        Cache cache = this.cache;
+        String str = this.cacheKey;
+        DataSpec dataSpec = this.dataSpec;
+        this.bytesCached = cache.getCachedBytes(str, dataSpec.position, dataSpec.length);
+        DataSpec dataSpec2 = this.dataSpec;
+        long j12 = dataSpec2.length;
+        if (j12 != -1) {
+            this.endPosition = dataSpec2.position + j12;
+        } else {
+            long contentLength = ContentMetadata.getContentLength(this.cache.getContentMetadata(this.cacheKey));
+            if (contentLength == -1) {
+                contentLength = -1;
+            }
+            this.endPosition = contentLength;
+        }
+        ProgressListener progressListener = this.progressListener;
+        if (progressListener != null) {
+            progressListener.onProgress(getLength(), this.bytesCached, 0L);
+        }
+        while (true) {
+            long j13 = this.endPosition;
+            if (j13 != -1 && this.nextPosition >= j13) {
+                return;
+            }
+            throwIfCanceled();
+            long j14 = this.endPosition;
+            if (j14 == -1) {
+                j11 = Long.MAX_VALUE;
+            } else {
+                j11 = j14 - this.nextPosition;
+            }
+            long cachedLength = this.cache.getCachedLength(this.cacheKey, this.nextPosition, j11);
+            if (cachedLength > 0) {
+                this.nextPosition += cachedLength;
+            } else {
+                long j15 = -cachedLength;
+                if (j15 == Long.MAX_VALUE) {
+                    j15 = -1;
+                }
+                long j16 = this.nextPosition;
+                this.nextPosition = j16 + readBlockToCache(j16, j15);
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+package androidx.media3.exoplayer.video;
+
+import android.view.Surface;
+import androidx.media3.common.util.Size;
+import androidx.media3.common.util.UnstableApi;
+
+/* JADX INFO: loaded from: classes34.dex */
+@UnstableApi
+public interface VideoSinkProvider {
+    void clearOutputSurfaceInfo();
+
+    VideoSink getSink();
+
+    void release();
+
+    void setOutputSurfaceInfo(Surface surface, Size size);
+}

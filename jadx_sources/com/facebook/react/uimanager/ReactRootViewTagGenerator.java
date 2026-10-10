@@ -1,0 +1,29 @@
+package com.facebook.react.uimanager;
+
+import org.jetbrains.annotations.NotNull;
+import p852kotlin.Metadata;
+import p852kotlin.jvm.JvmStatic;
+import p852kotlin.jvm.internal.SourceDebugExtension;
+
+/* JADX INFO: compiled from: ReactRootViewTagGenerator.kt */
+/* JADX INFO: loaded from: classes45.dex */
+@Metadata(m90083d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\b\u0010\u0007\u001a\u00020\u0005H\u0007R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0005X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\b"}, m90084d2 = {"Lcom/facebook/react/uimanager/ReactRootViewTagGenerator;", "", "<init>", "()V", "ROOT_VIEW_TAG_INCREMENT", "", "nextRootViewTag", "getNextRootViewTag", "ReactAndroid_release"}, m90085k = 1, m90086mv = {2, 0, 0}, m90088xi = 48)
+@SourceDebugExtension({"SMAP\nReactRootViewTagGenerator.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ReactRootViewTagGenerator.kt\ncom/facebook/react/uimanager/ReactRootViewTagGenerator\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,23:1\n1#2:24\n*E\n"})
+public final class ReactRootViewTagGenerator {
+    private static final int ROOT_VIEW_TAG_INCREMENT = 10;
+
+    @NotNull
+    public static final ReactRootViewTagGenerator INSTANCE = new ReactRootViewTagGenerator();
+    private static int nextRootViewTag = 1;
+
+    @JvmStatic
+    public static final synchronized int getNextRootViewTag() {
+        int i11;
+        i11 = nextRootViewTag;
+        nextRootViewTag = i11 + 10;
+        return i11;
+    }
+
+    private ReactRootViewTagGenerator() {
+    }
+}

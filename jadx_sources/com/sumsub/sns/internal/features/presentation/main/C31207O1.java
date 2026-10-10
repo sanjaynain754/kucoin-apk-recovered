@@ -1,0 +1,95 @@
+package com.sumsub.sns.internal.features.presentation.main;
+
+import com.sumsub.sns.core.presentation.base.C28150t0;
+import com.sumsub.sns.internal.log.C33272c;
+import kotlinx.coroutines.flow.InterfaceC41635f;
+import p852kotlin.Pair;
+import p852kotlin.ResultKt;
+import p852kotlin.TuplesKt;
+import p852kotlin.Unit;
+import p852kotlin.coroutines.Continuation;
+import p852kotlin.coroutines.intrinsics.IntrinsicsKt;
+import p852kotlin.coroutines.jvm.internal.Boxing;
+import p852kotlin.coroutines.jvm.internal.SuspendLambda;
+import p852kotlin.jvm.functions.Function5;
+
+/* JADX INFO: renamed from: com.sumsub.sns.internal.features.presentation.main.O1 */
+/* JADX INFO: compiled from: r8-map-id-e8070c335b728e491f9067563c2bfcb5588b777f644873c971594ef64ebda208 */
+/* JADX INFO: loaded from: classes59.dex */
+public final class C31207O1 extends SuspendLambda implements Function5 {
+
+    /* JADX INFO: renamed from: a */
+    public int f63108a;
+
+    /* JADX INFO: renamed from: b */
+    public /* synthetic */ InterfaceC41635f f63109b;
+
+    /* JADX INFO: renamed from: c */
+    public /* synthetic */ C28150t0 f63110c;
+
+    /* JADX INFO: renamed from: d */
+    public /* synthetic */ boolean f63111d;
+
+    /* JADX INFO: renamed from: e */
+    public /* synthetic */ int f63112e;
+
+    /* JADX INFO: renamed from: f */
+    public final /* synthetic */ C31243a2 f63113f;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C31207O1(C31243a2 c31243a2, Continuation continuation) {
+        super(5, continuation);
+        this.f63113f = c31243a2;
+    }
+
+    @Override // p852kotlin.jvm.functions.Function5
+    public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4, Object obj5) {
+        boolean zBooleanValue = ((Boolean) obj3).booleanValue();
+        int iIntValue = ((Number) obj4).intValue();
+        C31207O1 c31207o1 = new C31207O1(this.f63113f, (Continuation) obj5);
+        c31207o1.f63109b = (InterfaceC41635f) obj;
+        c31207o1.f63110c = (C28150t0) obj2;
+        c31207o1.f63111d = zBooleanValue;
+        c31207o1.f63112e = iIntValue;
+        return c31207o1.invokeSuspend(Unit.INSTANCE);
+    }
+
+    @Override // p852kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        long j11;
+        boolean z11;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i11 = this.f63108a;
+        if (i11 != 0) {
+            if (i11 == 1) {
+                ResultKt.throwOnFailure(obj);
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+        } else {
+            ResultKt.throwOnFailure(obj);
+            InterfaceC41635f interfaceC41635f = this.f63109b;
+            C28150t0 c28150t0 = this.f63110c;
+            boolean z12 = this.f63111d;
+            int i12 = this.f63112e;
+            C33272c.f67816e.f67810a.mo68955d("SNSAppViewModel2", "onProgress: progress=" + z12 + ", internalProgress=" + i12 + ", internalState=" + this.f63113f.getViewModelInternalState().getValue(), null);
+            if (!z12 && i12 <= 0 && c28150t0.f57390e && c28150t0.f57391f) {
+                j11 = 350;
+            } else {
+                j11 = 0;
+            }
+            if (c28150t0.f57390e && c28150t0.f57391f && !z12 && i12 <= 0) {
+                z11 = false;
+            } else {
+                z11 = true;
+            }
+            Pair pairM90091to = TuplesKt.m90091to(Boxing.boxBoolean(z11), Boxing.boxLong(j11));
+            this.f63109b = null;
+            this.f63108a = 1;
+            if (interfaceC41635f.emit(pairM90091to, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        }
+        return Unit.INSTANCE;
+    }
+}

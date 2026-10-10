@@ -1,0 +1,17 @@
+package androidx.camera.camera2.internal.compat.workaround;
+
+import androidx.camera.camera2.internal.compat.quirk.DeviceQuirks;
+import androidx.camera.camera2.internal.compat.quirk.ExtraSupportedSurfaceCombinationsQuirk;
+import androidx.camera.core.impl.SurfaceCombination;
+import java.util.ArrayList;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes23.dex */
+public class ExtraSupportedSurfaceCombinationsContainer {
+    private final ExtraSupportedSurfaceCombinationsQuirk mQuirk = (ExtraSupportedSurfaceCombinationsQuirk) DeviceQuirks.get(ExtraSupportedSurfaceCombinationsQuirk.class);
+
+    public List<SurfaceCombination> get(String str) {
+        ExtraSupportedSurfaceCombinationsQuirk extraSupportedSurfaceCombinationsQuirk = this.mQuirk;
+        return extraSupportedSurfaceCombinationsQuirk == null ? new ArrayList() : extraSupportedSurfaceCombinationsQuirk.getExtraSupportedSurfaceCombinations(str);
+    }
+}

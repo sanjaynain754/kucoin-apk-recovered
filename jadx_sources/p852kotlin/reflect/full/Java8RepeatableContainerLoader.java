@@ -1,0 +1,87 @@
+package p852kotlin.reflect.full;
+
+import com.tencent.bugly.proguard.C33590cg;
+import java.lang.annotation.Annotation;
+import java.lang.annotation.Repeatable;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import p852kotlin.Metadata;
+import p852kotlin.jvm.internal.Intrinsics;
+import p852kotlin.jvm.internal.SourceDebugExtension;
+
+/* JADX INFO: compiled from: KAnnotatedElements.kt */
+/* JADX INFO: loaded from: classes61.dex */
+@Metadata(m90083d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0010\u001b\n\u0002\b\u0003\bÂ\u0002\u0018\u00002\u00020\u0001:\u0001\u000fB\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\b\u0010\n\u001a\u00020\u0005H\u0002J \u0010\u000b\u001a\f\u0012\u0006\b\u0001\u0012\u00020\r\u0018\u00010\f2\u000e\u0010\u000e\u001a\n\u0012\u0006\b\u0001\u0012\u00020\r0\fR\u001c\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\t¨\u0006\u0010"}, m90084d2 = {"Lkotlin/reflect/full/Java8RepeatableContainerLoader;", "", "<init>", "()V", C33590cg.f69440j, "Lkotlin/reflect/full/Java8RepeatableContainerLoader$Cache;", "getCache", "()Lkotlin/reflect/full/Java8RepeatableContainerLoader$Cache;", "setCache", "(Lkotlin/reflect/full/Java8RepeatableContainerLoader$Cache;)V", "buildCache", "loadRepeatableContainer", "Ljava/lang/Class;", "", "klass", "Cache", "kotlin-reflection"}, m90085k = 1, m90086mv = {2, 2, 0}, m90088xi = 48)
+@SourceDebugExtension({"SMAP\nKAnnotatedElements.kt\nKotlin\n*S Kotlin\n*F\n+ 1 KAnnotatedElements.kt\nkotlin/reflect/full/Java8RepeatableContainerLoader\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,102:1\n1#2:103\n*E\n"})
+final class Java8RepeatableContainerLoader {
+
+    @NotNull
+    public static final Java8RepeatableContainerLoader INSTANCE = new Java8RepeatableContainerLoader();
+
+    @Nullable
+    private static Cache cache;
+
+    /* JADX INFO: compiled from: KAnnotatedElements.kt */
+    @Metadata(m90083d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u001b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u00002\u00020\u0001B#\u0012\u0010\u0010\u0002\u001a\f\u0012\u0006\b\u0001\u0012\u00020\u0004\u0018\u00010\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\u0004\b\u0007\u0010\bR\u001b\u0010\u0002\u001a\f\u0012\u0006\b\u0001\u0012\u00020\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0013\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\f¨\u0006\r"}, m90084d2 = {"Lkotlin/reflect/full/Java8RepeatableContainerLoader$Cache;", "", "repeatableClass", "Ljava/lang/Class;", "", "valueMethod", "Ljava/lang/reflect/Method;", "<init>", "(Ljava/lang/Class;Ljava/lang/reflect/Method;)V", "getRepeatableClass", "()Ljava/lang/Class;", "getValueMethod", "()Ljava/lang/reflect/Method;", "kotlin-reflection"}, m90085k = 1, m90086mv = {2, 2, 0}, m90088xi = 48)
+    public static final class Cache {
+
+        @Nullable
+        private final Class<? extends Annotation> repeatableClass;
+
+        @Nullable
+        private final Method valueMethod;
+
+        @Nullable
+        public final Class<? extends Annotation> getRepeatableClass() {
+            return this.repeatableClass;
+        }
+
+        @Nullable
+        public final Method getValueMethod() {
+            return this.valueMethod;
+        }
+
+        public Cache(@Nullable Class<? extends Annotation> cls, @Nullable Method method) {
+            this.repeatableClass = cls;
+            this.valueMethod = method;
+        }
+    }
+
+    private final Cache buildCache() {
+        try {
+            Intrinsics.checkNotNull(Repeatable.class, "null cannot be cast to non-null type java.lang.Class<out kotlin.Annotation>");
+            return new Cache(Repeatable.class, Repeatable.class.getMethod("value", new Class[0]));
+        } catch (ClassNotFoundException unused) {
+            return new Cache(null, null);
+        }
+    }
+
+    @Nullable
+    public final Class<? extends Annotation> loadRepeatableContainer(@NotNull Class<? extends Annotation> klass) throws IllegalAccessException, InvocationTargetException {
+        Annotation annotation;
+        Method valueMethod;
+        Intrinsics.checkNotNullParameter(klass, "klass");
+        Cache cacheBuildCache = cache;
+        if (cacheBuildCache == null) {
+            synchronized (this) {
+                cacheBuildCache = cache;
+                if (cacheBuildCache == null) {
+                    cacheBuildCache = INSTANCE.buildCache();
+                    cache = cacheBuildCache;
+                }
+            }
+        }
+        Class repeatableClass = cacheBuildCache.getRepeatableClass();
+        if (repeatableClass == null || (annotation = klass.getAnnotation(repeatableClass)) == null || (valueMethod = cacheBuildCache.getValueMethod()) == null) {
+            return null;
+        }
+        Object objInvoke = valueMethod.invoke(annotation, new Object[0]);
+        Intrinsics.checkNotNull(objInvoke, "null cannot be cast to non-null type java.lang.Class<out kotlin.Annotation>");
+        return (Class) objInvoke;
+    }
+
+    private Java8RepeatableContainerLoader() {
+    }
+}

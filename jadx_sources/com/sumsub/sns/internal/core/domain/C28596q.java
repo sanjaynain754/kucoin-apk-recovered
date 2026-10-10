@@ -1,0 +1,64 @@
+package com.sumsub.sns.internal.core.domain;
+
+import androidx.datastore.core.DataStore;
+import androidx.datastore.preferences.core.PreferencesKt;
+import p852kotlin.ResultKt;
+import p852kotlin.Unit;
+import p852kotlin.coroutines.Continuation;
+import p852kotlin.coroutines.intrinsics.IntrinsicsKt;
+import p852kotlin.coroutines.jvm.internal.SuspendLambda;
+import p852kotlin.jvm.functions.Function2;
+
+/* JADX INFO: renamed from: com.sumsub.sns.internal.core.domain.q */
+/* JADX INFO: compiled from: r8-map-id-e8070c335b728e491f9067563c2bfcb5588b777f644873c971594ef64ebda208 */
+/* JADX INFO: loaded from: classes59.dex */
+public final class C28596q extends SuspendLambda implements Function2 {
+
+    /* JADX INFO: renamed from: a */
+    public int f58209a;
+
+    /* JADX INFO: renamed from: b */
+    public final /* synthetic */ C28598r f58210b;
+
+    /* JADX INFO: renamed from: c */
+    public final /* synthetic */ String f58211c;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C28596q(C28598r c28598r, String str, Continuation continuation) {
+        super(2, continuation);
+        this.f58210b = c28598r;
+        this.f58211c = str;
+    }
+
+    @Override // p852kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation create(Object obj, Continuation continuation) {
+        return new C28596q(this.f58210b, this.f58211c, continuation);
+    }
+
+    @Override // p852kotlin.jvm.functions.Function2
+    public final Object invoke(Object obj, Object obj2) {
+        return new C28596q(this.f58210b, this.f58211c, (Continuation) obj2).invokeSuspend(Unit.INSTANCE);
+    }
+
+    @Override // p852kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i11 = this.f58209a;
+        if (i11 != 0) {
+            if (i11 == 1) {
+                ResultKt.throwOnFailure(obj);
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+        } else {
+            ResultKt.throwOnFailure(obj);
+            DataStore dataStore = (DataStore) AbstractC28580i.f58191b.getValue(this.f58210b.f58213a, AbstractC28580i.f58190a[0]);
+            C28594p c28594p = new C28594p(this.f58211c, null);
+            this.f58209a = 1;
+            if (PreferencesKt.edit(dataStore, c28594p, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        }
+        return Unit.INSTANCE;
+    }
+}

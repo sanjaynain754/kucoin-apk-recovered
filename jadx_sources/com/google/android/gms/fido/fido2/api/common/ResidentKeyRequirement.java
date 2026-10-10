@@ -1,0 +1,75 @@
+package com.google.android.gms.fido.fido2.api.common;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import androidx.annotation.NonNull;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@21.0.0 */
+/* JADX INFO: loaded from: classes45.dex */
+public enum ResidentKeyRequirement implements Parcelable {
+    RESIDENT_KEY_DISCOURAGED("discouraged"),
+    RESIDENT_KEY_PREFERRED("preferred"),
+    RESIDENT_KEY_REQUIRED("required");
+
+
+    @NonNull
+    public static final Parcelable.Creator<ResidentKeyRequirement> CREATOR = new Parcelable.Creator() { // from class: com.google.android.gms.fido.fido2.api.common.zzav
+        @Override // android.os.Parcelable.Creator
+        public final /* synthetic */ Object[] newArray(int i11) {
+            return new ResidentKeyRequirement[i11];
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+            String string = parcel.readString();
+            if (string == null) {
+                string = "";
+            }
+            try {
+                return ResidentKeyRequirement.fromString(string);
+            } catch (ResidentKeyRequirement.UnsupportedResidentKeyRequirementException e11) {
+                throw new RuntimeException(e11);
+            }
+        }
+    };
+
+    @NonNull
+    private final String zzb;
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@21.0.0 */
+    public static class UnsupportedResidentKeyRequirementException extends Exception {
+        public UnsupportedResidentKeyRequirementException(@NonNull String str) {
+            super(String.format("Resident key requirement %s not supported", str));
+        }
+    }
+
+    @Override // java.lang.Enum
+    @NonNull
+    public String toString() {
+        return this.zzb;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(@NonNull Parcel parcel, int i11) {
+        parcel.writeString(this.zzb);
+    }
+
+    ResidentKeyRequirement(String str) {
+        this.zzb = str;
+    }
+
+    @NonNull
+    public static ResidentKeyRequirement fromString(@NonNull String str) throws UnsupportedResidentKeyRequirementException {
+        for (ResidentKeyRequirement residentKeyRequirement : values()) {
+            if (str.equals(residentKeyRequirement.zzb)) {
+                return residentKeyRequirement;
+            }
+        }
+        throw new UnsupportedResidentKeyRequirementException(str);
+    }
+}

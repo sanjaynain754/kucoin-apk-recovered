@@ -1,0 +1,1442 @@
+package com.kubi.kumex.data.platform.model;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import androidx.annotation.Keep;
+import androidx.media3.common.C2711C;
+import java.math.BigDecimal;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import p852kotlin.Deprecated;
+import p852kotlin.Metadata;
+import p852kotlin.jvm.internal.DefaultConstructorMarker;
+import p852kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: ContractEntity.kt */
+/* JADX INFO: loaded from: classes12.dex */
+@Keep
+@Metadata(m90083d1 = {"\u0000G\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0010\t\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0017\n\u0002\u0010\b\n\u0003\bÏ\u0001\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0087\b\u0018\u00002\u00020\u0001BÏ\u0005\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0003\u0010\u000b\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0002\u0010\f\u001a\u00020\r\u0012\b\b\u0002\u0010\u000e\u001a\u00020\r\u0012\b\b\u0002\u0010\u000f\u001a\u00020\r\u0012\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0002\u0010\u0011\u001a\u00020\r\u0012\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u0017\u0012\b\b\u0002\u0010\u0018\u001a\u00020\u0005\u0012\b\b\u0002\u0010\u0019\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010\u001e\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010$\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010%\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010&\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010'\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010(\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010)\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010+\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010,\u001a\u0004\u0018\u00010\u0017\u0012\b\b\u0002\u0010-\u001a\u00020\u0005\u0012\b\b\u0002\u0010.\u001a\u00020/\u0012\b\b\u0002\u00100\u001a\u00020\u0005\u0012\n\b\u0002\u00101\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u00102\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u00103\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u00104\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u00105\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u00106\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u00107\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u00108\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u00109\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010:\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010;\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010<\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010=\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010>\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010?\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010@\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010A\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010B\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010C\u001a\u0004\u0018\u00010\u0003¢\u0006\u0004\bD\u0010EJ\u0007\u0010¹\u0001\u001a\u00020\u0005J\u0007\u0010º\u0001\u001a\u00020\u0005J\u0007\u0010»\u0001\u001a\u00020\u0005J\t\u0010¼\u0001\u001a\u00020\u0005H\u0007J\f\u0010½\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\n\u0010¾\u0001\u001a\u00020\u0005HÆ\u0003J\f\u0010¿\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010À\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010Á\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010Â\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010Ã\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010Ä\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\n\u0010Å\u0001\u001a\u00020\rHÆ\u0003J\n\u0010Æ\u0001\u001a\u00020\rHÆ\u0003J\n\u0010Ç\u0001\u001a\u00020\rHÆ\u0003J\f\u0010È\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\n\u0010É\u0001\u001a\u00020\rHÆ\u0003J\f\u0010Ê\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010Ë\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010Ì\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010Í\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010Î\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\n\u0010Ï\u0001\u001a\u00020\u0005HÆ\u0003J\n\u0010Ð\u0001\u001a\u00020\u0005HÆ\u0003J\f\u0010Ñ\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010Ò\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010Ó\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010Ô\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010Õ\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010Ö\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010×\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010Ø\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010Ù\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010Ú\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010Û\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010Ü\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0012\u0010Ý\u0001\u001a\u0004\u0018\u00010\rHÆ\u0003¢\u0006\u0003\u0010\u008c\u0001J\f\u0010Þ\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010ß\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010à\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010á\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010â\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010ã\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\n\u0010ä\u0001\u001a\u00020\u0005HÆ\u0003J\n\u0010å\u0001\u001a\u00020/HÆ\u0003J\n\u0010æ\u0001\u001a\u00020\u0005HÆ\u0003J\f\u0010ç\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010è\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010é\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010ê\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010ë\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010ì\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010í\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010î\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010ï\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010ð\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\u0012\u0010ñ\u0001\u001a\u0004\u0018\u00010\rHÆ\u0003¢\u0006\u0003\u0010\u008c\u0001J\u0012\u0010ò\u0001\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0003\u0010°\u0001J\f\u0010ó\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0012\u0010ô\u0001\u001a\u0004\u0018\u00010\rHÆ\u0003¢\u0006\u0003\u0010\u008c\u0001J\f\u0010õ\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010ö\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010÷\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010ø\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010ù\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003JØ\u0005\u0010ú\u0001\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010\u000b\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\r2\b\b\u0002\u0010\u000f\u001a\u00020\r2\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0011\u001a\u00020\r2\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u00172\b\b\u0002\u0010\u0018\u001a\u00020\u00052\b\b\u0002\u0010\u0019\u001a\u00020\u00052\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010\u001e\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010$\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010%\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010&\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010'\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010(\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010)\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010+\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010,\u001a\u0004\u0018\u00010\u00172\b\b\u0002\u0010-\u001a\u00020\u00052\b\b\u0002\u0010.\u001a\u00020/2\b\b\u0002\u00100\u001a\u00020\u00052\n\b\u0002\u00101\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u00102\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u00103\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u00104\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u00105\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u00106\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u00107\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u00108\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u00109\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010:\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010;\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010<\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010=\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010>\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010?\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010@\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010A\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010B\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010C\u001a\u0004\u0018\u00010\u0003HÆ\u0001¢\u0006\u0003\u0010û\u0001J\u0007\u0010ü\u0001\u001a\u00020/J\u0016\u0010ý\u0001\u001a\u00020\u00052\n\u0010þ\u0001\u001a\u0005\u0018\u00010ÿ\u0001HÖ\u0003J\n\u0010\u0080\u0002\u001a\u00020/HÖ\u0001J\n\u0010\u0081\u0002\u001a\u00020\u0003HÖ\u0001J\u001b\u0010\u0082\u0002\u001a\u00030\u0083\u00022\b\u0010\u0084\u0002\u001a\u00030\u0085\u00022\u0007\u0010\u0086\u0002\u001a\u00020/R\u001c\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bF\u0010G\"\u0004\bH\u0010IR\u001a\u0010\u0004\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0004\u0010J\"\u0004\bK\u0010LR\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bM\u0010G\"\u0004\bN\u0010IR\u001c\u0010\u0007\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bO\u0010G\"\u0004\bP\u0010IR\u001c\u0010\b\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bQ\u0010G\"\u0004\bR\u0010IR\u001c\u0010\t\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bS\u0010G\"\u0004\bT\u0010IR\u001c\u0010\n\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bU\u0010G\"\u0004\bV\u0010IR\u001c\u0010\u000b\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bW\u0010G\"\u0004\bX\u0010IR\u001a\u0010\f\u001a\u00020\rX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bY\u0010Z\"\u0004\b[\u0010\\R\u001a\u0010\u000e\u001a\u00020\rX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b]\u0010Z\"\u0004\b^\u0010\\R\u001a\u0010\u000f\u001a\u00020\rX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b_\u0010Z\"\u0004\b`\u0010\\R\u001c\u0010\u0010\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\ba\u0010G\"\u0004\bb\u0010IR\u001a\u0010\u0011\u001a\u00020\rX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bc\u0010Z\"\u0004\bd\u0010\\R\u001c\u0010\u0012\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\be\u0010G\"\u0004\bf\u0010IR\u001c\u0010\u0013\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bg\u0010G\"\u0004\bh\u0010IR\u001c\u0010\u0014\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bi\u0010G\"\u0004\bj\u0010IR\u001c\u0010\u0015\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bk\u0010G\"\u0004\bl\u0010IR\u001c\u0010\u0016\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bm\u0010n\"\u0004\bo\u0010pR\u001a\u0010\u0018\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0018\u0010J\"\u0004\bq\u0010LR\u001a\u0010\u0019\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010J\"\u0004\br\u0010LR\u001c\u0010\u001a\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bs\u0010n\"\u0004\bt\u0010pR\u001c\u0010\u001b\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bu\u0010n\"\u0004\bv\u0010pR\u001c\u0010\u001c\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bw\u0010n\"\u0004\bx\u0010pR\u001c\u0010\u001d\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\by\u0010n\"\u0004\bz\u0010pR\u001c\u0010\u001e\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b{\u0010G\"\u0004\b|\u0010IR\u001c\u0010\u001f\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b}\u0010n\"\u0004\b~\u0010pR\u001d\u0010 \u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u000f\n\u0000\u001a\u0004\b\u007f\u0010n\"\u0005\b\u0080\u0001\u0010pR\u001e\u0010!\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u0081\u0001\u0010n\"\u0005\b\u0082\u0001\u0010pR\u001e\u0010\"\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u0083\u0001\u0010n\"\u0005\b\u0084\u0001\u0010pR\u001e\u0010#\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u0085\u0001\u0010n\"\u0005\b\u0086\u0001\u0010pR\u001e\u0010$\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u0087\u0001\u0010n\"\u0005\b\u0088\u0001\u0010pR\u001e\u0010%\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u0089\u0001\u0010G\"\u0005\b\u008a\u0001\u0010IR#\u0010&\u001a\u0004\u0018\u00010\rX\u0086\u000e¢\u0006\u0015\n\u0003\u0010\u008f\u0001\u001a\u0006\b\u008b\u0001\u0010\u008c\u0001\"\u0006\b\u008d\u0001\u0010\u008e\u0001R\u001e\u0010'\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u0090\u0001\u0010n\"\u0005\b\u0091\u0001\u0010pR\u001e\u0010(\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u0092\u0001\u0010n\"\u0005\b\u0093\u0001\u0010pR\u001e\u0010)\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u0094\u0001\u0010n\"\u0005\b\u0095\u0001\u0010pR\u001e\u0010*\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u0096\u0001\u0010n\"\u0005\b\u0097\u0001\u0010pR\u001e\u0010+\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u0098\u0001\u0010n\"\u0005\b\u0099\u0001\u0010pR\u001e\u0010,\u001a\u0004\u0018\u00010\u0017X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u009a\u0001\u0010n\"\u0005\b\u009b\u0001\u0010pR\u001c\u0010-\u001a\u00020\u0005X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u009c\u0001\u0010J\"\u0005\b\u009d\u0001\u0010LR\u001e\u0010.\u001a\u00020/X\u0086\u000e¢\u0006\u0012\n\u0000\u001a\u0006\b\u009e\u0001\u0010\u009f\u0001\"\u0006\b \u0001\u0010¡\u0001R\u001b\u00100\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000f\n\u0000\u001a\u0004\b0\u0010J\"\u0005\b¢\u0001\u0010LR\u001e\u00101\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b£\u0001\u0010G\"\u0005\b¤\u0001\u0010IR\u0014\u00102\u001a\u0004\u0018\u00010\u0017¢\u0006\t\n\u0000\u001a\u0005\b¥\u0001\u0010nR\u0014\u00103\u001a\u0004\u0018\u00010\u0017¢\u0006\t\n\u0000\u001a\u0005\b¦\u0001\u0010nR\u0014\u00104\u001a\u0004\u0018\u00010\u0017¢\u0006\t\n\u0000\u001a\u0005\b§\u0001\u0010nR\u0014\u00105\u001a\u0004\u0018\u00010\u0017¢\u0006\t\n\u0000\u001a\u0005\b¨\u0001\u0010nR\u0014\u00106\u001a\u0004\u0018\u00010\u0017¢\u0006\t\n\u0000\u001a\u0005\b©\u0001\u0010nR\u0014\u00107\u001a\u0004\u0018\u00010\u0017¢\u0006\t\n\u0000\u001a\u0005\bª\u0001\u0010nR\u0014\u00108\u001a\u0004\u0018\u00010\u0017¢\u0006\t\n\u0000\u001a\u0005\b«\u0001\u0010nR\u0014\u00109\u001a\u0004\u0018\u00010\u0017¢\u0006\t\n\u0000\u001a\u0005\b¬\u0001\u0010nR\u0014\u0010:\u001a\u0004\u0018\u00010\u0017¢\u0006\t\n\u0000\u001a\u0005\b\u00ad\u0001\u0010nR\u0018\u0010;\u001a\u0004\u0018\u00010\r¢\u0006\r\n\u0003\u0010\u008f\u0001\u001a\u0006\b®\u0001\u0010\u008c\u0001R\u0018\u0010<\u001a\u0004\u0018\u00010\u0005¢\u0006\r\n\u0003\u0010±\u0001\u001a\u0006\b¯\u0001\u0010°\u0001R\u0014\u0010=\u001a\u0004\u0018\u00010\u0003¢\u0006\t\n\u0000\u001a\u0005\b²\u0001\u0010GR\u0018\u0010>\u001a\u0004\u0018\u00010\r¢\u0006\r\n\u0003\u0010\u008f\u0001\u001a\u0006\b³\u0001\u0010\u008c\u0001R\u0014\u0010?\u001a\u0004\u0018\u00010\u0017¢\u0006\t\n\u0000\u001a\u0005\b´\u0001\u0010nR\u0014\u0010@\u001a\u0004\u0018\u00010\u0003¢\u0006\t\n\u0000\u001a\u0005\bµ\u0001\u0010GR\u0014\u0010A\u001a\u0004\u0018\u00010\u0003¢\u0006\t\n\u0000\u001a\u0005\b¶\u0001\u0010GR\u0014\u0010B\u001a\u0004\u0018\u00010\u0003¢\u0006\t\n\u0000\u001a\u0005\b·\u0001\u0010GR\u0014\u0010C\u001a\u0004\u0018\u00010\u0003¢\u0006\t\n\u0000\u001a\u0005\b¸\u0001\u0010G¨\u0006\u0087\u0002"}, m90084d2 = {"Lcom/kubi/kumex/data/platform/model/ContractEntity;", "Landroid/os/Parcelable;", "type", "", "isInverse", "", "symbol", "rootSymbol", "baseCurrency", "displayBaseCurrency", "quoteCurrency", "status", "createdAt", "", "expireDate", "updatedAt", "fairMethod", "firstOpenDate", "fundingBaseSymbol", "fundingQuoteSymbol", "fundingRateSymbol", "indexSymbol", "initialMargin", "Ljava/math/BigDecimal;", "isDeleverage", "isQuanto", "lotSize", "maintainMargin", "makerFeeRate", "makerFixFee", "markMethod", "maxOrderQty", "indexPriceTickSize", "maxPrice", "maxRiskLimit", "minRiskLimit", "riskStep", "settleCurrency", "settleDate", "settlementFee", "takerFeeRate", "takerFixFee", "tickSize", "multiplier", "maxLeverage", "supportGridTrading", "stepRiskLimitStatus", "", "isTrialFunds", "spotCurrency", "k", "m", "f", "mmrLimit", "mmrLevConstant", "crossRiskLimit", "adjustK", "adjustM", "adjustMmrLevConstant", "adjustActiveTime", "supportCross", "marketStage", "preMarketToPerpDate", "marketMaxOrderQty", "marketType", "assetClass", "subMarketType", "imgUrl", "<init>", "(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJJLjava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigDecimal;ZZLjava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/lang/String;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/lang/String;Ljava/lang/Long;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;ZIZLjava/lang/String;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Long;Ljava/math/BigDecimal;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getType", "()Ljava/lang/String;", "setType", "(Ljava/lang/String;)V", "()Z", "setInverse", "(Z)V", "getSymbol", "setSymbol", "getRootSymbol", "setRootSymbol", "getBaseCurrency", "setBaseCurrency", "getDisplayBaseCurrency", "setDisplayBaseCurrency", "getQuoteCurrency", "setQuoteCurrency", "getStatus", "setStatus", "getCreatedAt", "()J", "setCreatedAt", "(J)V", "getExpireDate", "setExpireDate", "getUpdatedAt", "setUpdatedAt", "getFairMethod", "setFairMethod", "getFirstOpenDate", "setFirstOpenDate", "getFundingBaseSymbol", "setFundingBaseSymbol", "getFundingQuoteSymbol", "setFundingQuoteSymbol", "getFundingRateSymbol", "setFundingRateSymbol", "getIndexSymbol", "setIndexSymbol", "getInitialMargin", "()Ljava/math/BigDecimal;", "setInitialMargin", "(Ljava/math/BigDecimal;)V", "setDeleverage", "setQuanto", "getLotSize", "setLotSize", "getMaintainMargin", "setMaintainMargin", "getMakerFeeRate", "setMakerFeeRate", "getMakerFixFee", "setMakerFixFee", "getMarkMethod", "setMarkMethod", "getMaxOrderQty", "setMaxOrderQty", "getIndexPriceTickSize", "setIndexPriceTickSize", "getMaxPrice", "setMaxPrice", "getMaxRiskLimit", "setMaxRiskLimit", "getMinRiskLimit", "setMinRiskLimit", "getRiskStep", "setRiskStep", "getSettleCurrency", "setSettleCurrency", "getSettleDate", "()Ljava/lang/Long;", "setSettleDate", "(Ljava/lang/Long;)V", "Ljava/lang/Long;", "getSettlementFee", "setSettlementFee", "getTakerFeeRate", "setTakerFeeRate", "getTakerFixFee", "setTakerFixFee", "getTickSize", "setTickSize", "getMultiplier", "setMultiplier", "getMaxLeverage", "setMaxLeverage", "getSupportGridTrading", "setSupportGridTrading", "getStepRiskLimitStatus", "()I", "setStepRiskLimitStatus", "(I)V", "setTrialFunds", "getSpotCurrency", "setSpotCurrency", "getK", "getM", "getF", "getMmrLimit", "getMmrLevConstant", "getCrossRiskLimit", "getAdjustK", "getAdjustM", "getAdjustMmrLevConstant", "getAdjustActiveTime", "getSupportCross", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getMarketStage", "getPreMarketToPerpDate", "getMarketMaxOrderQty", "getMarketType", "getAssetClass", "getSubMarketType", "getImgUrl", "isPreMarket", "isStock", "isUsStock", "isUsStockMarket", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component19", "component20", "component21", "component22", "component23", "component24", "component25", "component26", "component27", "component28", "component29", "component30", "component31", "component32", "component33", "component34", "component35", "component36", "component37", "component38", "component39", "component40", "component41", "component42", "component43", "component44", "component45", "component46", "component47", "component48", "component49", "component50", "component51", "component52", "component53", "component54", "component55", "component56", "component57", "component58", "component59", "component60", "component61", "copy", "(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJJLjava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigDecimal;ZZLjava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/lang/String;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/lang/String;Ljava/lang/Long;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;ZIZLjava/lang/String;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Long;Ljava/math/BigDecimal;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/kubi/kumex/data/platform/model/ContractEntity;", "describeContents", "equals", "other", "", "hashCode", "toString", "writeToParcel", "", "dest", "Landroid/os/Parcel;", "flags", "KumexApi_googleRelease"}, m90085k = 1, m90086mv = {2, 2, 0}, m90088xi = 48)
+public final /* data */ class ContractEntity implements Parcelable {
+
+    @NotNull
+    public static final Parcelable.Creator<ContractEntity> CREATOR = new C15796a();
+
+    @Nullable
+    private final Long adjustActiveTime;
+
+    @Nullable
+    private final BigDecimal adjustK;
+
+    @Nullable
+    private final BigDecimal adjustM;
+
+    @Nullable
+    private final BigDecimal adjustMmrLevConstant;
+
+    @Nullable
+    private final String assetClass;
+
+    @Nullable
+    private String baseCurrency;
+    private long createdAt;
+
+    @Nullable
+    private final BigDecimal crossRiskLimit;
+
+    @Nullable
+    private String displayBaseCurrency;
+    private long expireDate;
+
+    @Nullable
+    private final BigDecimal f;
+
+    @Nullable
+    private String fairMethod;
+    private long firstOpenDate;
+
+    @Nullable
+    private String fundingBaseSymbol;
+
+    @Nullable
+    private String fundingQuoteSymbol;
+
+    @Nullable
+    private String fundingRateSymbol;
+
+    @Nullable
+    private final String imgUrl;
+
+    @Nullable
+    private BigDecimal indexPriceTickSize;
+
+    @Nullable
+    private String indexSymbol;
+
+    @Nullable
+    private BigDecimal initialMargin;
+    private boolean isDeleverage;
+    private boolean isInverse;
+    private boolean isQuanto;
+    private boolean isTrialFunds;
+
+    @Nullable
+    private final BigDecimal k;
+
+    @Nullable
+    private BigDecimal lotSize;
+
+    @Nullable
+    private final BigDecimal m;
+
+    @Nullable
+    private BigDecimal maintainMargin;
+
+    @Nullable
+    private BigDecimal makerFeeRate;
+
+    @Nullable
+    private BigDecimal makerFixFee;
+
+    @Nullable
+    private String markMethod;
+
+    @Nullable
+    private final BigDecimal marketMaxOrderQty;
+
+    @Nullable
+    private final String marketStage;
+
+    @Nullable
+    private final String marketType;
+
+    @Nullable
+    private BigDecimal maxLeverage;
+
+    @Nullable
+    private BigDecimal maxOrderQty;
+
+    @Nullable
+    private BigDecimal maxPrice;
+
+    @Nullable
+    private BigDecimal maxRiskLimit;
+
+    @Nullable
+    private BigDecimal minRiskLimit;
+
+    @Nullable
+    private final BigDecimal mmrLevConstant;
+
+    @Nullable
+    private final BigDecimal mmrLimit;
+
+    @Nullable
+    private BigDecimal multiplier;
+
+    @Nullable
+    private final Long preMarketToPerpDate;
+
+    @Nullable
+    private String quoteCurrency;
+
+    @Nullable
+    private BigDecimal riskStep;
+
+    @Nullable
+    private String rootSymbol;
+
+    @Nullable
+    private String settleCurrency;
+
+    @Nullable
+    private Long settleDate;
+
+    @Nullable
+    private BigDecimal settlementFee;
+
+    @Nullable
+    private String spotCurrency;
+
+    @Nullable
+    private String status;
+    private int stepRiskLimitStatus;
+
+    @Nullable
+    private final String subMarketType;
+
+    @Nullable
+    private final Boolean supportCross;
+    private boolean supportGridTrading;
+
+    @Nullable
+    private String symbol;
+
+    @Nullable
+    private BigDecimal takerFeeRate;
+
+    @Nullable
+    private BigDecimal takerFixFee;
+
+    @Nullable
+    private BigDecimal tickSize;
+
+    @Nullable
+    private String type;
+    private long updatedAt;
+
+    /* JADX INFO: renamed from: com.kubi.kumex.data.platform.model.ContractEntity$a */
+    /* JADX INFO: compiled from: ContractEntity.kt */
+    @Metadata(m90085k = 3, m90086mv = {2, 2, 0}, m90088xi = 48)
+    public static final class C15796a implements Parcelable.Creator<ContractEntity> {
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        public final ContractEntity createFromParcel(Parcel parcel) {
+            boolean z11;
+            boolean z12;
+            boolean z13;
+            boolean z14;
+            boolean z15;
+            Boolean boolValueOf;
+            Long lValueOf;
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            String string = parcel.readString();
+            boolean z16 = false;
+            if (parcel.readInt() != 0) {
+                z16 = true;
+                z11 = true;
+            } else {
+                z11 = true;
+            }
+            String string2 = parcel.readString();
+            boolean z17 = z11;
+            String string3 = parcel.readString();
+            String string4 = parcel.readString();
+            String string5 = parcel.readString();
+            String string6 = parcel.readString();
+            String string7 = parcel.readString();
+            long j11 = parcel.readLong();
+            long j12 = parcel.readLong();
+            long j13 = parcel.readLong();
+            String string8 = parcel.readString();
+            long j14 = parcel.readLong();
+            String string9 = parcel.readString();
+            String string10 = parcel.readString();
+            String string11 = parcel.readString();
+            String string12 = parcel.readString();
+            BigDecimal bigDecimal = (BigDecimal) parcel.readSerializable();
+            if (parcel.readInt() != 0) {
+                z12 = z17;
+                z13 = z12;
+            } else {
+                z12 = z17;
+                z13 = z16;
+            }
+            if (parcel.readInt() == 0) {
+                z12 = z16;
+            }
+            BigDecimal bigDecimal2 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal3 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal4 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal5 = (BigDecimal) parcel.readSerializable();
+            boolean z18 = z12;
+            String string13 = parcel.readString();
+            BigDecimal bigDecimal6 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal7 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal8 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal9 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal10 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal11 = (BigDecimal) parcel.readSerializable();
+            String string14 = parcel.readString();
+            Long lValueOf2 = parcel.readInt() == 0 ? null : Long.valueOf(parcel.readLong());
+            BigDecimal bigDecimal12 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal13 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal14 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal15 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal16 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal17 = (BigDecimal) parcel.readSerializable();
+            if (parcel.readInt() != 0) {
+                z14 = z18;
+                z15 = z14;
+            } else {
+                z14 = z18;
+                z15 = z16;
+            }
+            int i11 = parcel.readInt();
+            if (parcel.readInt() == 0) {
+                z14 = z16;
+            }
+            String string15 = parcel.readString();
+            BigDecimal bigDecimal18 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal19 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal20 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal21 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal22 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal23 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal24 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal25 = (BigDecimal) parcel.readSerializable();
+            BigDecimal bigDecimal26 = (BigDecimal) parcel.readSerializable();
+            Long lValueOf3 = parcel.readInt() == 0 ? null : Long.valueOf(parcel.readLong());
+            if (parcel.readInt() == 0) {
+                boolValueOf = null;
+                lValueOf = null;
+            } else {
+                boolValueOf = Boolean.valueOf(parcel.readInt() != 0 ? z14 : false);
+                lValueOf = null;
+            }
+            Long l11 = lValueOf3;
+            String string16 = parcel.readString();
+            if (parcel.readInt() != 0) {
+                lValueOf = Long.valueOf(parcel.readLong());
+            }
+            return new ContractEntity(string, z16, string2, string3, string4, string5, string6, string7, j11, j12, j13, string8, j14, string9, string10, string11, string12, bigDecimal, z13, z12, bigDecimal2, bigDecimal3, bigDecimal4, bigDecimal5, string13, bigDecimal6, bigDecimal7, bigDecimal8, bigDecimal9, bigDecimal10, bigDecimal11, string14, lValueOf2, bigDecimal12, bigDecimal13, bigDecimal14, bigDecimal15, bigDecimal16, bigDecimal17, z15, i11, z14, string15, bigDecimal18, bigDecimal19, bigDecimal20, bigDecimal21, bigDecimal22, bigDecimal23, bigDecimal24, bigDecimal25, bigDecimal26, l11, boolValueOf, string16, lValueOf, (BigDecimal) parcel.readSerializable(), parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString());
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
+        public final ContractEntity[] newArray(int i11) {
+            return new ContractEntity[i11];
+        }
+    }
+
+    public ContractEntity() {
+        this(null, false, null, null, null, null, null, null, 0L, 0L, 0L, null, 0L, null, null, null, null, null, false, false, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, false, 0, false, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -1, 536870911, null);
+    }
+
+    public static /* synthetic */ ContractEntity copy$default(ContractEntity contractEntity, String str, boolean z11, String str2, String str3, String str4, String str5, String str6, String str7, long j11, long j12, long j13, String str8, long j14, String str9, String str10, String str11, String str12, BigDecimal bigDecimal, boolean z12, boolean z13, BigDecimal bigDecimal2, BigDecimal bigDecimal3, BigDecimal bigDecimal4, BigDecimal bigDecimal5, String str13, BigDecimal bigDecimal6, BigDecimal bigDecimal7, BigDecimal bigDecimal8, BigDecimal bigDecimal9, BigDecimal bigDecimal10, BigDecimal bigDecimal11, String str14, Long l11, BigDecimal bigDecimal12, BigDecimal bigDecimal13, BigDecimal bigDecimal14, BigDecimal bigDecimal15, BigDecimal bigDecimal16, BigDecimal bigDecimal17, boolean z14, int i11, boolean z15, String str15, BigDecimal bigDecimal18, BigDecimal bigDecimal19, BigDecimal bigDecimal20, BigDecimal bigDecimal21, BigDecimal bigDecimal22, BigDecimal bigDecimal23, BigDecimal bigDecimal24, BigDecimal bigDecimal25, BigDecimal bigDecimal26, Long l12, Boolean bool, String str16, Long l13, BigDecimal bigDecimal27, String str17, String str18, String str19, String str20, int i12, int i13, Object obj) {
+        String str21 = (i12 & 1) != 0 ? contractEntity.type : str;
+        boolean z16 = (i12 & 2) != 0 ? contractEntity.isInverse : z11;
+        return contractEntity.copy(str21, z16, (i12 & 4) != 0 ? contractEntity.symbol : str2, (i12 & 8) != 0 ? contractEntity.rootSymbol : str3, (i12 & 16) != 0 ? contractEntity.baseCurrency : str4, (i12 & 32) != 0 ? contractEntity.displayBaseCurrency : str5, (i12 & 64) != 0 ? contractEntity.quoteCurrency : str6, (i12 & 128) != 0 ? contractEntity.status : str7, (i12 & 256) != 0 ? contractEntity.createdAt : j11, (i12 & 512) != 0 ? contractEntity.expireDate : j12, (i12 & 1024) != 0 ? contractEntity.updatedAt : j13, (i12 & 2048) != 0 ? contractEntity.fairMethod : str8, (i12 & 4096) != 0 ? contractEntity.firstOpenDate : j14, (i12 & 8192) != 0 ? contractEntity.fundingBaseSymbol : str9, (i12 & 16384) != 0 ? contractEntity.fundingQuoteSymbol : str10, (i12 & 32768) != 0 ? contractEntity.fundingRateSymbol : str11, (i12 & 65536) != 0 ? contractEntity.indexSymbol : str12, (i12 & 131072) != 0 ? contractEntity.initialMargin : bigDecimal, (i12 & 262144) != 0 ? contractEntity.isDeleverage : z12, (i12 & 524288) != 0 ? contractEntity.isQuanto : z13, (i12 & 1048576) != 0 ? contractEntity.lotSize : bigDecimal2, (i12 & 2097152) != 0 ? contractEntity.maintainMargin : bigDecimal3, (i12 & 4194304) != 0 ? contractEntity.makerFeeRate : bigDecimal4, (i12 & 8388608) != 0 ? contractEntity.makerFixFee : bigDecimal5, (i12 & 16777216) != 0 ? contractEntity.markMethod : str13, (i12 & 33554432) != 0 ? contractEntity.maxOrderQty : bigDecimal6, (i12 & 67108864) != 0 ? contractEntity.indexPriceTickSize : bigDecimal7, (i12 & C2711C.BUFFER_FLAG_FIRST_SAMPLE) != 0 ? contractEntity.maxPrice : bigDecimal8, (i12 & 268435456) != 0 ? contractEntity.maxRiskLimit : bigDecimal9, (i12 & C2711C.BUFFER_FLAG_LAST_SAMPLE) != 0 ? contractEntity.minRiskLimit : bigDecimal10, (i12 & 1073741824) != 0 ? contractEntity.riskStep : bigDecimal11, (i12 & Integer.MIN_VALUE) != 0 ? contractEntity.settleCurrency : str14, (i13 & 1) != 0 ? contractEntity.settleDate : l11, (i13 & 2) != 0 ? contractEntity.settlementFee : bigDecimal12, (i13 & 4) != 0 ? contractEntity.takerFeeRate : bigDecimal13, (i13 & 8) != 0 ? contractEntity.takerFixFee : bigDecimal14, (i13 & 16) != 0 ? contractEntity.tickSize : bigDecimal15, (i13 & 32) != 0 ? contractEntity.multiplier : bigDecimal16, (i13 & 64) != 0 ? contractEntity.maxLeverage : bigDecimal17, (i13 & 128) != 0 ? contractEntity.supportGridTrading : z14, (i13 & 256) != 0 ? contractEntity.stepRiskLimitStatus : i11, (i13 & 512) != 0 ? contractEntity.isTrialFunds : z15, (i13 & 1024) != 0 ? contractEntity.spotCurrency : str15, (i13 & 2048) != 0 ? contractEntity.k : bigDecimal18, (i13 & 4096) != 0 ? contractEntity.m : bigDecimal19, (i13 & 8192) != 0 ? contractEntity.f : bigDecimal20, (i13 & 16384) != 0 ? contractEntity.mmrLimit : bigDecimal21, (i13 & 32768) != 0 ? contractEntity.mmrLevConstant : bigDecimal22, (i13 & 65536) != 0 ? contractEntity.crossRiskLimit : bigDecimal23, (i13 & 131072) != 0 ? contractEntity.adjustK : bigDecimal24, (i13 & 262144) != 0 ? contractEntity.adjustM : bigDecimal25, (i13 & 524288) != 0 ? contractEntity.adjustMmrLevConstant : bigDecimal26, (i13 & 1048576) != 0 ? contractEntity.adjustActiveTime : l12, (i13 & 2097152) != 0 ? contractEntity.supportCross : bool, (i13 & 4194304) != 0 ? contractEntity.marketStage : str16, (i13 & 8388608) != 0 ? contractEntity.preMarketToPerpDate : l13, (i13 & 16777216) != 0 ? contractEntity.marketMaxOrderQty : bigDecimal27, (i13 & 33554432) != 0 ? contractEntity.marketType : str17, (i13 & 67108864) != 0 ? contractEntity.assetClass : str18, (i13 & C2711C.BUFFER_FLAG_FIRST_SAMPLE) != 0 ? contractEntity.subMarketType : str19, (i13 & 268435456) != 0 ? contractEntity.imgUrl : str20);
+    }
+
+    @NotNull
+    public final ContractEntity copy(@Nullable String type, boolean isInverse, @Nullable String symbol, @Nullable String rootSymbol, @Nullable String baseCurrency, @Nullable String displayBaseCurrency, @Nullable String quoteCurrency, @Nullable String status, long createdAt, long expireDate, long updatedAt, @Nullable String fairMethod, long firstOpenDate, @Nullable String fundingBaseSymbol, @Nullable String fundingQuoteSymbol, @Nullable String fundingRateSymbol, @Nullable String indexSymbol, @Nullable BigDecimal initialMargin, boolean isDeleverage, boolean isQuanto, @Nullable BigDecimal lotSize, @Nullable BigDecimal maintainMargin, @Nullable BigDecimal makerFeeRate, @Nullable BigDecimal makerFixFee, @Nullable String markMethod, @Nullable BigDecimal maxOrderQty, @Nullable BigDecimal indexPriceTickSize, @Nullable BigDecimal maxPrice, @Nullable BigDecimal maxRiskLimit, @Nullable BigDecimal minRiskLimit, @Nullable BigDecimal riskStep, @Nullable String settleCurrency, @Nullable Long settleDate, @Nullable BigDecimal settlementFee, @Nullable BigDecimal takerFeeRate, @Nullable BigDecimal takerFixFee, @Nullable BigDecimal tickSize, @Nullable BigDecimal multiplier, @Nullable BigDecimal maxLeverage, boolean supportGridTrading, int stepRiskLimitStatus, boolean isTrialFunds, @Nullable String spotCurrency, @Nullable BigDecimal k11, @Nullable BigDecimal m11, @Nullable BigDecimal f11, @Nullable BigDecimal mmrLimit, @Nullable BigDecimal mmrLevConstant, @Nullable BigDecimal crossRiskLimit, @Nullable BigDecimal adjustK, @Nullable BigDecimal adjustM, @Nullable BigDecimal adjustMmrLevConstant, @Nullable Long adjustActiveTime, @Nullable Boolean supportCross, @Nullable String marketStage, @Nullable Long preMarketToPerpDate, @Nullable BigDecimal marketMaxOrderQty, @Nullable String marketType, @Nullable String assetClass, @Nullable String subMarketType, @Nullable String imgUrl) {
+        return new ContractEntity(type, isInverse, symbol, rootSymbol, baseCurrency, displayBaseCurrency, quoteCurrency, status, createdAt, expireDate, updatedAt, fairMethod, firstOpenDate, fundingBaseSymbol, fundingQuoteSymbol, fundingRateSymbol, indexSymbol, initialMargin, isDeleverage, isQuanto, lotSize, maintainMargin, makerFeeRate, makerFixFee, markMethod, maxOrderQty, indexPriceTickSize, maxPrice, maxRiskLimit, minRiskLimit, riskStep, settleCurrency, settleDate, settlementFee, takerFeeRate, takerFixFee, tickSize, multiplier, maxLeverage, supportGridTrading, stepRiskLimitStatus, isTrialFunds, spotCurrency, k11, m11, f11, mmrLimit, mmrLevConstant, crossRiskLimit, adjustK, adjustM, adjustMmrLevConstant, adjustActiveTime, supportCross, marketStage, preMarketToPerpDate, marketMaxOrderQty, marketType, assetClass, subMarketType, imgUrl);
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(@Nullable Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof ContractEntity)) {
+            return false;
+        }
+        ContractEntity contractEntity = (ContractEntity) other;
+        return Intrinsics.areEqual(this.type, contractEntity.type) && this.isInverse == contractEntity.isInverse && Intrinsics.areEqual(this.symbol, contractEntity.symbol) && Intrinsics.areEqual(this.rootSymbol, contractEntity.rootSymbol) && Intrinsics.areEqual(this.baseCurrency, contractEntity.baseCurrency) && Intrinsics.areEqual(this.displayBaseCurrency, contractEntity.displayBaseCurrency) && Intrinsics.areEqual(this.quoteCurrency, contractEntity.quoteCurrency) && Intrinsics.areEqual(this.status, contractEntity.status) && this.createdAt == contractEntity.createdAt && this.expireDate == contractEntity.expireDate && this.updatedAt == contractEntity.updatedAt && Intrinsics.areEqual(this.fairMethod, contractEntity.fairMethod) && this.firstOpenDate == contractEntity.firstOpenDate && Intrinsics.areEqual(this.fundingBaseSymbol, contractEntity.fundingBaseSymbol) && Intrinsics.areEqual(this.fundingQuoteSymbol, contractEntity.fundingQuoteSymbol) && Intrinsics.areEqual(this.fundingRateSymbol, contractEntity.fundingRateSymbol) && Intrinsics.areEqual(this.indexSymbol, contractEntity.indexSymbol) && Intrinsics.areEqual(this.initialMargin, contractEntity.initialMargin) && this.isDeleverage == contractEntity.isDeleverage && this.isQuanto == contractEntity.isQuanto && Intrinsics.areEqual(this.lotSize, contractEntity.lotSize) && Intrinsics.areEqual(this.maintainMargin, contractEntity.maintainMargin) && Intrinsics.areEqual(this.makerFeeRate, contractEntity.makerFeeRate) && Intrinsics.areEqual(this.makerFixFee, contractEntity.makerFixFee) && Intrinsics.areEqual(this.markMethod, contractEntity.markMethod) && Intrinsics.areEqual(this.maxOrderQty, contractEntity.maxOrderQty) && Intrinsics.areEqual(this.indexPriceTickSize, contractEntity.indexPriceTickSize) && Intrinsics.areEqual(this.maxPrice, contractEntity.maxPrice) && Intrinsics.areEqual(this.maxRiskLimit, contractEntity.maxRiskLimit) && Intrinsics.areEqual(this.minRiskLimit, contractEntity.minRiskLimit) && Intrinsics.areEqual(this.riskStep, contractEntity.riskStep) && Intrinsics.areEqual(this.settleCurrency, contractEntity.settleCurrency) && Intrinsics.areEqual(this.settleDate, contractEntity.settleDate) && Intrinsics.areEqual(this.settlementFee, contractEntity.settlementFee) && Intrinsics.areEqual(this.takerFeeRate, contractEntity.takerFeeRate) && Intrinsics.areEqual(this.takerFixFee, contractEntity.takerFixFee) && Intrinsics.areEqual(this.tickSize, contractEntity.tickSize) && Intrinsics.areEqual(this.multiplier, contractEntity.multiplier) && Intrinsics.areEqual(this.maxLeverage, contractEntity.maxLeverage) && this.supportGridTrading == contractEntity.supportGridTrading && this.stepRiskLimitStatus == contractEntity.stepRiskLimitStatus && this.isTrialFunds == contractEntity.isTrialFunds && Intrinsics.areEqual(this.spotCurrency, contractEntity.spotCurrency) && Intrinsics.areEqual(this.k, contractEntity.k) && Intrinsics.areEqual(this.m, contractEntity.m) && Intrinsics.areEqual(this.f, contractEntity.f) && Intrinsics.areEqual(this.mmrLimit, contractEntity.mmrLimit) && Intrinsics.areEqual(this.mmrLevConstant, contractEntity.mmrLevConstant) && Intrinsics.areEqual(this.crossRiskLimit, contractEntity.crossRiskLimit) && Intrinsics.areEqual(this.adjustK, contractEntity.adjustK) && Intrinsics.areEqual(this.adjustM, contractEntity.adjustM) && Intrinsics.areEqual(this.adjustMmrLevConstant, contractEntity.adjustMmrLevConstant) && Intrinsics.areEqual(this.adjustActiveTime, contractEntity.adjustActiveTime) && Intrinsics.areEqual(this.supportCross, contractEntity.supportCross) && Intrinsics.areEqual(this.marketStage, contractEntity.marketStage) && Intrinsics.areEqual(this.preMarketToPerpDate, contractEntity.preMarketToPerpDate) && Intrinsics.areEqual(this.marketMaxOrderQty, contractEntity.marketMaxOrderQty) && Intrinsics.areEqual(this.marketType, contractEntity.marketType) && Intrinsics.areEqual(this.assetClass, contractEntity.assetClass) && Intrinsics.areEqual(this.subMarketType, contractEntity.subMarketType) && Intrinsics.areEqual(this.imgUrl, contractEntity.imgUrl);
+    }
+
+    public ContractEntity(@Nullable String str, boolean z11, @Nullable String str2, @Nullable String str3, @Nullable String str4, @Nullable String str5, @Nullable String str6, @Nullable String str7, long j11, long j12, long j13, @Nullable String str8, long j14, @Nullable String str9, @Nullable String str10, @Nullable String str11, @Nullable String str12, @Nullable BigDecimal bigDecimal, boolean z12, boolean z13, @Nullable BigDecimal bigDecimal2, @Nullable BigDecimal bigDecimal3, @Nullable BigDecimal bigDecimal4, @Nullable BigDecimal bigDecimal5, @Nullable String str13, @Nullable BigDecimal bigDecimal6, @Nullable BigDecimal bigDecimal7, @Nullable BigDecimal bigDecimal8, @Nullable BigDecimal bigDecimal9, @Nullable BigDecimal bigDecimal10, @Nullable BigDecimal bigDecimal11, @Nullable String str14, @Nullable Long l11, @Nullable BigDecimal bigDecimal12, @Nullable BigDecimal bigDecimal13, @Nullable BigDecimal bigDecimal14, @Nullable BigDecimal bigDecimal15, @Nullable BigDecimal bigDecimal16, @Nullable BigDecimal bigDecimal17, boolean z14, int i11, boolean z15, @Nullable String str15, @Nullable BigDecimal bigDecimal18, @Nullable BigDecimal bigDecimal19, @Nullable BigDecimal bigDecimal20, @Nullable BigDecimal bigDecimal21, @Nullable BigDecimal bigDecimal22, @Nullable BigDecimal bigDecimal23, @Nullable BigDecimal bigDecimal24, @Nullable BigDecimal bigDecimal25, @Nullable BigDecimal bigDecimal26, @Nullable Long l12, @Nullable Boolean bool, @Nullable String str16, @Nullable Long l13, @Nullable BigDecimal bigDecimal27, @Nullable String str17, @Nullable String str18, @Nullable String str19, @Nullable String str20) {
+        this.type = str;
+        this.isInverse = z11;
+        this.symbol = str2;
+        this.rootSymbol = str3;
+        this.baseCurrency = str4;
+        this.displayBaseCurrency = str5;
+        this.quoteCurrency = str6;
+        this.status = str7;
+        this.createdAt = j11;
+        this.expireDate = j12;
+        this.updatedAt = j13;
+        this.fairMethod = str8;
+        this.firstOpenDate = j14;
+        this.fundingBaseSymbol = str9;
+        this.fundingQuoteSymbol = str10;
+        this.fundingRateSymbol = str11;
+        this.indexSymbol = str12;
+        this.initialMargin = bigDecimal;
+        this.isDeleverage = z12;
+        this.isQuanto = z13;
+        this.lotSize = bigDecimal2;
+        this.maintainMargin = bigDecimal3;
+        this.makerFeeRate = bigDecimal4;
+        this.makerFixFee = bigDecimal5;
+        this.markMethod = str13;
+        this.maxOrderQty = bigDecimal6;
+        this.indexPriceTickSize = bigDecimal7;
+        this.maxPrice = bigDecimal8;
+        this.maxRiskLimit = bigDecimal9;
+        this.minRiskLimit = bigDecimal10;
+        this.riskStep = bigDecimal11;
+        this.settleCurrency = str14;
+        this.settleDate = l11;
+        this.settlementFee = bigDecimal12;
+        this.takerFeeRate = bigDecimal13;
+        this.takerFixFee = bigDecimal14;
+        this.tickSize = bigDecimal15;
+        this.multiplier = bigDecimal16;
+        this.maxLeverage = bigDecimal17;
+        this.supportGridTrading = z14;
+        this.stepRiskLimitStatus = i11;
+        this.isTrialFunds = z15;
+        this.spotCurrency = str15;
+        this.k = bigDecimal18;
+        this.m = bigDecimal19;
+        this.f = bigDecimal20;
+        this.mmrLimit = bigDecimal21;
+        this.mmrLevConstant = bigDecimal22;
+        this.crossRiskLimit = bigDecimal23;
+        this.adjustK = bigDecimal24;
+        this.adjustM = bigDecimal25;
+        this.adjustMmrLevConstant = bigDecimal26;
+        this.adjustActiveTime = l12;
+        this.supportCross = bool;
+        this.marketStage = str16;
+        this.preMarketToPerpDate = l13;
+        this.marketMaxOrderQty = bigDecimal27;
+        this.marketType = str17;
+        this.assetClass = str18;
+        this.subMarketType = str19;
+        this.imgUrl = str20;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component1, reason: from getter */
+    public final String getType() {
+        return this.type;
+    }
+
+    /* JADX INFO: renamed from: component10, reason: from getter */
+    public final long getExpireDate() {
+        return this.expireDate;
+    }
+
+    /* JADX INFO: renamed from: component11, reason: from getter */
+    public final long getUpdatedAt() {
+        return this.updatedAt;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component12, reason: from getter */
+    public final String getFairMethod() {
+        return this.fairMethod;
+    }
+
+    /* JADX INFO: renamed from: component13, reason: from getter */
+    public final long getFirstOpenDate() {
+        return this.firstOpenDate;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component14, reason: from getter */
+    public final String getFundingBaseSymbol() {
+        return this.fundingBaseSymbol;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component15, reason: from getter */
+    public final String getFundingQuoteSymbol() {
+        return this.fundingQuoteSymbol;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component16, reason: from getter */
+    public final String getFundingRateSymbol() {
+        return this.fundingRateSymbol;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component17, reason: from getter */
+    public final String getIndexSymbol() {
+        return this.indexSymbol;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component18, reason: from getter */
+    public final BigDecimal getInitialMargin() {
+        return this.initialMargin;
+    }
+
+    /* JADX INFO: renamed from: component19, reason: from getter */
+    public final boolean getIsDeleverage() {
+        return this.isDeleverage;
+    }
+
+    /* JADX INFO: renamed from: component2, reason: from getter */
+    public final boolean getIsInverse() {
+        return this.isInverse;
+    }
+
+    /* JADX INFO: renamed from: component20, reason: from getter */
+    public final boolean getIsQuanto() {
+        return this.isQuanto;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component21, reason: from getter */
+    public final BigDecimal getLotSize() {
+        return this.lotSize;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component22, reason: from getter */
+    public final BigDecimal getMaintainMargin() {
+        return this.maintainMargin;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component23, reason: from getter */
+    public final BigDecimal getMakerFeeRate() {
+        return this.makerFeeRate;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component24, reason: from getter */
+    public final BigDecimal getMakerFixFee() {
+        return this.makerFixFee;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component25, reason: from getter */
+    public final String getMarkMethod() {
+        return this.markMethod;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component26, reason: from getter */
+    public final BigDecimal getMaxOrderQty() {
+        return this.maxOrderQty;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component27, reason: from getter */
+    public final BigDecimal getIndexPriceTickSize() {
+        return this.indexPriceTickSize;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component28, reason: from getter */
+    public final BigDecimal getMaxPrice() {
+        return this.maxPrice;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component29, reason: from getter */
+    public final BigDecimal getMaxRiskLimit() {
+        return this.maxRiskLimit;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component3, reason: from getter */
+    public final String getSymbol() {
+        return this.symbol;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component30, reason: from getter */
+    public final BigDecimal getMinRiskLimit() {
+        return this.minRiskLimit;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component31, reason: from getter */
+    public final BigDecimal getRiskStep() {
+        return this.riskStep;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component32, reason: from getter */
+    public final String getSettleCurrency() {
+        return this.settleCurrency;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component33, reason: from getter */
+    public final Long getSettleDate() {
+        return this.settleDate;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component34, reason: from getter */
+    public final BigDecimal getSettlementFee() {
+        return this.settlementFee;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component35, reason: from getter */
+    public final BigDecimal getTakerFeeRate() {
+        return this.takerFeeRate;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component36, reason: from getter */
+    public final BigDecimal getTakerFixFee() {
+        return this.takerFixFee;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component37, reason: from getter */
+    public final BigDecimal getTickSize() {
+        return this.tickSize;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component38, reason: from getter */
+    public final BigDecimal getMultiplier() {
+        return this.multiplier;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component39, reason: from getter */
+    public final BigDecimal getMaxLeverage() {
+        return this.maxLeverage;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component4, reason: from getter */
+    public final String getRootSymbol() {
+        return this.rootSymbol;
+    }
+
+    /* JADX INFO: renamed from: component40, reason: from getter */
+    public final boolean getSupportGridTrading() {
+        return this.supportGridTrading;
+    }
+
+    /* JADX INFO: renamed from: component41, reason: from getter */
+    public final int getStepRiskLimitStatus() {
+        return this.stepRiskLimitStatus;
+    }
+
+    /* JADX INFO: renamed from: component42, reason: from getter */
+    public final boolean getIsTrialFunds() {
+        return this.isTrialFunds;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component43, reason: from getter */
+    public final String getSpotCurrency() {
+        return this.spotCurrency;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component44, reason: from getter */
+    public final BigDecimal getK() {
+        return this.k;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component45, reason: from getter */
+    public final BigDecimal getM() {
+        return this.m;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component46, reason: from getter */
+    public final BigDecimal getF() {
+        return this.f;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component47, reason: from getter */
+    public final BigDecimal getMmrLimit() {
+        return this.mmrLimit;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component48, reason: from getter */
+    public final BigDecimal getMmrLevConstant() {
+        return this.mmrLevConstant;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component49, reason: from getter */
+    public final BigDecimal getCrossRiskLimit() {
+        return this.crossRiskLimit;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component5, reason: from getter */
+    public final String getBaseCurrency() {
+        return this.baseCurrency;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component50, reason: from getter */
+    public final BigDecimal getAdjustK() {
+        return this.adjustK;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component51, reason: from getter */
+    public final BigDecimal getAdjustM() {
+        return this.adjustM;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component52, reason: from getter */
+    public final BigDecimal getAdjustMmrLevConstant() {
+        return this.adjustMmrLevConstant;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component53, reason: from getter */
+    public final Long getAdjustActiveTime() {
+        return this.adjustActiveTime;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component54, reason: from getter */
+    public final Boolean getSupportCross() {
+        return this.supportCross;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component55, reason: from getter */
+    public final String getMarketStage() {
+        return this.marketStage;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component56, reason: from getter */
+    public final Long getPreMarketToPerpDate() {
+        return this.preMarketToPerpDate;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component57, reason: from getter */
+    public final BigDecimal getMarketMaxOrderQty() {
+        return this.marketMaxOrderQty;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component58, reason: from getter */
+    public final String getMarketType() {
+        return this.marketType;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component59, reason: from getter */
+    public final String getAssetClass() {
+        return this.assetClass;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component6, reason: from getter */
+    public final String getDisplayBaseCurrency() {
+        return this.displayBaseCurrency;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component60, reason: from getter */
+    public final String getSubMarketType() {
+        return this.subMarketType;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component61, reason: from getter */
+    public final String getImgUrl() {
+        return this.imgUrl;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component7, reason: from getter */
+    public final String getQuoteCurrency() {
+        return this.quoteCurrency;
+    }
+
+    @Nullable
+    /* JADX INFO: renamed from: component8, reason: from getter */
+    public final String getStatus() {
+        return this.status;
+    }
+
+    /* JADX INFO: renamed from: component9, reason: from getter */
+    public final long getCreatedAt() {
+        return this.createdAt;
+    }
+
+    @Nullable
+    public final Long getAdjustActiveTime() {
+        return this.adjustActiveTime;
+    }
+
+    @Nullable
+    public final BigDecimal getAdjustK() {
+        return this.adjustK;
+    }
+
+    @Nullable
+    public final BigDecimal getAdjustM() {
+        return this.adjustM;
+    }
+
+    @Nullable
+    public final BigDecimal getAdjustMmrLevConstant() {
+        return this.adjustMmrLevConstant;
+    }
+
+    @Nullable
+    public final String getAssetClass() {
+        return this.assetClass;
+    }
+
+    @Nullable
+    public final String getBaseCurrency() {
+        return this.baseCurrency;
+    }
+
+    public final long getCreatedAt() {
+        return this.createdAt;
+    }
+
+    @Nullable
+    public final BigDecimal getCrossRiskLimit() {
+        return this.crossRiskLimit;
+    }
+
+    @Nullable
+    public final String getDisplayBaseCurrency() {
+        return this.displayBaseCurrency;
+    }
+
+    public final long getExpireDate() {
+        return this.expireDate;
+    }
+
+    @Nullable
+    public final BigDecimal getF() {
+        return this.f;
+    }
+
+    @Nullable
+    public final String getFairMethod() {
+        return this.fairMethod;
+    }
+
+    public final long getFirstOpenDate() {
+        return this.firstOpenDate;
+    }
+
+    @Nullable
+    public final String getFundingBaseSymbol() {
+        return this.fundingBaseSymbol;
+    }
+
+    @Nullable
+    public final String getFundingQuoteSymbol() {
+        return this.fundingQuoteSymbol;
+    }
+
+    @Nullable
+    public final String getFundingRateSymbol() {
+        return this.fundingRateSymbol;
+    }
+
+    @Nullable
+    public final String getImgUrl() {
+        return this.imgUrl;
+    }
+
+    @Nullable
+    public final BigDecimal getIndexPriceTickSize() {
+        return this.indexPriceTickSize;
+    }
+
+    @Nullable
+    public final String getIndexSymbol() {
+        return this.indexSymbol;
+    }
+
+    @Nullable
+    public final BigDecimal getInitialMargin() {
+        return this.initialMargin;
+    }
+
+    @Nullable
+    public final BigDecimal getK() {
+        return this.k;
+    }
+
+    @Nullable
+    public final BigDecimal getLotSize() {
+        return this.lotSize;
+    }
+
+    @Nullable
+    public final BigDecimal getM() {
+        return this.m;
+    }
+
+    @Nullable
+    public final BigDecimal getMaintainMargin() {
+        return this.maintainMargin;
+    }
+
+    @Nullable
+    public final BigDecimal getMakerFeeRate() {
+        return this.makerFeeRate;
+    }
+
+    @Nullable
+    public final BigDecimal getMakerFixFee() {
+        return this.makerFixFee;
+    }
+
+    @Nullable
+    public final String getMarkMethod() {
+        return this.markMethod;
+    }
+
+    @Nullable
+    public final BigDecimal getMarketMaxOrderQty() {
+        return this.marketMaxOrderQty;
+    }
+
+    @Nullable
+    public final String getMarketStage() {
+        return this.marketStage;
+    }
+
+    @Nullable
+    public final String getMarketType() {
+        return this.marketType;
+    }
+
+    @Nullable
+    public final BigDecimal getMaxLeverage() {
+        return this.maxLeverage;
+    }
+
+    @Nullable
+    public final BigDecimal getMaxOrderQty() {
+        return this.maxOrderQty;
+    }
+
+    @Nullable
+    public final BigDecimal getMaxPrice() {
+        return this.maxPrice;
+    }
+
+    @Nullable
+    public final BigDecimal getMaxRiskLimit() {
+        return this.maxRiskLimit;
+    }
+
+    @Nullable
+    public final BigDecimal getMinRiskLimit() {
+        return this.minRiskLimit;
+    }
+
+    @Nullable
+    public final BigDecimal getMmrLevConstant() {
+        return this.mmrLevConstant;
+    }
+
+    @Nullable
+    public final BigDecimal getMmrLimit() {
+        return this.mmrLimit;
+    }
+
+    @Nullable
+    public final BigDecimal getMultiplier() {
+        return this.multiplier;
+    }
+
+    @Nullable
+    public final Long getPreMarketToPerpDate() {
+        return this.preMarketToPerpDate;
+    }
+
+    @Nullable
+    public final String getQuoteCurrency() {
+        return this.quoteCurrency;
+    }
+
+    @Nullable
+    public final BigDecimal getRiskStep() {
+        return this.riskStep;
+    }
+
+    @Nullable
+    public final String getRootSymbol() {
+        return this.rootSymbol;
+    }
+
+    @Nullable
+    public final String getSettleCurrency() {
+        return this.settleCurrency;
+    }
+
+    @Nullable
+    public final Long getSettleDate() {
+        return this.settleDate;
+    }
+
+    @Nullable
+    public final BigDecimal getSettlementFee() {
+        return this.settlementFee;
+    }
+
+    @Nullable
+    public final String getSpotCurrency() {
+        return this.spotCurrency;
+    }
+
+    @Nullable
+    public final String getStatus() {
+        return this.status;
+    }
+
+    public final int getStepRiskLimitStatus() {
+        return this.stepRiskLimitStatus;
+    }
+
+    @Nullable
+    public final String getSubMarketType() {
+        return this.subMarketType;
+    }
+
+    @Nullable
+    public final Boolean getSupportCross() {
+        return this.supportCross;
+    }
+
+    public final boolean getSupportGridTrading() {
+        return this.supportGridTrading;
+    }
+
+    @Nullable
+    public final String getSymbol() {
+        return this.symbol;
+    }
+
+    @Nullable
+    public final BigDecimal getTakerFeeRate() {
+        return this.takerFeeRate;
+    }
+
+    @Nullable
+    public final BigDecimal getTakerFixFee() {
+        return this.takerFixFee;
+    }
+
+    @Nullable
+    public final BigDecimal getTickSize() {
+        return this.tickSize;
+    }
+
+    @Nullable
+    public final String getType() {
+        return this.type;
+    }
+
+    public final long getUpdatedAt() {
+        return this.updatedAt;
+    }
+
+    public int hashCode() {
+        String str = this.type;
+        int iHashCode = (((str == null ? 0 : str.hashCode()) * 31) + Boolean.hashCode(this.isInverse)) * 31;
+        String str2 = this.symbol;
+        int iHashCode2 = (iHashCode + (str2 == null ? 0 : str2.hashCode())) * 31;
+        String str3 = this.rootSymbol;
+        int iHashCode3 = (iHashCode2 + (str3 == null ? 0 : str3.hashCode())) * 31;
+        String str4 = this.baseCurrency;
+        int iHashCode4 = (iHashCode3 + (str4 == null ? 0 : str4.hashCode())) * 31;
+        String str5 = this.displayBaseCurrency;
+        int iHashCode5 = (iHashCode4 + (str5 == null ? 0 : str5.hashCode())) * 31;
+        String str6 = this.quoteCurrency;
+        int iHashCode6 = (iHashCode5 + (str6 == null ? 0 : str6.hashCode())) * 31;
+        String str7 = this.status;
+        int iHashCode7 = (((((((iHashCode6 + (str7 == null ? 0 : str7.hashCode())) * 31) + Long.hashCode(this.createdAt)) * 31) + Long.hashCode(this.expireDate)) * 31) + Long.hashCode(this.updatedAt)) * 31;
+        String str8 = this.fairMethod;
+        int iHashCode8 = (((iHashCode7 + (str8 == null ? 0 : str8.hashCode())) * 31) + Long.hashCode(this.firstOpenDate)) * 31;
+        String str9 = this.fundingBaseSymbol;
+        int iHashCode9 = (iHashCode8 + (str9 == null ? 0 : str9.hashCode())) * 31;
+        String str10 = this.fundingQuoteSymbol;
+        int iHashCode10 = (iHashCode9 + (str10 == null ? 0 : str10.hashCode())) * 31;
+        String str11 = this.fundingRateSymbol;
+        int iHashCode11 = (iHashCode10 + (str11 == null ? 0 : str11.hashCode())) * 31;
+        String str12 = this.indexSymbol;
+        int iHashCode12 = (iHashCode11 + (str12 == null ? 0 : str12.hashCode())) * 31;
+        BigDecimal bigDecimal = this.initialMargin;
+        int iHashCode13 = (((((iHashCode12 + (bigDecimal == null ? 0 : bigDecimal.hashCode())) * 31) + Boolean.hashCode(this.isDeleverage)) * 31) + Boolean.hashCode(this.isQuanto)) * 31;
+        BigDecimal bigDecimal2 = this.lotSize;
+        int iHashCode14 = (iHashCode13 + (bigDecimal2 == null ? 0 : bigDecimal2.hashCode())) * 31;
+        BigDecimal bigDecimal3 = this.maintainMargin;
+        int iHashCode15 = (iHashCode14 + (bigDecimal3 == null ? 0 : bigDecimal3.hashCode())) * 31;
+        BigDecimal bigDecimal4 = this.makerFeeRate;
+        int iHashCode16 = (iHashCode15 + (bigDecimal4 == null ? 0 : bigDecimal4.hashCode())) * 31;
+        BigDecimal bigDecimal5 = this.makerFixFee;
+        int iHashCode17 = (iHashCode16 + (bigDecimal5 == null ? 0 : bigDecimal5.hashCode())) * 31;
+        String str13 = this.markMethod;
+        int iHashCode18 = (iHashCode17 + (str13 == null ? 0 : str13.hashCode())) * 31;
+        BigDecimal bigDecimal6 = this.maxOrderQty;
+        int iHashCode19 = (iHashCode18 + (bigDecimal6 == null ? 0 : bigDecimal6.hashCode())) * 31;
+        BigDecimal bigDecimal7 = this.indexPriceTickSize;
+        int iHashCode20 = (iHashCode19 + (bigDecimal7 == null ? 0 : bigDecimal7.hashCode())) * 31;
+        BigDecimal bigDecimal8 = this.maxPrice;
+        int iHashCode21 = (iHashCode20 + (bigDecimal8 == null ? 0 : bigDecimal8.hashCode())) * 31;
+        BigDecimal bigDecimal9 = this.maxRiskLimit;
+        int iHashCode22 = (iHashCode21 + (bigDecimal9 == null ? 0 : bigDecimal9.hashCode())) * 31;
+        BigDecimal bigDecimal10 = this.minRiskLimit;
+        int iHashCode23 = (iHashCode22 + (bigDecimal10 == null ? 0 : bigDecimal10.hashCode())) * 31;
+        BigDecimal bigDecimal11 = this.riskStep;
+        int iHashCode24 = (iHashCode23 + (bigDecimal11 == null ? 0 : bigDecimal11.hashCode())) * 31;
+        String str14 = this.settleCurrency;
+        int iHashCode25 = (iHashCode24 + (str14 == null ? 0 : str14.hashCode())) * 31;
+        Long l11 = this.settleDate;
+        int iHashCode26 = (iHashCode25 + (l11 == null ? 0 : l11.hashCode())) * 31;
+        BigDecimal bigDecimal12 = this.settlementFee;
+        int iHashCode27 = (iHashCode26 + (bigDecimal12 == null ? 0 : bigDecimal12.hashCode())) * 31;
+        BigDecimal bigDecimal13 = this.takerFeeRate;
+        int iHashCode28 = (iHashCode27 + (bigDecimal13 == null ? 0 : bigDecimal13.hashCode())) * 31;
+        BigDecimal bigDecimal14 = this.takerFixFee;
+        int iHashCode29 = (iHashCode28 + (bigDecimal14 == null ? 0 : bigDecimal14.hashCode())) * 31;
+        BigDecimal bigDecimal15 = this.tickSize;
+        int iHashCode30 = (iHashCode29 + (bigDecimal15 == null ? 0 : bigDecimal15.hashCode())) * 31;
+        BigDecimal bigDecimal16 = this.multiplier;
+        int iHashCode31 = (iHashCode30 + (bigDecimal16 == null ? 0 : bigDecimal16.hashCode())) * 31;
+        BigDecimal bigDecimal17 = this.maxLeverage;
+        int iHashCode32 = (((((((iHashCode31 + (bigDecimal17 == null ? 0 : bigDecimal17.hashCode())) * 31) + Boolean.hashCode(this.supportGridTrading)) * 31) + Integer.hashCode(this.stepRiskLimitStatus)) * 31) + Boolean.hashCode(this.isTrialFunds)) * 31;
+        String str15 = this.spotCurrency;
+        int iHashCode33 = (iHashCode32 + (str15 == null ? 0 : str15.hashCode())) * 31;
+        BigDecimal bigDecimal18 = this.k;
+        int iHashCode34 = (iHashCode33 + (bigDecimal18 == null ? 0 : bigDecimal18.hashCode())) * 31;
+        BigDecimal bigDecimal19 = this.m;
+        int iHashCode35 = (iHashCode34 + (bigDecimal19 == null ? 0 : bigDecimal19.hashCode())) * 31;
+        BigDecimal bigDecimal20 = this.f;
+        int iHashCode36 = (iHashCode35 + (bigDecimal20 == null ? 0 : bigDecimal20.hashCode())) * 31;
+        BigDecimal bigDecimal21 = this.mmrLimit;
+        int iHashCode37 = (iHashCode36 + (bigDecimal21 == null ? 0 : bigDecimal21.hashCode())) * 31;
+        BigDecimal bigDecimal22 = this.mmrLevConstant;
+        int iHashCode38 = (iHashCode37 + (bigDecimal22 == null ? 0 : bigDecimal22.hashCode())) * 31;
+        BigDecimal bigDecimal23 = this.crossRiskLimit;
+        int iHashCode39 = (iHashCode38 + (bigDecimal23 == null ? 0 : bigDecimal23.hashCode())) * 31;
+        BigDecimal bigDecimal24 = this.adjustK;
+        int iHashCode40 = (iHashCode39 + (bigDecimal24 == null ? 0 : bigDecimal24.hashCode())) * 31;
+        BigDecimal bigDecimal25 = this.adjustM;
+        int iHashCode41 = (iHashCode40 + (bigDecimal25 == null ? 0 : bigDecimal25.hashCode())) * 31;
+        BigDecimal bigDecimal26 = this.adjustMmrLevConstant;
+        int iHashCode42 = (iHashCode41 + (bigDecimal26 == null ? 0 : bigDecimal26.hashCode())) * 31;
+        Long l12 = this.adjustActiveTime;
+        int iHashCode43 = (iHashCode42 + (l12 == null ? 0 : l12.hashCode())) * 31;
+        Boolean bool = this.supportCross;
+        int iHashCode44 = (iHashCode43 + (bool == null ? 0 : bool.hashCode())) * 31;
+        String str16 = this.marketStage;
+        int iHashCode45 = (iHashCode44 + (str16 == null ? 0 : str16.hashCode())) * 31;
+        Long l13 = this.preMarketToPerpDate;
+        int iHashCode46 = (iHashCode45 + (l13 == null ? 0 : l13.hashCode())) * 31;
+        BigDecimal bigDecimal27 = this.marketMaxOrderQty;
+        int iHashCode47 = (iHashCode46 + (bigDecimal27 == null ? 0 : bigDecimal27.hashCode())) * 31;
+        String str17 = this.marketType;
+        int iHashCode48 = (iHashCode47 + (str17 == null ? 0 : str17.hashCode())) * 31;
+        String str18 = this.assetClass;
+        int iHashCode49 = (iHashCode48 + (str18 == null ? 0 : str18.hashCode())) * 31;
+        String str19 = this.subMarketType;
+        int iHashCode50 = (iHashCode49 + (str19 == null ? 0 : str19.hashCode())) * 31;
+        String str20 = this.imgUrl;
+        return iHashCode50 + (str20 != null ? str20.hashCode() : 0);
+    }
+
+    public final boolean isDeleverage() {
+        return this.isDeleverage;
+    }
+
+    public final boolean isInverse() {
+        return this.isInverse;
+    }
+
+    public final boolean isPreMarket() {
+        return Intrinsics.areEqual(this.marketStage, "PRE_MARKET");
+    }
+
+    public final boolean isQuanto() {
+        return this.isQuanto;
+    }
+
+    public final boolean isStock() {
+        return Intrinsics.areEqual(this.assetClass, "STOCK");
+    }
+
+    public final boolean isTrialFunds() {
+        return this.isTrialFunds;
+    }
+
+    public final void setBaseCurrency(@Nullable String str) {
+        this.baseCurrency = str;
+    }
+
+    public final void setCreatedAt(long j11) {
+        this.createdAt = j11;
+    }
+
+    public final void setDeleverage(boolean z11) {
+        this.isDeleverage = z11;
+    }
+
+    public final void setDisplayBaseCurrency(@Nullable String str) {
+        this.displayBaseCurrency = str;
+    }
+
+    public final void setExpireDate(long j11) {
+        this.expireDate = j11;
+    }
+
+    public final void setFairMethod(@Nullable String str) {
+        this.fairMethod = str;
+    }
+
+    public final void setFirstOpenDate(long j11) {
+        this.firstOpenDate = j11;
+    }
+
+    public final void setFundingBaseSymbol(@Nullable String str) {
+        this.fundingBaseSymbol = str;
+    }
+
+    public final void setFundingQuoteSymbol(@Nullable String str) {
+        this.fundingQuoteSymbol = str;
+    }
+
+    public final void setFundingRateSymbol(@Nullable String str) {
+        this.fundingRateSymbol = str;
+    }
+
+    public final void setIndexPriceTickSize(@Nullable BigDecimal bigDecimal) {
+        this.indexPriceTickSize = bigDecimal;
+    }
+
+    public final void setIndexSymbol(@Nullable String str) {
+        this.indexSymbol = str;
+    }
+
+    public final void setInitialMargin(@Nullable BigDecimal bigDecimal) {
+        this.initialMargin = bigDecimal;
+    }
+
+    public final void setInverse(boolean z11) {
+        this.isInverse = z11;
+    }
+
+    public final void setLotSize(@Nullable BigDecimal bigDecimal) {
+        this.lotSize = bigDecimal;
+    }
+
+    public final void setMaintainMargin(@Nullable BigDecimal bigDecimal) {
+        this.maintainMargin = bigDecimal;
+    }
+
+    public final void setMakerFeeRate(@Nullable BigDecimal bigDecimal) {
+        this.makerFeeRate = bigDecimal;
+    }
+
+    public final void setMakerFixFee(@Nullable BigDecimal bigDecimal) {
+        this.makerFixFee = bigDecimal;
+    }
+
+    public final void setMarkMethod(@Nullable String str) {
+        this.markMethod = str;
+    }
+
+    public final void setMaxLeverage(@Nullable BigDecimal bigDecimal) {
+        this.maxLeverage = bigDecimal;
+    }
+
+    public final void setMaxOrderQty(@Nullable BigDecimal bigDecimal) {
+        this.maxOrderQty = bigDecimal;
+    }
+
+    public final void setMaxPrice(@Nullable BigDecimal bigDecimal) {
+        this.maxPrice = bigDecimal;
+    }
+
+    public final void setMaxRiskLimit(@Nullable BigDecimal bigDecimal) {
+        this.maxRiskLimit = bigDecimal;
+    }
+
+    public final void setMinRiskLimit(@Nullable BigDecimal bigDecimal) {
+        this.minRiskLimit = bigDecimal;
+    }
+
+    public final void setMultiplier(@Nullable BigDecimal bigDecimal) {
+        this.multiplier = bigDecimal;
+    }
+
+    public final void setQuanto(boolean z11) {
+        this.isQuanto = z11;
+    }
+
+    public final void setQuoteCurrency(@Nullable String str) {
+        this.quoteCurrency = str;
+    }
+
+    public final void setRiskStep(@Nullable BigDecimal bigDecimal) {
+        this.riskStep = bigDecimal;
+    }
+
+    public final void setRootSymbol(@Nullable String str) {
+        this.rootSymbol = str;
+    }
+
+    public final void setSettleCurrency(@Nullable String str) {
+        this.settleCurrency = str;
+    }
+
+    public final void setSettleDate(@Nullable Long l11) {
+        this.settleDate = l11;
+    }
+
+    public final void setSettlementFee(@Nullable BigDecimal bigDecimal) {
+        this.settlementFee = bigDecimal;
+    }
+
+    public final void setSpotCurrency(@Nullable String str) {
+        this.spotCurrency = str;
+    }
+
+    public final void setStatus(@Nullable String str) {
+        this.status = str;
+    }
+
+    public final void setStepRiskLimitStatus(int i11) {
+        this.stepRiskLimitStatus = i11;
+    }
+
+    public final void setSupportGridTrading(boolean z11) {
+        this.supportGridTrading = z11;
+    }
+
+    public final void setSymbol(@Nullable String str) {
+        this.symbol = str;
+    }
+
+    public final void setTakerFeeRate(@Nullable BigDecimal bigDecimal) {
+        this.takerFeeRate = bigDecimal;
+    }
+
+    public final void setTakerFixFee(@Nullable BigDecimal bigDecimal) {
+        this.takerFixFee = bigDecimal;
+    }
+
+    public final void setTickSize(@Nullable BigDecimal bigDecimal) {
+        this.tickSize = bigDecimal;
+    }
+
+    public final void setTrialFunds(boolean z11) {
+        this.isTrialFunds = z11;
+    }
+
+    public final void setType(@Nullable String str) {
+        this.type = str;
+    }
+
+    public final void setUpdatedAt(long j11) {
+        this.updatedAt = j11;
+    }
+
+    @NotNull
+    public String toString() {
+        return "ContractEntity(type=" + this.type + ", isInverse=" + this.isInverse + ", symbol=" + this.symbol + ", rootSymbol=" + this.rootSymbol + ", baseCurrency=" + this.baseCurrency + ", displayBaseCurrency=" + this.displayBaseCurrency + ", quoteCurrency=" + this.quoteCurrency + ", status=" + this.status + ", createdAt=" + this.createdAt + ", expireDate=" + this.expireDate + ", updatedAt=" + this.updatedAt + ", fairMethod=" + this.fairMethod + ", firstOpenDate=" + this.firstOpenDate + ", fundingBaseSymbol=" + this.fundingBaseSymbol + ", fundingQuoteSymbol=" + this.fundingQuoteSymbol + ", fundingRateSymbol=" + this.fundingRateSymbol + ", indexSymbol=" + this.indexSymbol + ", initialMargin=" + this.initialMargin + ", isDeleverage=" + this.isDeleverage + ", isQuanto=" + this.isQuanto + ", lotSize=" + this.lotSize + ", maintainMargin=" + this.maintainMargin + ", makerFeeRate=" + this.makerFeeRate + ", makerFixFee=" + this.makerFixFee + ", markMethod=" + this.markMethod + ", maxOrderQty=" + this.maxOrderQty + ", indexPriceTickSize=" + this.indexPriceTickSize + ", maxPrice=" + this.maxPrice + ", maxRiskLimit=" + this.maxRiskLimit + ", minRiskLimit=" + this.minRiskLimit + ", riskStep=" + this.riskStep + ", settleCurrency=" + this.settleCurrency + ", settleDate=" + this.settleDate + ", settlementFee=" + this.settlementFee + ", takerFeeRate=" + this.takerFeeRate + ", takerFixFee=" + this.takerFixFee + ", tickSize=" + this.tickSize + ", multiplier=" + this.multiplier + ", maxLeverage=" + this.maxLeverage + ", supportGridTrading=" + this.supportGridTrading + ", stepRiskLimitStatus=" + this.stepRiskLimitStatus + ", isTrialFunds=" + this.isTrialFunds + ", spotCurrency=" + this.spotCurrency + ", k=" + this.k + ", m=" + this.m + ", f=" + this.f + ", mmrLimit=" + this.mmrLimit + ", mmrLevConstant=" + this.mmrLevConstant + ", crossRiskLimit=" + this.crossRiskLimit + ", adjustK=" + this.adjustK + ", adjustM=" + this.adjustM + ", adjustMmrLevConstant=" + this.adjustMmrLevConstant + ", adjustActiveTime=" + this.adjustActiveTime + ", supportCross=" + this.supportCross + ", marketStage=" + this.marketStage + ", preMarketToPerpDate=" + this.preMarketToPerpDate + ", marketMaxOrderQty=" + this.marketMaxOrderQty + ", marketType=" + this.marketType + ", assetClass=" + this.assetClass + ", subMarketType=" + this.subMarketType + ", imgUrl=" + this.imgUrl + ')';
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(@NotNull Parcel dest, int flags) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeString(this.type);
+        dest.writeInt(this.isInverse ? 1 : 0);
+        dest.writeString(this.symbol);
+        dest.writeString(this.rootSymbol);
+        dest.writeString(this.baseCurrency);
+        dest.writeString(this.displayBaseCurrency);
+        dest.writeString(this.quoteCurrency);
+        dest.writeString(this.status);
+        dest.writeLong(this.createdAt);
+        dest.writeLong(this.expireDate);
+        dest.writeLong(this.updatedAt);
+        dest.writeString(this.fairMethod);
+        dest.writeLong(this.firstOpenDate);
+        dest.writeString(this.fundingBaseSymbol);
+        dest.writeString(this.fundingQuoteSymbol);
+        dest.writeString(this.fundingRateSymbol);
+        dest.writeString(this.indexSymbol);
+        dest.writeSerializable(this.initialMargin);
+        dest.writeInt(this.isDeleverage ? 1 : 0);
+        dest.writeInt(this.isQuanto ? 1 : 0);
+        dest.writeSerializable(this.lotSize);
+        dest.writeSerializable(this.maintainMargin);
+        dest.writeSerializable(this.makerFeeRate);
+        dest.writeSerializable(this.makerFixFee);
+        dest.writeString(this.markMethod);
+        dest.writeSerializable(this.maxOrderQty);
+        dest.writeSerializable(this.indexPriceTickSize);
+        dest.writeSerializable(this.maxPrice);
+        dest.writeSerializable(this.maxRiskLimit);
+        dest.writeSerializable(this.minRiskLimit);
+        dest.writeSerializable(this.riskStep);
+        dest.writeString(this.settleCurrency);
+        Long l11 = this.settleDate;
+        if (l11 == null) {
+            dest.writeInt(0);
+        } else {
+            dest.writeInt(1);
+            dest.writeLong(l11.longValue());
+        }
+        dest.writeSerializable(this.settlementFee);
+        dest.writeSerializable(this.takerFeeRate);
+        dest.writeSerializable(this.takerFixFee);
+        dest.writeSerializable(this.tickSize);
+        dest.writeSerializable(this.multiplier);
+        dest.writeSerializable(this.maxLeverage);
+        dest.writeInt(this.supportGridTrading ? 1 : 0);
+        dest.writeInt(this.stepRiskLimitStatus);
+        dest.writeInt(this.isTrialFunds ? 1 : 0);
+        dest.writeString(this.spotCurrency);
+        dest.writeSerializable(this.k);
+        dest.writeSerializable(this.m);
+        dest.writeSerializable(this.f);
+        dest.writeSerializable(this.mmrLimit);
+        dest.writeSerializable(this.mmrLevConstant);
+        dest.writeSerializable(this.crossRiskLimit);
+        dest.writeSerializable(this.adjustK);
+        dest.writeSerializable(this.adjustM);
+        dest.writeSerializable(this.adjustMmrLevConstant);
+        Long l12 = this.adjustActiveTime;
+        if (l12 == null) {
+            dest.writeInt(0);
+        } else {
+            dest.writeInt(1);
+            dest.writeLong(l12.longValue());
+        }
+        Boolean bool = this.supportCross;
+        if (bool == null) {
+            dest.writeInt(0);
+        } else {
+            dest.writeInt(1);
+            dest.writeInt(bool.booleanValue() ? 1 : 0);
+        }
+        dest.writeString(this.marketStage);
+        Long l13 = this.preMarketToPerpDate;
+        if (l13 == null) {
+            dest.writeInt(0);
+        } else {
+            dest.writeInt(1);
+            dest.writeLong(l13.longValue());
+        }
+        dest.writeSerializable(this.marketMaxOrderQty);
+        dest.writeString(this.marketType);
+        dest.writeString(this.assetClass);
+        dest.writeString(this.subMarketType);
+        dest.writeString(this.imgUrl);
+    }
+
+    public final boolean isUsStock() {
+        if (isStock() && Intrinsics.areEqual(this.subMarketType, "US.STOCK")) {
+            return true;
+        }
+        return false;
+    }
+
+    @Deprecated(message = "Use isUsStock()")
+    public final boolean isUsStockMarket() {
+        return isUsStock();
+    }
+
+    public /* synthetic */ ContractEntity(String str, boolean z11, String str2, String str3, String str4, String str5, String str6, String str7, long j11, long j12, long j13, String str8, long j14, String str9, String str10, String str11, String str12, BigDecimal bigDecimal, boolean z12, boolean z13, BigDecimal bigDecimal2, BigDecimal bigDecimal3, BigDecimal bigDecimal4, BigDecimal bigDecimal5, String str13, BigDecimal bigDecimal6, BigDecimal bigDecimal7, BigDecimal bigDecimal8, BigDecimal bigDecimal9, BigDecimal bigDecimal10, BigDecimal bigDecimal11, String str14, Long l11, BigDecimal bigDecimal12, BigDecimal bigDecimal13, BigDecimal bigDecimal14, BigDecimal bigDecimal15, BigDecimal bigDecimal16, BigDecimal bigDecimal17, boolean z14, int i11, boolean z15, String str15, BigDecimal bigDecimal18, BigDecimal bigDecimal19, BigDecimal bigDecimal20, BigDecimal bigDecimal21, BigDecimal bigDecimal22, BigDecimal bigDecimal23, BigDecimal bigDecimal24, BigDecimal bigDecimal25, BigDecimal bigDecimal26, Long l12, Boolean bool, String str16, Long l13, BigDecimal bigDecimal27, String str17, String str18, String str19, String str20, int i12, int i13, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i12 & 1) != 0 ? "FFWCSX" : str, (i12 & 2) != 0 ? false : z11, (i12 & 4) != 0 ? null : str2, (i12 & 8) != 0 ? null : str3, (i12 & 16) != 0 ? null : str4, (i12 & 32) != 0 ? null : str5, (i12 & 64) != 0 ? null : str6, (i12 & 128) != 0 ? null : str7, (i12 & 256) != 0 ? 0L : j11, (i12 & 512) != 0 ? 0L : j12, (i12 & 1024) != 0 ? 0L : j13, (i12 & 2048) != 0 ? null : str8, (i12 & 4096) == 0 ? j14 : 0L, (i12 & 8192) != 0 ? null : str9, (i12 & 16384) != 0 ? null : str10, (i12 & 32768) != 0 ? null : str11, (i12 & 65536) != 0 ? null : str12, (i12 & 131072) != 0 ? null : bigDecimal, (i12 & 262144) != 0 ? false : z12, (i12 & 524288) != 0 ? false : z13, (i12 & 1048576) != 0 ? null : bigDecimal2, (i12 & 2097152) != 0 ? null : bigDecimal3, (i12 & 4194304) != 0 ? null : bigDecimal4, (i12 & 8388608) != 0 ? null : bigDecimal5, (i12 & 16777216) != 0 ? null : str13, (i12 & 33554432) != 0 ? null : bigDecimal6, (i12 & 67108864) != 0 ? new BigDecimal("0.01") : bigDecimal7, (i12 & C2711C.BUFFER_FLAG_FIRST_SAMPLE) != 0 ? null : bigDecimal8, (i12 & 268435456) != 0 ? null : bigDecimal9, (i12 & C2711C.BUFFER_FLAG_LAST_SAMPLE) != 0 ? null : bigDecimal10, (i12 & 1073741824) != 0 ? null : bigDecimal11, (i12 & Integer.MIN_VALUE) != 0 ? null : str14, (i13 & 1) != 0 ? null : l11, (i13 & 2) != 0 ? null : bigDecimal12, (i13 & 4) != 0 ? null : bigDecimal13, (i13 & 8) != 0 ? null : bigDecimal14, (i13 & 16) != 0 ? null : bigDecimal15, (i13 & 32) != 0 ? null : bigDecimal16, (i13 & 64) != 0 ? null : bigDecimal17, (i13 & 128) != 0 ? false : z14, (i13 & 256) != 0 ? 0 : i11, (i13 & 512) != 0 ? false : z15, (i13 & 1024) != 0 ? null : str15, (i13 & 2048) != 0 ? null : bigDecimal18, (i13 & 4096) != 0 ? null : bigDecimal19, (i13 & 8192) != 0 ? null : bigDecimal20, (i13 & 16384) != 0 ? null : bigDecimal21, (i13 & 32768) != 0 ? null : bigDecimal22, (i13 & 65536) != 0 ? null : bigDecimal23, (i13 & 131072) != 0 ? null : bigDecimal24, (i13 & 262144) != 0 ? null : bigDecimal25, (i13 & 524288) != 0 ? null : bigDecimal26, (i13 & 1048576) != 0 ? null : l12, (i13 & 2097152) != 0 ? null : bool, (i13 & 4194304) != 0 ? null : str16, (i13 & 8388608) != 0 ? null : l13, (i13 & 16777216) != 0 ? null : bigDecimal27, (i13 & 33554432) != 0 ? null : str17, (i13 & 67108864) != 0 ? null : str18, (i13 & C2711C.BUFFER_FLAG_FIRST_SAMPLE) != 0 ? null : str19, (i13 & 268435456) != 0 ? null : str20);
+    }
+}

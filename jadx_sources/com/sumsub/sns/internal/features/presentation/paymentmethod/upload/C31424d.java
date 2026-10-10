@@ -1,0 +1,25 @@
+package com.sumsub.sns.internal.features.presentation.paymentmethod.upload;
+
+import androidx.lifecycle.ViewModelStoreOwner;
+import p852kotlin.jvm.functions.Function0;
+import p852kotlin.jvm.internal.Lambda;
+
+/* JADX INFO: renamed from: com.sumsub.sns.internal.features.presentation.paymentmethod.upload.d */
+/* JADX INFO: compiled from: r8-map-id-e8070c335b728e491f9067563c2bfcb5588b777f644873c971594ef64ebda208 */
+/* JADX INFO: loaded from: classes59.dex */
+public final class C31424d extends Lambda implements Function0 {
+
+    /* JADX INFO: renamed from: a */
+    public final /* synthetic */ C31423c f63675a;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C31424d(C31423c c31423c) {
+        super(0);
+        this.f63675a = c31423c;
+    }
+
+    @Override // p852kotlin.jvm.functions.Function0
+    public final Object invoke() {
+        return (ViewModelStoreOwner) this.f63675a.invoke();
+    }
+}

@@ -1,0 +1,70 @@
+package com.kubi.core.biz.togglesymbols;
+
+import androidx.exifinterface.media.ExifInterface;
+import com.kubi.component.BottomDialogHostFragment;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import p852kotlin.Metadata;
+import p852kotlin.ResultKt;
+import p852kotlin.Unit;
+import p852kotlin.coroutines.Continuation;
+import p852kotlin.coroutines.intrinsics.IntrinsicsKt;
+import p852kotlin.coroutines.jvm.internal.DebugMetadata;
+import p852kotlin.coroutines.jvm.internal.SuspendLambda;
+import p852kotlin.jvm.functions.Function2;
+import p852kotlin.jvm.internal.Intrinsics;
+import p852kotlin.jvm.internal.SourceDebugExtension;
+import pf.C43460a;
+import pf.InterfaceC43461b;
+
+/* JADX INFO: renamed from: com.kubi.core.biz.togglesymbols.ToggleSymbolDialogHelperKt$openMarginTradeSymbolsDialog$lambda$5$$inlined$bindEventCallback$1 */
+/* JADX INFO: compiled from: FlowEventBusApi.kt */
+/* JADX INFO: loaded from: classes8.dex */
+@Metadata(m90083d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001\"\u0006\b\u0000\u0010\u0002\u0018\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\u008a@¨\u0006\u0006"}, m90084d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "it", "Lcom/kubi/event/entity/IFlowEvent;", "com/kubi/event/api/FlowEventBusApiKt$bindFlowEvent$1", "com/kubi/component/BottomDialogHostFragment$bindEventCallback$lambda$2$$inlined$bindFlowEvent$1"}, m90085k = 3, m90086mv = {2, 2, 0}, m90088xi = 48)
+@DebugMetadata(m90121c = "com.kubi.core.biz.togglesymbols.ToggleSymbolDialogHelperKt$openMarginTradeSymbolsDialog$lambda$5$$inlined$bindEventCallback$1", m90122f = "ToggleSymbolDialogHelper.kt", m90123i = {}, m90124l = {}, m90125m = "invokeSuspend", m90126n = {}, m90127s = {})
+@SourceDebugExtension({"SMAP\nFlowEventBusApi.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FlowEventBusApi.kt\ncom/kubi/event/api/FlowEventBusApiKt$bindFlowEvent$1\n+ 2 BottomDialogHostFragment.kt\ncom/kubi/component/BottomDialogHostFragment\n+ 3 ToggleSymbolDialogHelper.kt\ncom/kubi/core/biz/togglesymbols/ToggleSymbolDialogHelperKt\n*L\n1#1,187:1\n74#2:188\n75#2:193\n68#3,4:189\n*E\n"})
+public final class C12288xc7d1a12a extends SuspendLambda implements Function2<InterfaceC43461b, Continuation<? super Unit>, Object> {
+    final /* synthetic */ String $key;
+    final /* synthetic */ BottomDialogHostFragment $this_apply$inlined;
+    /* synthetic */ Object L$0;
+    int label;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C12288xc7d1a12a(String str, Continuation continuation, BottomDialogHostFragment bottomDialogHostFragment) {
+        super(2, continuation);
+        this.$key = str;
+        this.$this_apply$inlined = bottomDialogHostFragment;
+    }
+
+    @Override // p852kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    @NotNull
+    public final Continuation<Unit> create(@Nullable Object obj, @NotNull Continuation<?> continuation) {
+        C12288xc7d1a12a c12288xc7d1a12a = new C12288xc7d1a12a(this.$key, continuation, this.$this_apply$inlined);
+        c12288xc7d1a12a.L$0 = obj;
+        return c12288xc7d1a12a;
+    }
+
+    @Override // p852kotlin.jvm.functions.Function2
+    @Nullable
+    public final Object invoke(@NotNull InterfaceC43461b interfaceC43461b, @Nullable Continuation<? super Unit> continuation) {
+        return ((C12288xc7d1a12a) create(interfaceC43461b, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+
+    @Override // p852kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    @Nullable
+    public final Object invokeSuspend(@NotNull Object obj) {
+        IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        if (this.label == 0) {
+            ResultKt.throwOnFailure(obj);
+            InterfaceC43461b interfaceC43461b = (InterfaceC43461b) this.L$0;
+            if (interfaceC43461b instanceof C43460a) {
+                C43460a c43460a = (C43460a) interfaceC43461b;
+                if (Intrinsics.areEqual(c43460a.getKeyEvent(), this.$key) && (c43460a.getData() instanceof Boolean) && !((Boolean) c43460a.getData()).booleanValue()) {
+                    this.$this_apply$inlined.dismiss();
+                }
+            }
+            return Unit.INSTANCE;
+        }
+        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+    }
+}
