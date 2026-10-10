@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:layout_gravity="end" android:id="@id/iv_check_status" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginTop="5.0dip" android:src="@mipmap/kucoin_icon_blue_white_yes" android:layout_marginEnd="5.0dip" />
+</FrameLayout>

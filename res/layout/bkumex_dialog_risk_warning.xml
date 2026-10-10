@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_bottom_sheet_bg" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_24" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+        <TextView android:textSize="@dimen/font_20" android:textStyle="bold" android:textColor="@color/emphasis" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_16" />
+        <TextView android:textSize="@dimen/font_15" android:textColor="@color/emphasis60" android:gravity="start" android:autoLink="web" android:linksClickable="true" android:id="@id/tvContent" android:paddingBottom="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/spacing_4" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/confirm" android:layout_width="fill_parent" android:layout_marginTop="12.0dip" android:text="@string/i_already_know" style="@style/styleButton48" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9794 @@
+.class public final Lcom/kubi/kucoin/R$drawable;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static final abc_ab_share_pack_mtrl_alpha:I = 0x7f080059
+
+.field public static final abc_action_bar_item_background_material:I = 0x7f08005a
+
+.field public static final abc_btn_borderless_material:I = 0x7f08005b
+
+.field public static final abc_btn_check_material:I = 0x7f08005c
+
+.field public static final abc_btn_check_material_anim:I = 0x7f08005d
+
+.field public static final abc_btn_check_to_on_mtrl_000:I = 0x7f08005e
+
+.field public static final abc_btn_check_to_on_mtrl_015:I = 0x7f08005f
+
+.field public static final abc_btn_colored_material:I = 0x7f080060
+
+.field public static final abc_btn_default_mtrl_shape:I = 0x7f080061
+
+.field public static final abc_btn_radio_material:I = 0x7f080062
+
+.field public static final abc_btn_radio_material_anim:I = 0x7f080063
+
+.field public static final abc_btn_radio_to_on_mtrl_000:I = 0x7f080064
+
+.field public static final abc_btn_radio_to_on_mtrl_015:I = 0x7f080065
+
+.field public static final abc_btn_switch_to_on_mtrl_00001:I = 0x7f080066
+
+.field public static final abc_btn_switch_to_on_mtrl_00012:I = 0x7f080067
+
+.field public static final abc_cab_background_internal_bg:I = 0x7f080068
+
+.field public static final abc_cab_background_top_material:I = 0x7f080069
+
+.field public static final abc_cab_background_top_mtrl_alpha:I = 0x7f08006a
+
+.field public static final abc_control_background_material:I = 0x7f08006b
+
+.field public static final abc_dialog_material_background:I = 0x7f08006c
+
+.field public static final abc_edit_text_material:I = 0x7f08006d
+
+.field public static final abc_ic_ab_back_material:I = 0x7f08006e
+
+.field public static final abc_ic_arrow_drop_right_black_24dp:I = 0x7f08006f
+
+.field public static final abc_ic_clear_material:I = 0x7f080070
+
+.field public static final abc_ic_commit_search_api_mtrl_alpha:I = 0x7f080071
+
+.field public static final abc_ic_go_search_api_material:I = 0x7f080072
+
+.field public static final abc_ic_menu_copy_mtrl_am_alpha:I = 0x7f080073
+
+.field public static final abc_ic_menu_cut_mtrl_alpha:I = 0x7f080074
+
+.field public static final abc_ic_menu_overflow_material:I = 0x7f080075
+
+.field public static final abc_ic_menu_paste_mtrl_am_alpha:I = 0x7f080076
+
+.field public static final abc_ic_menu_selectall_mtrl_alpha:I = 0x7f080077
+
+.field public static final abc_ic_menu_share_mtrl_alpha:I = 0x7f080078
+
+.field public static final abc_ic_search_api_material:I = 0x7f080079
+
+.field public static final abc_ic_voice_search_api_material:I = 0x7f08007a
+
+.field public static final abc_item_background_holo_dark:I = 0x7f08007b
+
+.field public static final abc_item_background_holo_light:I = 0x7f08007c
+
+.field public static final abc_list_divider_material:I = 0x7f08007d
+
+.field public static final abc_list_divider_mtrl_alpha:I = 0x7f08007e
+
+.field public static final abc_list_focused_holo:I = 0x7f08007f
+
+.field public static final abc_list_longpressed_holo:I = 0x7f080080
+
+.field public static final abc_list_pressed_holo_dark:I = 0x7f080081
+
+.field public static final abc_list_pressed_holo_light:I = 0x7f080082
+
+.field public static final abc_list_selector_background_transition_holo_dark:I = 0x7f080083
+
+.field public static final abc_list_selector_background_transition_holo_light:I = 0x7f080084
+
+.field public static final abc_list_selector_disabled_holo_dark:I = 0x7f080085
+
+.field public static final abc_list_selector_disabled_holo_light:I = 0x7f080086
+
+.field public static final abc_list_selector_holo_dark:I = 0x7f080087
+
+.field public static final abc_list_selector_holo_light:I = 0x7f080088
+
+.field public static final abc_menu_hardkey_panel_mtrl_mult:I = 0x7f080089
+
+.field public static final abc_popup_background_mtrl_mult:I = 0x7f08008a
+
+.field public static final abc_ratingbar_indicator_material:I = 0x7f08008b
+
+.field public static final abc_ratingbar_material:I = 0x7f08008c
+
+.field public static final abc_ratingbar_small_material:I = 0x7f08008d
+
+.field public static final abc_scrubber_control_off_mtrl_alpha:I = 0x7f08008e
+
+.field public static final abc_scrubber_control_to_pressed_mtrl_000:I = 0x7f08008f
+
+.field public static final abc_scrubber_control_to_pressed_mtrl_005:I = 0x7f080090
+
+.field public static final abc_scrubber_primary_mtrl_alpha:I = 0x7f080091
+
+.field public static final abc_scrubber_track_mtrl_alpha:I = 0x7f080092
+
+.field public static final abc_seekbar_thumb_material:I = 0x7f080093
+
+.field public static final abc_seekbar_tick_mark_material:I = 0x7f080094
+
+.field public static final abc_seekbar_track_material:I = 0x7f080095
+
+.field public static final abc_spinner_mtrl_am_alpha:I = 0x7f080096
+
+.field public static final abc_spinner_textfield_background_material:I = 0x7f080097
+
+.field public static final abc_star_black_48dp:I = 0x7f080098
+
+.field public static final abc_star_half_black_48dp:I = 0x7f080099
+
+.field public static final abc_switch_thumb_material:I = 0x7f08009a
+
+.field public static final abc_switch_track_mtrl_alpha:I = 0x7f08009b
+
+.field public static final abc_tab_indicator_material:I = 0x7f08009c
+
+.field public static final abc_tab_indicator_mtrl_alpha:I = 0x7f08009d
+
+.field public static final abc_text_cursor_material:I = 0x7f08009e
+
+.field public static final abc_text_select_handle_left_mtrl:I = 0x7f08009f
+
+.field public static final abc_text_select_handle_middle_mtrl:I = 0x7f0800a0
+
+.field public static final abc_text_select_handle_right_mtrl:I = 0x7f0800a1
+
+.field public static final abc_textfield_activated_mtrl_alpha:I = 0x7f0800a2
+
+.field public static final abc_textfield_default_mtrl_alpha:I = 0x7f0800a3
+
+.field public static final abc_textfield_search_activated_mtrl_alpha:I = 0x7f0800a4
+
+.field public static final abc_textfield_search_default_mtrl_alpha:I = 0x7f0800a5
+
+.field public static final abc_textfield_search_material:I = 0x7f0800a6
+
+.field public static final abc_vector_test:I = 0x7f0800a7
+
+.field public static final advance_iqa_scan:I = 0x7f0800a8
+
+.field public static final advance_iqa_tip_capture:I = 0x7f0800a9
+
+.field public static final advance_iqa_tip_warning:I = 0x7f0800aa
+
+.field public static final adx_ic_other_sign_in:I = 0x7f0800ab
+
+.field public static final adx_ic_passkey:I = 0x7f0800ac
+
+.field public static final adx_ic_password:I = 0x7f0800ad
+
+.field public static final agora_screen_share_floating_bg:I = 0x7f0800ae
+
+.field public static final agora_screen_share_floating_img:I = 0x7f0800af
+
+.field public static final anchor_prepare_button_background:I = 0x7f0800b0
+
+.field public static final anchor_prepare_cover_selected_background:I = 0x7f0800b1
+
+.field public static final anchor_prepare_dynamic_float:I = 0x7f0800b2
+
+.field public static final anchor_prepare_dynamic_float_co_host:I = 0x7f0800b3
+
+.field public static final anchor_prepare_dynamic_grid:I = 0x7f0800b4
+
+.field public static final anchor_prepare_dynamic_grid_co_host:I = 0x7f0800b5
+
+.field public static final anchor_prepare_function_item_beauty:I = 0x7f0800b6
+
+.field public static final anchor_prepare_function_item_flip:I = 0x7f0800b7
+
+.field public static final anchor_prepare_function_item_layout:I = 0x7f0800b8
+
+.field public static final anchor_prepare_function_item_music:I = 0x7f0800b9
+
+.field public static final anchor_prepare_function_item_video_setting:I = 0x7f0800ba
+
+.field public static final anchor_prepare_ic_checkmark:I = 0x7f0800bb
+
+.field public static final anchor_prepare_image_item_selector:I = 0x7f0800bc
+
+.field public static final anchor_prepare_line_divider:I = 0x7f0800bd
+
+.field public static final anchor_prepare_live_info_edit_background:I = 0x7f0800be
+
+.field public static final anchor_prepare_live_info_edit_modify_cover_background:I = 0x7f0800bf
+
+.field public static final anchor_prepare_live_stream_default_cover:I = 0x7f0800c0
+
+.field public static final anchor_prepare_live_stream_edit_icon:I = 0x7f0800c1
+
+.field public static final anchor_prepare_live_stream_privacy_mode:I = 0x7f0800c2
+
+.field public static final anchor_prepare_preview_mask:I = 0x7f0800c3
+
+.field public static final anchor_prepare_return_arrow:I = 0x7f0800c4
+
+.field public static final anchor_prepare_small_arrow:I = 0x7f0800c5
+
+.field public static final anchor_prepare_small_arrow_icon:I = 0x7f0800c6
+
+.field public static final anchor_prepare_static_float:I = 0x7f0800c7
+
+.field public static final anchor_prepare_static_grid:I = 0x7f0800c8
+
+.field public static final anchor_prepare_template_icon_background:I = 0x7f0800c9
+
+.field public static final anchor_prepare_template_icon_background_selected:I = 0x7f0800ca
+
+.field public static final anim_frame_blink:I = 0x7f0800cb
+
+.field public static final anim_frame_open_mouse:I = 0x7f0800cc
+
+.field public static final anim_frame_turn_head:I = 0x7f0800cd
+
+.field public static final asset_account_bg_sort_option:I = 0x7f0800ce
+
+.field public static final asset_apy_bg:I = 0x7f0800cf
+
+.field public static final asset_bg_emphasis4_4r:I = 0x7f0800d0
+
+.field public static final asset_cover4_8r:I = 0x7f0800d1
+
+.field public static final asset_edittext_background_with_emphasis3_4:I = 0x7f0800d2
+
+.field public static final asset_evm_repeat_item_bg:I = 0x7f0800d3
+
+.field public static final asset_general_net_icon:I = 0x7f0800d4
+
+.field public static final asset_hold_to_earn_apr_bg:I = 0x7f0800d5
+
+.field public static final asset_line_chat_down_bg:I = 0x7f0800d6
+
+.field public static final asset_line_chat_up_bg:I = 0x7f0800d7
+
+.field public static final asset_merge_jump_item_bg_selector:I = 0x7f0800d8
+
+.field public static final asset_mini_shape_red_dot:I = 0x7f0800d9
+
+.field public static final asset_pnl_new_label:I = 0x7f0800da
+
+.field public static final asset_selector_color_list_0r:I = 0x7f0800db
+
+.field public static final asset_shape_background_gradient:I = 0x7f0800dc
+
+.field public static final asset_shape_border8_emphasis4_4r:I = 0x7f0800dd
+
+.field public static final asset_shape_border_cover12_24r:I = 0x7f0800de
+
+.field public static final asset_shape_border_cover12_24r_selected:I = 0x7f0800df
+
+.field public static final asset_shape_border_emphasis8_40r:I = 0x7f0800e0
+
+.field public static final asset_shape_border_primary_40r:I = 0x7f0800e1
+
+.field public static final asset_shape_bullet_layer_0r:I = 0x7f0800e2
+
+.field public static final asset_shape_cover8_12r:I = 0x7f0800e3
+
+.field public static final asset_shape_dashed_line:I = 0x7f0800e4
+
+.field public static final asset_shape_dialog_vip_alert_back:I = 0x7f0800e5
+
+.field public static final asset_shape_dialog_vip_button:I = 0x7f0800e6
+
+.field public static final asset_shape_round_cover4:I = 0x7f0800e7
+
+.field public static final asset_shape_signup_email_auto_bg:I = 0x7f0800e8
+
+.field public static final asset_shape_solid_stroke_cover12_8r:I = 0x7f0800e9
+
+.field public static final asset_shape_solid_stroke_cover4_8r:I = 0x7f0800ea
+
+.field public static final asset_sort_btn_gradiant:I = 0x7f0800eb
+
+.field public static final asset_sort_icon_gradient:I = 0x7f0800ec
+
+.field public static final asset_sort_tip_bg:I = 0x7f0800ed
+
+.field public static final asset_vertical_icon_bg:I = 0x7f0800ee
+
+.field public static final audience_list_count_arrow:I = 0x7f0800ef
+
+.field public static final audience_list_default_avatar:I = 0x7f0800f0
+
+.field public static final audience_list_dialog_background:I = 0x7f0800f1
+
+.field public static final audience_list_more:I = 0x7f0800f2
+
+.field public static final audience_list_panel_level_background:I = 0x7f0800f3
+
+.field public static final audience_list_return_arrow:I = 0x7f0800f4
+
+.field public static final audience_list_user_count_background:I = 0x7f0800f5
+
+.field public static final audio_effect_background:I = 0x7f0800f6
+
+.field public static final audio_effect_change_voice_child:I = 0x7f0800f7
+
+.field public static final audio_effect_change_voice_ethereal:I = 0x7f0800f8
+
+.field public static final audio_effect_change_voice_girl:I = 0x7f0800f9
+
+.field public static final audio_effect_change_voice_uncle:I = 0x7f0800fa
+
+.field public static final audio_effect_dialog_background:I = 0x7f0800fb
+
+.field public static final audio_effect_return_arrow:I = 0x7f0800fc
+
+.field public static final audio_effect_reverb_ktv:I = 0x7f0800fd
+
+.field public static final audio_effect_reverb_loud_and_loud:I = 0x7f0800fe
+
+.field public static final audio_effect_reverb_low:I = 0x7f0800ff
+
+.field public static final audio_effect_reverb_metallic_sound:I = 0x7f080100
+
+.field public static final audio_effect_seekbar_progress:I = 0x7f080101
+
+.field public static final audio_effect_seekbar_thumb:I = 0x7f080102
+
+.field public static final audio_effect_select_none:I = 0x7f080103
+
+.field public static final audio_effect_settings_item_not_select_background:I = 0x7f080104
+
+.field public static final audio_effect_settings_item_select_background:I = 0x7f080105
+
+.field public static final autofill_inline_suggestion_chip_background:I = 0x7f080106
+
+.field public static final avd_hide_password:I = 0x7f080107
+
+.field public static final avd_show_password:I = 0x7f080108
+
+.field public static final bassets_c_overlay_6r:I = 0x7f080109
+
+.field public static final bassets_selector_color_emphasis4_transe_checked_left_top:I = 0x7f08010a
+
+.field public static final bassets_selector_emphasis4_transe_checked_right_top:I = 0x7f08010b
+
+.field public static final bassets_selector_emphasis4_transparent_pressed:I = 0x7f08010c
+
+.field public static final bassets_selector_eyes_small:I = 0x7f08010d
+
+.field public static final bassets_selector_main_indicator:I = 0x7f08010e
+
+.field public static final bassets_selector_new_guide_indicator:I = 0x7f08010f
+
+.field public static final bassets_shape_asset_detail_icon_background:I = 0x7f080110
+
+.field public static final bassets_shape_border_dash:I = 0x7f080111
+
+.field public static final bassets_shape_gradient_finance_empty:I = 0x7f080112
+
+.field public static final bassets_shape_gradient_finance_line:I = 0x7f080113
+
+.field public static final bassets_shape_redpackage_lucky:I = 0x7f080114
+
+.field public static final bcopytrading_ic_default_avtor:I = 0x7f080115
+
+.field public static final beauty_dialog_background:I = 0x7f080116
+
+.field public static final beauty_item_close:I = 0x7f080117
+
+.field public static final beauty_item_icon:I = 0x7f080118
+
+.field public static final beauty_item_not_select_background:I = 0x7f080119
+
+.field public static final beauty_item_ruddy:I = 0x7f08011a
+
+.field public static final beauty_item_select_background:I = 0x7f08011b
+
+.field public static final beauty_item_smooth:I = 0x7f08011c
+
+.field public static final beauty_item_whiteness:I = 0x7f08011d
+
+.field public static final beauty_seekbar_process_drawable:I = 0x7f08011e
+
+.field public static final beauty_seekbar_process_thumb:I = 0x7f08011f
+
+.field public static final bg_apppgrade_updatenow_but:I = 0x7f080120
+
+.field public static final bg_appupgradedialog:I = 0x7f080121
+
+.field public static final bg_banner_arrow_sign:I = 0x7f080122
+
+.field public static final bg_beta_test_mirror:I = 0x7f080123
+
+.field public static final bg_bulletlayer_16r:I = 0x7f080124
+
+.field public static final bg_circle_avatar:I = 0x7f080125
+
+.field public static final bg_deposit_coin_empty_flag:I = 0x7f080126
+
+.field public static final bg_dot_8_primary:I = 0x7f080127
+
+.field public static final bg_emphasis4_4r:I = 0x7f080128
+
+.field public static final bg_emphasis4_6r:I = 0x7f080129
+
+.field public static final bg_emphasis60_2r:I = 0x7f08012a
+
+.field public static final bg_free_style:I = 0x7f08012b
+
+.field public static final bg_gradient_overlay_transparent_angle_180:I = 0x7f08012c
+
+.field public static final bg_home_navigation_pay_dialog:I = 0x7f08012d
+
+.field public static final bg_item_circle_icon:I = 0x7f08012e
+
+.field public static final bg_kc_custom_input_border:I = 0x7f08012f
+
+.field public static final bg_kc_custom_input_border_focused:I = 0x7f080130
+
+.field public static final bg_level_bar:I = 0x7f080131
+
+.field public static final bg_long_mirrored:I = 0x7f080132
+
+.field public static final bg_mine_fragment_top_gradient:I = 0x7f080133
+
+.field public static final bg_realtime_item:I = 0x7f080134
+
+.field public static final bg_retangle_8_icon:I = 0x7f080135
+
+.field public static final bg_retangle_ring_8_complementary:I = 0x7f080136
+
+.field public static final bg_ring_8_complementary:I = 0x7f080137
+
+.field public static final bg_ring_8_primary:I = 0x7f080138
+
+.field public static final bg_seekbar_progress_drawable:I = 0x7f080139
+
+.field public static final bg_shadow:I = 0x7f08013a
+
+.field public static final bg_shape_lever_border_green:I = 0x7f08013b
+
+.field public static final bg_short_mirrored:I = 0x7f08013c
+
+.field public static final bg_tab_gradient:I = 0x7f08013d
+
+.field public static final bg_top_left_bubble:I = 0x7f08013e
+
+.field public static final bg_top_left_bubble_mirrored:I = 0x7f08013f
+
+.field public static final bg_top_right_bubble:I = 0x7f080140
+
+.field public static final bg_top_right_bubble_mirrored:I = 0x7f080141
+
+.field public static final bg_trade_type_ext_area:I = 0x7f080142
+
+.field public static final bg_upload_avatar_loading:I = 0x7f080143
+
+.field public static final bga_banner_selector_point_solid:I = 0x7f080144
+
+.field public static final bhome_ic_gembox_top_mirror:I = 0x7f080145
+
+.field public static final bhome_line_dashed:I = 0x7f080146
+
+.field public static final bhome_selector_darkoverlay_transparent_click:I = 0x7f080147
+
+.field public static final bhome_shape_indicator_selected:I = 0x7f080148
+
+.field public static final bhome_shape_indicator_un_selected:I = 0x7f080149
+
+.field public static final bkucoin_bg_avatar:I = 0x7f08014a
+
+.field public static final bkucoin_bg_coin_intro:I = 0x7f08014b
+
+.field public static final bkucoin_bg_coin_trade:I = 0x7f08014c
+
+.field public static final bkucoin_bg_coming:I = 0x7f08014d
+
+.field public static final bkucoin_bg_highlight:I = 0x7f08014e
+
+.field public static final bkucoin_bg_kline_candle:I = 0x7f08014f
+
+.field public static final bkucoin_bg_kline_line:I = 0x7f080150
+
+.field public static final bkucoin_bg_lever_label:I = 0x7f080151
+
+.field public static final bkucoin_bg_st_label:I = 0x7f080152
+
+.field public static final bkucoin_drawable_market_guide_step_line:I = 0x7f080153
+
+.field public static final bkucoin_founds_sort_selector:I = 0x7f080154
+
+.field public static final bkucoin_overlay_gradient_left:I = 0x7f080155
+
+.field public static final bkucoin_overlay_gradient_right:I = 0x7f080156
+
+.field public static final bkucoin_selector_banner:I = 0x7f080157
+
+.field public static final bkucoin_selector_bg_market_label:I = 0x7f080158
+
+.field public static final bkucoin_selector_for_btn:I = 0x7f080159
+
+.field public static final bkucoin_shape_border_overlay_8r:I = 0x7f08015a
+
+.field public static final bkucoin_shape_lever_border_green:I = 0x7f08015b
+
+.field public static final bkucoin_shape_overlay_bottom_4r:I = 0x7f08015c
+
+.field public static final bkumex_account_futures:I = 0x7f08015d
+
+.field public static final bkumex_airdrop_bubble_angle:I = 0x7f08015e
+
+.field public static final bkumex_announcement_bg:I = 0x7f08015f
+
+.field public static final bkumex_announcement_item_background:I = 0x7f080160
+
+.field public static final bkumex_bg_account_contract:I = 0x7f080161
+
+.field public static final bkumex_bg_apr:I = 0x7f080162
+
+.field public static final bkumex_bg_hold_earn:I = 0x7f080163
+
+.field public static final bkumex_bg_trader_pro_countdown:I = 0x7f080164
+
+.field public static final bkumex_bg_trader_pro_use_button:I = 0x7f080165
+
+.field public static final bkumex_bg_trading_competition_entry:I = 0x7f080166
+
+.field public static final bkumex_bg_trading_competition_left_fade:I = 0x7f080167
+
+.field public static final bkumex_checked_stroke_8r:I = 0x7f080168
+
+.field public static final bkumex_cp_trading_guide_dialog_bg:I = 0x7f080169
+
+.field public static final bkumex_cp_trading_recommend_rewards:I = 0x7f08016a
+
+.field public static final bkumex_cp_trading_recommend_rewards_top_bg:I = 0x7f08016b
+
+.field public static final bkumex_dash_line:I = 0x7f08016c
+
+.field public static final bkumex_dialog_dash_line_vertical:I = 0x7f08016d
+
+.field public static final bkumex_distribution_down_green:I = 0x7f08016e
+
+.field public static final bkumex_distribution_down_red:I = 0x7f08016f
+
+.field public static final bkumex_distribution_up_green:I = 0x7f080170
+
+.field public static final bkumex_distribution_up_red:I = 0x7f080171
+
+.field public static final bkumex_emphasis8_18r:I = 0x7f080172
+
+.field public static final bkumex_futures_coupon:I = 0x7f080173
+
+.field public static final bkumex_futures_fee_discount:I = 0x7f080174
+
+.field public static final bkumex_futures_trail_fund:I = 0x7f080175
+
+.field public static final bkumex_futures_trial:I = 0x7f080176
+
+.field public static final bkumex_futures_trial_bg:I = 0x7f080177
+
+.field public static final bkumex_futures_trial_expire:I = 0x7f080178
+
+.field public static final bkumex_futures_vip:I = 0x7f080179
+
+.field public static final bkumex_futures_vip_expire:I = 0x7f08017a
+
+.field public static final bkumex_futures_welfare_dialog_bar_right:I = 0x7f08017b
+
+.field public static final bkumex_futures_welfare_leverage:I = 0x7f08017c
+
+.field public static final bkumex_futures_welfare_right_bg:I = 0x7f08017d
+
+.field public static final bkumex_futures_welfare_tag_bg:I = 0x7f08017e
+
+.field public static final bkumex_ic_copytd_futures_invite_1:I = 0x7f08017f
+
+.field public static final bkumex_ic_copytd_futures_invite_2:I = 0x7f080180
+
+.field public static final bkumex_ic_copytd_futures_invite_3:I = 0x7f080181
+
+.field public static final bkumex_ic_copytd_futures_invite_4:I = 0x7f080182
+
+.field public static final bkumex_img_placeholder_80_8r:I = 0x7f080183
+
+.field public static final bkumex_input_20r:I = 0x7f080184
+
+.field public static final bkumex_kyc_lead_ic_bg:I = 0x7f080185
+
+.field public static final bkumex_kyc_lead_view_bg:I = 0x7f080186
+
+.field public static final bkumex_lever_progress_drawable:I = 0x7f080187
+
+.field public static final bkumex_leverage_guide_black:I = 0x7f080188
+
+.field public static final bkumex_leverage_guide_green:I = 0x7f080189
+
+.field public static final bkumex_leverage_guide_red:I = 0x7f08018a
+
+.field public static final bkumex_leverage_guide_trans_one:I = 0x7f08018b
+
+.field public static final bkumex_leverage_guide_trans_two:I = 0x7f08018c
+
+.field public static final bkumex_mark_price_step_1:I = 0x7f08018d
+
+.field public static final bkumex_mark_price_step_2:I = 0x7f08018e
+
+.field public static final bkumex_mark_price_step_card_bg:I = 0x7f08018f
+
+.field public static final bkumex_mark_price_step_selected_bg:I = 0x7f080190
+
+.field public static final bkumex_near_expire:I = 0x7f080191
+
+.field public static final bkumex_normal_tab_r4:I = 0x7f080192
+
+.field public static final bkumex_open_futures_guide_bg:I = 0x7f080193
+
+.field public static final bkumex_point_6r:I = 0x7f080194
+
+.field public static final bkumex_pre_market_circle:I = 0x7f080195
+
+.field public static final bkumex_progress_emphasis_4r:I = 0x7f080196
+
+.field public static final bkumex_reverse_position_mark_tag:I = 0x7f080197
+
+.field public static final bkumex_selected_tab_r4:I = 0x7f080198
+
+.field public static final bkumex_selector_banner:I = 0x7f080199
+
+.field public static final bkumex_selector_btn_24r:I = 0x7f08019a
+
+.field public static final bkumex_selector_editext_underline:I = 0x7f08019b
+
+.field public static final bkumex_selector_index_dark:I = 0x7f08019c
+
+.field public static final bkumex_selector_stroke_line:I = 0x7f08019d
+
+.field public static final bkumex_selector_tab_bar_4r:I = 0x7f08019e
+
+.field public static final bkumex_shape_bullet_layer_6r_checked:I = 0x7f08019f
+
+.field public static final bkumex_shape_dark_cover4_4r:I = 0x7f0801a0
+
+.field public static final bkumex_shape_guide_dot:I = 0x7f0801a1
+
+.field public static final bkumex_shape_input_dark_error:I = 0x7f0801a2
+
+.field public static final bkumex_shape_input_dark_green:I = 0x7f0801a3
+
+.field public static final bkumex_shape_input_emphasis3_error:I = 0x7f0801a4
+
+.field public static final bkumex_shape_input_emphasis3_focus:I = 0x7f0801a5
+
+.field public static final bkumex_shape_input_emphasis3_normal:I = 0x7f0801a6
+
+.field public static final bkumex_shape_input_emphasis8_error:I = 0x7f0801a7
+
+.field public static final bkumex_shape_input_emphasis8_focus:I = 0x7f0801a8
+
+.field public static final bkumex_shape_input_emphasis8_normal:I = 0x7f0801a9
+
+.field public static final bkumex_shape_lever_point:I = 0x7f0801aa
+
+.field public static final bkumex_shape_open_contract_bg:I = 0x7f0801ab
+
+.field public static final bkumex_shape_open_contract_top:I = 0x7f0801ac
+
+.field public static final bkumex_shape_overlay_6r_checked:I = 0x7f0801ad
+
+.field public static final bkumex_shape_profit_loss_liqu_bg:I = 0x7f0801ae
+
+.field public static final bkumex_shape_secondary8_4r:I = 0x7f0801af
+
+.field public static final bkumex_shape_share_egg_bg:I = 0x7f0801b0
+
+.field public static final bkumex_stop_profit_loss_bg:I = 0x7f0801b1
+
+.field public static final bkumex_time_bg:I = 0x7f0801b2
+
+.field public static final bkumex_up_green:I = 0x7f0801b3
+
+.field public static final bkumex_welfare_bubble_1:I = 0x7f0801b4
+
+.field public static final bkumex_welfare_bubble_2:I = 0x7f0801b5
+
+.field public static final bkumex_welfare_bubble_3:I = 0x7f0801b6
+
+.field public static final bkumex_welfare_tab_indicator:I = 0x7f0801b7
+
+.field public static final blink_1:I = 0x7f0801b8
+
+.field public static final blink_2:I = 0x7f0801b9
+
+.field public static final blink_3:I = 0x7f0801ba
+
+.field public static final blink_4:I = 0x7f0801bb
+
+.field public static final bloan_lever_coin_selector:I = 0x7f0801bc
+
+.field public static final bloan_lever_deadline_selecter:I = 0x7f0801bd
+
+.field public static final bloan_lever_market_log:I = 0x7f0801be
+
+.field public static final bloan_lever_rate_input_error:I = 0x7f0801bf
+
+.field public static final bloan_selector_select_button:I = 0x7f0801c0
+
+.field public static final bloan_selector_title_bar:I = 0x7f0801c1
+
+.field public static final bmargin_bg_avatar:I = 0x7f0801c2
+
+.field public static final bmargin_bg_close_position_item:I = 0x7f0801c3
+
+.field public static final bmargin_bg_coming:I = 0x7f0801c4
+
+.field public static final bmargin_bg_marquee:I = 0x7f0801c5
+
+.field public static final bmargin_chart_at_bottom:I = 0x7f0801c6
+
+.field public static final bmargin_chart_at_top:I = 0x7f0801c7
+
+.field public static final bmargin_chart_hide:I = 0x7f0801c8
+
+.field public static final bmargin_coupons_border:I = 0x7f0801c9
+
+.field public static final bmargin_coupons_state_back:I = 0x7f0801ca
+
+.field public static final bmargin_guide_dot:I = 0x7f0801cb
+
+.field public static final bmargin_guide_line:I = 0x7f0801cc
+
+.field public static final bmargin_ic_bonus:I = 0x7f0801cd
+
+.field public static final bmargin_option_select_boarder:I = 0x7f0801ce
+
+.field public static final bmargin_overlay_gradient_left:I = 0x7f0801cf
+
+.field public static final bmargin_overlay_gradient_right:I = 0x7f0801d0
+
+.field public static final bmargin_selector_banner:I = 0x7f0801d1
+
+.field public static final bmargin_selector_bg_exam_item_correct:I = 0x7f0801d2
+
+.field public static final bmargin_selector_bg_exam_item_incorrect:I = 0x7f0801d3
+
+.field public static final bmargin_selector_bg_market_label:I = 0x7f0801d4
+
+.field public static final bmargin_selector_for_btn:I = 0x7f0801d5
+
+.field public static final bmargin_selector_for_btn_4r:I = 0x7f0801d6
+
+.field public static final bmargin_selector_radio:I = 0x7f0801d7
+
+.field public static final bmargin_shape_account_lever:I = 0x7f0801d8
+
+.field public static final bmargin_shape_delegation_dash_line_vertical:I = 0x7f0801d9
+
+.field public static final bmargin_shape_f4f6f7_2r:I = 0x7f0801da
+
+.field public static final bmargin_shape_input_emphasis8_error:I = 0x7f0801db
+
+.field public static final bmargin_shape_input_emphasis8_focus:I = 0x7f0801dc
+
+.field public static final bmargin_shape_input_emphasis8_normal:I = 0x7f0801dd
+
+.field public static final bmargin_shape_lever_border_green:I = 0x7f0801de
+
+.field public static final bmargin_shape_white_border:I = 0x7f0801df
+
+.field public static final bmargin_trade_at_left:I = 0x7f0801e0
+
+.field public static final bmargin_trade_at_right:I = 0x7f0801e1
+
+.field public static final bmine_img_invite_toc:I = 0x7f0801e2
+
+.field public static final bmine_invite_red_point:I = 0x7f0801e3
+
+.field public static final bmine_multi_account_popup_angel:I = 0x7f0801e4
+
+.field public static final bmine_multi_account_popup_bg:I = 0x7f0801e5
+
+.field public static final bmine_selector_nps_score_bg:I = 0x7f0801e6
+
+.field public static final bmine_shape_nps_input_bg:I = 0x7f0801e7
+
+.field public static final bmine_shape_nps_score_bg_normal:I = 0x7f0801e8
+
+.field public static final bmine_shape_nps_score_bg_selected:I = 0x7f0801e9
+
+.field public static final bmine_shape_red_dot:I = 0x7f0801ea
+
+.field public static final botc_bg_bubble_left:I = 0x7f0801eb
+
+.field public static final botc_bg_bubble_right:I = 0x7f0801ec
+
+.field public static final botc_bg_self_border_mirrored:I = 0x7f0801ed
+
+.field public static final botc_bg_warning:I = 0x7f0801ee
+
+.field public static final botc_ic_activity_bubble:I = 0x7f0801ef
+
+.field public static final botc_ic_activity_bubble_mirrored:I = 0x7f0801f0
+
+.field public static final botc_ic_fast_tab_one_mirrored:I = 0x7f0801f1
+
+.field public static final botc_ic_fast_tab_two_mirrored:I = 0x7f0801f2
+
+.field public static final botc_selector_ic_delete:I = 0x7f0801f3
+
+.field public static final botc_selector_primary_bg:I = 0x7f0801f4
+
+.field public static final botc_selector_secondary_bg:I = 0x7f0801f5
+
+.field public static final botc_shape_btn_shadow:I = 0x7f0801f6
+
+.field public static final botc_shape_cover2_12r:I = 0x7f0801f7
+
+.field public static final botc_shape_cover4_2r:I = 0x7f0801f8
+
+.field public static final botc_shape_cover4_8r:I = 0x7f0801f9
+
+.field public static final botc_shape_ebfaf6_8r:I = 0x7f0801fa
+
+.field public static final botc_shape_fast_pay_bg:I = 0x7f0801fb
+
+.field public static final botc_shape_fastbuy_border:I = 0x7f0801fc
+
+.field public static final botc_shape_phone_dialog_number_bg:I = 0x7f0801fd
+
+.field public static final botc_shape_secondary_8r:I = 0x7f0801fe
+
+.field public static final bradding_bot_kit_bg_close_confirm_item:I = 0x7f0801ff
+
+.field public static final bradding_bot_kit_bg_guide_step:I = 0x7f080200
+
+.field public static final brvah_sample_footer_loading:I = 0x7f080201
+
+.field public static final brvah_sample_footer_loading_progress:I = 0x7f080202
+
+.field public static final bspot_selector_banner:I = 0x7f080203
+
+.field public static final btn_checkbox_checked_mtrl:I = 0x7f080204
+
+.field public static final btn_checkbox_checked_to_unchecked_mtrl_animation:I = 0x7f080205
+
+.field public static final btn_checkbox_unchecked_mtrl:I = 0x7f080206
+
+.field public static final btn_checkbox_unchecked_to_checked_mtrl_animation:I = 0x7f080207
+
+.field public static final btn_radio_off_mtrl:I = 0x7f080208
+
+.field public static final btn_radio_off_to_on_mtrl_animation:I = 0x7f080209
+
+.field public static final btn_radio_on_mtrl:I = 0x7f08020a
+
+.field public static final btn_radio_on_to_off_mtrl_animation:I = 0x7f08020b
+
+.field public static final btrade_ic_tab_setting_header_bg:I = 0x7f08020c
+
+.field public static final btradebase_bg_scaled_order_table_header:I = 0x7f08020d
+
+.field public static final btrading_bot_kit_bg_announcement:I = 0x7f08020e
+
+.field public static final btrading_bot_kit_bg_changed_to_recommend:I = 0x7f08020f
+
+.field public static final btrading_bot_kit_bg_coin_trade:I = 0x7f080210
+
+.field public static final btrading_bot_kit_bg_coming:I = 0x7f080211
+
+.field public static final btrading_bot_kit_bg_coupons_item:I = 0x7f080212
+
+.field public static final btrading_bot_kit_bg_currency:I = 0x7f080213
+
+.field public static final btrading_bot_kit_bg_edit_price_confirm:I = 0x7f080214
+
+.field public static final btrading_bot_kit_bg_gray:I = 0x7f080215
+
+.field public static final btrading_bot_kit_bg_gray_12r:I = 0x7f080216
+
+.field public static final btrading_bot_kit_bg_green:I = 0x7f080217
+
+.field public static final btrading_bot_kit_bg_green_light:I = 0x7f080218
+
+.field public static final btrading_bot_kit_bg_hot_coin_list_coin_item:I = 0x7f080219
+
+.field public static final btrading_bot_kit_bg_hot_coin_list_more_text:I = 0x7f08021a
+
+.field public static final btrading_bot_kit_bg_keep_my_setting:I = 0x7f08021b
+
+.field public static final btrading_bot_kit_bg_long:I = 0x7f08021c
+
+.field public static final btrading_bot_kit_bg_new_user_coupons_body:I = 0x7f08021d
+
+.field public static final btrading_bot_kit_bg_new_user_coupons_header:I = 0x7f08021e
+
+.field public static final btrading_bot_kit_bg_new_user_coupons_validity_period:I = 0x7f08021f
+
+.field public static final btrading_bot_kit_bg_outprice_range:I = 0x7f080220
+
+.field public static final btrading_bot_kit_bg_recommond:I = 0x7f080221
+
+.field public static final btrading_bot_kit_bg_red:I = 0x7f080222
+
+.field public static final btrading_bot_kit_bg_red_not_click:I = 0x7f080223
+
+.field public static final btrading_bot_kit_bg_short:I = 0x7f080224
+
+.field public static final btrading_bot_kit_bg_trial_coupons_item:I = 0x7f080225
+
+.field public static final btrading_bot_kit_coupon_rules_detail:I = 0x7f080226
+
+.field public static final btrading_bot_kit_new_grid_line:I = 0x7f080227
+
+.field public static final btrading_bot_kit_origin_grid_line:I = 0x7f080228
+
+.field public static final btrading_bot_kit_running_item_pre:I = 0x7f080229
+
+.field public static final btrading_bot_kit_selector_eyes_small:I = 0x7f08022a
+
+.field public static final btrading_bot_kit_selector_strategy_list_tags:I = 0x7f08022b
+
+.field public static final btrading_bot_kit_shape_lever_border_green:I = 0x7f08022c
+
+.field public static final btransfer_notice_bg:I = 0x7f08022d
+
+.field public static final btransfer_pro_margin:I = 0x7f08022e
+
+.field public static final btransfer_selector_switch_button_thumb:I = 0x7f08022f
+
+.field public static final btransfer_selector_switch_button_track:I = 0x7f080230
+
+.field public static final btransfer_selector_switch_image:I = 0x7f080231
+
+.field public static final busercenter_delete_account:I = 0x7f080232
+
+.field public static final busercenter_ic_arrow_right_mirrored:I = 0x7f080233
+
+.field public static final busercenter_signup_guidance_register:I = 0x7f080234
+
+.field public static final busercenter_signup_guidance_reward:I = 0x7f080235
+
+.field public static final busercenter_signup_pwd_normal:I = 0x7f080236
+
+.field public static final busercenter_signup_pwd_ok:I = 0x7f080237
+
+.field public static final caleander_default_placeholder:I = 0x7f080238
+
+.field public static final capture:I = 0x7f080239
+
+.field public static final common_bg_confirm_dialog:I = 0x7f08023a
+
+.field public static final common_full_open_on_phone:I = 0x7f08023b
+
+.field public static final common_google_signin_btn_icon_dark:I = 0x7f08023c
+
+.field public static final common_google_signin_btn_icon_dark_focused:I = 0x7f08023d
+
+.field public static final common_google_signin_btn_icon_dark_normal:I = 0x7f08023e
+
+.field public static final common_google_signin_btn_icon_dark_normal_background:I = 0x7f08023f
+
+.field public static final common_google_signin_btn_icon_disabled:I = 0x7f080240
+
+.field public static final common_google_signin_btn_icon_light:I = 0x7f080241
+
+.field public static final common_google_signin_btn_icon_light_focused:I = 0x7f080242
+
+.field public static final common_google_signin_btn_icon_light_normal:I = 0x7f080243
+
+.field public static final common_google_signin_btn_icon_light_normal_background:I = 0x7f080244
+
+.field public static final common_google_signin_btn_text_dark:I = 0x7f080245
+
+.field public static final common_google_signin_btn_text_dark_focused:I = 0x7f080246
+
+.field public static final common_google_signin_btn_text_dark_normal:I = 0x7f080247
+
+.field public static final common_google_signin_btn_text_dark_normal_background:I = 0x7f080248
+
+.field public static final common_google_signin_btn_text_disabled:I = 0x7f080249
+
+.field public static final common_google_signin_btn_text_light:I = 0x7f08024a
+
+.field public static final common_google_signin_btn_text_light_focused:I = 0x7f08024b
+
+.field public static final common_google_signin_btn_text_light_normal:I = 0x7f08024c
+
+.field public static final common_google_signin_btn_text_light_normal_background:I = 0x7f08024d
+
+.field public static final common_permission_dialog_bg:I = 0x7f08024e
+
+.field public static final core_list_divider:I = 0x7f08024f
+
+.field public static final core_permission_dialog_bg:I = 0x7f080250
+
+.field public static final country_shape_cover4_4r:I = 0x7f080251
+
+.field public static final cptd_shape_lead_dir_long_bg:I = 0x7f080252
+
+.field public static final cptd_shape_lead_dir_short_bg:I = 0x7f080253
+
+.field public static final cptd_shape_lead_mode_tag_bg:I = 0x7f080254
+
+.field public static final cptd_shape_lead_trial_fund_tag_bg:I = 0x7f080255
+
+.field public static final design_fab_background:I = 0x7f080256
+
+.field public static final design_ic_visibility:I = 0x7f080257
+
+.field public static final design_ic_visibility_off:I = 0x7f080258
+
+.field public static final design_password_eye:I = 0x7f080259
+
+.field public static final design_snackbar_background:I = 0x7f08025a
+
+.field public static final discount_info_bg:I = 0x7f08025b
+
+.field public static final drawable_ic_widget_icon_01:I = 0x7f08025c
+
+.field public static final drawable_ic_widget_icon_02:I = 0x7f08025d
+
+.field public static final drawable_ic_widget_icon_03:I = 0x7f08025e
+
+.field public static final drawable_seekbar_thumb:I = 0x7f08025f
+
+.field public static final exo_edit_mode_logo:I = 0x7f080260
+
+.field public static final exo_ic_audiotrack:I = 0x7f080261
+
+.field public static final exo_ic_check:I = 0x7f080262
+
+.field public static final exo_ic_chevron_left:I = 0x7f080263
+
+.field public static final exo_ic_chevron_right:I = 0x7f080264
+
+.field public static final exo_ic_default_album_image:I = 0x7f080265
+
+.field public static final exo_ic_forward:I = 0x7f080266
+
+.field public static final exo_ic_fullscreen_enter:I = 0x7f080267
+
+.field public static final exo_ic_fullscreen_exit:I = 0x7f080268
+
+.field public static final exo_ic_pause_circle_filled:I = 0x7f080269
+
+.field public static final exo_ic_play_circle_filled:I = 0x7f08026a
+
+.field public static final exo_ic_rewind:I = 0x7f08026b
+
+.field public static final exo_ic_settings:I = 0x7f08026c
+
+.field public static final exo_ic_skip_next:I = 0x7f08026d
+
+.field public static final exo_ic_skip_previous:I = 0x7f08026e
+
+.field public static final exo_ic_speed:I = 0x7f08026f
+
+.field public static final exo_ic_subtitle_off:I = 0x7f080270
+
+.field public static final exo_ic_subtitle_on:I = 0x7f080271
+
+.field public static final exo_icon_circular_play:I = 0x7f080272
+
+.field public static final exo_icon_fastforward:I = 0x7f080273
+
+.field public static final exo_icon_fullscreen_enter:I = 0x7f080274
+
+.field public static final exo_icon_fullscreen_exit:I = 0x7f080275
+
+.field public static final exo_icon_next:I = 0x7f080276
+
+.field public static final exo_icon_pause:I = 0x7f080277
+
+.field public static final exo_icon_play:I = 0x7f080278
+
+.field public static final exo_icon_previous:I = 0x7f080279
+
+.field public static final exo_icon_repeat_all:I = 0x7f08027a
+
+.field public static final exo_icon_repeat_off:I = 0x7f08027b
+
+.field public static final exo_icon_repeat_one:I = 0x7f08027c
+
+.field public static final exo_icon_rewind:I = 0x7f08027d
+
+.field public static final exo_icon_shuffle_off:I = 0x7f08027e
+
+.field public static final exo_icon_shuffle_on:I = 0x7f08027f
+
+.field public static final exo_icon_stop:I = 0x7f080280
+
+.field public static final exo_icon_vr:I = 0x7f080281
+
+.field public static final exo_legacy_controls_fastforward:I = 0x7f080282
+
+.field public static final exo_legacy_controls_fullscreen_enter:I = 0x7f080283
+
+.field public static final exo_legacy_controls_fullscreen_exit:I = 0x7f080284
+
+.field public static final exo_legacy_controls_next:I = 0x7f080285
+
+.field public static final exo_legacy_controls_pause:I = 0x7f080286
+
+.field public static final exo_legacy_controls_play:I = 0x7f080287
+
+.field public static final exo_legacy_controls_previous:I = 0x7f080288
+
+.field public static final exo_legacy_controls_repeat_all:I = 0x7f080289
+
+.field public static final exo_legacy_controls_repeat_off:I = 0x7f08028a
+
+.field public static final exo_legacy_controls_repeat_one:I = 0x7f08028b
+
+.field public static final exo_legacy_controls_rewind:I = 0x7f08028c
+
+.field public static final exo_legacy_controls_shuffle_off:I = 0x7f08028d
+
+.field public static final exo_legacy_controls_shuffle_on:I = 0x7f08028e
+
+.field public static final exo_legacy_controls_vr:I = 0x7f08028f
+
+.field public static final exo_notification_fastforward:I = 0x7f080290
+
+.field public static final exo_notification_next:I = 0x7f080291
+
+.field public static final exo_notification_pause:I = 0x7f080292
+
+.field public static final exo_notification_play:I = 0x7f080293
+
+.field public static final exo_notification_previous:I = 0x7f080294
+
+.field public static final exo_notification_rewind:I = 0x7f080295
+
+.field public static final exo_notification_small_icon:I = 0x7f080296
+
+.field public static final exo_notification_stop:I = 0x7f080297
+
+.field public static final exo_rounded_rectangle:I = 0x7f080298
+
+.field public static final exo_styled_controls_audiotrack:I = 0x7f080299
+
+.field public static final exo_styled_controls_check:I = 0x7f08029a
+
+.field public static final exo_styled_controls_fastforward:I = 0x7f08029b
+
+.field public static final exo_styled_controls_fullscreen_enter:I = 0x7f08029c
+
+.field public static final exo_styled_controls_fullscreen_exit:I = 0x7f08029d
+
+.field public static final exo_styled_controls_next:I = 0x7f08029e
+
+.field public static final exo_styled_controls_overflow_hide:I = 0x7f08029f
+
+.field public static final exo_styled_controls_overflow_show:I = 0x7f0802a0
+
+.field public static final exo_styled_controls_pause:I = 0x7f0802a1
+
+.field public static final exo_styled_controls_play:I = 0x7f0802a2
+
+.field public static final exo_styled_controls_previous:I = 0x7f0802a3
+
+.field public static final exo_styled_controls_repeat_all:I = 0x7f0802a4
+
+.field public static final exo_styled_controls_repeat_off:I = 0x7f0802a5
+
+.field public static final exo_styled_controls_repeat_one:I = 0x7f0802a6
+
+.field public static final exo_styled_controls_rewind:I = 0x7f0802a7
+
+.field public static final exo_styled_controls_settings:I = 0x7f0802a8
+
+.field public static final exo_styled_controls_shuffle_off:I = 0x7f0802a9
+
+.field public static final exo_styled_controls_shuffle_on:I = 0x7f0802aa
+
+.field public static final exo_styled_controls_simple_fastforward:I = 0x7f0802ab
+
+.field public static final exo_styled_controls_simple_rewind:I = 0x7f0802ac
+
+.field public static final exo_styled_controls_speed:I = 0x7f0802ad
+
+.field public static final exo_styled_controls_subtitle_off:I = 0x7f0802ae
+
+.field public static final exo_styled_controls_subtitle_on:I = 0x7f0802af
+
+.field public static final exo_styled_controls_vr:I = 0x7f0802b0
+
+.field public static final facesdk_ic_camera:I = 0x7f0802b1
+
+.field public static final facesdk_ic_help:I = 0x7f0802b2
+
+.field public static final facesdk_ic_retry_img:I = 0x7f0802b3
+
+.field public static final facesdk_ic_scan_barcode:I = 0x7f0802b4
+
+.field public static final facesdk_ic_take:I = 0x7f0802b5
+
+.field public static final facesdk_point_prefix:I = 0x7f0802b6
+
+.field public static final fcm_private_icon:I = 0x7f0802b7
+
+.field public static final fiat_switch_bg_layout:I = 0x7f0802b8
+
+.field public static final file_text_ai_12:I = 0x7f0802b9
+
+.field public static final file_text_ai_16:I = 0x7f0802ba
+
+.field public static final file_text_ai_20:I = 0x7f0802bb
+
+.field public static final file_text_ai_24:I = 0x7f0802bc
+
+.field public static final fingerprint_bg:I = 0x7f0802bd
+
+.field public static final fingerprint_dialog_error:I = 0x7f0802be
+
+.field public static final fingerprint_dialog_fp_icon:I = 0x7f0802bf
+
+.field public static final fingerprint_icon:I = 0x7f0802c0
+
+.field public static final floating_action_mode_shape:I = 0x7f0802c1
+
+.field public static final floating_shape_4r_time:I = 0x7f0802c2
+
+.field public static final gift_bg_bottom_dialog:I = 0x7f0802c3
+
+.field public static final gift_bg_show:I = 0x7f0802c4
+
+.field public static final gift_default_avatar:I = 0x7f0802c5
+
+.field public static final gift_function_like:I = 0x7f0802c6
+
+.field public static final gift_heart0:I = 0x7f0802c7
+
+.field public static final gift_heart1:I = 0x7f0802c8
+
+.field public static final gift_heart2:I = 0x7f0802c9
+
+.field public static final gift_heart3:I = 0x7f0802ca
+
+.field public static final gift_heart4:I = 0x7f0802cb
+
+.field public static final gift_heart5:I = 0x7f0802cc
+
+.field public static final gift_heart6:I = 0x7f0802cd
+
+.field public static final gift_heart7:I = 0x7f0802ce
+
+.field public static final gift_heart8:I = 0x7f0802cf
+
+.field public static final gift_ic_like_png:I = 0x7f0802d0
+
+.field public static final gift_icon:I = 0x7f0802d1
+
+.field public static final gift_icon_bg:I = 0x7f0802d2
+
+.field public static final gift_normal_bg:I = 0x7f0802d3
+
+.field public static final gift_selected_bg:I = 0x7f0802d4
+
+.field public static final gift_tab_selector_bg:I = 0x7f0802d5
+
+.field public static final git_barrage_bg_msg_item:I = 0x7f0802d6
+
+.field public static final global_iqa_ripple_gray:I = 0x7f0802d7
+
+.field public static final googleg_disabled_color_18:I = 0x7f0802d8
+
+.field public static final googleg_standard_color_18:I = 0x7f0802d9
+
+.field public static final gpay_logo_generic_dark:I = 0x7f0802da
+
+.field public static final gpay_logo_generic_light:I = 0x7f0802db
+
+.field public static final home_calendar_cur_day_bg:I = 0x7f0802dc
+
+.field public static final home_calendar_day_bg_gradient:I = 0x7f0802dd
+
+.field public static final home_calendar_day_new_bg:I = 0x7f0802de
+
+.field public static final home_calendar_week_day_bg_gradient:I = 0x7f0802df
+
+.field public static final home_calendar_week_day_rtl_bg_gradient:I = 0x7f0802e0
+
+.field public static final home_card_add_gradient:I = 0x7f0802e1
+
+.field public static final home_card_edit_gradient:I = 0x7f0802e2
+
+.field public static final home_feed_action_bg:I = 0x7f0802e3
+
+.field public static final home_feed_action_popup_angel:I = 0x7f0802e4
+
+.field public static final home_feed_action_popup_bg:I = 0x7f0802e5
+
+.field public static final home_iv_down:I = 0x7f0802e6
+
+.field public static final home_iv_up:I = 0x7f0802e7
+
+.field public static final home_navigation_pay_dialog_header:I = 0x7f0802e8
+
+.field public static final home_shape_bg_grid_navi:I = 0x7f0802e9
+
+.field public static final home_shape_bg_grid_navi_small:I = 0x7f0802ea
+
+.field public static final home_shape_chop_guide_btn_bg:I = 0x7f0802eb
+
+.field public static final ic2___thin_12:I = 0x7f0802ec
+
+.field public static final ic2___thin_16:I = 0x7f0802ed
+
+.field public static final ic2___thin_20:I = 0x7f0802ee
+
+.field public static final ic2___thin_24:I = 0x7f0802ef
+
+.field public static final ic2_accountfreeze_thin_12:I = 0x7f0802f0
+
+.field public static final ic2_accountfreeze_thin_16:I = 0x7f0802f1
+
+.field public static final ic2_accountfreeze_thin_20:I = 0x7f0802f2
+
+.field public static final ic2_accountfreeze_thin_24:I = 0x7f0802f3
+
+.field public static final ic2_activity_center_12:I = 0x7f0802f4
+
+.field public static final ic2_activity_center_16:I = 0x7f0802f5
+
+.field public static final ic2_activity_center_20:I = 0x7f0802f6
+
+.field public static final ic2_activity_center_24:I = 0x7f0802f7
+
+.field public static final ic2_add_bold_12:I = 0x7f0802f8
+
+.field public static final ic2_add_bold_16:I = 0x7f0802f9
+
+.field public static final ic2_add_bold_20:I = 0x7f0802fa
+
+.field public static final ic2_add_bold_24:I = 0x7f0802fb
+
+.field public static final ic2_add_filled_12:I = 0x7f0802fc
+
+.field public static final ic2_add_filled_16:I = 0x7f0802fd
+
+.field public static final ic2_add_filled_20:I = 0x7f0802fe
+
+.field public static final ic2_add_filled_24:I = 0x7f0802ff
+
+.field public static final ic2_add_invite_thin_12:I = 0x7f080300
+
+.field public static final ic2_add_invite_thin_16:I = 0x7f080301
+
+.field public static final ic2_add_invite_thin_20:I = 0x7f080302
+
+.field public static final ic2_add_invite_thin_24:I = 0x7f080303
+
+.field public static final ic2_add_payment_12:I = 0x7f080304
+
+.field public static final ic2_add_payment_16:I = 0x7f080305
+
+.field public static final ic2_add_payment_20:I = 0x7f080306
+
+.field public static final ic2_add_payment_24:I = 0x7f080307
+
+.field public static final ic2_add_thin_12:I = 0x7f080308
+
+.field public static final ic2_add_thin_16:I = 0x7f080309
+
+.field public static final ic2_add_thin_20:I = 0x7f08030a
+
+.field public static final ic2_add_thin_24:I = 0x7f08030b
+
+.field public static final ic2_addcalendar_thin_12:I = 0x7f08030c
+
+.field public static final ic2_addcalendar_thin_16:I = 0x7f08030d
+
+.field public static final ic2_addcalendar_thin_20:I = 0x7f08030e
+
+.field public static final ic2_addcalendar_thin_24:I = 0x7f08030f
+
+.field public static final ic2_addchat_fill_12:I = 0x7f080310
+
+.field public static final ic2_addchat_fill_16:I = 0x7f080311
+
+.field public static final ic2_addchat_fill_20:I = 0x7f080312
+
+.field public static final ic2_addchat_fill_24:I = 0x7f080313
+
+.field public static final ic2_addchatline_thin_12:I = 0x7f080314
+
+.field public static final ic2_addchatline_thin_16:I = 0x7f080315
+
+.field public static final ic2_addchatline_thin_20:I = 0x7f080316
+
+.field public static final ic2_addchatline_thin_24:I = 0x7f080317
+
+.field public static final ic2_addfavorites_12:I = 0x7f080318
+
+.field public static final ic2_addfavorites_16:I = 0x7f080319
+
+.field public static final ic2_addfavorites_20:I = 0x7f08031a
+
+.field public static final ic2_addfavorites_24:I = 0x7f08031b
+
+.field public static final ic2_addimage_thin_12:I = 0x7f08031c
+
+.field public static final ic2_addimage_thin_16:I = 0x7f08031d
+
+.field public static final ic2_addimage_thin_20:I = 0x7f08031e
+
+.field public static final ic2_addimage_thin_24:I = 0x7f08031f
+
+.field public static final ic2_address_switch_12:I = 0x7f080320
+
+.field public static final ic2_address_switch_16:I = 0x7f080321
+
+.field public static final ic2_address_switch_20:I = 0x7f080322
+
+.field public static final ic2_address_switch_24:I = 0x7f080323
+
+.field public static final ic2_aichat_thin_12:I = 0x7f080324
+
+.field public static final ic2_aichat_thin_16:I = 0x7f080325
+
+.field public static final ic2_aichat_thin_20:I = 0x7f080326
+
+.field public static final ic2_aichat_thin_24:I = 0x7f080327
+
+.field public static final ic2_airdrop_12:I = 0x7f080328
+
+.field public static final ic2_airdrop_16:I = 0x7f080329
+
+.field public static final ic2_airdrop_20:I = 0x7f08032a
+
+.field public static final ic2_airdrop_24:I = 0x7f08032b
+
+.field public static final ic2_aisearch_thin_12:I = 0x7f08032c
+
+.field public static final ic2_aisearch_thin_16:I = 0x7f08032d
+
+.field public static final ic2_aisearch_thin_20:I = 0x7f08032e
+
+.field public static final ic2_aisearch_thin_24:I = 0x7f08032f
+
+.field public static final ic2_alarmclock_thin_12:I = 0x7f080330
+
+.field public static final ic2_alarmclock_thin_16:I = 0x7f080331
+
+.field public static final ic2_alarmclock_thin_20:I = 0x7f080332
+
+.field public static final ic2_alarmclock_thin_24:I = 0x7f080333
+
+.field public static final ic2_alert_select_12:I = 0x7f080334
+
+.field public static final ic2_alert_select_16:I = 0x7f080335
+
+.field public static final ic2_alert_select_20:I = 0x7f080336
+
+.field public static final ic2_alert_select_24:I = 0x7f080337
+
+.field public static final ic2_alert_unselect_12:I = 0x7f080338
+
+.field public static final ic2_alert_unselect_16:I = 0x7f080339
+
+.field public static final ic2_alert_unselect_20:I = 0x7f08033a
+
+.field public static final ic2_alert_unselect_24:I = 0x7f08033b
+
+.field public static final ic2_allnetwork_12:I = 0x7f08033c
+
+.field public static final ic2_allnetwork_16:I = 0x7f08033d
+
+.field public static final ic2_allnetwork_20:I = 0x7f08033e
+
+.field public static final ic2_allnetwork_24:I = 0x7f08033f
+
+.field public static final ic2_alpha_12:I = 0x7f080340
+
+.field public static final ic2_alpha_16:I = 0x7f080341
+
+.field public static final ic2_alpha_20:I = 0x7f080342
+
+.field public static final ic2_alpha_24:I = 0x7f080343
+
+.field public static final ic2_alpha_thin_12:I = 0x7f080344
+
+.field public static final ic2_alpha_thin_16:I = 0x7f080345
+
+.field public static final ic2_alpha_thin_20:I = 0x7f080346
+
+.field public static final ic2_alpha_thin_24:I = 0x7f080347
+
+.field public static final ic2_announcement_12:I = 0x7f080348
+
+.field public static final ic2_announcement_16:I = 0x7f080349
+
+.field public static final ic2_announcement_20:I = 0x7f08034a
+
+.field public static final ic2_announcement_24:I = 0x7f08034b
+
+.field public static final ic2_announcement_board_12:I = 0x7f08034c
+
+.field public static final ic2_announcement_board_16:I = 0x7f08034d
+
+.field public static final ic2_announcement_board_20:I = 0x7f08034e
+
+.field public static final ic2_announcement_board_24:I = 0x7f08034f
+
+.field public static final ic2_anticode_thin_12:I = 0x7f080350
+
+.field public static final ic2_anticode_thin_16:I = 0x7f080351
+
+.field public static final ic2_anticode_thin_20:I = 0x7f080352
+
+.field public static final ic2_anticode_thin_24:I = 0x7f080353
+
+.field public static final ic2_api_12:I = 0x7f080354
+
+.field public static final ic2_api_16:I = 0x7f080355
+
+.field public static final ic2_api_20:I = 0x7f080356
+
+.field public static final ic2_api_24:I = 0x7f080357
+
+.field public static final ic2_api_thin_12:I = 0x7f080358
+
+.field public static final ic2_api_thin_16:I = 0x7f080359
+
+.field public static final ic2_api_thin_20:I = 0x7f08035a
+
+.field public static final ic2_api_thin_24:I = 0x7f08035b
+
+.field public static final ic2_appdownload_12:I = 0x7f08035c
+
+.field public static final ic2_appdownload_16:I = 0x7f08035d
+
+.field public static final ic2_appdownload_20:I = 0x7f08035e
+
+.field public static final ic2_appdownload_24:I = 0x7f08035f
+
+.field public static final ic2_approve_12:I = 0x7f080360
+
+.field public static final ic2_approve_16:I = 0x7f080361
+
+.field public static final ic2_approve_20:I = 0x7f080362
+
+.field public static final ic2_approve_24:I = 0x7f080363
+
+.field public static final ic2_approves_12:I = 0x7f080364
+
+.field public static final ic2_approves_16:I = 0x7f080365
+
+.field public static final ic2_approves_20:I = 0x7f080366
+
+.field public static final ic2_approves_24:I = 0x7f080367
+
+.field public static final ic2_archive_12:I = 0x7f080368
+
+.field public static final ic2_archive_16:I = 0x7f080369
+
+.field public static final ic2_archive_20:I = 0x7f08036a
+
+.field public static final ic2_archive_24:I = 0x7f08036b
+
+.field public static final ic2_arrow_down_12:I = 0x7f08036c
+
+.field public static final ic2_arrow_down_16:I = 0x7f08036d
+
+.field public static final ic2_arrow_down_20:I = 0x7f08036e
+
+.field public static final ic2_arrow_down_24:I = 0x7f08036f
+
+.field public static final ic2_arrow_down_thin_12:I = 0x7f080370
+
+.field public static final ic2_arrow_down_thin_16:I = 0x7f080371
+
+.field public static final ic2_arrow_down_thin_20:I = 0x7f080372
+
+.field public static final ic2_arrow_down_thin_24:I = 0x7f080373
+
+.field public static final ic2_arrow_left2_12:I = 0x7f080374
+
+.field public static final ic2_arrow_left2_16:I = 0x7f080375
+
+.field public static final ic2_arrow_left2_20:I = 0x7f080376
+
+.field public static final ic2_arrow_left2_24:I = 0x7f080377
+
+.field public static final ic2_arrow_left_12:I = 0x7f080378
+
+.field public static final ic2_arrow_left_16:I = 0x7f080379
+
+.field public static final ic2_arrow_left_20:I = 0x7f08037a
+
+.field public static final ic2_arrow_left_24:I = 0x7f08037b
+
+.field public static final ic2_arrow_left_thin_12:I = 0x7f08037c
+
+.field public static final ic2_arrow_left_thin_16:I = 0x7f08037d
+
+.field public static final ic2_arrow_left_thin_20:I = 0x7f08037e
+
+.field public static final ic2_arrow_left_thin_24:I = 0x7f08037f
+
+.field public static final ic2_arrow_right2_12:I = 0x7f080380
+
+.field public static final ic2_arrow_right2_16:I = 0x7f080381
+
+.field public static final ic2_arrow_right2_20:I = 0x7f080382
+
+.field public static final ic2_arrow_right2_24:I = 0x7f080383
+
+.field public static final ic2_arrow_right_12:I = 0x7f080384
+
+.field public static final ic2_arrow_right_16:I = 0x7f080385
+
+.field public static final ic2_arrow_right_20:I = 0x7f080386
+
+.field public static final ic2_arrow_right_24:I = 0x7f080387
+
+.field public static final ic2_arrow_right_thin_12:I = 0x7f080388
+
+.field public static final ic2_arrow_right_thin_16:I = 0x7f080389
+
+.field public static final ic2_arrow_right_thin_20:I = 0x7f08038a
+
+.field public static final ic2_arrow_right_thin_24:I = 0x7f08038b
+
+.field public static final ic2_arrow_up_12:I = 0x7f08038c
+
+.field public static final ic2_arrow_up_16:I = 0x7f08038d
+
+.field public static final ic2_arrow_up_20:I = 0x7f08038e
+
+.field public static final ic2_arrow_up_24:I = 0x7f08038f
+
+.field public static final ic2_arrow_up_thin_12:I = 0x7f080390
+
+.field public static final ic2_arrow_up_thin_16:I = 0x7f080391
+
+.field public static final ic2_arrow_up_thin_20:I = 0x7f080392
+
+.field public static final ic2_arrow_up_thin_24:I = 0x7f080393
+
+.field public static final ic2_asset_overview_12:I = 0x7f080394
+
+.field public static final ic2_asset_overview_16:I = 0x7f080395
+
+.field public static final ic2_asset_overview_20:I = 0x7f080396
+
+.field public static final ic2_asset_overview_24:I = 0x7f080397
+
+.field public static final ic2_at_thin_12:I = 0x7f080398
+
+.field public static final ic2_at_thin_16:I = 0x7f080399
+
+.field public static final ic2_at_thin_20:I = 0x7f08039a
+
+.field public static final ic2_at_thin_24:I = 0x7f08039b
+
+.field public static final ic2_authentication_12:I = 0x7f08039c
+
+.field public static final ic2_authentication_16:I = 0x7f08039d
+
+.field public static final ic2_authentication_20:I = 0x7f08039e
+
+.field public static final ic2_authentication_24:I = 0x7f08039f
+
+.field public static final ic2_autoearn_bold_12:I = 0x7f0803a0
+
+.field public static final ic2_autoearn_bold_16:I = 0x7f0803a1
+
+.field public static final ic2_autoearn_bold_20:I = 0x7f0803a2
+
+.field public static final ic2_autoearn_bold_24:I = 0x7f0803a3
+
+.field public static final ic2_autoearn_thin_12:I = 0x7f0803a4
+
+.field public static final ic2_autoearn_thin_16:I = 0x7f0803a5
+
+.field public static final ic2_autoearn_thin_20:I = 0x7f0803a6
+
+.field public static final ic2_autoearn_thin_24:I = 0x7f0803a7
+
+.field public static final ic2_back_withcircle_12:I = 0x7f0803a8
+
+.field public static final ic2_back_withcircle_16:I = 0x7f0803a9
+
+.field public static final ic2_back_withcircle_20:I = 0x7f0803aa
+
+.field public static final ic2_back_withcircle_24:I = 0x7f0803ab
+
+.field public static final ic2_back_withcircle_emphasis_12:I = 0x7f0803ac
+
+.field public static final ic2_back_withcircle_emphasis_16:I = 0x7f0803ad
+
+.field public static final ic2_back_withcircle_emphasis_20:I = 0x7f0803ae
+
+.field public static final ic2_back_withcircle_emphasis_24:I = 0x7f0803af
+
+.field public static final ic2_beaker_thin_12:I = 0x7f0803b0
+
+.field public static final ic2_beaker_thin_16:I = 0x7f0803b1
+
+.field public static final ic2_beaker_thin_20:I = 0x7f0803b2
+
+.field public static final ic2_beaker_thin_24:I = 0x7f0803b3
+
+.field public static final ic2_bearish_thin_12:I = 0x7f0803b4
+
+.field public static final ic2_bearish_thin_16:I = 0x7f0803b5
+
+.field public static final ic2_bearish_thin_20:I = 0x7f0803b6
+
+.field public static final ic2_bearish_thin_24:I = 0x7f0803b7
+
+.field public static final ic2_beginner_airdrop_12:I = 0x7f0803b8
+
+.field public static final ic2_beginner_airdrop_16:I = 0x7f0803b9
+
+.field public static final ic2_beginner_airdrop_20:I = 0x7f0803ba
+
+.field public static final ic2_beginner_airdrop_24:I = 0x7f0803bb
+
+.field public static final ic2_bitcoin_12:I = 0x7f0803bc
+
+.field public static final ic2_bitcoin_16:I = 0x7f0803bd
+
+.field public static final ic2_bitcoin_20:I = 0x7f0803be
+
+.field public static final ic2_bitcoin_24:I = 0x7f0803bf
+
+.field public static final ic2_board_thin_12:I = 0x7f0803c0
+
+.field public static final ic2_board_thin_16:I = 0x7f0803c1
+
+.field public static final ic2_board_thin_20:I = 0x7f0803c2
+
+.field public static final ic2_board_thin_24:I = 0x7f0803c3
+
+.field public static final ic2_bondaccount_12:I = 0x7f0803c4
+
+.field public static final ic2_bondaccount_16:I = 0x7f0803c5
+
+.field public static final ic2_bondaccount_20:I = 0x7f0803c6
+
+.field public static final ic2_bondaccount_24:I = 0x7f0803c7
+
+.field public static final ic2_bonus_12:I = 0x7f0803c8
+
+.field public static final ic2_bonus_16:I = 0x7f0803c9
+
+.field public static final ic2_bonus_20:I = 0x7f0803ca
+
+.field public static final ic2_bonus_24:I = 0x7f0803cb
+
+.field public static final ic2_borrow_12:I = 0x7f0803cc
+
+.field public static final ic2_borrow_16:I = 0x7f0803cd
+
+.field public static final ic2_borrow_20:I = 0x7f0803ce
+
+.field public static final ic2_borrow_24:I = 0x7f0803cf
+
+.field public static final ic2_borrow_and_repay_12:I = 0x7f0803d0
+
+.field public static final ic2_borrow_and_repay_16:I = 0x7f0803d1
+
+.field public static final ic2_borrow_and_repay_20:I = 0x7f0803d2
+
+.field public static final ic2_borrow_and_repay_24:I = 0x7f0803d3
+
+.field public static final ic2_borrow_bold_12:I = 0x7f0803d4
+
+.field public static final ic2_borrow_bold_16:I = 0x7f0803d5
+
+.field public static final ic2_borrow_bold_20:I = 0x7f0803d6
+
+.field public static final ic2_borrow_bold_24:I = 0x7f0803d7
+
+.field public static final ic2_brawl_12:I = 0x7f0803d8
+
+.field public static final ic2_brawl_16:I = 0x7f0803d9
+
+.field public static final ic2_brawl_20:I = 0x7f0803da
+
+.field public static final ic2_brawl_24:I = 0x7f0803db
+
+.field public static final ic2_broker_12:I = 0x7f0803dc
+
+.field public static final ic2_broker_16:I = 0x7f0803dd
+
+.field public static final ic2_broker_20:I = 0x7f0803de
+
+.field public static final ic2_broker_24:I = 0x7f0803df
+
+.field public static final ic2_bullish_thin_12:I = 0x7f0803e0
+
+.field public static final ic2_bullish_thin_16:I = 0x7f0803e1
+
+.field public static final ic2_bullish_thin_20:I = 0x7f0803e2
+
+.field public static final ic2_bullish_thin_24:I = 0x7f0803e3
+
+.field public static final ic2_burningdrop_thin_12:I = 0x7f0803e4
+
+.field public static final ic2_burningdrop_thin_16:I = 0x7f0803e5
+
+.field public static final ic2_burningdrop_thin_20:I = 0x7f0803e6
+
+.field public static final ic2_burningdrop_thin_24:I = 0x7f0803e7
+
+.field public static final ic2_buy_crypto2_12:I = 0x7f0803e8
+
+.field public static final ic2_buy_crypto2_16:I = 0x7f0803e9
+
+.field public static final ic2_buy_crypto2_20:I = 0x7f0803ea
+
+.field public static final ic2_buy_crypto2_24:I = 0x7f0803eb
+
+.field public static final ic2_buy_crypto_12:I = 0x7f0803ec
+
+.field public static final ic2_buy_crypto_16:I = 0x7f0803ed
+
+.field public static final ic2_buy_crypto_20:I = 0x7f0803ee
+
+.field public static final ic2_buy_crypto_24:I = 0x7f0803ef
+
+.field public static final ic2_buycrypto_thin_12:I = 0x7f0803f0
+
+.field public static final ic2_buycrypto_thin_16:I = 0x7f0803f1
+
+.field public static final ic2_buycrypto_thin_20:I = 0x7f0803f2
+
+.field public static final ic2_buycrypto_thin_24:I = 0x7f0803f3
+
+.field public static final ic2_buylight_thin_12:I = 0x7f0803f4
+
+.field public static final ic2_buylight_thin_16:I = 0x7f0803f5
+
+.field public static final ic2_buylight_thin_20:I = 0x7f0803f6
+
+.field public static final ic2_buylight_thin_24:I = 0x7f0803f7
+
+.field public static final ic2_calculator_12:I = 0x7f0803f8
+
+.field public static final ic2_calculator_16:I = 0x7f0803f9
+
+.field public static final ic2_calculator_20:I = 0x7f0803fa
+
+.field public static final ic2_calculator_24:I = 0x7f0803fb
+
+.field public static final ic2_calendar_thin_12:I = 0x7f0803fc
+
+.field public static final ic2_calendar_thin_16:I = 0x7f0803fd
+
+.field public static final ic2_calendar_thin_20:I = 0x7f0803fe
+
+.field public static final ic2_calendar_thin_24:I = 0x7f0803ff
+
+.field public static final ic2_calendaradded_thin_12:I = 0x7f080400
+
+.field public static final ic2_calendaradded_thin_16:I = 0x7f080401
+
+.field public static final ic2_calendaradded_thin_20:I = 0x7f080402
+
+.field public static final ic2_calendaradded_thin_24:I = 0x7f080403
+
+.field public static final ic2_camera_12:I = 0x7f080404
+
+.field public static final ic2_camera_16:I = 0x7f080405
+
+.field public static final ic2_camera_20:I = 0x7f080406
+
+.field public static final ic2_camera_24:I = 0x7f080407
+
+.field public static final ic2_camera_thin_12:I = 0x7f080408
+
+.field public static final ic2_camera_thin_16:I = 0x7f080409
+
+.field public static final ic2_camera_thin_20:I = 0x7f08040a
+
+.field public static final ic2_camera_thin_24:I = 0x7f08040b
+
+.field public static final ic2_campaign_12:I = 0x7f08040c
+
+.field public static final ic2_campaign_16:I = 0x7f08040d
+
+.field public static final ic2_campaign_20:I = 0x7f08040e
+
+.field public static final ic2_campaign_24:I = 0x7f08040f
+
+.field public static final ic2_candel_12:I = 0x7f080410
+
+.field public static final ic2_candel_16:I = 0x7f080411
+
+.field public static final ic2_candel_20:I = 0x7f080412
+
+.field public static final ic2_candel_24:I = 0x7f080413
+
+.field public static final ic2_car_12:I = 0x7f080414
+
+.field public static final ic2_car_16:I = 0x7f080415
+
+.field public static final ic2_car_20:I = 0x7f080416
+
+.field public static final ic2_car_24:I = 0x7f080417
+
+.field public static final ic2_card_12:I = 0x7f080418
+
+.field public static final ic2_card_16:I = 0x7f080419
+
+.field public static final ic2_card_20:I = 0x7f08041a
+
+.field public static final ic2_card_24:I = 0x7f08041b
+
+.field public static final ic2_changemode_12:I = 0x7f08041c
+
+.field public static final ic2_changemode_16:I = 0x7f08041d
+
+.field public static final ic2_changemode_20:I = 0x7f08041e
+
+.field public static final ic2_changemode_24:I = 0x7f08041f
+
+.field public static final ic2_changemode_thin_12:I = 0x7f080420
+
+.field public static final ic2_changemode_thin_16:I = 0x7f080421
+
+.field public static final ic2_changemode_thin_20:I = 0x7f080422
+
+.field public static final ic2_changemode_thin_24:I = 0x7f080423
+
+.field public static final ic2_chart2_thin_12:I = 0x7f080424
+
+.field public static final ic2_chart2_thin_16:I = 0x7f080425
+
+.field public static final ic2_chart2_thin_20:I = 0x7f080426
+
+.field public static final ic2_chart2_thin_24:I = 0x7f080427
+
+.field public static final ic2_chart_thin_12:I = 0x7f080428
+
+.field public static final ic2_chart_thin_16:I = 0x7f080429
+
+.field public static final ic2_chart_thin_20:I = 0x7f08042a
+
+.field public static final ic2_chart_thin_24:I = 0x7f08042b
+
+.field public static final ic2_chat_12:I = 0x7f08042c
+
+.field public static final ic2_chat_16:I = 0x7f08042d
+
+.field public static final ic2_chat_20:I = 0x7f08042e
+
+.field public static final ic2_chat_24:I = 0x7f08042f
+
+.field public static final ic2_chat_thin_12:I = 0x7f080430
+
+.field public static final ic2_chat_thin_16:I = 0x7f080431
+
+.field public static final ic2_chat_thin_20:I = 0x7f080432
+
+.field public static final ic2_chat_thin_24:I = 0x7f080433
+
+.field public static final ic2_check_thin_12:I = 0x7f080434
+
+.field public static final ic2_check_thin_16:I = 0x7f080435
+
+.field public static final ic2_check_thin_20:I = 0x7f080436
+
+.field public static final ic2_check_thin_24:I = 0x7f080437
+
+.field public static final ic2_checkmark_star_12:I = 0x7f080438
+
+.field public static final ic2_checkmark_star_16:I = 0x7f080439
+
+.field public static final ic2_checkmark_star_20:I = 0x7f08043a
+
+.field public static final ic2_checkmark_star_24:I = 0x7f08043b
+
+.field public static final ic2_classicversion_12:I = 0x7f08043c
+
+.field public static final ic2_classicversion_16:I = 0x7f08043d
+
+.field public static final ic2_classicversion_20:I = 0x7f08043e
+
+.field public static final ic2_classicversion_24:I = 0x7f08043f
+
+.field public static final ic2_claw_thin_12:I = 0x7f080440
+
+.field public static final ic2_claw_thin_16:I = 0x7f080441
+
+.field public static final ic2_claw_thin_20:I = 0x7f080442
+
+.field public static final ic2_claw_thin_24:I = 0x7f080443
+
+.field public static final ic2_clear_all_12:I = 0x7f080444
+
+.field public static final ic2_clear_all_16:I = 0x7f080445
+
+.field public static final ic2_clear_all_20:I = 0x7f080446
+
+.field public static final ic2_clear_all_24:I = 0x7f080447
+
+.field public static final ic2_clock2_thin_12:I = 0x7f080448
+
+.field public static final ic2_clock2_thin_16:I = 0x7f080449
+
+.field public static final ic2_clock2_thin_20:I = 0x7f08044a
+
+.field public static final ic2_clock2_thin_24:I = 0x7f08044b
+
+.field public static final ic2_clock_thin_12:I = 0x7f08044c
+
+.field public static final ic2_clock_thin_16:I = 0x7f08044d
+
+.field public static final ic2_clock_thin_20:I = 0x7f08044e
+
+.field public static final ic2_clock_thin_24:I = 0x7f08044f
+
+.field public static final ic2_close2_thin_12:I = 0x7f080450
+
+.field public static final ic2_close2_thin_16:I = 0x7f080451
+
+.field public static final ic2_close2_thin_20:I = 0x7f080452
+
+.field public static final ic2_close2_thin_24:I = 0x7f080453
+
+.field public static final ic2_close_12:I = 0x7f080454
+
+.field public static final ic2_close_16:I = 0x7f080455
+
+.field public static final ic2_close_20:I = 0x7f080456
+
+.field public static final ic2_close_24:I = 0x7f080457
+
+.field public static final ic2_close_filled_12:I = 0x7f080458
+
+.field public static final ic2_close_filled_16:I = 0x7f080459
+
+.field public static final ic2_close_filled_20:I = 0x7f08045a
+
+.field public static final ic2_close_filled_24:I = 0x7f08045b
+
+.field public static final ic2_close_free_dialog:I = 0x7f08045c
+
+.field public static final ic2_close_plus:I = 0x7f08045d
+
+.field public static final ic2_close_small_12:I = 0x7f08045e
+
+.field public static final ic2_close_small_16:I = 0x7f08045f
+
+.field public static final ic2_close_small_20:I = 0x7f080460
+
+.field public static final ic2_close_small_24:I = 0x7f080461
+
+.field public static final ic2_close_thin_12:I = 0x7f080462
+
+.field public static final ic2_close_thin_16:I = 0x7f080463
+
+.field public static final ic2_close_thin_20:I = 0x7f080464
+
+.field public static final ic2_close_thin_24:I = 0x7f080465
+
+.field public static final ic2_close_titlebar:I = 0x7f080466
+
+.field public static final ic2_close_withcircle_12:I = 0x7f080467
+
+.field public static final ic2_close_withcircle_16:I = 0x7f080468
+
+.field public static final ic2_close_withcircle_20:I = 0x7f080469
+
+.field public static final ic2_close_withcircle_24:I = 0x7f08046a
+
+.field public static final ic2_close_withcircle_emphasis_12:I = 0x7f08046b
+
+.field public static final ic2_close_withcircle_emphasis_16:I = 0x7f08046c
+
+.field public static final ic2_close_withcircle_emphasis_20:I = 0x7f08046d
+
+.field public static final ic2_close_withcircle_emphasis_24:I = 0x7f08046e
+
+.field public static final ic2_code1_thin_12:I = 0x7f08046f
+
+.field public static final ic2_code1_thin_16:I = 0x7f080470
+
+.field public static final ic2_code1_thin_20:I = 0x7f080471
+
+.field public static final ic2_code1_thin_24:I = 0x7f080472
+
+.field public static final ic2_code_thin_12:I = 0x7f080473
+
+.field public static final ic2_code_thin_16:I = 0x7f080474
+
+.field public static final ic2_code_thin_20:I = 0x7f080475
+
+.field public static final ic2_code_thin_24:I = 0x7f080476
+
+.field public static final ic2_coin_thin_12:I = 0x7f080477
+
+.field public static final ic2_coin_thin_16:I = 0x7f080478
+
+.field public static final ic2_coin_thin_20:I = 0x7f080479
+
+.field public static final ic2_coin_thin_24:I = 0x7f08047a
+
+.field public static final ic2_coins_thin_12:I = 0x7f08047b
+
+.field public static final ic2_coins_thin_16:I = 0x7f08047c
+
+.field public static final ic2_coins_thin_20:I = 0x7f08047d
+
+.field public static final ic2_coins_thin_24:I = 0x7f08047e
+
+.field public static final ic2_collapsesidebar_12:I = 0x7f08047f
+
+.field public static final ic2_collapsesidebar_16:I = 0x7f080480
+
+.field public static final ic2_collapsesidebar_20:I = 0x7f080481
+
+.field public static final ic2_collapsesidebar_24:I = 0x7f080482
+
+.field public static final ic2_commit_12:I = 0x7f080483
+
+.field public static final ic2_commit_16:I = 0x7f080484
+
+.field public static final ic2_commit_20:I = 0x7f080485
+
+.field public static final ic2_commit_24:I = 0x7f080486
+
+.field public static final ic2_commit_thin_12:I = 0x7f080487
+
+.field public static final ic2_commit_thin_16:I = 0x7f080488
+
+.field public static final ic2_commit_thin_20:I = 0x7f080489
+
+.field public static final ic2_commit_thin_24:I = 0x7f08048a
+
+.field public static final ic2_common_empty:I = 0x7f08048b
+
+.field public static final ic2_common_error:I = 0x7f08048c
+
+.field public static final ic2_common_info:I = 0x7f08048d
+
+.field public static final ic2_common_locked:I = 0x7f08048e
+
+.field public static final ic2_common_network_error:I = 0x7f08048f
+
+.field public static final ic2_common_processing:I = 0x7f080490
+
+.field public static final ic2_common_security:I = 0x7f080491
+
+.field public static final ic2_common_success:I = 0x7f080492
+
+.field public static final ic2_common_system_busy:I = 0x7f080493
+
+.field public static final ic2_common_system_maintain:I = 0x7f080494
+
+.field public static final ic2_common_warning:I = 0x7f080495
+
+.field public static final ic2_comparison2_thin_12:I = 0x7f080496
+
+.field public static final ic2_comparison2_thin_16:I = 0x7f080497
+
+.field public static final ic2_comparison2_thin_20:I = 0x7f080498
+
+.field public static final ic2_comparison2_thin_24:I = 0x7f080499
+
+.field public static final ic2_comparison_thin_12:I = 0x7f08049a
+
+.field public static final ic2_comparison_thin_16:I = 0x7f08049b
+
+.field public static final ic2_comparison_thin_20:I = 0x7f08049c
+
+.field public static final ic2_comparison_thin_24:I = 0x7f08049d
+
+.field public static final ic2_compass_thin_12:I = 0x7f08049e
+
+.field public static final ic2_compass_thin_16:I = 0x7f08049f
+
+.field public static final ic2_compass_thin_20:I = 0x7f0804a0
+
+.field public static final ic2_compass_thin_24:I = 0x7f0804a1
+
+.field public static final ic2_connectmanage_12:I = 0x7f0804a2
+
+.field public static final ic2_connectmanage_16:I = 0x7f0804a3
+
+.field public static final ic2_connectmanage_20:I = 0x7f0804a4
+
+.field public static final ic2_connectmanage_24:I = 0x7f0804a5
+
+.field public static final ic2_contract_interaction_12:I = 0x7f0804a6
+
+.field public static final ic2_contract_interaction_16:I = 0x7f0804a7
+
+.field public static final ic2_contract_interaction_20:I = 0x7f0804a8
+
+.field public static final ic2_contract_interaction_24:I = 0x7f0804a9
+
+.field public static final ic2_convert_12:I = 0x7f0804aa
+
+.field public static final ic2_convert_16:I = 0x7f0804ab
+
+.field public static final ic2_convert_20:I = 0x7f0804ac
+
+.field public static final ic2_convert_24:I = 0x7f0804ad
+
+.field public static final ic2_convert_bold_12:I = 0x7f0804ae
+
+.field public static final ic2_convert_bold_16:I = 0x7f0804af
+
+.field public static final ic2_convert_bold_20:I = 0x7f0804b0
+
+.field public static final ic2_convert_bold_24:I = 0x7f0804b1
+
+.field public static final ic2_convert_thin_12:I = 0x7f0804b2
+
+.field public static final ic2_convert_thin_16:I = 0x7f0804b3
+
+.field public static final ic2_convert_thin_20:I = 0x7f0804b4
+
+.field public static final ic2_convert_thin_24:I = 0x7f0804b5
+
+.field public static final ic2_copy_12:I = 0x7f0804b6
+
+.field public static final ic2_copy_16:I = 0x7f0804b7
+
+.field public static final ic2_copy_20:I = 0x7f0804b8
+
+.field public static final ic2_copy_24:I = 0x7f0804b9
+
+.field public static final ic2_copy_thin_12:I = 0x7f0804ba
+
+.field public static final ic2_copy_thin_16:I = 0x7f0804bb
+
+.field public static final ic2_copy_thin_20:I = 0x7f0804bc
+
+.field public static final ic2_copy_thin_24:I = 0x7f0804bd
+
+.field public static final ic2_copyban_thin_12:I = 0x7f0804be
+
+.field public static final ic2_copyban_thin_16:I = 0x7f0804bf
+
+.field public static final ic2_copyban_thin_20:I = 0x7f0804c0
+
+.field public static final ic2_copyban_thin_24:I = 0x7f0804c1
+
+.field public static final ic2_copytrade_tab_12:I = 0x7f0804c2
+
+.field public static final ic2_copytrade_tab_16:I = 0x7f0804c3
+
+.field public static final ic2_copytrade_tab_20:I = 0x7f0804c4
+
+.field public static final ic2_copytrade_tab_24:I = 0x7f0804c5
+
+.field public static final ic2_copytrade_tabfill_12:I = 0x7f0804c6
+
+.field public static final ic2_copytrade_tabfill_16:I = 0x7f0804c7
+
+.field public static final ic2_copytrade_tabfill_20:I = 0x7f0804c8
+
+.field public static final ic2_copytrade_tabfill_24:I = 0x7f0804c9
+
+.field public static final ic2_copytradehub_tab_12:I = 0x7f0804ca
+
+.field public static final ic2_copytradehub_tab_16:I = 0x7f0804cb
+
+.field public static final ic2_copytradehub_tab_20:I = 0x7f0804cc
+
+.field public static final ic2_copytradehub_tab_24:I = 0x7f0804cd
+
+.field public static final ic2_copytradehub_tabfill_12:I = 0x7f0804ce
+
+.field public static final ic2_copytradehub_tabfill_16:I = 0x7f0804cf
+
+.field public static final ic2_copytradehub_tabfill_20:I = 0x7f0804d0
+
+.field public static final ic2_copytradehub_tabfill_24:I = 0x7f0804d1
+
+.field public static final ic2_copytradehublead_tab_12:I = 0x7f0804d2
+
+.field public static final ic2_copytradehublead_tab_16:I = 0x7f0804d3
+
+.field public static final ic2_copytradehublead_tab_20:I = 0x7f0804d4
+
+.field public static final ic2_copytradehublead_tab_24:I = 0x7f0804d5
+
+.field public static final ic2_copytradehublead_tabfill_12:I = 0x7f0804d6
+
+.field public static final ic2_copytradehublead_tabfill_16:I = 0x7f0804d7
+
+.field public static final ic2_copytradehublead_tabfill_20:I = 0x7f0804d8
+
+.field public static final ic2_copytradehublead_tabfill_24:I = 0x7f0804d9
+
+.field public static final ic2_copytrader_12:I = 0x7f0804da
+
+.field public static final ic2_copytrader_16:I = 0x7f0804db
+
+.field public static final ic2_copytrader_20:I = 0x7f0804dc
+
+.field public static final ic2_copytrader_24:I = 0x7f0804dd
+
+.field public static final ic2_copytrading_thin_12:I = 0x7f0804de
+
+.field public static final ic2_copytrading_thin_16:I = 0x7f0804df
+
+.field public static final ic2_copytrading_thin_20:I = 0x7f0804e0
+
+.field public static final ic2_copytrading_thin_24:I = 0x7f0804e1
+
+.field public static final ic2_coupons_12:I = 0x7f0804e2
+
+.field public static final ic2_coupons_16:I = 0x7f0804e3
+
+.field public static final ic2_coupons_20:I = 0x7f0804e4
+
+.field public static final ic2_coupons_24:I = 0x7f0804e5
+
+.field public static final ic2_coupons_thin_12:I = 0x7f0804e6
+
+.field public static final ic2_coupons_thin_16:I = 0x7f0804e7
+
+.field public static final ic2_coupons_thin_20:I = 0x7f0804e8
+
+.field public static final ic2_coupons_thin_24:I = 0x7f0804e9
+
+.field public static final ic2_credit_thin_12:I = 0x7f0804ea
+
+.field public static final ic2_credit_thin_16:I = 0x7f0804eb
+
+.field public static final ic2_credit_thin_20:I = 0x7f0804ec
+
+.field public static final ic2_credit_thin_24:I = 0x7f0804ed
+
+.field public static final ic2_crop_thin_12:I = 0x7f0804ee
+
+.field public static final ic2_crop_thin_16:I = 0x7f0804ef
+
+.field public static final ic2_crop_thin_20:I = 0x7f0804f0
+
+.field public static final ic2_crop_thin_24:I = 0x7f0804f1
+
+.field public static final ic2_cryptolendingpro_thin_12:I = 0x7f0804f2
+
+.field public static final ic2_cryptolendingpro_thin_16:I = 0x7f0804f3
+
+.field public static final ic2_cryptolendingpro_thin_20:I = 0x7f0804f4
+
+.field public static final ic2_cryptolendingpro_thin_24:I = 0x7f0804f5
+
+.field public static final ic2_cube_thin_12:I = 0x7f0804f6
+
+.field public static final ic2_cube_thin_16:I = 0x7f0804f7
+
+.field public static final ic2_cube_thin_20:I = 0x7f0804f8
+
+.field public static final ic2_cube_thin_24:I = 0x7f0804f9
+
+.field public static final ic2_currency2_thin_12:I = 0x7f0804fa
+
+.field public static final ic2_currency2_thin_16:I = 0x7f0804fb
+
+.field public static final ic2_currency2_thin_20:I = 0x7f0804fc
+
+.field public static final ic2_currency2_thin_24:I = 0x7f0804fd
+
+.field public static final ic2_currency_thin_12:I = 0x7f0804fe
+
+.field public static final ic2_currency_thin_16:I = 0x7f0804ff
+
+.field public static final ic2_currency_thin_20:I = 0x7f080500
+
+.field public static final ic2_currency_thin_24:I = 0x7f080501
+
+.field public static final ic2_customer_12:I = 0x7f080502
+
+.field public static final ic2_customer_16:I = 0x7f080503
+
+.field public static final ic2_customer_20:I = 0x7f080504
+
+.field public static final ic2_customer_24:I = 0x7f080505
+
+.field public static final ic2_customer_service_12:I = 0x7f080506
+
+.field public static final ic2_customer_service_16:I = 0x7f080507
+
+.field public static final ic2_customer_service_20:I = 0x7f080508
+
+.field public static final ic2_customer_service_24:I = 0x7f080509
+
+.field public static final ic2_dark_mode_12:I = 0x7f08050a
+
+.field public static final ic2_dark_mode_16:I = 0x7f08050b
+
+.field public static final ic2_dark_mode_20:I = 0x7f08050c
+
+.field public static final ic2_dark_mode_24:I = 0x7f08050d
+
+.field public static final ic2_dashboard_12:I = 0x7f08050e
+
+.field public static final ic2_dashboard_16:I = 0x7f08050f
+
+.field public static final ic2_dashboard_20:I = 0x7f080510
+
+.field public static final ic2_dashboard_24:I = 0x7f080511
+
+.field public static final ic2_dashboard_thin_12:I = 0x7f080512
+
+.field public static final ic2_dashboard_thin_16:I = 0x7f080513
+
+.field public static final ic2_dashboard_thin_20:I = 0x7f080514
+
+.field public static final ic2_dashboard_thin_24:I = 0x7f080515
+
+.field public static final ic2_delete2_12:I = 0x7f080516
+
+.field public static final ic2_delete2_16:I = 0x7f080517
+
+.field public static final ic2_delete2_20:I = 0x7f080518
+
+.field public static final ic2_delete2_24:I = 0x7f080519
+
+.field public static final ic2_delete_12:I = 0x7f08051a
+
+.field public static final ic2_delete_16:I = 0x7f08051b
+
+.field public static final ic2_delete_20:I = 0x7f08051c
+
+.field public static final ic2_delete_24:I = 0x7f08051d
+
+.field public static final ic2_delete_thin_12:I = 0x7f08051e
+
+.field public static final ic2_delete_thin_16:I = 0x7f08051f
+
+.field public static final ic2_delete_thin_20:I = 0x7f080520
+
+.field public static final ic2_delete_thin_24:I = 0x7f080521
+
+.field public static final ic2_delist_12:I = 0x7f080522
+
+.field public static final ic2_delist_16:I = 0x7f080523
+
+.field public static final ic2_delist_20:I = 0x7f080524
+
+.field public static final ic2_delist_24:I = 0x7f080525
+
+.field public static final ic2_delisting_12:I = 0x7f080526
+
+.field public static final ic2_delisting_16:I = 0x7f080527
+
+.field public static final ic2_delisting_20:I = 0x7f080528
+
+.field public static final ic2_delisting_24:I = 0x7f080529
+
+.field public static final ic2_deposit_12:I = 0x7f08052a
+
+.field public static final ic2_deposit_16:I = 0x7f08052b
+
+.field public static final ic2_deposit_20:I = 0x7f08052c
+
+.field public static final ic2_deposit_24:I = 0x7f08052d
+
+.field public static final ic2_deposit_bold_12:I = 0x7f08052e
+
+.field public static final ic2_deposit_bold_16:I = 0x7f08052f
+
+.field public static final ic2_deposit_bold_20:I = 0x7f080530
+
+.field public static final ic2_deposit_bold_24:I = 0x7f080531
+
+.field public static final ic2_deposit_thin_12:I = 0x7f080532
+
+.field public static final ic2_deposit_thin_16:I = 0x7f080533
+
+.field public static final ic2_deposit_thin_20:I = 0x7f080534
+
+.field public static final ic2_deposit_thin_24:I = 0x7f080535
+
+.field public static final ic2_depositfiat_thin_12:I = 0x7f080536
+
+.field public static final ic2_depositfiat_thin_16:I = 0x7f080537
+
+.field public static final ic2_depositfiat_thin_20:I = 0x7f080538
+
+.field public static final ic2_depositfiat_thin_24:I = 0x7f080539
+
+.field public static final ic2_device_unlock_12:I = 0x7f08053a
+
+.field public static final ic2_device_unlock_16:I = 0x7f08053b
+
+.field public static final ic2_device_unlock_20:I = 0x7f08053c
+
+.field public static final ic2_device_unlock_24:I = 0x7f08053d
+
+.field public static final ic2_discord_12:I = 0x7f08053e
+
+.field public static final ic2_discord_16:I = 0x7f08053f
+
+.field public static final ic2_discord_20:I = 0x7f080540
+
+.field public static final ic2_discord_24:I = 0x7f080541
+
+.field public static final ic2_dislike_thin_12:I = 0x7f080542
+
+.field public static final ic2_dislike_thin_16:I = 0x7f080543
+
+.field public static final ic2_dislike_thin_20:I = 0x7f080544
+
+.field public static final ic2_dislike_thin_24:I = 0x7f080545
+
+.field public static final ic2_documents_12:I = 0x7f080546
+
+.field public static final ic2_documents_16:I = 0x7f080547
+
+.field public static final ic2_documents_20:I = 0x7f080548
+
+.field public static final ic2_documents_24:I = 0x7f080549
+
+.field public static final ic2_double_left_12:I = 0x7f08054a
+
+.field public static final ic2_double_left_16:I = 0x7f08054b
+
+.field public static final ic2_double_left_20:I = 0x7f08054c
+
+.field public static final ic2_double_left_24:I = 0x7f08054d
+
+.field public static final ic2_double_right_12:I = 0x7f08054e
+
+.field public static final ic2_double_right_16:I = 0x7f08054f
+
+.field public static final ic2_double_right_20:I = 0x7f080550
+
+.field public static final ic2_double_right_24:I = 0x7f080551
+
+.field public static final ic2_download_thin_12:I = 0x7f080552
+
+.field public static final ic2_download_thin_16:I = 0x7f080553
+
+.field public static final ic2_download_thin_20:I = 0x7f080554
+
+.field public static final ic2_download_thin_24:I = 0x7f080555
+
+.field public static final ic2_drag_12:I = 0x7f080556
+
+.field public static final ic2_drag_16:I = 0x7f080557
+
+.field public static final ic2_drag_20:I = 0x7f080558
+
+.field public static final ic2_drag_24:I = 0x7f080559
+
+.field public static final ic2_dualinvestment_thin_12:I = 0x7f08055a
+
+.field public static final ic2_dualinvestment_thin_16:I = 0x7f08055b
+
+.field public static final ic2_dualinvestment_thin_20:I = 0x7f08055c
+
+.field public static final ic2_dualinvestment_thin_24:I = 0x7f08055d
+
+.field public static final ic2_earn_bold_12:I = 0x7f08055e
+
+.field public static final ic2_earn_bold_16:I = 0x7f08055f
+
+.field public static final ic2_earn_bold_20:I = 0x7f080560
+
+.field public static final ic2_earn_bold_24:I = 0x7f080561
+
+.field public static final ic2_earn_pig_12:I = 0x7f080562
+
+.field public static final ic2_earn_pig_16:I = 0x7f080563
+
+.field public static final ic2_earn_pig_20:I = 0x7f080564
+
+.field public static final ic2_earn_pig_24:I = 0x7f080565
+
+.field public static final ic2_earn_promotion_12:I = 0x7f080566
+
+.field public static final ic2_earn_promotion_16:I = 0x7f080567
+
+.field public static final ic2_earn_promotion_20:I = 0x7f080568
+
+.field public static final ic2_earn_promotion_24:I = 0x7f080569
+
+.field public static final ic2_earn_thin_12:I = 0x7f08056a
+
+.field public static final ic2_earn_thin_16:I = 0x7f08056b
+
+.field public static final ic2_earn_thin_20:I = 0x7f08056c
+
+.field public static final ic2_earn_thin_24:I = 0x7f08056d
+
+.field public static final ic2_edit2_thin_12:I = 0x7f08056e
+
+.field public static final ic2_edit2_thin_16:I = 0x7f08056f
+
+.field public static final ic2_edit2_thin_20:I = 0x7f080570
+
+.field public static final ic2_edit2_thin_24:I = 0x7f080571
+
+.field public static final ic2_edit_12:I = 0x7f080572
+
+.field public static final ic2_edit_16:I = 0x7f080573
+
+.field public static final ic2_edit_20:I = 0x7f080574
+
+.field public static final ic2_edit_24:I = 0x7f080575
+
+.field public static final ic2_edit_thin_12:I = 0x7f080576
+
+.field public static final ic2_edit_thin_16:I = 0x7f080577
+
+.field public static final ic2_edit_thin_20:I = 0x7f080578
+
+.field public static final ic2_edit_thin_24:I = 0x7f080579
+
+.field public static final ic2_edittag_12:I = 0x7f08057a
+
+.field public static final ic2_edittag_16:I = 0x7f08057b
+
+.field public static final ic2_edittag_20:I = 0x7f08057c
+
+.field public static final ic2_edittag_24:I = 0x7f08057d
+
+.field public static final ic2_educe_12:I = 0x7f08057e
+
+.field public static final ic2_educe_16:I = 0x7f08057f
+
+.field public static final ic2_educe_20:I = 0x7f080580
+
+.field public static final ic2_educe_24:I = 0x7f080581
+
+.field public static final ic2_email_12:I = 0x7f080582
+
+.field public static final ic2_email_16:I = 0x7f080583
+
+.field public static final ic2_email_20:I = 0x7f080584
+
+.field public static final ic2_email_24:I = 0x7f080585
+
+.field public static final ic2_email_send_12:I = 0x7f080586
+
+.field public static final ic2_email_send_16:I = 0x7f080587
+
+.field public static final ic2_email_send_20:I = 0x7f080588
+
+.field public static final ic2_email_send_24:I = 0x7f080589
+
+.field public static final ic2_email_thin_12:I = 0x7f08058a
+
+.field public static final ic2_email_thin_16:I = 0x7f08058b
+
+.field public static final ic2_email_thin_20:I = 0x7f08058c
+
+.field public static final ic2_email_thin_24:I = 0x7f08058d
+
+.field public static final ic2_emoji_12:I = 0x7f08058e
+
+.field public static final ic2_emoji_16:I = 0x7f08058f
+
+.field public static final ic2_emoji_20:I = 0x7f080590
+
+.field public static final ic2_emoji_24:I = 0x7f080591
+
+.field public static final ic2_emoji_thin_12:I = 0x7f080592
+
+.field public static final ic2_emoji_thin_16:I = 0x7f080593
+
+.field public static final ic2_emoji_thin_20:I = 0x7f080594
+
+.field public static final ic2_emoji_thin_24:I = 0x7f080595
+
+.field public static final ic2_eth_staking_12:I = 0x7f080596
+
+.field public static final ic2_eth_staking_16:I = 0x7f080597
+
+.field public static final ic2_eth_staking_20:I = 0x7f080598
+
+.field public static final ic2_eth_staking_24:I = 0x7f080599
+
+.field public static final ic2_ethstaking_thin_12:I = 0x7f08059a
+
+.field public static final ic2_ethstaking_thin_16:I = 0x7f08059b
+
+.field public static final ic2_ethstaking_thin_20:I = 0x7f08059c
+
+.field public static final ic2_ethstaking_thin_24:I = 0x7f08059d
+
+.field public static final ic2_exchange_thin_12:I = 0x7f08059e
+
+.field public static final ic2_exchange_thin_16:I = 0x7f08059f
+
+.field public static final ic2_exchange_thin_20:I = 0x7f0805a0
+
+.field public static final ic2_exchange_thin_24:I = 0x7f0805a1
+
+.field public static final ic2_exit_12:I = 0x7f0805a2
+
+.field public static final ic2_exit_16:I = 0x7f0805a3
+
+.field public static final ic2_exit_20:I = 0x7f0805a4
+
+.field public static final ic2_exit_24:I = 0x7f0805a5
+
+.field public static final ic2_expan_thin_12:I = 0x7f0805a6
+
+.field public static final ic2_expan_thin_16:I = 0x7f0805a7
+
+.field public static final ic2_expan_thin_20:I = 0x7f0805a8
+
+.field public static final ic2_expan_thin_24:I = 0x7f0805a9
+
+.field public static final ic2_extendsidebar_12:I = 0x7f0805aa
+
+.field public static final ic2_extendsidebar_16:I = 0x7f0805ab
+
+.field public static final ic2_extendsidebar_20:I = 0x7f0805ac
+
+.field public static final ic2_extendsidebar_24:I = 0x7f0805ad
+
+.field public static final ic2_eye_close_12:I = 0x7f0805ae
+
+.field public static final ic2_eye_close_16:I = 0x7f0805af
+
+.field public static final ic2_eye_close_20:I = 0x7f0805b0
+
+.field public static final ic2_eye_close_24:I = 0x7f0805b1
+
+.field public static final ic2_eye_open_12:I = 0x7f0805b2
+
+.field public static final ic2_eye_open_16:I = 0x7f0805b3
+
+.field public static final ic2_eye_open_20:I = 0x7f0805b4
+
+.field public static final ic2_eye_open_24:I = 0x7f0805b5
+
+.field public static final ic2_face_12:I = 0x7f0805b6
+
+.field public static final ic2_face_16:I = 0x7f0805b7
+
+.field public static final ic2_face_20:I = 0x7f0805b8
+
+.field public static final ic2_face_24:I = 0x7f0805b9
+
+.field public static final ic2_faceid_12:I = 0x7f0805ba
+
+.field public static final ic2_faceid_16:I = 0x7f0805bb
+
+.field public static final ic2_faceid_20:I = 0x7f0805bc
+
+.field public static final ic2_faceid_24:I = 0x7f0805bd
+
+.field public static final ic2_fail_12:I = 0x7f0805be
+
+.field public static final ic2_fail_16:I = 0x7f0805bf
+
+.field public static final ic2_fail_20:I = 0x7f0805c0
+
+.field public static final ic2_fail_24:I = 0x7f0805c1
+
+.field public static final ic2_fastmode_thin_12:I = 0x7f0805c2
+
+.field public static final ic2_fastmode_thin_16:I = 0x7f0805c3
+
+.field public static final ic2_fastmode_thin_20:I = 0x7f0805c4
+
+.field public static final ic2_fastmode_thin_24:I = 0x7f0805c5
+
+.field public static final ic2_fasttrade_thin_12:I = 0x7f0805c6
+
+.field public static final ic2_fasttrade_thin_16:I = 0x7f0805c7
+
+.field public static final ic2_fasttrade_thin_20:I = 0x7f0805c8
+
+.field public static final ic2_fasttrade_thin_24:I = 0x7f0805c9
+
+.field public static final ic2_favorite_alert_12:I = 0x7f0805ca
+
+.field public static final ic2_favorite_alert_16:I = 0x7f0805cb
+
+.field public static final ic2_favorite_alert_20:I = 0x7f0805cc
+
+.field public static final ic2_favorite_alert_24:I = 0x7f0805cd
+
+.field public static final ic2_favorite_select_12:I = 0x7f0805ce
+
+.field public static final ic2_favorite_select_16:I = 0x7f0805cf
+
+.field public static final ic2_favorite_select_20:I = 0x7f0805d0
+
+.field public static final ic2_favorite_select_24:I = 0x7f0805d1
+
+.field public static final ic2_favorite_unselect_12:I = 0x7f0805d2
+
+.field public static final ic2_favorite_unselect_16:I = 0x7f0805d3
+
+.field public static final ic2_favorite_unselect_20:I = 0x7f0805d4
+
+.field public static final ic2_favorite_unselect_24:I = 0x7f0805d5
+
+.field public static final ic2_feevip_thin_12:I = 0x7f0805d6
+
+.field public static final ic2_feevip_thin_16:I = 0x7f0805d7
+
+.field public static final ic2_feevip_thin_20:I = 0x7f0805d8
+
+.field public static final ic2_feevip_thin_24:I = 0x7f0805d9
+
+.field public static final ic2_file_text_ai_12:I = 0x7f0805da
+
+.field public static final ic2_file_text_ai_16:I = 0x7f0805db
+
+.field public static final ic2_file_text_ai_20:I = 0x7f0805dc
+
+.field public static final ic2_file_text_ai_24:I = 0x7f0805dd
+
+.field public static final ic2_file_thin_12:I = 0x7f0805de
+
+.field public static final ic2_file_thin_16:I = 0x7f0805df
+
+.field public static final ic2_file_thin_20:I = 0x7f0805e0
+
+.field public static final ic2_file_thin_24:I = 0x7f0805e1
+
+.field public static final ic2_fillcolor_12:I = 0x7f0805e2
+
+.field public static final ic2_fillcolor_16:I = 0x7f0805e3
+
+.field public static final ic2_fillcolor_20:I = 0x7f0805e4
+
+.field public static final ic2_fillcolor_24:I = 0x7f0805e5
+
+.field public static final ic2_filter_12:I = 0x7f0805e6
+
+.field public static final ic2_filter_16:I = 0x7f0805e7
+
+.field public static final ic2_filter_20:I = 0x7f0805e8
+
+.field public static final ic2_filter_24:I = 0x7f0805e9
+
+.field public static final ic2_fingerprint_thin_12:I = 0x7f0805ea
+
+.field public static final ic2_fingerprint_thin_16:I = 0x7f0805eb
+
+.field public static final ic2_fingerprint_thin_20:I = 0x7f0805ec
+
+.field public static final ic2_fingerprint_thin_24:I = 0x7f0805ed
+
+.field public static final ic2_fire_12:I = 0x7f0805ee
+
+.field public static final ic2_fire_16:I = 0x7f0805ef
+
+.field public static final ic2_fire_20:I = 0x7f0805f0
+
+.field public static final ic2_fire_24:I = 0x7f0805f1
+
+.field public static final ic2_flag_12:I = 0x7f0805f2
+
+.field public static final ic2_flag_16:I = 0x7f0805f3
+
+.field public static final ic2_flag_20:I = 0x7f0805f4
+
+.field public static final ic2_flag_24:I = 0x7f0805f5
+
+.field public static final ic2_floating_window_12:I = 0x7f0805f6
+
+.field public static final ic2_floating_window_16:I = 0x7f0805f7
+
+.field public static final ic2_floating_window_20:I = 0x7f0805f8
+
+.field public static final ic2_floating_window_24:I = 0x7f0805f9
+
+.field public static final ic2_forbid_12:I = 0x7f0805fa
+
+.field public static final ic2_forbid_16:I = 0x7f0805fb
+
+.field public static final ic2_forbid_20:I = 0x7f0805fc
+
+.field public static final ic2_forbid_24:I = 0x7f0805fd
+
+.field public static final ic2_freezeaccount_thin_12:I = 0x7f0805fe
+
+.field public static final ic2_freezeaccount_thin_16:I = 0x7f0805ff
+
+.field public static final ic2_freezeaccount_thin_20:I = 0x7f080600
+
+.field public static final ic2_freezeaccount_thin_24:I = 0x7f080601
+
+.field public static final ic2_full_screen_12:I = 0x7f080602
+
+.field public static final ic2_full_screen_16:I = 0x7f080603
+
+.field public static final ic2_full_screen_20:I = 0x7f080604
+
+.field public static final ic2_full_screen_24:I = 0x7f080605
+
+.field public static final ic2_fund_account_12:I = 0x7f080606
+
+.field public static final ic2_fund_account_16:I = 0x7f080607
+
+.field public static final ic2_fund_account_20:I = 0x7f080608
+
+.field public static final ic2_fund_account_24:I = 0x7f080609
+
+.field public static final ic2_funding_thin_12:I = 0x7f08060a
+
+.field public static final ic2_funding_thin_16:I = 0x7f08060b
+
+.field public static final ic2_funding_thin_20:I = 0x7f08060c
+
+.field public static final ic2_funding_thin_24:I = 0x7f08060d
+
+.field public static final ic2_futures_account_12:I = 0x7f08060e
+
+.field public static final ic2_futures_account_16:I = 0x7f08060f
+
+.field public static final ic2_futures_account_20:I = 0x7f080610
+
+.field public static final ic2_futures_account_24:I = 0x7f080611
+
+.field public static final ic2_futures_thin_12:I = 0x7f080612
+
+.field public static final ic2_futures_thin_16:I = 0x7f080613
+
+.field public static final ic2_futures_thin_20:I = 0x7f080614
+
+.field public static final ic2_futures_thin_24:I = 0x7f080615
+
+.field public static final ic2_futuresplus_thin_12:I = 0x7f080616
+
+.field public static final ic2_futuresplus_thin_16:I = 0x7f080617
+
+.field public static final ic2_futuresplus_thin_20:I = 0x7f080618
+
+.field public static final ic2_futuresplus_thin_24:I = 0x7f080619
+
+.field public static final ic2_ga_12:I = 0x7f08061a
+
+.field public static final ic2_ga_16:I = 0x7f08061b
+
+.field public static final ic2_ga_20:I = 0x7f08061c
+
+.field public static final ic2_ga_24:I = 0x7f08061d
+
+.field public static final ic2_ga_thin_12:I = 0x7f08061e
+
+.field public static final ic2_ga_thin_16:I = 0x7f08061f
+
+.field public static final ic2_ga_thin_20:I = 0x7f080620
+
+.field public static final ic2_ga_thin_24:I = 0x7f080621
+
+.field public static final ic2_ganew_12:I = 0x7f080622
+
+.field public static final ic2_ganew_16:I = 0x7f080623
+
+.field public static final ic2_ganew_20:I = 0x7f080624
+
+.field public static final ic2_ganew_24:I = 0x7f080625
+
+.field public static final ic2_gas_12:I = 0x7f080626
+
+.field public static final ic2_gas_16:I = 0x7f080627
+
+.field public static final ic2_gas_20:I = 0x7f080628
+
+.field public static final ic2_gas_24:I = 0x7f080629
+
+.field public static final ic2_gempool_thin_12:I = 0x7f08062a
+
+.field public static final ic2_gempool_thin_16:I = 0x7f08062b
+
+.field public static final ic2_gempool_thin_20:I = 0x7f08062c
+
+.field public static final ic2_gempool_thin_24:I = 0x7f08062d
+
+.field public static final ic2_global1_thin_12:I = 0x7f08062e
+
+.field public static final ic2_global1_thin_16:I = 0x7f08062f
+
+.field public static final ic2_global1_thin_20:I = 0x7f080630
+
+.field public static final ic2_global1_thin_24:I = 0x7f080631
+
+.field public static final ic2_globe_thin_12:I = 0x7f080632
+
+.field public static final ic2_globe_thin_16:I = 0x7f080633
+
+.field public static final ic2_globe_thin_20:I = 0x7f080634
+
+.field public static final ic2_globe_thin_24:I = 0x7f080635
+
+.field public static final ic2_google_12:I = 0x7f080636
+
+.field public static final ic2_google_16:I = 0x7f080637
+
+.field public static final ic2_google_20:I = 0x7f080638
+
+.field public static final ic2_google_24:I = 0x7f080639
+
+.field public static final ic2_googleshopping_cart_12:I = 0x7f08063a
+
+.field public static final ic2_googleshopping_cart_16:I = 0x7f08063b
+
+.field public static final ic2_googleshopping_cart_20:I = 0x7f08063c
+
+.field public static final ic2_googleshopping_cart_24:I = 0x7f08063d
+
+.field public static final ic2_hashtag_thin_12:I = 0x7f08063e
+
+.field public static final ic2_hashtag_thin_16:I = 0x7f08063f
+
+.field public static final ic2_hashtag_thin_20:I = 0x7f080640
+
+.field public static final ic2_hashtag_thin_24:I = 0x7f080641
+
+.field public static final ic2_health_thin_12:I = 0x7f080642
+
+.field public static final ic2_health_thin_16:I = 0x7f080643
+
+.field public static final ic2_health_thin_20:I = 0x7f080644
+
+.field public static final ic2_health_thin_24:I = 0x7f080645
+
+.field public static final ic2_heart_12:I = 0x7f080646
+
+.field public static final ic2_heart_16:I = 0x7f080647
+
+.field public static final ic2_heart_20:I = 0x7f080648
+
+.field public static final ic2_heart_24:I = 0x7f080649
+
+.field public static final ic2_heart_fill_12:I = 0x7f08064a
+
+.field public static final ic2_heart_fill_16:I = 0x7f08064b
+
+.field public static final ic2_heart_fill_20:I = 0x7f08064c
+
+.field public static final ic2_heart_fill_24:I = 0x7f08064d
+
+.field public static final ic2_hidesidebar_12:I = 0x7f08064e
+
+.field public static final ic2_hidesidebar_16:I = 0x7f08064f
+
+.field public static final ic2_hidesidebar_20:I = 0x7f080650
+
+.field public static final ic2_hidesidebar_24:I = 0x7f080651
+
+.field public static final ic2_history_12:I = 0x7f080652
+
+.field public static final ic2_history_16:I = 0x7f080653
+
+.field public static final ic2_history_20:I = 0x7f080654
+
+.field public static final ic2_history_24:I = 0x7f080655
+
+.field public static final ic2_history_bold_12:I = 0x7f080656
+
+.field public static final ic2_history_bold_16:I = 0x7f080657
+
+.field public static final ic2_history_bold_20:I = 0x7f080658
+
+.field public static final ic2_history_bold_24:I = 0x7f080659
+
+.field public static final ic2_history_thin_12:I = 0x7f08065a
+
+.field public static final ic2_history_thin_16:I = 0x7f08065b
+
+.field public static final ic2_history_thin_20:I = 0x7f08065c
+
+.field public static final ic2_history_thin_24:I = 0x7f08065d
+
+.field public static final ic2_holdtoearn_thin_12:I = 0x7f08065e
+
+.field public static final ic2_holdtoearn_thin_16:I = 0x7f08065f
+
+.field public static final ic2_holdtoearn_thin_20:I = 0x7f080660
+
+.field public static final ic2_holdtoearn_thin_24:I = 0x7f080661
+
+.field public static final ic2_home_thin_12:I = 0x7f080662
+
+.field public static final ic2_home_thin_16:I = 0x7f080663
+
+.field public static final ic2_home_thin_20:I = 0x7f080664
+
+.field public static final ic2_home_thin_24:I = 0x7f080665
+
+.field public static final ic2_homepage_12:I = 0x7f080666
+
+.field public static final ic2_homepage_16:I = 0x7f080667
+
+.field public static final ic2_homepage_20:I = 0x7f080668
+
+.field public static final ic2_homepage_24:I = 0x7f080669
+
+.field public static final ic2_hook_12:I = 0x7f08066a
+
+.field public static final ic2_hook_16:I = 0x7f08066b
+
+.field public static final ic2_hook_20:I = 0x7f08066c
+
+.field public static final ic2_hook_24:I = 0x7f08066d
+
+.field public static final ic2_icloud_12:I = 0x7f08066e
+
+.field public static final ic2_icloud_16:I = 0x7f08066f
+
+.field public static final ic2_icloud_20:I = 0x7f080670
+
+.field public static final ic2_icloud_24:I = 0x7f080671
+
+.field public static final ic2_image2_thin_12:I = 0x7f080672
+
+.field public static final ic2_image2_thin_16:I = 0x7f080673
+
+.field public static final ic2_image2_thin_20:I = 0x7f080674
+
+.field public static final ic2_image2_thin_24:I = 0x7f080675
+
+.field public static final ic2_image_thin_12:I = 0x7f080676
+
+.field public static final ic2_image_thin_16:I = 0x7f080677
+
+.field public static final ic2_image_thin_20:I = 0x7f080678
+
+.field public static final ic2_image_thin_24:I = 0x7f080679
+
+.field public static final ic2_img_12:I = 0x7f08067a
+
+.field public static final ic2_img_16:I = 0x7f08067b
+
+.field public static final ic2_img_20:I = 0x7f08067c
+
+.field public static final ic2_img_24:I = 0x7f08067d
+
+.field public static final ic2_index_price_12:I = 0x7f08067e
+
+.field public static final ic2_index_price_16:I = 0x7f08067f
+
+.field public static final ic2_index_price_20:I = 0x7f080680
+
+.field public static final ic2_index_price_24:I = 0x7f080681
+
+.field public static final ic2_indicator_12:I = 0x7f080682
+
+.field public static final ic2_indicator_16:I = 0x7f080683
+
+.field public static final ic2_indicator_20:I = 0x7f080684
+
+.field public static final ic2_indicator_24:I = 0x7f080685
+
+.field public static final ic2_info_12:I = 0x7f080686
+
+.field public static final ic2_info_16:I = 0x7f080687
+
+.field public static final ic2_info_20:I = 0x7f080688
+
+.field public static final ic2_info_24:I = 0x7f080689
+
+.field public static final ic2_info_contain_12:I = 0x7f08068a
+
+.field public static final ic2_info_contain_16:I = 0x7f08068b
+
+.field public static final ic2_info_contain_20:I = 0x7f08068c
+
+.field public static final ic2_info_contain_24:I = 0x7f08068d
+
+.field public static final ic2_info_filled_12:I = 0x7f08068e
+
+.field public static final ic2_info_filled_16:I = 0x7f08068f
+
+.field public static final ic2_info_filled_20:I = 0x7f080690
+
+.field public static final ic2_info_filled_24:I = 0x7f080691
+
+.field public static final ic2_info_thin_12:I = 0x7f080692
+
+.field public static final ic2_info_thin_16:I = 0x7f080693
+
+.field public static final ic2_info_thin_20:I = 0x7f080694
+
+.field public static final ic2_info_thin_24:I = 0x7f080695
+
+.field public static final ic2_inspiration_thin_12:I = 0x7f080696
+
+.field public static final ic2_inspiration_thin_16:I = 0x7f080697
+
+.field public static final ic2_inspiration_thin_20:I = 0x7f080698
+
+.field public static final ic2_inspiration_thin_24:I = 0x7f080699
+
+.field public static final ic2_instagram_12:I = 0x7f08069a
+
+.field public static final ic2_instagram_16:I = 0x7f08069b
+
+.field public static final ic2_instagram_20:I = 0x7f08069c
+
+.field public static final ic2_instagram_24:I = 0x7f08069d
+
+.field public static final ic2_internet_thin_12:I = 0x7f08069e
+
+.field public static final ic2_internet_thin_16:I = 0x7f08069f
+
+.field public static final ic2_internet_thin_20:I = 0x7f0806a0
+
+.field public static final ic2_internet_thin_24:I = 0x7f0806a1
+
+.field public static final ic2_invite_friends_12:I = 0x7f0806a2
+
+.field public static final ic2_invite_friends_16:I = 0x7f0806a3
+
+.field public static final ic2_invite_friends_20:I = 0x7f0806a4
+
+.field public static final ic2_invite_friends_24:I = 0x7f0806a5
+
+.field public static final ic2_ip_thin_12:I = 0x7f0806a6
+
+.field public static final ic2_ip_thin_16:I = 0x7f0806a7
+
+.field public static final ic2_ip_thin_20:I = 0x7f0806a8
+
+.field public static final ic2_ip_thin_24:I = 0x7f0806a9
+
+.field public static final ic2_ipad_12:I = 0x7f0806aa
+
+.field public static final ic2_ipad_16:I = 0x7f0806ab
+
+.field public static final ic2_ipad_20:I = 0x7f0806ac
+
+.field public static final ic2_ipad_24:I = 0x7f0806ad
+
+.field public static final ic2_iphone_12:I = 0x7f0806ae
+
+.field public static final ic2_iphone_16:I = 0x7f0806af
+
+.field public static final ic2_iphone_20:I = 0x7f0806b0
+
+.field public static final ic2_iphone_24:I = 0x7f0806b1
+
+.field public static final ic2_kcs_12:I = 0x7f0806b2
+
+.field public static final ic2_kcs_16:I = 0x7f0806b3
+
+.field public static final ic2_kcs_20:I = 0x7f0806b4
+
+.field public static final ic2_kcs_24:I = 0x7f0806b5
+
+.field public static final ic2_kcs_staking_12:I = 0x7f0806b6
+
+.field public static final ic2_kcs_staking_16:I = 0x7f0806b7
+
+.field public static final ic2_kcs_staking_20:I = 0x7f0806b8
+
+.field public static final ic2_kcs_staking_24:I = 0x7f0806b9
+
+.field public static final ic2_kcsfee_12:I = 0x7f0806ba
+
+.field public static final ic2_kcsfee_16:I = 0x7f0806bb
+
+.field public static final ic2_kcsfee_20:I = 0x7f0806bc
+
+.field public static final ic2_kcsfee_24:I = 0x7f0806bd
+
+.field public static final ic2_kcslevel_12:I = 0x7f0806be
+
+.field public static final ic2_kcslevel_16:I = 0x7f0806bf
+
+.field public static final ic2_kcslevel_20:I = 0x7f0806c0
+
+.field public static final ic2_kcslevel_24:I = 0x7f0806c1
+
+.field public static final ic2_kcsloyalty_bold_12:I = 0x7f0806c2
+
+.field public static final ic2_kcsloyalty_bold_16:I = 0x7f0806c3
+
+.field public static final ic2_kcsloyalty_bold_20:I = 0x7f0806c4
+
+.field public static final ic2_kcsloyalty_bold_24:I = 0x7f0806c5
+
+.field public static final ic2_kcsloyalty_thin_12:I = 0x7f0806c6
+
+.field public static final ic2_kcsloyalty_thin_16:I = 0x7f0806c7
+
+.field public static final ic2_kcsloyalty_thin_20:I = 0x7f0806c8
+
+.field public static final ic2_kcsloyalty_thin_24:I = 0x7f0806c9
+
+.field public static final ic2_kcspayfee_thin_12:I = 0x7f0806ca
+
+.field public static final ic2_kcspayfee_thin_16:I = 0x7f0806cb
+
+.field public static final ic2_kcspayfee_thin_20:I = 0x7f0806cc
+
+.field public static final ic2_kcspayfee_thin_24:I = 0x7f0806cd
+
+.field public static final ic2_kcsrights_thin_12:I = 0x7f0806ce
+
+.field public static final ic2_kcsrights_thin_16:I = 0x7f0806cf
+
+.field public static final ic2_kcsrights_thin_20:I = 0x7f0806d0
+
+.field public static final ic2_kcsrights_thin_24:I = 0x7f0806d1
+
+.field public static final ic2_keyboard_12:I = 0x7f0806d2
+
+.field public static final ic2_keyboard_16:I = 0x7f0806d3
+
+.field public static final ic2_keyboard_20:I = 0x7f0806d4
+
+.field public static final ic2_keyboard_24:I = 0x7f0806d5
+
+.field public static final ic2_keyboard_clear_12:I = 0x7f0806d6
+
+.field public static final ic2_keyboard_clear_16:I = 0x7f0806d7
+
+.field public static final ic2_keyboard_clear_20:I = 0x7f0806d8
+
+.field public static final ic2_keyboard_clear_24:I = 0x7f0806d9
+
+.field public static final ic2_keyboard_thin_12:I = 0x7f0806da
+
+.field public static final ic2_keyboard_thin_16:I = 0x7f0806db
+
+.field public static final ic2_keyboard_thin_20:I = 0x7f0806dc
+
+.field public static final ic2_keyboard_thin_24:I = 0x7f0806dd
+
+.field public static final ic2_kia_12:I = 0x7f0806de
+
+.field public static final ic2_kia_16:I = 0x7f0806df
+
+.field public static final ic2_kia_20:I = 0x7f0806e0
+
+.field public static final ic2_kia_24:I = 0x7f0806e1
+
+.field public static final ic2_kia_send_bold_12:I = 0x7f0806e2
+
+.field public static final ic2_kia_send_bold_16:I = 0x7f0806e3
+
+.field public static final ic2_kia_send_bold_20:I = 0x7f0806e4
+
+.field public static final ic2_kia_send_bold_24:I = 0x7f0806e5
+
+.field public static final ic2_kline1_12:I = 0x7f0806e6
+
+.field public static final ic2_kline1_16:I = 0x7f0806e7
+
+.field public static final ic2_kline1_20:I = 0x7f0806e8
+
+.field public static final ic2_kline1_24:I = 0x7f0806e9
+
+.field public static final ic2_kline2_12:I = 0x7f0806ea
+
+.field public static final ic2_kline2_16:I = 0x7f0806eb
+
+.field public static final ic2_kline2_20:I = 0x7f0806ec
+
+.field public static final ic2_kline2_24:I = 0x7f0806ed
+
+.field public static final ic2_kline3_12:I = 0x7f0806ee
+
+.field public static final ic2_kline3_16:I = 0x7f0806ef
+
+.field public static final ic2_kline3_20:I = 0x7f0806f0
+
+.field public static final ic2_kline3_24:I = 0x7f0806f1
+
+.field public static final ic2_kline5_12:I = 0x7f0806f2
+
+.field public static final ic2_kline5_16:I = 0x7f0806f3
+
+.field public static final ic2_kline5_20:I = 0x7f0806f4
+
+.field public static final ic2_kline5_24:I = 0x7f0806f5
+
+.field public static final ic2_kline_12:I = 0x7f0806f6
+
+.field public static final ic2_kline_16:I = 0x7f0806f7
+
+.field public static final ic2_kline_20:I = 0x7f0806f8
+
+.field public static final ic2_kline_24:I = 0x7f0806f9
+
+.field public static final ic2_kline_expand_12:I = 0x7f0806fa
+
+.field public static final ic2_kline_expand_16:I = 0x7f0806fb
+
+.field public static final ic2_kline_expand_20:I = 0x7f0806fc
+
+.field public static final ic2_kline_expand_24:I = 0x7f0806fd
+
+.field public static final ic2_kline_fold_12:I = 0x7f0806fe
+
+.field public static final ic2_kline_fold_16:I = 0x7f0806ff
+
+.field public static final ic2_kline_fold_20:I = 0x7f080700
+
+.field public static final ic2_kline_fold_24:I = 0x7f080701
+
+.field public static final ic2_kline_thin_12:I = 0x7f080702
+
+.field public static final ic2_kline_thin_16:I = 0x7f080703
+
+.field public static final ic2_kline_thin_20:I = 0x7f080704
+
+.field public static final ic2_kline_thin_24:I = 0x7f080705
+
+.field public static final ic2_kseth_bold_12:I = 0x7f080706
+
+.field public static final ic2_kseth_bold_16:I = 0x7f080707
+
+.field public static final ic2_kseth_bold_20:I = 0x7f080708
+
+.field public static final ic2_kseth_bold_24:I = 0x7f080709
+
+.field public static final ic2_kucard_thin_12:I = 0x7f08070a
+
+.field public static final ic2_kucard_thin_16:I = 0x7f08070b
+
+.field public static final ic2_kucard_thin_20:I = 0x7f08070c
+
+.field public static final ic2_kucard_thin_24:I = 0x7f08070d
+
+.field public static final ic2_kucardvisa_12:I = 0x7f08070e
+
+.field public static final ic2_kucardvisa_16:I = 0x7f08070f
+
+.field public static final ic2_kucardvisa_20:I = 0x7f080710
+
+.field public static final ic2_kucardvisa_24:I = 0x7f080711
+
+.field public static final ic2_kucoinpay_bold_12:I = 0x7f080712
+
+.field public static final ic2_kucoinpay_bold_16:I = 0x7f080713
+
+.field public static final ic2_kucoinpay_bold_20:I = 0x7f080714
+
+.field public static final ic2_kucoinpay_bold_24:I = 0x7f080715
+
+.field public static final ic2_kucoinpay_thin_12:I = 0x7f080716
+
+.field public static final ic2_kucoinpay_thin_16:I = 0x7f080717
+
+.field public static final ic2_kucoinpay_thin_20:I = 0x7f080718
+
+.field public static final ic2_kucoinpay_thin_24:I = 0x7f080719
+
+.field public static final ic2_kuming_thin_12:I = 0x7f08071a
+
+.field public static final ic2_kuming_thin_16:I = 0x7f08071b
+
+.field public static final ic2_kuming_thin_20:I = 0x7f08071c
+
+.field public static final ic2_kuming_thin_24:I = 0x7f08071d
+
+.field public static final ic2_kyc_thin_12:I = 0x7f08071e
+
+.field public static final ic2_kyc_thin_16:I = 0x7f08071f
+
+.field public static final ic2_kyc_thin_20:I = 0x7f080720
+
+.field public static final ic2_kyc_thin_24:I = 0x7f080721
+
+.field public static final ic2_language_12:I = 0x7f080722
+
+.field public static final ic2_language_16:I = 0x7f080723
+
+.field public static final ic2_language_20:I = 0x7f080724
+
+.field public static final ic2_language_24:I = 0x7f080725
+
+.field public static final ic2_layout_12:I = 0x7f080726
+
+.field public static final ic2_layout_16:I = 0x7f080727
+
+.field public static final ic2_layout_20:I = 0x7f080728
+
+.field public static final ic2_layout_24:I = 0x7f080729
+
+.field public static final ic2_lending_rate_12:I = 0x7f08072a
+
+.field public static final ic2_lending_rate_16:I = 0x7f08072b
+
+.field public static final ic2_lending_rate_20:I = 0x7f08072c
+
+.field public static final ic2_lending_rate_24:I = 0x7f08072d
+
+.field public static final ic2_light_mode_12:I = 0x7f08072e
+
+.field public static final ic2_light_mode_16:I = 0x7f08072f
+
+.field public static final ic2_light_mode_20:I = 0x7f080730
+
+.field public static final ic2_light_mode_24:I = 0x7f080731
+
+.field public static final ic2_lighting_12:I = 0x7f080732
+
+.field public static final ic2_lighting_16:I = 0x7f080733
+
+.field public static final ic2_lighting_20:I = 0x7f080734
+
+.field public static final ic2_lighting_24:I = 0x7f080735
+
+.field public static final ic2_lightning_thin_12:I = 0x7f080736
+
+.field public static final ic2_lightning_thin_16:I = 0x7f080737
+
+.field public static final ic2_lightning_thin_20:I = 0x7f080738
+
+.field public static final ic2_lightning_thin_24:I = 0x7f080739
+
+.field public static final ic2_like_thin_12:I = 0x7f08073a
+
+.field public static final ic2_like_thin_16:I = 0x7f08073b
+
+.field public static final ic2_like_thin_20:I = 0x7f08073c
+
+.field public static final ic2_like_thin_24:I = 0x7f08073d
+
+.field public static final ic2_limit_12:I = 0x7f08073e
+
+.field public static final ic2_limit_16:I = 0x7f08073f
+
+.field public static final ic2_limit_20:I = 0x7f080740
+
+.field public static final ic2_limit_24:I = 0x7f080741
+
+.field public static final ic2_linetool_12:I = 0x7f080742
+
+.field public static final ic2_linetool_16:I = 0x7f080743
+
+.field public static final ic2_linetool_20:I = 0x7f080744
+
+.field public static final ic2_linetool_24:I = 0x7f080745
+
+.field public static final ic2_link_12:I = 0x7f080746
+
+.field public static final ic2_link_16:I = 0x7f080747
+
+.field public static final ic2_link_20:I = 0x7f080748
+
+.field public static final ic2_link_24:I = 0x7f080749
+
+.field public static final ic2_link_thin_12:I = 0x7f08074a
+
+.field public static final ic2_link_thin_16:I = 0x7f08074b
+
+.field public static final ic2_link_thin_20:I = 0x7f08074c
+
+.field public static final ic2_link_thin_24:I = 0x7f08074d
+
+.field public static final ic2_lite_thin_12:I = 0x7f08074e
+
+.field public static final ic2_lite_thin_16:I = 0x7f08074f
+
+.field public static final ic2_lite_thin_20:I = 0x7f080750
+
+.field public static final ic2_lite_thin_24:I = 0x7f080751
+
+.field public static final ic2_loading_12:I = 0x7f080752
+
+.field public static final ic2_loading_16:I = 0x7f080753
+
+.field public static final ic2_loading_20:I = 0x7f080754
+
+.field public static final ic2_loading_24:I = 0x7f080755
+
+.field public static final ic2_loading_small_12:I = 0x7f080756
+
+.field public static final ic2_loading_small_16:I = 0x7f080757
+
+.field public static final ic2_loading_small_20:I = 0x7f080758
+
+.field public static final ic2_loading_small_24:I = 0x7f080759
+
+.field public static final ic2_location_12:I = 0x7f08075a
+
+.field public static final ic2_location_16:I = 0x7f08075b
+
+.field public static final ic2_location_20:I = 0x7f08075c
+
+.field public static final ic2_location_24:I = 0x7f08075d
+
+.field public static final ic2_lock_12:I = 0x7f08075e
+
+.field public static final ic2_lock_16:I = 0x7f08075f
+
+.field public static final ic2_lock_20:I = 0x7f080760
+
+.field public static final ic2_lock_24:I = 0x7f080761
+
+.field public static final ic2_locked_12:I = 0x7f080762
+
+.field public static final ic2_locked_16:I = 0x7f080763
+
+.field public static final ic2_locked_20:I = 0x7f080764
+
+.field public static final ic2_locked_24:I = 0x7f080765
+
+.field public static final ic2_loginpassword_thin_12:I = 0x7f080766
+
+.field public static final ic2_loginpassword_thin_16:I = 0x7f080767
+
+.field public static final ic2_loginpassword_thin_20:I = 0x7f080768
+
+.field public static final ic2_loginpassword_thin_24:I = 0x7f080769
+
+.field public static final ic2_logout_thin_12:I = 0x7f08076a
+
+.field public static final ic2_logout_thin_16:I = 0x7f08076b
+
+.field public static final ic2_logout_thin_20:I = 0x7f08076c
+
+.field public static final ic2_logout_thin_24:I = 0x7f08076d
+
+.field public static final ic2_mac_12:I = 0x7f08076e
+
+.field public static final ic2_mac_16:I = 0x7f08076f
+
+.field public static final ic2_mac_20:I = 0x7f080770
+
+.field public static final ic2_mac_24:I = 0x7f080771
+
+.field public static final ic2_maintence_12:I = 0x7f080772
+
+.field public static final ic2_maintence_16:I = 0x7f080773
+
+.field public static final ic2_maintence_20:I = 0x7f080774
+
+.field public static final ic2_maintence_24:I = 0x7f080775
+
+.field public static final ic2_margin_account_12:I = 0x7f080776
+
+.field public static final ic2_margin_account_16:I = 0x7f080777
+
+.field public static final ic2_margin_account_20:I = 0x7f080778
+
+.field public static final ic2_margin_account_24:I = 0x7f080779
+
+.field public static final ic2_margin_thin_12:I = 0x7f08077a
+
+.field public static final ic2_margin_thin_16:I = 0x7f08077b
+
+.field public static final ic2_margin_thin_20:I = 0x7f08077c
+
+.field public static final ic2_margin_thin_24:I = 0x7f08077d
+
+.field public static final ic2_mark_price_12:I = 0x7f08077e
+
+.field public static final ic2_mark_price_16:I = 0x7f08077f
+
+.field public static final ic2_mark_price_20:I = 0x7f080780
+
+.field public static final ic2_mark_price_24:I = 0x7f080781
+
+.field public static final ic2_market_high_12:I = 0x7f080782
+
+.field public static final ic2_market_high_16:I = 0x7f080783
+
+.field public static final ic2_market_high_20:I = 0x7f080784
+
+.field public static final ic2_market_high_24:I = 0x7f080785
+
+.field public static final ic2_market_low_12:I = 0x7f080786
+
+.field public static final ic2_market_low_16:I = 0x7f080787
+
+.field public static final ic2_market_low_20:I = 0x7f080788
+
+.field public static final ic2_market_low_24:I = 0x7f080789
+
+.field public static final ic2_market_move_12:I = 0x7f08078a
+
+.field public static final ic2_market_move_16:I = 0x7f08078b
+
+.field public static final ic2_market_move_20:I = 0x7f08078c
+
+.field public static final ic2_market_move_24:I = 0x7f08078d
+
+.field public static final ic2_market_switch_12:I = 0x7f08078e
+
+.field public static final ic2_market_switch_16:I = 0x7f08078f
+
+.field public static final ic2_market_switch_20:I = 0x7f080790
+
+.field public static final ic2_market_switch_24:I = 0x7f080791
+
+.field public static final ic2_mechanism_12:I = 0x7f080792
+
+.field public static final ic2_mechanism_16:I = 0x7f080793
+
+.field public static final ic2_mechanism_20:I = 0x7f080794
+
+.field public static final ic2_mechanism_24:I = 0x7f080795
+
+.field public static final ic2_medium_widget_12:I = 0x7f080796
+
+.field public static final ic2_medium_widget_16:I = 0x7f080797
+
+.field public static final ic2_medium_widget_20:I = 0x7f080798
+
+.field public static final ic2_medium_widget_24:I = 0x7f080799
+
+.field public static final ic2_memory_thin_12:I = 0x7f08079a
+
+.field public static final ic2_memory_thin_16:I = 0x7f08079b
+
+.field public static final ic2_memory_thin_20:I = 0x7f08079c
+
+.field public static final ic2_memory_thin_24:I = 0x7f08079d
+
+.field public static final ic2_menu_12:I = 0x7f08079e
+
+.field public static final ic2_menu_16:I = 0x7f08079f
+
+.field public static final ic2_menu_20:I = 0x7f0807a0
+
+.field public static final ic2_menu_24:I = 0x7f0807a1
+
+.field public static final ic2_menu_thin_12:I = 0x7f0807a2
+
+.field public static final ic2_menu_thin_16:I = 0x7f0807a3
+
+.field public static final ic2_menu_thin_20:I = 0x7f0807a4
+
+.field public static final ic2_menu_thin_24:I = 0x7f0807a5
+
+.field public static final ic2_message_read_12:I = 0x7f0807a6
+
+.field public static final ic2_message_read_16:I = 0x7f0807a7
+
+.field public static final ic2_message_read_20:I = 0x7f0807a8
+
+.field public static final ic2_message_read_24:I = 0x7f0807a9
+
+.field public static final ic2_microphone_thin_12:I = 0x7f0807aa
+
+.field public static final ic2_microphone_thin_16:I = 0x7f0807ab
+
+.field public static final ic2_microphone_thin_20:I = 0x7f0807ac
+
+.field public static final ic2_microphone_thin_24:I = 0x7f0807ad
+
+.field public static final ic2_moon_thin_12:I = 0x7f0807ae
+
+.field public static final ic2_moon_thin_16:I = 0x7f0807af
+
+.field public static final ic2_moon_thin_20:I = 0x7f0807b0
+
+.field public static final ic2_moon_thin_24:I = 0x7f0807b1
+
+.field public static final ic2_more2_12:I = 0x7f0807b2
+
+.field public static final ic2_more2_16:I = 0x7f0807b3
+
+.field public static final ic2_more2_20:I = 0x7f0807b4
+
+.field public static final ic2_more2_24:I = 0x7f0807b5
+
+.field public static final ic2_more2_thin_12:I = 0x7f0807b6
+
+.field public static final ic2_more2_thin_16:I = 0x7f0807b7
+
+.field public static final ic2_more2_thin_20:I = 0x7f0807b8
+
+.field public static final ic2_more2_thin_24:I = 0x7f0807b9
+
+.field public static final ic2_more_12:I = 0x7f0807ba
+
+.field public static final ic2_more_16:I = 0x7f0807bb
+
+.field public static final ic2_more_20:I = 0x7f0807bc
+
+.field public static final ic2_more_24:I = 0x7f0807bd
+
+.field public static final ic2_more_thin_12:I = 0x7f0807be
+
+.field public static final ic2_more_thin_16:I = 0x7f0807bf
+
+.field public static final ic2_more_thin_20:I = 0x7f0807c0
+
+.field public static final ic2_more_thin_24:I = 0x7f0807c1
+
+.field public static final ic2_morefilled_12:I = 0x7f0807c2
+
+.field public static final ic2_morefilled_16:I = 0x7f0807c3
+
+.field public static final ic2_morefilled_20:I = 0x7f0807c4
+
+.field public static final ic2_morefilled_24:I = 0x7f0807c5
+
+.field public static final ic2_multi_transfer_12:I = 0x7f0807c6
+
+.field public static final ic2_multi_transfer_16:I = 0x7f0807c7
+
+.field public static final ic2_multi_transfer_20:I = 0x7f0807c8
+
+.field public static final ic2_multi_transfer_24:I = 0x7f0807c9
+
+.field public static final ic2_multiaccount_thin_12:I = 0x7f0807ca
+
+.field public static final ic2_multiaccount_thin_16:I = 0x7f0807cb
+
+.field public static final ic2_multiaccount_thin_20:I = 0x7f0807cc
+
+.field public static final ic2_multiaccount_thin_24:I = 0x7f0807cd
+
+.field public static final ic2_mute_12:I = 0x7f0807ce
+
+.field public static final ic2_mute_16:I = 0x7f0807cf
+
+.field public static final ic2_mute_20:I = 0x7f0807d0
+
+.field public static final ic2_mute_24:I = 0x7f0807d1
+
+.field public static final ic2_mutidevice_thin_12:I = 0x7f0807d2
+
+.field public static final ic2_mutidevice_thin_16:I = 0x7f0807d3
+
+.field public static final ic2_mutidevice_thin_20:I = 0x7f0807d4
+
+.field public static final ic2_mutidevice_thin_24:I = 0x7f0807d5
+
+.field public static final ic2_my_12:I = 0x7f0807d6
+
+.field public static final ic2_my_16:I = 0x7f0807d7
+
+.field public static final ic2_my_20:I = 0x7f0807d8
+
+.field public static final ic2_my_24:I = 0x7f0807d9
+
+.field public static final ic2_myrewards_thin_12:I = 0x7f0807da
+
+.field public static final ic2_myrewards_thin_16:I = 0x7f0807db
+
+.field public static final ic2_myrewards_thin_20:I = 0x7f0807dc
+
+.field public static final ic2_myrewards_thin_24:I = 0x7f0807dd
+
+.field public static final ic2_net_asset_value_12:I = 0x7f0807de
+
+.field public static final ic2_net_asset_value_16:I = 0x7f0807df
+
+.field public static final ic2_net_asset_value_20:I = 0x7f0807e0
+
+.field public static final ic2_net_asset_value_24:I = 0x7f0807e1
+
+.field public static final ic2_note_12:I = 0x7f0807e2
+
+.field public static final ic2_note_16:I = 0x7f0807e3
+
+.field public static final ic2_note_20:I = 0x7f0807e4
+
+.field public static final ic2_note_24:I = 0x7f0807e5
+
+.field public static final ic2_notification_12:I = 0x7f0807e6
+
+.field public static final ic2_notification_16:I = 0x7f0807e7
+
+.field public static final ic2_notification_20:I = 0x7f0807e8
+
+.field public static final ic2_notification_24:I = 0x7f0807e9
+
+.field public static final ic2_notification_close_12:I = 0x7f0807ea
+
+.field public static final ic2_notification_close_16:I = 0x7f0807eb
+
+.field public static final ic2_notification_close_20:I = 0x7f0807ec
+
+.field public static final ic2_notification_close_24:I = 0x7f0807ed
+
+.field public static final ic2_novice_guide_12:I = 0x7f0807ee
+
+.field public static final ic2_novice_guide_16:I = 0x7f0807ef
+
+.field public static final ic2_novice_guide_20:I = 0x7f0807f0
+
+.field public static final ic2_novice_guide_24:I = 0x7f0807f1
+
+.field public static final ic2_novice_guide_thin_12:I = 0x7f0807f2
+
+.field public static final ic2_novice_guide_thin_16:I = 0x7f0807f3
+
+.field public static final ic2_novice_guide_thin_20:I = 0x7f0807f4
+
+.field public static final ic2_novice_guide_thin_24:I = 0x7f0807f5
+
+.field public static final ic2_option_thin_12:I = 0x7f0807f6
+
+.field public static final ic2_option_thin_16:I = 0x7f0807f7
+
+.field public static final ic2_option_thin_20:I = 0x7f0807f8
+
+.field public static final ic2_option_thin_24:I = 0x7f0807f9
+
+.field public static final ic2_options_12:I = 0x7f0807fa
+
+.field public static final ic2_options_16:I = 0x7f0807fb
+
+.field public static final ic2_options_20:I = 0x7f0807fc
+
+.field public static final ic2_options_24:I = 0x7f0807fd
+
+.field public static final ic2_orders_history_12:I = 0x7f0807fe
+
+.field public static final ic2_orders_history_16:I = 0x7f0807ff
+
+.field public static final ic2_orders_history_20:I = 0x7f080800
+
+.field public static final ic2_orders_history_24:I = 0x7f080801
+
+.field public static final ic2_outsidelink_12:I = 0x7f080802
+
+.field public static final ic2_outsidelink_16:I = 0x7f080803
+
+.field public static final ic2_outsidelink_20:I = 0x7f080804
+
+.field public static final ic2_outsidelink_24:I = 0x7f080805
+
+.field public static final ic2_p2p_bold_12:I = 0x7f080806
+
+.field public static final ic2_p2p_bold_16:I = 0x7f080807
+
+.field public static final ic2_p2p_bold_20:I = 0x7f080808
+
+.field public static final ic2_p2p_bold_24:I = 0x7f080809
+
+.field public static final ic2_p2p_chat_12:I = 0x7f08080a
+
+.field public static final ic2_p2p_chat_16:I = 0x7f08080b
+
+.field public static final ic2_p2p_chat_20:I = 0x7f08080c
+
+.field public static final ic2_p2p_chat_24:I = 0x7f08080d
+
+.field public static final ic2_p2p_home_12:I = 0x7f08080e
+
+.field public static final ic2_p2p_home_16:I = 0x7f08080f
+
+.field public static final ic2_p2p_home_20:I = 0x7f080810
+
+.field public static final ic2_p2p_home_24:I = 0x7f080811
+
+.field public static final ic2_p2p_orders_12:I = 0x7f080812
+
+.field public static final ic2_p2p_orders_16:I = 0x7f080813
+
+.field public static final ic2_p2p_orders_20:I = 0x7f080814
+
+.field public static final ic2_p2p_orders_24:I = 0x7f080815
+
+.field public static final ic2_p2p_profile_12:I = 0x7f080816
+
+.field public static final ic2_p2p_profile_16:I = 0x7f080817
+
+.field public static final ic2_p2p_profile_20:I = 0x7f080818
+
+.field public static final ic2_p2p_profile_24:I = 0x7f080819
+
+.field public static final ic2_p2p_thin_12:I = 0x7f08081a
+
+.field public static final ic2_p2p_thin_16:I = 0x7f08081b
+
+.field public static final ic2_p2p_thin_20:I = 0x7f08081c
+
+.field public static final ic2_p2p_thin_24:I = 0x7f08081d
+
+.field public static final ic2_passkey_12:I = 0x7f08081e
+
+.field public static final ic2_passkey_16:I = 0x7f08081f
+
+.field public static final ic2_passkey_20:I = 0x7f080820
+
+.field public static final ic2_passkey_24:I = 0x7f080821
+
+.field public static final ic2_passkey_thin_12:I = 0x7f080822
+
+.field public static final ic2_passkey_thin_16:I = 0x7f080823
+
+.field public static final ic2_passkey_thin_20:I = 0x7f080824
+
+.field public static final ic2_passkey_thin_24:I = 0x7f080825
+
+.field public static final ic2_password2_12:I = 0x7f080826
+
+.field public static final ic2_password2_16:I = 0x7f080827
+
+.field public static final ic2_password2_20:I = 0x7f080828
+
+.field public static final ic2_password2_24:I = 0x7f080829
+
+.field public static final ic2_password_12:I = 0x7f08082a
+
+.field public static final ic2_password_16:I = 0x7f08082b
+
+.field public static final ic2_password_20:I = 0x7f08082c
+
+.field public static final ic2_password_24:I = 0x7f08082d
+
+.field public static final ic2_pdf_12:I = 0x7f08082e
+
+.field public static final ic2_pdf_16:I = 0x7f08082f
+
+.field public static final ic2_pdf_20:I = 0x7f080830
+
+.field public static final ic2_pdf_24:I = 0x7f080831
+
+.field public static final ic2_phone_thin_12:I = 0x7f080832
+
+.field public static final ic2_phone_thin_16:I = 0x7f080833
+
+.field public static final ic2_phone_thin_20:I = 0x7f080834
+
+.field public static final ic2_phone_thin_24:I = 0x7f080835
+
+.field public static final ic2_play_12:I = 0x7f080836
+
+.field public static final ic2_play_16:I = 0x7f080837
+
+.field public static final ic2_play_20:I = 0x7f080838
+
+.field public static final ic2_play_24:I = 0x7f080839
+
+.field public static final ic2_plug_thin_12:I = 0x7f08083a
+
+.field public static final ic2_plug_thin_16:I = 0x7f08083b
+
+.field public static final ic2_plug_thin_20:I = 0x7f08083c
+
+.field public static final ic2_plug_thin_24:I = 0x7f08083d
+
+.field public static final ic2_plus_12:I = 0x7f08083e
+
+.field public static final ic2_plus_16:I = 0x7f08083f
+
+.field public static final ic2_plus_20:I = 0x7f080840
+
+.field public static final ic2_plus_24:I = 0x7f080841
+
+.field public static final ic2_polymarket_thin_12:I = 0x7f080842
+
+.field public static final ic2_polymarket_thin_16:I = 0x7f080843
+
+.field public static final ic2_polymarket_thin_20:I = 0x7f080844
+
+.field public static final ic2_polymarket_thin_24:I = 0x7f080845
+
+.field public static final ic2_post_thin_12:I = 0x7f080846
+
+.field public static final ic2_post_thin_16:I = 0x7f080847
+
+.field public static final ic2_post_thin_20:I = 0x7f080848
+
+.field public static final ic2_post_thin_24:I = 0x7f080849
+
+.field public static final ic2_poweroff_12:I = 0x7f08084a
+
+.field public static final ic2_poweroff_16:I = 0x7f08084b
+
+.field public static final ic2_poweroff_20:I = 0x7f08084c
+
+.field public static final ic2_poweroff_24:I = 0x7f08084d
+
+.field public static final ic2_price_fall_12:I = 0x7f08084e
+
+.field public static final ic2_price_fall_16:I = 0x7f08084f
+
+.field public static final ic2_price_fall_20:I = 0x7f080850
+
+.field public static final ic2_price_fall_24:I = 0x7f080851
+
+.field public static final ic2_price_rise_12:I = 0x7f080852
+
+.field public static final ic2_price_rise_16:I = 0x7f080853
+
+.field public static final ic2_price_rise_20:I = 0x7f080854
+
+.field public static final ic2_price_rise_24:I = 0x7f080855
+
+.field public static final ic2_pro_thin_12:I = 0x7f080856
+
+.field public static final ic2_pro_thin_16:I = 0x7f080857
+
+.field public static final ic2_pro_thin_20:I = 0x7f080858
+
+.field public static final ic2_pro_thin_24:I = 0x7f080859
+
+.field public static final ic2_product_update_12:I = 0x7f08085a
+
+.field public static final ic2_product_update_16:I = 0x7f08085b
+
+.field public static final ic2_product_update_20:I = 0x7f08085c
+
+.field public static final ic2_product_update_24:I = 0x7f08085d
+
+.field public static final ic2_promotion_bold_12:I = 0x7f08085e
+
+.field public static final ic2_promotion_bold_16:I = 0x7f08085f
+
+.field public static final ic2_promotion_bold_20:I = 0x7f080860
+
+.field public static final ic2_promotion_bold_24:I = 0x7f080861
+
+.field public static final ic2_protectivebuy_thin_12:I = 0x7f080862
+
+.field public static final ic2_protectivebuy_thin_16:I = 0x7f080863
+
+.field public static final ic2_protectivebuy_thin_20:I = 0x7f080864
+
+.field public static final ic2_protectivebuy_thin_24:I = 0x7f080865
+
+.field public static final ic2_qa_12:I = 0x7f080866
+
+.field public static final ic2_qa_16:I = 0x7f080867
+
+.field public static final ic2_qa_20:I = 0x7f080868
+
+.field public static final ic2_qa_24:I = 0x7f080869
+
+.field public static final ic2_qrcode_12:I = 0x7f08086a
+
+.field public static final ic2_qrcode_16:I = 0x7f08086b
+
+.field public static final ic2_qrcode_20:I = 0x7f08086c
+
+.field public static final ic2_qrcode_24:I = 0x7f08086d
+
+.field public static final ic2_question2_12:I = 0x7f08086e
+
+.field public static final ic2_question2_16:I = 0x7f08086f
+
+.field public static final ic2_question2_20:I = 0x7f080870
+
+.field public static final ic2_question2_24:I = 0x7f080871
+
+.field public static final ic2_question_12:I = 0x7f080872
+
+.field public static final ic2_question_16:I = 0x7f080873
+
+.field public static final ic2_question_20:I = 0x7f080874
+
+.field public static final ic2_question_24:I = 0x7f080875
+
+.field public static final ic2_question_thin_12:I = 0x7f080876
+
+.field public static final ic2_question_thin_16:I = 0x7f080877
+
+.field public static final ic2_question_thin_20:I = 0x7f080878
+
+.field public static final ic2_question_thin_24:I = 0x7f080879
+
+.field public static final ic2_radio_select_12:I = 0x7f08087a
+
+.field public static final ic2_radio_select_16:I = 0x7f08087b
+
+.field public static final ic2_radio_select_20:I = 0x7f08087c
+
+.field public static final ic2_radio_select_24:I = 0x7f08087d
+
+.field public static final ic2_radio_unselect_12:I = 0x7f08087e
+
+.field public static final ic2_radio_unselect_16:I = 0x7f08087f
+
+.field public static final ic2_radio_unselect_20:I = 0x7f080880
+
+.field public static final ic2_radio_unselect_24:I = 0x7f080881
+
+.field public static final ic2_rangebound_thin_12:I = 0x7f080882
+
+.field public static final ic2_rangebound_thin_16:I = 0x7f080883
+
+.field public static final ic2_rangebound_thin_20:I = 0x7f080884
+
+.field public static final ic2_rangebound_thin_24:I = 0x7f080885
+
+.field public static final ic2_ranking_12:I = 0x7f080886
+
+.field public static final ic2_ranking_16:I = 0x7f080887
+
+.field public static final ic2_ranking_20:I = 0x7f080888
+
+.field public static final ic2_ranking_24:I = 0x7f080889
+
+.field public static final ic2_received_12:I = 0x7f08088a
+
+.field public static final ic2_received_16:I = 0x7f08088b
+
+.field public static final ic2_received_20:I = 0x7f08088c
+
+.field public static final ic2_received_24:I = 0x7f08088d
+
+.field public static final ic2_recurring_buys_12:I = 0x7f08088e
+
+.field public static final ic2_recurring_buys_16:I = 0x7f08088f
+
+.field public static final ic2_recurring_buys_20:I = 0x7f080890
+
+.field public static final ic2_recurring_buys_24:I = 0x7f080891
+
+.field public static final ic2_red_envelop_12:I = 0x7f080892
+
+.field public static final ic2_red_envelop_16:I = 0x7f080893
+
+.field public static final ic2_red_envelop_20:I = 0x7f080894
+
+.field public static final ic2_red_envelop_24:I = 0x7f080895
+
+.field public static final ic2_redenvelop_thin_12:I = 0x7f080896
+
+.field public static final ic2_redenvelop_thin_16:I = 0x7f080897
+
+.field public static final ic2_redenvelop_thin_20:I = 0x7f080898
+
+.field public static final ic2_redenvelop_thin_24:I = 0x7f080899
+
+.field public static final ic2_redpackage_12:I = 0x7f08089a
+
+.field public static final ic2_redpackage_16:I = 0x7f08089b
+
+.field public static final ic2_redpackage_20:I = 0x7f08089c
+
+.field public static final ic2_redpackage_24:I = 0x7f08089d
+
+.field public static final ic2_refresh2_12:I = 0x7f08089e
+
+.field public static final ic2_refresh2_16:I = 0x7f08089f
+
+.field public static final ic2_refresh2_20:I = 0x7f0808a0
+
+.field public static final ic2_refresh2_24:I = 0x7f0808a1
+
+.field public static final ic2_refresh_12:I = 0x7f0808a2
+
+.field public static final ic2_refresh_16:I = 0x7f0808a3
+
+.field public static final ic2_refresh_20:I = 0x7f0808a4
+
+.field public static final ic2_refresh_24:I = 0x7f0808a5
+
+.field public static final ic2_refresh_thin_12:I = 0x7f0808a6
+
+.field public static final ic2_refresh_thin_16:I = 0x7f0808a7
+
+.field public static final ic2_refresh_thin_20:I = 0x7f0808a8
+
+.field public static final ic2_refresh_thin_24:I = 0x7f0808a9
+
+.field public static final ic2_repay_12:I = 0x7f0808aa
+
+.field public static final ic2_repay_16:I = 0x7f0808ab
+
+.field public static final ic2_repay_20:I = 0x7f0808ac
+
+.field public static final ic2_repay_24:I = 0x7f0808ad
+
+.field public static final ic2_repay_bold_12:I = 0x7f0808ae
+
+.field public static final ic2_repay_bold_16:I = 0x7f0808af
+
+.field public static final ic2_repay_bold_20:I = 0x7f0808b0
+
+.field public static final ic2_repay_bold_24:I = 0x7f0808b1
+
+.field public static final ic2_research_thin_12:I = 0x7f0808b2
+
+.field public static final ic2_research_thin_16:I = 0x7f0808b3
+
+.field public static final ic2_research_thin_20:I = 0x7f0808b4
+
+.field public static final ic2_research_thin_24:I = 0x7f0808b5
+
+.field public static final ic2_researchmode_thin_12:I = 0x7f0808b6
+
+.field public static final ic2_researchmode_thin_16:I = 0x7f0808b7
+
+.field public static final ic2_researchmode_thin_20:I = 0x7f0808b8
+
+.field public static final ic2_researchmode_thin_24:I = 0x7f0808b9
+
+.field public static final ic2_rewardshub_thin_12:I = 0x7f0808ba
+
+.field public static final ic2_rewardshub_thin_16:I = 0x7f0808bb
+
+.field public static final ic2_rewardshub_thin_20:I = 0x7f0808bc
+
+.field public static final ic2_rewardshub_thin_24:I = 0x7f0808bd
+
+.field public static final ic2_rightdown_arrow_12:I = 0x7f0808be
+
+.field public static final ic2_rightdown_arrow_16:I = 0x7f0808bf
+
+.field public static final ic2_rightdown_arrow_20:I = 0x7f0808c0
+
+.field public static final ic2_rightdown_arrow_24:I = 0x7f0808c1
+
+.field public static final ic2_rightup_arrow_12:I = 0x7f0808c2
+
+.field public static final ic2_rightup_arrow_16:I = 0x7f0808c3
+
+.field public static final ic2_rightup_arrow_20:I = 0x7f0808c4
+
+.field public static final ic2_rightup_arrow_24:I = 0x7f0808c5
+
+.field public static final ic2_rightuparrow2_12:I = 0x7f0808c6
+
+.field public static final ic2_rightuparrow2_16:I = 0x7f0808c7
+
+.field public static final ic2_rightuparrow2_20:I = 0x7f0808c8
+
+.field public static final ic2_rightuparrow2_24:I = 0x7f0808c9
+
+.field public static final ic2_roboto_12:I = 0x7f0808ca
+
+.field public static final ic2_roboto_16:I = 0x7f0808cb
+
+.field public static final ic2_roboto_20:I = 0x7f0808cc
+
+.field public static final ic2_roboto_24:I = 0x7f0808cd
+
+.field public static final ic2_rocket_12:I = 0x7f0808ce
+
+.field public static final ic2_rocket_16:I = 0x7f0808cf
+
+.field public static final ic2_rocket_20:I = 0x7f0808d0
+
+.field public static final ic2_rocket_24:I = 0x7f0808d1
+
+.field public static final ic2_scan_12:I = 0x7f0808d2
+
+.field public static final ic2_scan_16:I = 0x7f0808d3
+
+.field public static final ic2_scan_20:I = 0x7f0808d4
+
+.field public static final ic2_scan_24:I = 0x7f0808d5
+
+.field public static final ic2_scan_thin_12:I = 0x7f0808d6
+
+.field public static final ic2_scan_thin_16:I = 0x7f0808d7
+
+.field public static final ic2_scan_thin_20:I = 0x7f0808d8
+
+.field public static final ic2_scan_thin_24:I = 0x7f0808d9
+
+.field public static final ic2_search_12:I = 0x7f0808da
+
+.field public static final ic2_search_16:I = 0x7f0808db
+
+.field public static final ic2_search_20:I = 0x7f0808dc
+
+.field public static final ic2_search_24:I = 0x7f0808dd
+
+.field public static final ic2_search_thin_12:I = 0x7f0808de
+
+.field public static final ic2_search_thin_16:I = 0x7f0808df
+
+.field public static final ic2_search_thin_20:I = 0x7f0808e0
+
+.field public static final ic2_search_thin_24:I = 0x7f0808e1
+
+.field public static final ic2_security_errorfilled_12:I = 0x7f0808e2
+
+.field public static final ic2_security_errorfilled_16:I = 0x7f0808e3
+
+.field public static final ic2_security_errorfilled_20:I = 0x7f0808e4
+
+.field public static final ic2_security_errorfilled_24:I = 0x7f0808e5
+
+.field public static final ic2_security_lock_12:I = 0x7f0808e6
+
+.field public static final ic2_security_lock_16:I = 0x7f0808e7
+
+.field public static final ic2_security_lock_20:I = 0x7f0808e8
+
+.field public static final ic2_security_lock_24:I = 0x7f0808e9
+
+.field public static final ic2_security_setting_12:I = 0x7f0808ea
+
+.field public static final ic2_security_setting_16:I = 0x7f0808eb
+
+.field public static final ic2_security_setting_20:I = 0x7f0808ec
+
+.field public static final ic2_security_setting_24:I = 0x7f0808ed
+
+.field public static final ic2_security_settingfilled_12:I = 0x7f0808ee
+
+.field public static final ic2_security_settingfilled_16:I = 0x7f0808ef
+
+.field public static final ic2_security_settingfilled_20:I = 0x7f0808f0
+
+.field public static final ic2_security_settingfilled_24:I = 0x7f0808f1
+
+.field public static final ic2_security_thin_12:I = 0x7f0808f2
+
+.field public static final ic2_security_thin_16:I = 0x7f0808f3
+
+.field public static final ic2_security_thin_20:I = 0x7f0808f4
+
+.field public static final ic2_security_thin_24:I = 0x7f0808f5
+
+.field public static final ic2_security_unknownfilled_12:I = 0x7f0808f6
+
+.field public static final ic2_security_unknownfilled_16:I = 0x7f0808f7
+
+.field public static final ic2_security_unknownfilled_20:I = 0x7f0808f8
+
+.field public static final ic2_security_unknownfilled_24:I = 0x7f0808f9
+
+.field public static final ic2_security_warning_12:I = 0x7f0808fa
+
+.field public static final ic2_security_warning_16:I = 0x7f0808fb
+
+.field public static final ic2_security_warning_20:I = 0x7f0808fc
+
+.field public static final ic2_security_warning_24:I = 0x7f0808fd
+
+.field public static final ic2_security_warningfilled_12:I = 0x7f0808fe
+
+.field public static final ic2_security_warningfilled_16:I = 0x7f0808ff
+
+.field public static final ic2_security_warningfilled_20:I = 0x7f080900
+
+.field public static final ic2_security_warningfilled_24:I = 0x7f080901
+
+.field public static final ic2_select_thin_12:I = 0x7f080902
+
+.field public static final ic2_select_thin_16:I = 0x7f080903
+
+.field public static final ic2_select_thin_20:I = 0x7f080904
+
+.field public static final ic2_select_thin_24:I = 0x7f080905
+
+.field public static final ic2_selecttext_thin_12:I = 0x7f080906
+
+.field public static final ic2_selecttext_thin_16:I = 0x7f080907
+
+.field public static final ic2_selecttext_thin_20:I = 0x7f080908
+
+.field public static final ic2_selecttext_thin_24:I = 0x7f080909
+
+.field public static final ic2_sell_thin_12:I = 0x7f08090a
+
+.field public static final ic2_sell_thin_16:I = 0x7f08090b
+
+.field public static final ic2_sell_thin_20:I = 0x7f08090c
+
+.field public static final ic2_sell_thin_24:I = 0x7f08090d
+
+.field public static final ic2_sent_12:I = 0x7f08090e
+
+.field public static final ic2_sent_16:I = 0x7f08090f
+
+.field public static final ic2_sent_20:I = 0x7f080910
+
+.field public static final ic2_sent_24:I = 0x7f080911
+
+.field public static final ic2_service_thin_12:I = 0x7f080912
+
+.field public static final ic2_service_thin_16:I = 0x7f080913
+
+.field public static final ic2_service_thin_20:I = 0x7f080914
+
+.field public static final ic2_service_thin_24:I = 0x7f080915
+
+.field public static final ic2_setting2_thin_12:I = 0x7f080916
+
+.field public static final ic2_setting2_thin_16:I = 0x7f080917
+
+.field public static final ic2_setting2_thin_20:I = 0x7f080918
+
+.field public static final ic2_setting2_thin_24:I = 0x7f080919
+
+.field public static final ic2_setting3_thin_12:I = 0x7f08091a
+
+.field public static final ic2_setting3_thin_16:I = 0x7f08091b
+
+.field public static final ic2_setting3_thin_20:I = 0x7f08091c
+
+.field public static final ic2_setting3_thin_24:I = 0x7f08091d
+
+.field public static final ic2_setting_12:I = 0x7f08091e
+
+.field public static final ic2_setting_16:I = 0x7f08091f
+
+.field public static final ic2_setting_20:I = 0x7f080920
+
+.field public static final ic2_setting_24:I = 0x7f080921
+
+.field public static final ic2_setting_thin_12:I = 0x7f080922
+
+.field public static final ic2_setting_thin_16:I = 0x7f080923
+
+.field public static final ic2_setting_thin_20:I = 0x7f080924
+
+.field public static final ic2_setting_thin_24:I = 0x7f080925
+
+.field public static final ic2_shapeleft_thin_12:I = 0x7f080926
+
+.field public static final ic2_shapeleft_thin_16:I = 0x7f080927
+
+.field public static final ic2_shapeleft_thin_20:I = 0x7f080928
+
+.field public static final ic2_shapeleft_thin_24:I = 0x7f080929
+
+.field public static final ic2_shaperight_thin_12:I = 0x7f08092a
+
+.field public static final ic2_shaperight_thin_16:I = 0x7f08092b
+
+.field public static final ic2_shaperight_thin_20:I = 0x7f08092c
+
+.field public static final ic2_shaperight_thin_24:I = 0x7f08092d
+
+.field public static final ic2_share2_thin_12:I = 0x7f08092e
+
+.field public static final ic2_share2_thin_16:I = 0x7f08092f
+
+.field public static final ic2_share2_thin_20:I = 0x7f080930
+
+.field public static final ic2_share2_thin_24:I = 0x7f080931
+
+.field public static final ic2_share_12:I = 0x7f080932
+
+.field public static final ic2_share_16:I = 0x7f080933
+
+.field public static final ic2_share_20:I = 0x7f080934
+
+.field public static final ic2_share_24:I = 0x7f080935
+
+.field public static final ic2_share_thin_12:I = 0x7f080936
+
+.field public static final ic2_share_thin_16:I = 0x7f080937
+
+.field public static final ic2_share_thin_20:I = 0x7f080938
+
+.field public static final ic2_share_thin_24:I = 0x7f080939
+
+.field public static final ic2_shareinvite_thin_12:I = 0x7f08093a
+
+.field public static final ic2_shareinvite_thin_16:I = 0x7f08093b
+
+.field public static final ic2_shareinvite_thin_20:I = 0x7f08093c
+
+.field public static final ic2_shareinvite_thin_24:I = 0x7f08093d
+
+.field public static final ic2_sharkfin_thin_12:I = 0x7f08093e
+
+.field public static final ic2_sharkfin_thin_16:I = 0x7f08093f
+
+.field public static final ic2_sharkfin_thin_20:I = 0x7f080940
+
+.field public static final ic2_sharkfin_thin_24:I = 0x7f080941
+
+.field public static final ic2_shop_12:I = 0x7f080942
+
+.field public static final ic2_shop_16:I = 0x7f080943
+
+.field public static final ic2_shop_20:I = 0x7f080944
+
+.field public static final ic2_shop_24:I = 0x7f080945
+
+.field public static final ic2_shop_add_12:I = 0x7f080946
+
+.field public static final ic2_shop_add_16:I = 0x7f080947
+
+.field public static final ic2_shop_add_20:I = 0x7f080948
+
+.field public static final ic2_shop_add_24:I = 0x7f080949
+
+.field public static final ic2_shopping_bag_12:I = 0x7f08094a
+
+.field public static final ic2_shopping_bag_16:I = 0x7f08094b
+
+.field public static final ic2_shopping_bag_20:I = 0x7f08094c
+
+.field public static final ic2_shopping_bag_24:I = 0x7f08094d
+
+.field public static final ic2_signup_successful_12:I = 0x7f08094e
+
+.field public static final ic2_signup_successful_16:I = 0x7f08094f
+
+.field public static final ic2_signup_successful_20:I = 0x7f080950
+
+.field public static final ic2_signup_successful_24:I = 0x7f080951
+
+.field public static final ic2_signup_successful_thin_12:I = 0x7f080952
+
+.field public static final ic2_signup_successful_thin_16:I = 0x7f080953
+
+.field public static final ic2_signup_successful_thin_20:I = 0x7f080954
+
+.field public static final ic2_signup_successful_thin_24:I = 0x7f080955
+
+.field public static final ic2_simpleearn_thin_12:I = 0x7f080956
+
+.field public static final ic2_simpleearn_thin_16:I = 0x7f080957
+
+.field public static final ic2_simpleearn_thin_20:I = 0x7f080958
+
+.field public static final ic2_simpleearn_thin_24:I = 0x7f080959
+
+.field public static final ic2_single_user_thin_12:I = 0x7f08095a
+
+.field public static final ic2_single_user_thin_16:I = 0x7f08095b
+
+.field public static final ic2_single_user_thin_20:I = 0x7f08095c
+
+.field public static final ic2_single_user_thin_24:I = 0x7f08095d
+
+.field public static final ic2_skill_thin_12:I = 0x7f08095e
+
+.field public static final ic2_skill_thin_16:I = 0x7f08095f
+
+.field public static final ic2_skill_thin_20:I = 0x7f080960
+
+.field public static final ic2_skill_thin_24:I = 0x7f080961
+
+.field public static final ic2_small_widget_12:I = 0x7f080962
+
+.field public static final ic2_small_widget_16:I = 0x7f080963
+
+.field public static final ic2_small_widget_20:I = 0x7f080964
+
+.field public static final ic2_small_widget_24:I = 0x7f080965
+
+.field public static final ic2_smallhook2_12:I = 0x7f080966
+
+.field public static final ic2_smallhook2_16:I = 0x7f080967
+
+.field public static final ic2_smallhook2_20:I = 0x7f080968
+
+.field public static final ic2_smallhook2_24:I = 0x7f080969
+
+.field public static final ic2_smallhook_12:I = 0x7f08096a
+
+.field public static final ic2_smallhook_16:I = 0x7f08096b
+
+.field public static final ic2_smallhook_20:I = 0x7f08096c
+
+.field public static final ic2_smallhook_24:I = 0x7f08096d
+
+.field public static final ic2_smartearn_thin_12:I = 0x7f08096e
+
+.field public static final ic2_smartearn_thin_16:I = 0x7f08096f
+
+.field public static final ic2_smartearn_thin_20:I = 0x7f080970
+
+.field public static final ic2_smartearn_thin_24:I = 0x7f080971
+
+.field public static final ic2_snail_12:I = 0x7f080972
+
+.field public static final ic2_snail_16:I = 0x7f080973
+
+.field public static final ic2_snail_20:I = 0x7f080974
+
+.field public static final ic2_snail_24:I = 0x7f080975
+
+.field public static final ic2_snowball_thin_12:I = 0x7f080976
+
+.field public static final ic2_snowball_thin_16:I = 0x7f080977
+
+.field public static final ic2_snowball_thin_20:I = 0x7f080978
+
+.field public static final ic2_snowball_thin_24:I = 0x7f080979
+
+.field public static final ic2_sortdown_12:I = 0x7f08097a
+
+.field public static final ic2_sortdown_16:I = 0x7f08097b
+
+.field public static final ic2_sortdown_20:I = 0x7f08097c
+
+.field public static final ic2_sortdown_24:I = 0x7f08097d
+
+.field public static final ic2_sortup_12:I = 0x7f08097e
+
+.field public static final ic2_sortup_16:I = 0x7f08097f
+
+.field public static final ic2_sortup_20:I = 0x7f080980
+
+.field public static final ic2_sortup_24:I = 0x7f080981
+
+.field public static final ic2_spotlight_thin_12:I = 0x7f080982
+
+.field public static final ic2_spotlight_thin_16:I = 0x7f080983
+
+.field public static final ic2_spotlight_thin_20:I = 0x7f080984
+
+.field public static final ic2_spotlight_thin_24:I = 0x7f080985
+
+.field public static final ic2_staking_12:I = 0x7f080986
+
+.field public static final ic2_staking_16:I = 0x7f080987
+
+.field public static final ic2_staking_20:I = 0x7f080988
+
+.field public static final ic2_staking_24:I = 0x7f080989
+
+.field public static final ic2_staking_bold_12:I = 0x7f08098a
+
+.field public static final ic2_staking_bold_16:I = 0x7f08098b
+
+.field public static final ic2_staking_bold_20:I = 0x7f08098c
+
+.field public static final ic2_staking_bold_24:I = 0x7f08098d
+
+.field public static final ic2_staking_thin_12:I = 0x7f08098e
+
+.field public static final ic2_staking_thin_16:I = 0x7f08098f
+
+.field public static final ic2_staking_thin_20:I = 0x7f080990
+
+.field public static final ic2_staking_thin_24:I = 0x7f080991
+
+.field public static final ic2_star1_fill_12:I = 0x7f080992
+
+.field public static final ic2_star1_fill_16:I = 0x7f080993
+
+.field public static final ic2_star1_fill_20:I = 0x7f080994
+
+.field public static final ic2_star1_fill_24:I = 0x7f080995
+
+.field public static final ic2_star1_thin_12:I = 0x7f080996
+
+.field public static final ic2_star1_thin_16:I = 0x7f080997
+
+.field public static final ic2_star1_thin_20:I = 0x7f080998
+
+.field public static final ic2_star1_thin_24:I = 0x7f080999
+
+.field public static final ic2_star2_fill_12:I = 0x7f08099a
+
+.field public static final ic2_star2_fill_16:I = 0x7f08099b
+
+.field public static final ic2_star2_fill_20:I = 0x7f08099c
+
+.field public static final ic2_star2_fill_24:I = 0x7f08099d
+
+.field public static final ic2_star2_thin_12:I = 0x7f08099e
+
+.field public static final ic2_star2_thin_16:I = 0x7f08099f
+
+.field public static final ic2_star2_thin_20:I = 0x7f0809a0
+
+.field public static final ic2_star2_thin_24:I = 0x7f0809a1
+
+.field public static final ic2_star3_thin_12:I = 0x7f0809a2
+
+.field public static final ic2_star3_thin_16:I = 0x7f0809a3
+
+.field public static final ic2_star3_thin_20:I = 0x7f0809a4
+
+.field public static final ic2_star3_thin_24:I = 0x7f0809a5
+
+.field public static final ic2_star_12:I = 0x7f0809a6
+
+.field public static final ic2_star_16:I = 0x7f0809a7
+
+.field public static final ic2_star_20:I = 0x7f0809a8
+
+.field public static final ic2_star_24:I = 0x7f0809a9
+
+.field public static final ic2_star_fill_12:I = 0x7f0809aa
+
+.field public static final ic2_star_fill_16:I = 0x7f0809ab
+
+.field public static final ic2_star_fill_20:I = 0x7f0809ac
+
+.field public static final ic2_star_fill_24:I = 0x7f0809ad
+
+.field public static final ic2_starcancel_thin_12:I = 0x7f0809ae
+
+.field public static final ic2_starcancel_thin_16:I = 0x7f0809af
+
+.field public static final ic2_starcancel_thin_20:I = 0x7f0809b0
+
+.field public static final ic2_starcancel_thin_24:I = 0x7f0809b1
+
+.field public static final ic2_starline_thin_12:I = 0x7f0809b2
+
+.field public static final ic2_starline_thin_16:I = 0x7f0809b3
+
+.field public static final ic2_starline_thin_20:I = 0x7f0809b4
+
+.field public static final ic2_starline_thin_24:I = 0x7f0809b5
+
+.field public static final ic2_stick_12:I = 0x7f0809b6
+
+.field public static final ic2_stick_16:I = 0x7f0809b7
+
+.field public static final ic2_stick_20:I = 0x7f0809b8
+
+.field public static final ic2_stick_24:I = 0x7f0809b9
+
+.field public static final ic2_stopwatch_12:I = 0x7f0809ba
+
+.field public static final ic2_stopwatch_16:I = 0x7f0809bb
+
+.field public static final ic2_stopwatch_20:I = 0x7f0809bc
+
+.field public static final ic2_stopwatch_24:I = 0x7f0809bd
+
+.field public static final ic2_structuredproducts_thin_12:I = 0x7f0809be
+
+.field public static final ic2_structuredproducts_thin_16:I = 0x7f0809bf
+
+.field public static final ic2_structuredproducts_thin_20:I = 0x7f0809c0
+
+.field public static final ic2_structuredproducts_thin_24:I = 0x7f0809c1
+
+.field public static final ic2_sub_12:I = 0x7f0809c2
+
+.field public static final ic2_sub_16:I = 0x7f0809c3
+
+.field public static final ic2_sub_20:I = 0x7f0809c4
+
+.field public static final ic2_sub_24:I = 0x7f0809c5
+
+.field public static final ic2_sub_filled_12:I = 0x7f0809c6
+
+.field public static final ic2_sub_filled_16:I = 0x7f0809c7
+
+.field public static final ic2_sub_filled_20:I = 0x7f0809c8
+
+.field public static final ic2_sub_filled_24:I = 0x7f0809c9
+
+.field public static final ic2_subaccount_switch_12:I = 0x7f0809ca
+
+.field public static final ic2_subaccount_switch_16:I = 0x7f0809cb
+
+.field public static final ic2_subaccount_switch_20:I = 0x7f0809cc
+
+.field public static final ic2_subaccount_switch_24:I = 0x7f0809cd
+
+.field public static final ic2_subaccount_thin_12:I = 0x7f0809ce
+
+.field public static final ic2_subaccount_thin_16:I = 0x7f0809cf
+
+.field public static final ic2_subaccount_thin_20:I = 0x7f0809d0
+
+.field public static final ic2_subaccount_thin_24:I = 0x7f0809d1
+
+.field public static final ic2_success_12:I = 0x7f0809d2
+
+.field public static final ic2_success_16:I = 0x7f0809d3
+
+.field public static final ic2_success_20:I = 0x7f0809d4
+
+.field public static final ic2_success_24:I = 0x7f0809d5
+
+.field public static final ic2_success_filled_12:I = 0x7f0809d6
+
+.field public static final ic2_success_filled_16:I = 0x7f0809d7
+
+.field public static final ic2_success_filled_20:I = 0x7f0809d8
+
+.field public static final ic2_success_filled_24:I = 0x7f0809d9
+
+.field public static final ic2_sun_thin_12:I = 0x7f0809da
+
+.field public static final ic2_sun_thin_16:I = 0x7f0809db
+
+.field public static final ic2_sun_thin_20:I = 0x7f0809dc
+
+.field public static final ic2_sun_thin_24:I = 0x7f0809dd
+
+.field public static final ic2_support_12:I = 0x7f0809de
+
+.field public static final ic2_support_16:I = 0x7f0809df
+
+.field public static final ic2_support_20:I = 0x7f0809e0
+
+.field public static final ic2_support_24:I = 0x7f0809e1
+
+.field public static final ic2_support_thin_12:I = 0x7f0809e2
+
+.field public static final ic2_support_thin_16:I = 0x7f0809e3
+
+.field public static final ic2_support_thin_20:I = 0x7f0809e4
+
+.field public static final ic2_support_thin_24:I = 0x7f0809e5
+
+.field public static final ic2_swap_12:I = 0x7f0809e6
+
+.field public static final ic2_swap_16:I = 0x7f0809e7
+
+.field public static final ic2_swap_20:I = 0x7f0809e8
+
+.field public static final ic2_swap_24:I = 0x7f0809e9
+
+.field public static final ic2_system_thin_12:I = 0x7f0809ea
+
+.field public static final ic2_system_thin_16:I = 0x7f0809eb
+
+.field public static final ic2_system_thin_20:I = 0x7f0809ec
+
+.field public static final ic2_system_thin_24:I = 0x7f0809ed
+
+.field public static final ic2_tag_12:I = 0x7f0809ee
+
+.field public static final ic2_tag_16:I = 0x7f0809ef
+
+.field public static final ic2_tag_20:I = 0x7f0809f0
+
+.field public static final ic2_tag_24:I = 0x7f0809f1
+
+.field public static final ic2_target_thin_12:I = 0x7f0809f2
+
+.field public static final ic2_target_thin_16:I = 0x7f0809f3
+
+.field public static final ic2_target_thin_20:I = 0x7f0809f4
+
+.field public static final ic2_target_thin_24:I = 0x7f0809f5
+
+.field public static final ic2_telegram_12:I = 0x7f0809f6
+
+.field public static final ic2_telegram_16:I = 0x7f0809f7
+
+.field public static final ic2_telegram_20:I = 0x7f0809f8
+
+.field public static final ic2_telegram_24:I = 0x7f0809f9
+
+.field public static final ic2_tether_12:I = 0x7f0809fa
+
+.field public static final ic2_tether_16:I = 0x7f0809fb
+
+.field public static final ic2_tether_20:I = 0x7f0809fc
+
+.field public static final ic2_tether_24:I = 0x7f0809fd
+
+.field public static final ic2_text_thin_12:I = 0x7f0809fe
+
+.field public static final ic2_text_thin_16:I = 0x7f0809ff
+
+.field public static final ic2_text_thin_20:I = 0x7f080a00
+
+.field public static final ic2_text_thin_24:I = 0x7f080a01
+
+.field public static final ic2_thinkmode_thin_12:I = 0x7f080a02
+
+.field public static final ic2_thinkmode_thin_16:I = 0x7f080a03
+
+.field public static final ic2_thinkmode_thin_20:I = 0x7f080a04
+
+.field public static final ic2_thinkmode_thin_24:I = 0x7f080a05
+
+.field public static final ic2_thumb_12:I = 0x7f080a06
+
+.field public static final ic2_thumb_16:I = 0x7f080a07
+
+.field public static final ic2_thumb_20:I = 0x7f080a08
+
+.field public static final ic2_thumb_24:I = 0x7f080a09
+
+.field public static final ic2_thumb_filled2_12:I = 0x7f080a0a
+
+.field public static final ic2_thumb_filled2_16:I = 0x7f080a0b
+
+.field public static final ic2_thumb_filled2_20:I = 0x7f080a0c
+
+.field public static final ic2_thumb_filled2_24:I = 0x7f080a0d
+
+.field public static final ic2_thumb_filled_12:I = 0x7f080a0e
+
+.field public static final ic2_thumb_filled_16:I = 0x7f080a0f
+
+.field public static final ic2_thumb_filled_20:I = 0x7f080a10
+
+.field public static final ic2_thumb_filled_24:I = 0x7f080a11
+
+.field public static final ic2_todo_thin_12:I = 0x7f080a12
+
+.field public static final ic2_todo_thin_16:I = 0x7f080a13
+
+.field public static final ic2_todo_thin_20:I = 0x7f080a14
+
+.field public static final ic2_todo_thin_24:I = 0x7f080a15
+
+.field public static final ic2_token_filter_12:I = 0x7f080a16
+
+.field public static final ic2_token_filter_16:I = 0x7f080a17
+
+.field public static final ic2_token_filter_20:I = 0x7f080a18
+
+.field public static final ic2_token_filter_24:I = 0x7f080a19
+
+.field public static final ic2_trade_12:I = 0x7f080a1a
+
+.field public static final ic2_trade_16:I = 0x7f080a1b
+
+.field public static final ic2_trade_20:I = 0x7f080a1c
+
+.field public static final ic2_trade_24:I = 0x7f080a1d
+
+.field public static final ic2_trade_add_12:I = 0x7f080a1e
+
+.field public static final ic2_trade_add_16:I = 0x7f080a1f
+
+.field public static final ic2_trade_add_20:I = 0x7f080a20
+
+.field public static final ic2_trade_add_24:I = 0x7f080a21
+
+.field public static final ic2_trade_exchange_12:I = 0x7f080a22
+
+.field public static final ic2_trade_exchange_16:I = 0x7f080a23
+
+.field public static final ic2_trade_exchange_20:I = 0x7f080a24
+
+.field public static final ic2_trade_exchange_24:I = 0x7f080a25
+
+.field public static final ic2_trade_horizontal_12:I = 0x7f080a26
+
+.field public static final ic2_trade_horizontal_16:I = 0x7f080a27
+
+.field public static final ic2_trade_horizontal_20:I = 0x7f080a28
+
+.field public static final ic2_trade_horizontal_24:I = 0x7f080a29
+
+.field public static final ic2_trade_information_12:I = 0x7f080a2a
+
+.field public static final ic2_trade_information_16:I = 0x7f080a2b
+
+.field public static final ic2_trade_information_20:I = 0x7f080a2c
+
+.field public static final ic2_trade_information_24:I = 0x7f080a2d
+
+.field public static final ic2_trade_sub_12:I = 0x7f080a2e
+
+.field public static final ic2_trade_sub_16:I = 0x7f080a2f
+
+.field public static final ic2_trade_sub_20:I = 0x7f080a30
+
+.field public static final ic2_trade_sub_24:I = 0x7f080a31
+
+.field public static final ic2_trade_vertical_12:I = 0x7f080a32
+
+.field public static final ic2_trade_vertical_16:I = 0x7f080a33
+
+.field public static final ic2_trade_vertical_20:I = 0x7f080a34
+
+.field public static final ic2_trade_vertical_24:I = 0x7f080a35
+
+.field public static final ic2_tradefee_12:I = 0x7f080a36
+
+.field public static final ic2_tradefee_16:I = 0x7f080a37
+
+.field public static final ic2_tradefee_20:I = 0x7f080a38
+
+.field public static final ic2_tradefee_24:I = 0x7f080a39
+
+.field public static final ic2_trader_pilot_12:I = 0x7f080a3a
+
+.field public static final ic2_trader_pilot_16:I = 0x7f080a3b
+
+.field public static final ic2_trader_pilot_20:I = 0x7f080a3c
+
+.field public static final ic2_trader_pilot_24:I = 0x7f080a3d
+
+.field public static final ic2_trading_fee_level_12:I = 0x7f080a3e
+
+.field public static final ic2_trading_fee_level_16:I = 0x7f080a3f
+
+.field public static final ic2_trading_fee_level_20:I = 0x7f080a40
+
+.field public static final ic2_trading_fee_level_24:I = 0x7f080a41
+
+.field public static final ic2_trading_thin_12:I = 0x7f080a42
+
+.field public static final ic2_trading_thin_16:I = 0x7f080a43
+
+.field public static final ic2_trading_thin_20:I = 0x7f080a44
+
+.field public static final ic2_trading_thin_24:I = 0x7f080a45
+
+.field public static final ic2_tradingbot_thin_12:I = 0x7f080a46
+
+.field public static final ic2_tradingbot_thin_16:I = 0x7f080a47
+
+.field public static final ic2_tradingbot_thin_20:I = 0x7f080a48
+
+.field public static final ic2_tradingbot_thin_24:I = 0x7f080a49
+
+.field public static final ic2_tradingpassword_thin_12:I = 0x7f080a4a
+
+.field public static final ic2_tradingpassword_thin_16:I = 0x7f080a4b
+
+.field public static final ic2_tradingpassword_thin_20:I = 0x7f080a4c
+
+.field public static final ic2_tradingpassword_thin_24:I = 0x7f080a4d
+
+.field public static final ic2_transfer2_12:I = 0x7f080a4e
+
+.field public static final ic2_transfer2_16:I = 0x7f080a4f
+
+.field public static final ic2_transfer2_20:I = 0x7f080a50
+
+.field public static final ic2_transfer2_24:I = 0x7f080a51
+
+.field public static final ic2_transfer_12:I = 0x7f080a52
+
+.field public static final ic2_transfer_16:I = 0x7f080a53
+
+.field public static final ic2_transfer_20:I = 0x7f080a54
+
+.field public static final ic2_transfer_24:I = 0x7f080a55
+
+.field public static final ic2_transfer_bold_12:I = 0x7f080a56
+
+.field public static final ic2_transfer_bold_16:I = 0x7f080a57
+
+.field public static final ic2_transfer_bold_20:I = 0x7f080a58
+
+.field public static final ic2_transfer_bold_24:I = 0x7f080a59
+
+.field public static final ic2_transfer_information_12:I = 0x7f080a5a
+
+.field public static final ic2_transfer_information_16:I = 0x7f080a5b
+
+.field public static final ic2_transfer_information_20:I = 0x7f080a5c
+
+.field public static final ic2_transfer_information_24:I = 0x7f080a5d
+
+.field public static final ic2_translate_12:I = 0x7f080a5e
+
+.field public static final ic2_translate_16:I = 0x7f080a5f
+
+.field public static final ic2_translate_20:I = 0x7f080a60
+
+.field public static final ic2_translate_24:I = 0x7f080a61
+
+.field public static final ic2_trash_thin_12:I = 0x7f080a62
+
+.field public static final ic2_trash_thin_16:I = 0x7f080a63
+
+.field public static final ic2_trash_thin_20:I = 0x7f080a64
+
+.field public static final ic2_trash_thin_24:I = 0x7f080a65
+
+.field public static final ic2_triangle_bottom_12:I = 0x7f080a66
+
+.field public static final ic2_triangle_bottom_16:I = 0x7f080a67
+
+.field public static final ic2_triangle_bottom_20:I = 0x7f080a68
+
+.field public static final ic2_triangle_bottom_24:I = 0x7f080a69
+
+.field public static final ic2_triangle_top_12:I = 0x7f080a6a
+
+.field public static final ic2_triangle_top_16:I = 0x7f080a6b
+
+.field public static final ic2_triangle_top_20:I = 0x7f080a6c
+
+.field public static final ic2_triangle_top_24:I = 0x7f080a6d
+
+.field public static final ic2_tutorial_12:I = 0x7f080a6e
+
+.field public static final ic2_tutorial_16:I = 0x7f080a6f
+
+.field public static final ic2_tutorial_20:I = 0x7f080a70
+
+.field public static final ic2_tutorial_24:I = 0x7f080a71
+
+.field public static final ic2_twinwin_thin_12:I = 0x7f080a72
+
+.field public static final ic2_twinwin_thin_16:I = 0x7f080a73
+
+.field public static final ic2_twinwin_thin_20:I = 0x7f080a74
+
+.field public static final ic2_twinwin_thin_24:I = 0x7f080a75
+
+.field public static final ic2_unbind_thin_12:I = 0x7f080a76
+
+.field public static final ic2_unbind_thin_16:I = 0x7f080a77
+
+.field public static final ic2_unbind_thin_20:I = 0x7f080a78
+
+.field public static final ic2_unbind_thin_24:I = 0x7f080a79
+
+.field public static final ic2_unconnect_12:I = 0x7f080a7a
+
+.field public static final ic2_unconnect_16:I = 0x7f080a7b
+
+.field public static final ic2_unconnect_20:I = 0x7f080a7c
+
+.field public static final ic2_unconnect_24:I = 0x7f080a7d
+
+.field public static final ic2_unfreeze_thin_12:I = 0x7f080a7e
+
+.field public static final ic2_unfreeze_thin_16:I = 0x7f080a7f
+
+.field public static final ic2_unfreeze_thin_20:I = 0x7f080a80
+
+.field public static final ic2_unfreeze_thin_24:I = 0x7f080a81
+
+.field public static final ic2_unifiedtrading_thin_12:I = 0x7f080a82
+
+.field public static final ic2_unifiedtrading_thin_16:I = 0x7f080a83
+
+.field public static final ic2_unifiedtrading_thin_20:I = 0x7f080a84
+
+.field public static final ic2_unifiedtrading_thin_24:I = 0x7f080a85
+
+.field public static final ic2_unit_12:I = 0x7f080a86
+
+.field public static final ic2_unit_16:I = 0x7f080a87
+
+.field public static final ic2_unit_20:I = 0x7f080a88
+
+.field public static final ic2_unit_24:I = 0x7f080a89
+
+.field public static final ic2_unlimited_12:I = 0x7f080a8a
+
+.field public static final ic2_unlimited_16:I = 0x7f080a8b
+
+.field public static final ic2_unlimited_20:I = 0x7f080a8c
+
+.field public static final ic2_unlimited_24:I = 0x7f080a8d
+
+.field public static final ic2_unlock_thin_12:I = 0x7f080a8e
+
+.field public static final ic2_unlock_thin_16:I = 0x7f080a8f
+
+.field public static final ic2_unlock_thin_20:I = 0x7f080a90
+
+.field public static final ic2_unlock_thin_24:I = 0x7f080a91
+
+.field public static final ic2_unlocked_12:I = 0x7f080a92
+
+.field public static final ic2_unlocked_16:I = 0x7f080a93
+
+.field public static final ic2_unlocked_20:I = 0x7f080a94
+
+.field public static final ic2_unlocked_24:I = 0x7f080a95
+
+.field public static final ic2_user_12:I = 0x7f080a96
+
+.field public static final ic2_user_16:I = 0x7f080a97
+
+.field public static final ic2_user_20:I = 0x7f080a98
+
+.field public static final ic2_user_24:I = 0x7f080a99
+
+.field public static final ic2_user_thin_12:I = 0x7f080a9a
+
+.field public static final ic2_user_thin_16:I = 0x7f080a9b
+
+.field public static final ic2_user_thin_20:I = 0x7f080a9c
+
+.field public static final ic2_user_thin_24:I = 0x7f080a9d
+
+.field public static final ic2_verification_12:I = 0x7f080a9e
+
+.field public static final ic2_verification_16:I = 0x7f080a9f
+
+.field public static final ic2_verification_20:I = 0x7f080aa0
+
+.field public static final ic2_verification_24:I = 0x7f080aa1
+
+.field public static final ic2_vertical_switch2_12:I = 0x7f080aa2
+
+.field public static final ic2_vertical_switch2_16:I = 0x7f080aa3
+
+.field public static final ic2_vertical_switch2_20:I = 0x7f080aa4
+
+.field public static final ic2_vertical_switch2_24:I = 0x7f080aa5
+
+.field public static final ic2_video_bold_12:I = 0x7f080aa6
+
+.field public static final ic2_video_bold_16:I = 0x7f080aa7
+
+.field public static final ic2_video_bold_20:I = 0x7f080aa8
+
+.field public static final ic2_video_bold_24:I = 0x7f080aa9
+
+.field public static final ic2_video_thin_12:I = 0x7f080aaa
+
+.field public static final ic2_video_thin_16:I = 0x7f080aab
+
+.field public static final ic2_video_thin_20:I = 0x7f080aac
+
+.field public static final ic2_video_thin_24:I = 0x7f080aad
+
+.field public static final ic2_vip_crown_12:I = 0x7f080aae
+
+.field public static final ic2_vip_crown_16:I = 0x7f080aaf
+
+.field public static final ic2_vip_crown_20:I = 0x7f080ab0
+
+.field public static final ic2_vip_crown_24:I = 0x7f080ab1
+
+.field public static final ic2_vip_fee_thin_12:I = 0x7f080ab2
+
+.field public static final ic2_vip_fee_thin_16:I = 0x7f080ab3
+
+.field public static final ic2_vip_fee_thin_20:I = 0x7f080ab4
+
+.field public static final ic2_vip_fee_thin_24:I = 0x7f080ab5
+
+.field public static final ic2_voice_12:I = 0x7f080ab6
+
+.field public static final ic2_voice_16:I = 0x7f080ab7
+
+.field public static final ic2_voice_20:I = 0x7f080ab8
+
+.field public static final ic2_voice_24:I = 0x7f080ab9
+
+.field public static final ic2_volumeclose_thin_12:I = 0x7f080aba
+
+.field public static final ic2_volumeclose_thin_16:I = 0x7f080abb
+
+.field public static final ic2_volumeclose_thin_20:I = 0x7f080abc
+
+.field public static final ic2_volumeclose_thin_24:I = 0x7f080abd
+
+.field public static final ic2_volumemax_thin_12:I = 0x7f080abe
+
+.field public static final ic2_volumemax_thin_16:I = 0x7f080abf
+
+.field public static final ic2_volumemax_thin_20:I = 0x7f080ac0
+
+.field public static final ic2_volumemax_thin_24:I = 0x7f080ac1
+
+.field public static final ic2_vote_thin_12:I = 0x7f080ac2
+
+.field public static final ic2_vote_thin_16:I = 0x7f080ac3
+
+.field public static final ic2_vote_thin_20:I = 0x7f080ac4
+
+.field public static final ic2_vote_thin_24:I = 0x7f080ac5
+
+.field public static final ic2_wait_12:I = 0x7f080ac6
+
+.field public static final ic2_wait_16:I = 0x7f080ac7
+
+.field public static final ic2_wait_20:I = 0x7f080ac8
+
+.field public static final ic2_wait_24:I = 0x7f080ac9
+
+.field public static final ic2_wait_filled_12:I = 0x7f080aca
+
+.field public static final ic2_wait_filled_16:I = 0x7f080acb
+
+.field public static final ic2_wait_filled_20:I = 0x7f080acc
+
+.field public static final ic2_wait_filled_24:I = 0x7f080acd
+
+.field public static final ic2_walletconnect_12:I = 0x7f080ace
+
+.field public static final ic2_walletconnect_16:I = 0x7f080acf
+
+.field public static final ic2_walletconnect_20:I = 0x7f080ad0
+
+.field public static final ic2_walletconnect_24:I = 0x7f080ad1
+
+.field public static final ic2_warning_12:I = 0x7f080ad2
+
+.field public static final ic2_warning_16:I = 0x7f080ad3
+
+.field public static final ic2_warning_20:I = 0x7f080ad4
+
+.field public static final ic2_warning_24:I = 0x7f080ad5
+
+.field public static final ic2_warning_ring_12:I = 0x7f080ad6
+
+.field public static final ic2_warning_ring_16:I = 0x7f080ad7
+
+.field public static final ic2_warning_ring_20:I = 0x7f080ad8
+
+.field public static final ic2_warning_ring_24:I = 0x7f080ad9
+
+.field public static final ic2_warning_thin_12:I = 0x7f080ada
+
+.field public static final ic2_warning_thin_16:I = 0x7f080adb
+
+.field public static final ic2_warning_thin_20:I = 0x7f080adc
+
+.field public static final ic2_warning_thin_24:I = 0x7f080add
+
+.field public static final ic2_wealth_thin_12:I = 0x7f080ade
+
+.field public static final ic2_wealth_thin_16:I = 0x7f080adf
+
+.field public static final ic2_wealth_thin_20:I = 0x7f080ae0
+
+.field public static final ic2_wealth_thin_24:I = 0x7f080ae1
+
+.field public static final ic2_web3_thin_12:I = 0x7f080ae2
+
+.field public static final ic2_web3_thin_16:I = 0x7f080ae3
+
+.field public static final ic2_web3_thin_20:I = 0x7f080ae4
+
+.field public static final ic2_web3_thin_24:I = 0x7f080ae5
+
+.field public static final ic2_whale_12:I = 0x7f080ae6
+
+.field public static final ic2_whale_16:I = 0x7f080ae7
+
+.field public static final ic2_whale_20:I = 0x7f080ae8
+
+.field public static final ic2_whale_24:I = 0x7f080ae9
+
+.field public static final ic2_withdraw_12:I = 0x7f080aea
+
+.field public static final ic2_withdraw_16:I = 0x7f080aeb
+
+.field public static final ic2_withdraw_20:I = 0x7f080aec
+
+.field public static final ic2_withdraw_24:I = 0x7f080aed
+
+.field public static final ic2_withdraw_bold_12:I = 0x7f080aee
+
+.field public static final ic2_withdraw_bold_16:I = 0x7f080aef
+
+.field public static final ic2_withdraw_bold_20:I = 0x7f080af0
+
+.field public static final ic2_withdraw_bold_24:I = 0x7f080af1
+
+.field public static final ic2_withdraw_thin_12:I = 0x7f080af2
+
+.field public static final ic2_withdraw_thin_16:I = 0x7f080af3
+
+.field public static final ic2_withdraw_thin_20:I = 0x7f080af4
+
+.field public static final ic2_withdraw_thin_24:I = 0x7f080af5
+
+.field public static final ic2_withdrawaddress_thin_12:I = 0x7f080af6
+
+.field public static final ic2_withdrawaddress_thin_16:I = 0x7f080af7
+
+.field public static final ic2_withdrawaddress_thin_20:I = 0x7f080af8
+
+.field public static final ic2_withdrawaddress_thin_24:I = 0x7f080af9
+
+.field public static final ic2_withdrawfiat_thin_12:I = 0x7f080afa
+
+.field public static final ic2_withdrawfiat_thin_16:I = 0x7f080afb
+
+.field public static final ic2_withdrawfiat_thin_20:I = 0x7f080afc
+
+.field public static final ic2_withdrawfiat_thin_24:I = 0x7f080afd
+
+.field public static final ic2_withdrawlimit_thin_12:I = 0x7f080afe
+
+.field public static final ic2_withdrawlimit_thin_16:I = 0x7f080aff
+
+.field public static final ic2_withdrawlimit_thin_20:I = 0x7f080b00
+
+.field public static final ic2_withdrawlimit_thin_24:I = 0x7f080b01
+
+.field public static final ic2_x_12:I = 0x7f080b02
+
+.field public static final ic2_x_16:I = 0x7f080b03
+
+.field public static final ic2_x_20:I = 0x7f080b04
+
+.field public static final ic2_x_24:I = 0x7f080b05
+
+.field public static final ic2_x_thin_12:I = 0x7f080b06
+
+.field public static final ic2_x_thin_16:I = 0x7f080b07
+
+.field public static final ic2_x_thin_20:I = 0x7f080b08
+
+.field public static final ic2_x_thin_24:I = 0x7f080b09
+
+.field public static final ic2_zoomin_12:I = 0x7f080b0a
+
+.field public static final ic2_zoomin_16:I = 0x7f080b0b
+
+.field public static final ic2_zoomin_20:I = 0x7f080b0c
+
+.field public static final ic2_zoomin_24:I = 0x7f080b0d
+
+.field public static final ic2_zoomout_12:I = 0x7f080b0e
+
+.field public static final ic2_zoomout_16:I = 0x7f080b0f
+
+.field public static final ic2_zoomout_20:I = 0x7f080b10
+
+.field public static final ic2_zoomout_24:I = 0x7f080b11
+
+.field public static final ic_ad_12:I = 0x7f080b12
+
+.field public static final ic_ad_16:I = 0x7f080b13
+
+.field public static final ic_ad_20:I = 0x7f080b14
+
+.field public static final ic_ad_24:I = 0x7f080b15
+
+.field public static final ic_add_filled_12:I = 0x7f080b16
+
+.field public static final ic_add_filled_16:I = 0x7f080b17
+
+.field public static final ic_add_filled_20:I = 0x7f080b18
+
+.field public static final ic_add_filled_24:I = 0x7f080b19
+
+.field public static final ic_add_payment_12:I = 0x7f080b1a
+
+.field public static final ic_add_payment_16:I = 0x7f080b1b
+
+.field public static final ic_add_payment_20:I = 0x7f080b1c
+
+.field public static final ic_add_payment_24:I = 0x7f080b1d
+
+.field public static final ic_alert_select_12:I = 0x7f080b1e
+
+.field public static final ic_alert_select_16:I = 0x7f080b1f
+
+.field public static final ic_alert_select_20:I = 0x7f080b20
+
+.field public static final ic_alert_select_24:I = 0x7f080b21
+
+.field public static final ic_alert_unselect_12:I = 0x7f080b22
+
+.field public static final ic_alert_unselect_16:I = 0x7f080b23
+
+.field public static final ic_alert_unselect_20:I = 0x7f080b24
+
+.field public static final ic_alert_unselect_24:I = 0x7f080b25
+
+.field public static final ic_announcement_12:I = 0x7f080b26
+
+.field public static final ic_announcement_16:I = 0x7f080b27
+
+.field public static final ic_announcement_20:I = 0x7f080b28
+
+.field public static final ic_announcement_24:I = 0x7f080b29
+
+.field public static final ic_arrow_back_black_24:I = 0x7f080b2a
+
+.field public static final ic_arrow_down_12:I = 0x7f080b2b
+
+.field public static final ic_arrow_down_16:I = 0x7f080b2c
+
+.field public static final ic_arrow_down_20:I = 0x7f080b2d
+
+.field public static final ic_arrow_down_24:I = 0x7f080b2e
+
+.field public static final ic_arrow_down_24dp:I = 0x7f080b2f
+
+.field public static final ic_arrow_left_12:I = 0x7f080b30
+
+.field public static final ic_arrow_left_16:I = 0x7f080b31
+
+.field public static final ic_arrow_left_20:I = 0x7f080b32
+
+.field public static final ic_arrow_left_24:I = 0x7f080b33
+
+.field public static final ic_arrow_left_left_12:I = 0x7f080b34
+
+.field public static final ic_arrow_left_left_16:I = 0x7f080b35
+
+.field public static final ic_arrow_left_left_20:I = 0x7f080b36
+
+.field public static final ic_arrow_left_left_24:I = 0x7f080b37
+
+.field public static final ic_arrow_right_12:I = 0x7f080b38
+
+.field public static final ic_arrow_right_16:I = 0x7f080b39
+
+.field public static final ic_arrow_right_20:I = 0x7f080b3a
+
+.field public static final ic_arrow_right_24:I = 0x7f080b3b
+
+.field public static final ic_arrow_right_right_12:I = 0x7f080b3c
+
+.field public static final ic_arrow_right_right_16:I = 0x7f080b3d
+
+.field public static final ic_arrow_right_right_20:I = 0x7f080b3e
+
+.field public static final ic_arrow_right_right_24:I = 0x7f080b3f
+
+.field public static final ic_arrow_up_12:I = 0x7f080b40
+
+.field public static final ic_arrow_up_16:I = 0x7f080b41
+
+.field public static final ic_arrow_up_20:I = 0x7f080b42
+
+.field public static final ic_arrow_up_24:I = 0x7f080b43
+
+.field public static final ic_asset_tab_setting_header_bg:I = 0x7f080b44
+
+.field public static final ic_atomic_toast_error:I = 0x7f080b45
+
+.field public static final ic_atomic_toast_help:I = 0x7f080b46
+
+.field public static final ic_atomic_toast_info:I = 0x7f080b47
+
+.field public static final ic_atomic_toast_loading:I = 0x7f080b48
+
+.field public static final ic_atomic_toast_success:I = 0x7f080b49
+
+.field public static final ic_atomic_toast_warning:I = 0x7f080b4a
+
+.field public static final ic_bonus_12:I = 0x7f080b4b
+
+.field public static final ic_bonus_16:I = 0x7f080b4c
+
+.field public static final ic_bonus_20:I = 0x7f080b4d
+
+.field public static final ic_bonus_24:I = 0x7f080b4e
+
+.field public static final ic_borrow_12:I = 0x7f080b4f
+
+.field public static final ic_borrow_16:I = 0x7f080b50
+
+.field public static final ic_borrow_20:I = 0x7f080b51
+
+.field public static final ic_borrow_24:I = 0x7f080b52
+
+.field public static final ic_brawl_12:I = 0x7f080b53
+
+.field public static final ic_brawl_16:I = 0x7f080b54
+
+.field public static final ic_brawl_20:I = 0x7f080b55
+
+.field public static final ic_brawl_24:I = 0x7f080b56
+
+.field public static final ic_buy_crypto_12:I = 0x7f080b57
+
+.field public static final ic_buy_crypto_16:I = 0x7f080b58
+
+.field public static final ic_buy_crypto_20:I = 0x7f080b59
+
+.field public static final ic_buy_crypto_24:I = 0x7f080b5a
+
+.field public static final ic_calculator_12:I = 0x7f080b5b
+
+.field public static final ic_calculator_16:I = 0x7f080b5c
+
+.field public static final ic_calculator_20:I = 0x7f080b5d
+
+.field public static final ic_calculator_24:I = 0x7f080b5e
+
+.field public static final ic_call_answer:I = 0x7f080b5f
+
+.field public static final ic_call_answer_low:I = 0x7f080b60
+
+.field public static final ic_call_answer_video:I = 0x7f080b61
+
+.field public static final ic_call_answer_video_low:I = 0x7f080b62
+
+.field public static final ic_call_decline:I = 0x7f080b63
+
+.field public static final ic_call_decline_low:I = 0x7f080b64
+
+.field public static final ic_changemode_12:I = 0x7f080b65
+
+.field public static final ic_changemode_16:I = 0x7f080b66
+
+.field public static final ic_changemode_20:I = 0x7f080b67
+
+.field public static final ic_changemode_24:I = 0x7f080b68
+
+.field public static final ic_chart_trend_12:I = 0x7f080b69
+
+.field public static final ic_chart_trend_16:I = 0x7f080b6a
+
+.field public static final ic_chart_trend_20:I = 0x7f080b6b
+
+.field public static final ic_chart_trend_24:I = 0x7f080b6c
+
+.field public static final ic_checkbox_button_unchecked_gray:I = 0x7f080b6d
+
+.field public static final ic_checkbox_button_unchecked_gray_diable:I = 0x7f080b6e
+
+.field public static final ic_checkbox_button_unchecked_gray_small:I = 0x7f080b6f
+
+.field public static final ic_checkbox_normal_icon_with_padding:I = 0x7f080b70
+
+.field public static final ic_checkbox_select_12:I = 0x7f080b71
+
+.field public static final ic_checkbox_select_16:I = 0x7f080b72
+
+.field public static final ic_checkbox_select_20:I = 0x7f080b73
+
+.field public static final ic_checkbox_select_24:I = 0x7f080b74
+
+.field public static final ic_clear_black_24:I = 0x7f080b75
+
+.field public static final ic_clock_black_24dp:I = 0x7f080b76
+
+.field public static final ic_close_12:I = 0x7f080b77
+
+.field public static final ic_close_16:I = 0x7f080b78
+
+.field public static final ic_close_20:I = 0x7f080b79
+
+.field public static final ic_close_24:I = 0x7f080b7a
+
+.field public static final ic_close_filled_12:I = 0x7f080b7b
+
+.field public static final ic_close_filled_16:I = 0x7f080b7c
+
+.field public static final ic_close_filled_20:I = 0x7f080b7d
+
+.field public static final ic_close_filled_24:I = 0x7f080b7e
+
+.field public static final ic_common_empty:I = 0x7f080b7f
+
+.field public static final ic_common_empty_alert:I = 0x7f080b80
+
+.field public static final ic_common_empty_stop_trade:I = 0x7f080b81
+
+.field public static final ic_common_empty_unfav:I = 0x7f080b82
+
+.field public static final ic_common_network_error:I = 0x7f080b83
+
+.field public static final ic_common_system_busy:I = 0x7f080b84
+
+.field public static final ic_common_system_maintain:I = 0x7f080b85
+
+.field public static final ic_contract_12:I = 0x7f080b86
+
+.field public static final ic_contract_16:I = 0x7f080b87
+
+.field public static final ic_contract_20:I = 0x7f080b88
+
+.field public static final ic_contract_24:I = 0x7f080b89
+
+.field public static final ic_convert_12:I = 0x7f080b8a
+
+.field public static final ic_convert_16:I = 0x7f080b8b
+
+.field public static final ic_convert_20:I = 0x7f080b8c
+
+.field public static final ic_convert_24:I = 0x7f080b8d
+
+.field public static final ic_copy_12:I = 0x7f080b8e
+
+.field public static final ic_copy_16:I = 0x7f080b8f
+
+.field public static final ic_copy_20:I = 0x7f080b90
+
+.field public static final ic_copy_24:I = 0x7f080b91
+
+.field public static final ic_coupons_12:I = 0x7f080b92
+
+.field public static final ic_coupons_16:I = 0x7f080b93
+
+.field public static final ic_coupons_20:I = 0x7f080b94
+
+.field public static final ic_coupons_24:I = 0x7f080b95
+
+.field public static final ic_customer_service_12:I = 0x7f080b96
+
+.field public static final ic_customer_service_16:I = 0x7f080b97
+
+.field public static final ic_customer_service_20:I = 0x7f080b98
+
+.field public static final ic_customer_service_24:I = 0x7f080b99
+
+.field public static final ic_dark_mode_12:I = 0x7f080b9a
+
+.field public static final ic_dark_mode_16:I = 0x7f080b9b
+
+.field public static final ic_dark_mode_20:I = 0x7f080b9c
+
+.field public static final ic_dark_mode_24:I = 0x7f080b9d
+
+.field public static final ic_delete_12:I = 0x7f080b9e
+
+.field public static final ic_delete_16:I = 0x7f080b9f
+
+.field public static final ic_delete_20:I = 0x7f080ba0
+
+.field public static final ic_delete_24:I = 0x7f080ba1
+
+.field public static final ic_deposit_12:I = 0x7f080ba2
+
+.field public static final ic_deposit_16:I = 0x7f080ba3
+
+.field public static final ic_deposit_20:I = 0x7f080ba4
+
+.field public static final ic_deposit_24:I = 0x7f080ba5
+
+.field public static final ic_drop_triangle_small_up:I = 0x7f080ba6
+
+.field public static final ic_drop_triangle_up:I = 0x7f080ba7
+
+.field public static final ic_edit2_12:I = 0x7f080ba8
+
+.field public static final ic_edit2_16:I = 0x7f080ba9
+
+.field public static final ic_edit2_20:I = 0x7f080baa
+
+.field public static final ic_edit2_24:I = 0x7f080bab
+
+.field public static final ic_edit_12:I = 0x7f080bac
+
+.field public static final ic_edit_16:I = 0x7f080bad
+
+.field public static final ic_edit_20:I = 0x7f080bae
+
+.field public static final ic_edit_24:I = 0x7f080baf
+
+.field public static final ic_educe_12:I = 0x7f080bb0
+
+.field public static final ic_educe_16:I = 0x7f080bb1
+
+.field public static final ic_educe_20:I = 0x7f080bb2
+
+.field public static final ic_educe_24:I = 0x7f080bb3
+
+.field public static final ic_exchange_12:I = 0x7f080bb4
+
+.field public static final ic_exchange_16:I = 0x7f080bb5
+
+.field public static final ic_exchange_20:I = 0x7f080bb6
+
+.field public static final ic_exchange_24:I = 0x7f080bb7
+
+.field public static final ic_expand_less_22px:I = 0x7f080bb8
+
+.field public static final ic_expand_more_22px:I = 0x7f080bb9
+
+.field public static final ic_eye_close_12:I = 0x7f080bba
+
+.field public static final ic_eye_close_16:I = 0x7f080bbb
+
+.field public static final ic_eye_close_20:I = 0x7f080bbc
+
+.field public static final ic_eye_close_24:I = 0x7f080bbd
+
+.field public static final ic_eye_open_12:I = 0x7f080bbe
+
+.field public static final ic_eye_open_16:I = 0x7f080bbf
+
+.field public static final ic_eye_open_20:I = 0x7f080bc0
+
+.field public static final ic_eye_open_24:I = 0x7f080bc1
+
+.field public static final ic_fail_12:I = 0x7f080bc2
+
+.field public static final ic_fail_16:I = 0x7f080bc3
+
+.field public static final ic_fail_20:I = 0x7f080bc4
+
+.field public static final ic_fail_24:I = 0x7f080bc5
+
+.field public static final ic_fast_deal_arrow_mirrored:I = 0x7f080bc6
+
+.field public static final ic_favorite_select_12:I = 0x7f080bc7
+
+.field public static final ic_favorite_select_16:I = 0x7f080bc8
+
+.field public static final ic_favorite_select_20:I = 0x7f080bc9
+
+.field public static final ic_favorite_select_24:I = 0x7f080bca
+
+.field public static final ic_favorite_unselect_12:I = 0x7f080bcb
+
+.field public static final ic_favorite_unselect_16:I = 0x7f080bcc
+
+.field public static final ic_favorite_unselect_20:I = 0x7f080bcd
+
+.field public static final ic_favorite_unselect_24:I = 0x7f080bce
+
+.field public static final ic_fee_level_12:I = 0x7f080bcf
+
+.field public static final ic_fee_level_16:I = 0x7f080bd0
+
+.field public static final ic_fee_level_20:I = 0x7f080bd1
+
+.field public static final ic_fee_level_24:I = 0x7f080bd2
+
+.field public static final ic_filter_12:I = 0x7f080bd3
+
+.field public static final ic_filter_16:I = 0x7f080bd4
+
+.field public static final ic_filter_20:I = 0x7f080bd5
+
+.field public static final ic_filter_24:I = 0x7f080bd6
+
+.field public static final ic_fire_12:I = 0x7f080bd7
+
+.field public static final ic_fire_16:I = 0x7f080bd8
+
+.field public static final ic_fire_20:I = 0x7f080bd9
+
+.field public static final ic_fire_24:I = 0x7f080bda
+
+.field public static final ic_floating_window_12:I = 0x7f080bdb
+
+.field public static final ic_floating_window_16:I = 0x7f080bdc
+
+.field public static final ic_floating_window_20:I = 0x7f080bdd
+
+.field public static final ic_floating_window_24:I = 0x7f080bde
+
+.field public static final ic_forbid_12:I = 0x7f080bdf
+
+.field public static final ic_forbid_16:I = 0x7f080be0
+
+.field public static final ic_forbid_20:I = 0x7f080be1
+
+.field public static final ic_forbid_24:I = 0x7f080be2
+
+.field public static final ic_full_screen_12:I = 0x7f080be3
+
+.field public static final ic_full_screen_16:I = 0x7f080be4
+
+.field public static final ic_full_screen_20:I = 0x7f080be5
+
+.field public static final ic_full_screen_24:I = 0x7f080be6
+
+.field public static final ic_hcaptcha_logo:I = 0x7f080be7
+
+.field public static final ic_history_12:I = 0x7f080be8
+
+.field public static final ic_history_16:I = 0x7f080be9
+
+.field public static final ic_history_20:I = 0x7f080bea
+
+.field public static final ic_history_24:I = 0x7f080beb
+
+.field public static final ic_home_bubble:I = 0x7f080bec
+
+.field public static final ic_home_rank_arrow_up:I = 0x7f080bed
+
+.field public static final ic_hook_12:I = 0x7f080bee
+
+.field public static final ic_hook_16:I = 0x7f080bef
+
+.field public static final ic_hook_20:I = 0x7f080bf0
+
+.field public static final ic_hook_24:I = 0x7f080bf1
+
+.field public static final ic_img_12:I = 0x7f080bf2
+
+.field public static final ic_img_16:I = 0x7f080bf3
+
+.field public static final ic_img_20:I = 0x7f080bf4
+
+.field public static final ic_img_24:I = 0x7f080bf5
+
+.field public static final ic_indicator_12:I = 0x7f080bf6
+
+.field public static final ic_indicator_16:I = 0x7f080bf7
+
+.field public static final ic_indicator_20:I = 0x7f080bf8
+
+.field public static final ic_indicator_24:I = 0x7f080bf9
+
+.field public static final ic_info_12:I = 0x7f080bfa
+
+.field public static final ic_info_16:I = 0x7f080bfb
+
+.field public static final ic_info_20:I = 0x7f080bfc
+
+.field public static final ic_info_24:I = 0x7f080bfd
+
+.field public static final ic_info_contain_12:I = 0x7f080bfe
+
+.field public static final ic_info_contain_16:I = 0x7f080bff
+
+.field public static final ic_info_contain_20:I = 0x7f080c00
+
+.field public static final ic_info_contain_24:I = 0x7f080c01
+
+.field public static final ic_info_filled_12:I = 0x7f080c02
+
+.field public static final ic_info_filled_16:I = 0x7f080c03
+
+.field public static final ic_info_filled_20:I = 0x7f080c04
+
+.field public static final ic_info_filled_24:I = 0x7f080c05
+
+.field public static final ic_invite_friends_12:I = 0x7f080c06
+
+.field public static final ic_invite_friends_16:I = 0x7f080c07
+
+.field public static final ic_invite_friends_20:I = 0x7f080c08
+
+.field public static final ic_invite_friends_24:I = 0x7f080c09
+
+.field public static final ic_invite_partner_mirrored:I = 0x7f080c0a
+
+.field public static final ic_k_line_12:I = 0x7f080c0b
+
+.field public static final ic_k_line_16:I = 0x7f080c0c
+
+.field public static final ic_k_line_20:I = 0x7f080c0d
+
+.field public static final ic_k_line_24:I = 0x7f080c0e
+
+.field public static final ic_keyboard_black_24dp:I = 0x7f080c0f
+
+.field public static final ic_kia_select_coin:I = 0x7f080c10
+
+.field public static final ic_kia_star:I = 0x7f080c11
+
+.field public static final ic_kucard_12:I = 0x7f080c12
+
+.field public static final ic_kucard_16:I = 0x7f080c13
+
+.field public static final ic_kucard_20:I = 0x7f080c14
+
+.field public static final ic_kucard_24:I = 0x7f080c15
+
+.field public static final ic_language_12:I = 0x7f080c16
+
+.field public static final ic_language_16:I = 0x7f080c17
+
+.field public static final ic_language_20:I = 0x7f080c18
+
+.field public static final ic_language_24:I = 0x7f080c19
+
+.field public static final ic_launcher_background:I = 0x7f080c1a
+
+.field public static final ic_launcher_foreground:I = 0x7f080c1b
+
+.field public static final ic_light_mode_12:I = 0x7f080c1c
+
+.field public static final ic_light_mode_16:I = 0x7f080c1d
+
+.field public static final ic_light_mode_20:I = 0x7f080c1e
+
+.field public static final ic_light_mode_24:I = 0x7f080c1f
+
+.field public static final ic_lighting_12:I = 0x7f080c20
+
+.field public static final ic_lighting_16:I = 0x7f080c21
+
+.field public static final ic_lighting_20:I = 0x7f080c22
+
+.field public static final ic_lighting_24:I = 0x7f080c23
+
+.field public static final ic_link_12:I = 0x7f080c24
+
+.field public static final ic_link_16:I = 0x7f080c25
+
+.field public static final ic_link_20:I = 0x7f080c26
+
+.field public static final ic_link_24:I = 0x7f080c27
+
+.field public static final ic_loading_12:I = 0x7f080c28
+
+.field public static final ic_loading_16:I = 0x7f080c29
+
+.field public static final ic_loading_20:I = 0x7f080c2a
+
+.field public static final ic_loading_24:I = 0x7f080c2b
+
+.field public static final ic_m3_chip_check:I = 0x7f080c2c
+
+.field public static final ic_m3_chip_checked_circle:I = 0x7f080c2d
+
+.field public static final ic_m3_chip_close:I = 0x7f080c2e
+
+.field public static final ic_margin_12:I = 0x7f080c2f
+
+.field public static final ic_margin_16:I = 0x7f080c30
+
+.field public static final ic_margin_20:I = 0x7f080c31
+
+.field public static final ic_margin_24:I = 0x7f080c32
+
+.field public static final ic_menu_12:I = 0x7f080c33
+
+.field public static final ic_menu_16:I = 0x7f080c34
+
+.field public static final ic_menu_20:I = 0x7f080c35
+
+.field public static final ic_menu_24:I = 0x7f080c36
+
+.field public static final ic_merchant_12:I = 0x7f080c37
+
+.field public static final ic_merchant_16:I = 0x7f080c38
+
+.field public static final ic_merchant_20:I = 0x7f080c39
+
+.field public static final ic_merchant_24:I = 0x7f080c3a
+
+.field public static final ic_more2_12:I = 0x7f080c3b
+
+.field public static final ic_more2_16:I = 0x7f080c3c
+
+.field public static final ic_more2_20:I = 0x7f080c3d
+
+.field public static final ic_more2_24:I = 0x7f080c3e
+
+.field public static final ic_more_12:I = 0x7f080c3f
+
+.field public static final ic_more_16:I = 0x7f080c40
+
+.field public static final ic_more_20:I = 0x7f080c41
+
+.field public static final ic_more_24:I = 0x7f080c42
+
+.field public static final ic_mtrl_arrow_circle:I = 0x7f080c43
+
+.field public static final ic_mtrl_checked_circle:I = 0x7f080c44
+
+.field public static final ic_mtrl_chip_checked_black:I = 0x7f080c45
+
+.field public static final ic_mtrl_chip_checked_circle:I = 0x7f080c46
+
+.field public static final ic_mtrl_chip_close_circle:I = 0x7f080c47
+
+.field public static final ic_notice_check_12:I = 0x7f080c48
+
+.field public static final ic_notice_check_16:I = 0x7f080c49
+
+.field public static final ic_notice_check_20:I = 0x7f080c4a
+
+.field public static final ic_notice_check_24:I = 0x7f080c4b
+
+.field public static final ic_notification_12:I = 0x7f080c4c
+
+.field public static final ic_notification_16:I = 0x7f080c4d
+
+.field public static final ic_notification_20:I = 0x7f080c4e
+
+.field public static final ic_notification_24:I = 0x7f080c4f
+
+.field public static final ic_notification_close_12:I = 0x7f080c50
+
+.field public static final ic_notification_close_16:I = 0x7f080c51
+
+.field public static final ic_notification_close_20:I = 0x7f080c52
+
+.field public static final ic_notification_close_24:I = 0x7f080c53
+
+.field public static final ic_novice_guide_12:I = 0x7f080c54
+
+.field public static final ic_novice_guide_16:I = 0x7f080c55
+
+.field public static final ic_novice_guide_20:I = 0x7f080c56
+
+.field public static final ic_novice_guide_24:I = 0x7f080c57
+
+.field public static final ic_pdf_12:I = 0x7f080c58
+
+.field public static final ic_pdf_16:I = 0x7f080c59
+
+.field public static final ic_pdf_20:I = 0x7f080c5a
+
+.field public static final ic_pdf_24:I = 0x7f080c5b
+
+.field public static final ic_plus_12:I = 0x7f080c5c
+
+.field public static final ic_plus_16:I = 0x7f080c5d
+
+.field public static final ic_plus_20:I = 0x7f080c5e
+
+.field public static final ic_plus_24:I = 0x7f080c5f
+
+.field public static final ic_post_ad_12:I = 0x7f080c60
+
+.field public static final ic_post_ad_16:I = 0x7f080c61
+
+.field public static final ic_post_ad_20:I = 0x7f080c62
+
+.field public static final ic_post_ad_24:I = 0x7f080c63
+
+.field public static final ic_poweroff_12:I = 0x7f080c64
+
+.field public static final ic_poweroff_16:I = 0x7f080c65
+
+.field public static final ic_poweroff_20:I = 0x7f080c66
+
+.field public static final ic_poweroff_24:I = 0x7f080c67
+
+.field public static final ic_price_fall_12:I = 0x7f080c68
+
+.field public static final ic_price_fall_16:I = 0x7f080c69
+
+.field public static final ic_price_fall_20:I = 0x7f080c6a
+
+.field public static final ic_price_fall_24:I = 0x7f080c6b
+
+.field public static final ic_price_rise_12:I = 0x7f080c6c
+
+.field public static final ic_price_rise_16:I = 0x7f080c6d
+
+.field public static final ic_price_rise_20:I = 0x7f080c6e
+
+.field public static final ic_price_rise_24:I = 0x7f080c6f
+
+.field public static final ic_profit_loss_analysis_arrow:I = 0x7f080c70
+
+.field public static final ic_qrcode_12:I = 0x7f080c71
+
+.field public static final ic_qrcode_16:I = 0x7f080c72
+
+.field public static final ic_qrcode_20:I = 0x7f080c73
+
+.field public static final ic_qrcode_24:I = 0x7f080c74
+
+.field public static final ic_question_12:I = 0x7f080c75
+
+.field public static final ic_question_16:I = 0x7f080c76
+
+.field public static final ic_question_20:I = 0x7f080c77
+
+.field public static final ic_question_24:I = 0x7f080c78
+
+.field public static final ic_question_primary:I = 0x7f080c79
+
+.field public static final ic_quote_edit:I = 0x7f080c7a
+
+.field public static final ic_radio_select_12:I = 0x7f080c7b
+
+.field public static final ic_radio_select_16:I = 0x7f080c7c
+
+.field public static final ic_radio_select_20:I = 0x7f080c7d
+
+.field public static final ic_radio_select_24:I = 0x7f080c7e
+
+.field public static final ic_radio_unselect_12:I = 0x7f080c7f
+
+.field public static final ic_radio_unselect_16:I = 0x7f080c80
+
+.field public static final ic_radio_unselect_20:I = 0x7f080c81
+
+.field public static final ic_radio_unselect_24:I = 0x7f080c82
+
+.field public static final ic_received_12:I = 0x7f080c83
+
+.field public static final ic_received_16:I = 0x7f080c84
+
+.field public static final ic_received_20:I = 0x7f080c85
+
+.field public static final ic_received_24:I = 0x7f080c86
+
+.field public static final ic_rectangle_buy:I = 0x7f080c87
+
+.field public static final ic_rectangle_sell:I = 0x7f080c88
+
+.field public static final ic_red_envelop_12:I = 0x7f080c89
+
+.field public static final ic_red_envelop_16:I = 0x7f080c8a
+
+.field public static final ic_red_envelop_20:I = 0x7f080c8b
+
+.field public static final ic_red_envelop_24:I = 0x7f080c8c
+
+.field public static final ic_redpackage_12:I = 0x7f080c8d
+
+.field public static final ic_redpackage_16:I = 0x7f080c8e
+
+.field public static final ic_redpackage_20:I = 0x7f080c8f
+
+.field public static final ic_redpackage_24:I = 0x7f080c90
+
+.field public static final ic_refresh_12:I = 0x7f080c91
+
+.field public static final ic_refresh_16:I = 0x7f080c92
+
+.field public static final ic_refresh_20:I = 0x7f080c93
+
+.field public static final ic_refresh_24:I = 0x7f080c94
+
+.field public static final ic_repay_12:I = 0x7f080c95
+
+.field public static final ic_repay_16:I = 0x7f080c96
+
+.field public static final ic_repay_20:I = 0x7f080c97
+
+.field public static final ic_repay_24:I = 0x7f080c98
+
+.field public static final ic_resume:I = 0x7f080c99
+
+.field public static final ic_rewards_hub_12:I = 0x7f080c9a
+
+.field public static final ic_rewards_hub_16:I = 0x7f080c9b
+
+.field public static final ic_rewards_hub_20:I = 0x7f080c9c
+
+.field public static final ic_rewards_hub_24:I = 0x7f080c9d
+
+.field public static final ic_scan_12:I = 0x7f080c9e
+
+.field public static final ic_scan_16:I = 0x7f080c9f
+
+.field public static final ic_scan_20:I = 0x7f080ca0
+
+.field public static final ic_scan_24:I = 0x7f080ca1
+
+.field public static final ic_search_12:I = 0x7f080ca2
+
+.field public static final ic_search_16:I = 0x7f080ca3
+
+.field public static final ic_search_20:I = 0x7f080ca4
+
+.field public static final ic_search_24:I = 0x7f080ca5
+
+.field public static final ic_search_black_24:I = 0x7f080ca6
+
+.field public static final ic_security_12:I = 0x7f080ca7
+
+.field public static final ic_security_16:I = 0x7f080ca8
+
+.field public static final ic_security_20:I = 0x7f080ca9
+
+.field public static final ic_security_24:I = 0x7f080caa
+
+.field public static final ic_security_green:I = 0x7f080cab
+
+.field public static final ic_security_red:I = 0x7f080cac
+
+.field public static final ic_security_warning_12:I = 0x7f080cad
+
+.field public static final ic_security_warning_16:I = 0x7f080cae
+
+.field public static final ic_security_warning_20:I = 0x7f080caf
+
+.field public static final ic_security_warning_24:I = 0x7f080cb0
+
+.field public static final ic_security_yellow:I = 0x7f080cb1
+
+.field public static final ic_select_mirrored:I = 0x7f080cb2
+
+.field public static final ic_sent_12:I = 0x7f080cb3
+
+.field public static final ic_sent_16:I = 0x7f080cb4
+
+.field public static final ic_sent_20:I = 0x7f080cb5
+
+.field public static final ic_sent_24:I = 0x7f080cb6
+
+.field public static final ic_setting_12:I = 0x7f080cb7
+
+.field public static final ic_setting_16:I = 0x7f080cb8
+
+.field public static final ic_setting_20:I = 0x7f080cb9
+
+.field public static final ic_setting_24:I = 0x7f080cba
+
+.field public static final ic_share_12:I = 0x7f080cbb
+
+.field public static final ic_share_16:I = 0x7f080cbc
+
+.field public static final ic_share_20:I = 0x7f080cbd
+
+.field public static final ic_share_24:I = 0x7f080cbe
+
+.field public static final ic_share_item_facebook:I = 0x7f080cbf
+
+.field public static final ic_share_item_line:I = 0x7f080cc0
+
+.field public static final ic_share_item_more:I = 0x7f080cc1
+
+.field public static final ic_share_item_telegram:I = 0x7f080cc2
+
+.field public static final ic_share_item_twitter:I = 0x7f080cc3
+
+.field public static final ic_share_mirrored:I = 0x7f080cc4
+
+.field public static final ic_snail_12:I = 0x7f080cc5
+
+.field public static final ic_snail_16:I = 0x7f080cc6
+
+.field public static final ic_snail_20:I = 0x7f080cc7
+
+.field public static final ic_snail_24:I = 0x7f080cc8
+
+.field public static final ic_sort_12:I = 0x7f080cc9
+
+.field public static final ic_sort_16:I = 0x7f080cca
+
+.field public static final ic_sort_20:I = 0x7f080ccb
+
+.field public static final ic_sort_24:I = 0x7f080ccc
+
+.field public static final ic_stick_12:I = 0x7f080ccd
+
+.field public static final ic_stick_16:I = 0x7f080cce
+
+.field public static final ic_stick_20:I = 0x7f080ccf
+
+.field public static final ic_stick_24:I = 0x7f080cd0
+
+.field public static final ic_stick_tag_mirrored:I = 0x7f080cd1
+
+.field public static final ic_sub_12:I = 0x7f080cd2
+
+.field public static final ic_sub_16:I = 0x7f080cd3
+
+.field public static final ic_sub_20:I = 0x7f080cd4
+
+.field public static final ic_sub_24:I = 0x7f080cd5
+
+.field public static final ic_sub_filled2_12:I = 0x7f080cd6
+
+.field public static final ic_sub_filled2_16:I = 0x7f080cd7
+
+.field public static final ic_sub_filled2_20:I = 0x7f080cd8
+
+.field public static final ic_sub_filled2_24:I = 0x7f080cd9
+
+.field public static final ic_sub_filled_12:I = 0x7f080cda
+
+.field public static final ic_sub_filled_16:I = 0x7f080cdb
+
+.field public static final ic_sub_filled_20:I = 0x7f080cdc
+
+.field public static final ic_sub_filled_24:I = 0x7f080cdd
+
+.field public static final ic_success_12:I = 0x7f080cde
+
+.field public static final ic_success_16:I = 0x7f080cdf
+
+.field public static final ic_success_20:I = 0x7f080ce0
+
+.field public static final ic_success_24:I = 0x7f080ce1
+
+.field public static final ic_success_filled_12:I = 0x7f080ce2
+
+.field public static final ic_success_filled_16:I = 0x7f080ce3
+
+.field public static final ic_success_filled_20:I = 0x7f080ce4
+
+.field public static final ic_success_filled_24:I = 0x7f080ce5
+
+.field public static final ic_support_12:I = 0x7f080ce6
+
+.field public static final ic_support_16:I = 0x7f080ce7
+
+.field public static final ic_support_20:I = 0x7f080ce8
+
+.field public static final ic_support_24:I = 0x7f080ce9
+
+.field public static final ic_toggle_sort_type:I = 0x7f080cea
+
+.field public static final ic_trade_add_12:I = 0x7f080ceb
+
+.field public static final ic_trade_add_16:I = 0x7f080cec
+
+.field public static final ic_trade_add_20:I = 0x7f080ced
+
+.field public static final ic_trade_add_24:I = 0x7f080cee
+
+.field public static final ic_trade_horizontal_12:I = 0x7f080cef
+
+.field public static final ic_trade_horizontal_16:I = 0x7f080cf0
+
+.field public static final ic_trade_horizontal_20:I = 0x7f080cf1
+
+.field public static final ic_trade_horizontal_24:I = 0x7f080cf2
+
+.field public static final ic_trade_kline_12:I = 0x7f080cf3
+
+.field public static final ic_trade_kline_16:I = 0x7f080cf4
+
+.field public static final ic_trade_kline_20:I = 0x7f080cf5
+
+.field public static final ic_trade_kline_24:I = 0x7f080cf6
+
+.field public static final ic_trade_more_12:I = 0x7f080cf7
+
+.field public static final ic_trade_more_16:I = 0x7f080cf8
+
+.field public static final ic_trade_more_20:I = 0x7f080cf9
+
+.field public static final ic_trade_more_24:I = 0x7f080cfa
+
+.field public static final ic_trade_rectangle_dark_green:I = 0x7f080cfb
+
+.field public static final ic_trade_rectangle_dark_red:I = 0x7f080cfc
+
+.field public static final ic_trade_rectangle_green:I = 0x7f080cfd
+
+.field public static final ic_trade_rectangle_red:I = 0x7f080cfe
+
+.field public static final ic_trade_switch_12:I = 0x7f080cff
+
+.field public static final ic_trade_switch_16:I = 0x7f080d00
+
+.field public static final ic_trade_switch_20:I = 0x7f080d01
+
+.field public static final ic_trade_switch_24:I = 0x7f080d02
+
+.field public static final ic_trade_vertical_12:I = 0x7f080d03
+
+.field public static final ic_trade_vertical_16:I = 0x7f080d04
+
+.field public static final ic_trade_vertical_20:I = 0x7f080d05
+
+.field public static final ic_trade_vertical_24:I = 0x7f080d06
+
+.field public static final ic_trading_bot_12:I = 0x7f080d07
+
+.field public static final ic_trading_bot_16:I = 0x7f080d08
+
+.field public static final ic_trading_bot_20:I = 0x7f080d09
+
+.field public static final ic_trading_bot_24:I = 0x7f080d0a
+
+.field public static final ic_trading_fee_level_12:I = 0x7f080d0b
+
+.field public static final ic_trading_fee_level_16:I = 0x7f080d0c
+
+.field public static final ic_trading_fee_level_20:I = 0x7f080d0d
+
+.field public static final ic_trading_fee_level_24:I = 0x7f080d0e
+
+.field public static final ic_transfer2_12:I = 0x7f080d0f
+
+.field public static final ic_transfer2_16:I = 0x7f080d10
+
+.field public static final ic_transfer2_20:I = 0x7f080d11
+
+.field public static final ic_transfer2_24:I = 0x7f080d12
+
+.field public static final ic_transfer_12:I = 0x7f080d13
+
+.field public static final ic_transfer_16:I = 0x7f080d14
+
+.field public static final ic_transfer_20:I = 0x7f080d15
+
+.field public static final ic_transfer_24:I = 0x7f080d16
+
+.field public static final ic_triangle_bottom_12:I = 0x7f080d17
+
+.field public static final ic_triangle_bottom_16:I = 0x7f080d18
+
+.field public static final ic_triangle_bottom_20:I = 0x7f080d19
+
+.field public static final ic_triangle_bottom_24:I = 0x7f080d1a
+
+.field public static final ic_triangle_left_16_rotate:I = 0x7f080d1b
+
+.field public static final ic_triangle_mirrored:I = 0x7f080d1c
+
+.field public static final ic_triangle_right_16_rotate:I = 0x7f080d1d
+
+.field public static final ic_triangle_top_12:I = 0x7f080d1e
+
+.field public static final ic_triangle_top_16:I = 0x7f080d1f
+
+.field public static final ic_triangle_top_20:I = 0x7f080d20
+
+.field public static final ic_triangle_top_24:I = 0x7f080d21
+
+.field public static final ic_tutorial_12:I = 0x7f080d22
+
+.field public static final ic_tutorial_16:I = 0x7f080d23
+
+.field public static final ic_tutorial_20:I = 0x7f080d24
+
+.field public static final ic_tutorial_24:I = 0x7f080d25
+
+.field public static final ic_unfav_40:I = 0x7f080d26
+
+.field public static final ic_unfav_white:I = 0x7f080d27
+
+.field public static final ic_unit_12:I = 0x7f080d28
+
+.field public static final ic_unit_16:I = 0x7f080d29
+
+.field public static final ic_unit_20:I = 0x7f080d2a
+
+.field public static final ic_unit_24:I = 0x7f080d2b
+
+.field public static final ic_warning_12:I = 0x7f080d2c
+
+.field public static final ic_warning_16:I = 0x7f080d2d
+
+.field public static final ic_warning_20:I = 0x7f080d2e
+
+.field public static final ic_warning_24:I = 0x7f080d2f
+
+.field public static final ic_withdraw_12:I = 0x7f080d30
+
+.field public static final ic_withdraw_16:I = 0x7f080d31
+
+.field public static final ic_withdraw_20:I = 0x7f080d32
+
+.field public static final ic_withdraw_24:I = 0x7f080d33
+
+.field public static final icon_arrow_right_mirrored:I = 0x7f080d34
+
+.field public static final icon_back_mirrored:I = 0x7f080d35
+
+.field public static final icon_circle_api:I = 0x7f080d36
+
+.field public static final icon_circle_help_center:I = 0x7f080d37
+
+.field public static final icon_circle_reward_hub:I = 0x7f080d38
+
+.field public static final icon_circle_setting:I = 0x7f080d39
+
+.field public static final icon_circle_survey:I = 0x7f080d3a
+
+.field public static final icon_circle_vip_fee:I = 0x7f080d3b
+
+.field public static final icon_floating_setingdialog_triangle_down:I = 0x7f080d3c
+
+.field public static final icon_floating_setingdialog_triangle_up:I = 0x7f080d3d
+
+.field public static final icon_home_fast_in_mirrored:I = 0x7f080d3e
+
+.field public static final icon_liveness_fail:I = 0x7f080d3f
+
+.field public static final icon_liveness_success:I = 0x7f080d40
+
+.field public static final icon_menu_assets:I = 0x7f080d41
+
+.field public static final icon_menu_future:I = 0x7f080d42
+
+.field public static final icon_menu_home:I = 0x7f080d43
+
+.field public static final icon_menu_home_top:I = 0x7f080d44
+
+.field public static final icon_menu_market:I = 0x7f080d45
+
+.field public static final icon_menu_trade:I = 0x7f080d46
+
+.field public static final icon_pan_dialog_logo:I = 0x7f080d47
+
+.field public static final icon_trade_menu_alert_white:I = 0x7f080d48
+
+.field public static final icon_unstick_white:I = 0x7f080d49
+
+.field public static final internal_icon_24_arrow_back:I = 0x7f080d4a
+
+.field public static final internal_icon_24_search:I = 0x7f080d4b
+
+.field public static final internal_revolut_pay_back_arrow_icon:I = 0x7f080d4c
+
+.field public static final internal_revolut_pay_box_background_corner_radius_0:I = 0x7f080d4d
+
+.field public static final internal_revolut_pay_box_background_corner_radius_2:I = 0x7f080d4e
+
+.field public static final internal_revolut_pay_box_background_corner_radius_6:I = 0x7f080d4f
+
+.field public static final internal_revolut_pay_box_background_corner_radius_8:I = 0x7f080d50
+
+.field public static final internal_revolut_pay_button_background_corner_radius_0:I = 0x7f080d51
+
+.field public static final internal_revolut_pay_button_background_corner_radius_12:I = 0x7f080d52
+
+.field public static final internal_revolut_pay_button_background_corner_radius_32:I = 0x7f080d53
+
+.field public static final internal_revolut_pay_button_background_corner_radius_8:I = 0x7f080d54
+
+.field public static final internal_revolut_pay_button_text_drawable:I = 0x7f080d55
+
+.field public static final internal_revolut_pay_cursor:I = 0x7f080d56
+
+.field public static final internal_revolut_pay_exclamation_mark:I = 0x7f080d57
+
+.field public static final internal_revolut_pay_input_background:I = 0x7f080d58
+
+.field public static final internal_revolut_pay_input_background_dark:I = 0x7f080d59
+
+.field public static final internal_revolut_pay_input_background_error:I = 0x7f080d5a
+
+.field public static final internal_revolut_pay_input_background_error_dark:I = 0x7f080d5b
+
+.field public static final internal_revolut_pay_promo_banner_image:I = 0x7f080d5c
+
+.field public static final internal_revolut_pay_promo_banner_success_icon:I = 0x7f080d5d
+
+.field public static final internal_revolut_pay_revolut_icon:I = 0x7f080d5e
+
+.field public static final internal_revolut_pay_step_list_background:I = 0x7f080d5f
+
+.field public static final internal_revolut_pay_upsell_input_background:I = 0x7f080d60
+
+.field public static final iqa_back:I = 0x7f080d61
+
+.field public static final iqa_bg_continue:I = 0x7f080d62
+
+.field public static final iqa_bg_retake:I = 0x7f080d63
+
+.field public static final iqa_bg_tips:I = 0x7f080d64
+
+.field public static final iqa_countdown_bg:I = 0x7f080d65
+
+.field public static final iqa_icon_info_normal:I = 0x7f080d66
+
+.field public static final iqa_land_black_tips:I = 0x7f080d67
+
+.field public static final iqa_land_confirm:I = 0x7f080d68
+
+.field public static final iqa_land_green_tips:I = 0x7f080d69
+
+.field public static final iqa_land_red_tips:I = 0x7f080d6a
+
+.field public static final iqa_land_retake:I = 0x7f080d6b
+
+.field public static final iqa_light_off:I = 0x7f080d6c
+
+.field public static final iqa_light_on:I = 0x7f080d6d
+
+.field public static final iqa_scan_processing:I = 0x7f080d6e
+
+.field public static final iqa_scan_successfully:I = 0x7f080d6f
+
+.field public static final iqa_scan_warning:I = 0x7f080d70
+
+.field public static final iqa_take_photo:I = 0x7f080d71
+
+.field public static final iqa_take_photo_tip:I = 0x7f080d72
+
+.field public static final iqa_timeout_tips_bg:I = 0x7f080d73
+
+.field public static final iqa_transform_camera:I = 0x7f080d74
+
+.field public static final iqa_transform_camera_pressed:I = 0x7f080d75
+
+.field public static final item_list_drawable_commit:I = 0x7f080d76
+
+.field public static final item_list_shape_lever_border_green:I = 0x7f080d77
+
+.field public static final jpush_notification_icon:I = 0x7f080d78
+
+.field public static final jumio_ic_checkmark:I = 0x7f080d79
+
+.field public static final jumio_ic_checkmark_circle:I = 0x7f080d7a
+
+.field public static final jumio_ic_checkmark_small:I = 0x7f080d7b
+
+.field public static final jumio_ic_powered_by_jumio:I = 0x7f080d7c
+
+.field public static final jumio_ic_selfie_done:I = 0x7f080d7d
+
+.field public static final jumio_liveness_overlay_bg:I = 0x7f080d7e
+
+.field public static final jumio_liveness_overlay_layer_list:I = 0x7f080d7f
+
+.field public static final jumio_liveness_overlay_main:I = 0x7f080d80
+
+.field public static final jumio_liveness_overlay_main_animated:I = 0x7f080d81
+
+.field public static final jumio_liveness_overlay_outer:I = 0x7f080d82
+
+.field public static final kakalib_scan_ray:I = 0x7f080d83
+
+.field public static final kc_loading:I = 0x7f080d84
+
+.field public static final kc_mode_radio_tab_bg_selector:I = 0x7f080d85
+
+.field public static final kckyckit_flip_back:I = 0x7f080d86
+
+.field public static final kckyckit_flip_front:I = 0x7f080d87
+
+.field public static final kline_bg_card_bottom_16r:I = 0x7f080d88
+
+.field public static final kline_selector_filter_item:I = 0x7f080d89
+
+.field public static final kline_selector_tab_bg:I = 0x7f080d8a
+
+.field public static final kline_status_icon_20:I = 0x7f080d8b
+
+.field public static final kucoin_bg_737e8d_dot:I = 0x7f080d8c
+
+.field public static final kucoin_bg_emphasis8_4r:I = 0x7f080d8d
+
+.field public static final kucoin_bg_indicator_nft:I = 0x7f080d8e
+
+.field public static final kucoin_bg_red_dot:I = 0x7f080d8f
+
+.field public static final kucoin_bg_red_msg:I = 0x7f080d90
+
+.field public static final kucoin_c_overlay_2r:I = 0x7f080d91
+
+.field public static final kucoin_c_overlay_4r:I = 0x7f080d92
+
+.field public static final kucoin_icon_choose_label_mirrored:I = 0x7f080d93
+
+.field public static final kucoin_icon_coin_path_mirrored:I = 0x7f080d94
+
+.field public static final kucoin_icon_home_search_mirrored:I = 0x7f080d95
+
+.field public static final kucoin_icon_search_mirrored:I = 0x7f080d96
+
+.field public static final kucoin_icon_share_mirrored:I = 0x7f080d97
+
+.field public static final kucoin_icon_triangle_right_mirrored:I = 0x7f080d98
+
+.field public static final kucoin_oval_emphasis24_24r:I = 0x7f080d99
+
+.field public static final kucoin_oval_primary_24r:I = 0x7f080d9a
+
+.field public static final kucoin_selector_home_indicator_new:I = 0x7f080d9b
+
+.field public static final kucoin_selector_hot_trade_indicator:I = 0x7f080d9c
+
+.field public static final kucoin_selector_nft_indicator:I = 0x7f080d9d
+
+.field public static final kucoin_selector_primary_e1e3e4:I = 0x7f080d9e
+
+.field public static final kucoin_selector_primary_emphasis4:I = 0x7f080d9f
+
+.field public static final kucoin_selector_switch_theme:I = 0x7f080da0
+
+.field public static final kucoin_shape_lever_border:I = 0x7f080da1
+
+.field public static final kucoin_shape_secondary8_2r:I = 0x7f080da2
+
+.field public static final launcher_small_logo:I = 0x7f080da3
+
+.field public static final lite_icon_default:I = 0x7f080da4
+
+.field public static final lite_icon_default_selected:I = 0x7f080da5
+
+.field public static final lite_icon_earn:I = 0x7f080da6
+
+.field public static final lite_icon_earn_selected:I = 0x7f080da7
+
+.field public static final lite_icon_home:I = 0x7f080da8
+
+.field public static final lite_icon_home_selected:I = 0x7f080da9
+
+.field public static final lite_icon_portfolio:I = 0x7f080daa
+
+.field public static final lite_icon_portfolio_selected:I = 0x7f080dab
+
+.field public static final lite_icon_scroll:I = 0x7f080dac
+
+.field public static final lite_icon_square:I = 0x7f080dad
+
+.field public static final lite_icon_square_selected:I = 0x7f080dae
+
+.field public static final lite_icon_trade:I = 0x7f080daf
+
+.field public static final lite_icon_trade_five_items:I = 0x7f080db0
+
+.field public static final lite_icon_trade_five_items_selected:I = 0x7f080db1
+
+.field public static final lite_icon_trade_selected:I = 0x7f080db2
+
+.field public static final lite_tab_five_items_bottom_bg:I = 0x7f080db3
+
+.field public static final live_barrage_delete_disable:I = 0x7f080db4
+
+.field public static final live_barrage_delete_enable:I = 0x7f080db5
+
+.field public static final live_barrage_emoji_0:I = 0x7f080db6
+
+.field public static final live_barrage_emoji_1:I = 0x7f080db7
+
+.field public static final live_barrage_emoji_10:I = 0x7f080db8
+
+.field public static final live_barrage_emoji_11:I = 0x7f080db9
+
+.field public static final live_barrage_emoji_12:I = 0x7f080dba
+
+.field public static final live_barrage_emoji_13:I = 0x7f080dbb
+
+.field public static final live_barrage_emoji_14:I = 0x7f080dbc
+
+.field public static final live_barrage_emoji_15:I = 0x7f080dbd
+
+.field public static final live_barrage_emoji_16:I = 0x7f080dbe
+
+.field public static final live_barrage_emoji_17:I = 0x7f080dbf
+
+.field public static final live_barrage_emoji_18:I = 0x7f080dc0
+
+.field public static final live_barrage_emoji_19:I = 0x7f080dc1
+
+.field public static final live_barrage_emoji_2:I = 0x7f080dc2
+
+.field public static final live_barrage_emoji_20:I = 0x7f080dc3
+
+.field public static final live_barrage_emoji_21:I = 0x7f080dc4
+
+.field public static final live_barrage_emoji_22:I = 0x7f080dc5
+
+.field public static final live_barrage_emoji_23:I = 0x7f080dc6
+
+.field public static final live_barrage_emoji_24:I = 0x7f080dc7
+
+.field public static final live_barrage_emoji_25:I = 0x7f080dc8
+
+.field public static final live_barrage_emoji_26:I = 0x7f080dc9
+
+.field public static final live_barrage_emoji_27:I = 0x7f080dca
+
+.field public static final live_barrage_emoji_28:I = 0x7f080dcb
+
+.field public static final live_barrage_emoji_29:I = 0x7f080dcc
+
+.field public static final live_barrage_emoji_3:I = 0x7f080dcd
+
+.field public static final live_barrage_emoji_30:I = 0x7f080dce
+
+.field public static final live_barrage_emoji_31:I = 0x7f080dcf
+
+.field public static final live_barrage_emoji_32:I = 0x7f080dd0
+
+.field public static final live_barrage_emoji_33:I = 0x7f080dd1
+
+.field public static final live_barrage_emoji_34:I = 0x7f080dd2
+
+.field public static final live_barrage_emoji_35:I = 0x7f080dd3
+
+.field public static final live_barrage_emoji_36:I = 0x7f080dd4
+
+.field public static final live_barrage_emoji_37:I = 0x7f080dd5
+
+.field public static final live_barrage_emoji_38:I = 0x7f080dd6
+
+.field public static final live_barrage_emoji_39:I = 0x7f080dd7
+
+.field public static final live_barrage_emoji_4:I = 0x7f080dd8
+
+.field public static final live_barrage_emoji_40:I = 0x7f080dd9
+
+.field public static final live_barrage_emoji_41:I = 0x7f080dda
+
+.field public static final live_barrage_emoji_42:I = 0x7f080ddb
+
+.field public static final live_barrage_emoji_43:I = 0x7f080ddc
+
+.field public static final live_barrage_emoji_44:I = 0x7f080ddd
+
+.field public static final live_barrage_emoji_45:I = 0x7f080dde
+
+.field public static final live_barrage_emoji_46:I = 0x7f080ddf
+
+.field public static final live_barrage_emoji_47:I = 0x7f080de0
+
+.field public static final live_barrage_emoji_48:I = 0x7f080de1
+
+.field public static final live_barrage_emoji_49:I = 0x7f080de2
+
+.field public static final live_barrage_emoji_5:I = 0x7f080de3
+
+.field public static final live_barrage_emoji_50:I = 0x7f080de4
+
+.field public static final live_barrage_emoji_51:I = 0x7f080de5
+
+.field public static final live_barrage_emoji_52:I = 0x7f080de6
+
+.field public static final live_barrage_emoji_53:I = 0x7f080de7
+
+.field public static final live_barrage_emoji_54:I = 0x7f080de8
+
+.field public static final live_barrage_emoji_55:I = 0x7f080de9
+
+.field public static final live_barrage_emoji_56:I = 0x7f080dea
+
+.field public static final live_barrage_emoji_57:I = 0x7f080deb
+
+.field public static final live_barrage_emoji_58:I = 0x7f080dec
+
+.field public static final live_barrage_emoji_59:I = 0x7f080ded
+
+.field public static final live_barrage_emoji_6:I = 0x7f080dee
+
+.field public static final live_barrage_emoji_60:I = 0x7f080def
+
+.field public static final live_barrage_emoji_61:I = 0x7f080df0
+
+.field public static final live_barrage_emoji_7:I = 0x7f080df1
+
+.field public static final live_barrage_emoji_8:I = 0x7f080df2
+
+.field public static final live_barrage_emoji_9:I = 0x7f080df3
+
+.field public static final live_barrage_ic_emoticons:I = 0x7f080df4
+
+.field public static final live_barrage_softkeyboard:I = 0x7f080df5
+
+.field public static final live_ic2_common_warning:I = 0x7f080df6
+
+.field public static final live_kc_bg_alert_dialog:I = 0x7f080df7
+
+.field public static final live_kc_bg_cancel_button:I = 0x7f080df8
+
+.field public static final live_kc_bg_confirm_button:I = 0x7f080df9
+
+.field public static final live_kc_bg_settings_panel_item_icon:I = 0x7f080dfa
+
+.field public static final live_kc_bg_web3_dialog:I = 0x7f080dfb
+
+.field public static final live_kc_bg_web3_display_row:I = 0x7f080dfc
+
+.field public static final live_kc_bg_web3_preview_card_clip:I = 0x7f080dfd
+
+.field public static final live_kc_ic_close_card:I = 0x7f080dfe
+
+.field public static final live_kc_ic_copy_trading:I = 0x7f080dff
+
+.field public static final live_kc_ic_fire:I = 0x7f080e00
+
+.field public static final live_kc_ic_web3_dialog_close:I = 0x7f080e01
+
+.field public static final live_selector_small_switch_button_thumb:I = 0x7f080e02
+
+.field public static final live_selector_small_switch_button_track:I = 0x7f080e03
+
+.field public static final live_shape_bg_audience_preview:I = 0x7f080e04
+
+.field public static final live_shape_bg_circle_button:I = 0x7f080e05
+
+.field public static final live_shape_bg_people_number:I = 0x7f080e06
+
+.field public static final live_shape_bg_risk_banner:I = 0x7f080e07
+
+.field public static final live_shape_bg_trade_button:I = 0x7f080e08
+
+.field public static final live_shape_bg_trade_card:I = 0x7f080e09
+
+.field public static final live_shape_bg_video_view_mask:I = 0x7f080e0a
+
+.field public static final livekit_anchor_apply_link_audience_background:I = 0x7f080e0b
+
+.field public static final livekit_anchor_apply_link_audience_head_background:I = 0x7f080e0c
+
+.field public static final livekit_anchor_audio_effect_background:I = 0x7f080e0d
+
+.field public static final livekit_anchor_cover_text_bg:I = 0x7f080e0e
+
+.field public static final livekit_anchor_icon_end_stream:I = 0x7f080e0f
+
+.field public static final livekit_anchor_live_info:I = 0x7f080e10
+
+.field public static final livekit_anchor_prepare_bg_video_settings:I = 0x7f080e11
+
+.field public static final livekit_audience_applying_link_mic:I = 0x7f080e12
+
+.field public static final livekit_audience_linking_mic:I = 0x7f080e13
+
+.field public static final livekit_audience_list_panel_level_background:I = 0x7f080e14
+
+.field public static final livekit_audience_video_quality_setting:I = 0x7f080e15
+
+.field public static final livekit_audio_input:I = 0x7f080e16
+
+.field public static final livekit_barrage_bg_anchor_flag:I = 0x7f080e17
+
+.field public static final livekit_barrage_bg_msg_item:I = 0x7f080e18
+
+.field public static final livekit_barrage_bg_select_item:I = 0x7f080e19
+
+.field public static final livekit_barrage_btn_background:I = 0x7f080e1a
+
+.field public static final livekit_barrage_btn_send:I = 0x7f080e1b
+
+.field public static final livekit_barrage_button_bg:I = 0x7f080e1c
+
+.field public static final livekit_barrage_img_emoji_delete:I = 0x7f080e1d
+
+.field public static final livekit_battle_clock:I = 0x7f080e1e
+
+.field public static final livekit_battle_ranking_1:I = 0x7f080e1f
+
+.field public static final livekit_battle_ranking_2:I = 0x7f080e20
+
+.field public static final livekit_battle_ranking_3:I = 0x7f080e21
+
+.field public static final livekit_battle_ranking_4:I = 0x7f080e22
+
+.field public static final livekit_battle_ranking_5:I = 0x7f080e23
+
+.field public static final livekit_battle_ranking_6:I = 0x7f080e24
+
+.field public static final livekit_battle_ranking_7:I = 0x7f080e25
+
+.field public static final livekit_battle_ranking_8:I = 0x7f080e26
+
+.field public static final livekit_battle_ranking_9:I = 0x7f080e27
+
+.field public static final livekit_battle_result_defeat:I = 0x7f080e28
+
+.field public static final livekit_battle_result_draw:I = 0x7f080e29
+
+.field public static final livekit_battle_result_victory:I = 0x7f080e2a
+
+.field public static final livekit_battle_score_divider:I = 0x7f080e2b
+
+.field public static final livekit_battle_start:I = 0x7f080e2c
+
+.field public static final livekit_battle_time_back:I = 0x7f080e2d
+
+.field public static final livekit_bearish_thin:I = 0x7f080e2e
+
+.field public static final livekit_bg_badge_view:I = 0x7f080e2f
+
+.field public static final livekit_bg_connection_toast:I = 0x7f080e30
+
+.field public static final livekit_bg_empty_seat:I = 0x7f080e31
+
+.field public static final livekit_bg_gift_give:I = 0x7f080e32
+
+.field public static final livekit_bg_gift_show:I = 0x7f080e33
+
+.field public static final livekit_bg_restore_clean:I = 0x7f080e34
+
+.field public static final livekit_bg_seat_index:I = 0x7f080e35
+
+.field public static final livekit_bg_start_live_stream:I = 0x7f080e36
+
+.field public static final livekit_bg_video_settings_item:I = 0x7f080e37
+
+.field public static final livekit_bg_video_view:I = 0x7f080e38
+
+.field public static final livekit_btn_grey_edge_bg:I = 0x7f080e39
+
+.field public static final livekit_bullish_thin:I = 0x7f080e3a
+
+.field public static final livekit_button_background:I = 0x7f080e3b
+
+.field public static final livekit_button_blue_bg:I = 0x7f080e3c
+
+.field public static final livekit_button_cancel_bg:I = 0x7f080e3d
+
+.field public static final livekit_co_guest_empty_widgets_bg:I = 0x7f080e3e
+
+.field public static final livekit_connection_exit:I = 0x7f080e3f
+
+.field public static final livekit_connection_toast_icon:I = 0x7f080e40
+
+.field public static final livekit_cover_selected_background:I = 0x7f080e41
+
+.field public static final livekit_dialog_background_light:I = 0x7f080e42
+
+.field public static final livekit_down_arrow:I = 0x7f080e43
+
+.field public static final livekit_ellipsis:I = 0x7f080e44
+
+.field public static final livekit_empty_add:I = 0x7f080e45
+
+.field public static final livekit_empty_seat:I = 0x7f080e46
+
+.field public static final livekit_float_window:I = 0x7f080e47
+
+.field public static final livekit_follow_button:I = 0x7f080e48
+
+.field public static final livekit_followed_button_check:I = 0x7f080e49
+
+.field public static final livekit_function_battle:I = 0x7f080e4a
+
+.field public static final livekit_function_battle_disable:I = 0x7f080e4b
+
+.field public static final livekit_function_battle_exit:I = 0x7f080e4c
+
+.field public static final livekit_function_connection:I = 0x7f080e4d
+
+.field public static final livekit_function_dashboard:I = 0x7f080e4e
+
+.field public static final livekit_function_link_1:I = 0x7f080e4f
+
+.field public static final livekit_function_link_2:I = 0x7f080e50
+
+.field public static final livekit_function_link_3:I = 0x7f080e51
+
+.field public static final livekit_function_link_default:I = 0x7f080e52
+
+.field public static final livekit_function_link_request:I = 0x7f080e53
+
+.field public static final livekit_function_linked:I = 0x7f080e54
+
+.field public static final livekit_function_more:I = 0x7f080e55
+
+.field public static final livekit_function_settings:I = 0x7f080e56
+
+.field public static final livekit_function_voice_room_pk:I = 0x7f080e57
+
+.field public static final livekit_gift_bg_bottom_dialog:I = 0x7f080e58
+
+.field public static final livekit_gift_heart0:I = 0x7f080e59
+
+.field public static final livekit_gift_heart1:I = 0x7f080e5a
+
+.field public static final livekit_gift_heart2:I = 0x7f080e5b
+
+.field public static final livekit_gift_heart3:I = 0x7f080e5c
+
+.field public static final livekit_gift_heart4:I = 0x7f080e5d
+
+.field public static final livekit_gift_heart5:I = 0x7f080e5e
+
+.field public static final livekit_gift_heart6:I = 0x7f080e5f
+
+.field public static final livekit_gift_heart7:I = 0x7f080e60
+
+.field public static final livekit_gift_heart8:I = 0x7f080e61
+
+.field public static final livekit_gift_ic_avatar:I = 0x7f080e62
+
+.field public static final livekit_gift_ic_like:I = 0x7f080e63
+
+.field public static final livekit_gift_ic_like_png:I = 0x7f080e64
+
+.field public static final livekit_gift_icon_normal_bg:I = 0x7f080e65
+
+.field public static final livekit_gift_icon_selected_bg:I = 0x7f080e66
+
+.field public static final livekit_git_barrage_bg_msg_item:I = 0x7f080e67
+
+.field public static final livekit_ic_add:I = 0x7f080e68
+
+.field public static final livekit_ic_audience_exit:I = 0x7f080e69
+
+.field public static final livekit_ic_avatar:I = 0x7f080e6a
+
+.field public static final livekit_ic_back:I = 0x7f080e6b
+
+.field public static final livekit_ic_back_white:I = 0x7f080e6c
+
+.field public static final livekit_ic_bg_music:I = 0x7f080e6d
+
+.field public static final livekit_ic_call_end:I = 0x7f080e6e
+
+.field public static final livekit_ic_checkmark:I = 0x7f080e6f
+
+.field public static final livekit_ic_disable_audio:I = 0x7f080e70
+
+.field public static final livekit_ic_disable_message:I = 0x7f080e71
+
+.field public static final livekit_ic_disable_video:I = 0x7f080e72
+
+.field public static final livekit_ic_double_item_type:I = 0x7f080e73
+
+.field public static final livekit_ic_enable_message:I = 0x7f080e74
+
+.field public static final livekit_ic_flip_camera:I = 0x7f080e75
+
+.field public static final livekit_ic_gift:I = 0x7f080e76
+
+.field public static final livekit_ic_hand_up:I = 0x7f080e77
+
+.field public static final livekit_ic_invite_user:I = 0x7f080e78
+
+.field public static final livekit_ic_kick_out_room:I = 0x7f080e79
+
+.field public static final livekit_ic_kick_out_seat:I = 0x7f080e7a
+
+.field public static final livekit_ic_link_mic:I = 0x7f080e7b
+
+.field public static final livekit_ic_lock:I = 0x7f080e7c
+
+.field public static final livekit_ic_mic_closed:I = 0x7f080e7d
+
+.field public static final livekit_ic_mic_mute:I = 0x7f080e7e
+
+.field public static final livekit_ic_mic_opened:I = 0x7f080e7f
+
+.field public static final livekit_ic_music:I = 0x7f080e80
+
+.field public static final livekit_ic_mute_audio:I = 0x7f080e81
+
+.field public static final livekit_ic_mute_microphone:I = 0x7f080e82
+
+.field public static final livekit_ic_report_room:I = 0x7f080e83
+
+.field public static final livekit_ic_room_owner:I = 0x7f080e84
+
+.field public static final livekit_ic_single_item_type:I = 0x7f080e85
+
+.field public static final livekit_ic_start_video:I = 0x7f080e86
+
+.field public static final livekit_ic_stop_video:I = 0x7f080e87
+
+.field public static final livekit_ic_switch_landscape_button:I = 0x7f080e88
+
+.field public static final livekit_ic_switch_portrait_button:I = 0x7f080e89
+
+.field public static final livekit_ic_unlock:I = 0x7f080e8a
+
+.field public static final livekit_ic_unmute_audio:I = 0x7f080e8b
+
+.field public static final livekit_ic_unmute_microphone:I = 0x7f080e8c
+
+.field public static final livekit_image_item_selector:I = 0x7f080e8d
+
+.field public static final livekit_karaoke_mode_ktv:I = 0x7f080e8e
+
+.field public static final livekit_karaoke_mode_voice:I = 0x7f080e8f
+
+.field public static final livekit_leave_seat_icon:I = 0x7f080e90
+
+.field public static final livekit_line_divider:I = 0x7f080e91
+
+.field public static final livekit_link_audio:I = 0x7f080e92
+
+.field public static final livekit_link_mic_accept_background:I = 0x7f080e93
+
+.field public static final livekit_link_mic_hang_up_background:I = 0x7f080e94
+
+.field public static final livekit_link_mic_reject_background:I = 0x7f080e95
+
+.field public static final livekit_link_video:I = 0x7f080e96
+
+.field public static final livekit_link_video_settings:I = 0x7f080e97
+
+.field public static final livekit_live_end_data_bg:I = 0x7f080e98
+
+.field public static final livekit_live_info_button_follow:I = 0x7f080e99
+
+.field public static final livekit_live_info_button_unfollow:I = 0x7f080e9a
+
+.field public static final livekit_live_info_detail_button_unfollow:I = 0x7f080e9b
+
+.field public static final livekit_live_preview_function_item_beauty:I = 0x7f080e9c
+
+.field public static final livekit_live_preview_function_item_flip:I = 0x7f080e9d
+
+.field public static final livekit_live_preview_function_item_music:I = 0x7f080e9e
+
+.field public static final livekit_live_preview_function_item_settings:I = 0x7f080e9f
+
+.field public static final livekit_live_room_living_bottom_mask:I = 0x7f080ea0
+
+.field public static final livekit_live_room_living_top_mask:I = 0x7f080ea1
+
+.field public static final livekit_live_room_preview_mask:I = 0x7f080ea2
+
+.field public static final livekit_live_stream_category:I = 0x7f080ea3
+
+.field public static final livekit_live_stream_default_cover:I = 0x7f080ea4
+
+.field public static final livekit_live_stream_edit_icon:I = 0x7f080ea5
+
+.field public static final livekit_live_stream_privacy_mode:I = 0x7f080ea6
+
+.field public static final livekit_local_mute_image_multi:I = 0x7f080ea7
+
+.field public static final livekit_mic_icon_bg:I = 0x7f080ea8
+
+.field public static final livekit_microphone_closed:I = 0x7f080ea9
+
+.field public static final livekit_microphone_opened:I = 0x7f080eaa
+
+.field public static final livekit_music_pause:I = 0x7f080eab
+
+.field public static final livekit_music_start:I = 0x7f080eac
+
+.field public static final livekit_music_stop:I = 0x7f080ead
+
+.field public static final livekit_open_microphone:I = 0x7f080eae
+
+.field public static final livekit_personal_background:I = 0x7f080eaf
+
+.field public static final livekit_pip_icon:I = 0x7f080eb0
+
+.field public static final livekit_popup_dialog_bg:I = 0x7f080eb1
+
+.field public static final livekit_preview_function_item_bg_image:I = 0x7f080eb2
+
+.field public static final livekit_preview_function_item_layout:I = 0x7f080eb3
+
+.field public static final livekit_preview_function_item_music:I = 0x7f080eb4
+
+.field public static final livekit_preview_function_item_settings:I = 0x7f080eb5
+
+.field public static final livekit_question_link:I = 0x7f080eb6
+
+.field public static final livekit_restore_clean_icon:I = 0x7f080eb7
+
+.field public static final livekit_return_arrow:I = 0x7f080eb8
+
+.field public static final livekit_return_arrow_icon:I = 0x7f080eb9
+
+.field public static final livekit_room_info_follow_bg:I = 0x7f080eba
+
+.field public static final livekit_round_button_background:I = 0x7f080ebb
+
+.field public static final livekit_seekbar_process_drawable:I = 0x7f080ebc
+
+.field public static final livekit_seekbar_process_thumb:I = 0x7f080ebd
+
+.field public static final livekit_seekbar_progress:I = 0x7f080ebe
+
+.field public static final livekit_seekbar_thumb:I = 0x7f080ebf
+
+.field public static final livekit_select_none:I = 0x7f080ec0
+
+.field public static final livekit_selector_item_invite_user:I = 0x7f080ec1
+
+.field public static final livekit_setting_bg_image:I = 0x7f080ec2
+
+.field public static final livekit_settings_audio_effect:I = 0x7f080ec3
+
+.field public static final livekit_settings_card_background:I = 0x7f080ec4
+
+.field public static final livekit_settings_dashboard:I = 0x7f080ec5
+
+.field public static final livekit_settings_item_beauty:I = 0x7f080ec6
+
+.field public static final livekit_settings_item_flip:I = 0x7f080ec7
+
+.field public static final livekit_settings_item_mirror:I = 0x7f080ec8
+
+.field public static final livekit_settings_item_not_select_background:I = 0x7f080ec9
+
+.field public static final livekit_settings_item_select_background:I = 0x7f080eca
+
+.field public static final livekit_settings_item_video_params:I = 0x7f080ecb
+
+.field public static final livekit_small_arrow:I = 0x7f080ecc
+
+.field public static final livekit_stream_dashboard_dialog_bg:I = 0x7f080ecd
+
+.field public static final livekit_stream_dashboard_item_bg:I = 0x7f080ece
+
+.field public static final livekit_user_info_button_follow:I = 0x7f080ecf
+
+.field public static final livekit_user_info_detail_button_unfollow:I = 0x7f080ed0
+
+.field public static final livekit_user_manager_follow_bg:I = 0x7f080ed1
+
+.field public static final livekit_user_manager_unfollow_bg:I = 0x7f080ed2
+
+.field public static final livekit_user_name_background:I = 0x7f080ed3
+
+.field public static final livekit_video_closed:I = 0x7f080ed4
+
+.field public static final livekit_video_opened:I = 0x7f080ed5
+
+.field public static final livekit_video_settings_beauty:I = 0x7f080ed6
+
+.field public static final livekit_video_settings_flip:I = 0x7f080ed7
+
+.field public static final livekit_video_view_mask:I = 0x7f080ed8
+
+.field public static final livekit_voice_room_bg_empty_seat:I = 0x7f080ed9
+
+.field public static final livekit_voiceroom_available_seat_view:I = 0x7f080eda
+
+.field public static final livekit_voiceroom_remote_seat_placeholder_view:I = 0x7f080edb
+
+.field public static final livekit_voiceroom_start_pk_button_bg:I = 0x7f080edc
+
+.field public static final livelist_default_avatar:I = 0x7f080edd
+
+.field public static final livelist_default_cover:I = 0x7f080ede
+
+.field public static final livelist_item_bg:I = 0x7f080edf
+
+.field public static final livelist_item_live_status:I = 0x7f080ee0
+
+.field public static final livelist_live_status_bg:I = 0x7f080ee1
+
+.field public static final livelist_load_progress:I = 0x7f080ee2
+
+.field public static final livelist_tab_bg_selector:I = 0x7f080ee3
+
+.field public static final livelist_widget_item_bg:I = 0x7f080ee4
+
+.field public static final liveness_close_voice:I = 0x7f080ee5
+
+.field public static final liveness_ic_icon_md_arrow_back:I = 0x7f080ee6
+
+.field public static final liveness_open_voice:I = 0x7f080ee7
+
+.field public static final liveness_selector_voice:I = 0x7f080ee8
+
+.field public static final liveness_shape_gradient_green:I = 0x7f080ee9
+
+.field public static final liveness_shape_right_timer:I = 0x7f080eea
+
+.field public static final ltheme_shape_toast_bg:I = 0x7f080eeb
+
+.field public static final ltheme_shape_toast_bg_dark:I = 0x7f080eec
+
+.field public static final m3_avd_hide_password:I = 0x7f080eed
+
+.field public static final m3_avd_show_password:I = 0x7f080eee
+
+.field public static final m3_bottom_sheet_drag_handle:I = 0x7f080eef
+
+.field public static final m3_password_eye:I = 0x7f080ef0
+
+.field public static final m3_popupmenu_background_overlay:I = 0x7f080ef1
+
+.field public static final m3_radiobutton_ripple:I = 0x7f080ef2
+
+.field public static final m3_selection_control_ripple:I = 0x7f080ef3
+
+.field public static final m3_split_button_chevron_avd:I = 0x7f080ef4
+
+.field public static final m3_tabs_background:I = 0x7f080ef5
+
+.field public static final m3_tabs_line_indicator:I = 0x7f080ef6
+
+.field public static final m3_tabs_rounded_line_indicator:I = 0x7f080ef7
+
+.field public static final m3_tabs_transparent_background:I = 0x7f080ef8
+
+.field public static final market_coupon_dialog_bg:I = 0x7f080ef9
+
+.field public static final material_cursor_drawable:I = 0x7f080efa
+
+.field public static final material_ic_calendar_black_24dp:I = 0x7f080efb
+
+.field public static final material_ic_clear_black_24dp:I = 0x7f080efc
+
+.field public static final material_ic_edit_black_24dp:I = 0x7f080efd
+
+.field public static final material_ic_keyboard_arrow_left_black_24dp:I = 0x7f080efe
+
+.field public static final material_ic_keyboard_arrow_next_black_24dp:I = 0x7f080eff
+
+.field public static final material_ic_keyboard_arrow_previous_black_24dp:I = 0x7f080f00
+
+.field public static final material_ic_keyboard_arrow_right_black_24dp:I = 0x7f080f01
+
+.field public static final material_ic_menu_arrow_down_black_24dp:I = 0x7f080f02
+
+.field public static final material_ic_menu_arrow_up_black_24dp:I = 0x7f080f03
+
+.field public static final mtrl_bottomsheet_drag_handle:I = 0x7f080f04
+
+.field public static final mtrl_checkbox_button:I = 0x7f080f05
+
+.field public static final mtrl_checkbox_button_checked_unchecked:I = 0x7f080f06
+
+.field public static final mtrl_checkbox_button_icon:I = 0x7f080f07
+
+.field public static final mtrl_checkbox_button_icon_checked_indeterminate:I = 0x7f080f08
+
+.field public static final mtrl_checkbox_button_icon_checked_unchecked:I = 0x7f080f09
+
+.field public static final mtrl_checkbox_button_icon_indeterminate_checked:I = 0x7f080f0a
+
+.field public static final mtrl_checkbox_button_icon_indeterminate_unchecked:I = 0x7f080f0b
+
+.field public static final mtrl_checkbox_button_icon_unchecked_checked:I = 0x7f080f0c
+
+.field public static final mtrl_checkbox_button_icon_unchecked_indeterminate:I = 0x7f080f0d
+
+.field public static final mtrl_checkbox_button_unchecked_checked:I = 0x7f080f0e
+
+.field public static final mtrl_dialog_background:I = 0x7f080f0f
+
+.field public static final mtrl_dropdown_arrow:I = 0x7f080f10
+
+.field public static final mtrl_ic_arrow_drop_down:I = 0x7f080f11
+
+.field public static final mtrl_ic_arrow_drop_up:I = 0x7f080f12
+
+.field public static final mtrl_ic_cancel:I = 0x7f080f13
+
+.field public static final mtrl_ic_check_mark:I = 0x7f080f14
+
+.field public static final mtrl_ic_checkbox_checked:I = 0x7f080f15
+
+.field public static final mtrl_ic_checkbox_unchecked:I = 0x7f080f16
+
+.field public static final mtrl_ic_error:I = 0x7f080f17
+
+.field public static final mtrl_ic_indeterminate:I = 0x7f080f18
+
+.field public static final mtrl_navigation_bar_item_background:I = 0x7f080f19
+
+.field public static final mtrl_popupmenu_background:I = 0x7f080f1a
+
+.field public static final mtrl_popupmenu_background_overlay:I = 0x7f080f1b
+
+.field public static final mtrl_switch_thumb:I = 0x7f080f1c
+
+.field public static final mtrl_switch_thumb_checked:I = 0x7f080f1d
+
+.field public static final mtrl_switch_thumb_checked_pressed:I = 0x7f080f1e
+
+.field public static final mtrl_switch_thumb_checked_unchecked:I = 0x7f080f1f
+
+.field public static final mtrl_switch_thumb_pressed:I = 0x7f080f20
+
+.field public static final mtrl_switch_thumb_pressed_checked:I = 0x7f080f21
+
+.field public static final mtrl_switch_thumb_pressed_unchecked:I = 0x7f080f22
+
+.field public static final mtrl_switch_thumb_unchecked:I = 0x7f080f23
+
+.field public static final mtrl_switch_thumb_unchecked_checked:I = 0x7f080f24
+
+.field public static final mtrl_switch_thumb_unchecked_pressed:I = 0x7f080f25
+
+.field public static final mtrl_switch_track:I = 0x7f080f26
+
+.field public static final mtrl_switch_track_decoration:I = 0x7f080f27
+
+.field public static final mtrl_tabs_default_indicator:I = 0x7f080f28
+
+.field public static final navigation_empty_icon:I = 0x7f080f29
+
+.field public static final network_info_audio_mode:I = 0x7f080f2a
+
+.field public static final network_info_audio_mode_icon:I = 0x7f080f2b
+
+.field public static final network_info_audio_status_abnormal:I = 0x7f080f2c
+
+.field public static final network_info_audio_status_normal:I = 0x7f080f2d
+
+.field public static final network_info_device_temp_abnormal:I = 0x7f080f2e
+
+.field public static final network_info_device_temp_normal:I = 0x7f080f2f
+
+.field public static final network_info_device_temp_overheat:I = 0x7f080f30
+
+.field public static final network_info_network_bad_tips_icon:I = 0x7f080f31
+
+.field public static final network_info_network_bad_tips_view_bg:I = 0x7f080f32
+
+.field public static final network_info_network_status_down:I = 0x7f080f33
+
+.field public static final network_info_network_status_good:I = 0x7f080f34
+
+.field public static final network_info_network_status_poor:I = 0x7f080f35
+
+.field public static final network_info_network_status_very_bad:I = 0x7f080f36
+
+.field public static final network_info_panel_bg:I = 0x7f080f37
+
+.field public static final network_info_seekbar_thumb:I = 0x7f080f38
+
+.field public static final network_info_statistics_bg:I = 0x7f080f39
+
+.field public static final network_info_toast_close_icon:I = 0x7f080f3a
+
+.field public static final network_info_video_status_abnormal:I = 0x7f080f3b
+
+.field public static final network_info_video_status_normal:I = 0x7f080f3c
+
+.field public static final network_info_view_bg:I = 0x7f080f3d
+
+.field public static final notice_shape_dialog_vip_button:I = 0x7f080f3e
+
+.field public static final notification_action_background:I = 0x7f080f3f
+
+.field public static final notification_bg:I = 0x7f080f40
+
+.field public static final notification_bg_low:I = 0x7f080f41
+
+.field public static final notification_bg_low_normal:I = 0x7f080f42
+
+.field public static final notification_bg_low_pressed:I = 0x7f080f43
+
+.field public static final notification_bg_normal:I = 0x7f080f44
+
+.field public static final notification_bg_normal_pressed:I = 0x7f080f45
+
+.field public static final notification_icon_background:I = 0x7f080f46
+
+.field public static final notification_oversize_large_icon_bg:I = 0x7f080f47
+
+.field public static final notification_template_icon_bg:I = 0x7f080f48
+
+.field public static final notification_template_icon_low_bg:I = 0x7f080f49
+
+.field public static final notification_tile_bg:I = 0x7f080f4a
+
+.field public static final notify_panel_notification_icon_bg:I = 0x7f080f4b
+
+.field public static final open_mouse_1:I = 0x7f080f4c
+
+.field public static final open_mouse_2:I = 0x7f080f4d
+
+.field public static final open_mouse_3:I = 0x7f080f4e
+
+.field public static final open_mouse_4:I = 0x7f080f4f
+
+.field public static final open_mouse_5:I = 0x7f080f50
+
+.field public static final operation_shape_bg_bonus_task:I = 0x7f080f51
+
+.field public static final operation_shape_bg_bonus_task_small:I = 0x7f080f52
+
+.field public static final operation_shape_bg_newcomer_dialog_item:I = 0x7f080f53
+
+.field public static final operation_shape_bg_search_topic:I = 0x7f080f54
+
+.field public static final operation_shape_bg_topic_coin:I = 0x7f080f55
+
+.field public static final operation_shape_bg_topic_coin_logo:I = 0x7f080f56
+
+.field public static final operation_shape_bg_topic_coin_rate:I = 0x7f080f57
+
+.field public static final operation_shape_bg_user_status_welfare_bg:I = 0x7f080f58
+
+.field public static final operation_shape_bg_user_status_welfare_num_bg:I = 0x7f080f59
+
+.field public static final operation_shape_bg_welfare_gift:I = 0x7f080f5a
+
+.field public static final operation_shape_user_status_close_dialog_bg:I = 0x7f080f5b
+
+.field public static final operation_shape_user_status_guide_arrow_action:I = 0x7f080f5c
+
+.field public static final operation_shape_user_status_guide_card_bg:I = 0x7f080f5d
+
+.field public static final operation_shape_user_status_guide_tag_green:I = 0x7f080f5e
+
+.field public static final operation_shape_user_status_guide_tag_vip:I = 0x7f080f5f
+
+.field public static final p2p_currency_fiat_bg:I = 0x7f080f60
+
+.field public static final p2p_tab_background:I = 0x7f080f61
+
+.field public static final passkey_loading:I = 0x7f080f62
+
+.field public static final paused_in_debugger_background:I = 0x7f080f63
+
+.field public static final paused_in_debugger_dialog_background:I = 0x7f080f64
+
+.field public static final pay_button_generic_background_dark:I = 0x7f080f65
+
+.field public static final pay_button_generic_background_light:I = 0x7f080f66
+
+.field public static final pay_button_generic_background_mask_dark:I = 0x7f080f67
+
+.field public static final pay_button_generic_background_mask_light:I = 0x7f080f68
+
+.field public static final payment_bg_card:I = 0x7f080f69
+
+.field public static final payment_bg_input:I = 0x7f080f6a
+
+.field public static final payment_bg_new_user_tag:I = 0x7f080f6b
+
+.field public static final payment_bg_red_dot:I = 0x7f080f6c
+
+.field public static final payment_bg_top_picks:I = 0x7f080f6d
+
+.field public static final payment_discount_tag_bg:I = 0x7f080f6e
+
+.field public static final payment_p2p_banner_indicator:I = 0x7f080f6f
+
+.field public static final payment_rotate_pop_arrow:I = 0x7f080f70
+
+.field public static final payment_selector_border_emphasis_8r:I = 0x7f080f71
+
+.field public static final payment_selector_btn_primary_24r:I = 0x7f080f72
+
+.field public static final payment_selector_btn_secondary_24r:I = 0x7f080f73
+
+.field public static final payment_selector_currency:I = 0x7f080f74
+
+.field public static final payment_selector_edit_focus_primary:I = 0x7f080f75
+
+.field public static final payment_selector_online_status:I = 0x7f080f76
+
+.field public static final payment_selector_payment_method:I = 0x7f080f77
+
+.field public static final payment_selector_payment_method_filter:I = 0x7f080f78
+
+.field public static final payment_selector_primary_bg:I = 0x7f080f79
+
+.field public static final payment_selector_secondary_bg:I = 0x7f080f7a
+
+.field public static final payment_shape_bg_payment_method_list:I = 0x7f080f7b
+
+.field public static final payment_shape_border12_cover4_2r:I = 0x7f080f7c
+
+.field public static final payment_shape_border_dash_cover2_4r:I = 0x7f080f7d
+
+.field public static final payment_shape_border_oval:I = 0x7f080f7e
+
+.field public static final payment_shape_brand8_80r:I = 0x7f080f7f
+
+.field public static final payment_shape_c_button_normal_99r:I = 0x7f080f80
+
+.field public static final payment_shape_cover2_80r:I = 0x7f080f81
+
+.field public static final payment_shape_cover4_99r:I = 0x7f080f82
+
+.field public static final payment_shape_divider:I = 0x7f080f83
+
+.field public static final payment_shape_divider8_12r:I = 0x7f080f84
+
+.field public static final payment_shape_over_bottom_20r:I = 0x7f080f85
+
+.field public static final payment_shape_over_top_20r:I = 0x7f080f86
+
+.field public static final payment_shape_p2p_bottom_bar:I = 0x7f080f87
+
+.field public static final payment_shape_payment_bg_express_default:I = 0x7f080f88
+
+.field public static final payment_shape_payment_bg_express_error:I = 0x7f080f89
+
+.field public static final payment_shape_payment_bg_express_highlight:I = 0x7f080f8a
+
+.field public static final payment_shape_withdraw_input:I = 0x7f080f8b
+
+.field public static final preference_list_divider_material:I = 0x7f080f8c
+
+.field public static final qr_code_info_input_text_drawable:I = 0x7f080f8d
+
+.field public static final qr_code_input_background:I = 0x7f080f8e
+
+.field public static final quote_shape_border8_cover4_8r:I = 0x7f080f8f
+
+.field public static final quote_shape_cover2_bottom_8r:I = 0x7f080f90
+
+.field public static final quote_shape_cover2_top_8r:I = 0x7f080f91
+
+.field public static final quote_shape_heat_surge:I = 0x7f080f92
+
+.field public static final rank_top_bg_one:I = 0x7f080f93
+
+.field public static final rank_top_bg_three:I = 0x7f080f94
+
+.field public static final rank_top_bg_two:I = 0x7f080f95
+
+.field public static final redbox_top_border_background:I = 0x7f080f96
+
+.field public static final ripple_effect:I = 0x7f080f97
+
+.field public static final rns_rounder_top_corners_shape:I = 0x7f080f98
+
+.field public static final room_info_background:I = 0x7f080f99
+
+.field public static final room_info_button_follow:I = 0x7f080f9a
+
+.field public static final room_info_button_unfollow:I = 0x7f080f9b
+
+.field public static final room_info_default_avatar:I = 0x7f080f9c
+
+.field public static final room_info_detail_button_unfollow:I = 0x7f080f9d
+
+.field public static final room_info_dialog_background:I = 0x7f080f9e
+
+.field public static final room_info_follow_bg:I = 0x7f080f9f
+
+.field public static final room_info_followed_button_check:I = 0x7f080fa0
+
+.field public static final rotate_progressbar:I = 0x7f080fa1
+
+.field public static final safe_ic_telegram:I = 0x7f080fa2
+
+.field public static final safe_setting_pwd_popup_angel:I = 0x7f080fa3
+
+.field public static final safe_setting_pwd_popup_bg:I = 0x7f080fa4
+
+.field public static final search_bg_coming:I = 0x7f080fa5
+
+.field public static final search_bg_topsearch_new_tag:I = 0x7f080fa6
+
+.field public static final search_border_topsearch:I = 0x7f080fa7
+
+.field public static final search_input_search:I = 0x7f080fa8
+
+.field public static final search_shape_lever_border_green:I = 0x7f080fa9
+
+.field public static final selector_banner_indicator:I = 0x7f080faa
+
+.field public static final selector_bg_code_input:I = 0x7f080fab
+
+.field public static final selector_border_emphasis_16r:I = 0x7f080fac
+
+.field public static final selector_border_emphasis_8r:I = 0x7f080fad
+
+.field public static final selector_btn_emphasis4_12r:I = 0x7f080fae
+
+.field public static final selector_btn_emphasis4_24r:I = 0x7f080faf
+
+.field public static final selector_btn_emphasis_4r:I = 0x7f080fb0
+
+.field public static final selector_btn_primary:I = 0x7f080fb1
+
+.field public static final selector_btn_primary_16r:I = 0x7f080fb2
+
+.field public static final selector_btn_primary_20r:I = 0x7f080fb3
+
+.field public static final selector_btn_primary_24r:I = 0x7f080fb4
+
+.field public static final selector_btn_primary_4r:I = 0x7f080fb5
+
+.field public static final selector_btn_primary_6r:I = 0x7f080fb6
+
+.field public static final selector_btn_primary_complementary16:I = 0x7f080fb7
+
+.field public static final selector_btn_primary_disable:I = 0x7f080fb8
+
+.field public static final selector_btn_secondary:I = 0x7f080fb9
+
+.field public static final selector_btn_supplementary:I = 0x7f080fba
+
+.field public static final selector_btn_unfreeze_bg:I = 0x7f080fbb
+
+.field public static final selector_check_hook_bottom_mirror:I = 0x7f080fbc
+
+.field public static final selector_check_hook_bottom_right:I = 0x7f080fbd
+
+.field public static final selector_check_hook_top_mirror:I = 0x7f080fbe
+
+.field public static final selector_checkbox_button:I = 0x7f080fbf
+
+.field public static final selector_checkbox_button_gray:I = 0x7f080fc0
+
+.field public static final selector_checkbox_button_gray_small:I = 0x7f080fc1
+
+.field public static final selector_checkbox_button_with_padding:I = 0x7f080fc2
+
+.field public static final selector_color_bottom_sheet:I = 0x7f080fc3
+
+.field public static final selector_color_bottom_sheet_bottom_8r:I = 0x7f080fc4
+
+.field public static final selector_color_bottom_sheet_top_8r:I = 0x7f080fc5
+
+.field public static final selector_color_cover2:I = 0x7f080fc6
+
+.field public static final selector_darkoverlay_click:I = 0x7f080fc7
+
+.field public static final selector_dialog_item_click:I = 0x7f080fc8
+
+.field public static final selector_edit_emphasis8:I = 0x7f080fc9
+
+.field public static final selector_emphasis_circle_emphasis20:I = 0x7f080fca
+
+.field public static final selector_exam_option_radio:I = 0x7f080fcb
+
+.field public static final selector_fast_order_percent_back:I = 0x7f080fcc
+
+.field public static final selector_fast_order_percent_back_down:I = 0x7f080fcd
+
+.field public static final selector_fast_order_percent_back_down_8r:I = 0x7f080fce
+
+.field public static final selector_fast_order_percent_back_up:I = 0x7f080fcf
+
+.field public static final selector_fast_order_percent_back_up_8r:I = 0x7f080fd0
+
+.field public static final selector_fast_order_percent_bg:I = 0x7f080fd1
+
+.field public static final selector_fast_order_percent_bg_down:I = 0x7f080fd2
+
+.field public static final selector_fast_order_percent_bg_down_8r:I = 0x7f080fd3
+
+.field public static final selector_fast_order_percent_bg_up:I = 0x7f080fd4
+
+.field public static final selector_fast_order_percent_bg_up_8r:I = 0x7f080fd5
+
+.field public static final selector_fast_order_percent_transparent_down:I = 0x7f080fd6
+
+.field public static final selector_fast_order_percent_transparent_up:I = 0x7f080fd7
+
+.field public static final selector_image_button_left:I = 0x7f080fd8
+
+.field public static final selector_image_button_right:I = 0x7f080fd9
+
+.field public static final selector_indicator_reject_view:I = 0x7f080fda
+
+.field public static final selector_line_primary:I = 0x7f080fdb
+
+.field public static final selector_orderbook_item_press:I = 0x7f080fdc
+
+.field public static final selector_otc_check_state_bg:I = 0x7f080fdd
+
+.field public static final selector_press_transfer_cover2:I = 0x7f080fde
+
+.field public static final selector_primary_circle_emphasis60:I = 0x7f080fdf
+
+.field public static final selector_radio_btn_title_bar:I = 0x7f080fe0
+
+.field public static final selector_radio_button:I = 0x7f080fe1
+
+.field public static final selector_radio_group_title_bar:I = 0x7f080fe2
+
+.field public static final selector_radio_group_title_bar_buller_layer:I = 0x7f080fe3
+
+.field public static final selector_radio_primary:I = 0x7f080fe4
+
+.field public static final selector_radio_primary8:I = 0x7f080fe5
+
+.field public static final selector_signup_banner_indicator:I = 0x7f080fe6
+
+.field public static final selector_signup_input_bg:I = 0x7f080fe7
+
+.field public static final selector_slide_style_click:I = 0x7f080fe8
+
+.field public static final selector_small_switch_button_thumb:I = 0x7f080fe9
+
+.field public static final selector_small_switch_button_track:I = 0x7f080fea
+
+.field public static final selector_switch_button_thumb:I = 0x7f080feb
+
+.field public static final selector_switch_button_track:I = 0x7f080fec
+
+.field public static final selector_transform_camera:I = 0x7f080fed
+
+.field public static final selector_upload_image_back:I = 0x7f080fee
+
+.field public static final selector_vip_small_switch_button_track:I = 0x7f080fef
+
+.field public static final selector_widget_item_bg:I = 0x7f080ff0
+
+.field public static final setting_toast_layout_radius:I = 0x7f080ff1
+
+.field public static final shape_16_b8c6d8_2r:I = 0x7f080ff2
+
+.field public static final shape_16_edb66e_2r:I = 0x7f080ff3
+
+.field public static final shape_3c4556_8r:I = 0x7f080ff4
+
+.field public static final shape_40_7a78e4_4r:I = 0x7f080ff5
+
+.field public static final shape_7a78e4_4r:I = 0x7f080ff6
+
+.field public static final shape_action_camera_btn:I = 0x7f080ff7
+
+.field public static final shape_avatar_bg_circle_emphasis:I = 0x7f080ff8
+
+.field public static final shape_avatar_bg_emphasis:I = 0x7f080ff9
+
+.field public static final shape_background_4r:I = 0x7f080ffa
+
+.field public static final shape_background_8r:I = 0x7f080ffb
+
+.field public static final shape_background_for_coin_avatar:I = 0x7f080ffc
+
+.field public static final shape_banner_point_bg:I = 0x7f080ffd
+
+.field public static final shape_bg_channel:I = 0x7f080ffe
+
+.field public static final shape_bg_flip_id:I = 0x7f080fff
+
+.field public static final shape_bg_home_widget:I = 0x7f081000
+
+.field public static final shape_bg_manual_dailog:I = 0x7f081001
+
+.field public static final shape_bg_realtime_card_list:I = 0x7f081002
+
+.field public static final shape_bg_realtime_card_stack:I = 0x7f081003
+
+.field public static final shape_bg_realtime_card_stack_dialog:I = 0x7f081004
+
+.field public static final shape_bg_retry_dialog_bottom:I = 0x7f081005
+
+.field public static final shape_bg_retry_dialog_top:I = 0x7f081006
+
+.field public static final shape_bg_rwa_4r:I = 0x7f081007
+
+.field public static final shape_bg_scan_card_tip:I = 0x7f081008
+
+.field public static final shape_border12_32r:I = 0x7f081009
+
+.field public static final shape_border12_8r:I = 0x7f08100a
+
+.field public static final shape_border12_complementary8_2r:I = 0x7f08100b
+
+.field public static final shape_border12_cover2_8r:I = 0x7f08100c
+
+.field public static final shape_border12_cover4_bg:I = 0x7f08100d
+
+.field public static final shape_border12_primary8_2r:I = 0x7f08100e
+
+.field public static final shape_border12_secondary8_2r:I = 0x7f08100f
+
+.field public static final shape_border16_primary8_2r:I = 0x7f081010
+
+.field public static final shape_border16_primary8_4r:I = 0x7f081011
+
+.field public static final shape_border8_cover4_2r:I = 0x7f081012
+
+.field public static final shape_border8_emphasis2_4r:I = 0x7f081013
+
+.field public static final shape_border_black10_6r:I = 0x7f081014
+
+.field public static final shape_border_complementary:I = 0x7f081015
+
+.field public static final shape_border_cover12_12r:I = 0x7f081016
+
+.field public static final shape_border_cover12_16r:I = 0x7f081017
+
+.field public static final shape_border_cover12_24r:I = 0x7f081018
+
+.field public static final shape_border_cover12_80r:I = 0x7f081019
+
+.field public static final shape_border_cover12_8r:I = 0x7f08101a
+
+.field public static final shape_border_dash_bcc8e0_1r:I = 0x7f08101b
+
+.field public static final shape_border_dash_emphasis20_4r:I = 0x7f08101c
+
+.field public static final shape_border_dash_emphasis20_8r:I = 0x7f08101d
+
+.field public static final shape_border_dash_home_menu_edit:I = 0x7f08101e
+
+.field public static final shape_border_divider8:I = 0x7f08101f
+
+.field public static final shape_border_divider8_12r:I = 0x7f081020
+
+.field public static final shape_border_divider8_16r:I = 0x7f081021
+
+.field public static final shape_border_divider8_20r:I = 0x7f081022
+
+.field public static final shape_border_divider8_24r:I = 0x7f081023
+
+.field public static final shape_border_e1e8f5_4r:I = 0x7f081024
+
+.field public static final shape_border_emphasis12_12r:I = 0x7f081025
+
+.field public static final shape_border_emphasis12_14r:I = 0x7f081026
+
+.field public static final shape_border_emphasis12_16r:I = 0x7f081027
+
+.field public static final shape_border_emphasis12_24r:I = 0x7f081028
+
+.field public static final shape_border_emphasis12_8r:I = 0x7f081029
+
+.field public static final shape_border_emphasis16_24r:I = 0x7f08102a
+
+.field public static final shape_border_emphasis16_2r:I = 0x7f08102b
+
+.field public static final shape_border_emphasis16_4r:I = 0x7f08102c
+
+.field public static final shape_border_emphasis16_8r:I = 0x7f08102d
+
+.field public static final shape_border_emphasis16_solid_cover4_8r:I = 0x7f08102e
+
+.field public static final shape_border_emphasis24_2r:I = 0x7f08102f
+
+.field public static final shape_border_emphasis38:I = 0x7f081030
+
+.field public static final shape_border_emphasis60:I = 0x7f081031
+
+.field public static final shape_border_emphasis8:I = 0x7f081032
+
+.field public static final shape_border_emphasis8_12r:I = 0x7f081033
+
+.field public static final shape_border_emphasis8_2r:I = 0x7f081034
+
+.field public static final shape_border_emphasis8_4r:I = 0x7f081035
+
+.field public static final shape_border_emphasis8_6r:I = 0x7f081036
+
+.field public static final shape_border_emphasis8_8r:I = 0x7f081037
+
+.field public static final shape_border_emphasis_12r:I = 0x7f081038
+
+.field public static final shape_border_emphasis_20r:I = 0x7f081039
+
+.field public static final shape_border_emphasis_2r:I = 0x7f08103a
+
+.field public static final shape_border_emphasis_8r:I = 0x7f08103b
+
+.field public static final shape_border_home_card_nodata:I = 0x7f08103c
+
+.field public static final shape_border_largecolor:I = 0x7f08103d
+
+.field public static final shape_border_oval_emphasis16:I = 0x7f08103e
+
+.field public static final shape_border_overlay_24r:I = 0x7f08103f
+
+.field public static final shape_border_primary38_2r:I = 0x7f081040
+
+.field public static final shape_border_primary_2r:I = 0x7f081041
+
+.field public static final shape_border_primary_4r:I = 0x7f081042
+
+.field public static final shape_border_primary_6r:I = 0x7f081043
+
+.field public static final shape_border_search_bar:I = 0x7f081044
+
+.field public static final shape_border_secondary_4r:I = 0x7f081045
+
+.field public static final shape_bottom_background_bg:I = 0x7f081046
+
+.field public static final shape_bottom_k_line_background_bg:I = 0x7f081047
+
+.field public static final shape_bottom_overlay_8r:I = 0x7f081048
+
+.field public static final shape_bottom_sheet_bg:I = 0x7f081049
+
+.field public static final shape_bottom_sheet_dlaog_anim_back:I = 0x7f08104a
+
+.field public static final shape_bottom_sheet_indicator:I = 0x7f08104b
+
+.field public static final shape_bottom_sheet_k_line_indicator:I = 0x7f08104c
+
+.field public static final shape_brand_green8_4r:I = 0x7f08104d
+
+.field public static final shape_brand_green_4r:I = 0x7f08104e
+
+.field public static final shape_brand_red_4r:I = 0x7f08104f
+
+.field public static final shape_brandgreen20_12r:I = 0x7f081050
+
+.field public static final shape_brandgreen8_4r:I = 0x7f081051
+
+.field public static final shape_bullet_layer_0r:I = 0x7f081052
+
+.field public static final shape_bullet_layer_12r:I = 0x7f081053
+
+.field public static final shape_bullet_layer_bottom_8r:I = 0x7f081054
+
+.field public static final shape_bullet_layer_top_8r:I = 0x7f081055
+
+.field public static final shape_button_primary_bg_compat:I = 0x7f081056
+
+.field public static final shape_button_primary_bg_compat_32r:I = 0x7f081057
+
+.field public static final shape_button_secondary_bg_compat:I = 0x7f081058
+
+.field public static final shape_button_secondary_bg_compat_32r:I = 0x7f081059
+
+.field public static final shape_button_secondary_bg_compat_8r:I = 0x7f08105a
+
+.field public static final shape_c_80_1c222b_4r:I = 0x7f08105b
+
+.field public static final shape_c_8_5c95e8_2r:I = 0x7f08105c
+
+.field public static final shape_c_8_72948a_2r:I = 0x7f08105d
+
+.field public static final shape_c_8_7a78e4_2r:I = 0x7f08105e
+
+.field public static final shape_c_background_4r:I = 0x7f08105f
+
+.field public static final shape_c_fff000_top_20r:I = 0x7f081060
+
+.field public static final shape_c_overlay_0r:I = 0x7f081061
+
+.field public static final shape_c_overlay_top_20r:I = 0x7f081062
+
+.field public static final shape_circle_cover8:I = 0x7f081063
+
+.field public static final shape_circle_grey_normal:I = 0x7f081064
+
+.field public static final shape_color_fff_1c222c_20r:I = 0x7f081065
+
+.field public static final shape_color_fff_1c222c_8r:I = 0x7f081066
+
+.field public static final shape_complementary12_4r:I = 0x7f081067
+
+.field public static final shape_complementary12_8r:I = 0x7f081068
+
+.field public static final shape_complementary12_stroke_4r:I = 0x7f081069
+
+.field public static final shape_complementary16_20r:I = 0x7f08106a
+
+.field public static final shape_complementary16_24r:I = 0x7f08106b
+
+.field public static final shape_complementary16_2r:I = 0x7f08106c
+
+.field public static final shape_complementary16_4r:I = 0x7f08106d
+
+.field public static final shape_complementary16_6r:I = 0x7f08106e
+
+.field public static final shape_complementary8_12r:I = 0x7f08106f
+
+.field public static final shape_complementary8_24r:I = 0x7f081070
+
+.field public static final shape_complementary8_2r:I = 0x7f081071
+
+.field public static final shape_complementary8_4r:I = 0x7f081072
+
+.field public static final shape_complementary8_6r:I = 0x7f081073
+
+.field public static final shape_complementary8_8r:I = 0x7f081074
+
+.field public static final shape_complementary_2r:I = 0x7f081075
+
+.field public static final shape_complementary_4r:I = 0x7f081076
+
+.field public static final shape_complementary_8r:I = 0x7f081077
+
+.field public static final shape_cover12_stroke_8r:I = 0x7f081078
+
+.field public static final shape_cover12_transparent_16r:I = 0x7f081079
+
+.field public static final shape_cover2_0r:I = 0x7f08107a
+
+.field public static final shape_cover2_12r:I = 0x7f08107b
+
+.field public static final shape_cover2_4r:I = 0x7f08107c
+
+.field public static final shape_cover2_6r:I = 0x7f08107d
+
+.field public static final shape_cover2_8r:I = 0x7f08107e
+
+.field public static final shape_cover2_bottom_8r:I = 0x7f08107f
+
+.field public static final shape_cover2_top_8r:I = 0x7f081080
+
+.field public static final shape_cover4_24r:I = 0x7f081081
+
+.field public static final shape_cover4_4r:I = 0x7f081082
+
+.field public static final shape_cover4_6r:I = 0x7f081083
+
+.field public static final shape_cover4_8r:I = 0x7f081084
+
+.field public static final shape_cover8_4r:I = 0x7f081085
+
+.field public static final shape_cover8_cover4_2r:I = 0x7f081086
+
+.field public static final shape_darkoverlay_20r:I = 0x7f081087
+
+.field public static final shape_darkoverlay_2r:I = 0x7f081088
+
+.field public static final shape_darkoverlay_4r:I = 0x7f081089
+
+.field public static final shape_darkoverlay_6r:I = 0x7f08108a
+
+.field public static final shape_darkoverlay_8r:I = 0x7f08108b
+
+.field public static final shape_darkoverlay_bottom_4r:I = 0x7f08108c
+
+.field public static final shape_darkoverlay_top_line:I = 0x7f08108d
+
+.field public static final shape_dash:I = 0x7f08108e
+
+.field public static final shape_dash_top_bottom_bg:I = 0x7f08108f
+
+.field public static final shape_delegation_progressbar:I = 0x7f081090
+
+.field public static final shape_delegation_progressbar_green:I = 0x7f081091
+
+.field public static final shape_delegation_progressbar_red:I = 0x7f081092
+
+.field public static final shape_detail_progressbar:I = 0x7f081093
+
+.field public static final shape_detail_progressbar_primary:I = 0x7f081094
+
+.field public static final shape_dialog_bg_bulletlayer:I = 0x7f081095
+
+.field public static final shape_dialog_vip_alert_back:I = 0x7f081096
+
+.field public static final shape_dot_num_bg:I = 0x7f081097
+
+.field public static final shape_e1e8f5_8_8r:I = 0x7f081098
+
+.field public static final shape_editext_border_green_2r:I = 0x7f081099
+
+.field public static final shape_edittext_border_background_with_error:I = 0x7f08109a
+
+.field public static final shape_edittext_border_background_with_error_light:I = 0x7f08109b
+
+.field public static final shape_edittext_border_background_with_error_light_old:I = 0x7f08109c
+
+.field public static final shape_edittext_border_background_with_normal_12r:I = 0x7f08109d
+
+.field public static final shape_edittext_border_primary:I = 0x7f08109e
+
+.field public static final shape_edittext_input_background:I = 0x7f08109f
+
+.field public static final shape_edittext_input_background_brand_ui:I = 0x7f0810a0
+
+.field public static final shape_edittext_input_change_type_background:I = 0x7f0810a1
+
+.field public static final shape_edittext_title:I = 0x7f0810a2
+
+.field public static final shape_emphasis12_6r:I = 0x7f0810a3
+
+.field public static final shape_emphasis20_2r:I = 0x7f0810a4
+
+.field public static final shape_emphasis24_2r:I = 0x7f0810a5
+
+.field public static final shape_emphasis2_12r:I = 0x7f0810a6
+
+.field public static final shape_emphasis2_4r:I = 0x7f0810a7
+
+.field public static final shape_emphasis2_6r:I = 0x7f0810a8
+
+.field public static final shape_emphasis2_8r:I = 0x7f0810a9
+
+.field public static final shape_emphasis40_4r:I = 0x7f0810aa
+
+.field public static final shape_emphasis40_6r:I = 0x7f0810ab
+
+.field public static final shape_emphasis4_12r:I = 0x7f0810ac
+
+.field public static final shape_emphasis4_24r:I = 0x7f0810ad
+
+.field public static final shape_emphasis4_2r:I = 0x7f0810ae
+
+.field public static final shape_emphasis4_44r:I = 0x7f0810af
+
+.field public static final shape_emphasis4_4r:I = 0x7f0810b0
+
+.field public static final shape_emphasis4_6r:I = 0x7f0810b1
+
+.field public static final shape_emphasis4_7r:I = 0x7f0810b2
+
+.field public static final shape_emphasis4_80r:I = 0x7f0810b3
+
+.field public static final shape_emphasis4_8r:I = 0x7f0810b4
+
+.field public static final shape_emphasis4_bg_20r:I = 0x7f0810b5
+
+.field public static final shape_emphasis4_right_bg_20r:I = 0x7f0810b6
+
+.field public static final shape_emphasis60_12r_top:I = 0x7f0810b7
+
+.field public static final shape_emphasis60_point_w4_h4:I = 0x7f0810b8
+
+.field public static final shape_emphasis8_20r:I = 0x7f0810b9
+
+.field public static final shape_emphasis8_2r:I = 0x7f0810ba
+
+.field public static final shape_emphasis8_4r:I = 0x7f0810bb
+
+.field public static final shape_emphasis_24r:I = 0x7f0810bc
+
+.field public static final shape_emphasis_4r:I = 0x7f0810bd
+
+.field public static final shape_fast_best:I = 0x7f0810be
+
+.field public static final shape_fast_buy_paytype:I = 0x7f0810bf
+
+.field public static final shape_fast_edittext:I = 0x7f0810c0
+
+.field public static final shape_fast_sell_paytype:I = 0x7f0810c1
+
+.field public static final shape_ffae34_bg_20r:I = 0x7f0810c2
+
+.field public static final shape_fff_262c38_4r:I = 0x7f0810c3
+
+.field public static final shape_fff_262c38_rr:I = 0x7f0810c4
+
+.field public static final shape_finger_dialog_back:I = 0x7f0810c5
+
+.field public static final shape_fish_tips:I = 0x7f0810c6
+
+.field public static final shape_floating_bg:I = 0x7f0810c7
+
+.field public static final shape_floating_levitatingball_bg:I = 0x7f0810c8
+
+.field public static final shape_floating_setting_back:I = 0x7f0810c9
+
+.field public static final shape_floating_window_bg:I = 0x7f0810ca
+
+.field public static final shape_gradient_otc_back:I = 0x7f0810cb
+
+.field public static final shape_green12_green8_40r:I = 0x7f0810cc
+
+.field public static final shape_green_stroke_2r:I = 0x7f0810cd
+
+.field public static final shape_heat_primary_bg:I = 0x7f0810ce
+
+.field public static final shape_heat_secondary_bg:I = 0x7f0810cf
+
+.field public static final shape_heat_surge:I = 0x7f0810d0
+
+.field public static final shape_home_recomm_pos_bg_time:I = 0x7f0810d1
+
+.field public static final shape_icon40_6r:I = 0x7f0810d2
+
+.field public static final shape_icon_oral_bg:I = 0x7f0810d3
+
+.field public static final shape_illustration_6r:I = 0x7f0810d4
+
+.field public static final shape_input_error:I = 0x7f0810d5
+
+.field public static final shape_input_focus:I = 0x7f0810d6
+
+.field public static final shape_input_grey:I = 0x7f0810d7
+
+.field public static final shape_input_normal:I = 0x7f0810d8
+
+.field public static final shape_input_phone_prefix_icon_holder_emptytext:I = 0x7f0810d9
+
+.field public static final shape_input_phone_prefix_icon_holder_long:I = 0x7f0810da
+
+.field public static final shape_input_phone_prefix_icon_holder_max:I = 0x7f0810db
+
+.field public static final shape_input_phone_prefix_icon_holder_medium:I = 0x7f0810dc
+
+.field public static final shape_input_phone_prefix_icon_holder_short:I = 0x7f0810dd
+
+.field public static final shape_input_pwd_dialog:I = 0x7f0810de
+
+.field public static final shape_input_pwd_dialog_v2:I = 0x7f0810df
+
+.field public static final shape_input_suffix_icon_holder_paste:I = 0x7f0810e0
+
+.field public static final shape_item_circle_icon:I = 0x7f0810e1
+
+.field public static final shape_k_line_background:I = 0x7f0810e2
+
+.field public static final shape_k_line_hedge_margin_bg:I = 0x7f0810e3
+
+.field public static final shape_k_line_marginmode_bg:I = 0x7f0810e4
+
+.field public static final shape_kc_bottom_sheet_bg:I = 0x7f0810e5
+
+.field public static final shape_kline_background:I = 0x7f0810e6
+
+.field public static final shape_kyc_album_dash_line_new:I = 0x7f0810e7
+
+.field public static final shape_kyc_album_red_dash_line:I = 0x7f0810e8
+
+.field public static final shape_large_6r:I = 0x7f0810e9
+
+.field public static final shape_largecolor_16r:I = 0x7f0810ea
+
+.field public static final shape_largecolor_20r:I = 0x7f0810eb
+
+.field public static final shape_largecolor_2r:I = 0x7f0810ec
+
+.field public static final shape_largecolor_4r:I = 0x7f0810ed
+
+.field public static final shape_largecolor_8r:I = 0x7f0810ee
+
+.field public static final shape_legel_label_bg:I = 0x7f0810ef
+
+.field public static final shape_login_ext_account_bg:I = 0x7f0810f0
+
+.field public static final shape_menu_tag_bg_primary_20r:I = 0x7f0810f1
+
+.field public static final shape_menu_tag_bg_secondary_10r:I = 0x7f0810f2
+
+.field public static final shape_menu_tag_bg_secondary_20r:I = 0x7f0810f3
+
+.field public static final shape_newbie_bg_content_btn:I = 0x7f0810f4
+
+.field public static final shape_newbie_step_bg:I = 0x7f0810f5
+
+.field public static final shape_newcoin_hot:I = 0x7f0810f6
+
+.field public static final shape_newcoin_opening:I = 0x7f0810f7
+
+.field public static final shape_newcoin_upcoming:I = 0x7f0810f8
+
+.field public static final shape_notify_bg_4r:I = 0x7f0810f9
+
+.field public static final shape_order_dash_line_vertical:I = 0x7f0810fa
+
+.field public static final shape_otc_best:I = 0x7f0810fb
+
+.field public static final shape_otc_fast_bg:I = 0x7f0810fc
+
+.field public static final shape_otc_fees:I = 0x7f0810fd
+
+.field public static final shape_otc_gray_circle_bg:I = 0x7f0810fe
+
+.field public static final shape_otc_index:I = 0x7f0810ff
+
+.field public static final shape_otc_input_bg:I = 0x7f081100
+
+.field public static final shape_otc_list_bg:I = 0x7f081101
+
+.field public static final shape_otc_remind_bg:I = 0x7f081102
+
+.field public static final shape_otc_top_menu_bg:I = 0x7f081103
+
+.field public static final shape_oval_background:I = 0x7f081104
+
+.field public static final shape_oval_checkbox_content_selected:I = 0x7f081105
+
+.field public static final shape_oval_checkbox_content_unselected:I = 0x7f081106
+
+.field public static final shape_oval_complementary:I = 0x7f081107
+
+.field public static final shape_oval_dot:I = 0x7f081108
+
+.field public static final shape_oval_emphasis:I = 0x7f081109
+
+.field public static final shape_oval_emphasis20:I = 0x7f08110a
+
+.field public static final shape_oval_emphasis20_without_stroke:I = 0x7f08110b
+
+.field public static final shape_oval_emphasis4:I = 0x7f08110c
+
+.field public static final shape_oval_emphasis60:I = 0x7f08110d
+
+.field public static final shape_oval_emphasis8:I = 0x7f08110e
+
+.field public static final shape_oval_icon60:I = 0x7f08110f
+
+.field public static final shape_oval_overlay:I = 0x7f081110
+
+.field public static final shape_oval_primary:I = 0x7f081111
+
+.field public static final shape_oval_primary4:I = 0x7f081112
+
+.field public static final shape_oval_primary8:I = 0x7f081113
+
+.field public static final shape_oval_secondary:I = 0x7f081114
+
+.field public static final shape_oval_secondary4:I = 0x7f081115
+
+.field public static final shape_overlay_12r_show_border_night:I = 0x7f081116
+
+.field public static final shape_overlay_16r_bottom:I = 0x7f081117
+
+.field public static final shape_overlay_20r_all:I = 0x7f081118
+
+.field public static final shape_overlay_20r_bottom:I = 0x7f081119
+
+.field public static final shape_overlay_20r_top:I = 0x7f08111a
+
+.field public static final shape_overlay_6r:I = 0x7f08111b
+
+.field public static final shape_overlay_8r:I = 0x7f08111c
+
+.field public static final shape_passkey_device_bg:I = 0x7f08111d
+
+.field public static final shape_passkey_tag:I = 0x7f08111e
+
+.field public static final shape_password_strength_hint_medium:I = 0x7f08111f
+
+.field public static final shape_password_strength_hint_none:I = 0x7f081120
+
+.field public static final shape_password_strength_hint_strong:I = 0x7f081121
+
+.field public static final shape_password_strength_hint_weak:I = 0x7f081122
+
+.field public static final shape_point_oval_4r:I = 0x7f081123
+
+.field public static final shape_point_oval_5r:I = 0x7f081124
+
+.field public static final shape_primary16_2r:I = 0x7f081125
+
+.field public static final shape_primary16_primary8:I = 0x7f081126
+
+.field public static final shape_primary20_8r:I = 0x7f081127
+
+.field public static final shape_primary20_primary12:I = 0x7f081128
+
+.field public static final shape_primary38_4r:I = 0x7f081129
+
+.field public static final shape_primary40_4r:I = 0x7f08112a
+
+.field public static final shape_primary4_12r:I = 0x7f08112b
+
+.field public static final shape_primary4_8r:I = 0x7f08112c
+
+.field public static final shape_primary8_12r:I = 0x7f08112d
+
+.field public static final shape_primary8_2r:I = 0x7f08112e
+
+.field public static final shape_primary8_4r:I = 0x7f08112f
+
+.field public static final shape_primary8_6r:I = 0x7f081130
+
+.field public static final shape_primary8_8r:I = 0x7f081131
+
+.field public static final shape_primary8_overlay_4r:I = 0x7f081132
+
+.field public static final shape_primary_2r:I = 0x7f081133
+
+.field public static final shape_primary_4r:I = 0x7f081134
+
+.field public static final shape_primary_6r:I = 0x7f081135
+
+.field public static final shape_primary_cursor:I = 0x7f081136
+
+.field public static final shape_primary_cursor_height:I = 0x7f081137
+
+.field public static final shape_quote_background:I = 0x7f081138
+
+.field public static final shape_quote_background_left:I = 0x7f081139
+
+.field public static final shape_redpackage_cover_img_mask:I = 0x7f08113a
+
+.field public static final shape_redpackage_lucky:I = 0x7f08113b
+
+.field public static final shape_redpackage_send_btn:I = 0x7f08113c
+
+.field public static final shape_redpackage_text_bg_cover:I = 0x7f08113d
+
+.field public static final shape_redpackage_type_border:I = 0x7f08113e
+
+.field public static final shape_safe_word_sample_indicator:I = 0x7f08113f
+
+.field public static final shape_safe_word_sample_indicator_selected:I = 0x7f081140
+
+.field public static final shape_secondary16_secondary8:I = 0x7f081141
+
+.field public static final shape_secondary20_2r:I = 0x7f081142
+
+.field public static final shape_secondary4_8r:I = 0x7f081143
+
+.field public static final shape_secondary8_12r:I = 0x7f081144
+
+.field public static final shape_secondary8_2r:I = 0x7f081145
+
+.field public static final shape_secondary8_4r:I = 0x7f081146
+
+.field public static final shape_secondary8_8r:I = 0x7f081147
+
+.field public static final shape_secondary_2r:I = 0x7f081148
+
+.field public static final shape_share_footer_bg:I = 0x7f081149
+
+.field public static final shape_share_footer_bg_dark:I = 0x7f08114a
+
+.field public static final shape_shimmer_oval:I = 0x7f08114b
+
+.field public static final shape_shimmer_rectangle_12r:I = 0x7f08114c
+
+.field public static final shape_shimmer_rectangle_16r:I = 0x7f08114d
+
+.field public static final shape_shimmer_rectangle_24r:I = 0x7f08114e
+
+.field public static final shape_shimmer_rectangle_4r:I = 0x7f08114f
+
+.field public static final shape_shimmer_rectangle_6r:I = 0x7f081150
+
+.field public static final shape_shimmer_rectangle_8r:I = 0x7f081151
+
+.field public static final shape_signup_email_auto_bg:I = 0x7f081152
+
+.field public static final shape_size_height_2:I = 0x7f081153
+
+.field public static final shape_size_height_4:I = 0x7f081154
+
+.field public static final shape_solid_emphasis4_4r:I = 0x7f081155
+
+.field public static final shape_splash_skip_back:I = 0x7f081156
+
+.field public static final shape_step_dash_line:I = 0x7f081157
+
+.field public static final shape_supplementary_2r:I = 0x7f081158
+
+.field public static final shape_text_12r:I = 0x7f081159
+
+.field public static final shape_textemp_30r_show_border_night:I = 0x7f08115a
+
+.field public static final shape_trade_main:I = 0x7f08115b
+
+.field public static final shape_trade_transfer_deposit:I = 0x7f08115c
+
+.field public static final shape_tranfer_dash_line_gray_vertical:I = 0x7f08115d
+
+.field public static final shape_transparent:I = 0x7f08115e
+
+.field public static final shape_transparent_divider:I = 0x7f08115f
+
+.field public static final shape_transparent_divider8_40r:I = 0x7f081160
+
+.field public static final shape_ui_tab_bg:I = 0x7f081161
+
+.field public static final shape_ui_tab_bg_lite:I = 0x7f081162
+
+.field public static final shape_ui_tab_block:I = 0x7f081163
+
+.field public static final shape_unify_exam_dialog_bg:I = 0x7f081164
+
+.field public static final shape_upgrade_bottom:I = 0x7f081165
+
+.field public static final shape_upgrade_btn:I = 0x7f081166
+
+.field public static final shape_upgrade_point:I = 0x7f081167
+
+.field public static final shape_upgrade_top:I = 0x7f081168
+
+.field public static final shape_user_center_white_circle_33:I = 0x7f081169
+
+.field public static final shape_user_update_asset_back:I = 0x7f08116a
+
+.field public static final shape_user_update_underline:I = 0x7f08116b
+
+.field public static final shape_user_vip:I = 0x7f08116c
+
+.field public static final shape_white60_20r:I = 0x7f08116d
+
+.field public static final shape_white_10r:I = 0x7f08116e
+
+.field public static final shape_white_2r:I = 0x7f08116f
+
+.field public static final shape_white_4r:I = 0x7f081170
+
+.field public static final shape_white_8r:I = 0x7f081171
+
+.field public static final share_shape_invite_link_input_bg:I = 0x7f081172
+
+.field public static final share_shape_invite_link_input_error_bg:I = 0x7f081173
+
+.field public static final share_shape_invite_link_input_selected_bg:I = 0x7f081174
+
+.field public static final site_switch_fall:I = 0x7f081175
+
+.field public static final site_switch_logo:I = 0x7f081176
+
+.field public static final sns_bg_bottom_sheet_dialog_fragment:I = 0x7f081177
+
+.field public static final sns_bg_circle:I = 0x7f081178
+
+.field public static final sns_bg_file_item:I = 0x7f081179
+
+.field public static final sns_bg_file_item_v2:I = 0x7f08117a
+
+.field public static final sns_bg_iddoc_warning:I = 0x7f08117b
+
+.field public static final sns_bg_image_button:I = 0x7f08117c
+
+.field public static final sns_bg_mrtd_animation:I = 0x7f08117d
+
+.field public static final sns_bg_rounded_divider:I = 0x7f08117e
+
+.field public static final sns_bg_selfie_rounded_rectangle:I = 0x7f08117f
+
+.field public static final sns_bg_selfie_stop_rectangle:I = 0x7f081180
+
+.field public static final sns_bg_white_transparent_gradient:I = 0x7f081181
+
+.field public static final sns_circle_shape:I = 0x7f081182
+
+.field public static final sns_circular_progress_bar_countdown:I = 0x7f081183
+
+.field public static final sns_circular_progress_bar_recording:I = 0x7f081184
+
+.field public static final sns_divider_small:I = 0x7f081185
+
+.field public static final sns_file_items_separator:I = 0x7f081186
+
+.field public static final sns_flip:I = 0x7f081187
+
+.field public static final sns_ic_add:I = 0x7f081188
+
+.field public static final sns_ic_add_image:I = 0x7f081189
+
+.field public static final sns_ic_arrown_down:I = 0x7f08118a
+
+.field public static final sns_ic_attachment:I = 0x7f08118b
+
+.field public static final sns_ic_back:I = 0x7f08118c
+
+.field public static final sns_ic_calendar:I = 0x7f08118d
+
+.field public static final sns_ic_camera:I = 0x7f08118e
+
+.field public static final sns_ic_capture:I = 0x7f08118f
+
+.field public static final sns_ic_close:I = 0x7f081190
+
+.field public static final sns_ic_close_white:I = 0x7f081191
+
+.field public static final sns_ic_delete:I = 0x7f081192
+
+.field public static final sns_ic_done:I = 0x7f081193
+
+.field public static final sns_ic_earth:I = 0x7f081194
+
+.field public static final sns_ic_eid_can:I = 0x7f081195
+
+.field public static final sns_ic_email:I = 0x7f081196
+
+.field public static final sns_ic_error:I = 0x7f081197
+
+.field public static final sns_ic_error_refresh:I = 0x7f081198
+
+.field public static final sns_ic_error_robot:I = 0x7f081199
+
+.field public static final sns_ic_failure_filled:I = 0x7f08119a
+
+.field public static final sns_ic_fatal:I = 0x7f08119b
+
+.field public static final sns_ic_fatal_error:I = 0x7f08119c
+
+.field public static final sns_ic_fatal_x:I = 0x7f08119d
+
+.field public static final sns_ic_flag_ad:I = 0x7f08119e
+
+.field public static final sns_ic_flag_ae:I = 0x7f08119f
+
+.field public static final sns_ic_flag_af:I = 0x7f0811a0
+
+.field public static final sns_ic_flag_ag:I = 0x7f0811a1
+
+.field public static final sns_ic_flag_ai:I = 0x7f0811a2
+
+.field public static final sns_ic_flag_al:I = 0x7f0811a3
+
+.field public static final sns_ic_flag_am:I = 0x7f0811a4
+
+.field public static final sns_ic_flag_an:I = 0x7f0811a5
+
+.field public static final sns_ic_flag_ao:I = 0x7f0811a6
+
+.field public static final sns_ic_flag_aq:I = 0x7f0811a7
+
+.field public static final sns_ic_flag_ar:I = 0x7f0811a8
+
+.field public static final sns_ic_flag_as:I = 0x7f0811a9
+
+.field public static final sns_ic_flag_at:I = 0x7f0811aa
+
+.field public static final sns_ic_flag_au:I = 0x7f0811ab
+
+.field public static final sns_ic_flag_aw:I = 0x7f0811ac
+
+.field public static final sns_ic_flag_ax:I = 0x7f0811ad
+
+.field public static final sns_ic_flag_az:I = 0x7f0811ae
+
+.field public static final sns_ic_flag_ba:I = 0x7f0811af
+
+.field public static final sns_ic_flag_bb:I = 0x7f0811b0
+
+.field public static final sns_ic_flag_bd:I = 0x7f0811b1
+
+.field public static final sns_ic_flag_be:I = 0x7f0811b2
+
+.field public static final sns_ic_flag_bf:I = 0x7f0811b3
+
+.field public static final sns_ic_flag_bg:I = 0x7f0811b4
+
+.field public static final sns_ic_flag_bh:I = 0x7f0811b5
+
+.field public static final sns_ic_flag_bi:I = 0x7f0811b6
+
+.field public static final sns_ic_flag_bj:I = 0x7f0811b7
+
+.field public static final sns_ic_flag_bl:I = 0x7f0811b8
+
+.field public static final sns_ic_flag_bm:I = 0x7f0811b9
+
+.field public static final sns_ic_flag_bn:I = 0x7f0811ba
+
+.field public static final sns_ic_flag_bo:I = 0x7f0811bb
+
+.field public static final sns_ic_flag_bq_bo:I = 0x7f0811bc
+
+.field public static final sns_ic_flag_bq_sa:I = 0x7f0811bd
+
+.field public static final sns_ic_flag_bq_se:I = 0x7f0811be
+
+.field public static final sns_ic_flag_br:I = 0x7f0811bf
+
+.field public static final sns_ic_flag_bs:I = 0x7f0811c0
+
+.field public static final sns_ic_flag_bt:I = 0x7f0811c1
+
+.field public static final sns_ic_flag_bv:I = 0x7f0811c2
+
+.field public static final sns_ic_flag_bw:I = 0x7f0811c3
+
+.field public static final sns_ic_flag_by:I = 0x7f0811c4
+
+.field public static final sns_ic_flag_bz:I = 0x7f0811c5
+
+.field public static final sns_ic_flag_ca:I = 0x7f0811c6
+
+.field public static final sns_ic_flag_cc:I = 0x7f0811c7
+
+.field public static final sns_ic_flag_cd:I = 0x7f0811c8
+
+.field public static final sns_ic_flag_cf:I = 0x7f0811c9
+
+.field public static final sns_ic_flag_cg:I = 0x7f0811ca
+
+.field public static final sns_ic_flag_ch:I = 0x7f0811cb
+
+.field public static final sns_ic_flag_ci:I = 0x7f0811cc
+
+.field public static final sns_ic_flag_ck:I = 0x7f0811cd
+
+.field public static final sns_ic_flag_cl:I = 0x7f0811ce
+
+.field public static final sns_ic_flag_cm:I = 0x7f0811cf
+
+.field public static final sns_ic_flag_cn:I = 0x7f0811d0
+
+.field public static final sns_ic_flag_co:I = 0x7f0811d1
+
+.field public static final sns_ic_flag_cr:I = 0x7f0811d2
+
+.field public static final sns_ic_flag_cu:I = 0x7f0811d3
+
+.field public static final sns_ic_flag_cv:I = 0x7f0811d4
+
+.field public static final sns_ic_flag_cw:I = 0x7f0811d5
+
+.field public static final sns_ic_flag_cx:I = 0x7f0811d6
+
+.field public static final sns_ic_flag_cy:I = 0x7f0811d7
+
+.field public static final sns_ic_flag_cz:I = 0x7f0811d8
+
+.field public static final sns_ic_flag_de:I = 0x7f0811d9
+
+.field public static final sns_ic_flag_dj:I = 0x7f0811da
+
+.field public static final sns_ic_flag_dk:I = 0x7f0811db
+
+.field public static final sns_ic_flag_dm:I = 0x7f0811dc
+
+.field public static final sns_ic_flag_do:I = 0x7f0811dd
+
+.field public static final sns_ic_flag_dz:I = 0x7f0811de
+
+.field public static final sns_ic_flag_ec:I = 0x7f0811df
+
+.field public static final sns_ic_flag_ee:I = 0x7f0811e0
+
+.field public static final sns_ic_flag_eg:I = 0x7f0811e1
+
+.field public static final sns_ic_flag_eh:I = 0x7f0811e2
+
+.field public static final sns_ic_flag_er:I = 0x7f0811e3
+
+.field public static final sns_ic_flag_es:I = 0x7f0811e4
+
+.field public static final sns_ic_flag_et:I = 0x7f0811e5
+
+.field public static final sns_ic_flag_eu:I = 0x7f0811e6
+
+.field public static final sns_ic_flag_fi:I = 0x7f0811e7
+
+.field public static final sns_ic_flag_fj:I = 0x7f0811e8
+
+.field public static final sns_ic_flag_fk:I = 0x7f0811e9
+
+.field public static final sns_ic_flag_fm:I = 0x7f0811ea
+
+.field public static final sns_ic_flag_fo:I = 0x7f0811eb
+
+.field public static final sns_ic_flag_fr:I = 0x7f0811ec
+
+.field public static final sns_ic_flag_ga:I = 0x7f0811ed
+
+.field public static final sns_ic_flag_gb:I = 0x7f0811ee
+
+.field public static final sns_ic_flag_gd:I = 0x7f0811ef
+
+.field public static final sns_ic_flag_ge:I = 0x7f0811f0
+
+.field public static final sns_ic_flag_gf:I = 0x7f0811f1
+
+.field public static final sns_ic_flag_gg:I = 0x7f0811f2
+
+.field public static final sns_ic_flag_gh:I = 0x7f0811f3
+
+.field public static final sns_ic_flag_gi:I = 0x7f0811f4
+
+.field public static final sns_ic_flag_gl:I = 0x7f0811f5
+
+.field public static final sns_ic_flag_gm:I = 0x7f0811f6
+
+.field public static final sns_ic_flag_gn:I = 0x7f0811f7
+
+.field public static final sns_ic_flag_gp:I = 0x7f0811f8
+
+.field public static final sns_ic_flag_gq:I = 0x7f0811f9
+
+.field public static final sns_ic_flag_gr:I = 0x7f0811fa
+
+.field public static final sns_ic_flag_gs:I = 0x7f0811fb
+
+.field public static final sns_ic_flag_gt:I = 0x7f0811fc
+
+.field public static final sns_ic_flag_gu:I = 0x7f0811fd
+
+.field public static final sns_ic_flag_gw:I = 0x7f0811fe
+
+.field public static final sns_ic_flag_gy:I = 0x7f0811ff
+
+.field public static final sns_ic_flag_hk:I = 0x7f081200
+
+.field public static final sns_ic_flag_hm:I = 0x7f081201
+
+.field public static final sns_ic_flag_hn:I = 0x7f081202
+
+.field public static final sns_ic_flag_hr:I = 0x7f081203
+
+.field public static final sns_ic_flag_ht:I = 0x7f081204
+
+.field public static final sns_ic_flag_hu:I = 0x7f081205
+
+.field public static final sns_ic_flag_id:I = 0x7f081206
+
+.field public static final sns_ic_flag_ie:I = 0x7f081207
+
+.field public static final sns_ic_flag_il:I = 0x7f081208
+
+.field public static final sns_ic_flag_im:I = 0x7f081209
+
+.field public static final sns_ic_flag_in:I = 0x7f08120a
+
+.field public static final sns_ic_flag_io:I = 0x7f08120b
+
+.field public static final sns_ic_flag_iq:I = 0x7f08120c
+
+.field public static final sns_ic_flag_ir:I = 0x7f08120d
+
+.field public static final sns_ic_flag_is:I = 0x7f08120e
+
+.field public static final sns_ic_flag_it:I = 0x7f08120f
+
+.field public static final sns_ic_flag_je:I = 0x7f081210
+
+.field public static final sns_ic_flag_jm:I = 0x7f081211
+
+.field public static final sns_ic_flag_jo:I = 0x7f081212
+
+.field public static final sns_ic_flag_jp:I = 0x7f081213
+
+.field public static final sns_ic_flag_ke:I = 0x7f081214
+
+.field public static final sns_ic_flag_kg:I = 0x7f081215
+
+.field public static final sns_ic_flag_kh:I = 0x7f081216
+
+.field public static final sns_ic_flag_ki:I = 0x7f081217
+
+.field public static final sns_ic_flag_km:I = 0x7f081218
+
+.field public static final sns_ic_flag_kn:I = 0x7f081219
+
+.field public static final sns_ic_flag_kp:I = 0x7f08121a
+
+.field public static final sns_ic_flag_kr:I = 0x7f08121b
+
+.field public static final sns_ic_flag_kw:I = 0x7f08121c
+
+.field public static final sns_ic_flag_ky:I = 0x7f08121d
+
+.field public static final sns_ic_flag_kz:I = 0x7f08121e
+
+.field public static final sns_ic_flag_la:I = 0x7f08121f
+
+.field public static final sns_ic_flag_lb:I = 0x7f081220
+
+.field public static final sns_ic_flag_lc:I = 0x7f081221
+
+.field public static final sns_ic_flag_li:I = 0x7f081222
+
+.field public static final sns_ic_flag_lk:I = 0x7f081223
+
+.field public static final sns_ic_flag_lr:I = 0x7f081224
+
+.field public static final sns_ic_flag_ls:I = 0x7f081225
+
+.field public static final sns_ic_flag_lt:I = 0x7f081226
+
+.field public static final sns_ic_flag_lu:I = 0x7f081227
+
+.field public static final sns_ic_flag_lv:I = 0x7f081228
+
+.field public static final sns_ic_flag_ly:I = 0x7f081229
+
+.field public static final sns_ic_flag_ma:I = 0x7f08122a
+
+.field public static final sns_ic_flag_mc:I = 0x7f08122b
+
+.field public static final sns_ic_flag_md:I = 0x7f08122c
+
+.field public static final sns_ic_flag_me:I = 0x7f08122d
+
+.field public static final sns_ic_flag_mf:I = 0x7f08122e
+
+.field public static final sns_ic_flag_mg:I = 0x7f08122f
+
+.field public static final sns_ic_flag_mh:I = 0x7f081230
+
+.field public static final sns_ic_flag_mk:I = 0x7f081231
+
+.field public static final sns_ic_flag_ml:I = 0x7f081232
+
+.field public static final sns_ic_flag_mm:I = 0x7f081233
+
+.field public static final sns_ic_flag_mn:I = 0x7f081234
+
+.field public static final sns_ic_flag_mo:I = 0x7f081235
+
+.field public static final sns_ic_flag_mp:I = 0x7f081236
+
+.field public static final sns_ic_flag_mq:I = 0x7f081237
+
+.field public static final sns_ic_flag_mr:I = 0x7f081238
+
+.field public static final sns_ic_flag_ms:I = 0x7f081239
+
+.field public static final sns_ic_flag_mt:I = 0x7f08123a
+
+.field public static final sns_ic_flag_mu:I = 0x7f08123b
+
+.field public static final sns_ic_flag_mv:I = 0x7f08123c
+
+.field public static final sns_ic_flag_mw:I = 0x7f08123d
+
+.field public static final sns_ic_flag_mx:I = 0x7f08123e
+
+.field public static final sns_ic_flag_my:I = 0x7f08123f
+
+.field public static final sns_ic_flag_mz:I = 0x7f081240
+
+.field public static final sns_ic_flag_na:I = 0x7f081241
+
+.field public static final sns_ic_flag_nc:I = 0x7f081242
+
+.field public static final sns_ic_flag_ne:I = 0x7f081243
+
+.field public static final sns_ic_flag_nf:I = 0x7f081244
+
+.field public static final sns_ic_flag_ng:I = 0x7f081245
+
+.field public static final sns_ic_flag_ni:I = 0x7f081246
+
+.field public static final sns_ic_flag_nl:I = 0x7f081247
+
+.field public static final sns_ic_flag_no:I = 0x7f081248
+
+.field public static final sns_ic_flag_np:I = 0x7f081249
+
+.field public static final sns_ic_flag_nr:I = 0x7f08124a
+
+.field public static final sns_ic_flag_nu:I = 0x7f08124b
+
+.field public static final sns_ic_flag_nz:I = 0x7f08124c
+
+.field public static final sns_ic_flag_om:I = 0x7f08124d
+
+.field public static final sns_ic_flag_pa:I = 0x7f08124e
+
+.field public static final sns_ic_flag_pe:I = 0x7f08124f
+
+.field public static final sns_ic_flag_pf:I = 0x7f081250
+
+.field public static final sns_ic_flag_pg:I = 0x7f081251
+
+.field public static final sns_ic_flag_ph:I = 0x7f081252
+
+.field public static final sns_ic_flag_pk:I = 0x7f081253
+
+.field public static final sns_ic_flag_pl:I = 0x7f081254
+
+.field public static final sns_ic_flag_placeholder:I = 0x7f081255
+
+.field public static final sns_ic_flag_pm:I = 0x7f081256
+
+.field public static final sns_ic_flag_pn:I = 0x7f081257
+
+.field public static final sns_ic_flag_pr:I = 0x7f081258
+
+.field public static final sns_ic_flag_ps:I = 0x7f081259
+
+.field public static final sns_ic_flag_pt:I = 0x7f08125a
+
+.field public static final sns_ic_flag_pw:I = 0x7f08125b
+
+.field public static final sns_ic_flag_py:I = 0x7f08125c
+
+.field public static final sns_ic_flag_qa:I = 0x7f08125d
+
+.field public static final sns_ic_flag_re:I = 0x7f08125e
+
+.field public static final sns_ic_flag_ro:I = 0x7f08125f
+
+.field public static final sns_ic_flag_rs:I = 0x7f081260
+
+.field public static final sns_ic_flag_ru:I = 0x7f081261
+
+.field public static final sns_ic_flag_rw:I = 0x7f081262
+
+.field public static final sns_ic_flag_sa:I = 0x7f081263
+
+.field public static final sns_ic_flag_sb:I = 0x7f081264
+
+.field public static final sns_ic_flag_sc:I = 0x7f081265
+
+.field public static final sns_ic_flag_sd:I = 0x7f081266
+
+.field public static final sns_ic_flag_se:I = 0x7f081267
+
+.field public static final sns_ic_flag_sg:I = 0x7f081268
+
+.field public static final sns_ic_flag_sh:I = 0x7f081269
+
+.field public static final sns_ic_flag_si:I = 0x7f08126a
+
+.field public static final sns_ic_flag_sj:I = 0x7f08126b
+
+.field public static final sns_ic_flag_sk:I = 0x7f08126c
+
+.field public static final sns_ic_flag_sl:I = 0x7f08126d
+
+.field public static final sns_ic_flag_sm:I = 0x7f08126e
+
+.field public static final sns_ic_flag_sn:I = 0x7f08126f
+
+.field public static final sns_ic_flag_so:I = 0x7f081270
+
+.field public static final sns_ic_flag_sr:I = 0x7f081271
+
+.field public static final sns_ic_flag_ss:I = 0x7f081272
+
+.field public static final sns_ic_flag_st:I = 0x7f081273
+
+.field public static final sns_ic_flag_sv:I = 0x7f081274
+
+.field public static final sns_ic_flag_sx:I = 0x7f081275
+
+.field public static final sns_ic_flag_sy:I = 0x7f081276
+
+.field public static final sns_ic_flag_sz:I = 0x7f081277
+
+.field public static final sns_ic_flag_tc:I = 0x7f081278
+
+.field public static final sns_ic_flag_td:I = 0x7f081279
+
+.field public static final sns_ic_flag_tf:I = 0x7f08127a
+
+.field public static final sns_ic_flag_tg:I = 0x7f08127b
+
+.field public static final sns_ic_flag_th:I = 0x7f08127c
+
+.field public static final sns_ic_flag_tj:I = 0x7f08127d
+
+.field public static final sns_ic_flag_tk:I = 0x7f08127e
+
+.field public static final sns_ic_flag_tl:I = 0x7f08127f
+
+.field public static final sns_ic_flag_tm:I = 0x7f081280
+
+.field public static final sns_ic_flag_tn:I = 0x7f081281
+
+.field public static final sns_ic_flag_to:I = 0x7f081282
+
+.field public static final sns_ic_flag_tr:I = 0x7f081283
+
+.field public static final sns_ic_flag_tt:I = 0x7f081284
+
+.field public static final sns_ic_flag_tv:I = 0x7f081285
+
+.field public static final sns_ic_flag_tw:I = 0x7f081286
+
+.field public static final sns_ic_flag_tz:I = 0x7f081287
+
+.field public static final sns_ic_flag_ua:I = 0x7f081288
+
+.field public static final sns_ic_flag_ug:I = 0x7f081289
+
+.field public static final sns_ic_flag_um:I = 0x7f08128a
+
+.field public static final sns_ic_flag_us:I = 0x7f08128b
+
+.field public static final sns_ic_flag_uy:I = 0x7f08128c
+
+.field public static final sns_ic_flag_uz:I = 0x7f08128d
+
+.field public static final sns_ic_flag_va:I = 0x7f08128e
+
+.field public static final sns_ic_flag_vc:I = 0x7f08128f
+
+.field public static final sns_ic_flag_ve:I = 0x7f081290
+
+.field public static final sns_ic_flag_vg:I = 0x7f081291
+
+.field public static final sns_ic_flag_vi:I = 0x7f081292
+
+.field public static final sns_ic_flag_vn:I = 0x7f081293
+
+.field public static final sns_ic_flag_vu:I = 0x7f081294
+
+.field public static final sns_ic_flag_wf:I = 0x7f081295
+
+.field public static final sns_ic_flag_ws:I = 0x7f081296
+
+.field public static final sns_ic_flag_xk:I = 0x7f081297
+
+.field public static final sns_ic_flag_ye:I = 0x7f081298
+
+.field public static final sns_ic_flag_yt:I = 0x7f081299
+
+.field public static final sns_ic_flag_za:I = 0x7f08129a
+
+.field public static final sns_ic_flag_zm:I = 0x7f08129b
+
+.field public static final sns_ic_flag_zw:I = 0x7f08129c
+
+.field public static final sns_ic_flash_off:I = 0x7f08129d
+
+.field public static final sns_ic_flash_on:I = 0x7f08129e
+
+.field public static final sns_ic_flash_on_filled:I = 0x7f08129f
+
+.field public static final sns_ic_gallery:I = 0x7f0812a0
+
+.field public static final sns_ic_gallery_small:I = 0x7f0812a1
+
+.field public static final sns_ic_id_hand:I = 0x7f0812a2
+
+.field public static final sns_ic_iddoc_driving_license:I = 0x7f0812a3
+
+.field public static final sns_ic_iddoc_error:I = 0x7f0812a4
+
+.field public static final sns_ic_iddoc_id_card:I = 0x7f0812a5
+
+.field public static final sns_ic_iddoc_passport:I = 0x7f0812a6
+
+.field public static final sns_ic_iddoc_proof_of_address:I = 0x7f0812a7
+
+.field public static final sns_ic_iddoc_residence_permit:I = 0x7f0812a8
+
+.field public static final sns_ic_iddoc_warning:I = 0x7f0812a9
+
+.field public static final sns_ic_image:I = 0x7f0812aa
+
+.field public static final sns_ic_info:I = 0x7f0812ab
+
+.field public static final sns_ic_info_circle:I = 0x7f0812ac
+
+.field public static final sns_ic_info_outline:I = 0x7f0812ad
+
+.field public static final sns_ic_intro_do:I = 0x7f0812ae
+
+.field public static final sns_ic_intro_do_back:I = 0x7f0812af
+
+.field public static final sns_ic_intro_do_passport:I = 0x7f0812b0
+
+.field public static final sns_ic_intro_dont:I = 0x7f0812b1
+
+.field public static final sns_ic_intro_dont_back:I = 0x7f0812b2
+
+.field public static final sns_ic_intro_dont_passport:I = 0x7f0812b3
+
+.field public static final sns_ic_intro_liveness:I = 0x7f0812b4
+
+.field public static final sns_ic_intro_payment_methods_bank_card:I = 0x7f0812b5
+
+.field public static final sns_ic_launch:I = 0x7f0812b6
+
+.field public static final sns_ic_light:I = 0x7f0812b7
+
+.field public static final sns_ic_location_off_outline:I = 0x7f0812b8
+
+.field public static final sns_ic_location_on_outline:I = 0x7f0812b9
+
+.field public static final sns_ic_lock:I = 0x7f0812ba
+
+.field public static final sns_ic_lock_outline:I = 0x7f0812bb
+
+.field public static final sns_ic_notify:I = 0x7f0812bc
+
+.field public static final sns_ic_person:I = 0x7f0812bd
+
+.field public static final sns_ic_persons:I = 0x7f0812be
+
+.field public static final sns_ic_photo_frame:I = 0x7f0812bf
+
+.field public static final sns_ic_pin:I = 0x7f0812c0
+
+.field public static final sns_ic_recording:I = 0x7f0812c1
+
+.field public static final sns_ic_rejected:I = 0x7f0812c2
+
+.field public static final sns_ic_restriction_vpn:I = 0x7f0812c3
+
+.field public static final sns_ic_reverse_v:I = 0x7f0812c4
+
+.field public static final sns_ic_reverse_with_background:I = 0x7f0812c5
+
+.field public static final sns_ic_rotate_ccw:I = 0x7f0812c6
+
+.field public static final sns_ic_rotate_cw:I = 0x7f0812c7
+
+.field public static final sns_ic_search:I = 0x7f0812c8
+
+.field public static final sns_ic_shield_check_outline:I = 0x7f0812c9
+
+.field public static final sns_ic_sign:I = 0x7f0812ca
+
+.field public static final sns_ic_step_applicant_data:I = 0x7f0812cb
+
+.field public static final sns_ic_step_ekyc:I = 0x7f0812cc
+
+.field public static final sns_ic_step_email:I = 0x7f0812cd
+
+.field public static final sns_ic_step_identity:I = 0x7f0812ce
+
+.field public static final sns_ic_step_open:I = 0x7f0812cf
+
+.field public static final sns_ic_step_phone:I = 0x7f0812d0
+
+.field public static final sns_ic_step_poa:I = 0x7f0812d1
+
+.field public static final sns_ic_step_questionnaire:I = 0x7f0812d2
+
+.field public static final sns_ic_step_selfie:I = 0x7f0812d3
+
+.field public static final sns_ic_step_video_ident:I = 0x7f0812d4
+
+.field public static final sns_ic_submitted:I = 0x7f0812d5
+
+.field public static final sns_ic_success:I = 0x7f0812d6
+
+.field public static final sns_ic_success_check:I = 0x7f0812d7
+
+.field public static final sns_ic_success_dow_arrow:I = 0x7f0812d8
+
+.field public static final sns_ic_success_filled:I = 0x7f0812d9
+
+.field public static final sns_ic_sumsub_id_small:I = 0x7f0812da
+
+.field public static final sns_ic_upload:I = 0x7f0812db
+
+.field public static final sns_ic_videoident_intro_face:I = 0x7f0812dc
+
+.field public static final sns_ic_warning:I = 0x7f0812dd
+
+.field public static final sns_ic_warning_outline:I = 0x7f0812de
+
+.field public static final sns_ic_warning_triangle:I = 0x7f0812df
+
+.field public static final sns_ic_wifi:I = 0x7f0812e0
+
+.field public static final sns_items_divider_medium:I = 0x7f0812e1
+
+.field public static final sns_items_divider_medium_plus:I = 0x7f0812e2
+
+.field public static final sns_list_divider:I = 0x7f0812e3
+
+.field public static final sns_pincode_cursor:I = 0x7f0812e4
+
+.field public static final sns_recording_bg:I = 0x7f0812e5
+
+.field public static final sns_round_rect:I = 0x7f0812e6
+
+.field public static final sns_round_rect_background:I = 0x7f0812e7
+
+.field public static final sns_selfie_border:I = 0x7f0812e8
+
+.field public static final sns_selfie_frame:I = 0x7f0812e9
+
+.field public static final sns_selfie_mask:I = 0x7f0812ea
+
+.field public static final sns_switch_thumb:I = 0x7f0812eb
+
+.field public static final sns_switch_thumb_checked:I = 0x7f0812ec
+
+.field public static final sns_switch_thumb_unchecked:I = 0x7f0812ed
+
+.field public static final sns_switch_track:I = 0x7f0812ee
+
+.field public static final sns_text_handle:I = 0x7f0812ef
+
+.field public static final spot_kyc_icon_bg:I = 0x7f0812f0
+
+.field public static final spot_kyc_lead_view_bg:I = 0x7f0812f1
+
+.field public static final spot_shape_delegation_dash_line_vertical:I = 0x7f0812f2
+
+.field public static final test_level_drawable:I = 0x7f0812f3
+
+.field public static final timpush_notification_icon:I = 0x7f0812f4
+
+.field public static final toast_bg:I = 0x7f0812f5
+
+.field public static final tooltip_frame_dark:I = 0x7f0812f6
+
+.field public static final tooltip_frame_light:I = 0x7f0812f7
+
+.field public static final trade_btn_cover_bg:I = 0x7f0812f8
+
+.field public static final trade_buy_sell_view_bg:I = 0x7f0812f9
+
+.field public static final trade_type_advanced_limit:I = 0x7f0812fa
+
+.field public static final trade_type_hidden:I = 0x7f0812fb
+
+.field public static final trade_type_limit:I = 0x7f0812fc
+
+.field public static final trade_type_market:I = 0x7f0812fd
+
+.field public static final trade_type_oco:I = 0x7f0812fe
+
+.field public static final trade_type_segment:I = 0x7f0812ff
+
+.field public static final trade_type_stop_limit:I = 0x7f081300
+
+.field public static final trade_type_stop_market:I = 0x7f081301
+
+.field public static final trade_type_trailing_stop:I = 0x7f081302
+
+.field public static final trade_type_twap:I = 0x7f081303
+
+.field public static final tradebase_bg_segment_table_header:I = 0x7f081304
+
+.field public static final turn_head_1:I = 0x7f081305
+
+.field public static final turn_head_2:I = 0x7f081306
+
+.field public static final turn_head_3:I = 0x7f081307
+
+.field public static final turn_head_4:I = 0x7f081308
+
+.field public static final ucenter_shape_pwd_ok:I = 0x7f081309
+
+.field public static final ui_ic_checkbox_20:I = 0x7f08130a
+
+.field public static final ui_ic_checkbox_22:I = 0x7f08130b
+
+.field public static final ui_ic_checkbox_24:I = 0x7f08130c
+
+.field public static final ui_selector_bg_press:I = 0x7f08130d
+
+.field public static final ui_selector_checkbox:I = 0x7f08130e
+
+.field public static final ui_selector_checkbox_20:I = 0x7f08130f
+
+.field public static final ui_selector_checkbox_24:I = 0x7f081310
+
+.field public static final ui_selector_checkbox_green_20:I = 0x7f081311
+
+.field public static final ui_selector_checkbox_green_24:I = 0x7f081312
+
+.field public static final ui_selector_checkbox_small:I = 0x7f081313
+
+.field public static final ui_selector_content_select:I = 0x7f081314
+
+.field public static final ui_selector_password_eye:I = 0x7f081315
+
+.field public static final ui_selector_radio:I = 0x7f081316
+
+.field public static final ui_selector_search_24r:I = 0x7f081317
+
+.field public static final usercenter_shape_point_text:I = 0x7f081318
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+.end method

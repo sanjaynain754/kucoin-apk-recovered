@@ -1,0 +1,403 @@
+.class public final Lcom/sumsub/sns/internal/features/domain/esign/k;
+.super Ljava/lang/Object;
+.source "r8-map-id-e8070c335b728e491f9067563c2bfcb5588b777f644873c971594ef64ebda208"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+.end method
+
+
+# virtual methods
+.method public final a(Lcom/sumsub/sns/internal/features/data/repository/applicant/d;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
+    .locals 6
+
+    .line 1
+    .line 2
+    instance-of v0, p2, Lcom/sumsub/sns/internal/features/domain/esign/j;
+
+    .line 3
+    .line 4
+    if-eqz v0, :cond_0
+
+    .line 5
+    move-object v0, p2
+
+    .line 6
+    .line 7
+    check-cast v0, Lcom/sumsub/sns/internal/features/domain/esign/j;
+
+    .line 8
+    .line 9
+    iget v1, v0, Lcom/sumsub/sns/internal/features/domain/esign/j;->c:I
+
+    .line 10
+    .line 11
+    const/high16 v2, -0x80000000
+
+    .line 12
+    .line 13
+    and-int v3, v1, v2
+
+    .line 14
+    .line 15
+    if-eqz v3, :cond_0
+
+    .line 16
+    sub-int/2addr v1, v2
+
+    .line 17
+    .line 18
+    iput v1, v0, Lcom/sumsub/sns/internal/features/domain/esign/j;->c:I
+
+    .line 19
+    goto :goto_0
+
+    .line 20
+    .line 21
+    :cond_0
+    new-instance v0, Lcom/sumsub/sns/internal/features/domain/esign/j;
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-direct {v0, p0, p2}, Lcom/sumsub/sns/internal/features/domain/esign/j;-><init>(Lcom/sumsub/sns/internal/features/domain/esign/k;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)V
+
+    .line 25
+    .line 26
+    :goto_0
+    iget-object p2, v0, Lcom/sumsub/sns/internal/features/domain/esign/j;->a:Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
+
+    .line 30
+    move-result-object v1
+
+    .line 31
+    .line 32
+    iget v2, v0, Lcom/sumsub/sns/internal/features/domain/esign/j;->c:I
+
+    .line 33
+    const/4 v3, 0x1
+
+    .line 34
+    .line 35
+    if-eqz v2, :cond_2
+
+    .line 36
+    .line 37
+    if-ne v2, v3, :cond_1
+
+    .line 38
+    .line 39
+    .line 40
+    :try_start_0
+    invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 41
+    goto :goto_1
+
+    .line 42
+    :catch_0
+    move-exception v0
+
+    .line 43
+    move-object p1, v0
+
+    .line 44
+    goto :goto_2
+
+    .line 45
+    .line 46
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 47
+    .line 48
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 49
+    .line 50
+    .line 51
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 52
+    throw p1
+
+    .line 53
+    .line 54
+    .line 55
+    :cond_2
+    invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    .line 56
+    .line 57
+    :try_start_1
+    new-instance p2, Lcom/sumsub/sns/internal/features/data/model/esign/H;
+
+    .line 58
+    .line 59
+    const-string v2, "accepted"
+
+    .line 60
+    .line 61
+    .line 62
+    invoke-static {v3}, Lkotlin/coroutines/jvm/internal/Boxing;->boxBoolean(Z)Ljava/lang/Boolean;
+
+    .line 63
+    move-result-object v4
+
+    .line 64
+    .line 65
+    .line 66
+    invoke-static {v2, v4}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    .line 67
+    move-result-object v2
+
+    .line 68
+    .line 69
+    .line 70
+    invoke-static {v2}, Lkotlin/collections/MapsKt;->mapOf(Lkotlin/Pair;)Ljava/util/Map;
+
+    .line 71
+    move-result-object v2
+
+    .line 72
+    .line 73
+    .line 74
+    invoke-direct {p2, v2}, Lcom/sumsub/sns/internal/features/data/model/esign/H;-><init>(Ljava/util/Map;)V
+
+    .line 75
+    .line 76
+    iput v3, v0, Lcom/sumsub/sns/internal/features/domain/esign/j;->c:I
+
+    .line 77
+    .line 78
+    check-cast p1, Lcom/sumsub/sns/internal/features/data/repository/applicant/z;
+
+    .line 79
+    .line 80
+    .line 81
+    invoke-virtual {p1, p2, v0}, Lcom/sumsub/sns/internal/features/data/repository/applicant/z;->a(Lcom/sumsub/sns/internal/features/data/model/esign/H;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
+
+    .line 82
+    move-result-object p2
+
+    .line 83
+    .line 84
+    if-ne p2, v1, :cond_3
+
+    .line 85
+    return-object v1
+
+    .line 86
+    .line 87
+    :cond_3
+    :goto_1
+    check-cast p2, Lcom/sumsub/sns/internal/features/data/model/esign/Y;
+
+    .line 88
+    .line 89
+    if-eqz p2, :cond_4
+
+    .line 90
+    .line 91
+    .line 92
+    invoke-static {p2}, Lkotlin/Result;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 93
+    move-result-object p1
+
+    .line 94
+    return-object p1
+
+    .line 95
+    .line 96
+    :cond_4
+    sget-object p1, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
+
+    .line 97
+    .line 98
+    new-instance v0, Lcom/sumsub/sns/core/data/model/SNSGeneralException;
+
+    .line 99
+    .line 100
+    const-string v1, "Response null"
+
+    .line 101
+    const/4 v4, 0x6
+
+    .line 102
+    const/4 v5, 0x0
+
+    .line 103
+    const/4 v2, 0x0
+
+    .line 104
+    const/4 v3, 0x0
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-direct/range {v0 .. v5}, Lcom/sumsub/sns/core/data/model/SNSGeneralException;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 108
+    .line 109
+    .line 110
+    invoke-static {v0}, Lkotlin/ResultKt;->createFailure(Ljava/lang/Throwable;)Ljava/lang/Object;
+
+    .line 111
+    move-result-object p1
+
+    .line 112
+    .line 113
+    .line 114
+    invoke-static {p1}, Lkotlin/Result;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 115
+    move-result-object p1
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 116
+    return-object p1
+
+    .line 117
+    .line 118
+    :goto_2
+    sget-object p2, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
+
+    .line 119
+    .line 120
+    .line 121
+    invoke-static {p1}, Lkotlin/ResultKt;->createFailure(Ljava/lang/Throwable;)Ljava/lang/Object;
+
+    .line 122
+    move-result-object p1
+
+    .line 123
+    .line 124
+    .line 125
+    invoke-static {p1}, Lkotlin/Result;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 126
+    move-result-object p1
+
+    .line 127
+    return-object p1
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+    .line 214
+.end method

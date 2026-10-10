@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:id="@id/card_config_entry" android:background="@drawable/shape_textemp_30r_show_border_night" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginBottom="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_setting_20" app:tint="@color/c_icon" />
+</FrameLayout>

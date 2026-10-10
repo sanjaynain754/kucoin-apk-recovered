@@ -1,0 +1,47 @@
+.class public final Lcom/appsflyer/internal/AFk1mSDK;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public AFAdRevenueData:C
+
+.field public areAllFieldsValid:I
+
+.field public component4:I
+
+.field public getCurrencyIso4217Code:I
+
+.field public getMediationNetwork:C
+
+.field public getMonetizationNetwork:I
+
+.field public getRevenue:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_item" android:background="@drawable/selector_color_bottom_sheet" android:layout_width="fill_parent" android:layout_height="64.0dip" android:paddingStart="@dimen/spacing_16" android:paddingEnd="@dimen/spacing_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/btransfer_ic_main" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:id="@id/tv_account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_8" android:layout_marginHorizontal="@dimen/spacing_8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/font_12" android:textColor="@color/c_text30" android:id="@id/tv_label" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_8" android:text="--" android:layout_marginHorizontal="@dimen/spacing_8" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/kucoin_ic_checked" />
+</LinearLayout>

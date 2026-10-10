@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/spot_banner" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.core.spot.view.SpotImportantNoticeView android:id="@id/importantNoticeView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" />
+    <com.kubi.core.spot.view.SpotTradeRiskTipView android:id="@id/riskTipView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/fl_etf" android:background="@drawable/shape_primary8_2r" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:minHeight="40.0dip" android:layout_marginHorizontal="16.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/primary" android:id="@id/tv_etf_tips" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="5.0dip" />
+        <ImageView android:id="@id/iv_close_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_16" android:tintMode="src_in" app:tint="@color/c_icon" />
+    </LinearLayout>
+</LinearLayout>

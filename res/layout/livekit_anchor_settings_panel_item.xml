@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_root" android:layout_width="80.0dip" android:layout_height="79.0dip" android:layout_marginTop="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_icon_container" android:background="@drawable/live_kc_bg_settings_panel_item_icon" android:layout_width="48.0dip" android:layout_height="48.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/iv_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitCenter" app:tint="@color/c_white" />
+    </FrameLayout>
+    <io.trtc.tuikit.atomicx.widget.basicwidget.label.AtomicLabel android:textSize="11.0sp" android:textColor="@color/text_color_primary" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="1" android:singleLine="true" android:fontFamily="@font/regular" />
+</LinearLayout>

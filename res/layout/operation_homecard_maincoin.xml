@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layoutRoot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/maincoinCard" android:layout_width="fill_parent" android:layout_height="116.0dip" app:cardBackgroundColor="@color/c_overlay" app:cardCornerRadius="12.0dip" app:cardElevation="0.0dip" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="false" app:strokeColor="@color/c_cover8" app:strokeWidth="0.0dip">
+        <com.kubi.resources.widget.bingoogolapple.bgabanner.BGABanner android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="fill_parent" app:banner_aspectRatio="0.0" app:banner_indicatorGravity="left" app:banner_pageChangeDuration="1000" app:banner_pointAutoPlayAble="true" app:banner_pointAutoPlayInterval="5000" app:banner_pointContainerBackground="@android:color/transparent" app:banner_pointDrawable="@drawable/selector_banner_indicator" app:banner_pointLeftRightMargin="1.5dip" app:banner_pointRealContainerPadding="16.0dip" app:banner_pointTopBottomMargin="12.0dip" />
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

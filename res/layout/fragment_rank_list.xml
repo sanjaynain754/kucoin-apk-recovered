@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/view_sort" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/quote_item_view_rank_sort" />
+    <com.kubi.resources.widget.SwipeRefreshRecyclerView android:id="@id/swipeRecyclerLayout" android:paddingBottom="40.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/rank_list_loading_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.kubi.quotefacade.view.RankShimmer android:id="@id/rs_loading" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/spacing_16" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/layoutViewMore" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="center" android:id="@id/tvViewMore" android:paddingTop="@dimen/spacing_8" android:paddingBottom="@dimen/spacing_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="37.0dip" android:text="@string/view_more" android:includeFontPadding="false" app:drawableEndCompat="@drawable/ic2_arrow_right_12" app:drawableTint="@color/c_icon40" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

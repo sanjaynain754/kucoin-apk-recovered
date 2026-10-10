@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/view_root" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" app:layout_constraintBottom_toTopOf="@id/view_internel_bottom" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/spacing_16" android:paddingEnd="@dimen/spacing_16">
+            <com.kubi.assets.view.WithdrawHeaderView android:id="@id/view_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include android:id="@id/view_internel_empty" android:visibility="gone" app:layout_constraintTop_toTopOf="parent" layout="@layout/kucoin_view_withdraw_empty" />
+            <include android:id="@id/view_content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/view_header" layout="@layout/kucoin_view_withdraw_internel_content" />
+            <include android:id="@id/view_error" android:visibility="gone" app:layout_constraintTop_toBottomOf="@id/view_header" layout="@layout/view_fail" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@id/view_internel_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" layout="@layout/kucoin_view_withdraw_bottom" />
+    <View android:background="@drawable/asset_shape_background_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/spacing_20" android:alpha="0.3" app:layout_constraintBottom_toTopOf="@id/view_internel_bottom" />
+</androidx.constraintlayout.widget.ConstraintLayout>

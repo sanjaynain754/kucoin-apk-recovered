@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="horizontal" android:id="@id/ll_start" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.35">
+        <com.kubi.resources.widget.DashTextView android:textSize="12.0sp" android:textColor="@color/c_text" android:layout_gravity="center_vertical" android:id="@id/tv_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5.0dip" />
+    </FrameLayout>
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text" android:id="@id/tv_center" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintStart_toEndOf="@id/ll_start" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.3" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tv_end" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintStart_toEndOf="@id/tv_center" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.35" />
+</androidx.constraintlayout.widget.ConstraintLayout>

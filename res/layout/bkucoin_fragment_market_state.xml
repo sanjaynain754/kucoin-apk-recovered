@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/coin_market_data" android:fontFamily="@font/medium" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.kubi.resources.widget.DashTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/tv_rank_label" android:tag="dash" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rank_label" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tv_rank" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.kubi.resources.widget.DashTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/tv_rating_label" android:tag="dash" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rating_label" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tv_rating" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.kubi.resources.widget.DashTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/tv_market_cap_label" android:tag="dash" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/market_cap_label" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tv_market_cap" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.kubi.resources.widget.DashTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/tv_amount_label" android:tag="dash" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/coin_amount" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tv_amount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/coin_historical_data" android:fontFamily="@font/medium" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.kubi.resources.widget.DashTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/tv_ath_label" android:tag="dash" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/coin_ath" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tv_ath" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.kubi.resources.widget.DashTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/tv_atl_label" android:tag="dash" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/coin_atl" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tv_atl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.kubi.resources.widget.DashTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/tv_price_chg_label" android:tag="dash" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/coin_price_chg" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.UpDownTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tv_price_chg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.kubi.resources.widget.DashTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/tv_value_chg_label" android:tag="dash" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/coin_value_chg" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.UpDownTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tv_value_chg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/coin_supply_data" android:fontFamily="@font/medium" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.kubi.resources.widget.DashTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/tv_max_supply_label" android:tag="dash" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/max_supply_label" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tv_max_supply" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.kubi.resources.widget.DashTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/tv_circulating_label" android:tag="dash" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/max_circulating_label" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tv_circulating" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

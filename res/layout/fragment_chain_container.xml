@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40">
+        <com.kubi.resources.widget.flyco.SlidingTabLayout android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingStart="6.0dip" app:tl_indicator_center_with_text="true" app:tl_indicator_color="@color/c_text" app:tl_indicator_height="@dimen/spacing_2" app:tl_indicator_width="@dimen/spacing_22" app:tl_tab_padding="@dimen/spacing_10" style="@style/tab_layout_indicator_level3" />
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/chain_filter_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:background="@color/c_divider8" android:layout_width="@dimen/line_width" android:layout_height="18.0dip" android:contentDescription="@null" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text" android:gravity="center_vertical" android:id="@id/iv_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/quote_chain_time_one_day" android:drawablePadding="4.0dip" android:drawableEnd="@drawable/ic2_triangle_bottom_12" android:fontFamily="@font/semi" android:paddingStart="12.0dip" app:drawableTint="@color/c_text" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_filter" android:paddingTop="11.0dip" android:paddingBottom="@dimen/spacing_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:paddingStart="@dimen/spacing_8" android:paddingEnd="@dimen/spacing_16" app:srcCompat="@drawable/ic2_filter_16" app:tint="@color/emphasis" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.kubi.quotefacade.view.CanScrollQuoteViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.appcompat.widget.LinearLayoutCompat>

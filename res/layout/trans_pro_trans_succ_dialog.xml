@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/shape_bottom_sheet_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="120.0dip" android:layout_height="98.0dip" android:layout_marginTop="49.0dip" android:src="@mipmap/btransfer_succ_icon" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_20" android:textColor="@color/c_text" android:layout_gravity="center_horizontal" android:id="@id/transSuccAccounts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="16.0dip" android:text="@string/kc_transfer_pro_success_tip" android:layout_marginHorizontal="16.0dip" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_20" android:textColor="@color/brandGreen" android:layout_gravity="center_horizontal" android:id="@id/transAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:fontFamily="@font/bold" android:layout_marginHorizontal="16.0dip" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center_vertical" android:id="@id/llMultiAccountSwitch" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:layout_marginBottom="20.0dip" android:paddingHorizontal="16.0dip" orientation="horizontal">
+            <com.kubi.resources.widget.button.KcSecondaryButton android:id="@id/btnOk" android:clickable="true" android:layout_width="0.0dip" android:text="@string/confirm" android:layout_weight="1.0" style="@style/styleButton40Secondary" />
+            <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/btnTrade" android:clickable="true" android:layout_width="0.0dip" android:text="@string/coin_to_trade" android:layout_weight="1.0" android:layout_marginStart="12.0dip" style="@style/styleButton40" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

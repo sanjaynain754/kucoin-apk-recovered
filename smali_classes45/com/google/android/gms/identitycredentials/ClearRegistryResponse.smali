@@ -1,0 +1,246 @@
+.class public final Lcom/google/android/gms/identitycredentials/ClearRegistryResponse;
+.super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
+.source "com.google.android.gms:play-services-identity-credentials@@16.0.0-alpha08"
+
+
+# annotations
+.annotation runtime Lcom/google/android/gms/common/internal/safeparcel/SafeParcelable$Class;
+    creator = "ClearRegistryResponseCreator"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/android/gms/identitycredentials/ClearRegistryResponse$Companion;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\u0008\u0007\u0018\u0000 \r2\u00020\u0001:\u0001\rB\u0013\u0008\u0007\u0012\u0008\u0008\u0001\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0018\u0010\u0007\u001a\u00020\u00082\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u000cH\u0016R\u0016\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0002\u0010\u0006\u00a8\u0006\u000e"
+    }
+    d2 = {
+        "Lcom/google/android/gms/identitycredentials/ClearRegistryResponse;",
+        "Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;",
+        "isDeleted",
+        "",
+        "<init>",
+        "(Z)V",
+        "()Z",
+        "writeToParcel",
+        "",
+        "dest",
+        "Landroid/os/Parcel;",
+        "flags",
+        "",
+        "Companion",
+        "java.com.google.android.gmscore.integ.client.identity_credentials_identity_credentials"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x1,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lcom/google/android/gms/identitycredentials/ClearRegistryResponse;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lkotlin/jvm/JvmField;
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public static final Companion:Lcom/google/android/gms/identitycredentials/ClearRegistryResponse$Companion;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# instance fields
+.field private final isDeleted:Z
+    .annotation runtime Lcom/google/android/gms/common/internal/safeparcel/SafeParcelable$Field;
+        getter = "isDeleted"
+        id = 0x1
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    .line 2
+    new-instance v0, Lcom/google/android/gms/identitycredentials/ClearRegistryResponse$Companion;
+
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {v0, v1}, Lcom/google/android/gms/identitycredentials/ClearRegistryResponse$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 7
+    .line 8
+    sput-object v0, Lcom/google/android/gms/identitycredentials/ClearRegistryResponse;->Companion:Lcom/google/android/gms/identitycredentials/ClearRegistryResponse$Companion;
+
+    .line 9
+    .line 10
+    new-instance v0, Lcom/google/android/gms/identitycredentials/ClearRegistryResponseCreator;
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-direct {v0}, Lcom/google/android/gms/identitycredentials/ClearRegistryResponseCreator;-><init>()V
+
+    .line 14
+    .line 15
+    sput-object v0, Lcom/google/android/gms/identitycredentials/ClearRegistryResponse;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 16
+    return-void
+    .line 17
+    .line 18
+.end method
+
+.method public constructor <init>(Z)V
+    .locals 0
+    .param p1    # Z
+        .annotation runtime Lcom/google/android/gms/common/internal/safeparcel/SafeParcelable$Param;
+            id = 0x1
+        .end annotation
+    .end param
+    .annotation runtime Lcom/google/android/gms/common/internal/safeparcel/SafeParcelable$Constructor;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
+
+    .line 4
+    .line 5
+    iput-boolean p1, p0, Lcom/google/android/gms/identitycredentials/ClearRegistryResponse;->isDeleted:Z
+
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+
+# virtual methods
+.method public final isDeleted()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-boolean v0, p0, Lcom/google/android/gms/identitycredentials/ClearRegistryResponse;->isDeleted:Z
+
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .locals 1
+    .param p1    # Landroid/os/Parcel;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    .line 2
+    const-string v0, "dest"
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/identitycredentials/ClearRegistryResponseCreator;->writeToParcel(Lcom/google/android/gms/identitycredentials/ClearRegistryResponse;Landroid/os/Parcel;I)V
+
+    .line 9
+    return-void
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+.end method

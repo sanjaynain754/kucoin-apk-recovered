@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="18.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="18.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M2 0h20a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" />
+        <group>
+            <path android:fillColor="#ff009543" android:pathData="M0 0h24v18H0z" />
+            <path android:fillColor="#ffed4135" android:pathData="M0 0h24v12H0z" />
+            <path android:fillColor="#ff0035ad" android:pathData="M0 0h24v6H0z" />
+            <path android:fillColor="#fffae600" android:pathData="M9 14.9A5.9 5.9 0 1 0 9 3.1a5.9 5.9 0 0 0 0 11.8z" android:strokeColor="#ff000000" android:strokeWidth="0.2" />
+            <path android:fillColor="#ff000000" android:pathData="M8 9.88h2zM8 8.4h2zm1-5.28V13.2z" />
+            <path android:pathData="M8 9.88h2M8 8.4h2M9 3.12V13.2" android:strokeColor="#ff000000" android:strokeWidth="0.24" />
+            <path android:fillColor="#ff000000" android:pathData="M6.62 14.41c2.41 1 4.67 0.07 4.67 0.07S10.44 13.56 10 13.2c-0.43-0.36-1.68-0.34-2.1 0q-0.67 0.58-1.28 1.21M9 12.68c0.37 0 0.66-0.43 0.66-0.96S9.36 10.76 9 10.76s-0.66 0.43-0.66 0.96 0.3 0.96 0.66 0.96m0-3.04c0.44 0 0.8-0.22 0.8-0.5S9.44 8.64 9 8.64s-0.8 0.22-0.8 0.5 0.36 0.5 0.8 0.5M9 7.6A0.8 0.8 0 1 0 9 6a0.8 0.8 0 0 0 0 1.6" />
+            <path android:fillColor="#ff000000" android:pathData="M9.96 3.82s0.07 0.11-0.07 0.38c-0.7 1.25-1.4 1.28-1.53 1.39C8.21 5.71 8.15 5.7 8.15 5.7l0.02-0.59c0.11-0.59 1-0.58 1.69-1.18zm-2.34 2.7s0.16 0.45 0.18 0.9C7.84 8.14 8.53 8.16 9 8.16v-0.4c-0.36 0-0.66-0.05-0.92-0.58a5 5 0 0 0-0.46-0.66m-0.02 5.8s0.25-0.31 0.55-1.04c0.15-0.38 0.52-0.6 0.85-0.6v-0.56c-0.76 0-1.12 0.28-1.16 0.7q-0.08 0.75-0.24 1.5m2.78-5.8s-0.16 0.45-0.18 0.9C10.16 8.14 9.47 8.16 9 8.16v-0.4c0.36 0 0.66-0.05 0.92-0.58q0.2-0.35 0.46-0.66m0.02 5.8s-0.25-0.31-0.55-1.04A1 1 0 0 0 9 10.68v-0.56c0.76 0 1.13 0.29 1.16 0.7q0.08 0.75 0.24 1.5" />
+        </group>
+    </group>
+</vector>

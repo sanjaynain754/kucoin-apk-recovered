@@ -1,0 +1,58 @@
+.class public final Lcom/tencent/qcloud/tuicore/TUIConstants$TUIConversationGroupPlugin;
+.super Ljava/lang/Object;
+.source "TUIConstants.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tencent/qcloud/tuicore/TUIConstants;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "TUIConversationGroupPlugin"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/tencent/qcloud/tuicore/TUIConstants$TUIConversationGroupPlugin$Extension;
+    }
+.end annotation
+
+
+# static fields
+.field public static final CONTEXT:Ljava/lang/String; = "context"
+
+.field public static final EXTENSION_GROUP_SETTING_MENU:Ljava/lang/String; = "extensionGroupSettingMenu"
+
+.field public static final OBJECT_CONVERSATION_GROUP_FRAGMENT:Ljava/lang/String; = "objectConversationGroupFragment"
+
+.field public static final OBJECT_FACTORY_NAME:Ljava/lang/String; = "objectConversationGroup"
+
+.field public static final SERVICE_NAME:Ljava/lang/String; = "TUIConversationGroupService"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+.end method

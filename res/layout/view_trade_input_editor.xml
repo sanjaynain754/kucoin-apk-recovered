@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_trade_sub" android:layout_width="36.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@mipmap/kucoin_icon_sub" app:tint="@color/selector_color_for_trade_up_down" app:tintMode="src_in" />
+    <com.kubi.resources.widget.FilterEmojiEditText android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:textColorHint="@color/c_text30" android:ellipsize="end" android:gravity="center" android:id="@id/et_trade_input" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="2" android:layout_weight="1.0" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/shape_primary_cursor" android:fontFamily="@font/semi" android:textAlignment="center" android:paddingStart="3.0dip" android:paddingEnd="3.0dip" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_trade_add" android:layout_width="36.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@mipmap/kucoin_icon_add" app:tint="@color/selector_color_for_trade_up_down" app:tintMode="src_in" />
+</merge>

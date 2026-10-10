@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_terms" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/spacing_8" app:srcCompat="@drawable/ic_radio_unselect_20" app:tint="@color/c_button_normal" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_13" android:textColor="@color/c_text60" android:id="@id/tv_terms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@font/regular" />
+    </LinearLayout>
+    <com.kubi.resources.widget.button.KcPrimaryButton android:enabled="true" android:textSize="@dimen/font_16" android:id="@id/tv_confirm" android:layout_width="0.0dip" android:layout_marginTop="@dimen/spacing_16" android:text="@string/payment_confirm_order" app:autoSizeMaxTextSize="@dimen/font_16" app:autoSizeMinTextSize="@dimen/font_14" app:autoSizeTextType="uniform" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_terms" style="@style/styleButton48" />
+</merge>

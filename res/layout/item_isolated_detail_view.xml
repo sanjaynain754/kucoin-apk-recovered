@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/llView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:id="@id/tvLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lock" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.ShowHideTextView android:textSize="12.0sp" android:textColor="@color/c_text" android:id="@id/tvValue" android:tag="hide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+    <View android:id="@id/divide_line" android:layout_marginTop="12.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/llView" style="@style/kucoin_view_divider" />
+    <View android:background="@color/c_divider8" android:layout_width="0.5dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/divide_line" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

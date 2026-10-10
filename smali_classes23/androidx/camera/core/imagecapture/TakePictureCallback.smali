@@ -1,0 +1,42 @@
+.class interface abstract Landroidx/camera/core/imagecapture/TakePictureCallback;
+.super Ljava/lang/Object;
+.source "TakePictureCallback.java"
+
+
+# virtual methods
+.method public abstract isAborted()Z
+.end method
+
+.method public abstract onCaptureFailure(Landroidx/camera/core/ImageCaptureException;)V
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+.end method
+
+.method public abstract onCaptureProcessProgressed(I)V
+.end method
+
+.method public abstract onCaptureStarted()V
+.end method
+
+.method public abstract onFinalResult(Landroidx/camera/core/ImageCapture$OutputFileResults;)V
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+.end method
+
+.method public abstract onFinalResult(Landroidx/camera/core/ImageProxy;)V
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+.end method
+
+.method public abstract onImageCaptured()V
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+.end method
+
+.method public abstract onPostviewBitmapAvailable(Landroid/graphics/Bitmap;)V
+.end method
+
+.method public abstract onProcessFailure(Landroidx/camera/core/ImageCaptureException;)V
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+.end method

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text60" android:id="@id/tv_price_risk_tips" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/only_repaying_debts_tip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatCheckBox android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="center_vertical" android:id="@id/cb_remember_24_hour" android:background="@null" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/kc_trade_order_priceprotect_tip" android:drawablePadding="5.0dip" app:drawableStartCompat="@drawable/selector_checkbox_button_gray_small" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_price_risk_tips" />
+</androidx.constraintlayout.widget.ConstraintLayout>

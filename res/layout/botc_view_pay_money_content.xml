@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/complementary" android:id="@id/tv_pay_money_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_detail_confirm_pay_monny_notice" app:layout_constraintTop_toTopOf="parent" />
+    <com.kubi.resources.widget.AlignTopTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:id="@id/tv_agree" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/payment_detail_confirm_pay_monny_protocol" android:drawablePadding="7.0dip" app:drawableStartCompat="@drawable/selector_checkbox_button" app:layout_constraintTop_toBottomOf="@id/tv_pay_money_tip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

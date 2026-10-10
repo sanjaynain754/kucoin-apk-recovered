@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:background="@drawable/selector_darkoverlay_click" android:layout_width="fill_parent" android:layout_height="@dimen/trade_cell_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.CoinAvatarView android:layout_gravity="center_vertical" android:id="@id/coin_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="8.0dip" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.kubi.resources.widget.BaseTextView android:textSize="15.0sp" android:textColor="@color/c_text" android:ellipsize="end" android:id="@id/tv_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="20" android:fontFamily="@font/semi" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="10.0sp" android:textColor="@color/complementary" android:gravity="center" android:id="@id/tvCoinLabel" android:background="@drawable/shape_complementary16_4r" android:paddingLeft="3.0dip" android:paddingTop="1.0dip" android:paddingRight="3.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" android:paddingHorizontal="3.0dip" android:paddingVertical="1.0dip" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <com.kubi.resources.widget.ShowHideTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:id="@id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="end" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="24.0dip">
+        <com.kubi.resources.widget.UpDownColorTextView android:textSize="15.0sp" android:textColor="@color/c_text" android:gravity="end|center" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/semi" />
+        <com.kubi.resources.widget.ShowHideTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="end" android:id="@id/tv_money_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.kubi.resources.widget.ShowHideTextView android:textSize="14.0sp" android:textColor="@color/c_white" android:gravity="center" android:id="@id/tv_change_rate" android:layout_width="80.0dip" android:layout_height="32.0dip" android:singleLine="true" android:fontFamily="@font/semi" />
+</androidx.appcompat.widget.LinearLayoutCompat>

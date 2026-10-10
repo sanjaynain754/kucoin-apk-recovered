@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_border12_8r" android:paddingLeft="@dimen/spacing_12" android:paddingTop="@dimen/spacing_8" android:paddingRight="@dimen/spacing_12" android:paddingBottom="@dimen/spacing_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" android:paddingHorizontal="@dimen/spacing_12" android:paddingVertical="@dimen/spacing_8"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivIcon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic2_delist_16" android:tint="@color/complementary" />
+    <com.kubi.resources.widget.DashTextView android:textSize="@dimen/font_12" android:textColor="@color/complementary" android:id="@id/tvLabel" android:tag="yes" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="@font/regular" android:paddingStart="@dimen/spacing_4" android:layout_marginStart="6.0dip" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:id="@id/tvCountdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/regular" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/home_calendar_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_11" android:textColor="@color/c_text" android:layout_gravity="center_vertical" android:id="@id/event_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/regular" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_11" android:textColor="@color/c_text40" android:layout_gravity="center_vertical" android:id="@id/event_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/regular" android:layout_marginStart="4.0dip" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/symbolBarContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.kubi.core.biz.offline.SymbolOfflineBannerView android:id="@id/symbolOfflineBannerView" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/symbolBarContainer" />
+    <FrameLayout android:id="@id/complianceInfoContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/symbolOfflineBannerView" />
+    <FrameLayout android:id="@id/spotBannerContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/symbolOfflineBannerView" />
+    <com.kubi.resources.widget.KuCoinRefreshLayout android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/spotBannerContainer" app:srlEnableOverScrollDrag="false" app:srlHeaderTriggerRate="1.3">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/spacing_1">
+            <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/app_bar" android:background="@drawable/bkucoin_bg_coin_trade" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:layout_behavior="com.kubi.resources.AppBarLayoutBehavior">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                    <FrameLayout android:name="com.kubi.core.biz.kline." android:id="@id/klineNtfContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <FrameLayout android:id="@id/callAuctionContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <FrameLayout android:id="@id/tradeSubmitFragmentContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <FrameLayout android:id="@id/importNoticeContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <com.kubi.resources.widget.HoldingEarnEntryCardView android:id="@id/holdingEarnEntryCard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="3.0dip">
+                    <com.kubi.resources.widget.flyco.SlidingTabLayout android:layout_gravity="start|center" android:id="@id/actionTab" android:layout_width="0.0dip" android:layout_height="42.0dip" android:layout_weight="1.0" app:tl_indicator_width_equal_title="false" app:tl_underline_color="@color/c_transparent" style="@style/tab_layout_indicator_level2" />
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@id/allDelegation" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="center" android:paddingHorizontal="16.0dip" app:srcCompat="@drawable/ic2_history_20" app:tint="@color/c_icon" />
+                </LinearLayout>
+                <View style="@style/kucoin_view_divider" />
+            </com.google.android.material.appbar.AppBarLayout>
+            <FrameLayout android:id="@id/orderAndFundsContainer" android:background="@color/c_overlay" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.kubi.resources.widget.KuCoinRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

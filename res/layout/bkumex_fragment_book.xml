@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/spacing_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.resources.widget.chart.depth.KuCoinDepthView android:id="@id/depth" android:layout_width="fill_parent" android:layout_height="170.0dip" android:fillViewport="true" app:depth_downColor="?downColor" app:depth_downColor16="?downColor20" app:depth_upColor="?upColor" app:depth_upColor16="?upColor20" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="35.0dip" android:layoutDirection="ltr" android:paddingStart="@dimen/spacing_12" android:paddingEnd="@dimen/spacing_12">
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_10" android:textColor="@color/c_text60" android:layout_gravity="center_vertical" android:id="@id/depthUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unit_card" />
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <View android:id="@id/label1" android:background="?upColor" android:layout_width="8.0dip" android:layout_height="8.0dip" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_10" android:textColor="@color/c_text60" android:id="@id/label2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buy" android:layout_marginStart="5.0dip" />
+                    <View android:id="@id/label3" android:background="?downColor" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginStart="16.0dip" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_10" android:textColor="@color/c_text60" android:id="@id/label4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sell" android:layout_marginStart="5.0dip" />
+                </LinearLayout>
+                <RelativeLayout android:gravity="end|center" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/precisionLayout" android:layout_width="100.0dip" android:layout_height="fill_parent">
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text60" android:id="@id/precisionValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginEnd="2.0dip" />
+                    <ImageView android:id="@id/precisionIcon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kucoin_icon_triangle_right_mirrored" android:layout_alignBottom="@id/precisionValue" android:layout_toEndOf="@id/precisionValue" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="25.0dip" android:paddingStart="@dimen/spacing_12" android:paddingEnd="@dimen/spacing_12">
+                <FrameLayout android:id="@id/amountUnit1Layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="@dimen/spacing_12">
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_10" android:textColor="@color/c_text60" android:id="@id/amountUnit1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/accumulation" android:drawablePadding="@dimen/spacing_5" app:drawableEndCompat="@mipmap/ic_drop_triangle" />
+                </FrameLayout>
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_10" android:textColor="@color/c_text60" android:layout_gravity="center_horizontal" android:id="@id/priceUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/price_order" />
+                <FrameLayout android:layout_gravity="end" android:id="@id/amountUnit2Layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/spacing_12">
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_10" android:textColor="@color/c_text60" android:id="@id/amountUnit2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/accumulation" android:drawablePadding="@dimen/spacing_5" app:drawableEndCompat="@mipmap/ic_drop_triangle" />
+                </FrameLayout>
+                <View android:layout_gravity="bottom" style="@style/kucoin_view_divider" />
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr" android:paddingStart="@dimen/spacing_12" android:paddingEnd="@dimen/spacing_12">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/buyList" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/spacing_2" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/sellList" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/spacing_2" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

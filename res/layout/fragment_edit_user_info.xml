@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/spacing_16">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_24" android:textColor="@color/c_text" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_20" android:text="@string/edit_profile" android:fontFamily="@font/bold" />
+        <com.kubi.mine.lib.view.UploadAvatarImageView android:layout_gravity="center_horizontal" android:id="@id/avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+        <com.kubi.resources.widget.BaseTextView android:textColor="@color/c_text40" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tvAvatarTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:text="@string/edit_profile_avatar_format_tips" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:id="@id/tvNicknameTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:text="@string/edit_profile_nickname_title" />
+        <FrameLayout android:id="@id/flNicknameContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.resources.widget.KcTextInputLayout android:id="@id/inputLayoutNickname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="" app:endIconMode="none" style="@style/TextInputLayoutStyle">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:gravity="start|center" android:id="@id/clearInputNickname" android:layout_width="fill_parent" android:layout_height="56.0dip" android:singleLine="true" android:inputType="text" android:importantForAutofill="no" style="@style/EditTextStyle.Alignment" />
+            </com.kubi.resources.widget.KcTextInputLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/spacing_16">
+                <ImageView android:id="@id/imgClearNickname" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_close_filled_20" android:layout_marginEnd="@dimen/spacing_8" app:tint="@color/c_icon40" />
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text40" android:gravity="center_vertical" android:id="@id/tvNicknameLength" android:layout_width="wrap_content" android:layout_height="56.0dip" android:fontFamily="@font/regular" />
+            </LinearLayout>
+        </FrameLayout>
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:id="@id/tvNicknameTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:fontFamily="@font/regular" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.button.KcPrimaryButton android:enabled="false" android:id="@id/btnSave" android:layout_width="fill_parent" android:text="@string/save" style="@style/styleButton48" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_13" android:textColor="@color/c_text40" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_20" android:text="@string/edit_profile_footer_tips" android:fontFamily="@font/regular" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

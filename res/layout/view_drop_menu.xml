@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/view_shadow" android:background="@color/c_40_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.kubi.sdk.widget.shape.layout.ShapeFrameLayout android:orientation="vertical" android:id="@id/fl_menu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:shape_bottomLeftRadius="@dimen/spacing_16" app:shape_bottomRightRadius="@dimen/spacing_16" app:shape_solidColor="@color/c_overlay">
+        <ScrollView android:paddingBottom="56.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/fl_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+        </ScrollView>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/ll_action" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.resources.widget.button.KcPrimaryButton android:gravity="center" android:id="@id/tv_reset" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/spacing_24" android:text="@string/reset" android:layout_weight="1.0" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_8" style="@style/styleButton40Secondary" />
+            <com.kubi.resources.widget.button.KcPrimaryButton android:gravity="center" android:id="@id/tv_confirm" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/spacing_24" android:text="@string/determine" android:layout_weight="1.0" android:layout_marginStart="@dimen/spacing_8" android:layout_marginEnd="@dimen/spacing_16" style="@style/styleButton40" />
+        </LinearLayout>
+    </com.kubi.sdk.widget.shape.layout.ShapeFrameLayout>
+</merge>

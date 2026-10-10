@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16" android:paddingVertical="@dimen/spacing_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.CoinAvatarView android:id="@id/ivIcon" android:layout_width="24.0dip" android:layout_height="24.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:id="@id/tvChainName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_12" app:layout_constraintBottom_toBottomOf="@id/ivIcon" app:layout_constraintStart_toEndOf="@id/ivIcon" app:layout_constraintTop_toTopOf="@id/ivIcon" />
+    <ImageView android:id="@id/ivSelected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_smallhook2_20" app:layout_constraintBottom_toBottomOf="@id/ivIcon" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/ivIcon" app:tint="@color/c_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

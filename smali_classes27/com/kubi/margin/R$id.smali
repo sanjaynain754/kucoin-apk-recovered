@@ -1,0 +1,4335 @@
+.class public final Lcom/kubi/margin/R$id;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static final BLOCK:I = 0x7f0a0003
+
+.field public static final BOTH:I = 0x7f0a0004
+
+.field public static final BOTTOM:I = 0x7f0a0005
+
+.field public static final BOTTOM_END:I = 0x7f0a0006
+
+.field public static final BOTTOM_START:I = 0x7f0a0007
+
+.field public static final BaseQuickAdapter_databinding_support:I = 0x7f0a0009
+
+.field public static final BaseQuickAdapter_dragging_support:I = 0x7f0a000a
+
+.field public static final BaseQuickAdapter_key_multi:I = 0x7f0a000b
+
+.field public static final BaseQuickAdapter_swiping_support:I = 0x7f0a000c
+
+.field public static final BaseQuickAdapter_viewholder_support:I = 0x7f0a000d
+
+.field public static final Down:I = 0x7f0a0012
+
+.field public static final ERROR:I = 0x7f0a0013
+
+.field public static final FixedBehind:I = 0x7f0a0017
+
+.field public static final FixedFront:I = 0x7f0a0018
+
+.field public static final GRAY:I = 0x7f0a001b
+
+.field public static final GREEN:I = 0x7f0a001c
+
+.field public static final IMPORTANT:I = 0x7f0a001f
+
+.field public static final LEFT:I = 0x7f0a0020
+
+.field public static final LIGHT_GREEN:I = 0x7f0a0021
+
+.field public static final Left:I = 0x7f0a0023
+
+.field public static final Less:I = 0x7f0a0024
+
+.field public static final LogoBigGrayPng:I = 0x7f0a0028
+
+.field public static final LogoBigGreenPng:I = 0x7f0a0029
+
+.field public static final LogoCollegePng:I = 0x7f0a002a
+
+.field public static final LogoFuturePng:I = 0x7f0a002b
+
+.field public static final LogoGeneralBlackPng:I = 0x7f0a002c
+
+.field public static final LogoGeneralGrayPng:I = 0x7f0a002d
+
+.field public static final LogoGeneralGreenPng:I = 0x7f0a002e
+
+.field public static final LogoGeneralWhitePng:I = 0x7f0a002f
+
+.field public static final LogoOrganBlackPng:I = 0x7f0a0030
+
+.field public static final LogoOrganWhitePng:I = 0x7f0a0031
+
+.field public static final LogoSmallPng:I = 0x7f0a0032
+
+.field public static final MatchLayout:I = 0x7f0a0035
+
+.field public static final NONE:I = 0x7f0a0037
+
+.field public static final NORMAL:I = 0x7f0a0038
+
+.field public static final NOTICE:I = 0x7f0a0039
+
+.field public static final NOTICE_IMPORTANT:I = 0x7f0a003a
+
+.field public static final NO_DEBUG:I = 0x7f0a003b
+
+.field public static final None:I = 0x7f0a003c
+
+.field public static final RED:I = 0x7f0a003f
+
+.field public static final RIGHT:I = 0x7f0a0040
+
+.field public static final Right:I = 0x7f0a0041
+
+.field public static final SELECT:I = 0x7f0a0042
+
+.field public static final SHOW_ALL:I = 0x7f0a0044
+
+.field public static final SHOW_PATH:I = 0x7f0a0045
+
+.field public static final SHOW_PROGRESS:I = 0x7f0a0046
+
+.field public static final Scale:I = 0x7f0a0048
+
+.field public static final Scientific:I = 0x7f0a0049
+
+.field public static final SelfBegin:I = 0x7f0a004a
+
+.field public static final SelfCenter:I = 0x7f0a004b
+
+.field public static final SelfEnd:I = 0x7f0a004c
+
+.field public static final TOP:I = 0x7f0a004f
+
+.field public static final TOP_END:I = 0x7f0a0050
+
+.field public static final TOP_START:I = 0x7f0a0051
+
+.field public static final TRIANGLE:I = 0x7f0a0052
+
+.field public static final TargetCenter:I = 0x7f0a0053
+
+.field public static final Translate:I = 0x7f0a0054
+
+.field public static final Up:I = 0x7f0a0057
+
+.field public static final WARNING:I = 0x7f0a0058
+
+.field public static final YELLOW:I = 0x7f0a0059
+
+.field public static final above:I = 0x7f0a005d
+
+.field public static final accelerate:I = 0x7f0a005f
+
+.field public static final accessibility_action_clickable_span:I = 0x7f0a0060
+
+.field public static final accessibility_actions:I = 0x7f0a0061
+
+.field public static final accessibility_collection:I = 0x7f0a0062
+
+.field public static final accessibility_collection_item:I = 0x7f0a0063
+
+.field public static final accessibility_custom_action_0:I = 0x7f0a0064
+
+.field public static final accessibility_custom_action_1:I = 0x7f0a0065
+
+.field public static final accessibility_custom_action_10:I = 0x7f0a0066
+
+.field public static final accessibility_custom_action_11:I = 0x7f0a0067
+
+.field public static final accessibility_custom_action_12:I = 0x7f0a0068
+
+.field public static final accessibility_custom_action_13:I = 0x7f0a0069
+
+.field public static final accessibility_custom_action_14:I = 0x7f0a006a
+
+.field public static final accessibility_custom_action_15:I = 0x7f0a006b
+
+.field public static final accessibility_custom_action_16:I = 0x7f0a006c
+
+.field public static final accessibility_custom_action_17:I = 0x7f0a006d
+
+.field public static final accessibility_custom_action_18:I = 0x7f0a006e
+
+.field public static final accessibility_custom_action_19:I = 0x7f0a006f
+
+.field public static final accessibility_custom_action_2:I = 0x7f0a0070
+
+.field public static final accessibility_custom_action_20:I = 0x7f0a0071
+
+.field public static final accessibility_custom_action_21:I = 0x7f0a0072
+
+.field public static final accessibility_custom_action_22:I = 0x7f0a0073
+
+.field public static final accessibility_custom_action_23:I = 0x7f0a0074
+
+.field public static final accessibility_custom_action_24:I = 0x7f0a0075
+
+.field public static final accessibility_custom_action_25:I = 0x7f0a0076
+
+.field public static final accessibility_custom_action_26:I = 0x7f0a0077
+
+.field public static final accessibility_custom_action_27:I = 0x7f0a0078
+
+.field public static final accessibility_custom_action_28:I = 0x7f0a0079
+
+.field public static final accessibility_custom_action_29:I = 0x7f0a007a
+
+.field public static final accessibility_custom_action_3:I = 0x7f0a007b
+
+.field public static final accessibility_custom_action_30:I = 0x7f0a007c
+
+.field public static final accessibility_custom_action_31:I = 0x7f0a007d
+
+.field public static final accessibility_custom_action_4:I = 0x7f0a007e
+
+.field public static final accessibility_custom_action_5:I = 0x7f0a007f
+
+.field public static final accessibility_custom_action_6:I = 0x7f0a0080
+
+.field public static final accessibility_custom_action_7:I = 0x7f0a0081
+
+.field public static final accessibility_custom_action_8:I = 0x7f0a0082
+
+.field public static final accessibility_custom_action_9:I = 0x7f0a0083
+
+.field public static final accessibility_hint:I = 0x7f0a0084
+
+.field public static final accessibility_label:I = 0x7f0a0085
+
+.field public static final accessibility_links:I = 0x7f0a0086
+
+.field public static final accessibility_role:I = 0x7f0a0087
+
+.field public static final accessibility_state:I = 0x7f0a0088
+
+.field public static final accessibility_state_expanded:I = 0x7f0a0089
+
+.field public static final accessibility_value:I = 0x7f0a008a
+
+.field public static final accordion:I = 0x7f0a008b
+
+.field public static final action:I = 0x7f0a0099
+
+.field public static final actionDown:I = 0x7f0a009c
+
+.field public static final actionDownUp:I = 0x7f0a009d
+
+.field public static final actionTab:I = 0x7f0a009e
+
+.field public static final actionUp:I = 0x7f0a009f
+
+.field public static final action_bar:I = 0x7f0a00a0
+
+.field public static final action_bar_activity_content:I = 0x7f0a00a1
+
+.field public static final action_bar_container:I = 0x7f0a00a2
+
+.field public static final action_bar_root:I = 0x7f0a00a3
+
+.field public static final action_bar_spinner:I = 0x7f0a00a4
+
+.field public static final action_bar_subtitle:I = 0x7f0a00a5
+
+.field public static final action_bar_title:I = 0x7f0a00a6
+
+.field public static final action_close:I = 0x7f0a00a7
+
+.field public static final action_container:I = 0x7f0a00a8
+
+.field public static final action_context_bar:I = 0x7f0a00a9
+
+.field public static final action_divider:I = 0x7f0a00aa
+
+.field public static final action_go_back:I = 0x7f0a00ab
+
+.field public static final action_go_forward:I = 0x7f0a00ac
+
+.field public static final action_image:I = 0x7f0a00ad
+
+.field public static final action_menu_divider:I = 0x7f0a00ae
+
+.field public static final action_menu_presenter:I = 0x7f0a00af
+
+.field public static final action_mode_bar:I = 0x7f0a00b0
+
+.field public static final action_mode_bar_stub:I = 0x7f0a00b1
+
+.field public static final action_mode_close_button:I = 0x7f0a00b2
+
+.field public static final action_reload:I = 0x7f0a00b3
+
+.field public static final action_share:I = 0x7f0a00b4
+
+.field public static final action_text:I = 0x7f0a00b5
+
+.field public static final actions:I = 0x7f0a00b6
+
+.field public static final activity_chooser_view_content:I = 0x7f0a00bb
+
+.field public static final activity_tag:I = 0x7f0a00be
+
+.field public static final add:I = 0x7f0a00c0
+
+.field public static final addFundsBtn:I = 0x7f0a00c1
+
+.field public static final addOtherRecommend:I = 0x7f0a00c2
+
+.field public static final addRecommend:I = 0x7f0a00c3
+
+.field public static final adjacent:I = 0x7f0a00d1
+
+.field public static final adjust_height:I = 0x7f0a00d3
+
+.field public static final adjust_width:I = 0x7f0a00d4
+
+.field public static final advance:I = 0x7f0a00d9
+
+.field public static final advanceLimitLaunchBubble:I = 0x7f0a00db
+
+.field public static final alertTitle:I = 0x7f0a00f7
+
+.field public static final alert_dialog_root:I = 0x7f0a00f9
+
+.field public static final alert_title:I = 0x7f0a00fa
+
+.field public static final aligned:I = 0x7f0a00fb
+
+.field public static final allDelegation:I = 0x7f0a00fd
+
+.field public static final allStates:I = 0x7f0a00fe
+
+.field public static final alpha:I = 0x7f0a0100
+
+.field public static final always:I = 0x7f0a0103
+
+.field public static final alwaysAllow:I = 0x7f0a0104
+
+.field public static final alwaysDisallow:I = 0x7f0a0105
+
+.field public static final androidx_window_activity_scope:I = 0x7f0a011d
+
+.field public static final animateToEnd:I = 0x7f0a011e
+
+.field public static final animateToStart:I = 0x7f0a011f
+
+.field public static final antiClockwise:I = 0x7f0a012a
+
+.field public static final anticipate:I = 0x7f0a012b
+
+.field public static final appBarLayout:I = 0x7f0a012e
+
+.field public static final app_bar:I = 0x7f0a0130
+
+.field public static final arc:I = 0x7f0a0136
+
+.field public static final asConfigured:I = 0x7f0a0139
+
+.field public static final asset_detail:I = 0x7f0a0140
+
+.field public static final async:I = 0x7f0a0144
+
+.field public static final auto:I = 0x7f0a014c
+
+.field public static final autoComplete:I = 0x7f0a014d
+
+.field public static final autoCompleteToEnd:I = 0x7f0a014e
+
+.field public static final autoCompleteToStart:I = 0x7f0a014f
+
+.field public static final autoHide:I = 0x7f0a0153
+
+.field public static final autoLimit:I = 0x7f0a0155
+
+.field public static final auto_fit_number:I = 0x7f0a015a
+
+.field public static final autofill_inline_suggestion_end_icon:I = 0x7f0a015b
+
+.field public static final autofill_inline_suggestion_start_icon:I = 0x7f0a015c
+
+.field public static final autofill_inline_suggestion_subtitle:I = 0x7f0a015d
+
+.field public static final autofill_inline_suggestion_title:I = 0x7f0a015e
+
+.field public static final automatic:I = 0x7f0a015f
+
+.field public static final availableSpace:I = 0x7f0a0164
+
+.field public static final availableValue:I = 0x7f0a0165
+
+.field public static final average_price:I = 0x7f0a016c
+
+.field public static final average_price_label:I = 0x7f0a016d
+
+.field public static final avi:I = 0x7f0a0174
+
+.field public static final axisRelative:I = 0x7f0a0175
+
+.field public static final background:I = 0x7f0a017a
+
+.field public static final banner:I = 0x7f0a0187
+
+.field public static final banner_container:I = 0x7f0a018a
+
+.field public static final banner_indicatorId:I = 0x7f0a018c
+
+.field public static final bar:I = 0x7f0a018d
+
+.field public static final bar1:I = 0x7f0a018e
+
+.field public static final bar2:I = 0x7f0a018f
+
+.field public static final bar3:I = 0x7f0a0190
+
+.field public static final barrier:I = 0x7f0a0194
+
+.field public static final barrier1:I = 0x7f0a0195
+
+.field public static final barrier_1:I = 0x7f0a019b
+
+.field public static final barrier_2:I = 0x7f0a019c
+
+.field public static final barrier_3:I = 0x7f0a019d
+
+.field public static final barrier_4:I = 0x7f0a019e
+
+.field public static final barrier_5:I = 0x7f0a019f
+
+.field public static final barrier_6:I = 0x7f0a01a0
+
+.field public static final barrier_7:I = 0x7f0a01a1
+
+.field public static final barrier_buy_sell_bottom:I = 0x7f0a01a3
+
+.field public static final base_activity_layout:I = 0x7f0a01ac
+
+.field public static final base_titlebar_iv_back:I = 0x7f0a01ad
+
+.field public static final base_ui_activity_layout:I = 0x7f0a01ae
+
+.field public static final baseline:I = 0x7f0a01af
+
+.field public static final baseline2:I = 0x7f0a01b1
+
+.field public static final bbLayout:I = 0x7f0a01b6
+
+.field public static final below:I = 0x7f0a01bf
+
+.field public static final below_section_mark:I = 0x7f0a01c0
+
+.field public static final bestChoice:I = 0x7f0a01c1
+
+.field public static final blockSubTitle:I = 0x7f0a01d0
+
+.field public static final blockTitle:I = 0x7f0a01d1
+
+.field public static final blocking:I = 0x7f0a01d2
+
+.field public static final bold:I = 0x7f0a01d3
+
+.field public static final borderView:I = 0x7f0a01d8
+
+.field public static final bottom:I = 0x7f0a01dc
+
+.field public static final bottomRecyclerView:I = 0x7f0a01e3
+
+.field public static final bottomToTop:I = 0x7f0a01e5
+
+.field public static final bottom_sheet:I = 0x7f0a01ed
+
+.field public static final bottom_sides:I = 0x7f0a01f0
+
+.field public static final bottom_view_divider:I = 0x7f0a01f1
+
+.field public static final bounce:I = 0x7f0a01f2
+
+.field public static final bt_i_know:I = 0x7f0a0208
+
+.field public static final btnConfirm:I = 0x7f0a0220
+
+.field public static final btnGuideTrade:I = 0x7f0a022e
+
+.field public static final btnHView:I = 0x7f0a022f
+
+.field public static final btn_borrow:I = 0x7f0a0256
+
+.field public static final btn_confirm:I = 0x7f0a0259
+
+.field public static final btn_convert:I = 0x7f0a025a
+
+.field public static final btn_open:I = 0x7f0a0263
+
+.field public static final btn_reload:I = 0x7f0a0268
+
+.field public static final btn_return:I = 0x7f0a026b
+
+.field public static final btn_trade:I = 0x7f0a0273
+
+.field public static final btn_transfer:I = 0x7f0a0275
+
+.field public static final bubble:I = 0x7f0a0278
+
+.field public static final button:I = 0x7f0a0284
+
+.field public static final buttonConfirm:I = 0x7f0a0285
+
+.field public static final buttonPanel:I = 0x7f0a0287
+
+.field public static final button_text:I = 0x7f0a028d
+
+.field public static final buyAction:I = 0x7f0a028f
+
+.field public static final buySellBtn:I = 0x7f0a029d
+
+.field public static final buySellBtnLayout:I = 0x7f0a029e
+
+.field public static final buySellBtnSpace:I = 0x7f0a029f
+
+.field public static final buy_sell_ratio_view:I = 0x7f0a02a2
+
+.field public static final callMeasure:I = 0x7f0a02b5
+
+.field public static final call_auction_container:I = 0x7f0a02b6
+
+.field public static final call_auction_depth:I = 0x7f0a02b7
+
+.field public static final call_auction_progress:I = 0x7f0a02b8
+
+.field public static final callback_range_percent:I = 0x7f0a02bb
+
+.field public static final cancelAll:I = 0x7f0a02c0
+
+.field public static final cancelTheOrder:I = 0x7f0a02c2
+
+.field public static final cancelTipsView:I = 0x7f0a02c3
+
+.field public static final cancel_all_order_btn:I = 0x7f0a02c5
+
+.field public static final cancel_button:I = 0x7f0a02c6
+
+.field public static final carryVelocity:I = 0x7f0a02e1
+
+.field public static final catalyst_redbox_title:I = 0x7f0a02e2
+
+.field public static final cbHideSmall:I = 0x7f0a02ed
+
+.field public static final cbSelect:I = 0x7f0a02f5
+
+.field public static final cb_check:I = 0x7f0a02fc
+
+.field public static final cb_next_tips:I = 0x7f0a0303
+
+.field public static final cb_orderbook_select_precision:I = 0x7f0a0304
+
+.field public static final cb_remember_24_hour:I = 0x7f0a0307
+
+.field public static final center:I = 0x7f0a030c
+
+.field public static final centerCrop:I = 0x7f0a030d
+
+.field public static final centerInside:I = 0x7f0a030e
+
+.field public static final chain:I = 0x7f0a0314
+
+.field public static final chain2:I = 0x7f0a0315
+
+.field public static final chainIcon:I = 0x7f0a0316
+
+.field public static final chang_7d:I = 0x7f0a0320
+
+.field public static final chang_7d_label:I = 0x7f0a0321
+
+.field public static final changeTypeAnimEndView:I = 0x7f0a0329
+
+.field public static final change_1h:I = 0x7f0a032a
+
+.field public static final change_1h_label:I = 0x7f0a032b
+
+.field public static final change_24h:I = 0x7f0a032c
+
+.field public static final change_24h_label:I = 0x7f0a032d
+
+.field public static final change_detail_title_rl:I = 0x7f0a032e
+
+.field public static final checkbox:I = 0x7f0a034c
+
+.field public static final checked:I = 0x7f0a034e
+
+.field public static final chooseSymbolView:I = 0x7f0a0351
+
+.field public static final chronometer:I = 0x7f0a0352
+
+.field public static final circle_center:I = 0x7f0a0354
+
+.field public static final circulating_supply:I = 0x7f0a0356
+
+.field public static final circulating_supply_label:I = 0x7f0a0357
+
+.field public static final clDeposit:I = 0x7f0a0363
+
+.field public static final clGuide:I = 0x7f0a0368
+
+.field public static final clTransfer:I = 0x7f0a0371
+
+.field public static final cl_activity:I = 0x7f0a0372
+
+.field public static final cl_explorer:I = 0x7f0a037e
+
+.field public static final cl_future:I = 0x7f0a0381
+
+.field public static final cl_header:I = 0x7f0a0382
+
+.field public static final cl_margin:I = 0x7f0a0389
+
+.field public static final cl_root:I = 0x7f0a0391
+
+.field public static final cl_spot:I = 0x7f0a0398
+
+.field public static final cl_title_layout:I = 0x7f0a039a
+
+.field public static final cl_topic:I = 0x7f0a039b
+
+.field public static final cl_website:I = 0x7f0a039e
+
+.field public static final clear_text:I = 0x7f0a03a2
+
+.field public static final clockwise:I = 0x7f0a03a8
+
+.field public static final close:I = 0x7f0a03a9
+
+.field public static final closest:I = 0x7f0a03cf
+
+.field public static final coinIcon:I = 0x7f0a03d7
+
+.field public static final coinTick:I = 0x7f0a03da
+
+.field public static final coin_buy:I = 0x7f0a03df
+
+.field public static final coin_change:I = 0x7f0a03e0
+
+.field public static final coin_icon:I = 0x7f0a03e3
+
+.field public static final coin_legal_price:I = 0x7f0a03e5
+
+.field public static final coin_low_price:I = 0x7f0a03e7
+
+.field public static final coin_low_price_label:I = 0x7f0a03e8
+
+.field public static final coin_name_arrow:I = 0x7f0a03ea
+
+.field public static final coin_price:I = 0x7f0a03ee
+
+.field public static final coin_rank_info:I = 0x7f0a03ef
+
+.field public static final coin_rank_more:I = 0x7f0a03f0
+
+.field public static final coin_sell:I = 0x7f0a03f1
+
+.field public static final coin_top_price:I = 0x7f0a03f2
+
+.field public static final coin_top_price_label:I = 0x7f0a03f3
+
+.field public static final coin_top_price_ll:I = 0x7f0a03f4
+
+.field public static final coin_turnover:I = 0x7f0a03f5
+
+.field public static final coin_unit:I = 0x7f0a03f6
+
+.field public static final coin_vol_base:I = 0x7f0a03f8
+
+.field public static final coin_vol_base_label:I = 0x7f0a03f9
+
+.field public static final coin_vol_quote:I = 0x7f0a03fa
+
+.field public static final coin_vol_quote_label:I = 0x7f0a03fb
+
+.field public static final column:I = 0x7f0a0401
+
+.field public static final column1:I = 0x7f0a0402
+
+.field public static final column2:I = 0x7f0a0403
+
+.field public static final column3:I = 0x7f0a0404
+
+.field public static final column_reverse:I = 0x7f0a0405
+
+.field public static final complianceInfoView:I = 0x7f0a040c
+
+.field public static final complianceNoticeView:I = 0x7f0a040d
+
+.field public static final compress:I = 0x7f0a040e
+
+.field public static final conditionLimit:I = 0x7f0a0410
+
+.field public static final conditionMarket:I = 0x7f0a0411
+
+.field public static final confirm:I = 0x7f0a0413
+
+.field public static final confirm_button:I = 0x7f0a0419
+
+.field public static final constraint:I = 0x7f0a041f
+
+.field public static final container:I = 0x7f0a0423
+
+.field public static final content:I = 0x7f0a0425
+
+.field public static final contentLayout:I = 0x7f0a0429
+
+.field public static final contentLayoutView:I = 0x7f0a042a
+
+.field public static final contentPanel:I = 0x7f0a042b
+
+.field public static final contiguous:I = 0x7f0a0432
+
+.field public static final continuousVelocity:I = 0x7f0a0436
+
+.field public static final coordinator:I = 0x7f0a0443
+
+.field public static final cos:I = 0x7f0a044a
+
+.field public static final countDown:I = 0x7f0a0453
+
+.field public static final count_down_coin_des:I = 0x7f0a0455
+
+.field public static final count_down_coin_icon:I = 0x7f0a0456
+
+.field public static final count_down_coin_name:I = 0x7f0a0457
+
+.field public static final count_down_coin_root:I = 0x7f0a0458
+
+.field public static final count_down_coin_time_bt_more:I = 0x7f0a0459
+
+.field public static final count_down_coin_time_d:I = 0x7f0a045a
+
+.field public static final count_down_coin_time_d_unit:I = 0x7f0a045b
+
+.field public static final count_down_coin_time_h:I = 0x7f0a045c
+
+.field public static final count_down_coin_time_h_unit:I = 0x7f0a045d
+
+.field public static final count_down_coin_time_m:I = 0x7f0a045e
+
+.field public static final count_down_coin_time_m_unit:I = 0x7f0a045f
+
+.field public static final count_down_coin_time_s:I = 0x7f0a0460
+
+.field public static final count_down_coin_time_s_unit:I = 0x7f0a0461
+
+.field public static final counterclockwise:I = 0x7f0a0465
+
+.field public static final cradle:I = 0x7f0a0471
+
+.field public static final cst_index_sample:I = 0x7f0a047a
+
+.field public static final ctx_current:I = 0x7f0a0482
+
+.field public static final cube:I = 0x7f0a0483
+
+.field public static final currencyLayout:I = 0x7f0a048e
+
+.field public static final currencyRecyclerView:I = 0x7f0a048f
+
+.field public static final currencyRecyclerViewContainer:I = 0x7f0a0490
+
+.field public static final currencyTitleView:I = 0x7f0a0493
+
+.field public static final currentState:I = 0x7f0a04a6
+
+.field public static final custom:I = 0x7f0a04a7
+
+.field public static final customLayout:I = 0x7f0a04a9
+
+.field public static final customPanel:I = 0x7f0a04ac
+
+.field public static final cut:I = 0x7f0a04b4
+
+.field public static final dark:I = 0x7f0a04b7
+
+.field public static final dashboard:I = 0x7f0a04b8
+
+.field public static final dashed:I = 0x7f0a04b9
+
+.field public static final date:I = 0x7f0a04bb
+
+.field public static final date_picker_actions:I = 0x7f0a04bc
+
+.field public static final day:I = 0x7f0a04bd
+
+.field public static final decelerate:I = 0x7f0a04d0
+
+.field public static final decelerateAndComplete:I = 0x7f0a04d1
+
+.field public static final decor_content_parent:I = 0x7f0a04d2
+
+.field public static final defaultEffect:I = 0x7f0a04d5
+
+.field public static final default_activity_button:I = 0x7f0a04da
+
+.field public static final delegation_empty:I = 0x7f0a04e8
+
+.field public static final delegation_progressbar:I = 0x7f0a04e9
+
+.field public static final delegation_tablayout:I = 0x7f0a04ea
+
+.field public static final delegation_viewpager:I = 0x7f0a04eb
+
+.field public static final deltaRelative:I = 0x7f0a04f2
+
+.field public static final depositDesc:I = 0x7f0a04f5
+
+.field public static final depositTitle:I = 0x7f0a04f6
+
+.field public static final depth:I = 0x7f0a04fc
+
+.field public static final depth_view:I = 0x7f0a04fe
+
+.field public static final design_bottom_sheet:I = 0x7f0a0505
+
+.field public static final design_menu_item_action_area:I = 0x7f0a0506
+
+.field public static final design_menu_item_action_area_stub:I = 0x7f0a0507
+
+.field public static final design_menu_item_text:I = 0x7f0a0508
+
+.field public static final design_navigation_view:I = 0x7f0a0509
+
+.field public static final dialog_button:I = 0x7f0a0510
+
+.field public static final dialog_close:I = 0x7f0a0511
+
+.field public static final dialog_title:I = 0x7f0a0514
+
+.field public static final dialog_trading_display:I = 0x7f0a0515
+
+.field public static final disableLabelTv:I = 0x7f0a051d
+
+.field public static final disabled:I = 0x7f0a0521
+
+.field public static final disjoint:I = 0x7f0a0529
+
+.field public static final divider:I = 0x7f0a0533
+
+.field public static final dividerHeaderSection:I = 0x7f0a0539
+
+.field public static final dot:I = 0x7f0a0544
+
+.field public static final dotText:I = 0x7f0a0546
+
+.field public static final dot_one:I = 0x7f0a0547
+
+.field public static final dot_three:I = 0x7f0a0548
+
+.field public static final dot_two:I = 0x7f0a0549
+
+.field public static final dotted:I = 0x7f0a054a
+
+.field public static final dragAnticlockwise:I = 0x7f0a0552
+
+.field public static final dragClockwise:I = 0x7f0a0553
+
+.field public static final dragDown:I = 0x7f0a0554
+
+.field public static final dragEnd:I = 0x7f0a0555
+
+.field public static final dragLeft:I = 0x7f0a0557
+
+.field public static final dragRight:I = 0x7f0a0558
+
+.field public static final dragStart:I = 0x7f0a0559
+
+.field public static final dragUp:I = 0x7f0a055a
+
+.field public static final draw_tools_group:I = 0x7f0a055b
+
+.field public static final drawer:I = 0x7f0a055c
+
+.field public static final dropdown_menu:I = 0x7f0a0568
+
+.field public static final easeIn:I = 0x7f0a056c
+
+.field public static final easeInOut:I = 0x7f0a056d
+
+.field public static final easeOut:I = 0x7f0a056e
+
+.field public static final east:I = 0x7f0a056f
+
+.field public static final edge:I = 0x7f0a0570
+
+.field public static final edit_query:I = 0x7f0a0574
+
+.field public static final edit_text_id:I = 0x7f0a0576
+
+.field public static final eight_hour_id:I = 0x7f0a0582
+
+.field public static final elastic:I = 0x7f0a0583
+
+.field public static final embed:I = 0x7f0a0585
+
+.field public static final emptyIcon:I = 0x7f0a058b
+
+.field public static final emptyTips:I = 0x7f0a058e
+
+.field public static final empty_icon:I = 0x7f0a0591
+
+.field public static final empty_layout:I = 0x7f0a0593
+
+.field public static final empty_recycler_view:I = 0x7f0a0595
+
+.field public static final empty_tips:I = 0x7f0a0597
+
+.field public static final empty_view:I = 0x7f0a0598
+
+.field public static final enabled:I = 0x7f0a0599
+
+.field public static final end:I = 0x7f0a059a
+
+.field public static final endToStart:I = 0x7f0a059c
+
+.field public static final endView:I = 0x7f0a059d
+
+.field public static final entireSpace:I = 0x7f0a05a9
+
+.field public static final errorLayout:I = 0x7f0a05b4
+
+.field public static final escape:I = 0x7f0a05b7
+
+.field public static final etNumber:I = 0x7f0a05bf
+
+.field public static final etPrice:I = 0x7f0a05c0
+
+.field public static final etSearch:I = 0x7f0a05c2
+
+.field public static final etSearchBar:I = 0x7f0a05c3
+
+.field public static final et_act_price:I = 0x7f0a05c5
+
+.field public static final et_callback_range:I = 0x7f0a05ca
+
+.field public static final et_deal_amount:I = 0x7f0a05d0
+
+.field public static final et_input:I = 0x7f0a05d7
+
+.field public static final et_limit_price:I = 0x7f0a05de
+
+.field public static final et_number:I = 0x7f0a05e2
+
+.field public static final et_order_count:I = 0x7f0a05e4
+
+.field public static final et_price_max:I = 0x7f0a05e8
+
+.field public static final et_price_min:I = 0x7f0a05e9
+
+.field public static final et_search:I = 0x7f0a05ee
+
+.field public static final et_stop_limit_price:I = 0x7f0a05f1
+
+.field public static final et_stop_price:I = 0x7f0a05f3
+
+.field public static final et_trade_input:I = 0x7f0a05f7
+
+.field public static final et_trigger_price:I = 0x7f0a05f9
+
+.field public static final expand_activities_button:I = 0x7f0a0647
+
+.field public static final expand_state:I = 0x7f0a0648
+
+.field public static final expanded_menu:I = 0x7f0a0649
+
+.field public static final fade:I = 0x7f0a065a
+
+.field public static final fail_tips:I = 0x7f0a065c
+
+.field public static final feed_card_tab_layout:I = 0x7f0a0673
+
+.field public static final fifteen_min_id:I = 0x7f0a0679
+
+.field public static final fill:I = 0x7f0a067a
+
+.field public static final filled:I = 0x7f0a0682
+
+.field public static final filter:I = 0x7f0a0683
+
+.field public static final filterEditText:I = 0x7f0a0684
+
+.field public static final filter_divider:I = 0x7f0a0687
+
+.field public static final finish:I = 0x7f0a0691
+
+.field public static final fitBottomStart:I = 0x7f0a0697
+
+.field public static final fitCenter:I = 0x7f0a0698
+
+.field public static final fitEnd:I = 0x7f0a0699
+
+.field public static final fitStart:I = 0x7f0a069a
+
+.field public static final fitXY:I = 0x7f0a069c
+
+.field public static final five_min_id:I = 0x7f0a069e
+
+.field public static final fixed:I = 0x7f0a069f
+
+.field public static final fl1:I = 0x7f0a06a3
+
+.field public static final flAvailableTrade:I = 0x7f0a06a5
+
+.field public static final flBase:I = 0x7f0a06a9
+
+.field public static final flBaseBorrow:I = 0x7f0a06aa
+
+.field public static final flBorrowBase:I = 0x7f0a06ab
+
+.field public static final flBorrowQuote:I = 0x7f0a06ac
+
+.field public static final flContentContainer:I = 0x7f0a06b1
+
+.field public static final flCurrency:I = 0x7f0a06b2
+
+.field public static final flDebtBase:I = 0x7f0a06b3
+
+.field public static final flDebtQuote:I = 0x7f0a06b4
+
+.field public static final flQuote:I = 0x7f0a06bb
+
+.field public static final flQuoteBorrow:I = 0x7f0a06bc
+
+.field public static final flRepayBase:I = 0x7f0a06bf
+
+.field public static final flRepayQuote:I = 0x7f0a06c0
+
+.field public static final flSegmentChart:I = 0x7f0a06c2
+
+.field public static final fl_amount:I = 0x7f0a06c5
+
+.field public static final fl_amount_ratio:I = 0x7f0a06c6
+
+.field public static final fl_back:I = 0x7f0a06ca
+
+.field public static final fl_banner:I = 0x7f0a06cb
+
+.field public static final fl_buy:I = 0x7f0a06ce
+
+.field public static final fl_change_rate:I = 0x7f0a06d2
+
+.field public static final fl_container:I = 0x7f0a06d6
+
+.field public static final fl_distribution_card:I = 0x7f0a06e1
+
+.field public static final fl_empty:I = 0x7f0a06e2
+
+.field public static final fl_etf:I = 0x7f0a06e3
+
+.field public static final fl_kline:I = 0x7f0a06ef
+
+.field public static final fl_limit_type:I = 0x7f0a06f2
+
+.field public static final fl_main_container:I = 0x7f0a06f4
+
+.field public static final fl_menu:I = 0x7f0a06f5
+
+.field public static final fl_nft:I = 0x7f0a06f6
+
+.field public static final fl_price:I = 0x7f0a06fe
+
+.field public static final fl_price_type:I = 0x7f0a06ff
+
+.field public static final fl_root:I = 0x7f0a0706
+
+.field public static final fl_sell:I = 0x7f0a0709
+
+.field public static final fl_trade_container:I = 0x7f0a0719
+
+.field public static final fl_trade_price:I = 0x7f0a071a
+
+.field public static final fl_trade_type:I = 0x7f0a071b
+
+.field public static final fl_trade_type_container:I = 0x7f0a071c
+
+.field public static final fl_user_ratio:I = 0x7f0a0720
+
+.field public static final flex_end:I = 0x7f0a072a
+
+.field public static final flex_start:I = 0x7f0a072b
+
+.field public static final flip:I = 0x7f0a072d
+
+.field public static final floating:I = 0x7f0a0730
+
+.field public static final flow:I = 0x7f0a0752
+
+.field public static final flow_helper:I = 0x7f0a0753
+
+.field public static final focusCrop:I = 0x7f0a0756
+
+.field public static final focus_recycler_view:I = 0x7f0a0757
+
+.field public static final forever:I = 0x7f0a075c
+
+.field public static final founds_divider:I = 0x7f0a0761
+
+.field public static final founds_setting_layout:I = 0x7f0a0762
+
+.field public static final fox:I = 0x7f0a0764
+
+.field public static final fps_text:I = 0x7f0a0766
+
+.field public static final fragment_container_hottopic:I = 0x7f0a076a
+
+.field public static final fragment_container_view:I = 0x7f0a076d
+
+.field public static final fragment_container_view_tag:I = 0x7f0a076e
+
+.field public static final fragment_count_down:I = 0x7f0a076f
+
+.field public static final fragment_kline:I = 0x7f0a0770
+
+.field public static final frost:I = 0x7f0a077a
+
+.field public static final full:I = 0x7f0a077b
+
+.field public static final fullscreen_header:I = 0x7f0a077e
+
+.field public static final general:I = 0x7f0a079d
+
+.field public static final ghost_view:I = 0x7f0a079f
+
+.field public static final ghost_view_holder:I = 0x7f0a07a0
+
+.field public static final glide_custom_view_target_tag:I = 0x7f0a07a9
+
+.field public static final gone:I = 0x7f0a07af
+
+.field public static final groupHeaderTv:I = 0x7f0a07c7
+
+.field public static final group_details:I = 0x7f0a07d2
+
+.field public static final group_divider:I = 0x7f0a07d3
+
+.field public static final guideline:I = 0x7f0a0800
+
+.field public static final guideline_40:I = 0x7f0a0802
+
+.field public static final hardware:I = 0x7f0a0809
+
+.field public static final has_report_truncated:I = 0x7f0a080a
+
+.field public static final header_title:I = 0x7f0a0819
+
+.field public static final hidden:I = 0x7f0a081e
+
+.field public static final hide_ime_id:I = 0x7f0a0823
+
+.field public static final history:I = 0x7f0a082d
+
+.field public static final history_order:I = 0x7f0a0833
+
+.field public static final holdingEarnEntryCard:I = 0x7f0a0838
+
+.field public static final home:I = 0x7f0a083c
+
+.field public static final homeCardContainer:I = 0x7f0a083e
+
+.field public static final homeNavigationContainer:I = 0x7f0a0840
+
+.field public static final homeRootView:I = 0x7f0a0841
+
+.field public static final home_card_add_bottom_sheet_title_layout:I = 0x7f0a0844
+
+.field public static final home_card_bottom_gap_card:I = 0x7f0a0845
+
+.field public static final honorRequest:I = 0x7f0a0853
+
+.field public static final horizontal:I = 0x7f0a0854
+
+.field public static final horizontal_only:I = 0x7f0a0857
+
+.field public static final hostContainer:I = 0x7f0a0858
+
+.field public static final hour:I = 0x7f0a085c
+
+.field public static final hourly_interest_rate_label:I = 0x7f0a085e
+
+.field public static final hourly_interest_rate_value:I = 0x7f0a085f
+
+.field public static final hsv:I = 0x7f0a0863
+
+.field public static final hsv_type:I = 0x7f0a0865
+
+.field public static final ic_close:I = 0x7f0a086e
+
+.field public static final icon:I = 0x7f0a0872
+
+.field public static final icon_group:I = 0x7f0a087a
+
+.field public static final icon_more:I = 0x7f0a087d
+
+.field public static final icon_only:I = 0x7f0a087e
+
+.field public static final ignore:I = 0x7f0a0883
+
+.field public static final ignoreRequest:I = 0x7f0a0884
+
+.field public static final image:I = 0x7f0a0885
+
+.field public static final image_bg:I = 0x7f0a088a
+
+.field public static final immediateStop:I = 0x7f0a08aa
+
+.field public static final importantNoticeView:I = 0x7f0a08ac
+
+.field public static final included:I = 0x7f0a08c5
+
+.field public static final indeterminate:I = 0x7f0a08c6
+
+.field public static final indicatorView:I = 0x7f0a08ce
+
+.field public static final info:I = 0x7f0a08cf
+
+.field public static final infoLayout:I = 0x7f0a08d6
+
+.field public static final info_left:I = 0x7f0a08dc
+
+.field public static final info_right:I = 0x7f0a08dd
+
+.field public static final input:I = 0x7f0a08e3
+
+.field public static final input_trade_view:I = 0x7f0a08fa
+
+.field public static final interest_rate_container:I = 0x7f0a08fd
+
+.field public static final invalidate_transform:I = 0x7f0a0933
+
+.field public static final invisible:I = 0x7f0a0938
+
+.field public static final inward:I = 0x7f0a093b
+
+.field public static final isolate_margin_risk_view:I = 0x7f0a0941
+
+.field public static final italic:I = 0x7f0a0947
+
+.field public static final item_image:I = 0x7f0a094f
+
+.field public static final item_root:I = 0x7f0a0950
+
+.field public static final item_text:I = 0x7f0a0952
+
+.field public static final item_touch_helper_previous_elevation:I = 0x7f0a0953
+
+.field public static final ivAmendOrder:I = 0x7f0a0962
+
+.field public static final ivBIcon:I = 0x7f0a0969
+
+.field public static final ivBShape:I = 0x7f0a096a
+
+.field public static final ivCShape:I = 0x7f0a0972
+
+.field public static final ivCheck:I = 0x7f0a0975
+
+.field public static final ivClose:I = 0x7f0a097a
+
+.field public static final ivDelete:I = 0x7f0a0991
+
+.field public static final ivDeposit:I = 0x7f0a0992
+
+.field public static final ivDepositArrow:I = 0x7f0a0993
+
+.field public static final ivDepositGo:I = 0x7f0a0994
+
+.field public static final ivEdit:I = 0x7f0a0997
+
+.field public static final ivEmptyIcon:I = 0x7f0a099c
+
+.field public static final ivExit:I = 0x7f0a099f
+
+.field public static final ivEye:I = 0x7f0a09a2
+
+.field public static final ivFavor:I = 0x7f0a09a5
+
+.field public static final ivFilter:I = 0x7f0a09a8
+
+.field public static final ivIcon:I = 0x7f0a09bc
+
+.field public static final ivIconState:I = 0x7f0a09bf
+
+.field public static final ivKLineStateBtn:I = 0x7f0a09c6
+
+.field public static final ivKlinePageEnter:I = 0x7f0a09c9
+
+.field public static final ivLeft:I = 0x7f0a09cf
+
+.field public static final ivLock:I = 0x7f0a09d3
+
+.field public static final ivMiddle:I = 0x7f0a09d9
+
+.field public static final ivMore:I = 0x7f0a09da
+
+.field public static final ivPin:I = 0x7f0a09e8
+
+.field public static final ivPriceTypeInfo:I = 0x7f0a09ef
+
+.field public static final ivQrScan:I = 0x7f0a09f2
+
+.field public static final ivQuestion:I = 0x7f0a09f3
+
+.field public static final ivRect:I = 0x7f0a09f6
+
+.field public static final ivReminder:I = 0x7f0a09fb
+
+.field public static final ivRight:I = 0x7f0a09fc
+
+.field public static final ivSegment:I = 0x7f0a0a06
+
+.field public static final ivStatusImage:I = 0x7f0a0a16
+
+.field public static final ivStraight:I = 0x7f0a0a17
+
+.field public static final ivSymbolMenu:I = 0x7f0a0a1c
+
+.field public static final ivTabQuota:I = 0x7f0a0a1d
+
+.field public static final ivTabTime:I = 0x7f0a0a1f
+
+.field public static final ivTransfer:I = 0x7f0a0a28
+
+.field public static final ivTransferArrow:I = 0x7f0a0a29
+
+.field public static final ivTransferGo:I = 0x7f0a0a2a
+
+.field public static final ivTriangle:I = 0x7f0a0a2c
+
+.field public static final ivType:I = 0x7f0a0a2d
+
+.field public static final ivTypeIcon:I = 0x7f0a0a2e
+
+.field public static final iv_add_funds_icon:I = 0x7f0a0a3f
+
+.field public static final iv_ai:I = 0x7f0a0a41
+
+.field public static final iv_alert:I = 0x7f0a0a42
+
+.field public static final iv_amex:I = 0x7f0a0a43
+
+.field public static final iv_amount:I = 0x7f0a0a44
+
+.field public static final iv_arrow:I = 0x7f0a0a47
+
+.field public static final iv_available_assets_title:I = 0x7f0a0a4e
+
+.field public static final iv_back:I = 0x7f0a0a50
+
+.field public static final iv_banner:I = 0x7f0a0a51
+
+.field public static final iv_bg:I = 0x7f0a0a56
+
+.field public static final iv_call_auction_process_connect1:I = 0x7f0a0a60
+
+.field public static final iv_call_auction_process_connect2:I = 0x7f0a0a61
+
+.field public static final iv_call_auction_process_connect3:I = 0x7f0a0a62
+
+.field public static final iv_call_auction_process_step1:I = 0x7f0a0a63
+
+.field public static final iv_call_auction_process_step2:I = 0x7f0a0a64
+
+.field public static final iv_call_auction_process_step3:I = 0x7f0a0a65
+
+.field public static final iv_call_auction_process_step4:I = 0x7f0a0a66
+
+.field public static final iv_cancel:I = 0x7f0a0a67
+
+.field public static final iv_change_rate:I = 0x7f0a0a69
+
+.field public static final iv_check:I = 0x7f0a0a72
+
+.field public static final iv_choose:I = 0x7f0a0a75
+
+.field public static final iv_close:I = 0x7f0a0a76
+
+.field public static final iv_close_status:I = 0x7f0a0a78
+
+.field public static final iv_close_tips:I = 0x7f0a0a79
+
+.field public static final iv_coin:I = 0x7f0a0a7b
+
+.field public static final iv_coin_avatar:I = 0x7f0a0a7c
+
+.field public static final iv_colon_1:I = 0x7f0a0a7d
+
+.field public static final iv_colon_2:I = 0x7f0a0a7e
+
+.field public static final iv_contract:I = 0x7f0a0a82
+
+.field public static final iv_currency:I = 0x7f0a0a8e
+
+.field public static final iv_currency_arrow:I = 0x7f0a0a8f
+
+.field public static final iv_edit_avg_cost:I = 0x7f0a0aa0
+
+.field public static final iv_empty_his:I = 0x7f0a0aa8
+
+.field public static final iv_etf_icon:I = 0x7f0a0aaa
+
+.field public static final iv_fav:I = 0x7f0a0ab0
+
+.field public static final iv_fiat:I = 0x7f0a0ab3
+
+.field public static final iv_filter:I = 0x7f0a0ab6
+
+.field public static final iv_full_screen:I = 0x7f0a0ac0
+
+.field public static final iv_go:I = 0x7f0a0ac3
+
+.field public static final iv_hot_tag:I = 0x7f0a0ad3
+
+.field public static final iv_icon:I = 0x7f0a0ad8
+
+.field public static final iv_kline_settings:I = 0x7f0a0ae2
+
+.field public static final iv_loading:I = 0x7f0a0af0
+
+.field public static final iv_logo:I = 0x7f0a0af1
+
+.field public static final iv_mark_price:I = 0x7f0a0af5
+
+.field public static final iv_market_amount_unit_selected:I = 0x7f0a0af6
+
+.field public static final iv_master:I = 0x7f0a0af8
+
+.field public static final iv_more:I = 0x7f0a0b03
+
+.field public static final iv_name:I = 0x7f0a0b06
+
+.field public static final iv_one:I = 0x7f0a0b0c
+
+.field public static final iv_order_type:I = 0x7f0a0b13
+
+.field public static final iv_original_icon:I = 0x7f0a0b14
+
+.field public static final iv_price:I = 0x7f0a0b2f
+
+.field public static final iv_right:I = 0x7f0a0b42
+
+.field public static final iv_right_one:I = 0x7f0a0b43
+
+.field public static final iv_right_three:I = 0x7f0a0b44
+
+.field public static final iv_right_two:I = 0x7f0a0b45
+
+.field public static final iv_share:I = 0x7f0a0b55
+
+.field public static final iv_show_spot_call_auction_progress:I = 0x7f0a0b58
+
+.field public static final iv_sort_founds_btn:I = 0x7f0a0b5d
+
+.field public static final iv_src:I = 0x7f0a0b5e
+
+.field public static final iv_switch:I = 0x7f0a0b6e
+
+.field public static final iv_tab_icon:I = 0x7f0a0b70
+
+.field public static final iv_three_1:I = 0x7f0a0b74
+
+.field public static final iv_three_2:I = 0x7f0a0b75
+
+.field public static final iv_trade_add:I = 0x7f0a0b7a
+
+.field public static final iv_trade_sub:I = 0x7f0a0b7c
+
+.field public static final iv_two:I = 0x7f0a0b81
+
+.field public static final iv_visa:I = 0x7f0a0b8c
+
+.field public static final jumpToEnd:I = 0x7f0a0ba4
+
+.field public static final jumpToStart:I = 0x7f0a0ba5
+
+.field public static final jump_url_tag:I = 0x7f0a0ba8
+
+.field public static final kWebContainer:I = 0x7f0a0ba9
+
+.field public static final k_line_position_group:I = 0x7f0a0baa
+
+.field public static final k_line_position_layout:I = 0x7f0a0bab
+
+.field public static final kc_coordinator_layout:I = 0x7f0a0bae
+
+.field public static final kc_order_input_action:I = 0x7f0a0baf
+
+.field public static final kc_order_input_container:I = 0x7f0a0bb0
+
+.field public static final kc_order_input_editText:I = 0x7f0a0bb1
+
+.field public static final kc_order_input_textLayout:I = 0x7f0a0bb2
+
+.field public static final kc_trade_num_ab_input_view_bubble_tips:I = 0x7f0a0bb3
+
+.field public static final klineChart:I = 0x7f0a0bb8
+
+.field public static final klineContent:I = 0x7f0a0bb9
+
+.field public static final kline_drawer:I = 0x7f0a0bbe
+
+.field public static final kline_fail_view:I = 0x7f0a0bbf
+
+.field public static final know:I = 0x7f0a0bc1
+
+.field public static final kucoin_composite_disposable:I = 0x7f0a0bd7
+
+.field public static final kucoin_last_click:I = 0x7f0a0bd9
+
+.field public static final label1:I = 0x7f0a0be0
+
+.field public static final label2:I = 0x7f0a0be1
+
+.field public static final label3:I = 0x7f0a0be2
+
+.field public static final label4:I = 0x7f0a0be3
+
+.field public static final label_prep_group:I = 0x7f0a0be4
+
+.field public static final labeled:I = 0x7f0a0be6
+
+.field public static final labelled_by:I = 0x7f0a0be7
+
+.field public static final layout:I = 0x7f0a0bf9
+
+.field public static final layout1:I = 0x7f0a0bfa
+
+.field public static final layoutBubble:I = 0x7f0a0c09
+
+.field public static final layoutDelegationGuideLayout:I = 0x7f0a0c1d
+
+.field public static final layoutDeposit:I = 0x7f0a0c1e
+
+.field public static final layoutDoPrice:I = 0x7f0a0c21
+
+.field public static final layoutGuideAddFundsLayout:I = 0x7f0a0c2d
+
+.field public static final layoutGuideTradeLayout:I = 0x7f0a0c2f
+
+.field public static final layoutItem:I = 0x7f0a0c39
+
+.field public static final layoutP30:I = 0x7f0a0c4c
+
+.field public static final layoutPrice:I = 0x7f0a0c51
+
+.field public static final layoutRoot:I = 0x7f0a0c5b
+
+.field public static final layoutSearchQrScan:I = 0x7f0a0c62
+
+.field public static final layoutTransfer:I = 0x7f0a0c78
+
+.field public static final layout_audit:I = 0x7f0a0c84
+
+.field public static final layout_community:I = 0x7f0a0c89
+
+.field public static final layout_contract:I = 0x7f0a0c8d
+
+.field public static final layout_doc:I = 0x7f0a0c96
+
+.field public static final layout_explorer:I = 0x7f0a0c99
+
+.field public static final layout_investor:I = 0x7f0a0caa
+
+.field public static final layout_market_change_currency_name:I = 0x7f0a0cac
+
+.field public static final layout_market_change_empty:I = 0x7f0a0cad
+
+.field public static final layout_stop_price:I = 0x7f0a0cc6
+
+.field public static final layout_symbol_header:I = 0x7f0a0cc9
+
+.field public static final layout_type:I = 0x7f0a0ccc
+
+.field public static final layout_website:I = 0x7f0a0cce
+
+.field public static final layutTradePairName:I = 0x7f0a0cd0
+
+.field public static final left:I = 0x7f0a0cde
+
+.field public static final leftLayer:I = 0x7f0a0ce0
+
+.field public static final leftToRight:I = 0x7f0a0ce3
+
+.field public static final left_to_right:I = 0x7f0a0ce7
+
+.field public static final legacy:I = 0x7f0a0ce8
+
+.field public static final levelBars:I = 0x7f0a0cef
+
+.field public static final levelContainer:I = 0x7f0a0cf0
+
+.field public static final lever:I = 0x7f0a0cf1
+
+.field public static final leverSettingBar:I = 0x7f0a0cf2
+
+.field public static final leverage:I = 0x7f0a0cf4
+
+.field public static final leverage_setting_bar:I = 0x7f0a0cfb
+
+.field public static final light:I = 0x7f0a0cff
+
+.field public static final line:I = 0x7f0a0d02
+
+.field public static final line1:I = 0x7f0a0d04
+
+.field public static final line2:I = 0x7f0a0d05
+
+.field public static final line3:I = 0x7f0a0d06
+
+.field public static final lineLayout:I = 0x7f0a0d0d
+
+.field public static final linear:I = 0x7f0a0d12
+
+.field public static final listMode:I = 0x7f0a0d32
+
+.field public static final list_item:I = 0x7f0a0d36
+
+.field public static final list_market_changes:I = 0x7f0a0d37
+
+.field public static final ll1:I = 0x7f0a0d45
+
+.field public static final llAction:I = 0x7f0a0d49
+
+.field public static final llB:I = 0x7f0a0d4f
+
+.field public static final llC:I = 0x7f0a0d55
+
+.field public static final llCoupons:I = 0x7f0a0d61
+
+.field public static final llDistribution:I = 0x7f0a0d69
+
+.field public static final llEstMarginRow:I = 0x7f0a0d6e
+
+.field public static final llExpand:I = 0x7f0a0d70
+
+.field public static final llFavor:I = 0x7f0a0d73
+
+.field public static final llHour:I = 0x7f0a0d7e
+
+.field public static final llItemView:I = 0x7f0a0d7f
+
+.field public static final llKline:I = 0x7f0a0d81
+
+.field public static final llKlineNftContainer:I = 0x7f0a0d82
+
+.field public static final llMin:I = 0x7f0a0d8e
+
+.field public static final llNote:I = 0x7f0a0d93
+
+.field public static final llNoteFuture:I = 0x7f0a0d94
+
+.field public static final llPin:I = 0x7f0a0d9a
+
+.field public static final llReminder:I = 0x7f0a0da2
+
+.field public static final llRule:I = 0x7f0a0da7
+
+.field public static final llSec:I = 0x7f0a0da9
+
+.field public static final llTabQuota:I = 0x7f0a0db5
+
+.field public static final llTabTime:I = 0x7f0a0db6
+
+.field public static final llTax:I = 0x7f0a0db8
+
+.field public static final llTimeSet:I = 0x7f0a0dbb
+
+.field public static final llType:I = 0x7f0a0dc1
+
+.field public static final llUnifiedCoupon:I = 0x7f0a0dc4
+
+.field public static final ll_1:I = 0x7f0a0dc9
+
+.field public static final ll_2:I = 0x7f0a0dca
+
+.field public static final ll_3:I = 0x7f0a0dcb
+
+.field public static final ll_action:I = 0x7f0a0dce
+
+.field public static final ll_amount:I = 0x7f0a0dd0
+
+.field public static final ll_applicants:I = 0x7f0a0dd3
+
+.field public static final ll_apr:I = 0x7f0a0dd4
+
+.field public static final ll_audit:I = 0x7f0a0dd8
+
+.field public static final ll_avg_price_row:I = 0x7f0a0dd9
+
+.field public static final ll_bottom:I = 0x7f0a0ddd
+
+.field public static final ll_center:I = 0x7f0a0de0
+
+.field public static final ll_coin:I = 0x7f0a0de9
+
+.field public static final ll_community:I = 0x7f0a0dec
+
+.field public static final ll_container:I = 0x7f0a0ded
+
+.field public static final ll_content:I = 0x7f0a0dee
+
+.field public static final ll_contract:I = 0x7f0a0df0
+
+.field public static final ll_counterparty:I = 0x7f0a0df3
+
+.field public static final ll_detail_group:I = 0x7f0a0df9
+
+.field public static final ll_distribution_row:I = 0x7f0a0dfb
+
+.field public static final ll_doc:I = 0x7f0a0dfc
+
+.field public static final ll_empty:I = 0x7f0a0e00
+
+.field public static final ll_entrance:I = 0x7f0a0e02
+
+.field public static final ll_expand:I = 0x7f0a0e04
+
+.field public static final ll_explorer:I = 0x7f0a0e05
+
+.field public static final ll_fee:I = 0x7f0a0e07
+
+.field public static final ll_gift:I = 0x7f0a0e0b
+
+.field public static final ll_invest:I = 0x7f0a0e14
+
+.field public static final ll_investor:I = 0x7f0a0e15
+
+.field public static final ll_left:I = 0x7f0a0e1c
+
+.field public static final ll_lever:I = 0x7f0a0e1e
+
+.field public static final ll_main:I = 0x7f0a0e20
+
+.field public static final ll_market_tick:I = 0x7f0a0e22
+
+.field public static final ll_method:I = 0x7f0a0e25
+
+.field public static final ll_name:I = 0x7f0a0e27
+
+.field public static final ll_price_and_percent:I = 0x7f0a0e3b
+
+.field public static final ll_recommend_favor:I = 0x7f0a0e42
+
+.field public static final ll_reserve:I = 0x7f0a0e46
+
+.field public static final ll_reward:I = 0x7f0a0e47
+
+.field public static final ll_role:I = 0x7f0a0e49
+
+.field public static final ll_root:I = 0x7f0a0e4a
+
+.field public static final ll_segment_main:I = 0x7f0a0e4d
+
+.field public static final ll_sort:I = 0x7f0a0e52
+
+.field public static final ll_start:I = 0x7f0a0e53
+
+.field public static final ll_symbol:I = 0x7f0a0e58
+
+.field public static final ll_tag:I = 0x7f0a0e5a
+
+.field public static final ll_tap:I = 0x7f0a0e5b
+
+.field public static final ll_term:I = 0x7f0a0e5c
+
+.field public static final ll_tip_container:I = 0x7f0a0e60
+
+.field public static final ll_top:I = 0x7f0a0e63
+
+.field public static final ll_trade:I = 0x7f0a0e64
+
+.field public static final ll_trade_pair:I = 0x7f0a0e65
+
+.field public static final ll_unit:I = 0x7f0a0e68
+
+.field public static final ll_website:I = 0x7f0a0e6d
+
+.field public static final load_more_load_complete_view:I = 0x7f0a0e72
+
+.field public static final load_more_load_end_view:I = 0x7f0a0e73
+
+.field public static final load_more_load_fail_view:I = 0x7f0a0e74
+
+.field public static final load_more_loading_view:I = 0x7f0a0e75
+
+.field public static final loading:I = 0x7f0a0e76
+
+.field public static final loadingView:I = 0x7f0a0e7a
+
+.field public static final loading_container:I = 0x7f0a0e7b
+
+.field public static final loading_progress:I = 0x7f0a0e7c
+
+.field public static final loading_text:I = 0x7f0a0e7d
+
+.field public static final loading_view:I = 0x7f0a0e7e
+
+.field public static final locale:I = 0x7f0a0e81
+
+.field public static final logo:I = 0x7f0a0e84
+
+.field public static final lottie_layer_name:I = 0x7f0a0ea0
+
+.field public static final ltr:I = 0x7f0a0ea8
+
+.field public static final m3_side_sheet:I = 0x7f0a0eaa
+
+.field public static final mLeftText:I = 0x7f0a0eab
+
+.field public static final m_banner:I = 0x7f0a0eac
+
+.field public static final m_drop_menu_view:I = 0x7f0a0eae
+
+.field public static final m_iv_navigation_back:I = 0x7f0a0eaf
+
+.field public static final m_iv_navigation_bg:I = 0x7f0a0eb0
+
+.field public static final m_swipe_recycler_view:I = 0x7f0a0eb3
+
+.field public static final m_tv_center_sub_title:I = 0x7f0a0eb4
+
+.field public static final m_tv_center_title:I = 0x7f0a0eb5
+
+.field public static final m_tv_navigation_right_text:I = 0x7f0a0eb6
+
+.field public static final m_tv_navigation_title:I = 0x7f0a0eb7
+
+.field public static final m_view_pager:I = 0x7f0a0eb8
+
+.field public static final main:I = 0x7f0a0eb9
+
+.field public static final marginNoticeView:I = 0x7f0a0ece
+
+.field public static final margin_offline_alert:I = 0x7f0a0ed3
+
+.field public static final margin_risk_view:I = 0x7f0a0ed4
+
+.field public static final markPrice:I = 0x7f0a0eda
+
+.field public static final marketDetail:I = 0x7f0a0ee2
+
+.field public static final market_change_kline_container:I = 0x7f0a0eea
+
+.field public static final market_change_root:I = 0x7f0a0eeb
+
+.field public static final market_value:I = 0x7f0a0eef
+
+.field public static final market_value_label:I = 0x7f0a0ef0
+
+.field public static final marquee:I = 0x7f0a0ef9
+
+.field public static final marqueeView:I = 0x7f0a0efa
+
+.field public static final maskView:I = 0x7f0a0efc
+
+.field public static final masked:I = 0x7f0a0efe
+
+.field public static final match_constraint:I = 0x7f0a0f00
+
+.field public static final match_parent:I = 0x7f0a0f01
+
+.field public static final material_clock_display:I = 0x7f0a0f03
+
+.field public static final material_clock_display_and_toggle:I = 0x7f0a0f04
+
+.field public static final material_clock_face:I = 0x7f0a0f05
+
+.field public static final material_clock_hand:I = 0x7f0a0f06
+
+.field public static final material_clock_level:I = 0x7f0a0f07
+
+.field public static final material_clock_period_am_button:I = 0x7f0a0f08
+
+.field public static final material_clock_period_pm_button:I = 0x7f0a0f09
+
+.field public static final material_clock_period_toggle:I = 0x7f0a0f0a
+
+.field public static final material_hour_text_input:I = 0x7f0a0f0b
+
+.field public static final material_hour_tv:I = 0x7f0a0f0c
+
+.field public static final material_label:I = 0x7f0a0f0d
+
+.field public static final material_minute_text_input:I = 0x7f0a0f0e
+
+.field public static final material_minute_tv:I = 0x7f0a0f0f
+
+.field public static final material_textinput_timepicker:I = 0x7f0a0f10
+
+.field public static final material_timepicker_cancel_button:I = 0x7f0a0f11
+
+.field public static final material_timepicker_container:I = 0x7f0a0f12
+
+.field public static final material_timepicker_mode_button:I = 0x7f0a0f13
+
+.field public static final material_timepicker_ok_button:I = 0x7f0a0f14
+
+.field public static final material_timepicker_view:I = 0x7f0a0f15
+
+.field public static final material_value_index:I = 0x7f0a0f16
+
+.field public static final matrix:I = 0x7f0a0f17
+
+.field public static final max_supply:I = 0x7f0a0f22
+
+.field public static final max_supply_label:I = 0x7f0a0f23
+
+.field public static final max_title:I = 0x7f0a0f24
+
+.field public static final medium:I = 0x7f0a0f27
+
+.field public static final menuView:I = 0x7f0a0f2d
+
+.field public static final menu_search:I = 0x7f0a0f2f
+
+.field public static final message:I = 0x7f0a0f35
+
+.field public static final middle:I = 0x7f0a0f3f
+
+.field public static final mini:I = 0x7f0a0f4a
+
+.field public static final miniProgram:I = 0x7f0a0f4b
+
+.field public static final minute:I = 0x7f0a0f4e
+
+.field public static final mix_blend_mode:I = 0x7f0a0f52
+
+.field public static final month:I = 0x7f0a0f67
+
+.field public static final month_grid:I = 0x7f0a0f68
+
+.field public static final month_navigation_bar:I = 0x7f0a0f69
+
+.field public static final month_navigation_fragment_toggle:I = 0x7f0a0f6a
+
+.field public static final month_navigation_next:I = 0x7f0a0f6b
+
+.field public static final month_navigation_previous:I = 0x7f0a0f6c
+
+.field public static final month_title:I = 0x7f0a0f6d
+
+.field public static final moreFundingLayout:I = 0x7f0a0f6f
+
+.field public static final motion_base:I = 0x7f0a0f73
+
+.field public static final mtrl_calendar_day_selector_frame:I = 0x7f0a0f75
+
+.field public static final mtrl_calendar_days_of_week:I = 0x7f0a0f76
+
+.field public static final mtrl_calendar_frame:I = 0x7f0a0f77
+
+.field public static final mtrl_calendar_main_pane:I = 0x7f0a0f78
+
+.field public static final mtrl_calendar_months:I = 0x7f0a0f79
+
+.field public static final mtrl_calendar_selection_frame:I = 0x7f0a0f7a
+
+.field public static final mtrl_calendar_text_input_frame:I = 0x7f0a0f7b
+
+.field public static final mtrl_calendar_year_selector_frame:I = 0x7f0a0f7c
+
+.field public static final mtrl_card_checked_layer_id:I = 0x7f0a0f7d
+
+.field public static final mtrl_child_content_container:I = 0x7f0a0f7e
+
+.field public static final mtrl_internal_children_alpha_tag:I = 0x7f0a0f7f
+
+.field public static final mtrl_motion_snapshot_view:I = 0x7f0a0f80
+
+.field public static final mtrl_picker_fullscreen:I = 0x7f0a0f81
+
+.field public static final mtrl_picker_header:I = 0x7f0a0f82
+
+.field public static final mtrl_picker_header_selection_text:I = 0x7f0a0f83
+
+.field public static final mtrl_picker_header_title_and_selection:I = 0x7f0a0f84
+
+.field public static final mtrl_picker_header_toggle:I = 0x7f0a0f85
+
+.field public static final mtrl_picker_text_input_date:I = 0x7f0a0f86
+
+.field public static final mtrl_picker_text_input_range_end:I = 0x7f0a0f87
+
+.field public static final mtrl_picker_text_input_range_start:I = 0x7f0a0f88
+
+.field public static final mtrl_picker_title_text:I = 0x7f0a0f89
+
+.field public static final mtrl_view_tag_bottom_padding:I = 0x7f0a0f8a
+
+.field public static final multiply:I = 0x7f0a0f8b
+
+.field public static final navigation_bar:I = 0x7f0a0f98
+
+.field public static final navigation_bar_item_active_indicator_view:I = 0x7f0a0f99
+
+.field public static final navigation_bar_item_content_container:I = 0x7f0a0f9a
+
+.field public static final navigation_bar_item_icon_container:I = 0x7f0a0f9b
+
+.field public static final navigation_bar_item_icon_view:I = 0x7f0a0f9c
+
+.field public static final navigation_bar_item_inner_content_container:I = 0x7f0a0f9d
+
+.field public static final navigation_bar_item_labels_group:I = 0x7f0a0f9e
+
+.field public static final navigation_bar_item_large_label_view:I = 0x7f0a0f9f
+
+.field public static final navigation_bar_item_small_label_view:I = 0x7f0a0fa0
+
+.field public static final navigation_header_container:I = 0x7f0a0fa1
+
+.field public static final navigation_menu_subheader_label:I = 0x7f0a0fa2
+
+.field public static final never:I = 0x7f0a0fa7
+
+.field public static final neverCompleteToEnd:I = 0x7f0a0fa8
+
+.field public static final neverCompleteToStart:I = 0x7f0a0fa9
+
+.field public static final newCoinClose:I = 0x7f0a0fab
+
+.field public static final newCoinContent:I = 0x7f0a0fac
+
+.field public static final newCoinLaunchBubble:I = 0x7f0a0fad
+
+.field public static final newOrderClose:I = 0x7f0a0fae
+
+.field public static final newOrderContent:I = 0x7f0a0faf
+
+.field public static final next:I = 0x7f0a0fc5
+
+.field public static final nextDone:I = 0x7f0a0fc6
+
+.field public static final nftContent:I = 0x7f0a0fcb
+
+.field public static final nftToggle_spot:I = 0x7f0a0fcc
+
+.field public static final noState:I = 0x7f0a0fd3
+
+.field public static final none:I = 0x7f0a0fd4
+
+.field public static final normal:I = 0x7f0a0fd5
+
+.field public static final north:I = 0x7f0a0fd6
+
+.field public static final notification_background:I = 0x7f0a0fdf
+
+.field public static final notification_main_column:I = 0x7f0a0fe0
+
+.field public static final notification_main_column_container:I = 0x7f0a0fe1
+
+.field public static final nowrap:I = 0x7f0a0fe2
+
+.field public static final nsv:I = 0x7f0a0fe3
+
+.field public static final nsv_market_trade:I = 0x7f0a0fe5
+
+.field public static final off:I = 0x7f0a0fe9
+
+.field public static final on:I = 0x7f0a0fee
+
+.field public static final oneMonth:I = 0x7f0a0ff3
+
+.field public static final one_day_id:I = 0x7f0a0ffa
+
+.field public static final one_hour_id:I = 0x7f0a0ffb
+
+.field public static final one_min_id:I = 0x7f0a0ffc
+
+.field public static final one_month_id:I = 0x7f0a0ffd
+
+.field public static final one_week_id:I = 0x7f0a0ffe
+
+.field public static final one_year_id:I = 0x7f0a0fff
+
+.field public static final onlyDebtTipView:I = 0x7f0a1001
+
+.field public static final openPrice:I = 0x7f0a100e
+
+.field public static final open_order:I = 0x7f0a1019
+
+.field public static final open_search_bar_placeholder_text_view:I = 0x7f0a101a
+
+.field public static final open_search_bar_text_view:I = 0x7f0a101b
+
+.field public static final open_search_bar_text_view_container:I = 0x7f0a101c
+
+.field public static final open_search_view_background:I = 0x7f0a101d
+
+.field public static final open_search_view_clear_button:I = 0x7f0a101e
+
+.field public static final open_search_view_content_container:I = 0x7f0a101f
+
+.field public static final open_search_view_divider:I = 0x7f0a1020
+
+.field public static final open_search_view_dummy_toolbar:I = 0x7f0a1021
+
+.field public static final open_search_view_edit_text:I = 0x7f0a1022
+
+.field public static final open_search_view_header_container:I = 0x7f0a1023
+
+.field public static final open_search_view_root:I = 0x7f0a1024
+
+.field public static final open_search_view_scrim:I = 0x7f0a1025
+
+.field public static final open_search_view_search_prefix:I = 0x7f0a1026
+
+.field public static final open_search_view_status_bar_spacer:I = 0x7f0a1027
+
+.field public static final open_search_view_text_container:I = 0x7f0a1028
+
+.field public static final open_search_view_toolbar:I = 0x7f0a1029
+
+.field public static final open_search_view_toolbar_container:I = 0x7f0a102a
+
+.field public static final ori_text_size:I = 0x7f0a103f
+
+.field public static final outline:I = 0x7f0a1046
+
+.field public static final outward:I = 0x7f0a1048
+
+.field public static final oval:I = 0x7f0a1049
+
+.field public static final overlayView:I = 0x7f0a104a
+
+.field public static final overshoot:I = 0x7f0a104b
+
+.field public static final packed:I = 0x7f0a1050
+
+.field public static final parallax:I = 0x7f0a1058
+
+.field public static final parent:I = 0x7f0a1059
+
+.field public static final parentPanel:I = 0x7f0a105a
+
+.field public static final parentRelative:I = 0x7f0a105b
+
+.field public static final parent_matrix:I = 0x7f0a105c
+
+.field public static final password_toggle:I = 0x7f0a1061
+
+.field public static final password_toggle_view:I = 0x7f0a1062
+
+.field public static final path:I = 0x7f0a1063
+
+.field public static final pathRelative:I = 0x7f0a1064
+
+.field public static final percent:I = 0x7f0a108f
+
+.field public static final percentTextView:I = 0x7f0a1094
+
+.field public static final pie_amount_ratio:I = 0x7f0a10a9
+
+.field public static final pie_user_ratio:I = 0x7f0a10aa
+
+.field public static final pin:I = 0x7f0a10ab
+
+.field public static final placeTheOrder:I = 0x7f0a10ac
+
+.field public static final pnl:I = 0x7f0a10b1
+
+.field public static final pointer_events:I = 0x7f0a10c9
+
+.field public static final position:I = 0x7f0a10cf
+
+.field public static final postLayout:I = 0x7f0a10de
+
+.field public static final pressed:I = 0x7f0a10f0
+
+.field public static final prev:I = 0x7f0a10f1
+
+.field public static final price:I = 0x7f0a10f8
+
+.field public static final progressBar:I = 0x7f0a112f
+
+.field public static final progress_circular:I = 0x7f0a1131
+
+.field public static final progress_horizontal:I = 0x7f0a1132
+
+.field public static final progress_percent:I = 0x7f0a1134
+
+.field public static final prompt:I = 0x7f0a1136
+
+.field public static final prompt_error:I = 0x7f0a1137
+
+.field public static final pullToRefresh:I = 0x7f0a113b
+
+.field public static final quote_home_calendar_root_layout:I = 0x7f0a1146
+
+.field public static final quote_home_feed_card:I = 0x7f0a1147
+
+.field public static final quote_home_feed_container:I = 0x7f0a1148
+
+.field public static final quote_home_feed_container_overlay:I = 0x7f0a1149
+
+.field public static final radial:I = 0x7f0a1150
+
+.field public static final radio:I = 0x7f0a1151
+
+.field public static final radioGroup:I = 0x7f0a1152
+
+.field public static final rangeLayout:I = 0x7f0a1157
+
+.field public static final rank:I = 0x7f0a1158
+
+.field public static final rank_label:I = 0x7f0a1159
+
+.field public static final rating:I = 0x7f0a1167
+
+.field public static final rating_label:I = 0x7f0a1168
+
+.field public static final rbBuy:I = 0x7f0a116b
+
+.field public static final rbContainer:I = 0x7f0a116c
+
+.field public static final rbDecreasing:I = 0x7f0a1171
+
+.field public static final rbIncreasing:I = 0x7f0a1174
+
+.field public static final rbNotAgain:I = 0x7f0a1179
+
+.field public static final rbSell:I = 0x7f0a117c
+
+.field public static final rbUniform:I = 0x7f0a1181
+
+.field public static final rb_1:I = 0x7f0a1182
+
+.field public static final rb_100:I = 0x7f0a1183
+
+.field public static final rb_25:I = 0x7f0a1184
+
+.field public static final rb_5:I = 0x7f0a1185
+
+.field public static final rb_50:I = 0x7f0a1186
+
+.field public static final rb_75:I = 0x7f0a1187
+
+.field public static final rb_activity:I = 0x7f0a1188
+
+.field public static final rb_all:I = 0x7f0a1189
+
+.field public static final rb_candle:I = 0x7f0a118c
+
+.field public static final rb_divider:I = 0x7f0a1194
+
+.field public static final rb_earn:I = 0x7f0a1195
+
+.field public static final rb_group:I = 0x7f0a119a
+
+.field public static final rb_line:I = 0x7f0a119f
+
+.field public static final rb_main:I = 0x7f0a11a0
+
+.field public static final rb_no_main:I = 0x7f0a11a4
+
+.field public static final rb_one:I = 0x7f0a11a5
+
+.field public static final rb_oneMonth:I = 0x7f0a11a6
+
+.field public static final rb_order_book:I = 0x7f0a11a7
+
+.field public static final rb_otc:I = 0x7f0a11a8
+
+.field public static final rb_overview:I = 0x7f0a11a9
+
+.field public static final rb_recent_deal:I = 0x7f0a11ac
+
+.field public static final rb_robot:I = 0x7f0a11ae
+
+.field public static final rb_sevenDay:I = 0x7f0a11b0
+
+.field public static final rb_state:I = 0x7f0a11b1
+
+.field public static final rb_three:I = 0x7f0a11b3
+
+.field public static final rb_threeMonth:I = 0x7f0a11b4
+
+.field public static final rb_trade:I = 0x7f0a11b5
+
+.field public static final rb_trade_guide:I = 0x7f0a11b6
+
+.field public static final rb_two:I = 0x7f0a11b7
+
+.field public static final rc_hide_divider:I = 0x7f0a11b8
+
+.field public static final rcv_buy:I = 0x7f0a11b9
+
+.field public static final rcv_search:I = 0x7f0a11bb
+
+.field public static final rcv_sell:I = 0x7f0a11bc
+
+.field public static final react_test_id:I = 0x7f0a11bd
+
+.field public static final recent_price_tv:I = 0x7f0a11d4
+
+.field public static final recent_time_tv:I = 0x7f0a11d5
+
+.field public static final recent_vol_tv:I = 0x7f0a11d6
+
+.field public static final recommend_text:I = 0x7f0a11df
+
+.field public static final rectangle:I = 0x7f0a11e0
+
+.field public static final rectangles:I = 0x7f0a11e1
+
+.field public static final recyclerView:I = 0x7f0a11e5
+
+.field public static final recycler_view:I = 0x7f0a11ee
+
+.field public static final recycler_view_order_book_sell:I = 0x7f0a11f2
+
+.field public static final recyclerview:I = 0x7f0a11f4
+
+.field public static final recyclerview_orderbook_buy:I = 0x7f0a11f5
+
+.field public static final refreshLayout:I = 0x7f0a1200
+
+.field public static final refreshLayoutContainer:I = 0x7f0a1201
+
+.field public static final refresh_view:I = 0x7f0a1203
+
+.field public static final regular:I = 0x7f0a1204
+
+.field public static final report_drawn:I = 0x7f0a1209
+
+.field public static final restart:I = 0x7f0a120f
+
+.field public static final retreat:I = 0x7f0a1213
+
+.field public static final reverse:I = 0x7f0a1215
+
+.field public static final reverseSawtooth:I = 0x7f0a1218
+
+.field public static final rgGroup:I = 0x7f0a121d
+
+.field public static final rgToggle:I = 0x7f0a121e
+
+.field public static final rg_percent:I = 0x7f0a1220
+
+.field public static final rgp:I = 0x7f0a1221
+
+.field public static final rgp_mode:I = 0x7f0a1222
+
+.field public static final rgp_time:I = 0x7f0a1223
+
+.field public static final rgp_type:I = 0x7f0a1224
+
+.field public static final right:I = 0x7f0a1225
+
+.field public static final rightLayer:I = 0x7f0a1229
+
+.field public static final rightToLeft:I = 0x7f0a122d
+
+.field public static final right_anchor:I = 0x7f0a122e
+
+.field public static final right_icon:I = 0x7f0a1230
+
+.field public static final right_side:I = 0x7f0a1234
+
+.field public static final right_to_left:I = 0x7f0a1235
+
+.field public static final ring:I = 0x7f0a1236
+
+.field public static final riskTipView:I = 0x7f0a1241
+
+.field public static final rivTopImage:I = 0x7f0a1249
+
+.field public static final rlDoPrice:I = 0x7f0a124e
+
+.field public static final rlFilter:I = 0x7f0a1252
+
+.field public static final rlLimitPrice:I = 0x7f0a1254
+
+.field public static final rlPrice:I = 0x7f0a1256
+
+.field public static final rlRight:I = 0x7f0a1258
+
+.field public static final rlTax:I = 0x7f0a125a
+
+.field public static final rl_buy_price_range:I = 0x7f0a1261
+
+.field public static final rl_estimated_opening_price:I = 0x7f0a126b
+
+.field public static final rl_estimated_opening_volume:I = 0x7f0a126c
+
+.field public static final rl_opening_time:I = 0x7f0a1276
+
+.field public static final rl_sell_price_range:I = 0x7f0a127e
+
+.field public static final rl_stop_price:I = 0x7f0a1280
+
+.field public static final rn_frame_file:I = 0x7f0a1287
+
+.field public static final rn_frame_method:I = 0x7f0a1288
+
+.field public static final rn_order_center_container:I = 0x7f0a1289
+
+.field public static final rn_redbox_dismiss_button:I = 0x7f0a128a
+
+.field public static final rn_redbox_line_separator:I = 0x7f0a128b
+
+.field public static final rn_redbox_loading_indicator:I = 0x7f0a128c
+
+.field public static final rn_redbox_reload_button:I = 0x7f0a128d
+
+.field public static final rn_redbox_report_button:I = 0x7f0a128e
+
+.field public static final rn_redbox_report_label:I = 0x7f0a128f
+
+.field public static final rn_redbox_stack:I = 0x7f0a1290
+
+.field public static final role:I = 0x7f0a1294
+
+.field public static final root:I = 0x7f0a1297
+
+.field public static final rootCard:I = 0x7f0a1298
+
+.field public static final root_view:I = 0x7f0a129f
+
+.field public static final rotate:I = 0x7f0a12a2
+
+.field public static final rounded:I = 0x7f0a12a5
+
+.field public static final route_activity_result:I = 0x7f0a12a7
+
+.field public static final route_fragment_result:I = 0x7f0a12a8
+
+.field public static final row:I = 0x7f0a12a9
+
+.field public static final row_base_unit:I = 0x7f0a12ab
+
+.field public static final row_index_key:I = 0x7f0a12ac
+
+.field public static final row_quote_unit:I = 0x7f0a12ad
+
+.field public static final row_reverse:I = 0x7f0a12ae
+
+.field public static final rtl:I = 0x7f0a12b1
+
+.field public static final rtlViewPager:I = 0x7f0a12b2
+
+.field public static final rtv_msg_tip:I = 0x7f0a12b3
+
+.field public static final rv:I = 0x7f0a12b7
+
+.field public static final rvDataList:I = 0x7f0a12b9
+
+.field public static final rvOrderTypeList:I = 0x7f0a12bd
+
+.field public static final rvOrders:I = 0x7f0a12be
+
+.field public static final rvTable:I = 0x7f0a12c3
+
+.field public static final rv_quotes:I = 0x7f0a12d6
+
+.field public static final rv_reco_favor:I = 0x7f0a12d7
+
+.field public static final save_non_transition_alpha:I = 0x7f0a12e9
+
+.field public static final save_overlay_view:I = 0x7f0a12ea
+
+.field public static final sawtooth:I = 0x7f0a12eb
+
+.field public static final scale:I = 0x7f0a12f8
+
+.field public static final screen:I = 0x7f0a12fd
+
+.field public static final scrollBarLayout:I = 0x7f0a1300
+
+.field public static final scrollIndicatorDown:I = 0x7f0a1302
+
+.field public static final scrollIndicatorUp:I = 0x7f0a1303
+
+.field public static final scrollView:I = 0x7f0a1306
+
+.field public static final scrollable:I = 0x7f0a130a
+
+.field public static final search_badge:I = 0x7f0a131f
+
+.field public static final search_bar:I = 0x7f0a1320
+
+.field public static final search_button:I = 0x7f0a1321
+
+.field public static final search_close_btn:I = 0x7f0a1322
+
+.field public static final search_edit_frame:I = 0x7f0a1323
+
+.field public static final search_go_btn:I = 0x7f0a1324
+
+.field public static final search_mag_icon:I = 0x7f0a1326
+
+.field public static final search_plate:I = 0x7f0a1327
+
+.field public static final search_src_text:I = 0x7f0a1328
+
+.field public static final search_voice_btn:I = 0x7f0a132a
+
+.field public static final second:I = 0x7f0a132d
+
+.field public static final sectioning_adapter_tag_key_view_viewholder:I = 0x7f0a1335
+
+.field public static final seekBar:I = 0x7f0a1337
+
+.field public static final seekbar_leverage:I = 0x7f0a1339
+
+.field public static final select_dialog_listview:I = 0x7f0a135d
+
+.field public static final selected:I = 0x7f0a135e
+
+.field public static final selection_type:I = 0x7f0a1361
+
+.field public static final semi:I = 0x7f0a136d
+
+.field public static final sensors_analytics_debug_mode_cancel:I = 0x7f0a1373
+
+.field public static final sensors_analytics_debug_mode_message:I = 0x7f0a1374
+
+.field public static final sensors_analytics_debug_mode_only:I = 0x7f0a1375
+
+.field public static final sensors_analytics_debug_mode_title:I = 0x7f0a1376
+
+.field public static final sensors_analytics_debug_mode_track:I = 0x7f0a1377
+
+.field public static final sensors_analytics_loading:I = 0x7f0a1378
+
+.field public static final sensors_analytics_pairing_code:I = 0x7f0a1379
+
+.field public static final sensors_analytics_rotate_layout:I = 0x7f0a137a
+
+.field public static final sensors_analytics_tag_view_activity:I = 0x7f0a137b
+
+.field public static final sensors_analytics_tag_view_fragment_name:I = 0x7f0a137c
+
+.field public static final sensors_analytics_tag_view_fragment_name2:I = 0x7f0a137d
+
+.field public static final sensors_analytics_tag_view_id:I = 0x7f0a137e
+
+.field public static final sensors_analytics_tag_view_ignored:I = 0x7f0a137f
+
+.field public static final sensors_analytics_tag_view_onclick_timestamp:I = 0x7f0a1380
+
+.field public static final sensors_analytics_tag_view_properties:I = 0x7f0a1381
+
+.field public static final sensors_analytics_tag_view_tree_observer_listeners:I = 0x7f0a1382
+
+.field public static final sensors_analytics_tag_view_value:I = 0x7f0a1383
+
+.field public static final sensors_analytics_tag_view_webview:I = 0x7f0a1384
+
+.field public static final sensors_analytics_tag_view_webview_visual:I = 0x7f0a1385
+
+.field public static final sensors_analytics_verification_code_title:I = 0x7f0a1386
+
+.field public static final sensorsdata_analytics_loading_image1:I = 0x7f0a1387
+
+.field public static final sensorsdata_analytics_loading_image2:I = 0x7f0a1388
+
+.field public static final sensorsdata_analytics_loading_image3:I = 0x7f0a1389
+
+.field public static final sensorsdata_analytics_loading_image4:I = 0x7f0a138a
+
+.field public static final separator1:I = 0x7f0a138b
+
+.field public static final separator2:I = 0x7f0a138c
+
+.field public static final separator3:I = 0x7f0a138d
+
+.field public static final sevenDay:I = 0x7f0a1396
+
+.field public static final sharedValueSet:I = 0x7f0a13a1
+
+.field public static final sharedValueUnset:I = 0x7f0a13a2
+
+.field public static final shortcut:I = 0x7f0a13a6
+
+.field public static final side:I = 0x7f0a13b0
+
+.field public static final sides:I = 0x7f0a13b8
+
+.field public static final simple_tag:I = 0x7f0a13bf
+
+.field public static final sin:I = 0x7f0a13c0
+
+.field public static final site_switch_block:I = 0x7f0a13c2
+
+.field public static final site_switch_loading:I = 0x7f0a13c3
+
+.field public static final skip:I = 0x7f0a13c4
+
+.field public static final skipped:I = 0x7f0a13c6
+
+.field public static final slide:I = 0x7f0a13c7
+
+.field public static final slidingTabLayout:I = 0x7f0a13c8
+
+.field public static final snackbar_action:I = 0x7f0a13c9
+
+.field public static final snackbar_text:I = 0x7f0a13ca
+
+.field public static final software:I = 0x7f0a14e0
+
+.field public static final solid:I = 0x7f0a14e1
+
+.field public static final south:I = 0x7f0a14e6
+
+.field public static final space:I = 0x7f0a14e7
+
+.field public static final space_around:I = 0x7f0a14eb
+
+.field public static final space_between:I = 0x7f0a14ec
+
+.field public static final space_evenly:I = 0x7f0a14ed
+
+.field public static final spacer:I = 0x7f0a14ee
+
+.field public static final special_effects_controller_view_tag:I = 0x7f0a14ef
+
+.field public static final spline:I = 0x7f0a14f3
+
+.field public static final split1:I = 0x7f0a14f4
+
+.field public static final split_action_bar:I = 0x7f0a14f5
+
+.field public static final spot_banner:I = 0x7f0a14fb
+
+.field public static final spread:I = 0x7f0a14fd
+
+.field public static final spread_inside:I = 0x7f0a14fe
+
+.field public static final spring:I = 0x7f0a14ff
+
+.field public static final square:I = 0x7f0a1500
+
+.field public static final src_atop:I = 0x7f0a1502
+
+.field public static final src_in:I = 0x7f0a1503
+
+.field public static final src_over:I = 0x7f0a1504
+
+.field public static final srl_tag:I = 0x7f0a1506
+
+.field public static final stack:I = 0x7f0a1507
+
+.field public static final standard:I = 0x7f0a151a
+
+.field public static final start:I = 0x7f0a151b
+
+.field public static final startHorizontal:I = 0x7f0a151d
+
+.field public static final startToEnd:I = 0x7f0a151e
+
+.field public static final startVertical:I = 0x7f0a151f
+
+.field public static final start_center:I = 0x7f0a1520
+
+.field public static final start_exposure_check:I = 0x7f0a1522
+
+.field public static final staticLayout:I = 0x7f0a1525
+
+.field public static final staticPostLayout:I = 0x7f0a1526
+
+.field public static final statusLottie:I = 0x7f0a152f
+
+.field public static final stop:I = 0x7f0a153a
+
+.field public static final stretch:I = 0x7f0a153e
+
+.field public static final style_20dp:I = 0x7f0a1544
+
+.field public static final style_24dp:I = 0x7f0a1545
+
+.field public static final subTitle:I = 0x7f0a154c
+
+.field public static final sub_tab_layout:I = 0x7f0a154e
+
+.field public static final sub_title:I = 0x7f0a154f
+
+.field public static final submenuarrow:I = 0x7f0a1550
+
+.field public static final submit_area:I = 0x7f0a1553
+
+.field public static final submit_trade:I = 0x7f0a1554
+
+.field public static final swEnableSaving:I = 0x7f0a1569
+
+.field public static final sweep:I = 0x7f0a156a
+
+.field public static final switchCompat:I = 0x7f0a1577
+
+.field public static final switch_fragment_bar:I = 0x7f0a159b
+
+.field public static final switcher:I = 0x7f0a15a8
+
+.field public static final symbol:I = 0x7f0a15a9
+
+.field public static final symbolBarLayout:I = 0x7f0a15ab
+
+.field public static final symbolName:I = 0x7f0a15b0
+
+.field public static final symbolOfflineBannerView:I = 0x7f0a15b2
+
+.field public static final symbols_drawer:I = 0x7f0a15b6
+
+.field public static final tabMode:I = 0x7f0a15c1
+
+.field public static final tab_layout:I = 0x7f0a15c9
+
+.field public static final tab_margin_type_layout:I = 0x7f0a15cc
+
+.field public static final tab_type:I = 0x7f0a15d3
+
+.field public static final tablayout:I = 0x7f0a15d4
+
+.field public static final tag_accessibility_actions:I = 0x7f0a15d8
+
+.field public static final tag_accessibility_clickable_spans:I = 0x7f0a15d9
+
+.field public static final tag_accessibility_heading:I = 0x7f0a15da
+
+.field public static final tag_accessibility_pane_title:I = 0x7f0a15db
+
+.field public static final tag_on_apply_window_listener:I = 0x7f0a15dd
+
+.field public static final tag_on_receive_content_listener:I = 0x7f0a15de
+
+.field public static final tag_on_receive_content_mime_types:I = 0x7f0a15df
+
+.field public static final tag_original_focus_listener:I = 0x7f0a15e0
+
+.field public static final tag_screen_reader_focusable:I = 0x7f0a15e3
+
+.field public static final tag_state_description:I = 0x7f0a15e4
+
+.field public static final tag_text_watcher:I = 0x7f0a15e5
+
+.field public static final tag_transition_group:I = 0x7f0a15e6
+
+.field public static final tag_unhandled_key_event_manager:I = 0x7f0a15e7
+
+.field public static final tag_unhandled_key_listeners:I = 0x7f0a15e8
+
+.field public static final tag_window_insets_animation_callback:I = 0x7f0a15ea
+
+.field public static final text:I = 0x7f0a160e
+
+.field public static final text2:I = 0x7f0a1610
+
+.field public static final textInput:I = 0x7f0a1613
+
+.field public static final textSpacerNoButtons:I = 0x7f0a1615
+
+.field public static final textSpacerNoTitle:I = 0x7f0a1616
+
+.field public static final text_container:I = 0x7f0a1619
+
+.field public static final text_input_end_icon:I = 0x7f0a161b
+
+.field public static final text_input_error_icon:I = 0x7f0a161c
+
+.field public static final text_input_start_icon:I = 0x7f0a161d
+
+.field public static final text_right:I = 0x7f0a161e
+
+.field public static final textinput_counter:I = 0x7f0a1625
+
+.field public static final textinput_error:I = 0x7f0a1626
+
+.field public static final textinput_helper_text:I = 0x7f0a1627
+
+.field public static final textinput_placeholder:I = 0x7f0a1628
+
+.field public static final textinput_prefix_text:I = 0x7f0a1629
+
+.field public static final textinput_suffix_text:I = 0x7f0a162a
+
+.field public static final threeMonth:I = 0x7f0a162e
+
+.field public static final three_year_id:I = 0x7f0a162f
+
+.field public static final thumb:I = 0x7f0a1630
+
+.field public static final time:I = 0x7f0a1633
+
+.field public static final tipTextView:I = 0x7f0a163a
+
+.field public static final tips:I = 0x7f0a1643
+
+.field public static final tipsView:I = 0x7f0a164b
+
+.field public static final title:I = 0x7f0a1650
+
+.field public static final titleDividerNoCustom:I = 0x7f0a1652
+
+.field public static final titleText:I = 0x7f0a1655
+
+.field public static final title_template:I = 0x7f0a1660
+
+.field public static final toggle:I = 0x7f0a1664
+
+.field public static final toolBar:I = 0x7f0a166b
+
+.field public static final toolBarLayout:I = 0x7f0a166c
+
+.field public static final toolBarView:I = 0x7f0a166d
+
+.field public static final toolbar:I = 0x7f0a166e
+
+.field public static final top:I = 0x7f0a166f
+
+.field public static final topLayout:I = 0x7f0a1673
+
+.field public static final topPanel:I = 0x7f0a1676
+
+.field public static final topToBottom:I = 0x7f0a1679
+
+.field public static final top_center:I = 0x7f0a167a
+
+.field public static final top_price:I = 0x7f0a1680
+
+.field public static final top_price_label:I = 0x7f0a1681
+
+.field public static final touch_outside:I = 0x7f0a1691
+
+.field public static final trade_market_dialog_title:I = 0x7f0a16b0
+
+.field public static final trade_panel_position_group:I = 0x7f0a16b1
+
+.field public static final trade_panel_position_layout:I = 0x7f0a16b2
+
+.field public static final trading_title:I = 0x7f0a16bf
+
+.field public static final transferDesc:I = 0x7f0a16c7
+
+.field public static final transferTitle:I = 0x7f0a16c9
+
+.field public static final transform:I = 0x7f0a16ca
+
+.field public static final transform_origin:I = 0x7f0a16cb
+
+.field public static final transition_clip:I = 0x7f0a16ce
+
+.field public static final transition_current_scene:I = 0x7f0a16cf
+
+.field public static final transition_image_transform:I = 0x7f0a16d0
+
+.field public static final transition_layout_save:I = 0x7f0a16d1
+
+.field public static final transition_pause_alpha:I = 0x7f0a16d2
+
+.field public static final transition_position:I = 0x7f0a16d3
+
+.field public static final transition_scene_layoutid_cache:I = 0x7f0a16d4
+
+.field public static final transition_transform:I = 0x7f0a16d5
+
+.field public static final triangle:I = 0x7f0a16e2
+
+.field public static final tv1:I = 0x7f0a16ea
+
+.field public static final tv2:I = 0x7f0a16ec
+
+.field public static final tv3:I = 0x7f0a16ef
+
+.field public static final tvA:I = 0x7f0a16f8
+
+.field public static final tvA1:I = 0x7f0a16f9
+
+.field public static final tvAll:I = 0x7f0a1712
+
+.field public static final tvAmount:I = 0x7f0a1714
+
+.field public static final tvAmountUnit:I = 0x7f0a1719
+
+.field public static final tvAsc:I = 0x7f0a1723
+
+.field public static final tvAutoBorrow:I = 0x7f0a172c
+
+.field public static final tvAutoBorrowLabel:I = 0x7f0a172d
+
+.field public static final tvAutoBorrowRepay:I = 0x7f0a172e
+
+.field public static final tvAutoRepay:I = 0x7f0a1732
+
+.field public static final tvAutoReturn:I = 0x7f0a1733
+
+.field public static final tvAvailable:I = 0x7f0a1736
+
+.field public static final tvAvailableAmount:I = 0x7f0a1737
+
+.field public static final tvAvailableBase:I = 0x7f0a173a
+
+.field public static final tvAvailableLabel:I = 0x7f0a173d
+
+.field public static final tvAvailableQuote:I = 0x7f0a173e
+
+.field public static final tvAvailableTradeLabel:I = 0x7f0a1740
+
+.field public static final tvAvailableTradeValue:I = 0x7f0a1741
+
+.field public static final tvAvg:I = 0x7f0a1745
+
+.field public static final tvAvgPrice:I = 0x7f0a1749
+
+.field public static final tvB:I = 0x7f0a174c
+
+.field public static final tvB1:I = 0x7f0a174d
+
+.field public static final tvBaseUnsupported:I = 0x7f0a1757
+
+.field public static final tvBorrow:I = 0x7f0a1763
+
+.field public static final tvBorrowAndRepay:I = 0x7f0a1768
+
+.field public static final tvBorrowLabel:I = 0x7f0a1769
+
+.field public static final tvBottomBuy:I = 0x7f0a176b
+
+.field public static final tvBtnOk:I = 0x7f0a1770
+
+.field public static final tvBubbleContent:I = 0x7f0a1771
+
+.field public static final tvBuyCrypto:I = 0x7f0a1774
+
+.field public static final tvC:I = 0x7f0a1775
+
+.field public static final tvC1:I = 0x7f0a1776
+
+.field public static final tvCancel:I = 0x7f0a1779
+
+.field public static final tvChangeRate:I = 0x7f0a1782
+
+.field public static final tvChaseBuy:I = 0x7f0a1785
+
+.field public static final tvComplianceNotice:I = 0x7f0a179a
+
+.field public static final tvConfirm:I = 0x7f0a179b
+
+.field public static final tvContent:I = 0x7f0a17a1
+
+.field public static final tvCountdown:I = 0x7f0a17b5
+
+.field public static final tvCoupons:I = 0x7f0a17ba
+
+.field public static final tvCurrency:I = 0x7f0a17c1
+
+.field public static final tvCurrencyBase:I = 0x7f0a17c3
+
+.field public static final tvCurrencyQuote:I = 0x7f0a17c5
+
+.field public static final tvD:I = 0x7f0a17cb
+
+.field public static final tvDangerLevel:I = 0x7f0a17ce
+
+.field public static final tvDate:I = 0x7f0a17cf
+
+.field public static final tvDayRage:I = 0x7f0a17d3
+
+.field public static final tvDayRageLabel:I = 0x7f0a17d4
+
+.field public static final tvDealAndTotalAmount:I = 0x7f0a17d7
+
+.field public static final tvDealPercent:I = 0x7f0a17d8
+
+.field public static final tvDeposit:I = 0x7f0a17de
+
+.field public static final tvDepositDesc:I = 0x7f0a17df
+
+.field public static final tvDesc:I = 0x7f0a17e2
+
+.field public static final tvDescDetail:I = 0x7f0a17e3
+
+.field public static final tvDescDetail1:I = 0x7f0a17e4
+
+.field public static final tvDescDetail2:I = 0x7f0a17e5
+
+.field public static final tvDescDetail3:I = 0x7f0a17e6
+
+.field public static final tvDescDetail4:I = 0x7f0a17e7
+
+.field public static final tvDescDetailLabel:I = 0x7f0a17e8
+
+.field public static final tvDescDetailLabel1:I = 0x7f0a17e9
+
+.field public static final tvDescDetailLabel2:I = 0x7f0a17ea
+
+.field public static final tvDescDetailLabel3:I = 0x7f0a17eb
+
+.field public static final tvDescDetailLabel4:I = 0x7f0a17ec
+
+.field public static final tvDescTab:I = 0x7f0a17ed
+
+.field public static final tvDialogTitle:I = 0x7f0a17f2
+
+.field public static final tvDiscount:I = 0x7f0a17f4
+
+.field public static final tvDrawTool:I = 0x7f0a17f9
+
+.field public static final tvDrawToolTitle:I = 0x7f0a17fa
+
+.field public static final tvE:I = 0x7f0a17fb
+
+.field public static final tvError:I = 0x7f0a180a
+
+.field public static final tvErrorTip:I = 0x7f0a180c
+
+.field public static final tvEstMargin:I = 0x7f0a180d
+
+.field public static final tvExampleDesc:I = 0x7f0a1816
+
+.field public static final tvExampleTitle:I = 0x7f0a1817
+
+.field public static final tvExpand:I = 0x7f0a1818
+
+.field public static final tvFOK:I = 0x7f0a181e
+
+.field public static final tvFee:I = 0x7f0a1822
+
+.field public static final tvFeeUnit:I = 0x7f0a182b
+
+.field public static final tvFiatChargeAndTransfer:I = 0x7f0a182e
+
+.field public static final tvGeneralModel:I = 0x7f0a184f
+
+.field public static final tvHeaderPrice:I = 0x7f0a1861
+
+.field public static final tvHeaderQty:I = 0x7f0a1862
+
+.field public static final tvHiddenOrders:I = 0x7f0a1868
+
+.field public static final tvHiddenOrdersName:I = 0x7f0a1869
+
+.field public static final tvHold:I = 0x7f0a186f
+
+.field public static final tvHour:I = 0x7f0a1877
+
+.field public static final tvHourValue:I = 0x7f0a1879
+
+.field public static final tvIKnow:I = 0x7f0a187c
+
+.field public static final tvIOC:I = 0x7f0a187d
+
+.field public static final tvIcebergOrders:I = 0x7f0a187f
+
+.field public static final tvIcebergOrdersName:I = 0x7f0a1880
+
+.field public static final tvImportantNotice:I = 0x7f0a1884
+
+.field public static final tvLabel:I = 0x7f0a18a4
+
+.field public static final tvLeverLabel:I = 0x7f0a18b0
+
+.field public static final tvLeverage:I = 0x7f0a18b1
+
+.field public static final tvLimitCountryContent:I = 0x7f0a18ba
+
+.field public static final tvLimitCountryTitle:I = 0x7f0a18bb
+
+.field public static final tvLlu:I = 0x7f0a18c4
+
+.field public static final tvMN:I = 0x7f0a18cd
+
+.field public static final tvMarginLever:I = 0x7f0a18d5
+
+.field public static final tvMarginType:I = 0x7f0a18d6
+
+.field public static final tvMaxBorrowAmount:I = 0x7f0a18dd
+
+.field public static final tvMaxOutBase:I = 0x7f0a18e0
+
+.field public static final tvMaxOutLabel:I = 0x7f0a18e1
+
+.field public static final tvMaxOutQuote:I = 0x7f0a18e2
+
+.field public static final tvMin:I = 0x7f0a18e8
+
+.field public static final tvMinQuantity:I = 0x7f0a18ec
+
+.field public static final tvMinQuantityName:I = 0x7f0a18ed
+
+.field public static final tvMinValue:I = 0x7f0a18ef
+
+.field public static final tvMoreFunding:I = 0x7f0a18f5
+
+.field public static final tvMsg:I = 0x7f0a18f8
+
+.field public static final tvN:I = 0x7f0a18fb
+
+.field public static final tvName:I = 0x7f0a18fc
+
+.field public static final tvNetBalanceBase:I = 0x7f0a1908
+
+.field public static final tvNetBalanceLabel:I = 0x7f0a1909
+
+.field public static final tvNetBalanceQuote:I = 0x7f0a190a
+
+.field public static final tvNft:I = 0x7f0a1917
+
+.field public static final tvNoteDetail:I = 0x7f0a1921
+
+.field public static final tvNoteDetailLabel:I = 0x7f0a1922
+
+.field public static final tvNumberPrecision:I = 0x7f0a1926
+
+.field public static final tvNumberPrecisionName:I = 0x7f0a1927
+
+.field public static final tvOneKeyClose:I = 0x7f0a192a
+
+.field public static final tvOrderType:I = 0x7f0a1932
+
+.field public static final tvOutDate:I = 0x7f0a1937
+
+.field public static final tvPair:I = 0x7f0a1939
+
+.field public static final tvPostOnly:I = 0x7f0a1954
+
+.field public static final tvPrecision:I = 0x7f0a1958
+
+.field public static final tvPrecisionName:I = 0x7f0a1959
+
+.field public static final tvPrice:I = 0x7f0a195a
+
+.field public static final tvPriceName:I = 0x7f0a195f
+
+.field public static final tvQty:I = 0x7f0a1976
+
+.field public static final tvQuoteUnsupported:I = 0x7f0a1980
+
+.field public static final tvRatio:I = 0x7f0a198a
+
+.field public static final tvRepayMode:I = 0x7f0a199e
+
+.field public static final tvReset:I = 0x7f0a19a1
+
+.field public static final tvRiskDisclaimer:I = 0x7f0a19b0
+
+.field public static final tvRiskTip:I = 0x7f0a19b8
+
+.field public static final tvRule:I = 0x7f0a19bd
+
+.field public static final tvRuleEg:I = 0x7f0a19be
+
+.field public static final tvRuleTitle:I = 0x7f0a19bf
+
+.field public static final tvSavingContent:I = 0x7f0a19c8
+
+.field public static final tvSavingSubContent:I = 0x7f0a19c9
+
+.field public static final tvSavingTitle:I = 0x7f0a19ca
+
+.field public static final tvScopeDesc:I = 0x7f0a19cb
+
+.field public static final tvSearch:I = 0x7f0a19cd
+
+.field public static final tvSec:I = 0x7f0a19d0
+
+.field public static final tvSecValue:I = 0x7f0a19d1
+
+.field public static final tvSegmentDistPriceHeader:I = 0x7f0a19db
+
+.field public static final tvSide:I = 0x7f0a19eb
+
+.field public static final tvSingleOrder:I = 0x7f0a19ee
+
+.field public static final tvSingleOrderName:I = 0x7f0a19ef
+
+.field public static final tvSpotTutorial:I = 0x7f0a19fe
+
+.field public static final tvStLabel:I = 0x7f0a19ff
+
+.field public static final tvState:I = 0x7f0a1a00
+
+.field public static final tvSubTitle:I = 0x7f0a1a11
+
+.field public static final tvSymbol:I = 0x7f0a1a20
+
+.field public static final tvSymbolMenu:I = 0x7f0a1a21
+
+.field public static final tvSymbolName:I = 0x7f0a1a22
+
+.field public static final tvSymbolOfflineAlert:I = 0x7f0a1a23
+
+.field public static final tvTabQuota:I = 0x7f0a1a27
+
+.field public static final tvTabTime:I = 0x7f0a1a28
+
+.field public static final tvTax:I = 0x7f0a1a2d
+
+.field public static final tvTaxUnit:I = 0x7f0a1a31
+
+.field public static final tvTimeTag:I = 0x7f0a1a3a
+
+.field public static final tvTimeZone:I = 0x7f0a1a3b
+
+.field public static final tvTip:I = 0x7f0a1a3c
+
+.field public static final tvTipsContent:I = 0x7f0a1a42
+
+.field public static final tvTitle:I = 0x7f0a1a43
+
+.field public static final tvTotalQty:I = 0x7f0a1a66
+
+.field public static final tvTradeAccount:I = 0x7f0a1a6c
+
+.field public static final tvTradeMinAmountGuide:I = 0x7f0a1a6f
+
+.field public static final tvTradeTime:I = 0x7f0a1a71
+
+.field public static final tvTradeTip:I = 0x7f0a1a72
+
+.field public static final tvTransfer:I = 0x7f0a1a77
+
+.field public static final tvTransferDesc:I = 0x7f0a1a79
+
+.field public static final tvType:I = 0x7f0a1a7c
+
+.field public static final tvTypeDesc:I = 0x7f0a1a7d
+
+.field public static final tvTypeDescription:I = 0x7f0a1a7e
+
+.field public static final tvTypeName:I = 0x7f0a1a7f
+
+.field public static final tvUnderClosePosition:I = 0x7f0a1a88
+
+.field public static final tvUnifiedCouponLabel:I = 0x7f0a1a89
+
+.field public static final tvUnifiedCouponValue:I = 0x7f0a1a8a
+
+.field public static final tvUse:I = 0x7f0a1a94
+
+.field public static final tvUseful:I = 0x7f0a1a9a
+
+.field public static final tvWarning:I = 0x7f0a1aab
+
+.field public static final tv_1:I = 0x7f0a1ab7
+
+.field public static final tv_24_title:I = 0x7f0a1abb
+
+.field public static final tv_about_price:I = 0x7f0a1ac4
+
+.field public static final tv_act_price:I = 0x7f0a1ace
+
+.field public static final tv_add_fav:I = 0x7f0a1add
+
+.field public static final tv_add_funds_desc:I = 0x7f0a1ade
+
+.field public static final tv_add_funds_name:I = 0x7f0a1adf
+
+.field public static final tv_addr:I = 0x7f0a1ae5
+
+.field public static final tv_addr_label:I = 0x7f0a1ae7
+
+.field public static final tv_all_amount:I = 0x7f0a1afa
+
+.field public static final tv_all_label:I = 0x7f0a1afc
+
+.field public static final tv_all_price:I = 0x7f0a1afd
+
+.field public static final tv_amount:I = 0x7f0a1afe
+
+.field public static final tv_amount_label:I = 0x7f0a1b04
+
+.field public static final tv_amount_name:I = 0x7f0a1b06
+
+.field public static final tv_amount_ratio:I = 0x7f0a1b07
+
+.field public static final tv_amount_ratio_label:I = 0x7f0a1b08
+
+.field public static final tv_amount_type:I = 0x7f0a1b0b
+
+.field public static final tv_amount_unit:I = 0x7f0a1b0c
+
+.field public static final tv_amount_unit_1:I = 0x7f0a1b0d
+
+.field public static final tv_amount_value:I = 0x7f0a1b0e
+
+.field public static final tv_answer:I = 0x7f0a1b11
+
+.field public static final tv_applicants:I = 0x7f0a1b1a
+
+.field public static final tv_applicants_label:I = 0x7f0a1b1b
+
+.field public static final tv_apr:I = 0x7f0a1b20
+
+.field public static final tv_apr_label:I = 0x7f0a1b21
+
+.field public static final tv_asset_label:I = 0x7f0a1b24
+
+.field public static final tv_asset_value:I = 0x7f0a1b25
+
+.field public static final tv_ath:I = 0x7f0a1b2e
+
+.field public static final tv_ath_label:I = 0x7f0a1b2f
+
+.field public static final tv_atl:I = 0x7f0a1b30
+
+.field public static final tv_atl_label:I = 0x7f0a1b31
+
+.field public static final tv_average_price:I = 0x7f0a1b41
+
+.field public static final tv_avg_price:I = 0x7f0a1b42
+
+.field public static final tv_avg_price_label:I = 0x7f0a1b43
+
+.field public static final tv_avg_price_value:I = 0x7f0a1b44
+
+.field public static final tv_banner:I = 0x7f0a1b4d
+
+.field public static final tv_base:I = 0x7f0a1b50
+
+.field public static final tv_base_amount:I = 0x7f0a1b51
+
+.field public static final tv_base_available_label:I = 0x7f0a1b52
+
+.field public static final tv_base_available_legal:I = 0x7f0a1b53
+
+.field public static final tv_base_available_value:I = 0x7f0a1b54
+
+.field public static final tv_base_borrow_amount:I = 0x7f0a1b55
+
+.field public static final tv_base_borrow_unit:I = 0x7f0a1b56
+
+.field public static final tv_base_debt_label:I = 0x7f0a1b58
+
+.field public static final tv_base_debt_legal:I = 0x7f0a1b59
+
+.field public static final tv_base_debt_value:I = 0x7f0a1b5a
+
+.field public static final tv_base_freeze_label:I = 0x7f0a1b5c
+
+.field public static final tv_base_freeze_legal:I = 0x7f0a1b5d
+
+.field public static final tv_base_freeze_value:I = 0x7f0a1b5e
+
+.field public static final tv_base_symbol:I = 0x7f0a1b5f
+
+.field public static final tv_base_unit:I = 0x7f0a1b61
+
+.field public static final tv_base_unit_out:I = 0x7f0a1b62
+
+.field public static final tv_basket:I = 0x7f0a1b63
+
+.field public static final tv_basket_after:I = 0x7f0a1b64
+
+.field public static final tv_basket_after_label:I = 0x7f0a1b65
+
+.field public static final tv_basket_before:I = 0x7f0a1b66
+
+.field public static final tv_basket_before_label:I = 0x7f0a1b67
+
+.field public static final tv_basket_label:I = 0x7f0a1b68
+
+.field public static final tv_borrow_amount_base:I = 0x7f0a1b70
+
+.field public static final tv_borrow_amount_quote:I = 0x7f0a1b71
+
+.field public static final tv_borrow_unit_base:I = 0x7f0a1b72
+
+.field public static final tv_borrow_unit_quote:I = 0x7f0a1b73
+
+.field public static final tv_buy:I = 0x7f0a1b7a
+
+.field public static final tv_buy_price_range:I = 0x7f0a1b7e
+
+.field public static final tv_buy_price_range_value:I = 0x7f0a1b7f
+
+.field public static final tv_call_auction_process_step1:I = 0x7f0a1b81
+
+.field public static final tv_call_auction_process_step1_desc:I = 0x7f0a1b82
+
+.field public static final tv_call_auction_process_step2:I = 0x7f0a1b83
+
+.field public static final tv_call_auction_process_step2_desc:I = 0x7f0a1b84
+
+.field public static final tv_call_auction_process_step3:I = 0x7f0a1b85
+
+.field public static final tv_call_auction_process_step4:I = 0x7f0a1b86
+
+.field public static final tv_call_auction_process_step4_desc:I = 0x7f0a1b87
+
+.field public static final tv_call_auction_process_title:I = 0x7f0a1b88
+
+.field public static final tv_call_auction_step:I = 0x7f0a1b89
+
+.field public static final tv_call_auction_step_countdown:I = 0x7f0a1b8a
+
+.field public static final tv_cancel:I = 0x7f0a1b8b
+
+.field public static final tv_cancel_delegation:I = 0x7f0a1b8e
+
+.field public static final tv_category:I = 0x7f0a1b90
+
+.field public static final tv_center:I = 0x7f0a1b93
+
+.field public static final tv_change_rate:I = 0x7f0a1b9b
+
+.field public static final tv_chart_position:I = 0x7f0a1ba2
+
+.field public static final tv_chart_position_desc:I = 0x7f0a1ba3
+
+.field public static final tv_choose:I = 0x7f0a1ba7
+
+.field public static final tv_choose_biz_type:I = 0x7f0a1ba9
+
+.field public static final tv_choose_coin:I = 0x7f0a1baa
+
+.field public static final tv_choose_pairs:I = 0x7f0a1bae
+
+.field public static final tv_circulating:I = 0x7f0a1bb0
+
+.field public static final tv_circulating_label:I = 0x7f0a1bb1
+
+.field public static final tv_close:I = 0x7f0a1bb3
+
+.field public static final tv_close_position:I = 0x7f0a1bb6
+
+.field public static final tv_coin:I = 0x7f0a1bb9
+
+.field public static final tv_coin_name:I = 0x7f0a1bc3
+
+.field public static final tv_coin_name_full:I = 0x7f0a1bc5
+
+.field public static final tv_coin_type:I = 0x7f0a1bc8
+
+.field public static final tv_coin_value:I = 0x7f0a1bca
+
+.field public static final tv_coinpairs:I = 0x7f0a1bcb
+
+.field public static final tv_coinpairs_price:I = 0x7f0a1bcc
+
+.field public static final tv_community:I = 0x7f0a1bcd
+
+.field public static final tv_confirm:I = 0x7f0a1bd5
+
+.field public static final tv_confirm_time:I = 0x7f0a1bdc
+
+.field public static final tv_confirm_time_label:I = 0x7f0a1bdd
+
+.field public static final tv_contain:I = 0x7f0a1bec
+
+.field public static final tv_content:I = 0x7f0a1bed
+
+.field public static final tv_content_desc:I = 0x7f0a1bf3
+
+.field public static final tv_cost_amount:I = 0x7f0a1c01
+
+.field public static final tv_cost_name:I = 0x7f0a1c02
+
+.field public static final tv_counterparty:I = 0x7f0a1c08
+
+.field public static final tv_counterparty_name:I = 0x7f0a1c09
+
+.field public static final tv_currency:I = 0x7f0a1c17
+
+.field public static final tv_currency_name:I = 0x7f0a1c1b
+
+.field public static final tv_currency_total:I = 0x7f0a1c1f
+
+.field public static final tv_current:I = 0x7f0a1c20
+
+.field public static final tv_current_price:I = 0x7f0a1c26
+
+.field public static final tv_days:I = 0x7f0a1c37
+
+.field public static final tv_days_label:I = 0x7f0a1c38
+
+.field public static final tv_deal_amount:I = 0x7f0a1c3a
+
+.field public static final tv_deal_amount_name:I = 0x7f0a1c3b
+
+.field public static final tv_deal_vol:I = 0x7f0a1c3c
+
+.field public static final tv_debt:I = 0x7f0a1c3e
+
+.field public static final tv_debt_amount_base:I = 0x7f0a1c41
+
+.field public static final tv_debt_amount_quote:I = 0x7f0a1c42
+
+.field public static final tv_debt_base:I = 0x7f0a1c43
+
+.field public static final tv_debt_label:I = 0x7f0a1c44
+
+.field public static final tv_debt_quote:I = 0x7f0a1c47
+
+.field public static final tv_debt_rate:I = 0x7f0a1c48
+
+.field public static final tv_debt_rate_value:I = 0x7f0a1c49
+
+.field public static final tv_debt_unit_base:I = 0x7f0a1c4a
+
+.field public static final tv_debt_unit_quote:I = 0x7f0a1c4b
+
+.field public static final tv_debt_value:I = 0x7f0a1c4c
+
+.field public static final tv_delegation_price:I = 0x7f0a1c52
+
+.field public static final tv_delegation_price_label:I = 0x7f0a1c53
+
+.field public static final tv_desc:I = 0x7f0a1c59
+
+.field public static final tv_describe:I = 0x7f0a1c5f
+
+.field public static final tv_dialog_title:I = 0x7f0a1c69
+
+.field public static final tv_distribution_label:I = 0x7f0a1c70
+
+.field public static final tv_distribution_value:I = 0x7f0a1c71
+
+.field public static final tv_do_condition:I = 0x7f0a1c72
+
+.field public static final tv_do_price:I = 0x7f0a1c73
+
+.field public static final tv_do_price_label:I = 0x7f0a1c74
+
+.field public static final tv_empty_icon:I = 0x7f0a1c88
+
+.field public static final tv_empty_tips:I = 0x7f0a1c89
+
+.field public static final tv_end:I = 0x7f0a1c8c
+
+.field public static final tv_endtime:I = 0x7f0a1c8f
+
+.field public static final tv_endtime_value:I = 0x7f0a1c90
+
+.field public static final tv_ensure:I = 0x7f0a1c91
+
+.field public static final tv_error:I = 0x7f0a1c95
+
+.field public static final tv_estimated_opening_price:I = 0x7f0a1ca1
+
+.field public static final tv_estimated_opening_price_value:I = 0x7f0a1ca2
+
+.field public static final tv_estimated_opening_volume:I = 0x7f0a1ca3
+
+.field public static final tv_estimated_opening_volume_value:I = 0x7f0a1ca4
+
+.field public static final tv_etf_label:I = 0x7f0a1ca6
+
+.field public static final tv_etf_tips:I = 0x7f0a1ca7
+
+.field public static final tv_etf_value:I = 0x7f0a1ca8
+
+.field public static final tv_exchange:I = 0x7f0a1caa
+
+.field public static final tv_explorer:I = 0x7f0a1cb2
+
+.field public static final tv_fait_price_amount:I = 0x7f0a1cb8
+
+.field public static final tv_faq_title:I = 0x7f0a1cbb
+
+.field public static final tv_fee:I = 0x7f0a1cbd
+
+.field public static final tv_fee_label:I = 0x7f0a1cbf
+
+.field public static final tv_fee_name:I = 0x7f0a1cc1
+
+.field public static final tv_fee_value:I = 0x7f0a1cc6
+
+.field public static final tv_fiat:I = 0x7f0a1cc7
+
+.field public static final tv_filter:I = 0x7f0a1cd0
+
+.field public static final tv_forget_pwd:I = 0x7f0a1cdd
+
+.field public static final tv_freeze_amount:I = 0x7f0a1ce0
+
+.field public static final tv_freeze_base:I = 0x7f0a1ce3
+
+.field public static final tv_freeze_label:I = 0x7f0a1ce4
+
+.field public static final tv_freeze_price:I = 0x7f0a1ce5
+
+.field public static final tv_freeze_quote:I = 0x7f0a1ce6
+
+.field public static final tv_fund_label:I = 0x7f0a1ced
+
+.field public static final tv_future:I = 0x7f0a1cf3
+
+.field public static final tv_future_chg:I = 0x7f0a1cf4
+
+.field public static final tv_future_lever:I = 0x7f0a1cf5
+
+.field public static final tv_future_price:I = 0x7f0a1cf6
+
+.field public static final tv_future_symbol:I = 0x7f0a1cf7
+
+.field public static final tv_go_on:I = 0x7f0a1d00
+
+.field public static final tv_go_to_reserve:I = 0x7f0a1d01
+
+.field public static final tv_hard:I = 0x7f0a1d15
+
+.field public static final tv_hard_label:I = 0x7f0a1d16
+
+.field public static final tv_hide:I = 0x7f0a1d1d
+
+.field public static final tv_hide_main:I = 0x7f0a1d1e
+
+.field public static final tv_hide_no_main:I = 0x7f0a1d1f
+
+.field public static final tv_high:I = 0x7f0a1d20
+
+.field public static final tv_high_label:I = 0x7f0a1d21
+
+.field public static final tv_high_name:I = 0x7f0a1d23
+
+.field public static final tv_hint:I = 0x7f0a1d26
+
+.field public static final tv_history:I = 0x7f0a1d27
+
+.field public static final tv_ho_login:I = 0x7f0a1d2a
+
+.field public static final tv_hours:I = 0x7f0a1d39
+
+.field public static final tv_hours_label:I = 0x7f0a1d3a
+
+.field public static final tv_icon:I = 0x7f0a1d3c
+
+.field public static final tv_in_order_amount:I = 0x7f0a1d45
+
+.field public static final tv_in_order_name:I = 0x7f0a1d46
+
+.field public static final tv_index_word:I = 0x7f0a1d4c
+
+.field public static final tv_info_content:I = 0x7f0a1d4f
+
+.field public static final tv_info_title:I = 0x7f0a1d50
+
+.field public static final tv_intro:I = 0x7f0a1d5a
+
+.field public static final tv_intro_title:I = 0x7f0a1d5b
+
+.field public static final tv_invest:I = 0x7f0a1d62
+
+.field public static final tv_invest_label:I = 0x7f0a1d63
+
+.field public static final tv_irregular:I = 0x7f0a1d67
+
+.field public static final tv_irregular_label:I = 0x7f0a1d68
+
+.field public static final tv_issue_price:I = 0x7f0a1d69
+
+.field public static final tv_issue_price_value:I = 0x7f0a1d6a
+
+.field public static final tv_jump_to_market:I = 0x7f0a1d6c
+
+.field public static final tv_kline_15min:I = 0x7f0a1d76
+
+.field public static final tv_kline_1min:I = 0x7f0a1d77
+
+.field public static final tv_kline_2hour:I = 0x7f0a1d79
+
+.field public static final tv_kline_30min:I = 0x7f0a1d7a
+
+.field public static final tv_kline_4hour:I = 0x7f0a1d7b
+
+.field public static final tv_kline_5min:I = 0x7f0a1d7c
+
+.field public static final tv_kline_60min:I = 0x7f0a1d7d
+
+.field public static final tv_kline_boll:I = 0x7f0a1d7e
+
+.field public static final tv_kline_ema:I = 0x7f0a1d7f
+
+.field public static final tv_kline_kdj:I = 0x7f0a1d80
+
+.field public static final tv_kline_ma:I = 0x7f0a1d81
+
+.field public static final tv_kline_macd:I = 0x7f0a1d82
+
+.field public static final tv_kline_rsi:I = 0x7f0a1d83
+
+.field public static final tv_know:I = 0x7f0a1d84
+
+.field public static final tv_known:I = 0x7f0a1d85
+
+.field public static final tv_label:I = 0x7f0a1d8b
+
+.field public static final tv_label_new:I = 0x7f0a1d97
+
+.field public static final tv_label_prep:I = 0x7f0a1d98
+
+.field public static final tv_label_prep_margin:I = 0x7f0a1d99
+
+.field public static final tv_label_rwa:I = 0x7f0a1d9a
+
+.field public static final tv_label_st:I = 0x7f0a1d9b
+
+.field public static final tv_label_stock_token:I = 0x7f0a1d9c
+
+.field public static final tv_later:I = 0x7f0a1da2
+
+.field public static final tv_left_btn:I = 0x7f0a1da7
+
+.field public static final tv_lever:I = 0x7f0a1db1
+
+.field public static final tv_lever_after:I = 0x7f0a1db2
+
+.field public static final tv_lever_after_label:I = 0x7f0a1db3
+
+.field public static final tv_lever_before:I = 0x7f0a1db4
+
+.field public static final tv_lever_before_label:I = 0x7f0a1db5
+
+.field public static final tv_lever_borrow_interest:I = 0x7f0a1db6
+
+.field public static final tv_lever_borrow_interest_value:I = 0x7f0a1db7
+
+.field public static final tv_lever_debt_rate:I = 0x7f0a1db8
+
+.field public static final tv_lever_debt_rate_value:I = 0x7f0a1db9
+
+.field public static final tv_lever_label:I = 0x7f0a1dba
+
+.field public static final tv_lever_liquidation_debts:I = 0x7f0a1dbb
+
+.field public static final tv_lever_liquidation_debts_value:I = 0x7f0a1dbc
+
+.field public static final tv_lever_liquidation_foced:I = 0x7f0a1dbd
+
+.field public static final tv_lever_liquidation_foced_value:I = 0x7f0a1dbe
+
+.field public static final tv_lever_liquidation_total:I = 0x7f0a1dbf
+
+.field public static final tv_lever_liquidation_total_value:I = 0x7f0a1dc0
+
+.field public static final tv_lever_repay_interest:I = 0x7f0a1dc1
+
+.field public static final tv_lever_repay_principal:I = 0x7f0a1dc2
+
+.field public static final tv_lever_repay_principal_value:I = 0x7f0a1dc3
+
+.field public static final tv_leverage:I = 0x7f0a1dc5
+
+.field public static final tv_limit_price:I = 0x7f0a1dcb
+
+.field public static final tv_limit_price_label:I = 0x7f0a1dcc
+
+.field public static final tv_limit_type:I = 0x7f0a1dcf
+
+.field public static final tv_link_button:I = 0x7f0a1dd2
+
+.field public static final tv_liquid_price:I = 0x7f0a1dd4
+
+.field public static final tv_liquid_price_value:I = 0x7f0a1dd5
+
+.field public static final tv_login:I = 0x7f0a1dde
+
+.field public static final tv_low:I = 0x7f0a1de2
+
+.field public static final tv_low_label:I = 0x7f0a1de3
+
+.field public static final tv_low_name:I = 0x7f0a1de4
+
+.field public static final tv_management:I = 0x7f0a1ded
+
+.field public static final tv_management_label:I = 0x7f0a1dee
+
+.field public static final tv_margin:I = 0x7f0a1def
+
+.field public static final tv_margin_chg:I = 0x7f0a1df2
+
+.field public static final tv_margin_lever:I = 0x7f0a1df3
+
+.field public static final tv_margin_price:I = 0x7f0a1df4
+
+.field public static final tv_margin_symbol:I = 0x7f0a1df5
+
+.field public static final tv_mark_price:I = 0x7f0a1df6
+
+.field public static final tv_mark_price_value:I = 0x7f0a1df7
+
+.field public static final tv_market_amount_unit:I = 0x7f0a1df8
+
+.field public static final tv_market_cap:I = 0x7f0a1df9
+
+.field public static final tv_market_cap_label:I = 0x7f0a1dfa
+
+.field public static final tv_market_change_more:I = 0x7f0a1dfb
+
+.field public static final tv_market_change_title:I = 0x7f0a1dfc
+
+.field public static final tv_market_tips:I = 0x7f0a1dfd
+
+.field public static final tv_market_value:I = 0x7f0a1dfe
+
+.field public static final tv_market_value_label:I = 0x7f0a1dff
+
+.field public static final tv_max_supply:I = 0x7f0a1e06
+
+.field public static final tv_max_supply_label:I = 0x7f0a1e07
+
+.field public static final tv_message_hint:I = 0x7f0a1e0d
+
+.field public static final tv_message_value:I = 0x7f0a1e0f
+
+.field public static final tv_minus:I = 0x7f0a1e18
+
+.field public static final tv_minutes:I = 0x7f0a1e19
+
+.field public static final tv_minutes_label:I = 0x7f0a1e1a
+
+.field public static final tv_money_price:I = 0x7f0a1e24
+
+.field public static final tv_more:I = 0x7f0a1e26
+
+.field public static final tv_more_title:I = 0x7f0a1e27
+
+.field public static final tv_name:I = 0x7f0a1e2d
+
+.field public static final tv_new_coin_reserve:I = 0x7f0a1e37
+
+.field public static final tv_nft:I = 0x7f0a1e44
+
+.field public static final tv_one:I = 0x7f0a1e5a
+
+.field public static final tv_one_tip:I = 0x7f0a1e61
+
+.field public static final tv_only:I = 0x7f0a1e65
+
+.field public static final tv_opening_call_auction:I = 0x7f0a1e6e
+
+.field public static final tv_opening_time:I = 0x7f0a1e6f
+
+.field public static final tv_opening_time_value:I = 0x7f0a1e70
+
+.field public static final tv_payment_method:I = 0x7f0a1ebe
+
+.field public static final tv_percent:I = 0x7f0a1eca
+
+.field public static final tv_percent_label:I = 0x7f0a1ecb
+
+.field public static final tv_plus:I = 0x7f0a1ed3
+
+.field public static final tv_precision_title:I = 0x7f0a1ed9
+
+.field public static final tv_price:I = 0x7f0a1ee2
+
+.field public static final tv_price_chg:I = 0x7f0a1ee8
+
+.field public static final tv_price_chg_label:I = 0x7f0a1ee9
+
+.field public static final tv_price_label:I = 0x7f0a1eec
+
+.field public static final tv_price_name:I = 0x7f0a1eed
+
+.field public static final tv_price_risk_tips:I = 0x7f0a1ef2
+
+.field public static final tv_price_type:I = 0x7f0a1ef9
+
+.field public static final tv_price_unit:I = 0x7f0a1efa
+
+.field public static final tv_profit:I = 0x7f0a1efc
+
+.field public static final tv_profit_value:I = 0x7f0a1f01
+
+.field public static final tv_profit_value_legal:I = 0x7f0a1f02
+
+.field public static final tv_progress:I = 0x7f0a1f05
+
+.field public static final tv_prompt:I = 0x7f0a1f08
+
+.field public static final tv_question:I = 0x7f0a1f13
+
+.field public static final tv_quote:I = 0x7f0a1f15
+
+.field public static final tv_quote_amount:I = 0x7f0a1f16
+
+.field public static final tv_quote_available_label:I = 0x7f0a1f17
+
+.field public static final tv_quote_available_legal:I = 0x7f0a1f18
+
+.field public static final tv_quote_available_value:I = 0x7f0a1f19
+
+.field public static final tv_quote_borrow_amount:I = 0x7f0a1f1b
+
+.field public static final tv_quote_borrow_unit:I = 0x7f0a1f1c
+
+.field public static final tv_quote_currency:I = 0x7f0a1f1d
+
+.field public static final tv_quote_debt_label:I = 0x7f0a1f1f
+
+.field public static final tv_quote_debt_legal:I = 0x7f0a1f20
+
+.field public static final tv_quote_debt_value:I = 0x7f0a1f21
+
+.field public static final tv_quote_freeze_label:I = 0x7f0a1f23
+
+.field public static final tv_quote_freeze_legal:I = 0x7f0a1f24
+
+.field public static final tv_quote_freeze_value:I = 0x7f0a1f25
+
+.field public static final tv_quote_price:I = 0x7f0a1f26
+
+.field public static final tv_quote_symbol:I = 0x7f0a1f27
+
+.field public static final tv_quote_unit:I = 0x7f0a1f29
+
+.field public static final tv_quote_unit_out:I = 0x7f0a1f2a
+
+.field public static final tv_rank:I = 0x7f0a1f2c
+
+.field public static final tv_rank_label:I = 0x7f0a1f2e
+
+.field public static final tv_rate:I = 0x7f0a1f2f
+
+.field public static final tv_rating:I = 0x7f0a1f31
+
+.field public static final tv_rating_label:I = 0x7f0a1f32
+
+.field public static final tv_ready:I = 0x7f0a1f33
+
+.field public static final tv_regular:I = 0x7f0a1f5d
+
+.field public static final tv_regular_label:I = 0x7f0a1f5e
+
+.field public static final tv_repay_amount_base:I = 0x7f0a1f6b
+
+.field public static final tv_repay_amount_quote:I = 0x7f0a1f6c
+
+.field public static final tv_repay_dayinterest:I = 0x7f0a1f6d
+
+.field public static final tv_repay_dayinterest_value:I = 0x7f0a1f6e
+
+.field public static final tv_repay_unit_base:I = 0x7f0a1f6f
+
+.field public static final tv_repay_unit_quote:I = 0x7f0a1f70
+
+.field public static final tv_reset:I = 0x7f0a1f72
+
+.field public static final tv_return:I = 0x7f0a1f7a
+
+.field public static final tv_reward:I = 0x7f0a1f7f
+
+.field public static final tv_reward_label:I = 0x7f0a1f80
+
+.field public static final tv_right:I = 0x7f0a1f82
+
+.field public static final tv_right_btn:I = 0x7f0a1f83
+
+.field public static final tv_role:I = 0x7f0a1f85
+
+.field public static final tv_role_name:I = 0x7f0a1f86
+
+.field public static final tv_section_label:I = 0x7f0a1fa0
+
+.field public static final tv_section_type:I = 0x7f0a1fa1
+
+.field public static final tv_sell:I = 0x7f0a1fa6
+
+.field public static final tv_sell_price_range:I = 0x7f0a1fa8
+
+.field public static final tv_sell_price_range_value:I = 0x7f0a1fa9
+
+.field public static final tv_size:I = 0x7f0a1fbc
+
+.field public static final tv_size_label:I = 0x7f0a1fbd
+
+.field public static final tv_sort_amount:I = 0x7f0a1fc9
+
+.field public static final tv_sort_change_rate:I = 0x7f0a1fca
+
+.field public static final tv_sort_price:I = 0x7f0a1fcb
+
+.field public static final tv_spot:I = 0x7f0a1fcf
+
+.field public static final tv_spot_chg:I = 0x7f0a1fd0
+
+.field public static final tv_spot_lever:I = 0x7f0a1fd2
+
+.field public static final tv_spot_margin:I = 0x7f0a1fd3
+
+.field public static final tv_spot_price:I = 0x7f0a1fd4
+
+.field public static final tv_spot_symbol:I = 0x7f0a1fd5
+
+.field public static final tv_start:I = 0x7f0a1fd7
+
+.field public static final tv_starttime:I = 0x7f0a1fdb
+
+.field public static final tv_starttime_value:I = 0x7f0a1fdc
+
+.field public static final tv_status:I = 0x7f0a1fde
+
+.field public static final tv_stop_limit_price:I = 0x7f0a1ffd
+
+.field public static final tv_stop_price:I = 0x7f0a2002
+
+.field public static final tv_subtitle:I = 0x7f0a2015
+
+.field public static final tv_supply:I = 0x7f0a2017
+
+.field public static final tv_supply_label:I = 0x7f0a2018
+
+.field public static final tv_symbol:I = 0x7f0a201e
+
+.field public static final tv_symbols:I = 0x7f0a2023
+
+.field public static final tv_tab_title:I = 0x7f0a2026
+
+.field public static final tv_tax:I = 0x7f0a202a
+
+.field public static final tv_tax_currency:I = 0x7f0a202b
+
+.field public static final tv_tax_name:I = 0x7f0a202c
+
+.field public static final tv_term:I = 0x7f0a2030
+
+.field public static final tv_term_label:I = 0x7f0a2031
+
+.field public static final tv_third_tip:I = 0x7f0a2037
+
+.field public static final tv_three:I = 0x7f0a2039
+
+.field public static final tv_time:I = 0x7f0a203a
+
+.field public static final tv_time_cycle:I = 0x7f0a203c
+
+.field public static final tv_time_label:I = 0x7f0a203d
+
+.field public static final tv_time_tag:I = 0x7f0a203f
+
+.field public static final tv_tips:I = 0x7f0a204e
+
+.field public static final tv_title:I = 0x7f0a2051
+
+.field public static final tv_toggle_quote:I = 0x7f0a2060
+
+.field public static final tv_total_amount:I = 0x7f0a2063
+
+.field public static final tv_total_amount_desc:I = 0x7f0a2064
+
+.field public static final tv_total_asset:I = 0x7f0a2066
+
+.field public static final tv_total_asset_value:I = 0x7f0a2067
+
+.field public static final tv_total_base:I = 0x7f0a206a
+
+.field public static final tv_total_label:I = 0x7f0a2071
+
+.field public static final tv_total_quote:I = 0x7f0a2077
+
+.field public static final tv_trade:I = 0x7f0a207b
+
+.field public static final tv_trade_currency:I = 0x7f0a207d
+
+.field public static final tv_trade_pair:I = 0x7f0a2080
+
+.field public static final tv_trade_panel:I = 0x7f0a2084
+
+.field public static final tv_trade_panel_desc:I = 0x7f0a2085
+
+.field public static final tv_trade_price:I = 0x7f0a2086
+
+.field public static final tv_trade_side:I = 0x7f0a2088
+
+.field public static final tv_trade_side_label:I = 0x7f0a2089
+
+.field public static final tv_trade_type:I = 0x7f0a208c
+
+.field public static final tv_trade_type_label:I = 0x7f0a208d
+
+.field public static final tv_trade_user:I = 0x7f0a208e
+
+.field public static final tv_trade_user_label:I = 0x7f0a208f
+
+.field public static final tv_trail_variance:I = 0x7f0a2091
+
+.field public static final tv_trail_variance_label:I = 0x7f0a2092
+
+.field public static final tv_transfer:I = 0x7f0a2094
+
+.field public static final tv_transfer_empty:I = 0x7f0a2095
+
+.field public static final tv_trigger_pirce:I = 0x7f0a209d
+
+.field public static final tv_trigger_price:I = 0x7f0a209e
+
+.field public static final tv_trigger_price_label:I = 0x7f0a209f
+
+.field public static final tv_trigger_price_tag:I = 0x7f0a20a0
+
+.field public static final tv_trigger_price_title:I = 0x7f0a20a2
+
+.field public static final tv_two:I = 0x7f0a20a4
+
+.field public static final tv_two_three:I = 0x7f0a20a7
+
+.field public static final tv_two_tip:I = 0x7f0a20a8
+
+.field public static final tv_type:I = 0x7f0a20ac
+
+.field public static final tv_understand_rules:I = 0x7f0a20b4
+
+.field public static final tv_url:I = 0x7f0a20c1
+
+.field public static final tv_useful_amount:I = 0x7f0a20c5
+
+.field public static final tv_useful_label:I = 0x7f0a20c6
+
+.field public static final tv_useful_price:I = 0x7f0a20c7
+
+.field public static final tv_user_ratio:I = 0x7f0a20cd
+
+.field public static final tv_user_ratio_label:I = 0x7f0a20ce
+
+.field public static final tv_value:I = 0x7f0a20d5
+
+.field public static final tv_value_chg:I = 0x7f0a20d6
+
+.field public static final tv_value_chg_label:I = 0x7f0a20d7
+
+.field public static final tv_value_label:I = 0x7f0a20d8
+
+.field public static final tv_website_label:I = 0x7f0a20fb
+
+.field public static final tv_zero:I = 0x7f0a210d
+
+.field public static final typeGroup:I = 0x7f0a212a
+
+.field public static final typeSelectorDrawableEndView:I = 0x7f0a212d
+
+.field public static final unchecked:I = 0x7f0a2136
+
+.field public static final uniform:I = 0x7f0a2137
+
+.field public static final unifyDoubleCheckContainer:I = 0x7f0a2139
+
+.field public static final unifyLayoutContainer:I = 0x7f0a213a
+
+.field public static final unlabeled:I = 0x7f0a213b
+
+.field public static final up:I = 0x7f0a2146
+
+.field public static final use_hardware_layer:I = 0x7f0a215c
+
+.field public static final utvBottomIconView:I = 0x7f0a216c
+
+.field public static final utvLeftIconView:I = 0x7f0a216d
+
+.field public static final utvRightIconView:I = 0x7f0a216e
+
+.field public static final utvTopIconView:I = 0x7f0a216f
+
+.field public static final v1:I = 0x7f0a2170
+
+.field public static final v2:I = 0x7f0a2177
+
+.field public static final v3:I = 0x7f0a2179
+
+.field public static final v4:I = 0x7f0a217b
+
+.field public static final v5:I = 0x7f0a217d
+
+.field public static final v6:I = 0x7f0a217e
+
+.field public static final v7:I = 0x7f0a217f
+
+.field public static final v8:I = 0x7f0a2180
+
+.field public static final v9:I = 0x7f0a2187
+
+.field public static final vertical:I = 0x7f0a21a2
+
+.field public static final vertical_only:I = 0x7f0a21a4
+
+.field public static final view0:I = 0x7f0a21ae
+
+.field public static final view1:I = 0x7f0a21af
+
+.field public static final view2:I = 0x7f0a21b0
+
+.field public static final viewBadge:I = 0x7f0a21b1
+
+.field public static final viewBottomSheetTopIndicator:I = 0x7f0a21b4
+
+.field public static final viewDivider:I = 0x7f0a21b7
+
+.field public static final viewDivider1:I = 0x7f0a21b8
+
+.field public static final viewIndicator:I = 0x7f0a21be
+
+.field public static final viewMore:I = 0x7f0a21c1
+
+.field public static final view_1:I = 0x7f0a21cf
+
+.field public static final view_content:I = 0x7f0a21fd
+
+.field public static final view_dash:I = 0x7f0a21ff
+
+.field public static final view_divider:I = 0x7f0a2202
+
+.field public static final view_divider_block:I = 0x7f0a2205
+
+.field public static final view_empty:I = 0x7f0a220d
+
+.field public static final view_item:I = 0x7f0a2225
+
+.field public static final view_margin:I = 0x7f0a2232
+
+.field public static final view_margin_symbol_pager:I = 0x7f0a2234
+
+.field public static final view_offset_helper:I = 0x7f0a2244
+
+.field public static final view_ok:I = 0x7f0a2245
+
+.field public static final view_pager:I = 0x7f0a2250
+
+.field public static final view_shadow:I = 0x7f0a2277
+
+.field public static final view_spacingHeight:I = 0x7f0a227d
+
+.field public static final view_stup:I = 0x7f0a228b
+
+.field public static final view_switcher:I = 0x7f0a228e
+
+.field public static final view_tag_instance_handle:I = 0x7f0a2293
+
+.field public static final view_tag_native_id:I = 0x7f0a2294
+
+.field public static final view_top:I = 0x7f0a229a
+
+.field public static final view_transition:I = 0x7f0a22a2
+
+.field public static final view_tree_lifecycle_owner:I = 0x7f0a22a4
+
+.field public static final view_tree_on_back_pressed_dispatcher_owner:I = 0x7f0a22a5
+
+.field public static final view_tree_saved_state_registry_owner:I = 0x7f0a22a6
+
+.field public static final view_tree_view_model_store_owner:I = 0x7f0a22a7
+
+.field public static final viewpager:I = 0x7f0a22b2
+
+.field public static final visible:I = 0x7f0a22b3
+
+.field public static final visible_removing_fragment_view_tag:I = 0x7f0a22b5
+
+.field public static final webView:I = 0x7f0a22bf
+
+.field public static final web_container:I = 0x7f0a22c0
+
+.field public static final web_page_container:I = 0x7f0a22c1
+
+.field public static final west:I = 0x7f0a22c7
+
+.field public static final wheelLayout:I = 0x7f0a22c8
+
+.field public static final wheel_day:I = 0x7f0a22c9
+
+.field public static final wheel_month:I = 0x7f0a22ca
+
+.field public static final wheel_view:I = 0x7f0a22cd
+
+.field public static final wheel_year:I = 0x7f0a22ce
+
+.field public static final white_container:I = 0x7f0a22d0
+
+.field public static final wide:I = 0x7f0a22d1
+
+.field public static final widget_root_frame:I = 0x7f0a22d4
+
+.field public static final with_icon:I = 0x7f0a22d8
+
+.field public static final withinBounds:I = 0x7f0a22ed
+
+.field public static final wrap:I = 0x7f0a22ee
+
+.field public static final wrap_content:I = 0x7f0a22ef
+
+.field public static final wrap_content_constrained:I = 0x7f0a22f0
+
+.field public static final wrap_reverse:I = 0x7f0a22f1
+
+.field public static final x:I = 0x7f0a22f3
+
+.field public static final x_left:I = 0x7f0a22f4
+
+.field public static final x_right:I = 0x7f0a22f5
+
+.field public static final xy:I = 0x7f0a22fa
+
+.field public static final y:I = 0x7f0a22fb
+
+.field public static final year:I = 0x7f0a22fc
+
+.field public static final zoom:I = 0x7f0a22ff
+
+.field public static final zoomCenter:I = 0x7f0a2300
+
+.field public static final zoomFade:I = 0x7f0a2301
+
+.field public static final zoomStack:I = 0x7f0a2303
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+.end method

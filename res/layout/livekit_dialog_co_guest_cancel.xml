@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_not_standard_red" android:gravity="center" android:id="@id/tv_cancel_co_guest" android:layout_width="fill_parent" android:layout_height="62.0dip" android:text="@string/common_text_cancel_link_mic_apply" />
+    <View android:background="@color/common_not_standard_blue_30_transparency" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_design_standard_g7" android:gravity="center" android:id="@id/tv_dismiss" android:layout_width="fill_parent" android:layout_height="62.0dip" android:text="@string/cancel" />
+</LinearLayout>

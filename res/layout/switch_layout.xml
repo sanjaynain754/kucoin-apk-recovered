@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:transitionName="switchLayoutRoot"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivSnapshot" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/modeLottie" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/modeBg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:scaleType="center" app:lottie_autoPlay="false" app:lottie_loop="false" app:lottie_progress="0.0" app:lottie_rawRes="@raw/mode_bg" app:lottie_renderMode="hardware" />
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_vertical" android:id="@id/modeLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_40" app:lottie_autoPlay="false" app:lottie_loop="false" app:lottie_progress="0.0" app:lottie_renderMode="hardware" />
+    </FrameLayout>
+</FrameLayout>

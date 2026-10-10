@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/kucoin_font_size_14" android:textColor="@color/c_text60" android:gravity="start" android:id="@id/errorMsgTv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:fontFamily="@font/regular" android:textAlignment="viewStart" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/kucoin_font_size_16" android:textColor="@color/c_text" android:gravity="start" android:id="@id/symbolsTv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:fontFamily="@font/regular" android:textAlignment="viewStart" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/errorMsgTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

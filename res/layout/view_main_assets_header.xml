@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.assets.view.AccountInfoHeaderView android:id="@id/accountInfoHeader" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:paddingHorizontal="16.0dip" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/llNewFunction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_20" app:layout_constraintTop_toBottomOf="@id/accountInfoHeader">
+        <com.kubi.assets.view.VerticalIconTextBtn android:id="@id/tvDeposit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" app:iconSrc="@drawable/ic2_deposit_bold_20" app:labelText="@string/assetv2_deposit_crypto" />
+        <com.kubi.assets.view.VerticalIconTextBtn android:id="@id/tvWithdraw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" app:iconSrc="@drawable/ic2_withdraw_bold_20" app:labelText="@string/kc_asset_transfer_funds" />
+        <com.kubi.assets.view.VerticalIconTextBtn android:id="@id/tvTransfer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" app:iconSrc="@drawable/ic2_transfer_bold_20" app:labelText="@string/transfer" />
+        <com.kubi.assets.view.VerticalIconTextBtn android:id="@id/llEarn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" app:iconSrc="@drawable/ic2_earn_bold_20" app:labelText="@string/account_earn" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View android:id="@id/divider1" android:layout_width="fill_parent" android:layout_marginTop="28.0dip" app:layout_constraintTop_toBottomOf="@id/llNewFunction" style="@style/kucoin_view_divider" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:id="@id/llFunction2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/divider1">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llKuCard" android:padding="16.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KuCard" android:layout_weight="1.0" android:fontFamily="@font/medium" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right_right_16" app:tint="@color/c_icon60" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View android:background="@color/c_divider8" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llRedEnvelop" android:padding="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/red_package" android:layout_weight="1.0" android:fontFamily="@font/medium" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right_right_16" app:tint="@color/c_icon60" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View android:id="@id/divider2" android:layout_width="fill_parent" app:layout_constraintTop_toBottomOf="@id/llFunction2" style="@style/kucoin_view_divider" />
+    <com.kubi.resources.widget.bingoogolapple.bgabanner.BGABanner android:id="@id/newBanner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="52.0dip" app:banner_aspectRatio="0.0" app:banner_indicatorGravity="center_horizontal" app:banner_pageChangeDuration="1000" app:banner_pointAutoPlayAble="true" app:banner_pointAutoPlayInterval="5000" app:banner_pointContainerBackground="@android:color/transparent" app:banner_pointDrawable="@drawable/bassets_selector_main_indicator" app:banner_pointLeftRightMargin="1.5dip" app:banner_pointTopBottomMargin="6.0dip" app:layout_constraintTop_toBottomOf="@id/divider2" />
+    <View android:id="@id/divider3" android:layout_width="fill_parent" app:layout_constraintTop_toBottomOf="@id/newBanner" style="@style/kucoin_view_divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_open" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="170.0dip" android:src="@mipmap/busercenter_ic_finger_blue" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/c_text" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/finger_login" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/open_finger_lock" />
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/tv_open" android:layout_width="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="@string/enable_now" android:layout_marginHorizontal="30.0dip" style="@style/styleButton48" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:gravity="center" android:id="@id/tv_negative" android:paddingTop="24.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="30.0dip" android:text="@string/talk_later" android:layout_marginHorizontal="30.0dip" android:paddingVertical="24.0dip" />
+</LinearLayout>

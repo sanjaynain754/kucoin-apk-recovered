@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/audience_list_dialog_background" android:layout_width="fill_parent" android:layout_height="718.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip" android:layout_marginStart="24.0dip">
+        <ImageView android:id="@id/iv_back" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/livekit_return_arrow" android:layout_centerVertical="true" />
+        <io.trtc.tuikit.atomicx.widget.basicwidget.label.AtomicLabel android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_anchor_audience_list_panel_title" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_audience_list" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="638.0dip" android:layout_marginTop="10.0dip" />
+</LinearLayout>

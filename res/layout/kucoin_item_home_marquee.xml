@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ll_marquee" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="start|center" android:layout_width="14.399994dip" android:layout_height="10.0dip" android:src="@mipmap/icon_home_marquee_speaker" android:contentDescription="@null" />
+    <com.kubi.resources.widget.MarqueeTextView android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/marqueeView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:content_text_color="@color/emphasis60" app:content_text_size="12.0sp" />
+    <ImageView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_educe_16" android:contentDescription="@null" />
+</FrameLayout>

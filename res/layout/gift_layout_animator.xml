@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.trtc.uikit.livekit.component.gift.view.animation.AnimationViewWrapper android:id="@id/gift_anim_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.trtc.uikit.livekit.component.gift.view.animation.ImageAnimationView android:id="@id/gift_image_anim_view" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_marginTop="120.0dip" android:layout_alignParentTop="true" />
+    <com.trtc.uikit.livekit.component.gift.view.like.GiftHeartLayout android:id="@id/heart_layout" android:focusable="true" android:layout_width="100.0dip" android:layout_height="300.0dip" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

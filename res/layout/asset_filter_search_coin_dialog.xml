@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_bottom_sheet_bg" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="16.0dip">
+        <com.kubi.resources.widget.ClearEditText android:id="@id/etSearchBar" android:layout_width="fill_parent" android:layout_marginTop="24.0dip" android:hint="Search" app:layout_constraintTop_toTopOf="parent" style="@style/KcSearchBarLarge" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/etSearchBar">
+            <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:gravity="start|center" android:layout_width="wrap_content" android:layout_height="56.0dip" android:text="@string/all" android:fontFamily="@font/medium" />
+            <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|center" android:id="@id/selectIcon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_hook_20" app:tint="@color/c_text" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tvTitle" app:spanCount="3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

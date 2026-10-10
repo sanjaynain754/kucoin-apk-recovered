@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_withdraw_navigation_bar" layout="@layout/kucoin_search_navigation_bar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.kubi.resources.widget.flyco.SlidingTabLayout android:id="@id/searchTab" android:layout_width="fill_parent" android:layout_height="@dimen/tab_bar_height" app:tl_indicator_width="22.0dip" app:tl_tab_space_equal="true" app:tl_textsize="@dimen/font_16" app:tl_underline_color="@android:color/transparent" app:tl_underline_height="0.0dip" style="@style/tab_layout_indicator_level2" />
+        <include android:id="@id/searchBar" layout="@layout/kucoin_view_common_search" />
+        <com.kubi.resources.widget.rtlviewpager.RtlViewPager android:id="@id/searchPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

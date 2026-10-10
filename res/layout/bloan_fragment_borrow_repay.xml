@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.flyco.SlidingTabLayout android:id="@id/tablayout" android:layout_width="fill_parent" android:layout_height="48.0dip" app:tl_indicator_color="@color/c_text" style="@style/tab_layout_indicator_level1" />
+    <com.kubi.resources.widget.CustomViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

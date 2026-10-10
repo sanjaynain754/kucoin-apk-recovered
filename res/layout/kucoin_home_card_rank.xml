@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rank_shape" android:background="@drawable/shape_overlay_12r_show_border_night" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.flyco.SlidingTabLayout android:id="@id/rank_tab_layout" android:layout_width="fill_parent" android:layout_height="@dimen/tab_bar_height" app:tl_indicator_height="0.0dip" style="@style/tab_layout_indicator_level2" />
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutHeader" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.DashTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_gravity="start|center" android:id="@id/coin_pair" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rank_hot_coin" android:layout_marginStart="12.0dip" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="end|center" android:layout_gravity="end" android:id="@id/tv_sort_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/price" android:layout_marginEnd="120.0dip" />
+        <com.kubi.resources.widget.DashTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_gravity="end" android:id="@id/tv_sort_change_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rank_24_change" android:layout_marginEnd="12.0dip" />
+    </FrameLayout>
+    <com.kubi.resources.widget.AutoHeightViewPager android:id="@id/m_view_pager" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:minHeight="280.0dip" android:layout_marginHorizontal="12.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layoutExpandMore" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_marginTop="4.0dip" style="@style/kucoin_view_divider" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:id="@id/view_expand" android:layout_width="fill_parent" android:layout_height="36.0dip">
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/home_rank_expand" android:drawablePadding="2.0dip" app:drawableEndCompat="@mipmap/home_rank_arrow_bottom" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:id="@id/layout_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip">
+            <LinearLayout android:gravity="end|center" android:orientation="vertical" android:id="@id/jump_more" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_weight="1.0" android:paddingHorizontal="12.0dip">
+                <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" />
+            </LinearLayout>
+            <View android:background="@color/emphasis8" android:layout_width="1.0dip" android:layout_height="15.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/view_close" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingHorizontal="12.0dip">
+                <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_rank_toggle" android:drawablePadding="2.0dip" app:drawableEndCompat="@drawable/ic_home_rank_arrow_up" />
+            </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

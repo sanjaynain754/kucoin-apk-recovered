@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="fill_parent" android:layout_height="68.0dip" android:paddingHorizontal="@dimen/spacing_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_deposit_area" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="center" android:id="@id/tv_type" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="Deposit" android:fontFamily="@font/medium" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="11.0sp" android:textColor="@color/primary" android:gravity="center" android:id="@id/tv_status" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" android:paddingHorizontal="4.0dip" android:paddingVertical="1.0dip" />
+        </LinearLayout>
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:fontFamily="@font/regular" />
+    </LinearLayout>
+    <com.kubi.resources.widget.ShowHideTextView android:textSize="14.0sp" android:id="@id/tv_amount" android:tag="hide" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:layout_width="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/kucoin_view_divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

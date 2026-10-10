@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/shape_c_fff000_top_20r" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_horizontal" android:background="@drawable/shape_emphasis20_2r" android:layout_width="40.0dip" android:layout_height="4.0dip" android:layout_marginTop="9.0dip" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/assetv2_novice_guide" android:layout_marginStart="16.0dip" />
+    <com.kubi.resources.widget.flyco.SlidingTabLayout android:id="@id/tab_layout_new_guide" android:layout_width="fill_parent" android:layout_height="@dimen/tab_bar_height" android:layout_marginTop="17.0dip" android:layout_marginStart="3.0dip" style="@style/tab_layout_indicator_level2" />
+    <com.kubi.resources.widget.WrapContentHeightViewPager android:id="@id/vp_new_guide" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" />
+</androidx.appcompat.widget.LinearLayoutCompat>

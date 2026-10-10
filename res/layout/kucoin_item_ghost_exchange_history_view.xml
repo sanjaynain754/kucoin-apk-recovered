@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="fill_parent" android:layout_height="50.0dip" android:paddingHorizontal="@dimen/spacing_16">
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:id="@id/tv_exchange_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tv_exchange_actual" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="12.0dip" />
+        <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_arrow_right_16" app:tint="@color/c_text" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" style="@style/kucoin_view_divider" />
+</FrameLayout>

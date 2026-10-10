@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/shareInclude" android:layout_height="wrap_content" layout="@layout/bkumex_fragment_share_image_new" />
+    <Space android:id="@id/space" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/bottom_sheet" android:background="@drawable/shape_bottom_sheet_bg" android:paddingTop="8.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <com.kubi.resources.widget.KuCheckBox android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:gravity="center_vertical" android:id="@id/cb_userInfo" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:minHeight="48.0dip" android:text="@string/kumex_pnl_share_display_name" android:drawablePadding="10.0dip" android:fontFamily="@font/medium" app:kcb_drawable_position="end" app:kcb_drawable_size="20.0dip" />
+        <com.kubi.resources.widget.KuCheckBox android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:gravity="center_vertical" android:id="@id/cb_pnl" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:minHeight="48.0dip" android:text="@string/kumex_pnl_share_display_roe" android:drawablePadding="10.0dip" android:fontFamily="@font/medium" app:kcb_drawable_position="end" app:kcb_drawable_size="20.0dip" />
+        <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/tv_ok" android:layout_width="fill_parent" android:layout_marginTop="@dimen/spacing_16" android:text="@string/biz_control_kyc_pass_button" style="@style/styleButton40" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

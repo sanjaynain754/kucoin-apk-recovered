@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/filter_bar" layout="@layout/asset_account_bill_future_filter_bar" />
+    <View android:layout_width="fill_parent" android:layout_alignParentBottom="true" app:layout_constraintTop_toBottomOf="@id/filter_bar" style="@style/kucoin_view_divider" />
+    <com.kubi.resources.widget.SwipeRefreshRecyclerView android:id="@id/swipeRecyclerView" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/filter_bar" app:layout_constraintVertical_weight="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

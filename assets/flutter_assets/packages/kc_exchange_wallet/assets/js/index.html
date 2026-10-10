@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<script>
+   function convertV0ToV2(base64Psbt) {
+       try {
+          const psbtBufArray = Uint8Array.from(atob(base64Psbt), c => c.charCodeAt(0));
+          const psbt = new PsbtV2.PsbtV2();
+          const psbtBuf = psbt.uintArrayToBuffer(psbtBufArray);
+          psbt.deserialize(psbtBuf);
+          const serializePsbtBuf = psbt.serialize();  // 得到序列化的 PSBT 数据
+          const psbtArray = Array.from(serializePsbtBuf); // 转换成数组返回
+          return psbtArray;
+       } catch (error) {
+          return JSON.stringify(error);
+       }
+   }
+</script>
+</body>
+</html>
+

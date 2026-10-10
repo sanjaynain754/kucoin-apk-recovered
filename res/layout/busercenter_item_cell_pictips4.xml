@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/tv_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="@dimen/spacing_20" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/spacing_12">
+        <ImageView android:background="@drawable/shape_largecolor_4r" android:layout_width="fill_parent" android:layout_height="68.0dip" android:src="@mipmap/example_idcard_good" />
+        <TextView android:textSize="@dimen/font_10" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:text="@string/manual_simple_good" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/spacing_12">
+        <ImageView android:background="@drawable/shape_largecolor_4r" android:layout_width="fill_parent" android:layout_height="68.0dip" android:src="@mipmap/example_idcard_not_cropped" />
+        <TextView android:textSize="@dimen/font_10" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:text="@string/manual_simple_notcropped" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/spacing_12">
+        <ImageView android:background="@drawable/shape_largecolor_4r" android:layout_width="fill_parent" android:layout_height="68.0dip" android:src="@mipmap/example_idcard_not_blur" />
+        <TextView android:textSize="@dimen/font_10" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:text="@string/manual_simple_notblur" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:background="@drawable/shape_largecolor_4r" android:layout_width="fill_parent" android:layout_height="68.0dip" android:src="@mipmap/example_idcard_not_relective" />
+        <TextView android:textSize="@dimen/font_10" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:text="@string/manual_simple_notrelective" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bmargin_kline_option_item_height">128.0dip</dimen>
+    <dimen name="bmargin_kline_option_item_width">104.0dip</dimen>
+</resources>

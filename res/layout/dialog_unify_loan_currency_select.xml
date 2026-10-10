@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_bottom_sheet_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.BaseTextView android:textSize="18.0sp" android:textColor="@color/c_text" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_12" android:text="@string/coin" android:fontFamily="@font/semi" android:layout_marginHorizontal="@dimen/spacing_16" />
+        <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ivClose" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_close_withcircle_24" android:contentDescription="@string/close" android:paddingHorizontal="@dimen/spacing_16" app:tint="@color/c_text" />
+    </LinearLayout>
+    <com.kubi.resources.widget.ClearEditText android:id="@id/etSearchBar" android:layout_width="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:hint="@string/search" android:layout_marginHorizontal="16.0dip" style="@style/KcSearchBarLarge" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_coin" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="13.0sp" android:textColor="@color/c_text40" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/unify_all_available_borrow_coins" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="13.0sp" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/margin_lever" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

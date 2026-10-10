@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.SwipeRefreshRecyclerView android:id="@id/m_swipe_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom" />
+    <include android:id="@id/bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/kucoin_view_record_bottom" />
+</RelativeLayout>

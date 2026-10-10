@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingTop="@dimen/sns_margin_medium" android:paddingBottom="@dimen/sns_margin_tiny" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/sns_icon" android:layout_width="@dimen/sns_icon_size_small" android:layout_height="@dimen/sns_icon_size_small" android:contentDescription="@null" app:tint="@color/sns_contentWeak" />
+    <com.sumsub.sns.core.widget.SNSSubtitle1TextView android:id="@id/sns_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/sns_margin_tiny" />
+</LinearLayout>

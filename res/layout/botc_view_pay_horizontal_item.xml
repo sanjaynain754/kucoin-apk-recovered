@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/view_item" android:background="@drawable/botc_shape_fast_pay_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/iv_pay_otc_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/iv_pay_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" app:layout_constraintBottom_toBottomOf="@id/iv_pay_otc_icon" app:layout_constraintEnd_toEndOf="@id/iv_pay_otc_icon" app:layout_constraintStart_toStartOf="@id/iv_pay_otc_icon" app:layout_constraintTop_toTopOf="@id/iv_pay_otc_icon" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text" android:ellipsize="end" android:id="@id/tv_pay_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:lines="1" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_pay_otc_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/view_un_bg" android:background="@color/color_61fffff_61191e29" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

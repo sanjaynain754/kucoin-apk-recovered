@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cpiz.android.bubbleview.BubbleLinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/spacing_4" android:paddingBottom="@dimen/spacing_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/spacing_8" android:paddingEnd="@dimen/spacing_8" app:bb_arrowDirection="Down" app:bb_arrowHeight="6.0dip" app:bb_arrowWidth="10.0dip" app:bb_cornerRadius="2.0dip" app:bb_fillColor="@color/color_ebedef_414953"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/kucoin_font_size_14" android:id="@id/tv_pop_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这时测试View" />
+</com.cpiz.android.bubbleview.BubbleLinearLayout>

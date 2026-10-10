@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.sdk.widget.shape.view.ShapeTextView android:textSize="16.0sp" android:id="@id/risk_title" android:paddingLeft="8.0dip" android:paddingTop="@dimen/dp_4" android:paddingRight="8.0dip" android:paddingBottom="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="8.0dip" android:paddingVertical="@dimen/dp_4" app:shape_radius="8.0dip" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text60" android:id="@id/risk_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="24.0dip" android:fontFamily="@font/regular" />
+</androidx.appcompat.widget.LinearLayoutCompat>

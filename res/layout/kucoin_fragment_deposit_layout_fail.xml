@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/layout_deposit_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="88.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="136.0dip" android:layout_height="136.0dip" android:src="@drawable/ic2_common_warning" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/asset_deposit_address_error_title" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text60" android:gravity="center" android:layout_gravity="center" android:id="@id/tvErrorTip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_32" android:layout_marginTop="12.0dip" android:layout_marginRight="@dimen/spacing_32" android:layout_marginHorizontal="@dimen/spacing_32" />
+    <com.kubi.resources.widget.button.KcPrimaryButton android:layout_gravity="center" android:id="@id/tvRetry" android:paddingLeft="@dimen/spacing_32" android:paddingRight="@dimen/spacing_32" android:layout_width="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:text="@string/asset_deposit_address_error_retry" android:paddingHorizontal="@dimen/spacing_32" style="@style/styleButton40" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/avi" android:visibility="visible" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="40.0dip" android:layout_marginBottom="40.0dip" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/kline_fail_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_common_system_maintain" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.125" />
+        <TextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:gravity="center" android:id="@id/empty_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_24" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/spacing_24" android:layout_marginBottom="40.0dip" android:text="@string/load_failed_click_retry" android:layout_marginHorizontal="@dimen/spacing_24" />
+    </LinearLayout>
+</merge>

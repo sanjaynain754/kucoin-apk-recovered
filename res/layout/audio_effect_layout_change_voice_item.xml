@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_root" android:layout_width="56.0dip" android:layout_height="79.0dip" android:layout_marginTop="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_icon" android:background="@drawable/audio_effect_settings_item_not_select_background" android:padding="13.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" />
+    <io.trtc.tuikit.atomicx.widget.basicwidget.label.AtomicLabel android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_primary" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+</LinearLayout>

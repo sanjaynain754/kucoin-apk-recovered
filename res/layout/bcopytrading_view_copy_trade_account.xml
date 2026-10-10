@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/switchCopyLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewSwitcher android:id="@id/accountSwitcher" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.copytrading.view.CopyTradingUserAvatarView android:gravity="center" android:id="@id/masterAccountAvatar" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginStart="16.0dip" android:layout_marginVertical="12.0dip" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/copytd_master_account" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.copytrading.view.CopyTradingUserAvatarView android:gravity="center" android:id="@id/ivAccount" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginStart="16.0dip" android:layout_marginVertical="12.0dip" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/copytd_lead_trading_sub_account" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+    </ViewSwitcher>
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="center_vertical" android:id="@id/ivSwap" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/switch_account" android:drawablePadding="4.0dip" android:drawableEnd="@drawable/ic2_swap_16" android:paddingEnd="16.0dip" app:drawableTint="@color/c_text" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/dividerBar" android:visibility="visible" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/kucoin_view_divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/c_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.kyc.vendor.jumio.ui.JumioLayoutScanCard android:id="@id/layoutScanCard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.kubi.kyc.vendor.jumio.ui.JumioLayoutConfirmScan android:id="@id/layoutConfirmScan" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.kubi.kyc.vendor.jumio.ui.JumioLayoutRejectScan android:id="@id/layoutRejectScan" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.kubi.kyc.vendor.jumio.ui.JumioLayoutLoading android:id="@id/layoutLoading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.kubi.kyc.vendor.jumio.ui.JumioNFCLayoutScan android:id="@id/layoutNfcScan" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

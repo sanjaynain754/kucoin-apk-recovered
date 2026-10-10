@@ -1,0 +1,18 @@
+{
+  "biz": "krnbase",
+  "version": "3.0.3",
+  "url": "https://assets.staticimg.com/rn-bundles/Kucoin/base_package/krnbase/3.0.3/f26c178e/3544/build/android/krnbase-main.zip",
+  "packageHash": "0ubnINseZmCKEXn3B5Jpqi05xK7EtcasU5V8s1L5C2T+hc0/bGZAr+Fd2cpIfDZpclkjbEGxJ6XDQzm0yh9F+snlEWDmwvUjBwrr14TBFApaNfpxnzSAqC7+9+kvlYH3nlHPrOdyklHAn1sRXj/uDQLzIdjjfvwOjOO9lYUKsCY=",
+  "sdkVersion": "4.20.0",
+  "packageSize": 1754252,
+  "dateTime": "2026-08-31T13:54:43.730Z",
+  "buildNo": 3544,
+  "leadUpgrade": false,
+  "basicDeps": [
+
+  ],
+  "subPackages": [
+
+  ],
+  "entry": "main"
+}

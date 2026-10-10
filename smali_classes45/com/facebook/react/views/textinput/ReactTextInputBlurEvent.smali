@@ -1,0 +1,133 @@
+.class Lcom/facebook/react/views/textinput/ReactTextInputBlurEvent;
+.super Lcom/facebook/react/uimanager/events/Event;
+.source "ReactTextInputBlurEvent.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/facebook/react/uimanager/events/Event<",
+        "Lcom/facebook/react/views/textinput/ReactTextInputBlurEvent;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final EVENT_NAME:Ljava/lang/String; = "topBlur"
+
+
+# direct methods
+.method public constructor <init>(I)V
+    .locals 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    const/4 v0, -0x1
+
+    .line 1
+    invoke-direct {p0, v0, p1}, Lcom/facebook/react/views/textinput/ReactTextInputBlurEvent;-><init>(II)V
+
+    return-void
+.end method
+
+.method public constructor <init>(II)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0, p1, p2}, Lcom/facebook/react/uimanager/events/Event;-><init>(II)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public canCoalesce()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+    .line 3
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+.method public getEventData()Lcom/facebook/react/bridge/WritableMap;
+    .locals 3
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {}, Lcom/facebook/react/bridge/Arguments;->createMap()Lcom/facebook/react/bridge/WritableMap;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    .line 6
+    .line 7
+    const-string/jumbo v1, "target"
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {p0}, Lcom/facebook/react/uimanager/events/Event;->getViewTag()I
+
+    .line 11
+    move-result v2
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-interface {v0, v1, v2}, Lcom/facebook/react/bridge/WritableMap;->putInt(Ljava/lang/String;I)V
+
+    .line 15
+    return-object v0
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+.method public getEventName()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    const-string/jumbo v0, "topBlur"
+
+    .line 4
+    return-object v0
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method

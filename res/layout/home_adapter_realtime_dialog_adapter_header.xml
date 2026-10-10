@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="36.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/c_text60" android:id="@id/tv_group_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <com.kubi.resources.widget.button.KcSecondaryButton android:textSize="12.0sp" android:id="@id/btn_clear_all" android:layout_width="wrap_content" android:text="@string/home_card_activity_action_remove_all" android:drawablePadding="4.0dip" android:drawableStart="@drawable/ic2_close_filled_16" android:fontFamily="@font/medium" android:paddingStart="14.0dip" android:paddingEnd="16.0dip" android:drawableTint="@color/c_icon60" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/styleButton32Secondary" />
+</androidx.constraintlayout.widget.ConstraintLayout>

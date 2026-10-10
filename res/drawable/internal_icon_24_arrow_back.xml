@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/internalRevolutPayUiKit_foreground" android:pathData="M3.5,11.992C3.5,11.716 3.605,11.456 3.806,11.255L9.23,5.832C9.589,5.473 10.17,5.473 10.529,5.832L10.854,6.157C11.213,6.516 11.213,7.098 10.854,7.457L7.46,10.851H19.581C20.089,10.851 20.5,11.263 20.5,11.771V12.23C20.5,12.738 20.089,13.149 19.581,13.149H7.46L10.854,16.543C11.213,16.902 11.213,17.484 10.854,17.843L10.529,18.168C10.17,18.527 9.589,18.527 9.23,18.168L3.806,12.745C3.602,12.541 3.5,12.269 3.5,11.992Z" />
+</vector>

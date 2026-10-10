@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="49.0dip" android:layout_marginEnd="49.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_largecolor_4r" android:paddingTop="8.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="300.0dip">
+                <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/rotate_progressbar" android:indeterminateDuration="800" android:indeterminateTint="@color/primary" />
+                <ImageView android:id="@id/iv_qr_code" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/save_qrcode_scan_pay" />
+            <com.kubi.resources.widget.BaseTextView android:enabled="false" android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_save_qrcode" android:background="@drawable/selector_btn_primary" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/save_qrcode" android:drawablePadding="9.0dip" android:paddingStart="40.0dip" android:paddingEnd="40.0dip" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_close_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:src="@mipmap/payment_ic_circle_close" />
+    </LinearLayout>
+</FrameLayout>

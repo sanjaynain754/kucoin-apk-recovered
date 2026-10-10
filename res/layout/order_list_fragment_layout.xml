@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text60" android:gravity="start" android:id="@id/history_data_warn" android:background="@drawable/botc_shape_cover4_8r" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:text="@string/payment_history_data" android:drawablePadding="6.0dip" android:fontFamily="@font/regular" android:layout_marginHorizontal="16.0dip" android:paddingHorizontal="12.0dip" android:paddingVertical="10.0dip" app:drawableStartCompat="@drawable/ic2_info_16" app:drawableTint="@color/c_text60" />
+    <com.kubi.resources.widget.SwipeRefreshRecyclerView android:id="@id/m_swipe_recycler_view" android:background="@color/c_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

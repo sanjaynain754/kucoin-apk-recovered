@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="32.0dip" android:width="32.0dip" android:viewportWidth="32.0" android:viewportHeight="32.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M0,0h32v32h-32z" />
+        <path android:fillColor="@drawable/$trade_type_advanced_limit__0" android:pathData="M13,16C13,17.657 14.343,19 16,19C17.657,19 19,17.657 19,16H32V32H0V16H13Z" android:fillAlpha="0.4" />
+        <path android:fillColor="#ff8c8c8c" android:pathData="M0.875,15.5V16.5H0V15.5H0.875ZM4.375,15.5V16.5H2.625V15.5H4.375ZM7.875,15.5V16.5H6.125V15.5H7.875ZM11.375,15.5V16.5H9.625V15.5H11.375ZM14,15.5V16.5H13.125V15.5H14ZM19.625,15.5V16.5H18.5V15.5H19.625ZM24.125,15.5V16.5H21.875V15.5H24.125ZM28.625,15.5V16.5H26.375V15.5H28.625ZM32,15.5V16.5H30.875V15.5H32Z" android:fillAlpha="0.4" />
+        <path android:fillColor="#ff1d1d1d" android:pathData="M14.329,18.165C14.514,17.795 14.965,17.644 15.335,17.829C15.705,18.014 15.856,18.465 15.671,18.835L12.171,25.835C12.044,26.089 11.784,26.25 11.5,26.25H-1C-1.414,26.25 -1.75,25.914 -1.75,25.5C-1.75,25.086 -1.414,24.75 -1,24.75H11.036L14.329,18.165Z" />
+        <path android:fillColor="#ff1d1d1d" android:pathData="M18.651,13.497L18.151,14.372L16.849,13.628L17.349,12.753L18.651,13.497ZM26.6,12.55L25.4,13.45L24.838,12.7L26.037,11.8L26.6,12.55ZM20.651,9.997L19.651,11.747L18.349,11.003L19.349,9.253L20.651,9.997ZM24.912,10.3L23.713,11.2L22.588,9.7L23.787,8.8L24.912,10.3ZM21.453,6.251C21.705,6.235 21.948,6.348 22.1,6.55L22.662,7.3L21.84,7.917L21.651,8.247L21.509,8.165L21.463,8.2L21.383,8.094L20.349,7.503L20.849,6.628C20.974,6.409 21.201,6.267 21.453,6.251Z" />
+        <path android:fillColor="#ff1d1d1d" android:pathData="M17.5,16C17.5,15.172 16.828,14.5 16,14.5C15.172,14.5 14.5,15.172 14.5,16C14.5,16.828 15.172,17.5 16,17.5V19C14.343,19 13,17.657 13,16C13,14.343 14.343,13 16,13C17.657,13 19,14.343 19,16C19,17.657 17.657,19 16,19V17.5C16.828,17.5 17.5,16.828 17.5,16Z" />
+    </group>
+</vector>

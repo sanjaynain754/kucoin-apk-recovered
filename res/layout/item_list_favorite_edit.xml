@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="52.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivSelect" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ui_selector_checkbox" android:layout_marginStart="@dimen/spacing_16" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_15" android:textColor="@color/c_text" android:gravity="center_vertical" android:id="@id/tvSymbolName" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/spacing_8" />
+    <ImageView android:id="@id/ivTop" android:padding="@dimen/spacing_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_stick_16" android:scaleType="center" app:tint="@color/c_icon" />
+    <ImageView android:id="@id/ivSort" android:paddingTop="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sort_16" android:scaleType="center" android:paddingStart="26.0dip" android:paddingEnd="@dimen/spacing_16" app:tint="@color/c_icon" />
+</LinearLayout>

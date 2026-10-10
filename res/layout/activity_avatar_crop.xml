@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.mine.lib.view.CropImageView android:id="@id/cropImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/btnConfirm" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/spacing_24" android:layout_marginRight="@dimen/spacing_24" android:text="@string/confirm" android:layout_marginHorizontal="@dimen/spacing_24" style="@style/styleButton40" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_white" android:gravity="center" android:id="@id/btnCancel" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/spacing_24" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_24" android:layout_marginBottom="@dimen/spacing_32" android:text="@string/cancel" android:layout_marginHorizontal="@dimen/spacing_24" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="#ffffffff" android:id="@id/home_feed_action_pop_hint_text" android:background="@drawable/home_feed_action_popup_bg" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_feed_following_tips_v2" android:fontFamily="@font/medium" />
+    <View android:background="@drawable/home_feed_action_popup_angel" android:layout_width="16.0dip" android:layout_height="9.0dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/home_feed_action_pop_hint_text" android:layout_marginEnd="16.0dip" android:layout_alignEnd="@id/home_feed_action_pop_hint_text" />
+</RelativeLayout>

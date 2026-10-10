@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingLeft="@dimen/ui_page_startend_space" android:paddingTop="16.0dip" android:paddingRight="@dimen/ui_page_startend_space" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/ui_page_startend_space"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/vSearch" android:background="@drawable/shape_shimmer_rectangle_24r" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="24.0dip" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/layoutUserStatus" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="16.0dip">
+        <View android:id="@id/v1" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="100.0dip" android:layout_height="28.0dip" android:layout_marginBottom="8.0dip" />
+        <View android:id="@id/v2" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="142.0dip" android:layout_height="16.0dip" android:layout_marginBottom="8.0dip" />
+        <View android:id="@id/v3" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="40.0dip" android:layout_height="10.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/layoutGrid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="8.0dip">
+            <View android:id="@id/v4" android:background="@drawable/shape_shimmer_rectangle_12r" android:layout_width="fill_parent" android:layout_height="71.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="8.0dip">
+            <View android:id="@id/v5" android:background="@drawable/shape_shimmer_rectangle_12r" android:layout_width="fill_parent" android:layout_height="71.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="8.0dip">
+            <View android:id="@id/v6" android:background="@drawable/shape_shimmer_rectangle_12r" android:layout_width="fill_parent" android:layout_height="71.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <View android:id="@id/v7" android:background="@drawable/shape_shimmer_rectangle_12r" android:layout_width="fill_parent" android:layout_height="71.0dip" />
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/layoutBannerGembox" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <include android:id="@id/includBanner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="12.0dip" layout="@layout/home_shimmer_v2_banner" />
+        <include android:id="@id/includGembox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/home_shimmer_v2_banner" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/layoutRankinglist" android:background="@drawable/shape_border_divider8_16r" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <include android:id="@id/includItem1" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/home_shimmer_v2_rankinglist" />
+        <include android:id="@id/includItem2" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/home_shimmer_v2_rankinglist" />
+        <include android:id="@id/includItem3" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/home_shimmer_v2_rankinglist" />
+        <include android:id="@id/includItem4" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/home_shimmer_v2_rankinglist" />
+        <include android:id="@id/includItem5" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/home_shimmer_v2_rankinglist" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:id="@id/layoutNewUser" android:paddingTop="56.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip">
+        <View android:id="@id/v8" android:background="@drawable/shape_shimmer_oval" android:layout_width="160.0dip" android:layout_height="160.0dip" android:layout_marginBottom="24.0dip" />
+        <View android:id="@id/v9" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="160.0dip" android:layout_height="28.0dip" android:layout_marginBottom="8.0dip" />
+        <View android:id="@id/v10" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="240.0dip" android:layout_height="16.0dip" android:layout_marginBottom="8.0dip" />
+        <View android:id="@id/v11" android:background="@drawable/shape_shimmer_rectangle_8r" android:layout_width="160.0dip" android:layout_height="16.0dip" android:layout_marginBottom="40.0dip" />
+        <View android:id="@id/v12" android:background="@drawable/shape_shimmer_rectangle_24r" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="24.0dip" android:layout_marginHorizontal="16.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutLearn" android:background="@drawable/shape_border_divider8_16r" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:id="@id/v13" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="118.0dip" android:layout_height="16.0dip" android:layout_marginBottom="8.0dip" />
+            <View android:id="@id/v14" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="66.0dip" android:layout_height="16.0dip" android:layout_marginBottom="8.0dip" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <View android:id="@id/v15" android:background="@drawable/shape_shimmer_rectangle_12r" android:layout_width="85.0dip" android:layout_height="64.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

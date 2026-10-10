@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_coin" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/kucoin_icon_default_icon" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="18.0sp" android:textColor="@color/c_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_coin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:maxLines="1" android:fontFamily="@font/medium" android:layout_marginStart="8.0dip" />
+</LinearLayout>

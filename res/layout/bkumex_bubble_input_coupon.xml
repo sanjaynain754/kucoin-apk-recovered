@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cpiz.android.bubbleview.BubbleLinearLayout android:id="@id/couponPanelBubble" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:bb_arrowDirection="Down" tools:bb_arrowHeight="9.0dip" tools:bb_arrowWidth="16.0dip" tools:bb_cornerRadius="8.0dip" tools:bb_fillColor="@color/c_toolTip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="#ffffffff" android:id="@id/bubbleTips" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="@font/regular" tools:text="空投仓券在这里激活哦" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/close" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_close_16" tools:tint="@color/c_icon" />
+</com.cpiz.android.bubbleview.BubbleLinearLayout>

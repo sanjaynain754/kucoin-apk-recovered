@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="start" android:id="@id/gift_group" android:background="@drawable/gift_bg_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginStart="8.0dip">
+        <io.trtc.tuikit.atomicx.widget.basicwidget.avatar.AtomicAvatar android:id="@id/iv_send_user_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:layout_centerVertical="true" app:avatarSize="m" />
+        <RelativeLayout android:id="@id/gift_text_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@id/iv_send_user_icon">
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_design_standard_flowkit_white" android:id="@id/tv_send_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginStart="6.0dip" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/common_design_standard_flowkit_white" android:ellipsize="end" android:id="@id/tv_gift_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxWidth="80.0dip" android:maxLines="1" android:layout_below="@id/tv_send_user_name" android:layout_alignStart="@id/tv_send_user_name" />
+        </RelativeLayout>
+        <androidx.constraintlayout.utils.widget.ImageFilterView android:id="@id/iv_gift_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true" android:layout_toEndOf="@id/gift_text_group" app:round="20.0dip" />
+    </RelativeLayout>
+</FrameLayout>

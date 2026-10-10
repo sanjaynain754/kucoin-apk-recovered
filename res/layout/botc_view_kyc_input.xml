@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="52.0dip" android:paddingStart="12.0dip" android:paddingEnd="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:id="@id/tv_input_name_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.kubi.resources.widget.FilterEmojiEditText android:textSize="16.0sp" android:textColor="@color/c_text" android:textColorHint="@color/c_text20" android:gravity="end" android:id="@id/et_input_content" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" android:imeOptions="actionNext" android:textCursorDrawable="@drawable/shape_primary_cursor" android:textAlignment="viewEnd" />
+</LinearLayout>

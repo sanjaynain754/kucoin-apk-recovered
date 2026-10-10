@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:layout_gravity="center_horizontal" android:id="@id/tv_time" android:background="@drawable/shape_darkoverlay_4r" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="10.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_darkoverlay_4r" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/c_text" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" />
+            <TextView android:id="@id/tv_redpoint" android:background="@drawable/kucoin_bg_red_dot" android:visibility="invisible" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginHorizontal="8.0dip" />
+            <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_right_mirrored" android:contentDescription="@null" />
+        </LinearLayout>
+        <View android:id="@id/view_divider" android:layout_marginTop="12.0dip" style="@style/kucoin_view_divider" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/c_text60" android:ellipsize="end" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="2" />
+    </LinearLayout>
+</LinearLayout>

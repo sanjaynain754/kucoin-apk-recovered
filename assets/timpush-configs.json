@@ -1,0 +1,11 @@
+{
+  "version": "1.0.1",
+  "com.kubi.kucoin": {
+    "manifestPlaceholders": {
+      "VIVO_APPKEY": "",
+      "VIVO_APPID": "",
+      "HONOR_APPID": ""
+    },
+    "fcmPushBussinessId": "8986"
+  }
+}

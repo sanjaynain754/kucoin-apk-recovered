@@ -1,0 +1,1696 @@
+{
+    "siteType": "europe",
+    "basicProperties": {
+        "siteName": "欧洲站",
+        "shareGlobalAccount": 1,
+        "walletType": 2,
+        "storageType": 2,
+        "siteDomainType": 1,
+        "siteDomain": "www.kucoin.com",
+        "siteRegion": "eu",
+        "brandType": 2,
+        "logoType": 2,
+        "sloganType": 2
+    },
+    "extProperties": [
+        {
+            "key": "en_US",
+            "value": "KuCoin EU",
+            "type": "BRAND"
+        },
+        {
+            "key": "logo_big_gray_png",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d828c6a2bec0001135b89_KUCOIN%20EU_Vertical_gray.png",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_big_gray_svg",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d82842463ad0001019d6b_KUCOIN%20EU_Vertical_gray.svg",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_big_green_png",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d826ca672e00001013a76_KUCOIN%20EU_Vertical_green.png",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_big_green_svg",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d82632463ad0001019d64_KUCOIN%20EU_Vertical_green.svg",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_college_png",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d842d6a2bec0001135bbd_KuCoin_Learn.png",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_college_svg",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d8415a16d440001952cd5_KuCoin_Learn.svg",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_future_png",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d84efa16d440001952cfc_KuCoin_Futures.png",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_future_svg",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d84c5cad62f0001e3ede9_KuCoin_Futures.svg",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_general_black_png",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d82466a2bec0001135b7a_KUCOIN%20EU_Horizontal-balck.png",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_general_black_svg",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d823fcad62f0001e3eda4_KUCOIN%20EU_Horizontal-balck.svg",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_general_gray_png",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d82372463ad0001019d60_KUCOIN%20EU_Horizontal_gray.png",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_general_gray_svg",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d822ecad62f0001e3ed9f_KUCOIN%20EU_Horizontal_gray.svg",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_general_green_png",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d820c6a2bec0001135b72_KUCOIN%20EU_Horizontal_green.png",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_general_green_svg",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d81fea672e00001013a6b_KUCOIN%20EU_Horizontal_green.svg",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_general_white_png",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d821f6a2bec0001135b75_KUCOIN%20EU_Horizontal_white.png",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_general_white_svg",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d82176a2bec0001135b74_KUCOIN%20EU_Horizontal_white.svg",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_organ_black_png",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d847f2463ad0001019db9_KuCoin%20Institutional_black.png",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_organ_black_svg",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d8476a672e00001013aba_KuCoin%20Institutional_black.svg",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_organ_white_png",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d846ea16d440001952ce4_KuCoin%20Institutional_white.png",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_organ_white_svg",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/693d843ea16d440001952cde_KuCoin%20Institutional_white.svg",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_small_png",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/695229a88f82160001257ba4_Rounded%20icon.png",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "logo_small_svg",
+            "value": "https://assets.staticimg.com/kc-v2-config/site-config/6952299e16cc510001187e32_Rounded%20icon.svg",
+            "type": "LOGO_URL"
+        },
+        {
+            "key": "de_DE",
+            "value": "Erst vertrauen. Dann traden.",
+            "type": "SLOGAN"
+        },
+        {
+            "key": "en_US",
+            "value": "Trust First. Trade Next.",
+            "type": "SLOGAN"
+        },
+        {
+            "key": "es_ES",
+            "value": "Primero la confianza. Luego el trading.",
+            "type": "SLOGAN"
+        },
+        {
+            "key": "fr_FR",
+            "value": "La confiance d'abord. Trading ensuite.",
+            "type": "SLOGAN"
+        },
+        {
+            "key": "it_IT",
+            "value": "Fiducia innanzitutto. Poi Trading.",
+            "type": "SLOGAN"
+        },
+        {
+            "key": "nl_NL",
+            "value": "Eerst vertrouwen. Dan handelen.",
+            "type": "SLOGAN"
+        },
+        {
+            "key": "pl_PL",
+            "value": "Najpierw zaufanie, potem handel.",
+            "type": "SLOGAN"
+        },
+        {
+            "key": "pt_PT",
+            "value": "Confie primeiro. Negocie depois.",
+            "type": "SLOGAN"
+        },
+        {
+            "key": "tr_TR",
+            "value": "Önce Güven. Sonra İşlem.",
+            "type": "SLOGAN"
+        },
+        {
+            "key": "uk_UA",
+            "value": "Довіра – понад усе. Торгівля – слідом.",
+            "type": "SLOGAN"
+        },
+        {
+            "key": "kyc_storage",
+            "value": "2",
+            "type": "STORAGE_TYPE"
+        },
+        {
+            "key": "other_storage",
+            "value": "1",
+            "type": "STORAGE_TYPE"
+        },
+        {
+            "key": "ar_AE",
+            "value": "أوروبا",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "bn_BD",
+            "value": "ইউরোপ",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "de_DE",
+            "value": "Europa",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "en_US",
+            "value": "Europe",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "es_ES",
+            "value": "Europa",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "fil_PH",
+            "value": "Europe",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "fr_FR",
+            "value": "Europe",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "hi_IN",
+            "value": "Europe",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "id_ID",
+            "value": "Eropa",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "it_IT",
+            "value": "Europa",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "ja_JP",
+            "value": "ヨーロッパ",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "ko_KR",
+            "value": "유럽",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "ms_MY",
+            "value": "Eropah",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "nl_NL",
+            "value": "Europa",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "pl_PL",
+            "value": "Europa",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "pt_PT",
+            "value": "Europa",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "ru_RU",
+            "value": "Европа",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "th_TH",
+            "value": "ยุโรป",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "tr_TR",
+            "value": "Avrupa",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "uk_UA",
+            "value": "Europe",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "ur_PK",
+            "value": "یورپ",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "vi_VN",
+            "value": "Châu Âu",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "zh_CN",
+            "value": "欧洲",
+            "type": "TOCSITENAME"
+        },
+        {
+            "key": "zh_HK",
+            "value": "歐洲",
+            "type": "TOCSITENAME"
+        }
+    ],
+    "functions": [
+        {
+            "code": "api_broker",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "spot_growth_gemvote_kcs",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "convert_earn_convert_plus",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "refer_and_earn",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "security_trade_password",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "earn_convert_plus",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "bot_spot_infinity_grid",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "3rd_google_reg",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_promotion",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "security_config_management",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "fast_trade",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "bot_margin_margin_grid",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "3rd_tg_reg",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "news_detail_analyze",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "3rd_apple",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "spot_growth",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "delisted_coin_claim_record",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "3rd_party",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "voucher",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "convert",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "web3_homepage_popup",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "est_fee",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "market_all_coins",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "sub_hosted",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_future_plus",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "3rd_tg_login",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "bot_futures_win_two_way",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "vip_dashboard",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "news",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "security_biometrics",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "report_form",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "password_login",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "seo",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "security_ga",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "bot_futures_futures_martin_gale",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "ai_guess_search",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "volume_board",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "Convert_market_default",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "trading_bot",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "financial_system",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "security_phishing",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "kyc",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "3rd_apple_reg",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "kcs_discount",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "welfare",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_range_bound",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "ai_trends_abnormal",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "msg_kia_entry",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "crypto_withdraw",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "voucher_margintrail",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "learning",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "kyb_advance",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_staking",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "red_packet",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "spot_growth_gemslot_rate",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "live_trade_rebate",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "margin_index_price",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "trading_affiliate",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "uta",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "lend",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "login",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "lite",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_smart_earn",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_rwa_fof",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "3rd_apple_login",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "home_page",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "events_hub",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "price",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "earn_discount_buy",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "third_party",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "ai_assert_entry",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "affiliate",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "nd_broker",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "spot",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "opportunity",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "ai_trending",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "losers",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "earn_twin_win",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "live_rebate",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "option",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "reconciliation_system",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "etf",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "payment",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "earn_dual",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "3rd_google",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "earn_pwm_fixed",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "ai_crypto_insights",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "market_cap",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "kucard",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "platform_growth",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "convert_alpha",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "alpha",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "login_ip",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "convert_limit",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_kcs",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "payment_point",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "kumining_referral_rebate",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "tax_platform",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "sub_oes",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "kyc_advance",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "subaccount_login",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "copy_trading",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "hot",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "security_device",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "3rd_google_login",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "live_watch_rebate",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_shark_fin",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "spot_growth_gemvote_rewardshub",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_structured",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "bot_futures_contract_grid",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "creat_3rd_api",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "third_party_reg",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "convert_staking",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "relate_trading",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "loan",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "spot_growth_gemvote_invite",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "referral_defalut_sign",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "my_rewards",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "platform_growth_v2",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "data_center",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "spot_growth_spotlight",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "security_mail",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "security_pattern",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "login_brand",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "api_default",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "invite_rebate",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "login_mail",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "api",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "feiqi_default",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "kyc_verification",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "bot_spot_aip",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "passkey",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "vip",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "message_center",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "margin",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "kumining_affiliate",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "trade_setups",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "bot_spot_cta",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_hold_to_earn",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_simple_earn",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "bot_spot_position",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "sub_account",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "rewardshub",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "ai",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "security_phone",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "web3_wallet",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "platform_growth_app",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_auto_earn",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "customer_service_system",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "ongoing",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "kyc_entry",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "homepage_default",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "financing",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "otc",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "personal_center",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "rebate_business",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "signup_mail",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "p2p",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "search",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "cloud_mining",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "spot_growth_gempool_rate",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "bot_spot_grid",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "margin_Interestfreecoupons",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "fiat_deposit",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "academy",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "bot_futures_futures_cta",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "futures",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "bot_spot_martin_gale",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "new_board",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "risk_control_system",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "signup_phone",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "trading_competition",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "team_competition",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "currency",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "security_password",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "spot_growth_hodler",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "sentiment_overview",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "app_homepage_feed",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "k_line",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "convert_usdd",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "login_phone",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "login_qr",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "ai_futures_crypto_insights",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "margin_default",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "ai_rankingentrance",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_savings",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "kcs_pulesdrop",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "kline_fluctuation_analyze",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "app_lock_settings",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "donwload_center",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "kucoin_pay",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_kcs_rights",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "sub_normal",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "basic_bench",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "express",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "kyb_verification",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "signup",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "3rd_tg",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "ucenter",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "feed",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "VIP_default",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "basic_service",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "spot_growth_gemspace",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "activity_bench",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "convert_support_link",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "kcs",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "ai_search_entry",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "kyb",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "kyb_entry",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "convert_fiat_trading",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "kcs_convert",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "security_guard",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "fuse_breaking",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "earn_snowball",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "compliance_exhibition_platform",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "bot_spot_spot_ai_grid",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        },
+        {
+            "code": "security_config",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "gainers",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "coin_info",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": true
+        },
+        {
+            "code": "earn_pwm_fund",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": false
+        }
+    ],
+    "bizConfigs": [
+        {
+            "code": "contract_liquidity",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": ""
+        },
+        {
+            "code": "shield_currency",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": "USDT"
+        },
+        {
+            "code": "spot_liquidity",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": "ats"
+        },
+        {
+            "code": "is_allowed_multilevel_rebate",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": ""
+        },
+        {
+            "code": "quote_currency",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": "USDC"
+        },
+        {
+            "code": "rebate_range",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": "cross_site_rebate"
+        },
+        {
+            "code": "default_fiat_currency",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": "EUR"
+        },
+        {
+            "code": "default_language",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": "en_US"
+        },
+        {
+            "code": "support_app_version",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": "4.12.0"
+        },
+        {
+            "code": "custom_param",
+            "supportAppVersionMin": null,
+            "supportAppVersionMax": null,
+            "value": "{\n    \"BRAND_BACKUP_DOMAIN\": [],\n    \"LANG_DOMAIN\": [\"www.kucoin.\", \"www.kucoinauth.\", \"www.kucoinpre.\"],\n    \"SAFE_WEB_DOMAIN\": [\n      \"www.kucoin.com\",\n      \"www.kucoin.cloud\",\n      \"www.kucoin.biz\",\n      \"www.kucoin.top\",\n      \"www.kucoin.plus\",\n      \"www.kucoin.work\",\n      \"kucoin.zendesk.com\",\n      \"www.kucoinpre.com\"\n    ],\n    \"htmlName\":\"index_eu.html\",\n    \"defaultLanPath\":\"en\"\n}"
+        }
+    ]
+}

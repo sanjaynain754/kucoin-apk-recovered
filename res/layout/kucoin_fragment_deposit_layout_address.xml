@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kubi.resources.widget.round.widget.RoundLinearLayout android:orientation="vertical" android:id="@id/layout_deposit_address" android:background="@drawable/asset_shape_solid_stroke_cover4_8r" android:paddingBottom="@dimen/spacing_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_16" app:round_corner="@dimen/spacing_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/subIncludeAddress" layout="@layout/kucoin_fragment_deposit_coin_text_address" />
+    <include android:id="@id/subIncludeMemo" layout="@layout/kucoin_fragment_deposit_memo" />
+    <include android:id="@id/subIncludeAccount" layout="@layout/kucoin_fragment_deposit_account" />
+</com.kubi.resources.widget.round.widget.RoundLinearLayout>

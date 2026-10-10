@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_bizControl_fail_icon" android:layout_width="148.0dip" android:layout_height="148.0dip" android:layout_marginTop="92.0dip" android:src="@drawable/ic2_common_warning" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="18.0sp" android:textColor="@color/c_text" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_bizControl_fail_content" android:paddingLeft="32.0dip" android:paddingRight="32.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/biz_control_config_failed_hint" android:lineSpacingMultiplier="1.3" android:fontFamily="@font/semi" android:paddingHorizontal="32.0dip" />
+    <com.kubi.resources.widget.button.KcPrimaryButton android:layout_gravity="center" android:id="@id/btn_bizControl_fail_refresh" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/biz_control_config_failed_refresh" android:paddingHorizontal="24.0dip" style="@style/styleButton40" />
+</LinearLayout>

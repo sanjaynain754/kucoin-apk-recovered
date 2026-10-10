@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:src="@drawable/ic2_common_empty" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text40" android:gravity="center" android:id="@id/empty_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_24" android:layout_marginRight="@dimen/spacing_24" android:layout_marginBottom="@dimen/spacing_16" android:text="@string/kc_asset_book_without_collection_tip" android:fontFamily="@font/regular" android:layout_marginHorizontal="@dimen/spacing_24" />
+</LinearLayout>

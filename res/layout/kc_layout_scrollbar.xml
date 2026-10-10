@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="@dimen/ui_title_bar_scroll_height" app:elevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.bar.CollapsingCenterToolbarLayout android:id="@id/toolBarLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:collapsedTitleGravity="center_horizontal" app:expandedTitleMarginStart="@dimen/ui_page_startend_space" app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolBar" android:layout_width="fill_parent" android:layout_height="@dimen/ui_title_bar_height" app:layout_collapseMode="pin" app:navigationIcon="@drawable/ic2_arrow_left2_20" app:navigationIconTint="@color/c_text" app:titleTextColor="@color/c_text" />
+    </com.kubi.resources.widget.bar.CollapsingCenterToolbarLayout>
+</com.google.android.material.appbar.AppBarLayout>

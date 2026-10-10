@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_segment_main" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.KcTradeNumAbInputView android:id="@id/et_price_min" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <com.kubi.resources.widget.KcTradeNumAbInputView android:id="@id/et_price_max" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <com.kubi.resources.widget.KcTradeNumAbInputView android:id="@id/et_order_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <com.kubi.resources.widget.TradeInputLayoutProxy android:id="@id/et_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/fl_distribution_card" android:background="@drawable/shape_cover4_8r" android:paddingLeft="6.0dip" android:paddingTop="8.0dip" android:paddingRight="6.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:paddingHorizontal="6.0dip" android:paddingVertical="8.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_distribution_row" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.resources.widget.DashTextView android:textSize="11.0sp" android:textColor="@color/c_text40" android:ellipsize="end" android:id="@id/tv_distribution_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/kumex_segment_quantity_allocation" android:maxLines="1" android:layout_weight="1.0" app:fontFamily="@font/regular" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="11.0sp" android:textColor="@color/c_text" android:ellipsize="end" android:gravity="end|center" android:id="@id/tv_distribution_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/kumex_segment_average" android:maxLines="1" android:layout_weight="1.0" android:drawableEnd="@drawable/ic2_arrow_right_12" app:drawableTint="@color/c_text40" app:fontFamily="@font/regular" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_avg_price_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <com.kubi.resources.widget.DashTextView android:textSize="11.0sp" android:textColor="@color/c_text40" android:ellipsize="end" android:id="@id/tv_avg_price_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/kumex_segment_average_entry_price" android:maxLines="1" android:layout_weight="1.0" app:fontFamily="@font/regular" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="11.0sp" android:textColor="@color/c_text" android:gravity="end|center" android:id="@id/tv_avg_price_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="--" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="6.0dip" app:autoSizeMaxTextSize="@dimen/font_11" app:autoSizeMinTextSize="1.0sp" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" app:fontFamily="@font/regular" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/include_core_trade_input_base_quote_value" />
+</LinearLayout>

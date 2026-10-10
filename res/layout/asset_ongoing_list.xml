@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="com.kubi.assets.overview.CustomLinearLayoutManager" />
+    <RelativeLayout android:id="@id/header" android:background="@color/c_overlay" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="fill_parent" android:layout_height="42.0dip" android:paddingHorizontal="@dimen/spacing_16">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:fontFamily="@font/regular" />
+        <ImageView android:id="@id/ivArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:tint="@color/c_icon40" />
+        <View android:id="@id/viewDivider" android:background="@color/c_divider8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.kubi.assets.overview.ongoing.OnGoingRecommendView android:id="@id/recommendView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/loadLayout" android:layout_width="fill_parent" android:layout_height="400.0dip">
+        <View android:layout_gravity="center" android:id="@id/loadView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

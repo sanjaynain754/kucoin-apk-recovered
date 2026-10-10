@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="16.0dip" android:paddingTop="14.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.CoinAvatarView android:id="@id/iconAvatar" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@color/primary" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:id="@id/currencyLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:textAlignment="viewStart" android:layout_marginStart="8.0dip" app:layout_constraintBottom_toBottomOf="@id/iconAvatar" app:layout_constraintEnd_toStartOf="@id/statusLabel" app:layout_constraintStart_toEndOf="@id/iconAvatar" app:layout_constraintTop_toTopOf="@id/iconAvatar" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/statusLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/regular" app:drawableTint="@color/secondary" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/iconAvatar" />
+    <View android:background="@color/c_divider8" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="14.0dip" app:layout_constraintTop_toBottomOf="@id/content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

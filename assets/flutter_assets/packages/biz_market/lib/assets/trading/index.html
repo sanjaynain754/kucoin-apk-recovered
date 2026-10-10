@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>TradingView</title>
+    <script src="charting_library/charting_library.standalone.js"></script>
+    <script src="datafeeds/udf/dist/bundle.js"></script>
+    <style>
+      html, body { 
+        margin: 0; 
+        padding: 0; 
+        height: 100%; 
+        background-color: #121212;
+      }
+      html.light-theme, body.light-theme { 
+        background-color: #ffffff;
+      }
+      #tv_chart_container { 
+        height: 100%;
+        background-color: inherit;
+      }
+      
+      /* TradingView 工具栏背景色自定义 - Dark 模式 */
+      .chart-controls-bar,
+      .drawing-toolbar,
+      .layout__area--left,
+      .layout__area--right {
+        background-color: #121212 !important;
+      }
+      
+      /* TradingView 工具栏背景色自定义 - Light 模式 */
+      html.light-theme .chart-controls-bar,
+      html.light-theme .drawing-toolbar,
+      html.light-theme .layout__area--left,
+      html.light-theme .layout__area--right,
+      body.light-theme .chart-controls-bar,
+      body.light-theme .drawing-toolbar,
+      body.light-theme .layout__area--left,
+      body.light-theme .layout__area--right {
+        background-color: #FFFFFF !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tv_chart_container"></div>
+    <script>
+      let tvWidget = null;
+      // 实时数据订阅管理：保存 subscribeBars 的 callback 引用
+      let realtimeSubscriptions = {}; // {listenerGuid: {callback, symbol, resolution}}
+      let currentSymbol = null;
+      let currentResolution = null;
+
+      // 自定义 Datafeed Wrapper：拦截 subscribeBars 并保存 callback
+      function createRealtimeDatafeed(baseFeed) {
+        return {
+          onReady: (callback) => baseFeed.onReady(callback),
+          searchSymbols: (userInput, exchange, symbolType, onResult) => 
+            baseFeed.searchSymbols(userInput, exchange, symbolType, onResult),
+          resolveSymbol: (symbolName, onResolve, onError, extension) => 
+            baseFeed.resolveSymbol(symbolName, onResolve, onError, extension),
+          getBars: (symbolInfo, resolution, periodParams, onResult, onError) => 
+            baseFeed.getBars(symbolInfo, resolution, periodParams, onResult, onError),
+          
+          // 拦截 subscribeBars，保存 callback 用于实时更新
+          subscribeBars: (symbolInfo, resolution, onTick, listenerGuid, onResetCacheNeededCallback) => {
+            currentSymbol = symbolInfo.name || symbolInfo.ticker;
+            currentResolution = resolution;
+            realtimeSubscriptions[listenerGuid] = {
+              callback: onTick,
+              symbol: currentSymbol,
+              resolution: resolution,
+              resetCache: onResetCacheNeededCallback
+            };
+            // Flutter KChartViewModel 已通过 updateRealtimeBar 把 WebSocket K 线推给上述 callback。
+            // 不再委托 UDFCompatibleDatafeed.subscribeBars：它会启动 DataPulseProvider，
+            // 每 10 秒额外调用一次 history，周期切换后会形成与 Flutter 推送并行的重复数据源。
+            // 同步订阅生命周期给 Flutter 宿主。
+            sendMsg('subscribeBars', {symbol: currentSymbol, resolution: resolution, guid: listenerGuid});
+          },
+          
+          // 拦截 unsubscribeBars，清理 callback
+          unsubscribeBars: (listenerGuid) => {
+            delete realtimeSubscriptions[listenerGuid];
+            sendMsg('unsubscribeBars', {guid: listenerGuid});
+          },
+          
+          getServerTime: baseFeed.getServerTime ? (callback) => baseFeed.getServerTime(callback) : undefined,
+        };
+      }
+      
+      // 实时更新K线数据：由 Flutter 调用
+      // bar 格式: {time: 秒级时间戳, open, high, low, close, volume}
+      function updateRealtimeBar(bar) {
+        if (!bar || !bar.time) return;
+        
+        // 遍历所有订阅，调用对应的 callback
+        Object.values(realtimeSubscriptions).forEach(sub => {
+          if (sub.callback) {
+            try {
+              sub.callback({
+                time: bar.time * 1000, // TradingView 需要毫秒级时间戳
+                open: bar.open,
+                high: bar.high,
+                low: bar.low,
+                close: bar.close,
+                volume: bar.volume || 0
+              });
+            } catch (e) {
+              // 忽略回调错误
+            }
+          }
+        });
+      }
+
+      function sendMsg(type, data) {
+        if (window.flutter_inappwebview && window.flutter_inappwebview.callHandler) {  
+          window.flutter_inappwebview.callHandler('kc_tradingview', JSON.stringify({type, ...data}));
+        }
+      }
+
+      function disableTradingViewLinks() {
+        let found = false;
+        document.querySelectorAll('iframe').forEach(iframe => {
+          try {
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            if (iframeDoc && iframeDoc.body && !iframeDoc.body.dataset.linkDisabled) {
+              iframeDoc.body.dataset.linkDisabled = 'true';
+              found = true;
+              const processLinks = () => {
+                iframeDoc.querySelectorAll('a[href*="tradingview.com"]').forEach(link => {
+                  if (!link.dataset.hrefRemoved) {
+                    link.dataset.hrefRemoved = 'true';
+                    link.removeAttribute('href');
+                    link.style.cursor = 'pointer';
+                  }
+                });
+              };
+              processLinks();
+              setInterval(processLinks, 1000);
+              iframe.contentWindow.open = () => null;
+            }
+          } catch (_) {}
+        });
+        return found;
+      }
+
+      function setThemeClass(theme) {
+        const action = theme === 'Light' ? 'add' : 'remove';
+        document.documentElement.classList[action]('light-theme');
+        document.body.classList[action]('light-theme');
+        
+        // 注入工具栏背景色 CSS 到 TradingView iframe
+        injectToolbarStyles(theme);
+      }
+
+      var kcTvToolbarBg = { Dark: '#121212', Light: '#FFFFFF' };
+      function mergeKcTvToolbarBg(cfg) {
+        if (!cfg) return;
+        if (cfg.toolbarBgDark) kcTvToolbarBg.Dark = cfg.toolbarBgDark;
+        if (cfg.toolbarBgLight) kcTvToolbarBg.Light = cfg.toolbarBgLight;
+      }
+
+      // 向 TradingView iframe 注入工具栏背景色样式（配色来自 Flutter [kuTheme.darkOverLay]）
+      function injectToolbarStyles(theme) {
+        const bgColor = theme === 'Dark' ? kcTvToolbarBg.Dark : kcTvToolbarBg.Light;
+        const cssId = 'kc-toolbar-theme-style';
+        
+        document.querySelectorAll('iframe').forEach(iframe => {
+          try {
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            if (iframeDoc && iframeDoc.head) {
+              // 移除旧的样式
+              const existingStyle = iframeDoc.getElementById(cssId);
+              if (existingStyle) {
+                existingStyle.remove();
+              }
+              
+              // 添加新的样式
+              const style = iframeDoc.createElement('style');
+              style.id = cssId;
+              style.textContent = `
+                .chart-controls-bar,
+                .drawing-toolbar,
+                .layout__area--left,
+                .layout__area--right,
+                .chart-widget {
+                  background-color: ${bgColor} !important;
+                }
+              `;
+              iframeDoc.head.appendChild(style);
+            }
+          } catch (e) {
+            // iframe 访问受限，忽略
+          }
+        });
+      }
+
+      // Flutter locale 到 TradingView locale 的映射
+      function mapLocale(flutterLocale) {
+        if (!flutterLocale) return 'en';
+        const localeStr = flutterLocale.toLowerCase().replace('-', '_');
+        // TradingView 支持的 locale: ar, zh, cs, da_DK, nl_NL, en, et_EE, fr, de, el, he_IL, hu_HU, id_ID, it, ja, ko, fa, pl, pt, ro, ru, sk_SK, es, sv, th, tr, vi, no, ms_MY, zh_TW
+        const localeMap = {
+          'zh_cn': 'zh', 'zh_hans': 'zh', 'zh': 'zh',
+          'zh_tw': 'zh_TW', 'zh_hant': 'zh_TW', 'zh_hk': 'zh_TW',
+          'en_us': 'en', 'en_gb': 'en', 'en': 'en',
+          'ja_jp': 'ja', 'ja': 'ja',
+          'ko_kr': 'ko', 'ko': 'ko',
+          'ru_ru': 'ru', 'ru': 'ru',
+          'de_de': 'de', 'de': 'de',
+          'fr_fr': 'fr', 'fr': 'fr',
+          'es_es': 'es', 'es': 'es',
+          'pt_br': 'pt', 'pt_pt': 'pt', 'pt': 'pt',
+          'it_it': 'it', 'it': 'it',
+          'tr_tr': 'tr', 'tr': 'tr',
+          'vi_vn': 'vi', 'vi': 'vi',
+          'th_th': 'th', 'th': 'th',
+          'id_id': 'id_ID', 'id': 'id_ID',
+          'ms_my': 'ms_MY', 'ms': 'ms_MY',
+          'ar_sa': 'ar', 'ar': 'ar',
+          'fa_ir': 'fa', 'fa': 'fa',
+          'pl_pl': 'pl', 'pl': 'pl',
+          'nl_nl': 'nl_NL', 'nl': 'nl_NL',
+          'sv_se': 'sv', 'sv': 'sv',
+          'da_dk': 'da_DK', 'da': 'da_DK',
+          'no_no': 'no', 'no': 'no',
+          'el_gr': 'el', 'el': 'el',
+          'he_il': 'he_IL', 'he': 'he_IL',
+          'hu_hu': 'hu_HU', 'hu': 'hu_HU',
+          'cs_cz': 'cs', 'cs': 'cs',
+          'ro_ro': 'ro', 'ro': 'ro',
+          'sk_sk': 'sk_SK', 'sk': 'sk_SK',
+          'et_ee': 'et_EE', 'et': 'et_EE',
+        };
+        // 先尝试完整匹配，再尝试语言码匹配
+        if (localeMap[localeStr]) return localeMap[localeStr];
+        const langCode = localeStr.split('_')[0];
+        if (localeMap[langCode]) return localeMap[langCode];
+        return 'en'; // 默认英文
+      }
+
+      function initChart(config) {
+        try {
+          const serverUrl = (config && config.feedUrl) || '';
+          const baseFeed = new Datafeeds.UDFCompatibleDatafeed(serverUrl + '/datafeeds');
+          const datafeed = createRealtimeDatafeed(baseFeed);  // 使用自定义 wrapper
+          
+          const theme = (config && config.theme) || 'Dark';
+          mergeKcTvToolbarBg(config);
+          
+          setThemeClass(theme);
+          
+          const darkOverrides = {
+            'paneProperties.background': '#121212',
+            'paneProperties.backgroundType': 'solid',
+            'paneProperties.vertGridProperties.color': '#363636',
+            'paneProperties.horzGridProperties.color': '#363636',
+            'scalesProperties.backgroundColor': '#121212',
+            'paneProperties.backgroundGradientStartColor': '#121212',
+            'paneProperties.backgroundGradientEndColor': '#121212',
+            'paneProperties.candleStyle.upColor': '#F65454',  // 上涨颜色（红色）- 红涨绿跌
+            'paneProperties.candleStyle.downColor': '#3CBC6C',  // 下跌颜色（绿色）- 红涨绿跌
+          };
+          
+          const lightOverrides = {
+            'paneProperties.background': '#FFFFFF',
+            'paneProperties.backgroundType': 'solid',
+            'paneProperties.candleStyle.upColor': '#F65454',  // 上涨颜色（红色）- 红涨绿跌
+            'paneProperties.candleStyle.downColor': '#3CBC6C',  // 下跌颜色（绿色）- 红涨绿跌
+          };
+          
+          // 指标样式配置：解决 EMA/MA 显示 n/a 的问题
+          const studiesOverrides = {
+            // MA (Moving Average) 指标配置
+            'moving average.ma.color': '#2196F3',
+            'moving average.ma.linewidth': 2,
+            'moving average.precision': 'default',  // 使用默认精度，避免 n/a
+            
+            // EMA (Exponential Moving Average) 指标配置
+            'moving average exponential.plot.color': '#FF6B00',
+            'moving average exponential.plot.linewidth': 2,
+            'moving average exponential.precision': 'default',  // 使用默认精度，避免 n/a
+            
+            // 通用指标精度设置：确保所有指标都有有效的精度配置
+            'overlay.precision': 'default',
+          };
+          
+          tvWidget = new TradingView.widget({
+            symbol: (config && config.symbol) || 'BTC-USDT',
+            interval: (config && config.interval) || '1D',
+            container: 'tv_chart_container',  // 使用container而非container_id
+            width: '100%',
+            height: '100%',
+            datafeed: datafeed,
+            library_path: './charting_library/',
+            locale: mapLocale(config && config.locale),  // 动态 locale
+            fullscreen: false,
+            autosize: true,
+            theme: theme,
+            toolbar_bg: theme === 'Dark' ? kcTvToolbarBg.Dark : kcTvToolbarBg.Light,
+            overrides: theme === 'Dark' ? darkOverrides : lightOverrides,
+            studies_overrides: studiesOverrides,  // 添加指标配置，解决 n/a 问题
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+            disabled_features: [
+              'header_widget',
+              'timeframes_toolbar',
+              'pane_context_menu',
+              'scales_context_menu',
+              'go_to_date',
+              'display_market_status',  // 隐藏右上角的数据状态指示器(绿点)
+            ],
+            enabled_features: [
+              'study_templates',
+            ],
+          });
+          
+          
+          tvWidget.onChartReady(() => {
+            const tryDisable = () => { if (!disableTradingViewLinks()) setTimeout(tryDisable, 500); };
+            tryDisable();
+            
+            // 强制应用主题覆盖设置（解决 localStorage 缓存问题）
+            const currentTheme = theme;
+            const forceOverrides = currentTheme === 'Dark' ? {
+              'paneProperties.background': '#121212',
+              'paneProperties.backgroundType': 'solid',
+              'paneProperties.vertGridProperties.color': '#363636',
+              'paneProperties.horzGridProperties.color': '#363636',
+              'scalesProperties.backgroundColor': '#121212',
+              'paneProperties.backgroundGradientStartColor': '#121212',
+              'paneProperties.backgroundGradientEndColor': '#121212',
+              'scalesProperties.fontSize': 11,
+              'paneProperties.candleStyle.upColor': '#F65454',  // 上涨颜色（红色）- 红涨绿跌
+              'paneProperties.candleStyle.downColor': '#3CBC6C',  // 下跌颜色（绿色）- 红涨绿跌
+            } : {
+              'paneProperties.background': '#FFFFFF',
+              'paneProperties.backgroundType': 'solid',
+              'scalesProperties.fontSize': 11,
+              'paneProperties.candleStyle.upColor': '#F65454',  // 上涨颜色（红色）- 红涨绿跌
+              'paneProperties.candleStyle.downColor': '#3CBC6C',  // 下跌颜色（绿色）- 红涨绿跌
+            };
+            tvWidget.applyOverrides(forceOverrides);
+            
+            // 设置右侧价格栏宽度（通过API调整）
+            try {
+              const chart = tvWidget.activeChart();
+              if (chart) {
+                chart.onIntervalChanged().subscribe(null, () => {
+                  // 在图表初始化后设置刻度栏宽度
+                  setTimeout(() => {
+                    const panes = chart.getPanes();
+                    panes.forEach(pane => {
+                      const rightPriceScale = pane.getRightPriceScale();
+                      if (rightPriceScale) {
+                        rightPriceScale.setAutoScale(true);
+                      }
+                    });
+                  }, 100);
+                });
+              }
+            } catch (e) {
+              // ignore
+            }
+            
+            // 移除主图中所有默认的Volume指标
+            const allStudies = tvWidget.activeChart().getAllStudies();
+            allStudies.forEach(study => {
+              if (study.name === 'Volume') {
+                tvWidget.activeChart().removeEntity(study.id);
+              }
+            });
+            
+            // 在下方独立区域创建Volume指标
+            tvWidget.activeChart().createStudy('Volume', false, false, undefined, undefined, {
+              'volume.volume.color.0': '#eb4d5c',
+              'volume.volume.color.1': '#53b987',
+              'volume.volume.transparency': 0,  // 完全不透明,正常显示
+            });
+            
+            // 图表初始化完成后注入工具栏样式
+            setTimeout(() => {
+              injectToolbarStyles(currentTheme);
+            }, 200);
+            
+            // 订阅画线和指标变更事件，触发自动保存
+            function _trySubscribeTv(eventName, handler) {
+              try {
+                tvWidget.subscribe(eventName, handler);
+              } catch (e) {}
+            }
+            _trySubscribeTv('drawing_event', function() { _triggerSave(); });
+            _trySubscribeTv('study_event', function(entityId, eventType) {
+              _triggerSave();
+              _detectAndNotifyNewStudy();
+            });
+            // 仅改绘图文字/样式等属性时，TV 往往不派发 drawing_event；依赖库内 autosave 信号与撤销栈
+            _trySubscribeTv('onAutoSaveNeeded', function() { saveChartNow(); });
+            _trySubscribeTv('undo', function() { _triggerSave(); });
+            _trySubscribeTv('redo', function() { _triggerSave(); });
+            _trySubscribeTv('undo_redo_state_changed', function() { _triggerSave(); });
+            _trySubscribeTv('edit_object_dialog', function() { _triggerSave(); });
+            _trySubscribeTv('study_properties_changed', function() { _triggerSave(); });
+            // 尝试订阅 study 事件（部分 SDK 版本可能不支持）
+            try {
+              tvWidget.subscribe('study', function(params) {
+                if (_isInitialSetup) return; // 初始化阶段（如默认 Volume）静默
+                if (!_isLoadingChart && params && params.value) {
+                  _studyToastSent = true; // 先标记，防止 study_event 重复发送
+                  var studyName = params.value;
+                  _getLocalizedStudyName(studyName, function(localizedName) {
+                    sendMsg('studyAdded', { name: localizedName });
+                  });
+                }
+              });
+            } catch (e2) {}
+
+            // 初始化已知指标快照，用于后续检测新增
+            _snapshotKnownStudies();
+
+            sendMsg('initialized', {success: true});
+
+            // 给 TV 内部异步派发的初始化 study 事件留一个静默窗口；之后用户主动添加指标才会弹 toast。
+            setTimeout(function() { _isInitialSetup = false; }, 800);
+          });
+        } catch (e) {
+          sendMsg('error', {message: e.toString(), stack: e.stack});
+        }
+      }
+
+      function changeSymbol(symbol) {
+        if (tvWidget && tvWidget.activeChart) {
+          tvWidget.activeChart().setSymbol(symbol, function() {
+            sendMsg('symbolChanged', {symbol: symbol});
+          });
+        }
+      }
+
+      function changeInterval(interval) {
+        if (tvWidget && tvWidget.activeChart) {
+          tvWidget.activeChart().setResolution(interval, function() {
+            sendMsg('intervalChanged', { interval: tvWidget.activeChart().resolution() });
+          });
+        }
+      }
+
+      // ========== 画线/指标保存与恢复 ==========
+      let _saveDebounceTimer = null;
+      let _isLoadingChart = false;  // loadChart 期间禁止自动保存
+      var _knownStudyIds = new Set(); // 已知指标 ID，用于检测新增
+      var _studyToastSent = false;    // 防止 study + study_event 双重发送
+      // 初始化静默期：onChartReady 内部会主动 createStudy('Volume') 把成交量移到独立面板，
+      // 该操作派发的 study/study_event 异步到达 → 不应作为「用户添加指标」弹 toast。
+      // onChartReady 末尾会延迟将其置为 false，恢复正常用户操作弹 toast。
+      var _isInitialSetup = true;
+
+      // 从 tvWidget.save() 的 chart state 中查找指标的 description_localized（TV 内置本地化名）
+      function _extractLocalizedStudyFromState(state, studyInternalName) {
+        try {
+          var charts = state && state.charts;
+          if (!charts || !charts.length) return null;
+          var panes = charts[0].panes;
+          if (!panes) return null;
+          for (var p = 0; p < panes.length; p++) {
+            var sources = panes[p].sources;
+            if (!sources) continue;
+            for (var s = 0; s < sources.length; s++) {
+              var src = sources[s];
+              if (src.type !== 'Study' || !src.state) continue;
+              var st = src.state;
+              if (st.name === studyInternalName || st.shortId === studyInternalName ||
+                  (st.id && st.id.indexOf(studyInternalName) === 0)) {
+                return st.description_localized || st.description || studyInternalName;
+              }
+            }
+          }
+        } catch (e) {}
+        return null;
+      }
+
+      // subscribe('study') 瞬间 save 快照里可能尚无 description_localized（TV createStudy 返回 Promise，
+      // 该字段要等 study 数据加载完才写入；实测 ~300-1000ms）。
+      // 这里短时重试覆盖该窗口：命中即返回，未命中（极端慢）最终 fallback 英文 study 名。
+      function _getLocalizedStudyName(studyInternalName, callback) {
+        var maxAttempts = 10;
+        var delayMs = 200;
+        function tryAttempt(attemptIndex) {
+          try {
+            tvWidget.save(function(state) {
+              try {
+                var localized = _extractLocalizedStudyFromState(state, studyInternalName);
+                if (localized != null) {
+                  callback(localized);
+                  return;
+                }
+                if (attemptIndex + 1 < maxAttempts) {
+                  setTimeout(function() { tryAttempt(attemptIndex + 1); }, delayMs);
+                } else {
+                  callback(studyInternalName);
+                }
+              } catch (e) {
+                callback(studyInternalName);
+              }
+            });
+          } catch (e) {
+            callback(studyInternalName);
+          }
+        }
+        tryAttempt(0);
+      }
+
+      // 通过 study_event 检测新增指标（备选方案，防止 subscribe('study') 不触发）
+      function _detectAndNotifyNewStudy() {
+        if (_isLoadingChart) return;
+        if (_isInitialSetup) return; // 初始化阶段（如默认 Volume）静默
+        // 防重：如果 subscribe('study') 已经发了 toast，跳过
+        if (_studyToastSent) { _studyToastSent = false; return; }
+        try {
+          var studies = tvWidget.activeChart().getAllStudies();
+          var currentIds = new Set(studies.map(function(s) { return s.id; }));
+          for (var i = 0; i < studies.length; i++) {
+            if (!_knownStudyIds.has(studies[i].id)) {
+              var englishName = studies[i].name || '';
+              if (englishName) {
+                _getLocalizedStudyName(englishName, function(localizedName) {
+                  sendMsg('studyAdded', { name: localizedName });
+                });
+              }
+              break;
+            }
+          }
+          _knownStudyIds = currentIds;
+        } catch(e) {}
+      }
+
+      // 初始化已知指标快照（在 onChartReady 后调用）
+      function _snapshotKnownStudies() {
+        try {
+          var studies = tvWidget.activeChart().getAllStudies();
+          _knownStudyIds = new Set(studies.map(function(s) { return s.id; }));
+        } catch(e) {}
+      }
+
+
+      function _triggerSave() {
+        if (_isLoadingChart) return; // loadChart 期间不保存
+        if (_saveDebounceTimer) clearTimeout(_saveDebounceTimer);
+        _saveDebounceTimer = setTimeout(() => {
+          if (!tvWidget || !tvWidget.activeChart) return;
+          tvWidget.save(function(state) {
+            sendMsg('chartSaved', { state: JSON.stringify(state) });
+          });
+        }, 2000);
+      }
+
+      function saveChartNow() {
+        if (!tvWidget || !tvWidget.activeChart) return;
+        if (_saveDebounceTimer) clearTimeout(_saveDebounceTimer);
+        tvWidget.save(function(state) {
+          sendMsg('chartSaved', { state: JSON.stringify(state) });
+        });
+      }
+
+      function loadChart(jsonStr) {
+        if (!tvWidget || !tvWidget.activeChart) {
+          sendMsg('chartLoaded', { success: false, error: 'widget not ready', errorKind: 'widget_not_ready' });
+          return;
+        }
+        try {
+          _isLoadingChart = true;
+          var state;
+          try {
+            state = JSON.parse(jsonStr);
+          } catch (parseErr) {
+            _isLoadingChart = false;
+            sendMsg('chartLoaded', { success: false, error: String(parseErr), errorKind: 'invalid_json' });
+            return;
+          }
+          try {
+            tvWidget.load(state);
+          } catch (loadErr) {
+            _isLoadingChart = false;
+            sendMsg('chartLoaded', { success: false, error: String(loadErr), errorKind: 'load_failed' });
+            return;
+          }
+          _isLoadingChart = false;
+          sendMsg('chartLoaded', { success: true });
+        } catch (e) {
+          _isLoadingChart = false;
+          sendMsg('chartLoaded', { success: false, error: String(e), errorKind: 'load_failed' });
+        }
+      }
+
+      function openIndicators() {
+        if (tvWidget && tvWidget.activeChart) {
+          tvWidget.activeChart().executeActionById('insertIndicator');
+          sendMsg('indicatorsOpened', {});
+        }
+      }
+
+      function openSettings() {
+        if (tvWidget && tvWidget.activeChart) {
+          tvWidget.activeChart().executeActionById('chartProperties');
+          sendMsg('settingsOpened', {});
+        }
+      }
+
+      function openSymbolSearch() {
+        if (tvWidget && tvWidget.activeChart) {
+          tvWidget.activeChart().executeActionById('symbolSearch');
+          sendMsg('symbolSearchOpened', {});
+        }
+      }
+
+      function getChartState() {
+        if (tvWidget && tvWidget.activeChart) {
+          sendMsg('chartState', {
+            symbol: tvWidget.activeChart().symbol(),
+            interval: tvWidget.activeChart().resolution()
+          });
+        }
+      }
+
+      function addStudy(studyName) {
+        if (tvWidget && tvWidget.activeChart) {
+          tvWidget.activeChart().createStudy(studyName, false, false);
+          _getLocalizedStudyName(studyName, function(localizedName) {
+            sendMsg('studyAdded', { name: localizedName });
+          });
+        }
+      }
+
+      function removeStudy(studyName) {
+        if (tvWidget && tvWidget.activeChart) {
+          tvWidget.activeChart().getAllStudies().forEach(study => {
+            if (study.name === studyName) tvWidget.activeChart().removeEntity(study.id);
+          });
+          sendMsg('studyRemoved', {studyName: studyName});
+        }
+      }
+
+      function removeAllStudies() {
+        if (tvWidget && tvWidget.activeChart) {
+          tvWidget.activeChart().removeAllStudies();
+          sendMsg('allStudiesRemoved', {});
+        }
+      }
+
+      function changeTheme(payload) {
+        if (!tvWidget) return;
+        let theme;
+        if (typeof payload === 'string') {
+          theme = payload;
+        } else if (payload && typeof payload === 'object') {
+          theme = payload.theme || 'Dark';
+          mergeKcTvToolbarBg(payload);
+        } else {
+          return;
+        }
+
+        const darkOverrides = {
+          'paneProperties.background': '#121212',
+          'paneProperties.backgroundType': 'solid',
+          'paneProperties.vertGridProperties.color': '#363636',
+          'paneProperties.horzGridProperties.color': '#363636',
+          'scalesProperties.backgroundColor': '#121212',
+          'paneProperties.backgroundGradientStartColor': '#121212',
+          'paneProperties.backgroundGradientEndColor': '#121212',
+          'scalesProperties.fontSize': 11,
+        };
+
+        const lightOverrides = {
+          'paneProperties.background': '#FFFFFF',
+          'paneProperties.backgroundType': 'solid',
+          'scalesProperties.fontSize': 11,
+        };
+
+        tvWidget.changeTheme(theme, theme === 'Dark' ? darkOverrides : lightOverrides);
+        setThemeClass(theme);
+
+        // 延迟强制应用覆盖设置（确保主题切换后立即生效）
+        setTimeout(() => {
+          if (tvWidget) {
+            tvWidget.applyOverrides(theme === 'Dark' ? darkOverrides : lightOverrides);
+            // 重新注入工具栏样式
+            injectToolbarStyles(theme);
+          }
+        }, 100);
+
+        sendMsg('themeChanged', {theme: theme});
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="start|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="28.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.CoinAvatarView android:id="@id/ivLogo" android:layout_width="14.0dip" android:layout_height="14.0dip" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="13.0sp" android:textColor="@color/c_text60" android:id="@id/tvName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="4.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/itemListHeat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginHorizontal="6.0dip" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:gravity="end" android:id="@id/tvValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</androidx.appcompat.widget.LinearLayoutCompat>

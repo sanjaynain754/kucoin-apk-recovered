@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:clip_background="true" app:round_corner_top_left="@dimen/spacing_20" app:round_corner_top_right="@dimen/spacing_20"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.viewpager2.SlidingTabLayout android:id="@id/actionTab" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:paddingHorizontal="@dimen/spacing_16" app:tl_indicator_color="@color/c_transparent" app:tl_indicator_width_equal_title="false" app:tl_tab_padding="@dimen/spacing_10" app:tl_textBold="SELECT" app:tl_underline_color="@color/c_transparent" style="@style/kc_indicator_radio" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

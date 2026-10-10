@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatCheckBox android:layout_gravity="start|center" android:id="@id/cb_add_fav" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox_button" android:paddingEnd="5.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/c_text" android:ellipsize="end" android:id="@id/tv_trade_pair" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="10.0dip" />
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl" android:layout_width="fill_parent" android:layout_height="42.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <ImageView android:id="@id/ivBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_arrow_left2_20" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:tint="@color/c_text" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <View android:background="@color/primary" android:layout_width="48.0dip" android:layout_height="3.0dip" />
+                <View android:background="@color/primary" android:layout_width="24.0dip" android:layout_height="3.0dip" android:layout_marginStart="4.0dip" />
+                <View android:background="@color/c_cover8" android:layout_width="24.0dip" android:layout_height="3.0dip" />
+                <View android:background="@color/c_cover8" android:layout_width="48.0dip" android:layout_height="3.0dip" android:layout_marginStart="4.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16">
+            <com.kubi.kyc.ui.kycv2.UploadImageView3 android:id="@id/iv_preview" android:layout_width="fill_parent" android:layout_height="242.0dip" android:layout_marginTop="8.0dip" />
+            <TextView android:textSize="@dimen/font_24" android:textColor="@color/c_text" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/kyc_caputure_frontsure" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="4.0dip">
+                <View android:background="@drawable/shape_oval_icon60" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+                <TextView android:textColor="@color/c_text60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kyc_caputure_reviewtip1" android:layout_marginStart="12.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip">
+                <View android:background="@drawable/shape_oval_icon60" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+                <TextView android:textColor="@color/c_text60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kyc_caputure_reviewtip2" android:layout_marginStart="12.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="4.0dip">
+                <View android:background="@drawable/shape_oval_icon60" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+                <TextView android:textColor="@color/c_text60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kyc_caputure_reviewtip3" android:layout_marginStart="12.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="32.0dip" android:layout_marginHorizontal="@dimen/spacing_16">
+        <TextView android:textSize="@dimen/font_18" android:textColor="@color/c_white" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/shape_primary_4r" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/kyc_caputure_ok" />
+        <TextView android:textSize="@dimen/font_18" android:textColor="@color/primary" android:gravity="center" android:id="@id/tv_retake" android:background="@drawable/shape_emphasis12_6r" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="10.0dip" android:text="@string/kyc_caputure_retry" />
+    </LinearLayout>
+</FrameLayout>

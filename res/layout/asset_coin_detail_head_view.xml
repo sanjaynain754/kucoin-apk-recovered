@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/head_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kc_overview_coin_detail_totalvalue" android:fontFamily="@font/regular" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="28.0sp" android:textColor="@color/c_text" android:id="@id/total_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:fontFamily="@font/semi" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/total_legal_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:fontFamily="@font/regular" />
+</LinearLayout>

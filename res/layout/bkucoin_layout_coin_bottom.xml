@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" app:layout_constraintTop_toTopOf="parent" style="@style/kucoin_view_divider" />
+    <ViewSwitcher android:id="@id/switcher" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_convert" android:background="@drawable/shape_emphasis4_6r" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" android:layout_marginEnd="12.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/bkucoin_ic_convert" app:tint="@color/c_icon" />
+                <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coin_convert" android:layout_marginStart="4.0dip" />
+            </LinearLayout>
+            <Button android:textSize="16.0sp" android:textColor="@color/selector_color_for_button" android:id="@id/btn_trade" android:background="@drawable/selector_btn_primary_6r" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/coin_to_trade" android:layout_weight="2.0" />
+        </LinearLayout>
+        <include android:id="@id/countDown" layout="@layout/bkucoin_layout_coin_count_down" />
+    </ViewSwitcher>
+</androidx.constraintlayout.widget.ConstraintLayout>

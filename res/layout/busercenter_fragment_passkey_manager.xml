@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/llPasskeyListArea" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/passkeyRecyclerView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <com.kubi.resources.widget.button.KcPrimaryButton android:layout_gravity="bottom" android:id="@id/btnAddPasskey" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_12" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_12" android:text="@string/passkey_list_action_add" android:layout_marginHorizontal="@dimen/spacing_16" android:layout_marginVertical="@dimen/spacing_12" style="@style/styleButton40" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llPasskeyEmptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:paddingHorizontal="@dimen/spacing_16">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="221.0dip" android:layout_height="132.0dip" android:layout_marginTop="@dimen/spacing_10" android:layout_marginBottom="@dimen/spacing_10" android:src="@mipmap/passkey_empty" android:layout_marginVertical="@dimen/spacing_10" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_20" android:textColor="@color/c_text60" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:text="@string/passkey_list_guide_tip" android:fontFamily="@font/semi" />
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/spacing_32" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/shape_border_emphasis12_12r" android:paddingLeft="@dimen/spacing_20" android:paddingTop="@dimen/spacing_32" android:paddingRight="@dimen/spacing_20" android:paddingBottom="@dimen/spacing_32" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_20" android:paddingVertical="@dimen/spacing_32">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/imgFingerPrint" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/ic_fingerprint" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:id="@id/tvFingerPrint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passkey_guide_tip_first_title" android:fontFamily="@font/semi" android:layout_marginStart="@dimen/spacing_12" android:layout_toEndOf="@id/imgFingerPrint" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:text="@string/passkey_guide_tip_first_subtitle" android:layout_below="@id/tvFingerPrint" android:layout_alignStart="@id/tvFingerPrint" />
+                </RelativeLayout>
+                <Space android:layout_width="fill_parent" android:layout_height="@dimen/spacing_32" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/imgDevice" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/ic_device" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:id="@id/tvDevice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passkey_guide_tip_second_title" android:fontFamily="@font/semi" android:layout_marginStart="@dimen/spacing_12" android:layout_toEndOf="@id/imgDevice" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:text="@string/passkey_guide_tip_second_subtitle" android:layout_below="@id/tvDevice" android:layout_alignStart="@id/tvDevice" />
+                </RelativeLayout>
+                <Space android:layout_width="fill_parent" android:layout_height="@dimen/spacing_32" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/imgSafe" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/ic_safe" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:id="@id/tvSafe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passkey_guide_tip_third_title" android:fontFamily="@font/semi" android:layout_marginStart="@dimen/spacing_12" android:layout_toEndOf="@id/imgSafe" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:text="@string/passkey_guide_tip_third_subtitle" android:layout_below="@id/tvSafe" android:layout_alignStart="@id/tvSafe" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/spacing_16" />
+            <com.kubi.resources.widget.BaseTextView android:textColor="@color/brandGreen" android:layout_gravity="center_horizontal" android:id="@id/tvLearnMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passkey_list_more" android:fontFamily="@font/medium" />
+        </LinearLayout>
+        <com.kubi.resources.widget.button.KcPrimaryButton android:layout_gravity="bottom" android:id="@id/btnCreatePasskey" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_12" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_12" android:text="@string/passkey_list_action_creat" android:drawablePadding="@dimen/spacing_4" android:drawableStart="@drawable/ic_plus_16" android:layout_marginHorizontal="@dimen/spacing_16" android:layout_marginVertical="@dimen/spacing_12" style="@style/styleButton40" />
+    </LinearLayout>
+</FrameLayout>

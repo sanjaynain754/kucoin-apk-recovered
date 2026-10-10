@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/copyTradingUserCard" android:layout_width="fill_parent" style="@style/HomeWidgetCard.Small"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_bg_home_widget" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.kubi.resources.widget.bingoogolapple.bgabanner.BGABanner android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="fill_parent" app:banner_aspectRatio="0.0" app:banner_indicatorGravity="left" app:banner_pointAutoPlayAble="false" app:banner_pointContainerBackground="@android:color/transparent" app:banner_pointDrawable="@drawable/kucoin_selector_home_indicator_new" app:banner_pointLeftRightMargin="1.5dip" app:banner_pointRealContainerPadding="16.0dip" app:banner_pointTopBottomMargin="12.0dip" />
+        <com.kubi.resources.widget.ReloadRefreshView android:id="@id/reloadView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.kubi.resources.widget.bizshimmer.HomeShimmerHalfCard android:id="@id/layoutShimmer" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

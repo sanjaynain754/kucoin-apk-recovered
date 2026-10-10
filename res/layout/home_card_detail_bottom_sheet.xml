@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/shape_bottom_background_bg" android:paddingTop="24.0dip" android:paddingBottom="20.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="680.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_18" android:textColor="@color/c_text" android:ellipsize="end" android:gravity="start" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="320.0dip" android:maxLines="1" android:fontFamily="@font/medium" />
+        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/close" android:background="@mipmap/home_card_edit_close" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_12" android:textColor="@color/emphasis48" android:ellipsize="end" android:gravity="start" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:maxLines="3" android:fontFamily="@font/regular" android:layout_marginStart="16.0dip" android:layout_marginEnd="28.0dip" />
+    <com.kubi.home.v2.container.ui.HandleTouchRecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/card_indicator" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="28.0dip" android:layout_marginHorizontal="16.0dip" />
+    <com.kubi.resources.widget.button.KcSecondaryButton android:layout_gravity="bottom" android:id="@id/tv_confirm" android:layout_width="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/confirm" android:layout_marginHorizontal="16.0dip" style="@style/styleButton48" />
+</androidx.appcompat.widget.LinearLayoutCompat>

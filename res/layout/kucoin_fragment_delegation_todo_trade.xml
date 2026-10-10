@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.kubi.resources.widget.SwipeRefreshRecyclerView android:id="@id/m_swipe_recycler_view" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/layoutDelegationGuideLayout" android:visibility="gone" layout="@layout/kucoin_delegation_guide_layout" />
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

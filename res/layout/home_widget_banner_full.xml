@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/bannerCard" android:layout_width="fill_parent" android:layout_height="104.0dip" style="@style/HomeWidgetCard.Small"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_bg_home_widget" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.kubi.home.v2.container.ui.view.HomeBannerView android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="fill_parent" app:banner_aspectRatio="0.0" app:banner_indicatorGravity="top|right" app:banner_isNumberIndicator="true" app:banner_numberIndicatorTextColor="@color/c_text30" app:banner_numberIndicatorTextSize="11.449982sp" app:banner_pageChangeDuration="1000" app:banner_placeholder_left_right_margin="8.0dip" app:banner_pointAutoPlayAble="true" app:banner_pointAutoPlayInterval="5000" app:banner_pointContainerBackground="@color/c_transparent" app:banner_pointRealContainerPadding="16.0dip" app:banner_pointTopBottomMargin="12.0dip" />
+        <com.kubi.resources.widget.ReloadRefreshView android:id="@id/reloadView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

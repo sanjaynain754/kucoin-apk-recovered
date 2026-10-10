@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutRvItem" android:background="@drawable/selector_darkoverlay_click" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginHorizontal="1.0dip" android:paddingHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text30" android:id="@id/tvSort" android:layout_width="22.0dip" android:layout_height="wrap_content" android:fontFamily="@font/medium" />
+    <com.kubi.resources.widget.TradePairNameTextView android:id="@id/tvTradePair" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="10.0sp" android:textColor="@color/primary" android:gravity="center" android:id="@id/tv_lever" android:background="@drawable/search_shape_lever_border_green" android:visibility="gone" android:layout_width="wrap_content" android:singleLine="true" android:fontFamily="@font/medium" android:paddingEnd="3.0dip" android:layout_marginStart="4.0dip" style="@style/styleCommonLabel" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="end|center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.kubi.resources.widget.BaseTextView android:textSize="15.0sp" android:textColor="@color/c_text" android:id="@id/tvPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@font/medium" />
+        <com.kubi.resources.widget.ShowHideTextView android:textSize="12.0sp" android:textColor="@color/primary" android:id="@id/tvRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" android:fontFamily="@font/medium" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/loading" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="@dimen/spacing_4" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_gravity="center_horizontal" android:id="@id/more" android:paddingLeft="@dimen/spacing_10" android:paddingTop="@dimen/spacing_4" android:paddingRight="@dimen/spacing_10" android:paddingBottom="@dimen/spacing_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kc_platform_search_more" android:drawablePadding="@dimen/spacing_4" android:drawableEnd="@drawable/ic_arrow_down_12" android:fontFamily="@font/regular" android:layout_marginStart="8.0dip" android:paddingHorizontal="@dimen/spacing_10" android:paddingVertical="@dimen/spacing_4" app:drawableTint="@color/c_text40" />
+</FrameLayout>

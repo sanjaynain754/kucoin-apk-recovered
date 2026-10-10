@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/internalRevolutPay_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/internalRevolutPay_background" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="8.0dip">
+        <com.revolut.revolutpay.ui_kit.widget.SearchNavBar android:id="@id/internal_picker_searchNavBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/internal_picker_recyclerView" android:paddingBottom="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

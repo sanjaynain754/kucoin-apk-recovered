@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="@color/c_cover4" />
+            <size android:height="40.0dip" android:width="40.0dip" />
+            <padding android:left="@dimen/spacing_10" android:top="@dimen/spacing_10" android:right="@dimen/spacing_10" android:bottom="@dimen/spacing_10" />
+        </shape>
+    </item>
+    <item android:gravity="center">
+        <bitmap android:src="@mipmap/ic_widget_icon_02" android:tint="@color/c_text40" android:autoMirrored="true" />
+    </item>
+</layer-list>

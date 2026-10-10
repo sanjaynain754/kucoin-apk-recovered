@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cpiz.android.bubbleview.BubbleFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:padding="8.0dip" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fadeScrollbars="false">
+        <com.cpiz.android.bubbleview.BubbleLinearLayout android:orientation="vertical" android:id="@id/pay_type_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" app:bb_fillColor="@color/c_transparent" />
+    </androidx.core.widget.NestedScrollView>
+</com.cpiz.android.bubbleview.BubbleFrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_trade_sub" android:layout_width="32.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@mipmap/kucoin_icon_sub" app:tint="@color/selector_color_for_trade_up_down" app:tintMode="src_in" />
+    <View android:background="@color/emphasis8" android:layout_width="1.0dip" android:layout_height="12.0dip" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_trade_add" android:layout_width="32.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@mipmap/kucoin_icon_add" app:tint="@color/selector_color_for_trade_up_down" app:tintMode="src_in" />
+</LinearLayout>

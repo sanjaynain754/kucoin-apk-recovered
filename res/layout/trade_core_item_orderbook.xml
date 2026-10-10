@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kubi.resources.widget.OrderBookItemView android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="26.0dip" app:buyColor="?upColor" app:buyProgressColor="?upColor8" app:order_text_size="12.0sp" app:sellColor="?downColor" app:sellProgressColor="?downColor8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.shimmer.SkeletonLayout android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:skeleton_maskCornerRadius="16.0dip">
+        <View android:background="@drawable/shape_shimmer_oval" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+    </com.kubi.resources.shimmer.SkeletonLayout>
+    <com.kubi.resources.shimmer.SkeletonLayout android:id="@id/v1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="8.0dip">
+        <View android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="64.0dip" android:layout_height="16.0dip" />
+    </com.kubi.resources.shimmer.SkeletonLayout>
+    <com.kubi.resources.shimmer.SkeletonLayout android:id="@id/v2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="8.0dip">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="end" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="64.0dip" android:layout_height="16.0dip" android:layout_marginBottom="4.0dip" />
+            <View android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="40.0dip" android:layout_height="10.0dip" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.kubi.resources.shimmer.SkeletonLayout>
+    <com.kubi.resources.shimmer.SkeletonLayout android:id="@id/v3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="32.0dip">
+        <View android:layout_gravity="end" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="73.0dip" android:layout_height="30.0dip" />
+    </com.kubi.resources.shimmer.SkeletonLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

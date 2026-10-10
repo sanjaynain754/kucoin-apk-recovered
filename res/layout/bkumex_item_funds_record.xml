@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.flexbox.FlexboxLayout android:id="@id/flow" android:layout_width="fill_parent" android:layout_height="wrap_content" app:flexWrap="wrap" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="center_vertical" android:id="@id/fundsTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bold" android:layout_marginEnd="4.0dip" />
+        <com.kubi.resources.widget.BaseTextView android:id="@id/trialTag" style="@style/BKuMEX.trialTag" />
+    </com.google.android.flexbox.FlexboxLayout>
+    <com.kubi.resources.widget.ShowHideTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:id="@id/fundsAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bold" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.kubi.resources.widget.ShowHideTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text40" android:id="@id/fundsTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_6" app:layout_constraintStart_toStartOf="@id/flow" app:layout_constraintTop_toBottomOf="@id/flow" />
+    <View android:layout_marginTop="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/fundsTime" style="@style/kucoin_view_divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

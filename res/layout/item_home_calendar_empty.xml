@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/home_calendar_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/ic2_calendar_thin_16" android:contentDescription="@null" android:layout_marginEnd="4.0dip" android:layout_marginHorizontal="4.0dip" app:tint="@color/c_icon60" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_11" android:textColor="@color/c_text40" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/home_calendar_empty_event_hint" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+</LinearLayout>

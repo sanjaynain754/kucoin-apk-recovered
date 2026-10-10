@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/pb_progress_bar" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminateDrawable="@drawable/livelist_load_progress" app:layout_constraintBottom_toTopOf="@id/tv_no_more_data" app:layout_constraintRight_toLeftOf="@id/tv_loading_data" />
+    <TextView android:textColor="@color/white" android:id="@id/tv_loading_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/livelist_loading" app:layout_constraintBottom_toTopOf="@id/tv_no_more_data" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/pb_progress_bar" />
+    <TextView android:textColor="@color/white" android:id="@id/tv_no_more_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/livelist_no_more_data" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

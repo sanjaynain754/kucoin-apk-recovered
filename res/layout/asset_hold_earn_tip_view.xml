@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kubi.sdk.widget.shape.layout.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/root" android:background="@color/brandGreen8" android:paddingLeft="@dimen/spacing_4" android:paddingTop="@dimen/spacing_2" android:paddingRight="@dimen/spacing_4" android:paddingBottom="@dimen/spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_4" android:paddingVertical="@dimen/spacing_2" app:shape_radius="@dimen/spacing_32" app:shape_solidColor="@color/brandGreen8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivIcon" android:layout_width="@dimen/spacing_14" android:layout_height="@dimen/spacing_14" android:src="@mipmap/asset_earn_hold_tip_icon" app:tint="@color/brandGreen" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_10" android:textColor="@color/brandGreen" android:id="@id/tvText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/regular" android:layout_marginStart="@dimen/spacing_2" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivArrow" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:src="@drawable/ic2_arrow_right_16" app:tint="@color/c_text40" />
+</com.kubi.sdk.widget.shape.layout.ShapeLinearLayout>

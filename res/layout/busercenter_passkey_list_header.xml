@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/c_overlay" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_8" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:background="@drawable/shape_cover4_8r" android:padding="@dimen/spacing_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="@dimen/spacing_2" android:src="@drawable/ic2_info_16" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:id="@id/tvPasskeyListTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passkey_list_top_tip" android:layout_marginStart="@dimen/spacing_8" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

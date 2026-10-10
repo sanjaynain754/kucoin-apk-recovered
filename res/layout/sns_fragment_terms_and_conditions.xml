@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sumsub.sns.core.widget.SNSBottomSheetView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/sns_margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sumsub.sns.core.widget.SNSToolbarView android:id="@id/sns_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.core.widget.NestedScrollView android:id="@id/sns_content" android:scrollbars="none" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sns_toolbar" app:layout_constraintVertical_bias="0.0">
+            <com.sumsub.sns.core.widget.SNSTextView android:id="@id/sns_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/sns_margin_medium" android:paddingEnd="@dimen/sns_margin_medium" />
+        </androidx.core.widget.NestedScrollView>
+        <androidx.core.widget.NestedScrollView android:id="@id/sns_web_content" android:scrollbars="none" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sns_toolbar" app:layout_constraintVertical_bias="0.0">
+            <WebView android:id="@id/sns_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/sns_margin_medium" android:paddingEnd="@dimen/sns_margin_medium" />
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.sumsub.sns.core.widget.SNSBottomSheetView>

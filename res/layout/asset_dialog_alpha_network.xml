@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/shape_bottom_sheet_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_18" android:textColor="@color/c_text" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_24" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/asset_alpha_select_network" android:fontFamily="@font/semi" android:paddingHorizontal="@dimen/spacing_16" />
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="5.0dip" android:scrollbarThumbVertical="@color/c_60_e1e8f5" android:id="@id/recyclerView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_12" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

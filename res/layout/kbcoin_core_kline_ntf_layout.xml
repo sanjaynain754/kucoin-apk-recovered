@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llKlineNftContainer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/nftToggle_spot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text40" android:gravity="center_vertical" android:layout_gravity="start" android:id="@id/tvNft" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/nft_about" android:drawablePadding="2.0dip" android:fontFamily="@font/regular" android:paddingHorizontal="16.0dip" app:drawableEndCompat="@drawable/ic2_triangle_bottom_12" app:drawableTint="@color/c_icon60" />
+        <View android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_alignParentBottom="true" android:layout_marginHorizontal="@dimen/spacing_16" style="@style/kucoin_view_divider" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/klineContent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/kline_height" />
+    <include android:id="@id/nftContent" android:visibility="gone" layout="@layout/core_trade_layout_nft" />
+</LinearLayout>

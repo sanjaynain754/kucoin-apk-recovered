@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.sdk.widget.shape.view.ShapeTextView android:textSize="12.0sp" android:textColor="@color/c_text" android:id="@id/range" android:paddingLeft="12.0dip" android:paddingTop="@dimen/dp_4" android:paddingRight="12.0dip" android:paddingBottom="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="12.0dip" android:paddingVertical="@dimen/dp_4" app:shape_radius="@dimen/dp_4" app:shape_solidColor="@color/c_transparent" />
+    <View android:id="@id/end_divider" android:background="@color/c_divider8" android:paddingTop="@dimen/dp_4" android:paddingBottom="@dimen/dp_4" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="12.0dip" android:paddingVertical="@dimen/dp_4" />
+</androidx.appcompat.widget.LinearLayoutCompat>

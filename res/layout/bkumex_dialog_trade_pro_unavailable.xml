@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/shape_bottom_sheet_bg" android:paddingTop="32.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_20" android:textColor="@color/c_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kumex_trade_pro_unavailable_title" android:fontFamily="@font/semi" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/kumex_trade_pro_unavailable_desc" android:fontFamily="@font/regular" />
+        <Space android:layout_width="fill_parent" android:layout_height="32.0dip" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.resources.widget.button.KcSecondaryButton android:textSize="16.0sp" android:gravity="center" android:id="@id/tv_exit" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="@string/kumex_trade_pro_exit" android:layout_weight="1.0" style="@style/styleButton48Secondary" />
+            <com.kubi.resources.widget.button.KcPrimaryButton android:textSize="16.0sp" android:gravity="center" android:id="@id/tv_known" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="@string/i_know" android:layout_weight="1.0" android:layout_marginStart="16.0dip" style="@style/styleButton48" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

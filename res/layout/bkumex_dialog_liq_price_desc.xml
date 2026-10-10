@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <ScrollView android:id="@id/contentScrollView" android:background="@drawable/shape_bottom_sheet_bg" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="false" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_32" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_18" android:textColor="@color/c_text" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_24" android:includeFontPadding="false" android:fontFamily="@font/semi" />
+            <LinearLayout android:orientation="vertical" android:id="@id/priceInfoContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/mark_price" android:includeFontPadding="false" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="end" android:id="@id/markPriceValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="1.0" android:fontFamily="@font/medium" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_10">
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/bkumex_position_estimated_liq_price" android:includeFontPadding="false" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="end" android:id="@id/liqPriceValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="1.0" android:fontFamily="@font/medium" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/topDivider" android:background="@color/c_divider8" android:layout_width="fill_parent" android:layout_height="@dimen/line_width" android:layout_marginTop="@dimen/spacing_16" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text60" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:lineSpacingMultiplier="1.4" android:fontFamily="@font/regular" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/learnMore" android:paddingTop="@dimen/spacing_2" android:paddingBottom="@dimen/spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:paddingVertical="@dimen/spacing_2">
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:id="@id/learnMoreText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/learn_more" android:includeFontPadding="false" />
+            </LinearLayout>
+            <View android:background="@color/c_divider8" android:layout_width="fill_parent" android:layout_height="@dimen/line_width" android:layout_marginTop="@dimen/spacing_16" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text60" android:id="@id/baseMarkPrice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:text="@string/bkumex_cross_estimated_liq_price_base_mark_price" android:lineSpacingMultiplier="1.4" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/showMarkPriceGuide" android:paddingTop="@dimen/spacing_2" android:paddingBottom="@dimen/spacing_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:paddingVertical="@dimen/spacing_2">
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:id="@id/showMarkPriceGuideText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bkumex_show_change_mark_price" android:includeFontPadding="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

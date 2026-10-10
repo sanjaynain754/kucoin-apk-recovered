@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_price_range" android:layout_width="fill_parent" android:layout_height="64.0dip" android:scaleType="fitXY" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:id="@id/tv_price_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:text="@string/kc_tb_grid_order_section" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:text="@string/kc_tb_price_range_tip" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_grid_number" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginTop="@dimen/spacing_24" android:scaleType="fitXY" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:id="@id/tv_suspend_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:text="@string/kc_tb_grid_order_suspend_num" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:text="@string/kc_futures_new_gridnum_tip" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/tv_invest" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginTop="@dimen/spacing_24" android:scaleType="fitXY" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:id="@id/tv_investment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:text="@string/kc_tb_grid_invest_title" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:text="@string/kc_tb_guide_coin_account" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_create" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginTop="@dimen/spacing_24" android:scaleType="fitXY" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:text="@string/kc_tb_guide_create_desc" />
+    </LinearLayout>
+</ScrollView>

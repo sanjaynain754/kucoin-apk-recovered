@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/font_24" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/time_tracking" android:fontFamily="@font/semi" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/c_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/floating_track" android:background="@drawable/selector_darkoverlay_click" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="8.0dip" android:text="@string/floating_tracking" android:fontFamily="@font/regular" app:drawableEndCompat="@drawable/icon_arrow_right_mirrored" app:drawableTint="@color/c_icon60" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/c_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/widget_tracking" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/widget_tracking" android:fontFamily="@font/regular" app:drawableEndCompat="@drawable/icon_arrow_right_mirrored" app:drawableTint="@color/c_icon60" />
+</LinearLayout>

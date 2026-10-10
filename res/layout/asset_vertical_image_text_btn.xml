@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/flIcon" android:background="@drawable/asset_vertical_icon_bg" android:layout_width="40.0dip" android:layout_height="40.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/ivIcon" android:layout_width="24.0dip" android:layout_height="24.0dip" app:tint="@color/c_textEmphasis" />
+    </FrameLayout>
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:ellipsize="end" android:id="@id/tvName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="1" android:fontFamily="@font/regular" android:textAlignment="center" />
+</androidx.appcompat.widget.LinearLayoutCompat>

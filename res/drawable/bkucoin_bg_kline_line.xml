@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <bitmap android:src="@mipmap/bkucoin_ic_line" android:tint="@color/c_icon" />
+    </item>
+    <item>
+        <bitmap android:src="@mipmap/bkucoin_ic_line" android:tint="@color/c_icon40" />
+    </item>
+</selector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/layout_deposit_disable" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/ic_disable_withdraw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:gravity="center" android:layout_gravity="center" android:id="@id/chain_disable_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/assets_suspend_deposit" android:layout_marginStart="@dimen/spacing_24" android:layout_marginEnd="@dimen/spacing_24" />
+</androidx.appcompat.widget.LinearLayoutCompat>

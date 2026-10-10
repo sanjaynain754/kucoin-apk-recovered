@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_24" android:textColor="@color/c_text" android:id="@id/tvAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/semi" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:id="@id/tvPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvAmount" />
+    <View android:id="@id/view_divider" android:background="@color/c_divider8" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/spacing_16" app:layout_constraintTop_toBottomOf="@id/tvPrice" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:id="@id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/view_divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c_large" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.redpackage.view.SingleAccountTypeView android:id="@id/stv_dialog_account_save" android:layout_width="fill_parent" android:layout_height="wrap_content" app:kucoin_stv_currency="≈65837.99 CNY" app:kucoin_stv_name="@string/save_account" />
+    <com.kubi.redpackage.view.SingleAccountTypeView android:id="@id/stv_dialog_account_trade" android:layout_width="fill_parent" android:layout_height="wrap_content" app:kucoin_stv_currency="≈65837.99 CNY" app:kucoin_stv_name="@string/trade_account" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="15.0sp" android:textColor="@color/primary" android:gravity="center_vertical" android:id="@id/tv_dialog_account_gootc" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/kotc_trade" android:paddingStart="16.0dip" />
+    <View android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="15.0sp" android:textColor="@color/c_text" android:gravity="center" android:id="@id/tv_dialog_account_cancel" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/cancel" android:paddingStart="17.0dip" />
+</LinearLayout>

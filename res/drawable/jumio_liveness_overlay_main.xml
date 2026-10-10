@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="448.0dip" android:width="356.0dip" android:viewportWidth="356.0" android:viewportHeight="448.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:name="livenessOverlay_tl" android:pathData="M178,6 C83.16,6 6,103.79 6,224" android:strokeColor="@color/jumio_gray_8" android:strokeWidth="6.0" android:trimPathStart="0.25" android:trimPathEnd="0.75" />
+    <group android:scaleX="-1.0" android:translateX="356.0">
+        <path android:name="livenessOverlay_tr" android:pathData="M178,6 C83.16,6 6,103.79 6,224" android:strokeColor="@color/jumio_gray_8" android:strokeWidth="6.0" android:trimPathStart="0.25" android:trimPathEnd="0.75" />
+    </group>
+    <group android:scaleY="-1.0" android:translateY="448.0">
+        <path android:name="livenessOverlay_bl" android:pathData="M178,6 C83.16,6 6,103.79 6,224" android:strokeColor="@color/jumio_gray_8" android:strokeWidth="6.0" android:trimPathStart="0.25" android:trimPathEnd="0.75" />
+    </group>
+    <group android:scaleX="-1.0" android:scaleY="-1.0" android:translateX="356.0" android:translateY="448.0">
+        <path android:name="livenessOverlay_br" android:pathData="M178,6 C83.16,6 6,103.79 6,224" android:strokeColor="@color/jumio_gray_8" android:strokeWidth="6.0" android:trimPathStart="0.25" android:trimPathEnd="0.75" />
+    </group>
+</vector>

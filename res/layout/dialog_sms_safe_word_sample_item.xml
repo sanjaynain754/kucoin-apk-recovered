@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/safewords_guide_sms_title" android:fontFamily="@font/semi" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12">
+        <ImageView android:layout_width="0.0dip" android:layout_height="0.0dip" android:src="@mipmap/bg_sms_safe_word_sample" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="343:200" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.kubi.sdk.site.widget.SiteLogoImageView android:layout_width="81.29999dip" android:layout_height="20.0dip" android:layout_marginTop="@dimen/spacing_16" android:scaleType="fitXY" android:layout_marginStart="@dimen/spacing_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:siteLogo="LogoGeneralGreenPng" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="34.0dip" android:text="@string/safewords_guide_temp" android:layout_marginEnd="37.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

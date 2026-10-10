@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text40" android:gravity="center" android:id="@id/title" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentStart="true" android:paddingHorizontal="16.0dip" />
+        <ImageView android:gravity="center" android:id="@id/type" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:src="@drawable/ic2_filter_16" android:layout_alignParentEnd="true" android:paddingHorizontal="16.0dip" app:tint="@color/c_icon" />
+    </RelativeLayout>
+    <View style="@style/kucoin_view_divider" />
+    <com.kubi.resources.widget.SwipeRefreshRecyclerView android:id="@id/m_swipe_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

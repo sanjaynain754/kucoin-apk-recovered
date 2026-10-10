@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/zoom" android:paddingLeft="3.0dip" android:paddingTop="4.0dip" android:paddingRight="3.0dip" android:paddingBottom="4.0dip" android:layout_width="22.0dip" android:layout_height="24.0dip" android:src="@mipmap/icon_floateindow_tolevitatingball" android:paddingHorizontal="3.0dip" android:paddingVertical="4.0dip" />
+    <ImageView android:layout_gravity="end" android:id="@id/moreSeting" android:paddingLeft="3.0dip" android:paddingTop="4.0dip" android:paddingRight="3.0dip" android:paddingBottom="4.0dip" android:layout_width="22.0dip" android:layout_height="24.0dip" android:src="@mipmap/icon_floateindow_setting" android:paddingHorizontal="3.0dip" android:paddingVertical="4.0dip" />
+</FrameLayout>

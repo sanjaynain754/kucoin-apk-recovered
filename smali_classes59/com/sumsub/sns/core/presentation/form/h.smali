@@ -1,0 +1,8 @@
+.class public interface abstract Lcom/sumsub/sns/core/presentation/form/h;
+.super Ljava/lang/Object;
+.source "r8-map-id-e8070c335b728e491f9067563c2bfcb5588b777f644873c971594ef64ebda208"
+
+
+# virtual methods
+.method public abstract a(Lcom/sumsub/sns/internal/core/presentation/form/model/e0;Landroid/view/View;)V
+.end method

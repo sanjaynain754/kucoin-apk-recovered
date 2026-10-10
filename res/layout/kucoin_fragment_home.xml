@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/c_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivTopBg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/home_bg_top" android:scaleType="fitXY" />
+    <FrameLayout android:id="@id/layoutContent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.kubi.resources.widget.KuCoinRefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/home_card_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.kubi.resources.widget.KuCoinRefreshLayout>
+        <com.kubi.home.main.shimmer.HomeShimmerLayout android:id="@id/layoutShimmer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <View android:id="@id/navbg" android:background="@color/c_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="1.0" />
+    <androidx.fragment.app.FragmentContainerView android:name="com.kubi.home.navigation.NavigationCard" android:id="@id/homeNavigation" android:layout_width="fill_parent" android:layout_height="@dimen/ui_title_bar_height" />
+</FrameLayout>

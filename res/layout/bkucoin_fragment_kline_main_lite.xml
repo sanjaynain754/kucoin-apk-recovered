@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/coinTick" layout="@layout/bkucoin_layout_coin_tick" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_type" android:layout_width="fill_parent" android:layout_height="32.0dip">
+        <HorizontalScrollView android:id="@id/hsv_type" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:overScrollMode="never" android:layout_marginEnd="16.0dip" app:layout_constraintEnd_toStartOf="@id/rgp_type" app:layout_constraintStart_toStartOf="parent">
+            <com.kubi.resources.widget.RadioGroupPlus android:gravity="center_vertical" android:id="@id/rgp_time" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </HorizontalScrollView>
+        <com.kubi.resources.widget.RadioGroupPlus android:gravity="center_vertical" android:id="@id/rgp_type" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <RadioButton android:id="@id/rb_line" android:layout_width="20.0dip" android:layout_height="fill_parent" android:button="@drawable/bkucoin_bg_kline_line" />
+            <View android:id="@id/rb_divider" android:background="@color/emphasis8" android:layout_width="1.0dip" android:layout_height="16.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+            <RadioButton android:id="@id/rb_candle" android:layout_width="20.0dip" android:layout_height="fill_parent" android:button="@drawable/bkucoin_bg_kline_candle" />
+        </com.kubi.resources.widget.RadioGroupPlus>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@id/fl_container" android:layout_width="fill_parent" android:layout_height="288.0dip" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="center" android:id="@id/tv_hint" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/coin_source_tip" />
+</LinearLayout>

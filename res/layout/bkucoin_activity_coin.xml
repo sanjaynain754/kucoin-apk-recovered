@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:id="@id/nsv" android:paddingBottom="80.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/fl_kline" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@color/c_background" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginTop="16.0dip" />
+            <com.kubi.resources.widget.RadioGroupPlus android:gravity="center" android:layout_gravity="center|top" android:orientation="horizontal" android:id="@id/rgp" android:background="@drawable/shape_background_4r" android:layout_width="264.0dip" android:layout_height="32.0dip" android:layout_marginTop="16.0dip">
+                <RadioButton android:textSize="14.0sp" android:textColor="@color/selector_color_tab_select" android:ellipsize="end" android:gravity="center" android:id="@id/rb_state" android:background="@drawable/selector_radio_group_title_bar" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:button="@null" android:text="@string/coin_data" android:maxLines="1" android:layout_weight="1.0" android:paddingHorizontal="4.0dip" />
+                <RadioButton android:textSize="14.0sp" android:textColor="@color/selector_color_tab_select" android:ellipsize="end" android:gravity="center" android:id="@id/rb_overview" android:background="@drawable/selector_radio_group_title_bar" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:button="@null" android:text="@string/coin_info" android:maxLines="1" android:layout_weight="1.0" android:paddingHorizontal="4.0dip" />
+                <RadioButton android:textSize="14.0sp" android:textColor="@color/selector_color_tab_select" android:ellipsize="end" android:gravity="center" android:id="@id/rb_trade" android:background="@drawable/selector_radio_group_title_bar" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:button="@null" android:text="@string/coin_pairs" android:maxLines="1" android:layout_weight="1.0" android:paddingHorizontal="4.0dip" />
+            </com.kubi.resources.widget.RadioGroupPlus>
+            <com.kubi.resources.widget.AutoHeightViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:layout_gravity="bottom" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="64.0dip" layout="@layout/bkucoin_layout_coin_bottom" />
+</FrameLayout>

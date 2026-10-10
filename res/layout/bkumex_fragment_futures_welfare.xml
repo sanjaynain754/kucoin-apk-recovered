@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/c_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/viewPagerBg" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/statusBar" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/topBg" android:background="@mipmap/bkumex_futures_welfare_top_bg" android:layout_width="fill_parent" android:layout_height="255.0dip" android:scaleType="fitXY" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.kubi.sdk.widget.TitleBar android:id="@id/title" android:layout_width="fill_parent" android:layout_height="44.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title">
+        <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/appBar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:layout_behavior="com.kubi.resources.AppBarLayoutBehavior">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_24" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                    <com.kubi.resources.widget.BaseTextView android:textSize="24.0sp" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="8.0dip" android:text="@string/futures_rewards" android:fontFamily="@font/semi" android:layout_marginStart="16.0dip" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="13.0sp" android:textColor="@color/c_text40" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kumex_welfare_page_desc" android:fontFamily="@font/regular" android:layout_marginStart="16.0dip" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <ImageView android:id="@id/coinBg" android:background="@mipmap/bkumex_futures_welfare_coin_bg" android:layout_width="120.0dip" android:layout_height="120.0dip" android:scaleType="centerCrop" android:layout_marginStart="20.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/title" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <View android:id="@id/subTab" android:background="@drawable/shape_overlay_20r_top" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+                <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <com.kubi.resources.widget.flyco.SlidingTabLayout android:layout_gravity="start|center" android:id="@id/tab_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:layout_constraintTop_toBottomOf="@id/tvSearch" app:tl_underline_color="@color/c_transparent" style="@style/tab_layout_indicator_level2" />
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/history" android:layout_width="42.0dip" android:layout_height="fill_parent" android:src="@drawable/ic2_history_20" android:paddingStart="8.0dip" android:paddingEnd="16.0dip" app:tint="@color/c_icon" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </FrameLayout>
+            <View style="@style/kucoin_view_divider" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.kubi.resources.widget.rtlviewpager.RtlViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

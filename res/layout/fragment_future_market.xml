@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" app:clip_background="true" app:round_corner_top_left="@dimen/spacing_20" app:round_corner_top_right="@dimen/spacing_20"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/future_tab" layout="@layout/quote_item_market_tab" />
+    <ViewStub android:id="@id/viewStub" android:background="@color/c_overlay" android:layout="@layout/quote_view_future_notice" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

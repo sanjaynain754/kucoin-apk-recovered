@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@mipmap/ic_checkbox_checked_with_padding" />
+    <item android:state_checked="true" android:drawable="@mipmap/ic_checkbox_checked_with_padding" />
+    <item android:state_enabled="false" android:drawable="@drawable/ic_checkbox_normal_icon_with_padding" />
+</selector>

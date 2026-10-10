@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/sns_intro_group" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="0.0dip" android:overScrollMode="never" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@id/sns_primary_button" app:layout_constraintEnd_toEndOf="@id/sns_guideline_end" app:layout_constraintStart_toStartOf="@id/sns_guideline_start" app:layout_constraintTop_toBottomOf="@id/sns_toolbar" app:layout_constraintVertical_bias="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sumsub.sns.core.widget.SNSH1TextView android:gravity="center" android:id="@id/sns_intro_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_margin_tiny_plus" />
+        <com.sumsub.sns.core.widget.SNSLottieMRTDAnimationView android:id="@id/sns_intro_animation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_margin_medium_plus" android:scaleType="fitCenter" android:adjustViewBounds="true" app:lottie_autoPlay="false" app:lottie_loop="true" />
+        <com.sumsub.sns.core.widget.SNSSubtitle2TextView android:id="@id/sns_intro_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_margin_medium_plus" />
+        <com.sumsub.sns.core.widget.SNSSubtitle2TextView android:id="@id/sns_intro_action" android:paddingTop="@dimen/sns_margin_small_plus" android:paddingBottom="@dimen/sns_margin_small_plus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_margin_small" android:paddingVertical="@dimen/sns_margin_small_plus" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

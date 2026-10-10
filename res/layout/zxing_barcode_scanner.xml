@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.journeyapps.barcodescanner.BarcodeView android:id="@id/zxing_barcode_surface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.journeyapps.barcodescanner.ViewfinderView android:id="@id/zxing_viewfinder_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="center" android:id="@id/capture_crop_layout" android:background="@drawable/capture" android:layout_width="280.0dip" android:layout_height="280.0dip">
+        <ImageView android:id="@id/capture_scan_line" android:background="@drawable/kakalib_scan_ray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/zxing_status_text" android:layout_gravity="bottom|center" android:id="@id/zxing_status_view" android:background="@color/zxing_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/zxing_msg_default_status" />
+</merge>

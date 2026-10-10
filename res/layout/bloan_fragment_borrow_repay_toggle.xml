@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/rb_group" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="12.0dip" android:layout_marginHorizontal="12.0dip">
+        <RadioButton android:textSize="14.0sp" android:textColor="@color/kucoin_selector_color_em_em40" android:ellipsize="end" android:gravity="center" android:id="@id/rbCorss" android:background="@drawable/bloan_selector_title_bar" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:checked="false" android:button="@null" android:text="@string/margin_whole" android:maxLines="1" android:layout_weight="1.0" android:paddingHorizontal="4.0dip" />
+        <RadioButton android:textSize="14.0sp" android:textColor="@color/kucoin_selector_color_em_em40" android:ellipsize="end" android:gravity="center" android:id="@id/rbIsolated" android:background="@drawable/bloan_selector_title_bar" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/margin_single" android:maxLines="1" android:layout_weight="1.0" android:paddingHorizontal="4.0dip" />
+    </RadioGroup>
+    <FrameLayout android:id="@id/fl_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" />
+</LinearLayout>

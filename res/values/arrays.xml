@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="DialingCountryCode">
+        <item>358,AX</item>
+        <item>594,GF</item>
+        <item>44,GG</item>
+        <item>590,GP</item>
+        <item>44,JE</item>
+        <item>590,MF</item>
+        <item>596,MQ</item>
+        <item>262,RE</item>
+        <item>47,SJ</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>354,IS</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,VA</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>7,RU</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+    <string-array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="bkumex_delegation_price_type">
+        <item>@string/limit_price</item>
+        <item>@string/market_price</item>
+    </string-array>
+    <string-array name="bkumex_kline_price_type">
+        <item>@string/last_price</item>
+        <item>@string/mark_price</item>
+        <item>@string/index_price</item>
+    </string-array>
+    <string-array name="bkumex_market_detail_tab_titles">
+        <item>@string/bug_sell_book</item>
+        <item>@string/recent_deal</item>
+        <item>@string/bkumex_contract_info</item>
+    </string-array>
+    <string-array name="bkumex_orderbook_level">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+        <item>500</item>
+    </string-array>
+    <string-array name="bkumex_pending_types">
+        <item>@string/show_all</item>
+        <item>@string/show_buy_book</item>
+        <item>@string/show_sell_book</item>
+    </string-array>
+    <string-array name="bkumex_stop_price_type">
+        <item>@string/last_price</item>
+        <item>@string/mark_price</item>
+    </string-array>
+    <string-array name="bkumex_trigger_price_type">
+        <item>@string/last_price</item>
+        <item>@string/mark_price</item>
+        <item>@string/index_price</item>
+    </string-array>
+    <string-array name="common_stream_privacy_status">
+        <item>@string/common_stream_privacy_status_default</item>
+        <item>@string/common_stream_privacy_status_privacy</item>
+    </string-array>
+    <array name="crypto_fingerprint_fallback_prefixes" />
+    <string-array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </string-array>
+    <string-array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </string-array>
+    <string-array name="kline_tab_titles">
+        <item>@string/k_linke_min_time</item>
+        <item>@string/one_min</item>
+        <item>@string/five_min</item>
+        <item>@string/fiveteen_min</item>
+        <item>@string/thirty_min</item>
+        <item>@string/one_hour</item>
+        <item>@string/two_hour</item>
+        <item>@string/four_hour</item>
+        <item>@string/k_linke_8_h</item>
+        <item>@string/k_linke_one_day</item>
+        <item>@string/k_linke_one_week</item>
+        <item>@string/k_linke_one_month</item>
+    </string-array>
+    <string-array name="kucoin_all_or_single">
+        <item>@string/accumulation</item>
+        <item>@string/amount</item>
+    </string-array>
+    <string-array name="kucoin_delegation_titles">
+        <item>@string/todo_delegation</item>
+        <item>@string/advanced_order</item>
+        <item>@string/history_delegation</item>
+    </string-array>
+    <string-array name="kucoin_history_type">
+        <item>@string/deposit_record</item>
+        <item>@string/withdraw_record</item>
+    </string-array>
+    <string-array name="kucoin_kline_all_titles">
+        <item>@string/k_linke_min_time</item>
+        <item>@string/one_min</item>
+        <item>@string/five_min</item>
+        <item>@string/fiveteen_min</item>
+        <item>@string/thirty_min</item>
+        <item>@string/one_hour</item>
+        <item>@string/two_hour</item>
+        <item>@string/four_hour</item>
+        <item>@string/k_linke_8_h</item>
+        <item>@string/k_linke_one_day</item>
+        <item>@string/k_linke_one_week</item>
+        <item>@string/k_linke_one_month</item>
+    </string-array>
+    <string-array name="kucoin_kline_composite_tab_titles">
+        <item>@string/k_linke_min_time</item>
+        <item>@string/k_linke_8_h</item>
+        <item>@string/k_linke_one_day</item>
+        <item>@string/k_linke_one_week</item>
+        <item>@string/more</item>
+    </string-array>
+    <array name="kucoin_kline_lite_candle_ids">
+        <item>@id/one_min_id</item>
+        <item>@id/five_min_id</item>
+        <item>@id/fifteen_min_id</item>
+        <item>@id/one_hour_id</item>
+        <item>@id/eight_hour_id</item>
+        <item>@id/one_day_id</item>
+        <item>@id/one_week_id</item>
+    </array>
+    <string-array name="kucoin_kline_lite_candle_titles">
+        <item>@string/coin_1_minute</item>
+        <item>@string/coin_5_minute</item>
+        <item>@string/coin_15_minute</item>
+        <item>@string/coin_1_hour</item>
+        <item>@string/coin_8_hour</item>
+        <item>@string/coin_1_day</item>
+        <item>@string/coin_1_week</item>
+    </string-array>
+    <array name="kucoin_kline_lite_line_ids">
+        <item>@id/one_hour_id</item>
+        <item>@id/one_day_id</item>
+        <item>@id/one_week_id</item>
+        <item>@id/one_month_id</item>
+        <item>@id/one_year_id</item>
+        <item>@id/three_year_id</item>
+    </array>
+    <string-array name="kucoin_kline_lite_line_titles">
+        <item>@string/coin_1_hour</item>
+        <item>@string/coin_24_hour</item>
+        <item>@string/coin_1_week</item>
+        <item>@string/coin_1_month</item>
+        <item>@string/coin_1_year</item>
+        <item>@string/coin_3_year</item>
+    </string-array>
+    <string-array name="kucoin_kline_main_chart_titles">
+        <item>MA</item>
+        <item>EMA</item>
+        <item>BOLL</item>
+    </string-array>
+    <string-array name="kucoin_kline_sub_chart_titles">
+        <item>MACD</item>
+        <item>KDJ</item>
+        <item>RSI</item>
+    </string-array>
+    <string-array name="kucoin_market_detail_tab_titles">
+        <item>@string/bug_sell_book</item>
+        <item>@string/recent_deal</item>
+        <item>@string/coin_token_info</item>
+    </string-array>
+    <string-array name="kucoin_market_guide_time">
+        <item>@string/market_1h</item>
+        <item>@string/market_12h</item>
+        <item>@string/market_24h</item>
+    </string-array>
+    <string-array name="kucoin_price_type">
+        <item>@string/limit_price_order</item>
+        <item>@string/market_price_order</item>
+        <item>@string/limit_price_stop</item>
+        <item>@string/market_price_stop</item>
+    </string-array>
+    <string-array name="kucoin_price_type_info">
+        <item>@string/limit_price_order_desc</item>
+        <item>@string/market_price_order_desc</item>
+        <item>@string/limit_price_stop_desc</item>
+        <item>@string/market_price_stop_desc</item>
+    </string-array>
+    <string-array name="kucoin_price_type_info_spot_call_auction">
+        <item>@string/limit_price_order_desc</item>
+    </string-array>
+    <string-array name="kucoin_price_type_info_spot_open_advanced_limit">
+        <item>@string/limit_price_order_desc</item>
+        <item>@string/market_price_order_desc</item>
+        <item>@string/kc_advanced_limit_order_guide_desc</item>
+        <item>@string/limit_price_stop_desc</item>
+        <item>@string/market_price_stop_desc</item>
+        <item>@string/oco_desc</item>
+        <item>@string/trailing_stop_desc</item>
+    </string-array>
+    <string-array name="kucoin_price_type_spot">
+        <item>@string/limit_price_order</item>
+        <item>@string/market_price_order</item>
+        <item>@string/limit_price_stop</item>
+        <item>@string/market_price_stop</item>
+        <item>@string/oco_order</item>
+    </string-array>
+    <string-array name="kucoin_price_type_spot_call_auction">
+        <item>@string/limit_price_order</item>
+    </string-array>
+    <string-array name="kucoin_price_type_spot_open_advanced_limit">
+        <item>@string/limit_price_order</item>
+        <item>@string/market_price_order</item>
+        <item>@string/kc_advanced_limit_order</item>
+        <item>@string/limit_price_stop</item>
+        <item>@string/market_price_stop</item>
+        <item>@string/oco_order</item>
+        <item>@string/kc_spot_trailing_stop</item>
+    </string-array>
+    <string-array name="kumex_notice_subjects">
+        <item>kumex.adl</item>
+        <item>kumex.auto.append.margin</item>
+        <item>kumex.deposit</item>
+        <item>kumex.liqudation</item>
+        <item>kumex.trade.stopOrderActiveFail</item>
+        <item>kumex.trade.stopOrderActiveSuccess</item>
+        <item>kumex.trade.closeOrderCanceled</item>
+        <item>kumex.trade.orderCanceled</item>
+        <item>kumex.trade.stopOrderCanceled</item>
+        <item>kumex.risklimit.change.success</item>
+        <item>kumex.risklimit.change.fail</item>
+    </string-array>
+    <string-array name="margin_all_or_single">
+        <item>@string/accumulation</item>
+        <item>@string/amount</item>
+    </string-array>
+    <string-array name="margin_borrow_mode">
+        <item>@string/auto_borrow</item>
+        <item>@string/auto_return</item>
+        <item>@string/margin_normal_mode</item>
+        <item>@string/margin_model_auto_borrow_repay</item>
+    </string-array>
+    <string-array name="margin_delegation_titles">
+        <item>@string/todo_delegation</item>
+        <item>@string/advanced_order</item>
+        <item>@string/history_delegation</item>
+        <item>@string/lever_history_borrow_title</item>
+        <item>@string/lever_history_repay_title</item>
+        <item>@string/lever_repay_interest</item>
+        <item>@string/lever_liquidation_title</item>
+    </string-array>
+    <string-array name="margin_kline_composite_tab_titles">
+        <item>@string/k_linke_min_time</item>
+        <item>@string/k_linke_8_h</item>
+        <item>@string/k_linke_day</item>
+        <item>@string/k_linke_week</item>
+        <item>@string/more</item>
+    </string-array>
+    <string-array name="margin_market_detail_tab_titles">
+        <item>@string/bug_sell_book</item>
+        <item>@string/recent_deal</item>
+        <item>@string/coin_token_info</item>
+    </string-array>
+    <string-array name="margin_market_guide_time">
+        <item>@string/market_1h</item>
+        <item>@string/market_12h</item>
+        <item>@string/market_24h</item>
+    </string-array>
+    <integer-array name="number_text_sizes">
+        <item>20</item>
+        <item>15</item>
+        <item>9</item>
+    </integer-array>
+    <array name="rmonitor_app_launch_monitor_activity_before_landing" />
+    <array name="rmonitor_app_launch_monitor_landing_activity" />
+    <array name="slider_values">
+        <item>10.0</item>
+        <item>50.0</item>
+    </array>
+    <string-array name="spot_price_type_content">
+        <item>@string/limit_price_order_desc</item>
+        <item>@string/market_price_order_desc</item>
+        <item>@string/limit_price_stop_desc</item>
+        <item>@string/market_price_stop_desc</item>
+        <item>@string/trailing_stop_desc</item>
+    </string-array>
+    <string-array name="spot_price_type_title">
+        <item>@string/limit_price_order</item>
+        <item>@string/market_price_order</item>
+        <item>@string/limit_price_stop</item>
+        <item>@string/market_price_stop</item>
+        <item>@string/kc_spot_trailing_stop</item>
+    </string-array>
+    <string-array name="trade_core_all_or_single">
+        <item>@string/accumulation</item>
+        <item>@string/amount</item>
+    </string-array>
+    <string-array name="trade_core_delegation_titles">
+        <item>@string/todo_delegation</item>
+        <item>@string/advanced_order</item>
+        <item>@string/history_delegation</item>
+    </string-array>
+</resources>

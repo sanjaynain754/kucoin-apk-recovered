@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.trtc.uikit.livekit.features.anchorboardcast.view.battle.widgets.SingleBattleScoreView android:id="@id/single_battle_score_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_clock" android:background="@drawable/livekit_battle_time_back" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_width="11.0dip" android:layout_height="11.0dip" android:src="@drawable/livekit_battle_clock" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_battle_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fl_center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_clock">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_battle_start" android:visibility="gone" android:layout_width="240.0dip" android:layout_height="120.0dip" android:src="@drawable/livekit_battle_start" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_battle_result" android:visibility="gone" android:layout_width="157.0dip" android:layout_height="156.0dip" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

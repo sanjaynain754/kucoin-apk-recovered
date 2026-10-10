@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cpiz.android.bubbleview.BubbleLinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="2.0dip" android:paddingTop="9.0dip" android:paddingRight="2.0dip" android:paddingBottom="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="2.0dip" android:paddingVertical="9.0dip" app:bb_arrowDirection="Down" app:bb_arrowHeight="6.0dip" app:bb_arrowWidth="10.0dip" app:bb_cornerRadius="4.0dip" app:bb_fillColor="@color/c_icon"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llFavor" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="6.0dip">
+        <ImageView android:id="@id/ivFavor" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/ic_favor" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="10.0sp" android:textColor="@color/c_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:text="@string/favorites" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llReminder" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="6.0dip">
+        <ImageView android:id="@id/ivReminder" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/icon_trade_menu_alert" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="10.0sp" android:textColor="@color/c_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:text="@string/price_alert" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llPin" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="6.0dip">
+        <ImageView android:id="@id/ivPin" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_unstick_white" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="10.0sp" android:textColor="@color/c_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:text="@string/pin" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+    </LinearLayout>
+</com.cpiz.android.bubbleview.BubbleLinearLayout>

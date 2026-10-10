@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/ll_top" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="36.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="center_vertical" android:id="@id/tv_choose_pairs" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/trade_pair" android:drawablePadding="5.0dip" android:paddingStart="16.0dip" android:paddingEnd="@dimen/spacing_12" app:drawableEndCompat="@drawable/ic2_triangle_bottom_12" app:drawableTint="@color/c_icon60" app:tint="@color/c_icon" />
+        <View android:id="@id/filter_divider" android:background="@color/emphasis8" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_alignTop="@id/tv_choose_pairs" android:layout_alignBottom="@id/tv_choose_pairs" android:layout_alignEnd="@id/tv_choose_pairs" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="center_vertical" android:id="@id/tv_choose_biz_type" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/trade_pair" android:drawablePadding="5.0dip" android:paddingStart="@dimen/spacing_12" android:paddingEnd="@dimen/spacing_12" android:layout_toEndOf="@id/filter_divider" app:drawableEndCompat="@drawable/ic2_triangle_bottom_12" app:drawableTint="@color/c_icon60" app:tint="@color/c_icon" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_gravity="end" android:id="@id/iv_filter" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="12.0dip" android:paddingEnd="@dimen/spacing_16" android:layout_alignParentEnd="true" app:drawableEndCompat="@drawable/ic2_filter_16" app:drawableTint="@color/c_icon60" />
+        <View android:layout_alignParentBottom="true" style="@style/kucoin_view_divider" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/delegation_empty" layout="@layout/bmargin_layout_delegation_empty" />
+        <com.kubi.resources.widget.SwipeRefreshRecyclerView android:id="@id/m_swipe_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.kubi.resources.widget.drop.DropMenuView android:id="@id/m_drop_menu_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

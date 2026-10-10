@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:id="@id/view_layout" android:layout_width="wrap_content" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_flag" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic2_language_16" android:layout_marginStart="16.0dip" app:tint="@color/c_icon60" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:gravity="center" android:id="@id/tv_choose_phone_code" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="+1" android:maxEms="5" android:singleLine="true" android:drawablePadding="5.0dip" android:layout_marginEnd="7.0dip" android:paddingHorizontal="5.0dip" app:drawableEndCompat="@mipmap/ic_drop_triangle" />
+    <View android:id="@id/view_divider" android:background="@color/emphasis8" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_marginVertical="16.0dip" />
+</merge>

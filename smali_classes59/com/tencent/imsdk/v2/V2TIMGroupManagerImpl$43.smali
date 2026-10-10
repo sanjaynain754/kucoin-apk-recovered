@@ -1,0 +1,142 @@
+.class Lcom/tencent/imsdk/v2/V2TIMGroupManagerImpl$43;
+.super Lcom/tencent/imsdk/common/IMCallback;
+.source "V2TIMGroupManagerImpl.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/tencent/imsdk/v2/V2TIMGroupManagerImpl;->getGroupApplicationList(Lcom/tencent/imsdk/v2/V2TIMValueCallback;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/tencent/imsdk/common/IMCallback<",
+        "Lcom/tencent/imsdk/group/GroupApplicationResult;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/tencent/imsdk/v2/V2TIMGroupManagerImpl;
+
+
+# direct methods
+.method public constructor <init>(Lcom/tencent/imsdk/v2/V2TIMGroupManagerImpl;Lcom/tencent/imsdk/v2/V2TIMValueCallback;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/tencent/imsdk/v2/V2TIMGroupManagerImpl$43;->this$0:Lcom/tencent/imsdk/v2/V2TIMGroupManagerImpl;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {p0, p2}, Lcom/tencent/imsdk/common/IMCallback;-><init>(Lcom/tencent/imsdk/v2/V2TIMValueCallback;)V
+
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+.end method
+
+
+# virtual methods
+.method public fail(ILjava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0, p1, p2}, Lcom/tencent/imsdk/common/IMCallback;->fail(ILjava/lang/String;)V
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+.end method
+
+.method public success(Lcom/tencent/imsdk/group/GroupApplicationResult;)V
+    .locals 0
+
+    .line 2
+    invoke-super {p0, p1}, Lcom/tencent/imsdk/common/IMCallback;->success(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic success(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lcom/tencent/imsdk/group/GroupApplicationResult;
+
+    invoke-virtual {p0, p1}, Lcom/tencent/imsdk/v2/V2TIMGroupManagerImpl$43;->success(Lcom/tencent/imsdk/group/GroupApplicationResult;)V
+
+    return-void
+.end method

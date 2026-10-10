@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:fontFamily="@font/medium" android:layout_marginHorizontal="16.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/listUI" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" android:paddingHorizontal="12.0dip" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="4" />
+</androidx.appcompat.widget.LinearLayoutCompat>

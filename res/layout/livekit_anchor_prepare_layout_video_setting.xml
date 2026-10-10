@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <io.trtc.tuikit.atomicx.widget.basicwidget.label.AtomicLabel android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/text_color_primary" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:text="@string/common_video_settings" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/livekit_anchor_prepare_bg_video_settings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="18.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <io.trtc.tuikit.atomicx.widget.basicwidget.label.AtomicLabel android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_primary" android:id="@id/tv_mirror_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/common_video_settings_item_mirror" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_text_color_primary" android:id="@id/tv_mirror" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mirror_type_auto" android:drawablePadding="4.0dip" android:drawableEnd="@drawable/livekit_down_arrow" android:layout_marginEnd="8.0dip" />
+        </LinearLayout>
+        <View android:background="#ff3a3c42" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_quality" android:paddingTop="18.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <io.trtc.tuikit.atomicx.widget.basicwidget.label.AtomicLabel android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_primary" android:id="@id/tv_quality_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/live_video_resolution" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_text_color_primary" android:id="@id/tv_quality_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1080P" android:drawablePadding="4.0dip" android:drawableEnd="@drawable/livekit_down_arrow" android:layout_marginEnd="8.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

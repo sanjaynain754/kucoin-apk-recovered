@@ -1,0 +1,139 @@
+{
+    "accountConfig": {
+        "siteType": "europe",
+        "siteLogoUrl": "",
+        "bindingLimits": [
+            "phone",
+            "email"
+        ],
+        "accountTypes": [
+            "phone",
+            "email"
+        ],
+        "supportExtAccounts": [
+            "telegram",
+            "google",
+            "apple"
+        ],
+        "supportSubAccount": true,
+        "supportRCode": true,
+        "subUserPermissions": [
+            "margin",
+            "spot"
+        ],
+        "subUserTypePermissionMap": {
+            "NORMAL": [
+                "margin",
+                "spot"
+            ]
+        },
+        "subUserTypes": [
+            "normal"
+        ]
+    },
+    "registerConfig": {
+        "supportRegisterGuide": false,
+        "registerPageContextUrl": "",
+        "serviceTermsUrl": "",
+        "privacyTermsUrl": ""
+    },
+    "loginConfig": {
+        "loginAccountTypes": [
+            "userpwd",
+            "passkey",
+            "extlogin"
+        ],
+        "loginPageContextUrl": ""
+    },
+    "securityConfig": {
+        "loginPwdOpt": true,
+        "withdrawPwdOpt": true,
+        "phoneBindOpt": true,
+        "emailBindOpt": true,
+        "extAccountBindOpt": true,
+        "google2faOpt": true,
+        "antiPhishingCodeOpt": true,
+        "biometricsOpt": true,
+        "passkeyOpt": true,
+        "appFreezeAccountOpt": true
+    },
+    "myConfig": {
+        "directoryConfig": {
+            "pageDirectorys": [
+                "downloadcenter",
+                "subuser",
+                "overview",
+                "myreward",
+                "setting",
+                "accountsecurity",
+                "kyc",
+                "api"
+            ],
+            "profilePhotoDirectorys": [
+                "api",
+                "accountinfo",
+                "subuser",
+                "myreward",
+                "ratestandard",
+                "kyc",
+                "accountsecurity"
+            ],
+            "rateStandardUrl": "/vip/privilege"
+        },
+        "overviewConfig": {
+            "assetFuncs": [
+                "withdrawalcoins",
+                "depositcoins",
+                "entrustedinquiry",
+                "assetoverview",
+                "buycoins"
+            ],
+            "supportMyInfo": true,
+            "supportNewUserBenefits": true,
+            "supportVipRate": true,
+            "supportActivityEntry": true,
+            "supportList": true,
+            "supportNotice": true,
+            "supportDownloadGuide": true,
+            "supportKcsRight": false
+        }
+    },
+    "baseConfig": {
+        "webHost": "https://www.kucoin.com",
+        "siteConfigType": "sharing"
+    },
+    "termConfig": {
+        "userTermConfig": [
+            {
+                "termId": "47185419968072",
+                "termCode": "derivativeUserTerm1",
+                "version": null
+            },
+            {
+                "termId": "47185419968073",
+                "termCode": "derivativeUserTerm2",
+                "version": null
+            },
+            {
+                "termId": "47185419968074",
+                "termCode": "privacyUserTerm",
+                "version": null
+            },
+            {
+                "termId": "47185419968075",
+                "termCode": "agreementTerm",
+                "version": null
+            },
+            {
+                "termId": "47497300094098",
+                "termCode": "riskDisclosureTerm",
+                "version": null
+            },
+            {
+                "termId": "48142946141519",
+                "termCode": "marketingMsgAuthoriseTerm",
+                "version": null
+            }
+        ]
+    }
+}

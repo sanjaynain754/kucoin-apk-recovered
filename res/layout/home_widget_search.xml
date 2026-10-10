@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutSearch" android:background="@drawable/shape_border_divider8_24r" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingHorizontal="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:src="@drawable/ic2_search_16" android:contentDescription="@null" app:tint="@color/c_icon60" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text30" android:id="@id/tvSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="@string/search" android:singleLine="true" android:fontFamily="@font/regular" android:layout_marginHorizontal="4.0dip" />
+</androidx.appcompat.widget.LinearLayoutCompat>

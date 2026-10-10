@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center" android:id="@id/view_top" android:background="@drawable/shape_bottom_sheet_indicator" android:layout_width="40.0dip" android:layout_height="4.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <include layout="@layout/fragment_call_auction_progress_content" />
+    <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/bt_i_know" android:visibility="visible" android:layout_width="fill_parent" android:layout_marginTop="@dimen/spacing_12" android:layout_marginBottom="@dimen/spacing_12" android:text="@string/i_already_know" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_understand_rules" style="@style/styleButton40" />
+</androidx.constraintlayout.widget.ConstraintLayout>

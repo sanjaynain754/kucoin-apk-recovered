@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlSetingDialog" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageTriangleUp" android:background="@drawable/icon_floating_setingdialog_triangle_up" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llSetingItemView" android:background="@drawable/shape_floating_window_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/imageTriangleUp">
+        <TextView android:textSize="12.0sp" android:id="@id/bugGotoSeting" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/floating_window_settings" android:paddingHorizontal="10.0dip" android:paddingVertical="8.0dip" />
+        <View android:id="@id/setingitemLine1" android:background="#ff000d1d" android:layout_width="0.5dip" android:layout_height="12.0dip" />
+        <TextView android:textSize="12.0sp" android:id="@id/zoomInOrOut" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/floating_window_minimize" android:paddingHorizontal="10.0dip" android:paddingVertical="8.0dip" />
+        <View android:id="@id/setingitemLine2" android:background="#ff000d1d" android:layout_width="0.5dip" android:layout_height="12.0dip" />
+        <TextView android:textSize="12.0sp" android:id="@id/goneActionBar" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/floating_window_hide_toolbar" android:paddingHorizontal="10.0dip" android:paddingVertical="8.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/imageTriangleDown" android:background="@drawable/icon_floating_setingdialog_triangle_down" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_below="@id/llSetingItemView" />
+</RelativeLayout>

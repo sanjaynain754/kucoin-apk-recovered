@@ -1,0 +1,82 @@
+[{
+  "type": "en_US",
+  "name": "English",
+  "bundle": "en",
+  "supportVersion": ""
+}, {
+  "type": "ru_RU",
+  "name": "Pусский",
+  "bundle": "ru",
+  "supportVersion": ""
+}, {
+  "type": "ja_JP",
+  "name": "日本語",
+  "bundle": "ja",
+  "supportVersion": ""
+}, {
+  "type": "es_ES",
+  "name": "Español",
+  "bundle": "es",
+  "supportVersion": ""
+}, {
+  "type": "vi_VN",
+  "name": "Tiếng Việt",
+  "bundle": "vi",
+  "supportVersion": ""
+}, {
+  "type": "tr_TR",
+  "name": "Türkçe",
+  "bundle": "tr",
+  "supportVersion": ""
+}, {
+  "type": "pt_PT",
+  "name": "Português",
+  "bundle": "pt",
+  "supportVersion": ""
+}, {
+  "type": "fr_FR",
+  "name": "Français",
+  "bundle": "fr",
+  "supportVersion": ""
+}, {
+  "type": "zh_HK",
+  "name": "中文繁體",
+  "bundle": "zh-Hant",
+  "supportVersion": ""
+}, {
+  "type": "id_ID",
+  "name": "Bahasa Indonesia",
+  "bundle": "id",
+  "supportVersion": ""
+}, {
+  "type": "th_TH",
+  "name": "ไทย",
+  "bundle": "th",
+  "supportVersion": ""
+}, {
+  "type": "hi_IN",
+  "name": "हिंदी",
+  "bundle": "hi",
+  "supportVersion": ""
+}, {
+  "type": "ms_MY",
+  "name": "Bahasa Melayu",
+  "bundle": "ms",
+  "supportVersion": ""
+}, {
+  "type": "bn_BD",
+  "name": "বাংলা",
+  "bundle": "bn",
+  "supportVersion": ""
+}, {
+  "type": "fil_PH",
+  "name": "Filipino",
+  "bundle": "fil",
+  "supportVersion": ""
+}, {
+  "type": "uk_UA",
+  "name": "Українська",
+  "bundle": "uk",
+  "supportVersion": "1.0.2"
+}
+]

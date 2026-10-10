@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/livekit_barrage_bg_msg_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:paddingEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <io.trtc.tuikit.atomicx.widget.basicwidget.avatar.AtomicAvatar android:layout_gravity="start|center|top" android:id="@id/iv_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" app:avatarShape="round" app:avatarSize="xxs" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/livekit_barrage_g8" android:ellipsize="end" android:layout_gravity="start|center|top" android:id="@id/tv_msg_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:lineSpacingMultiplier="1.1" android:fontFamily="@font/medium" android:textDirection="locale" android:textAlignment="viewStart" android:layout_marginStart="2.0dip" />
+</LinearLayout>

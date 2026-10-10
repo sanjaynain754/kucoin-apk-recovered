@@ -1,0 +1,62 @@
+{
+  "biz": "homepage",
+  "version": "1.0.16",
+  "url": "https://assets.staticimg.com/rn-bundles/Kucoin/platform/homepage/1.0.16/a6ef2729/4726/build/android/homepage-main.zip",
+  "packageHash": "Jqz8ev8mlO9gjlgAPpmGlGTLxH8eR8tJxvUSJC90gPM31k4+q2EeChDStRF7Bgf+/7HtK8M0aT1/gAIkvmUn3OrmiqEBb+xVMb40OYdPjBtjpD3+T1a4czJOkHvpTfdWtmN9wEeV8aDps7ANSeCfNCHmjtnbhxk2EA8zJbchpR4=",
+  "sdkVersion": "1.0.0",
+  "packageSize": 2739373,
+  "dateTime": "2026-09-18T09:18:54.092Z",
+  "buildNo": 4726,
+  "leadUpgrade": false,
+  "basicDeps": [
+    {
+      "biz": "krnbase",
+      "version": "3.0.0",
+      "url": "https://assets.staticimg.com/rn-bundles/Kucoin/base_package/krnbase/3.0.0/0263bee1/build/android/krnbase-main.zip",
+      "packageHash": "21yTyXcNP49ze2DIbHut3gZeut0LsEz//rt1avj97/pzIrmFIhRufiafFRmzKBUwWwhlLgcPXC1MVDEkZKulhLc3zlqz/XdMzpWV4V2T5YU+9VH7rDWnyd9CgtUXZCseJMi3fMze0oNyjcgB1/7Ahz0kbfSXdbVpf5xtKG46qDg=",
+      "buildNo": 250,
+      "packageSize": 1743444
+    }
+  ],
+  "subPackages": [
+    {
+      "biz": "home-compliance",
+      "version": "0.0.0",
+      "url": "https://assets.staticimg.com/rn-bundles/Kucoin/platform/homepage/1.0.16/a6ef2729/4726/build/android/home-compliance/home-compliance-main.zip",
+      "packageHash": "QqFNyhuwVK4USTFt9A85j4KrNKV9u4TI7zLJSX1DDqQpgAY/r/sZ0MbBsgCMXhEumNgz6up5p5ALIVmjEgpV3g6Ehr+M4ymH6/V5sU9lSifVGjT7cSfyVf2i9DEj9aUne6a/MW1rraqbT72XA2lIc2f98e61A2o5rWtS3Qbo/aU=",
+      "buildNo": 4726,
+      "packageSize": 19903
+    }
+  ],
+  "i18n": {
+    "host_project_id": "342337076a7c209be38619.32258141",
+    "cdn": "https://assets.staticimg.com",
+    "packages": [
+      {
+        "project_id": "904513766a2150908bea27.92393591",
+        "namespace": "runtime-rn"
+      },
+      {
+        "project_id": "720770006a90edd3240bc9.15846335",
+        "namespace": "feed-rn"
+      },
+      {
+        "project_id": "875457706a224279bb9c89.79375812",
+        "namespace": "platform-feed-item"
+      },
+      {
+        "project_id": "985763616a6c026a8181b1.90519060",
+        "namespace": "kucoin-feed-market-copy-trading"
+      },
+      {
+        "project_id": "933454566a9678011d5ff0.31441994",
+        "namespace": "kucoin-widget-market-rn"
+      },
+      {
+        "project_id": "523528056a2f5d90403a80.58488047",
+        "namespace": "tradex-infra"
+      }
+    ]
+  },
+  "entry": "main"
+}

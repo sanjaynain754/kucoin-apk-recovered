@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_bottom_sheet_bg" android:paddingTop="24.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivCoinIcon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/ic2_drag_12" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="18.0sp" android:textColor="@color/c_text" android:id="@id/coinName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bold" android:layout_marginStart="8.0dip" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/coinNameDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/regular" android:layout_marginStart="8.0dip" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:paddingHorizontal="16.0dip">
+            <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kc_transfer_pro_from_account" android:fontFamily="@font/regular" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kc_transfer_pro_right_header" android:maxLines="2" android:layout_weight="1.0" android:fontFamily="@font/regular" android:layout_marginStart="16.0dip" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_info_16" app:tint="@color/c_icon40" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kc_transfer_pro_support_tip" android:fontFamily="@font/regular" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

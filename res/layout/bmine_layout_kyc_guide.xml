@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutKycGuide" android:background="@drawable/shape_complementary8_12r" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:paddingHorizontal="16.0dip" android:paddingVertical="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="8.0dip">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ivKycTitleIcon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic2_warning_16" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:id="@id/tvKycTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@font/medium" android:layout_marginStart="4.0dip" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:id="@id/tvKycTips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:fontFamily="@font/regular" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ImageView android:id="@id/ivKycActionArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_arrow_right_16" app:tint="@color/c_icon60" />
+</androidx.appcompat.widget.LinearLayoutCompat>

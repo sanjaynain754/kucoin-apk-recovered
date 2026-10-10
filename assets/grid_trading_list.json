@@ -1,0 +1,586 @@
+{
+  "ur_PK": [{
+    "name": "Spot Grid",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "24/7 auto buy low and sell high",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Futures Grid",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "Supports leverage and shorting",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Trading Bot Pro",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "Use Trading Bot Pro to access more advanced strategies.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "en_US": [{
+    "name": "Spot Grid",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "24/7 auto buy low and sell high",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Futures Grid",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "Supports leverage and shorting",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Trading Bot Pro",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "Use Trading Bot Pro to access more advanced strategies.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "zh_CN": [{
+    "name": "现货网格",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "7*24小时自动低买高卖",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "合约网格",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "可加杠杆，可做空",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "交易机器人-Pro",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "前往专业版，体验更多专业策略",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "ru_RU": [{
+    "name": "Spot Grid",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "Автоматическая покупка по низким ценам и продажа по высоким 24/7",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Futures Grid",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "Поддержка кредитного плеча и шортинга",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Торговый бот",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "Используйте Торговый Бот Pro для доступа к более продвинутым стратегиям.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "ko_KR": [{
+    "name": "현물 그리드",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "연중무휴 자동 저가 매수 및 고가 매도",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "선물 그리드",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "레버리지 및 숏 지원",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "거래 봇",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "거래 봇을 사용해 더 많은 고급 전략에 액세스합니다.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "es_ES": [{
+    "name": "Grid trading de spot",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "Comprar bajo y vender alto automáticamente 24/7",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Futures Grid",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "Admite el apalancamiento y posiciones cortas",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Bot de trading",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "Usa el bot de trading pro para acceder a estrategias más avanzadas.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "vi_VN": [{
+    "name": "Lưới giao ngay",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "7/24 otomatik düşükten alım ve yüksekten satış",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Lưới hợp đồng tương lai",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "Kaldıraç ve kısa pozisyonu destekler",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Bot giao dịch",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "Sử dụng Bot giao dịch Pro để tiếp cận các chiến lược nâng cao hơn.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "pt_PT": [{
+    "name": "Grade de negociação à vista",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "Compre baixo e venda alto automaticamente 24/7.",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Grade de futuros",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "Suporta alavancagem e shorting",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Bot de negociação",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "Use o Bot de Negociação Pro para acessar estratégias mais avançadas.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "de_DE": [{
+    "name": "Spot-Grid",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "24/7 automatisch niedrig kaufen und hoch verkaufen",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Futures-Grid",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "Unterstützt Hebeln und Shorting",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Trading-Bot",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "Verwenden Sie Trading Bot Pro, um auf fortgeschrittenere Strategien zuzugreifen.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "nl_NL": [{
+    "name": "Spotgrid",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "24/7 automatisch laag kopen en hoog verkopen",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Futures-grid",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "Ondersteunt hefboomwerking en short gaan",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Handelsbot",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "Gebruik de Handelsbot Pro om toegang tot meer geavanceerde strategieën te krijgen.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "fr_FR": [{
+    "name": "Grid au comptant",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "Achat automatique 24 h/24 7 j/7 à bas prix et vente à prix élevé",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Grid des Contrats à terme",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "Prend en charge l'effet de levier et la vente à découvert",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Bot de trading",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "Utilisez le bot de trading professionnel pour accéder à des stratégies plus avancées.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "zh_HK": [{
+    "name": "現貨網格",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "7*24小時自動低買高賣",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "合約網格",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "可加槓桿，可做空",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "交易機器人",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "前往專業版，體驗更多專業策略",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "it_IT": [{
+    "name": "Grid di trading sul mercato spot",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "Acquisto automatico al ribasso e vendita al rialzo 24/7",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  },
+    {
+      "name": "Grid di trading sul mercato future",
+      "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+      "subTitle": "Supporta la leva e le posizioni short",
+      "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+      "type": "CONTRACT_GRID",
+      "path": "",
+      "action": "APP"
+    },
+    {
+      "name": "Bot di trading",
+      "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+      "subTitle": "Usa Trading Bot Pro per accedere a strategie più avanzate.",
+      "labelIcon": "",
+      "type": "INDEX_H5",
+      "path": "/",
+      "action": "H5"
+    }
+  ],
+  "id_ID": [{
+    "name": "Spot Grid",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "24/7 otomatis membeli rendah dan menjual tinggi",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Futures Grid",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "Mendukung leverage dan shorting",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Trading Bot Pro",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "Use Trading Bot Pro to access more advanced strategies.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "th_TH": [{
+    "name": "Spot Grid",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "ซื้อต่ำและขายสูงอัตโนมัติ 24/7",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Futures Grid",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "รองรับเลเวอเรจและการ Short",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Trading Bot",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "ใช้ Trading Bot Pro เพื่อเข้าถึงกลยุทธ์ขั้นสูงมากขึ้น",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "hi_IN": [{
+    "name": "स्पॉट ग्रिड",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "24/7 ऑटो नीचे खरीदें और ऊपर बेचें",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  },
+    {
+      "name": "फ्यूचर्स ग्रिड",
+      "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+      "subTitle": "लेवरेज और शॉर्टिंग का समर्थन करता है",
+      "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+      "type": "CONTRACT_GRID",
+      "path": "",
+      "action": "APP"
+    },
+    {
+      "name": "ट्रेडिंग बोट",
+      "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+      "subTitle": "अधिक उन्नत रणनीतियों को एक्सेस करने के लिए ट्रेडिंग बॉट प्रो का इस्तेमाल करें।",
+      "labelIcon": "",
+      "type": "INDEX_H5",
+      "path": "/",
+      "action": "H5"
+    }
+  ],
+  "ar_AE": [{
+    "name": "شبكة العقود الفورية",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "شراء بسعر منخفض وبيع بسعر مرتفع تلقائي 24 ساعة/7 أيام",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "شبكة العقود الآجلة",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "يدعم الرافعة المالية والبيع على المكشوف",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "التداول الآلي (Bot)",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "استخدم \"بوت التداول الآلي المحترف\" للوصول إلى استراتيجيات أكثر تقدمًا.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "pl_PL": [{
+    "name": "Siatka spot",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "Automatycznie kupuj taniej i sprzedawaj drożej 24/7",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Siatka futures",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "Obsługa dźwigni i shortowania",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Bot transakcyjny",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "Użyj bota handlowego Pro, aby uzyskać dostęp do bardziej zaawansowanych strategii.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "fil_PH": [{
+    "name": "Spot Grid",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "24/7 auto buy low at sell high",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Futures Grid",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "Supported ang leverage at shorting",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Bot sa Pag-Trade",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "Gamitin ang Trading Bot Pro para ma-access ang mas advanced na strategies.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "bn_BD": [{
+    "name": "স্পট গ্রিড",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "24/7 স্বয়ংক্রিয়ভাবে নীচে কিনুন এবং উপরে বিক্রি করুন",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "ফিউচার্স গ্রিড",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "লিভারেজ এবং শর্ট সমর্থন করে",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "ট্রেডিং বট",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "আরও উন্নত কৌশলগুলি অ্যাক্সেস করতে ট্রেডিং বট প্রো ব্যবহার করুন।",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "tr_TR": [{
+    "name": "Spot Grid",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "7/24 otomatik düşükten alım ve yüksekten satış",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "Vadeli İşlem Grid",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "Kaldıraç ve kısa pozisyonu destekler",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "İşlem Botu",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "Daha gelişmiş stratejilere erişmek için İşlem Botu Pro yu kullanın.",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }],
+  "ms_MY": [{
+    "name": "Grid Semerta",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "Beli rendah dan jual tinggi secara automatik 24/7",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  },
+    {
+      "name": "Grid Niaga Hadapan",
+      "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+      "subTitle": "Sokong leveraj dan buka pendek",
+      "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+      "type": "CONTRACT_GRID",
+      "path": "",
+      "action": "APP"
+    },
+    {
+      "name": "Bot Dagangan",
+      "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+      "subTitle": "Gunakan Bot Dagangan Pro untuk mengakses strategi yang lebih maju.",
+      "labelIcon": "",
+      "type": "INDEX_H5",
+      "path": "/",
+      "action": "H5"
+    }
+  ],
+  "ja_JP": [{
+    "name": "現物グリッド",
+    "icon": "https://assets.staticimg.com/cms/media/5yEZQsdWTFyVFW27KfO29oTCB02jwXISxEaVBWA8z.png",
+    "subTitle": "24時間365日自動で安く買って高く売る",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "先物グリッド",
+    "icon": "https://assets.staticimg.com/cms/media/8qhQ2voDCB9anWlb0ThJ1rwzufBxuUaQ7XPKX9ZaZ.png",
+    "subTitle": "レバレッジとショートに対応",
+    "labelIcon": "https://assets.staticimg.com/cms/media/2EtyIVtJxzy3JqlYfmeZ257oJ5g0DtnClmU43DrOU.png",
+    "type": "CONTRACT_GRID",
+    "path": "",
+    "action": "APP"
+  }, {
+    "name": "取引ボット",
+    "icon": "https://assets.staticimg.com/cms/media/38PqwsaXZstkGUKND5qI6LchlocBjEBDty5hI4TCm.png",
+    "subTitle": "ボット取引Proを使用すると、より高度な戦略を利用できます。",
+    "labelIcon": "",
+    "type": "INDEX_H5",
+    "path": "/",
+    "action": "H5"
+  }]
+}

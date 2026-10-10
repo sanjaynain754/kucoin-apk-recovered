@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_item" android:background="@drawable/selector_color_bottom_sheet" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="16.0dip">
+        <ImageView android:id="@id/iv_original_icon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_icon" android:background="@drawable/shape_background_for_coin_avatar" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+        <TextView android:textColor="@color/c_text60" android:gravity="center" android:id="@id/tv_icon" android:background="@drawable/shape_background_for_coin_avatar" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:id="@id/text" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="60.0dip" />
+    <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_smallhook2_20" android:tint="@color/c_text" android:layoutDirection="ltr" android:autoMirrored="false" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/c_edb66e" android:id="@id/text_right" android:background="@drawable/shape_16_edb66e_2r" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</androidx.appcompat.widget.LinearLayoutCompat>

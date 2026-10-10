@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/tip_root" android:background="@color/secondary8" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:paddingStart="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_info_filled_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="@color/secondary" />
+    <com.kubi.resources.widget.MarqueeTextView android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/message" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:singleLine="true" android:textDirection="ltr" android:layout_marginStart="4.0dip" app:content_text_color="@color/secondary" app:content_text_size="14.0sp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/ll_rightView" app:layout_constraintStart_toEndOf="@id/icon_tip" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_rightView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:id="@id/fl_arrow_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="8.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right_16" app:tint="@color/c_icon60" />
+        </FrameLayout>
+        <View android:layout_gravity="center_vertical" android:id="@id/view_divider" android:background="@color/c_divider8" android:layout_width="1.0dip" android:layout_height="16.0dip" android:layout_marginStart="8.0dip" />
+        <FrameLayout android:id="@id/close" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="8.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_16" app:tint="@color/c_icon60" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

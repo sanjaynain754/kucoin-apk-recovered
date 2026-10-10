@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/selector_darkoverlay_click" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@color/c_text" android:ellipsize="end" android:layout_gravity="start|center" android:id="@id/tv_country_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="13.0dip" android:layout_marginEnd="100.0dip" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/c_text" android:layout_gravity="end|center" android:id="@id/tv_country_mobile_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="12.0dip" />
+    <View android:layout_gravity="bottom" style="@style/kucoin_view_divider" />
+</FrameLayout>

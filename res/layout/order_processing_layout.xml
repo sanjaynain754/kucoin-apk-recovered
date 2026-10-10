@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_dialog_bg_bulletlayer" android:paddingLeft="24.0dip" android:paddingTop="24.0dip" android:paddingRight="24.0dip" android:paddingBottom="32.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="24.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic2_close_withcircle_24" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/payment_process_warn_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/ic2_common_processing" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_20" android:textStyle="bold" android:textColor="@color/c_text" android:id="@id/payment_process_warn_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/payment_p2p_pay_leave_title" android:fontFamily="@font/semi" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text60" android:id="@id/payment_countdown_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/payment_p2p_pay_leave_desc" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text60" android:id="@id/payment_process_warn_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/payment_p2p_pay_leave_tip" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/leave_button" android:layout_width="fill_parent" android:layout_marginTop="32.0dip" android:text="@string/payment_p2p_pay_leave_confirm" style="@style/styleButton40" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

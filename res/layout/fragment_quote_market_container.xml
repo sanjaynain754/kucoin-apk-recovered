@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.flyco.SlidingTabLayout android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:paddingStart="6.0dip" app:tl_indicator_center_with_text="true" app:tl_indicator_color="@color/c_text" app:tl_indicator_height="@dimen/spacing_2" app:tl_indicator_width="@dimen/spacing_22" app:tl_tab_padding="@dimen/spacing_10" style="@style/tab_layout_indicator_level3" />
+    <com.kubi.quotefacade.view.NoScrollQuoteViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.appcompat.widget.LinearLayoutCompat>

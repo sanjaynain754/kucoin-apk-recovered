@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cpiz.android.bubbleview.BubbleLinearLayout android:orientation="horizontal" android:id="@id/bubble_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:bb_arrowDirection="Down" app:bb_arrowHeight="6.0dip" app:bb_arrowPosDelta="20.0dip" app:bb_arrowPosPolicy="SelfBegin" app:bb_arrowWidth="10.0dip" app:bb_cornerRadius="4.0dip" app:bb_fillColor="@color/c_icon" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/kucoin_font_size_14" android:textColor="@color/c_white" android:id="@id/tv_pop_view" android:paddingTop="@dimen/spacing_6" android:paddingBottom="@dimen/spacing_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/asset_analysis_look_tips" android:lineSpacingMultiplier="1.2" android:paddingStart="8.0dip" android:paddingVertical="@dimen/spacing_6" />
+        <FrameLayout android:id="@id/close" android:paddingTop="6.0dip" android:paddingBottom="@dimen/spacing_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_close_16" app:tint="@color/c_white60" />
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.cpiz.android.bubbleview.BubbleLinearLayout>

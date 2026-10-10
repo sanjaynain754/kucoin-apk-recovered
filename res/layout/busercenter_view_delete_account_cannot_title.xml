@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:text="@string/delete_account_not_complete" />
+    <TextView android:textSize="@dimen/font_12" android:textColor="@color/c_text60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete_account_reason_title" />
+    <View android:background="@color/c_divider8" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="16.0dip" />
+</androidx.appcompat.widget.LinearLayoutCompat>

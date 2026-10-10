@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="49.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/lite_tab_divide" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/lite_tab_four_or_less_item_bg" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <RelativeLayout android:id="@id/tab_item_1" style="@style/TabDynamicItemsParent">
+            <ImageView android:id="@id/static_icon_1" style="@style/TabDynamicItemsIcon" />
+            <TextView android:id="@id/tab_text_1" android:text="Home" style="@style/TabDynamicItemsText" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_icon_1" style="@style/TabDynamicItemsLottie" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tab_item_2" style="@style/TabDynamicItemsParent">
+            <ImageView android:id="@id/static_icon_2" style="@style/TabDynamicItemsIcon" />
+            <TextView android:id="@id/tab_text_2" android:text="Square" style="@style/TabDynamicItemsText" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_icon_2" style="@style/TabDynamicItemsLottie" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tab_item_3" style="@style/TabDynamicItemsParent">
+            <ImageView android:id="@id/static_icon_3" style="@style/TabDynamicItemsIcon" />
+            <TextView android:id="@id/tab_text_3" android:text="Trade" style="@style/TabDynamicItemsText" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_icon_3" style="@style/TabDynamicItemsLottie" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tab_item_4" style="@style/TabDynamicItemsParent">
+            <ImageView android:id="@id/static_icon_4" style="@style/TabDynamicItemsIcon" />
+            <TextView android:id="@id/tab_text_4" android:text="Earn" style="@style/TabDynamicItemsText" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_icon_4" style="@style/TabDynamicItemsLottie" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

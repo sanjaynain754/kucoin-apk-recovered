@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.camera.view.PreviewView android:id="@id/previewView" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.kubi.kyc.ui.kycv2.camera.ClipOutPathView android:id="@id/clipView" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/cameraShutter" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginBottom="74.0dip" android:src="@mipmap/busercenter_kyc2_take_photo" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/switchLens" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="92.0dip" android:src="@mipmap/busercenter_rotate_camera" android:scaleType="center" android:layout_marginEnd="32.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+    <RelativeLayout android:id="@id/rl" android:background="@color/color_fff_000" android:layout_width="fill_parent" android:layout_height="42.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/ivBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_arrow_left2_20" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:tint="@color/c_text" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <View android:background="@color/primary" android:layout_width="48.0dip" android:layout_height="3.0dip" />
+            <View android:background="@color/primary" android:layout_width="24.0dip" android:layout_height="3.0dip" android:layout_marginStart="4.0dip" />
+            <View android:background="@color/c_cover8" android:layout_width="24.0dip" android:layout_height="3.0dip" />
+            <View android:background="@color/c_cover8" android:layout_width="48.0dip" android:layout_height="3.0dip" android:layout_marginStart="4.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

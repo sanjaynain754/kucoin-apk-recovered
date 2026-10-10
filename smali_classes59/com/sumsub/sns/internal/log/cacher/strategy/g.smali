@@ -1,0 +1,8 @@
+.class public interface abstract Lcom/sumsub/sns/internal/log/cacher/strategy/g;
+.super Ljava/lang/Object;
+.source "r8-map-id-e8070c335b728e491f9067563c2bfcb5588b777f644873c971594ef64ebda208"
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/String;Lcom/sumsub/sns/internal/log/cacher/i;Lcom/sumsub/sns/internal/log/cacher/j;Lkotlin/coroutines/jvm/internal/ContinuationImpl;)Ljava/lang/Object;
+.end method

@@ -1,0 +1,35 @@
+{
+  "biz": "startup",
+  "version": "1.7.1",
+  "url": "https://assets.staticimg.com/rn-bundles/Kucoin/startup/startup/1.7.1/afdcbc67/4194/build/android/startup-main.zip",
+  "packageHash": "lCaEOGJGeoqHZVKdxYG2/U5WR9qQ1r9uECknmNzsTfjrz/TJ81WU8u8ySQbtmWoHUh7yYttvuiLDscMY0rbhw0FP8aCgq+eFk51VFCm12U42D3OKuWTSmL6qTRTzX8//9wzhsG6GKOryuwa6QhjShJUY6pZQyPtRrwCW7m+cYOg=",
+  "sdkVersion": "1.0.0",
+  "packageSize": 1082488,
+  "dateTime": "2026-09-12T09:58:25.475Z",
+  "buildNo": 4194,
+  "leadUpgrade": false,
+  "basicDeps": [
+    {
+      "biz": "krnbase",
+      "version": "3.0.3",
+      "url": "https://assets.staticimg.com/rn-bundles/Kucoin/base_package/krnbase/3.0.3/f26c178e/3544/build/android/krnbase-main.zip",
+      "packageHash": "0ubnINseZmCKEXn3B5Jpqi05xK7EtcasU5V8s1L5C2T+hc0/bGZAr+Fd2cpIfDZpclkjbEGxJ6XDQzm0yh9F+snlEWDmwvUjBwrr14TBFApaNfpxnzSAqC7+9+kvlYH3nlHPrOdyklHAn1sRXj/uDQLzIdjjfvwOjOO9lYUKsCY=",
+      "buildNo": 3544,
+      "packageSize": 1754252
+    }
+  ],
+  "subPackages": [
+
+  ],
+  "i18n": {
+    "host_project_id": "4760199869ddff22418a06.51885033",
+    "cdn": "https://assets.staticimg.com",
+    "packages": [
+      {
+        "project_id": "904513766a2150908bea27.92393591",
+        "namespace": "runtime-rn"
+      }
+    ]
+  },
+  "entry": "main"
+}

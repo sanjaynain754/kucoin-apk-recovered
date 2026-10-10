@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/fl_menu" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:paddingBottom="65.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/fl_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+        </ScrollView>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/ll_action" android:paddingTop="@dimen/spacing_16" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_margin="@dimen/spacing_16">
+            <com.kubi.resources.widget.button.KcSecondaryButton android:gravity="center" android:id="@id/tv_reset" android:layout_width="fill_parent" android:text="@string/reset" android:layout_weight="1.0" android:layout_marginEnd="@dimen/spacing_5" style="@style/styleButton40Secondary" />
+            <com.kubi.resources.widget.button.KcPrimaryButton android:gravity="center" android:id="@id/tv_confirm" android:layout_width="fill_parent" android:text="@string/determine" android:layout_weight="1.0" android:layout_marginStart="@dimen/spacing_5" style="@style/styleButton40" />
+        </LinearLayout>
+    </FrameLayout>
+</merge>

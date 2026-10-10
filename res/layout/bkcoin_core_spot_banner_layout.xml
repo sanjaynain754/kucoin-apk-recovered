@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/banner_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/complianceInfoView"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.bingoogolapple.bgabanner.BGABanner android:id="@id/spot_banner" android:layout_width="fill_parent" android:layout_height="40.0dip" app:banner_contentBottomMargin="10.0dip" app:banner_indicatorGravity="center_horizontal" app:banner_isNeedShowIndicatorOnOnlyOnePage="false" app:banner_pageChangeDuration="1000" app:banner_pointAutoPlayAble="true" app:banner_pointAutoPlayInterval="4500" app:banner_pointContainerBackground="@android:color/transparent" app:banner_pointDrawable="@drawable/bspot_selector_banner" />
+    <com.kubi.core.view.ComplianceNoticeView android:id="@id/complianceNoticeView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

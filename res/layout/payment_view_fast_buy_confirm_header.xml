@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_15" android:textColor="@color/c_text40" android:gravity="center" android:id="@id/tvTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/payment_you_are_paying" android:fontFamily="@font/regular" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="36.0sp" android:textColor="@color/c_text" android:gravity="center" android:id="@id/tvAmountValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:maxLines="1" android:fontFamily="@font/semi" app:autoSizeMaxTextSize="36.0sp" app:autoSizeMinTextSize="@dimen/font_12" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+</merge>

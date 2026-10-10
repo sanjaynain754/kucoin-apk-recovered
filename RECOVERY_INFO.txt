@@ -1,0 +1,4 @@
+Source APK: kucoin.apk
+Decompiler: apktool 2.7.0
+Recovery date: 2026-10-10
+Original decompiled tree preserved as produced by apktool, with only this README and recovery metadata added.

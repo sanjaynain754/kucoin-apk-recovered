@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.button.KcSecondaryButton android:gravity="center" android:id="@id/addRecommend" android:layout_width="fill_parent" android:text="@string/market_add_self_choose" style="@style/styleButton40Secondary" />
+</FrameLayout>

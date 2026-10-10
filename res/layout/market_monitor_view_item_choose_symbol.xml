@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/llRoot" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0sp" android:textColor="@color/c_text" android:ellipsize="end" android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/tv_trade_pair" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="start" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.kubi.resources.widget.ShowHideTextView android:textSize="17.0sp" android:textColor="@color/c_text" android:gravity="end|center" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" app:autoSizeMaxTextSize="17.0sp" app:autoSizeMinTextSize="12.0sp" app:autoSizeStepGranularity="2.0sp" app:autoSizeTextType="uniform" />
+        <com.kubi.resources.widget.ShowHideTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:id="@id/tv_money_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+    </LinearLayout>
+    <com.kubi.resources.widget.KcEnhancedMaterialCheckBox android:layout_gravity="end|center" android:id="@id/iv_check" android:layout_width="20.0dip" android:layout_height="20.0dip" app:materialCheckboxStyle="style_20dp" app:materialEnableAnimation="false" />
+</LinearLayout>

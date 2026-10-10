@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_common_success" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="20.0sp" android:textColor="@color/c_text" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kumex_airdrop_active_ok" android:fontFamily="@font/semi" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text60" android:layout_gravity="center_horizontal" android:id="@id/dialogDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/kumex_airdrop_active_ok_desc" android:fontFamily="@font/regular" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:layout_gravity="start" android:id="@id/introduce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/kumex_airdrop_active_ok_introduce" android:fontFamily="@font/regular" />
+</LinearLayout>

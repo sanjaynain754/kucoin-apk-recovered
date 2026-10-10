@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_margin="8.0dip" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/tv_label" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="end|bottom|center" android:id="@id/iv_choose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kucoin_icon_choose_label_mirrored" android:layoutDirection="ltr" />
+</FrameLayout>

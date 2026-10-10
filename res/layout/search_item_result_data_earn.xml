@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_darkoverlay_click" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.CoinAvatarView android:layout_gravity="center_vertical" android:id="@id/coinIcon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginEnd="12.0dip" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.kubi.resources.widget.BaseTextView android:textSize="15.0sp" android:textColor="@color/c_text" android:id="@id/tvEarnName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@font/medium" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:id="@id/tvEarnType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:fontFamily="@font/regular" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.ShowHideTextView android:textSize="14.0sp" android:textColor="@color/primary" android:id="@id/tvRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="center" android:id="@id/tvRateType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kc_platform_search_earn_annualized" android:singleLine="true" android:fontFamily="@font/regular" />
+    </LinearLayout>
+    <ImageView android:layout_width="36.0dip" android:layout_height="fill_parent" android:src="@drawable/ic2_arrow_right_20" android:contentDescription="@null" android:paddingStart="16.0dip" app:tint="@color/c_icon40" />
+</LinearLayout>

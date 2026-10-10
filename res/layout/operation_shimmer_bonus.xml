@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/v1" android:background="@drawable/shape_shimmer_oval" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginBottom="14.0dip" android:layout_alignParentEnd="true" />
+    <View android:id="@id/v2" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="200.0dip" android:layout_height="16.0dip" android:layout_marginBottom="12.0dip" />
+    <View android:id="@id/v3" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="100.0dip" android:layout_height="16.0dip" android:layout_marginBottom="24.0dip" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip">
+        <View android:id="@id/v4" android:background="@drawable/shape_shimmer_rectangle_8r" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="D" android:layout_marginHorizontal="10.0dip" />
+        <View android:id="@id/v5" android:background="@drawable/shape_shimmer_rectangle_8r" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="H" android:layout_marginHorizontal="10.0dip" />
+        <View android:id="@id/v6" android:background="@drawable/shape_shimmer_rectangle_8r" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="M" android:layout_marginHorizontal="10.0dip" />
+        <View android:id="@id/v7" android:background="@drawable/shape_shimmer_rectangle_8r" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="S" android:layout_marginHorizontal="10.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/operation_shape_bg_bonus_task" android:padding="12.0dip" android:layout_width="0.0dip" android:layout_height="102.0dip" android:layout_weight="1.0">
+            <View android:id="@id/v81a" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="64.0dip" android:layout_height="16.0dip" android:layout_marginBottom="8.0dip" />
+            <View android:id="@id/v81b" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="40.0dip" android:layout_height="16.0dip" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/operation_shape_bg_bonus_task" android:padding="12.0dip" android:layout_width="0.0dip" android:layout_height="102.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0" android:layout_marginHorizontal="8.0dip">
+            <View android:id="@id/v82a" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="64.0dip" android:layout_height="16.0dip" android:layout_marginBottom="8.0dip" />
+            <View android:id="@id/v82b" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="40.0dip" android:layout_height="16.0dip" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/operation_shape_bg_bonus_task" android:padding="12.0dip" android:layout_width="0.0dip" android:layout_height="102.0dip" android:layout_weight="1.0">
+            <View android:id="@id/v83a" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="64.0dip" android:layout_height="16.0dip" android:layout_marginBottom="8.0dip" />
+            <View android:id="@id/v83b" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="40.0dip" android:layout_height="16.0dip" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View android:id="@id/v9" android:background="@drawable/shape_shimmer_rectangle_24r" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+</androidx.appcompat.widget.LinearLayoutCompat>

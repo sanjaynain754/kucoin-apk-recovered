@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/shape_bottom_sheet_bg" android:paddingLeft="16.0dip" android:paddingTop="32.0dip" android:paddingRight="16.0dip" android:paddingBottom="106.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_20" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kline_chart_settings" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/kline_chart_show_settings" />
+        <CheckBox android:textSize="14.0sp" android:textColor="@color/c_text" android:id="@id/history" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:button="@null" android:text="@string/history_delegation" android:drawablePadding="6.0dip" android:drawableStart="@drawable/ui_selector_checkbox" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:id="@id/tvDrawToolTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/kc_kline_other_set" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="center_vertical" android:id="@id/tvDrawTool" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="4.0dip" android:text="@string/kc_kline_paint_tool" android:drawableEnd="@drawable/ic2_arrow_right_16" app:drawableTint="@color/c_icon60" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutSearchQrScan" android:background="@drawable/shape_border_search_bar" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_search_16" android:contentDescription="@null" android:layout_marginStart="14.0dip" app:tint="@color/c_icon60" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text30" android:id="@id/tvSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="@string/search" android:singleLine="true" android:fontFamily="@font/regular" android:layout_marginHorizontal="4.0dip" />
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <View android:background="@color/c_divider8" android:layout_width="1.0dip" android:layout_height="20.0dip" />
+    <ImageView android:id="@id/ivQrScan" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic2_scan_20" android:contentDescription="@null" android:paddingStart="12.0dip" android:paddingEnd="16.0dip" app:tint="@color/c_icon" />
+</androidx.appcompat.widget.LinearLayoutCompat>

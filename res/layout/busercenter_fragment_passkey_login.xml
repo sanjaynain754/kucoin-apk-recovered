@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/c_mask" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/topMaskArea" android:layout_width="wrap_content" android:layout_height="106.0dip" />
+    <ScrollView android:background="@drawable/bg_bulletlayer_16r" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_20" android:textColor="@color/emphasis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_24" android:layout_marginRight="@dimen/spacing_16" android:text="@string/passkey_login_title" android:fontFamily="@font/semi" android:layout_marginHorizontal="@dimen/spacing_16" />
+            <com.kubi.resources.widget.BaseTextView android:textColor="@color/emphasis60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_12" android:layout_marginRight="@dimen/spacing_16" android:text="@string/passkey_login_subtitle" android:layout_marginHorizontal="@dimen/spacing_16" />
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/llLoading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/passkeyLottieView" android:layout_width="221.0dip" android:layout_height="132.0dip" android:layout_marginTop="@dimen/spacing_32" android:layout_marginBottom="@dimen/spacing_16" android:src="@mipmap/passkey_empty" />
+                <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/loadingContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16">
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/emphasis60" android:id="@id/tvLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passkey_loading" />
+                    <ImageView android:gravity="center_vertical" android:id="@id/loadingView" android:layout_width="18.0dip" android:layout_height="14.0dip" android:layout_marginStart="8.0dip" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/llFail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="221.0dip" android:layout_height="132.0dip" android:layout_marginTop="@dimen/spacing_32" android:layout_marginBottom="@dimen/spacing_16" android:src="@mipmap/uc_passkey_fail" />
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_20" android:textColor="@color/emphasis" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passkey_login_fail_title" android:fontFamily="@font/semi" />
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/emphasis60" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:text="@string/passkey_login_fail_tip" android:layout_marginHorizontal="@dimen/spacing_16" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/c_bulletLayer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/btnRetryPasskeyLogin" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/user_page_padding" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/user_page_padding" android:text="@string/passkey_login_action_title" android:layout_marginHorizontal="@dimen/user_page_padding" style="@style/styleButton40" />
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/spacing_24" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/emphasis" android:layout_gravity="center_horizontal" android:id="@id/tvPasswordLogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passkey_login_to_password" />
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/spacing_12" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

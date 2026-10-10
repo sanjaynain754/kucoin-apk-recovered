@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.viewpager2.SlidingTabLayout android:id="@id/tab" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_12" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" style="@style/kc_indicator_radio" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

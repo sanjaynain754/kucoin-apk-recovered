@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cpiz.android.bubbleview.BubbleLinearLayout android:orientation="horizontal" android:id="@id/guideBubble" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:bb_arrowDirection="Down" app:bb_arrowHeight="6.0dip" app:bb_arrowWidth="10.0dip" app:bb_cornerRadius="6.0dip" app:bb_fillColor="@color/c_toolTip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_white" android:id="@id/guideContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_10" android:layout_marginBottom="@dimen/spacing_10" android:maxWidth="220.0dip" android:text="@string/unify_custom_margin" android:layout_marginStart="@dimen/spacing_8" android:layout_marginEnd="@dimen/spacing_8" />
+</com.cpiz.android.bubbleview.BubbleLinearLayout>

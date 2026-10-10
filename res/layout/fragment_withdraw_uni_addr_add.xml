@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/spacing_16" android:paddingEnd="@dimen/spacing_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/spacing_12" android:fillViewport="true" app:layout_constraintBottom_toTopOf="@id/btn_next" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/spacing_24">
+            <com.kubi.resources.widget.AlertTipsTextView android:id="@id/tv_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/asset_general_tips" android:drawableStart="@drawable/ic2_info_16" app:att_tipsLevel="NOTICE_IMPORTANT" app:drawableTint="@color/brandGreen" />
+            <include android:id="@id/inputLayout" layout="@layout/kucoin_item_address_add" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/btn_next" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="12.0dip" android:text="@string/asset_general_button" app:layout_constraintBottom_toBottomOf="parent" style="@style/styleButton32" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/cl_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_bottom_sheet_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/c_text" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" app:layout_constraintTop_toTopOf="parent" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" app:layout_constraintBottom_toTopOf="@id/tv_known" app:layout_constraintTop_toBottomOf="@id/tv_title">
+            <TextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:ellipsize="end" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+        </ScrollView>
+        <com.kubi.resources.widget.button.KcPrimaryButton android:textColor="@color/c_text" android:id="@id/tv_known" android:background="@color/emphasis4" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="12.0dip" android:text="@string/already_know" android:layout_marginHorizontal="16.0dip" app:layout_constraintBottom_toBottomOf="parent" style="@style/styleButton40" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

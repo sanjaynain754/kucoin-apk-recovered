@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/llVipFee" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text40" android:id="@id/tvVipFeeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/asset_withdraw_vip_fee" android:textDirection="ltr" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text40" android:id="@id/tvNormalFee" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/complementary" android:id="@id/tvVipFee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/spacing_4" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text40" android:id="@id/tvVipFeeUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="ltr" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text40" android:id="@id/tvVipFiatCurrency" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <androidx.constraintlayout.helper.widget.Flow android:id="@id/flow" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="tvVipFeeTitle,tvNormalFee,tvVipFee,tvVipFeeUnit,tvVipFiatCurrency" app:flow_horizontalBias="0.0" app:flow_horizontalGap="0.0dip" app:flow_horizontalStyle="packed" app:flow_verticalGap="0.0dip" app:flow_wrapMode="chain" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llNormalFee" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:id="@id/tv_fee_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fee_colon" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text40" android:id="@id/tvFee" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text40" android:id="@id/tvFiatCurrency" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

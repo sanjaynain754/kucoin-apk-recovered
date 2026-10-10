@@ -1,0 +1,2540 @@
+.class public final Lcom/kubi/flutter/widget/kline/KLineViewController$b;
+.super Ljava/lang/Object;
+.source "KLineViewController.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/kubi/flutter/widget/kline/KLineViewController;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000P\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008-\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0014\u0008\u0080\u0008\u0018\u00002\u00020\u0001B\u0089\u0001\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u0012\u000c\u0010\t\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\n\u0012\u000c\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\r0\n\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u0012\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u0012\n\u0008\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0013\u0012\u0006\u0010\u0014\u001a\u00020\u0003\u0012\u0006\u0010\u0015\u001a\u00020\u000f\u0012\u0006\u0010\u0016\u001a\u00020\u000f\u0012\u0006\u0010\u0017\u001a\u00020\u000f\u0012\u0006\u0010\u0018\u001a\u00020\u000f\u00a2\u0006\u0004\u0008\u0019\u0010\u001aJ\u0006\u0010@\u001a\u00020AJ\u0006\u0010B\u001a\u00020CJ\t\u0010D\u001a\u00020\u0003H\u00c6\u0003J\t\u0010E\u001a\u00020\u0003H\u00c6\u0003J\t\u0010F\u001a\u00020\u0006H\u00c6\u0003J\t\u0010G\u001a\u00020\u0008H\u00c6\u0003J\u000f\u0010H\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\nH\u00c6\u0003J\u000f\u0010I\u001a\u0008\u0012\u0004\u0012\u00020\r0\nH\u00c6\u0003J\t\u0010J\u001a\u00020\u000fH\u00c6\u0003J\u000b\u0010K\u001a\u0004\u0018\u00010\u0011H\u00c6\u0003J\u000b\u0010L\u001a\u0004\u0018\u00010\u0013H\u00c6\u0003J\t\u0010M\u001a\u00020\u0003H\u00c6\u0003J\t\u0010N\u001a\u00020\u000fH\u00c6\u0003J\t\u0010O\u001a\u00020\u000fH\u00c6\u0003J\t\u0010P\u001a\u00020\u000fH\u00c6\u0003J\t\u0010Q\u001a\u00020\u000fH\u00c6\u0003J\u00a5\u0001\u0010R\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u00062\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u00082\u000e\u0008\u0002\u0010\t\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\n2\u000e\u0008\u0002\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\r0\n2\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f2\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00112\n\u0008\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00132\u0008\u0008\u0002\u0010\u0014\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0015\u001a\u00020\u000f2\u0008\u0008\u0002\u0010\u0016\u001a\u00020\u000f2\u0008\u0008\u0002\u0010\u0017\u001a\u00020\u000f2\u0008\u0008\u0002\u0010\u0018\u001a\u00020\u000fH\u00c6\u0001J\u0013\u0010S\u001a\u00020\u000f2\u0008\u0010T\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010U\u001a\u00020\u0006H\u00d6\u0001J\t\u0010V\u001a\u00020\u0003H\u00d6\u0001R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u001cR\u001a\u0010\u0004\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001d\u0010\u001c\"\u0004\u0008\u001e\u0010\u001fR\u001a\u0010\u0005\u001a\u00020\u0006X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008 \u0010!\"\u0004\u0008\"\u0010#R\u001a\u0010\u0007\u001a\u00020\u0008X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008$\u0010%\"\u0004\u0008&\u0010\'R \u0010\t\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008(\u0010)\"\u0004\u0008*\u0010+R \u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\r0\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008,\u0010)\"\u0004\u0008-\u0010+R\u001a\u0010\u000e\u001a\u00020\u000fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000e\u0010.\"\u0004\u0008/\u00100R\u001c\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00081\u00102\"\u0004\u00083\u00104R\u0013\u0010\u0012\u001a\u0004\u0018\u00010\u0013\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00085\u00106R\u0011\u0010\u0014\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00087\u0010\u001cR\u001a\u0010\u0015\u001a\u00020\u000fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00088\u0010.\"\u0004\u00089\u00100R\u001a\u0010\u0016\u001a\u00020\u000fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008:\u0010.\"\u0004\u0008;\u00100R\u001a\u0010\u0017\u001a\u00020\u000fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008<\u0010.\"\u0004\u0008=\u00100R\u001a\u0010\u0018\u001a\u00020\u000fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008>\u0010.\"\u0004\u0008?\u00100\u00a8\u0006W"
+    }
+    d2 = {
+        "Lcom/kubi/flutter/widget/kline/KLineViewController$RunningState;",
+        "",
+        "biz",
+        "",
+        "symbol",
+        "precision",
+        "",
+        "type",
+        "Lcom/kubi/flutter/widget/kline/KLineType;",
+        "mainIndexTypes",
+        "",
+        "Lcom/kubi/flutter/proto/kline/MainIndexType;",
+        "subIndexTypes",
+        "Lcom/kubi/flutter/proto/kline/SubIndexType;",
+        "isLineView",
+        "",
+        "selectPadConfig",
+        "Lcom/kubi/flutter/proto/kline/SelectPadConfig;",
+        "volumeConfig",
+        "Lcom/kubi/flutter/proto/kline/VolumeConfig;",
+        "tradeType",
+        "showHistory",
+        "showActive",
+        "enableHistory",
+        "enableActive",
+        "<init>",
+        "(Ljava/lang/String;Ljava/lang/String;ILcom/kubi/flutter/widget/kline/KLineType;Ljava/util/List;Ljava/util/List;ZLcom/kubi/flutter/proto/kline/SelectPadConfig;Lcom/kubi/flutter/proto/kline/VolumeConfig;Ljava/lang/String;ZZZZ)V",
+        "getBiz",
+        "()Ljava/lang/String;",
+        "getSymbol",
+        "setSymbol",
+        "(Ljava/lang/String;)V",
+        "getPrecision",
+        "()I",
+        "setPrecision",
+        "(I)V",
+        "getType",
+        "()Lcom/kubi/flutter/widget/kline/KLineType;",
+        "setType",
+        "(Lcom/kubi/flutter/widget/kline/KLineType;)V",
+        "getMainIndexTypes",
+        "()Ljava/util/List;",
+        "setMainIndexTypes",
+        "(Ljava/util/List;)V",
+        "getSubIndexTypes",
+        "setSubIndexTypes",
+        "()Z",
+        "setLineView",
+        "(Z)V",
+        "getSelectPadConfig",
+        "()Lcom/kubi/flutter/proto/kline/SelectPadConfig;",
+        "setSelectPadConfig",
+        "(Lcom/kubi/flutter/proto/kline/SelectPadConfig;)V",
+        "getVolumeConfig",
+        "()Lcom/kubi/flutter/proto/kline/VolumeConfig;",
+        "getTradeType",
+        "getShowHistory",
+        "setShowHistory",
+        "getShowActive",
+        "setShowActive",
+        "getEnableHistory",
+        "setEnableHistory",
+        "getEnableActive",
+        "setEnableActive",
+        "toDataParam",
+        "Lcom/kubi/flutter/widget/kline/IKLineDataInteractor$DataParam;",
+        "toOrderParam",
+        "Lcom/kubi/flutter/widget/kline/IKLineDataInteractor$OrderParam;",
+        "component1",
+        "component2",
+        "component3",
+        "component4",
+        "component5",
+        "component6",
+        "component7",
+        "component8",
+        "component9",
+        "component10",
+        "component11",
+        "component12",
+        "component13",
+        "component14",
+        "copy",
+        "equals",
+        "other",
+        "hashCode",
+        "toString",
+        "LKLineWidget_googleRelease"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field public final a:Ljava/lang/String;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public b:Ljava/lang/String;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public c:I
+
+.field public d:Lcom/kubi/flutter/widget/kline/KLineType;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public e:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "+",
+            "Lcom/kubi/flutter/proto/kline/MainIndexType;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public f:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "+",
+            "Lcom/kubi/flutter/proto/kline/SubIndexType;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public g:Z
+
+.field public h:Lcom/kubi/flutter/proto/kline/SelectPadConfig;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+.field public final i:Lcom/kubi/flutter/proto/kline/VolumeConfig;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+.field public final j:Ljava/lang/String;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public k:Z
+
+.field public l:Z
+
+.field public m:Z
+
+.field public n:Z
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ILcom/kubi/flutter/widget/kline/KLineType;Ljava/util/List;Ljava/util/List;ZLcom/kubi/flutter/proto/kline/SelectPadConfig;Lcom/kubi/flutter/proto/kline/VolumeConfig;Ljava/lang/String;ZZZZ)V
+    .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p4    # Lcom/kubi/flutter/widget/kline/KLineType;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p5    # Ljava/util/List;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p6    # Ljava/util/List;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p8    # Lcom/kubi/flutter/proto/kline/SelectPadConfig;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .param p9    # Lcom/kubi/flutter/proto/kline/VolumeConfig;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .param p10    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "I",
+            "Lcom/kubi/flutter/widget/kline/KLineType;",
+            "Ljava/util/List<",
+            "+",
+            "Lcom/kubi/flutter/proto/kline/MainIndexType;",
+            ">;",
+            "Ljava/util/List<",
+            "+",
+            "Lcom/kubi/flutter/proto/kline/SubIndexType;",
+            ">;Z",
+            "Lcom/kubi/flutter/proto/kline/SelectPadConfig;",
+            "Lcom/kubi/flutter/proto/kline/VolumeConfig;",
+            "Ljava/lang/String;",
+            "ZZZZ)V"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    const-string v0, "biz"
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    const-string v0, "symbol"
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 11
+    .line 12
+    const-string v0, "type"
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    const-string v0, "mainIndexTypes"
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 21
+    .line 22
+    const-string v0, "subIndexTypes"
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-static {p6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 26
+    .line 27
+    const-string v0, "tradeType"
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-static {p10, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 34
+    .line 35
+    iput-object p1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->a:Ljava/lang/String;
+
+    .line 36
+    .line 37
+    iput-object p2, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->b:Ljava/lang/String;
+
+    .line 38
+    .line 39
+    iput p3, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->c:I
+
+    .line 40
+    .line 41
+    iput-object p4, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->d:Lcom/kubi/flutter/widget/kline/KLineType;
+
+    .line 42
+    .line 43
+    iput-object p5, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->e:Ljava/util/List;
+
+    .line 44
+    .line 45
+    iput-object p6, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->f:Ljava/util/List;
+
+    .line 46
+    .line 47
+    iput-boolean p7, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->g:Z
+
+    .line 48
+    .line 49
+    iput-object p8, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->h:Lcom/kubi/flutter/proto/kline/SelectPadConfig;
+
+    .line 50
+    .line 51
+    iput-object p9, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->i:Lcom/kubi/flutter/proto/kline/VolumeConfig;
+
+    .line 52
+    .line 53
+    iput-object p10, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->j:Ljava/lang/String;
+
+    .line 54
+    .line 55
+    iput-boolean p11, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->k:Z
+
+    .line 56
+    .line 57
+    iput-boolean p12, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->l:Z
+
+    .line 58
+    .line 59
+    iput-boolean p13, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->m:Z
+
+    .line 60
+    .line 61
+    iput-boolean p14, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->n:Z
+
+    .line 62
+    return-void
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/String;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->a:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public final b()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-boolean v0, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->n:Z
+
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public final c()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-boolean v0, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->m:Z
+
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public final d()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/kubi/flutter/proto/kline/MainIndexType;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->e:Ljava/util/List;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public final e()I
+    .locals 1
+
+    .line 1
+    .line 2
+    iget v0, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->c:I
+
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 4
+    .param p1    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    .line 3
+    if-ne p0, p1, :cond_0
+
+    .line 4
+    return v0
+
+    .line 5
+    .line 6
+    :cond_0
+    instance-of v1, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;
+
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    .line 9
+    if-nez v1, :cond_1
+
+    .line 10
+    return v2
+
+    .line 11
+    .line 12
+    :cond_1
+    check-cast p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;
+
+    .line 13
+    .line 14
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->a:Ljava/lang/String;
+
+    .line 15
+    .line 16
+    iget-object v3, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->a:Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 20
+    move-result v1
+
+    .line 21
+    .line 22
+    if-nez v1, :cond_2
+
+    .line 23
+    return v2
+
+    .line 24
+    .line 25
+    :cond_2
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->b:Ljava/lang/String;
+
+    .line 26
+    .line 27
+    iget-object v3, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->b:Ljava/lang/String;
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 31
+    move-result v1
+
+    .line 32
+    .line 33
+    if-nez v1, :cond_3
+
+    .line 34
+    return v2
+
+    .line 35
+    .line 36
+    :cond_3
+    iget v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->c:I
+
+    .line 37
+    .line 38
+    iget v3, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->c:I
+
+    .line 39
+    .line 40
+    if-eq v1, v3, :cond_4
+
+    .line 41
+    return v2
+
+    .line 42
+    .line 43
+    :cond_4
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->d:Lcom/kubi/flutter/widget/kline/KLineType;
+
+    .line 44
+    .line 45
+    iget-object v3, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->d:Lcom/kubi/flutter/widget/kline/KLineType;
+
+    .line 46
+    .line 47
+    .line 48
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 49
+    move-result v1
+
+    .line 50
+    .line 51
+    if-nez v1, :cond_5
+
+    .line 52
+    return v2
+
+    .line 53
+    .line 54
+    :cond_5
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->e:Ljava/util/List;
+
+    .line 55
+    .line 56
+    iget-object v3, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->e:Ljava/util/List;
+
+    .line 57
+    .line 58
+    .line 59
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 60
+    move-result v1
+
+    .line 61
+    .line 62
+    if-nez v1, :cond_6
+
+    .line 63
+    return v2
+
+    .line 64
+    .line 65
+    :cond_6
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->f:Ljava/util/List;
+
+    .line 66
+    .line 67
+    iget-object v3, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->f:Ljava/util/List;
+
+    .line 68
+    .line 69
+    .line 70
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 71
+    move-result v1
+
+    .line 72
+    .line 73
+    if-nez v1, :cond_7
+
+    .line 74
+    return v2
+
+    .line 75
+    .line 76
+    :cond_7
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->g:Z
+
+    .line 77
+    .line 78
+    iget-boolean v3, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->g:Z
+
+    .line 79
+    .line 80
+    if-eq v1, v3, :cond_8
+
+    .line 81
+    return v2
+
+    .line 82
+    .line 83
+    :cond_8
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->h:Lcom/kubi/flutter/proto/kline/SelectPadConfig;
+
+    .line 84
+    .line 85
+    iget-object v3, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->h:Lcom/kubi/flutter/proto/kline/SelectPadConfig;
+
+    .line 86
+    .line 87
+    .line 88
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 89
+    move-result v1
+
+    .line 90
+    .line 91
+    if-nez v1, :cond_9
+
+    .line 92
+    return v2
+
+    .line 93
+    .line 94
+    :cond_9
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->i:Lcom/kubi/flutter/proto/kline/VolumeConfig;
+
+    .line 95
+    .line 96
+    iget-object v3, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->i:Lcom/kubi/flutter/proto/kline/VolumeConfig;
+
+    .line 97
+    .line 98
+    .line 99
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 100
+    move-result v1
+
+    .line 101
+    .line 102
+    if-nez v1, :cond_a
+
+    .line 103
+    return v2
+
+    .line 104
+    .line 105
+    :cond_a
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->j:Ljava/lang/String;
+
+    .line 106
+    .line 107
+    iget-object v3, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->j:Ljava/lang/String;
+
+    .line 108
+    .line 109
+    .line 110
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 111
+    move-result v1
+
+    .line 112
+    .line 113
+    if-nez v1, :cond_b
+
+    .line 114
+    return v2
+
+    .line 115
+    .line 116
+    :cond_b
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->k:Z
+
+    .line 117
+    .line 118
+    iget-boolean v3, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->k:Z
+
+    .line 119
+    .line 120
+    if-eq v1, v3, :cond_c
+
+    .line 121
+    return v2
+
+    .line 122
+    .line 123
+    :cond_c
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->l:Z
+
+    .line 124
+    .line 125
+    iget-boolean v3, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->l:Z
+
+    .line 126
+    .line 127
+    if-eq v1, v3, :cond_d
+
+    .line 128
+    return v2
+
+    .line 129
+    .line 130
+    :cond_d
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->m:Z
+
+    .line 131
+    .line 132
+    iget-boolean v3, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->m:Z
+
+    .line 133
+    .line 134
+    if-eq v1, v3, :cond_e
+
+    .line 135
+    return v2
+
+    .line 136
+    .line 137
+    :cond_e
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->n:Z
+
+    .line 138
+    .line 139
+    iget-boolean p1, p1, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->n:Z
+
+    .line 140
+    .line 141
+    if-eq v1, p1, :cond_f
+
+    .line 142
+    return v2
+
+    .line 143
+    :cond_f
+    return v0
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+.end method
+
+.method public final f()Lcom/kubi/flutter/proto/kline/SelectPadConfig;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->h:Lcom/kubi/flutter/proto/kline/SelectPadConfig;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public final g()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-boolean v0, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->l:Z
+
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public final h()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-boolean v0, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->k:Z
+
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public hashCode()I
+    .locals 3
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->a:Ljava/lang/String;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    .line 6
+    move-result v0
+
+    .line 7
+    .line 8
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 9
+    .line 10
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->b:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 14
+    move-result v1
+
+    .line 15
+    add-int/2addr v0, v1
+
+    .line 16
+    .line 17
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 18
+    .line 19
+    iget v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->c:I
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-static {v1}, Ljava/lang/Integer;->hashCode(I)I
+
+    .line 23
+    move-result v1
+
+    .line 24
+    add-int/2addr v0, v1
+
+    .line 25
+    .line 26
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 27
+    .line 28
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->d:Lcom/kubi/flutter/widget/kline/KLineType;
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v1}, Lcom/kubi/flutter/widget/kline/KLineType;->hashCode()I
+
+    .line 32
+    move-result v1
+
+    .line 33
+    add-int/2addr v0, v1
+
+    .line 34
+    .line 35
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 36
+    .line 37
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->e:Ljava/util/List;
+
+    .line 38
+    .line 39
+    .line 40
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 41
+    move-result v1
+
+    .line 42
+    add-int/2addr v0, v1
+
+    .line 43
+    .line 44
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 45
+    .line 46
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->f:Ljava/util/List;
+
+    .line 47
+    .line 48
+    .line 49
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 50
+    move-result v1
+
+    .line 51
+    add-int/2addr v0, v1
+
+    .line 52
+    .line 53
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 54
+    .line 55
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->g:Z
+
+    .line 56
+    .line 57
+    .line 58
+    invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
+
+    .line 59
+    move-result v1
+
+    .line 60
+    add-int/2addr v0, v1
+
+    .line 61
+    .line 62
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 63
+    .line 64
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->h:Lcom/kubi/flutter/proto/kline/SelectPadConfig;
+
+    .line 65
+    const/4 v2, 0x0
+
+    .line 66
+    .line 67
+    if-nez v1, :cond_0
+
+    .line 68
+    move v1, v2
+
+    .line 69
+    goto :goto_0
+
+    .line 70
+    .line 71
+    .line 72
+    :cond_0
+    invoke-virtual {v1}, Lcom/google/protobuf/GeneratedMessageLite;->hashCode()I
+
+    .line 73
+    move-result v1
+
+    .line 74
+    :goto_0
+    add-int/2addr v0, v1
+
+    .line 75
+    .line 76
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 77
+    .line 78
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->i:Lcom/kubi/flutter/proto/kline/VolumeConfig;
+
+    .line 79
+    .line 80
+    if-nez v1, :cond_1
+
+    .line 81
+    goto :goto_1
+
+    .line 82
+    .line 83
+    .line 84
+    :cond_1
+    invoke-virtual {v1}, Lcom/google/protobuf/GeneratedMessageLite;->hashCode()I
+
+    .line 85
+    move-result v2
+
+    .line 86
+    :goto_1
+    add-int/2addr v0, v2
+
+    .line 87
+    .line 88
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 89
+    .line 90
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->j:Ljava/lang/String;
+
+    .line 91
+    .line 92
+    .line 93
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 94
+    move-result v1
+
+    .line 95
+    add-int/2addr v0, v1
+
+    .line 96
+    .line 97
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 98
+    .line 99
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->k:Z
+
+    .line 100
+    .line 101
+    .line 102
+    invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
+
+    .line 103
+    move-result v1
+
+    .line 104
+    add-int/2addr v0, v1
+
+    .line 105
+    .line 106
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 107
+    .line 108
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->l:Z
+
+    .line 109
+    .line 110
+    .line 111
+    invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
+
+    .line 112
+    move-result v1
+
+    .line 113
+    add-int/2addr v0, v1
+
+    .line 114
+    .line 115
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 116
+    .line 117
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->m:Z
+
+    .line 118
+    .line 119
+    .line 120
+    invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
+
+    .line 121
+    move-result v1
+
+    .line 122
+    add-int/2addr v0, v1
+
+    .line 123
+    .line 124
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 125
+    .line 126
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->n:Z
+
+    .line 127
+    .line 128
+    .line 129
+    invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
+
+    .line 130
+    move-result v1
+
+    .line 131
+    add-int/2addr v0, v1
+
+    .line 132
+    return v0
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    .line 222
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
+    .line 233
+    .line 234
+    .line 235
+.end method
+
+.method public final i()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/kubi/flutter/proto/kline/SubIndexType;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->f:Ljava/util/List;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public final j()Ljava/lang/String;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->b:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public final k()Lcom/kubi/flutter/widget/kline/KLineType;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->d:Lcom/kubi/flutter/widget/kline/KLineType;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public final l()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-boolean v0, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->g:Z
+
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public final m(Z)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-boolean p1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->g:Z
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public final n(Ljava/util/List;)V
+    .locals 1
+    .param p1    # Ljava/util/List;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "+",
+            "Lcom/kubi/flutter/proto/kline/MainIndexType;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    const-string v0, "<set-?>"
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    iput-object p1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->e:Ljava/util/List;
+
+    .line 8
+    return-void
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public final o(I)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput p1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->c:I
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public final p(Lcom/kubi/flutter/proto/kline/SelectPadConfig;)V
+    .locals 0
+    .param p1    # Lcom/kubi/flutter/proto/kline/SelectPadConfig;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->h:Lcom/kubi/flutter/proto/kline/SelectPadConfig;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public final q(Z)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-boolean p1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->l:Z
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public final r(Z)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-boolean p1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->k:Z
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public final s(Ljava/util/List;)V
+    .locals 1
+    .param p1    # Ljava/util/List;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "+",
+            "Lcom/kubi/flutter/proto/kline/SubIndexType;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    const-string v0, "<set-?>"
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    iput-object p1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->f:Ljava/util/List;
+
+    .line 8
+    return-void
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public final t(Ljava/lang/String;)V
+    .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    .line 2
+    const-string v0, "<set-?>"
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    iput-object p1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->b:Ljava/lang/String;
+
+    .line 8
+    return-void
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 6
+    .line 7
+    const-string v1, "RunningState(biz="
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->a:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    const-string v1, ", symbol="
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->b:Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    const-string v1, ", precision="
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    iget v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->c:I
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    const-string v1, ", type="
+
+    .line 38
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->d:Lcom/kubi/flutter/widget/kline/KLineType;
+
+    .line 43
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    const-string v1, ", mainIndexTypes="
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 51
+    .line 52
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->e:Ljava/util/List;
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    const-string v1, ", subIndexTypes="
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 61
+    .line 62
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->f:Ljava/util/List;
+
+    .line 63
+    .line 64
+    .line 65
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 66
+    .line 67
+    const-string v1, ", isLineView="
+
+    .line 68
+    .line 69
+    .line 70
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 71
+    .line 72
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->g:Z
+
+    .line 73
+    .line 74
+    .line 75
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 76
+    .line 77
+    const-string v1, ", selectPadConfig="
+
+    .line 78
+    .line 79
+    .line 80
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 81
+    .line 82
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->h:Lcom/kubi/flutter/proto/kline/SelectPadConfig;
+
+    .line 83
+    .line 84
+    .line 85
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 86
+    .line 87
+    const-string v1, ", volumeConfig="
+
+    .line 88
+    .line 89
+    .line 90
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 91
+    .line 92
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->i:Lcom/kubi/flutter/proto/kline/VolumeConfig;
+
+    .line 93
+    .line 94
+    .line 95
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 96
+    .line 97
+    const-string v1, ", tradeType="
+
+    .line 98
+    .line 99
+    .line 100
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 101
+    .line 102
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->j:Ljava/lang/String;
+
+    .line 103
+    .line 104
+    .line 105
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 106
+    .line 107
+    const-string v1, ", showHistory="
+
+    .line 108
+    .line 109
+    .line 110
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 111
+    .line 112
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->k:Z
+
+    .line 113
+    .line 114
+    .line 115
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 116
+    .line 117
+    const-string v1, ", showActive="
+
+    .line 118
+    .line 119
+    .line 120
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 121
+    .line 122
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->l:Z
+
+    .line 123
+    .line 124
+    .line 125
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 126
+    .line 127
+    const-string v1, ", enableHistory="
+
+    .line 128
+    .line 129
+    .line 130
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 131
+    .line 132
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->m:Z
+
+    .line 133
+    .line 134
+    .line 135
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 136
+    .line 137
+    const-string v1, ", enableActive="
+
+    .line 138
+    .line 139
+    .line 140
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 141
+    .line 142
+    iget-boolean v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->n:Z
+
+    .line 143
+    .line 144
+    .line 145
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 146
+    .line 147
+    const/16 v1, 0x29
+
+    .line 148
+    .line 149
+    .line 150
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 151
+    .line 152
+    .line 153
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 154
+    move-result-object v0
+
+    .line 155
+    return-object v0
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    .line 222
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
+    .line 233
+    .line 234
+    .line 235
+.end method
+
+.method public final u(Lcom/kubi/flutter/widget/kline/KLineType;)V
+    .locals 1
+    .param p1    # Lcom/kubi/flutter/widget/kline/KLineType;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    .line 2
+    const-string v0, "<set-?>"
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    iput-object p1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->d:Lcom/kubi/flutter/widget/kline/KLineType;
+
+    .line 8
+    return-void
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public final v()Lcom/kubi/flutter/widget/kline/c$a;
+    .locals 5
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    new-instance v0, Lcom/kubi/flutter/widget/kline/c$a;
+
+    .line 3
+    .line 4
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->b:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    iget v2, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->c:I
+
+    .line 7
+    .line 8
+    iget-object v3, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->d:Lcom/kubi/flutter/widget/kline/KLineType;
+
+    .line 9
+    .line 10
+    iget-object v4, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->a:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/kubi/flutter/widget/kline/c$a;-><init>(Ljava/lang/String;ILcom/kubi/flutter/widget/kline/KLineType;Ljava/lang/String;)V
+
+    .line 14
+    return-object v0
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public final w()Lcom/kubi/flutter/widget/kline/c$b;
+    .locals 9
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    new-instance v0, Lcom/kubi/flutter/widget/kline/c$b;
+
+    .line 3
+    .line 4
+    iget-object v1, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->b:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    iget-object v2, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->d:Lcom/kubi/flutter/widget/kline/KLineType;
+
+    .line 7
+    .line 8
+    iget-object v3, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->a:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    iget-object v4, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->j:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    iget-boolean v5, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->k:Z
+
+    .line 13
+    .line 14
+    iget-boolean v6, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->l:Z
+
+    .line 15
+    .line 16
+    iget-boolean v7, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->m:Z
+
+    .line 17
+    .line 18
+    iget-boolean v8, p0, Lcom/kubi/flutter/widget/kline/KLineViewController$b;->n:Z
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-direct/range {v0 .. v8}, Lcom/kubi/flutter/widget/kline/c$b;-><init>(Ljava/lang/String;Lcom/kubi/flutter/widget/kline/KLineType;Ljava/lang/String;Ljava/lang/String;ZZZZ)V
+
+    .line 22
+    return-object v0
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method

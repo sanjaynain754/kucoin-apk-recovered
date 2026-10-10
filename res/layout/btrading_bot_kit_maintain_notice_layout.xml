@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_banner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/btrading_bot_kit_bg_announcement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_8">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="start|center|top" android:layout_width="18.0dip" android:layout_height="18.0dip" android:tint="@color/primary" android:layout_marginEnd="8.0dip" app:srcCompat="@mipmap/kucoin_icon_strategy_warning" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_12" android:textColor="@color/primary" android:gravity="center_vertical" android:id="@id/marqueeView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

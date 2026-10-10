@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/currencyRecyclerViewContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="155.0dip" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:layout_constraintBottom_toTopOf="@id/onlyDebtTipView" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/currencyTitleView"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/currencyRecyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:minHeight="155.0dip" android:layout_marginHorizontal="11.0dip" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/loadingView" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" app:lottie_autoPlay="true" app:lottie_fileName="loading.json" app:lottie_loop="true" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/errorLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/emptyIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_common_network_error" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:gravity="center" android:id="@id/emptyTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/load_failed_click_retry" app:layout_constraintTop_toBottomOf="@id/empty_icon" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/spacing_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/icon" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_horizontal" android:id="@id/amountLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_5">
+        <com.kubi.resources.widget.BaseTextView android:textSize="28.0sp" android:id="@id/tvAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bold" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text40" android:id="@id/tvCurrencyName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/regular" android:layout_marginStart="5.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View android:layout_width="fill_parent" android:layout_marginTop="@dimen/spacing_24" android:layout_marginBottom="@dimen/spacing_24" android:layout_marginVertical="@dimen/spacing_24" app:layout_constraintTop_toBottomOf="@id/amountLayout" style="@style/kucoin_view_divider" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_weight="1.0" android:fontFamily="@font/medium" android:layout_marginStart="5.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/direction" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tvDirection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_weight="1.0" android:fontFamily="@font/medium" android:layout_marginStart="5.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/type" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tvType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_weight="1.0" android:fontFamily="@font/medium" android:layout_marginStart="5.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fee" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tvFee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_weight="1.0" android:fontFamily="@font/medium" android:layout_marginStart="5.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remark" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:ellipsize="end" android:gravity="end" android:id="@id/tvRemark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:maxLines="3" android:layout_weight="1.0" android:fontFamily="@font/medium" android:layout_marginStart="5.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="58.0dip" android:paddingStart="16.0dip">
+            <com.kubi.resources.widget.ClearEditText android:textSize="14.0sp" android:textColor="@color/c_text" android:textColorHint="@color/c_text20" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/et_search" android:background="@drawable/bg_emphasis4_4r" android:layout_width="0.0dip" android:layout_height="32.0dip" android:hint="@string/search" android:maxLines="1" android:drawablePadding="12.0dip" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/shape_primary_cursor" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:drawableStartCompat="@drawable/kucoin_icon_search_mirrored" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/primary" android:gravity="center" android:id="@id/tv_close" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" android:paddingStart="12.0dip" android:paddingEnd="16.0dip" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.kubi.otc.view.IndexBar android:layout_gravity="end|center" android:id="@id/index_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:kucoin_ib_press_color="@color/c_large" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="48.0sp" android:textColor="@color/primary" android:layout_gravity="center" android:id="@id/tv_index" android:background="@drawable/shape_otc_index" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="18.0dip" android:paddingEnd="18.0dip" />
+</FrameLayout>

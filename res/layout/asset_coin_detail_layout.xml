@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/toolBar" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:paddingHorizontal="16.0dip" android:paddingVertical="10.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_arrow_left2_20" app:tint="@color/c_text" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.kubi.resources.widget.CoinAvatarView android:id="@id/iv_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="18.0sp" android:textColor="@color/c_text" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/semi" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_kline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_k_line_20" app:tint="@color/c_text" />
+    </LinearLayout>
+    <ScrollView android:id="@id/content_layout" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/coin_button_view" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolBar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.assets.overview.detail.CoinDetailHeadView android:id="@id/coin_head_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.kubi.assets.overview.detail.CoinDetailAllocationView android:id="@id/coin_allocation_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" />
+            <com.kubi.assets.overview.detail.CoinDetailPerformanceView android:id="@id/coin_performance_view" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" />
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/coinEarnContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16">
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:id="@id/tvCoinEarn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/semi" />
+                <com.kubi.assets.autoearn.views.AutoEarnCoinEntryView android:id="@id/autoEarnEntry" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/fl_loading" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/coin_button_view" app:layout_constraintTop_toBottomOf="@id/toolBar">
+        <View android:layout_gravity="center" android:id="@id/loadView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.kubi.assets.overview.detail.CoinDetailButtonView android:layout_gravity="bottom" android:id="@id/coin_button_view" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/content_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

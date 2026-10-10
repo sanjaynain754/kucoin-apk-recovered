@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/divider" style="@style/kucoin_view_divider" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:id="@id/tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/draw_award_hint" app:layout_constraintTop_toBottomOf="@id/divider" />
+    <Button android:textSize="15.0sp" android:textColor="@color/selector_color_for_button" android:gravity="center" android:id="@id/btn_draw" android:background="@drawable/selector_btn_primary" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="7.0dip" android:text="@string/withdrawal_all" android:textAllCaps="false" app:layout_constraintTop_toBottomOf="@id/tv_hint" />
+</androidx.constraintlayout.widget.ConstraintLayout>

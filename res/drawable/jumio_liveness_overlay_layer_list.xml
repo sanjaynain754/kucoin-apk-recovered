@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/liveness_overlay_bg" android:drawable="@drawable/jumio_liveness_overlay_bg" />
+    <item android:id="@id/liveness_overlay_main" android:drawable="@drawable/jumio_liveness_overlay_main_animated" />
+    <item android:id="@id/liveness_overlay_outer" android:drawable="@drawable/jumio_liveness_overlay_outer" />
+</layer-list>

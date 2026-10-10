@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kubi.resources.widget.KcCoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:kcl_title="@string/about_us"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/fl_contact_us" style="@style/BSetting_Item">
+                <com.kubi.resources.widget.BaseTextView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_us" style="@style/BSetting_ItemTitle" />
+                <com.kubi.resources.widget.BaseTextView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawableEndCompat="@drawable/ic2_arrow_right_16" app:drawableTint="@color/c_icon60" style="@style/BSetting_ItemSubTitle" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fl_service_protocol" style="@style/BSetting_Item">
+                <com.kubi.resources.widget.BaseTextView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_protocol" style="@style/BSetting_ItemTitle" />
+                <com.kubi.resources.widget.BaseTextView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawableEndCompat="@drawable/ic2_arrow_right_16" app:drawableTint="@color/c_icon60" style="@style/BSetting_ItemSubTitle" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fl_privacy_policy" style="@style/BSetting_Item">
+                <com.kubi.resources.widget.BaseTextView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_policy" style="@style/BSetting_ItemTitle" />
+                <com.kubi.resources.widget.BaseTextView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawableEndCompat="@drawable/ic2_arrow_right_16" app:drawableTint="@color/c_icon60" style="@style/BSetting_ItemSubTitle" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fl_version" style="@style/BSetting_Item">
+                <com.kubi.resources.widget.BaseTextView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/soft_version" style="@style/BSetting_ItemTitle" />
+                <com.kubi.resources.widget.BaseTextView android:layout_gravity="end|center" android:id="@id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawableEndCompat="@drawable/ic2_arrow_right_16" app:drawableTint="@color/c_icon60" style="@style/BSetting_ItemSubTitle" />
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.kubi.resources.widget.KcCoordinatorLayout>

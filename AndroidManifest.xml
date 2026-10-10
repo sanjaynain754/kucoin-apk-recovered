@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" package="com.kubi.kucoin" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:configChanges="orientation|screenSize" android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <queries>
+        <package android:name="com.revolut.revolut"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="jp.naver.line"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.vkontakte.android"/>
+        <package android:name="com.android.vending"/>
+        <package android:name="de.robv.android.xposed.installer"/>
+        <package android:name="com.saurik.substrate"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="mailto"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.samsung.android.mapsagent"/>
+        <package android:name="com.huawei.multimedia.audioengine"/>
+        <package android:name="com.hihonor.android.magicx.media.audioengine"/>
+        <package android:name="com.oplus.karaoke"/>
+        <package android:name="com.coloros.karaoke"/>
+        <package android:name="com.coloros.ocs.opencapabilityservice"/>
+        <package android:name="com.oplus.ocs"/>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <permission android:name="com.kubi.kucoin.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.kubi.kucoin.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.QUERY_ADVANCED_PROTECTION_MODE"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="freemme.permission.msa"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.light" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="com.samsung.android.mapsagent.permission.READ_APP_INFO"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission android:name="com.kubi.kucoin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.kubi.kucoin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.oplus.ocs.permission.third"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/appsflyer_data_extraction_rules" android:extractNativeLibs="true" android:fullBackupContent="@xml/appsflyer_backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/kucoin" android:largeHeap="true" android:name="com.secneo.apkwrapper.AW" android:networkSecurityConfig="@xml/network_security_config" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/kucoin_AppTheme_1" android:usesCleartextTraffic="false">
+        <meta-data android:name="design_width_in_dp" android:value="375"/>
+        <meta-data android:name="design_height_in_dp" android:value="812"/>
+        <activity android:exported="false" android:name="com.kubi.tradingbotkit.business.editPriceRange.ModifySuggestActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.kubi.tradingbotkit.business.coupons.GridCouponsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.home.shortcut.edit.EditHomeMenuActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.trtc.uikit.livekit.livestream.VideoLiveAnchorActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.trtc.uikit.livekit.livestream.VideoLiveAudienceActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/Theme.AppCompat.NoActionBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:launchMode="singleTask" android:name="com.kubi.user.loginv2.LoginV2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.user.signupv2.SignupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.kubi.user.signupv2.guidance.SignupGuidanceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.user.extaccount.bind.ExtAccountBindAct" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.user.extaccount.create.account.ExtAccountCreateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.user.thirdaccount.telegram.TelegramAuthActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.user.passkey.login.PasskeyLoginActivity" android:theme="@style/ActivityTranslucent1"/>
+        <activity android:name="com.kubi.user.hybrid.KWebLoadingAnimationActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.kubi.otc.fast.PayFiatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.otc.FiatOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.otc.PaymentWebActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.kubi.payment.fast.buy.popularpay.revolut.RevolutConfirmActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="revolut.com" android:scheme="oldkcpayment"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.kubi.payment.fasttradev2.buy.confirm.revolut.BuyRevolutConfirmActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="revolut.com" android:scheme="kcpayment"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.kubi.payment.channel.paymentmethod.recharge.ivy.IvyConfirmActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleInstance" android:name="com.revolut.revolutpay.ui.sandbox.SandboxConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.kubi.payment.kucoinpay.qrscan.PaymentQrCodeScanActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <activity android:launchMode="singleTask" android:name="com.kubi.payment.fasttradev2.FastTradeActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.kubi.payment.p2p.P2PActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.kubi.payment.p2p.order.P2POrderDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.kubi.payment.fasttradev2.buy.confirm.ivy.BuyIvyConfirmActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.kubi.kucoin.main.KuCoinMainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <meta-data android:name="com.appsflyer.FacebookApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <receiver android:exported="true" android:name="com.appsflyer.SingleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.kubi.advert.afValue" android:value="@string/af_devkey_value"/>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false"/>
+        <meta-data android:name="com.facebook.sdk.AutoInitEnabled" android:value="false"/>
+        <meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" android:value="false"/>
+        <receiver android:exported="true" android:name="com.kubi.kucoin.feature.widget.appwidget.WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.desktop_widget_refresh"/>
+                <action android:name="android.appwidget.action.desktop_widget_show_loading"/>
+                <action android:name="android.appwidget.action.desktop_widget_hide_loading"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_market_widget_info"/>
+        </receiver>
+        <activity android:launchMode="singleTop" android:name="com.kubi.market.monitor.lib.ui.floating.setting.NewFloatingWindowSettingActivity"/>
+        <service android:exported="false" android:name="com.kubi.kucoin.feature.widget.appwidget.WidgetRemoteService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:exported="false" android:name="com.kubi.kucoin.feature.widget.appwidget.WidgetRefreshService"/>
+        <activity android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kubi.wallet.ui.WalletFlutterActivity" android:screenOrientation="portrait" android:theme="@style/Wallet_No_Edge" android:windowSoftInputMode="adjustResize"/>
+        <activity android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kubi.lite.ui.LiteFlutterActivity" android:screenOrientation="portrait" android:theme="@style/Wallet_No_Edge" android:windowSoftInputMode="adjustResize"/>
+        <activity android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kubi.lite.tab.ui.LiteMainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <service android:exported="false" android:foregroundServiceType="mediaProjection" android:name="com.kubi.agora.ScreenCaptureService"/>
+        <activity android:exported="false" android:launchMode="singleInstance" android:name="com.kubi.agora.AgoraScreenShareWebActivity"/>
+        <activity android:exported="false" android:name="com.kubi.quotefacade.alpha.AlphaKlineSymbolPickerActivity" android:theme="@style/AlphaKlineSymbolPickerTheme"/>
+        <activity android:name="com.kubi.rn.ui.ReactContainerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.kubi.rn.ui.ReactTransparentContainerActivity" android:screenOrientation="portrait" android:theme="@style/RNTransparentActivityTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.kubi.kucoin.feature.SplashActivity" android:screenOrientation="portrait" android:theme="@style/kucoin_splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="com.kubi.kucoin.default.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="kucoin"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="kucoin.onelink.me" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="link.kucoin.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="action_uri_jpush"/>
+                <action android:name="com.kubi.kucoin.URI_LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="JPUSH_LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.kubi.action.TIM_URI_LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.kubi.action.REBIRTH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.kucoin.com" android:pathPattern="/.*pay/checkout/.*" android:scheme="https"/>
+                <data android:host="www.kucoin.biz" android:pathPattern="/.*pay/checkout/.*" android:scheme="https"/>
+                <data android:host="www.kucoin.cloud" android:pathPattern="/.*pay/checkout/.*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="wc"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="face,barcode"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="face,barcode"/>
+        <activity android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.kubi.kyc.vendor.jumio.ui.JumioKubiActivity" android:screenOrientation="portrait" android:theme="@style/Theme_NoTitle_Dim"/>
+        <activity android:name="com.kubi.kyc.ui.KycDispatchActivity" android:screenOrientation="portrait" android:theme="@style/KYC_HOME_THEME"/>
+        <activity android:name="com.kubi.kyc.ui.OcrCameraActivity" android:screenOrientation="portrait" android:theme="@style/Theme_NoTitle"/>
+        <activity android:name="com.kubi.kyc.ui.kycv2.ImagePreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.mine.lib.ui.AccountMoveActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.mine.lib.ui.AccountMoveH5Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.mine.lib.ui.MineActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.mine.lib.ui.userinfo.AvatarCropActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.kubi.search.SearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.kubi.assets.history.InOutHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.kubi.assets.deposit.DisableDepositDialogActivity" android:screenOrientation="portrait" android:theme="@style/DisableDepositDialogActivityStyle"/>
+        <activity android:label="" android:launchMode="singleTop" android:name="com.kubi.margin.market.MarginMarketActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.kubi.margin.kline.MarginFlutterKlineLandscapeActivity" android:screenOrientation="landscape" android:theme="@style/kucoin_kline_fullscreen"/>
+        <activity android:name="com.kubi.margin.index.IndexDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.margin.trade.etf.EtfRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:launchMode="singleTask" android:name="com.kubi.kucoin.quote.market.KuCoinMarketActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.kubi.spot.quote.coin.KuCoinCoinActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.kubi.spot.kline.flutter.SpotFlutterKlineLandscapeActivity" android:screenOrientation="landscape" android:theme="@style/kucoin_kline_fullscreen"/>
+        <activity android:name="com.kubi.kumex.kline.KuMexKlineLandscapeActivity" android:screenOrientation="landscape" android:theme="@style/kucoin_kline_fullscreen"/>
+        <activity android:name="com.kubi.futures.dialog.FutureBonusGetDialog" android:theme="@style/ActivityTranslucent1"/>
+        <activity android:name="com.kubi.redpackage.ui.RedPacketSendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.kubi.sdk.site.rebirth.ProcessRebirthActivity" android:process=":push" android:theme="@style/LSite.switch_page" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.kubi.sdk.site.rebirth.AppRebirthEmptyActivity" android:theme="@style/LSite.switch_page" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <service android:exported="false" android:name="com.kubi.sdk.site.rebirth.AppRebirthLauncherService"/>
+        <service android:exported="false" android:name="com.kubi.sdk.site.rebirth.AppRebirthClearService" android:process=":push"/>
+        <activity android:launchMode="singleTask" android:name="com.kubi.sdk.site.migration.SiteMigrationWebActivity"/>
+        <activity android:name="com.kubi.kweb.ui.KWebActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.kweb.ui.KWebTemplateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.kweb.ui.KWebSsgActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.kubi.fallback.GlobalFallbackActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.kubi.safe.lib.ui.gesture.GestureLockActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.safe.lib.ui.gesture.GestureLockSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.safe.lib.ui.account.WithdrawCheckActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.kubi.safe.lib.ui.freeze.FreezingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.safe.lib.ui.lost.LostMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.safe.lib.ui.freeze.UnFreezingActivity" android:screenOrientation="portrait"/>
+        <activity android:hardwareAccelerated="true" android:name="com.kubi.safe.lib.validation.v2.SafeValidationFlutterDelegateActivity" android:screenOrientation="portrait" android:theme="@style/SafeValidationTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.kubi.safe.lib.ui.securityguard.KWebSecurityGuardActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.qrcode.lib.QrCodeScanActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.kubi.sdk.mode.ui.ModeTransitionActivity" android:screenOrientation="portrait" android:theme="@style/Wallet_Transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kubi.widget.web.ui.KWebFullScreenVideoActivity" android:screenOrientation="landscape" android:theme="@style/kucoin_kline_fullscreen"/>
+        <activity android:launchMode="singleTask" android:name="com.kubi.kucoin.interceptor.SwitchDialogActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.kubi.sdk.push.jpush.PushService" android:process=":push">
+            <intent-filter>
+                <action android:name="cn.jiguang.privates.intent.USER_SERVICE"/>
+                <category android:name="com.kubi.kucoin"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.kubi.sdk.push.jpush.PushReceiver">
+            <intent-filter>
+                <action android:name="cn.jiguang.privates.intent.USER_RECEIVER"/>
+                <category android:name="com.kubi.kucoin"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.kubi.sdk.push.jpush.MessagingService">
+            <intent-filter android:priority="10">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/timpush_notification_icon"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/timpush_notification_color"/>
+        <activity android:hardwareAccelerated="true" android:name="com.kubi.sdk.flutter.ui.FlutterEntryActivity" android:screenOrientation="portrait" android:theme="@style/kucoin_no_edge" android:windowSoftInputMode="adjustResize"/>
+        <activity android:hardwareAccelerated="true" android:name="com.kubi.sdk.flutter.ui.FlutterDialogActivity" android:screenOrientation="portrait" android:theme="@style/FlutterDialogTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.kubi.kucoin.ChoosePhoneAreaActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.kubi.sdk.base.ui.BaseFragmentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.kubi.sdk.BaseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kubi.sdk.util.ImagePickerActivity" android:theme="@style/ActivityTranslucent"/>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value=""/>
+        </service>
+        <meta-data android:name="io.flutter.embedding.android.Renderer" android:value="skia"/>
+        <meta-data android:name="flutter.embedding.android.EnableImpeller" android:value="false"/>
+        <activity android:name="com.kubi.router.ui.HolderActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="flutterProjectType" android:value="module"/>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.trtc.tuikit.common.permission.PermissionActivity" android:theme="@style/CommonActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:exported="false" android:foregroundServiceType="microphone" android:name="com.trtc.tuikit.common.foregroundservice.AudioForegroundService"/>
+        <service android:exported="false" android:foregroundServiceType="camera|microphone" android:name="com.trtc.tuikit.common.foregroundservice.VideoForegroundService"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.trtc.tuikit.common.foregroundservice.MediaForegroundService"/>
+        <provider android:authorities="com.kubi.kucoin.StartProvider" android:enabled="true" android:exported="false" android:name="com.trtc.tuikit.common.system.ContextProvider"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:name="com.sumsub.sns.internal.features.presentation.main.SNSAppActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.tencent.qcloud.tim.push.TIMPushOpenActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.tencent.qcloud.uniapp" android:path="/detail" android:scheme="pushscheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.tencent.qcloud.tim.push.components.FCMLinkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.fcm.CLICKACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.kubi.kucoin.TIMPush.Init" android:enabled="true" android:exported="false" android:initOrder="8000" android:name="com.tencent.qcloud.tim.push.TIMPushEntry"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.tencent.qcloud.tim.push.permission.PermissionRequestActivity" android:theme="@style/CoreActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="ai.advance.sdk.global.iqa.GlobalIQAActivity" android:theme="@style/Theme.IqaSdk"/>
+        <activity android:launchMode="singleTop" android:name="aai.liveness.activity.LivenessActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.revolut.revolutpay.ui.webview.WebViewConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.revolut.revolutpay.ui.learn_more_activity.LearnMoreActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.revolut.revolutpay.ui.picker.PickerActivity" android:theme="@style/Theme.RevolutPay"/>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.controllers.identityauth.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.controllers.identitycredentials.IdentityCredentialApiHiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <uses-library android:name="androidx.camera.extensions.impl" android:required="false"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.tencent.qcloud.tuicore.permission.PermissionActivity" android:theme="@style/CoreActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:multiprocess="true" android:name="com.tencent.qcloud.tuicore.util.PermissionRequester$PermissionActivity" android:theme="@style/CoreActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="com.kubi.kucoin.TUICore.Init" android:enabled="true" android:exported="false" android:initOrder="99999" android:name="com.tencent.qcloud.tuicore.ServiceInitializer"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize" android:exported="false" android:name="com.pichillilorenzo.flutter_inappwebview_android.in_app_browser.InAppBrowserActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivity" android:theme="@style/ThemeTransparent"/>
+        <activity android:exported="false" android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivity" android:theme="@style/ThemeTransparent"/>
+        <activity android:exported="false" android:launchMode="singleInstance" android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance" android:theme="@style/ThemeTransparent"/>
+        <activity android:exported="false" android:launchMode="singleInstance" android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivitySingleInstance" android:theme="@style/ThemeTransparent"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ActionBroadcastReceiver"/>
+        <meta-data android:name="io.flutter.embedded_views_preview" android:value="true"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.kubi.kucoin.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <provider android:authorities="com.kubi.kucoin.fcmPush.Init" android:enabled="true" android:exported="false" android:initOrder="8001" android:name="com.tencent.timpush.fcm.TIMPushFCMService"/>
+        <service android:exported="false" android:name="com.tencent.timpush.fcm.TIMPushFCMMsgService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <service android:exported="false" android:name="cn.jiguang.privates.push.platform.google.callback.JGoogleCallback">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.kubi.kucoin.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.kubi.kucoin.flutter.share_provider" android:exported="false" android:grantUriPermissions="true" android:name="dev.fluttercommunity.plus.share.ShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/flutter_share_file_paths"/>
+        </provider>
+        <receiver android:exported="false" android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent">
+            <intent-filter>
+                <action android:name="EXTRA_CHOSEN_COMPONENT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="io.flutter.plugins.urllauncher.WebViewActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <provider android:authorities="com.kubi.kucoin.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.blankj.utilcode.util.UtilsTransActivity" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="com.kubi.kucoin.utilcode.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.blankj.utilcode.util.UtilsFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.blankj.utilcode.util.MessengerUtils$ServerService">
+            <intent-filter>
+                <action android:name="com.kubi.kucoin.messenger"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.kubi.kucoin.rmonitor-installer" android:exported="false" android:name="com.tencent.rmonitor.launch.AppLaunchMonitorInstaller"/>
+        <provider android:authorities="com.kubi.kucoin.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.kubi.kucoin.tuikit.engine.provider" android:enabled="true" android:exported="false" android:name="com.tencent.cloud.tuikit.engine.common.ContextProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="com.kubi.kucoin.autosize-init-provider" android:exported="false" android:multiprocess="true" android:name="me.jessyan.autosize.InitProvider"/>
+        <provider android:authorities="com.kubi.kucoin.SensorsDataContentProvider" android:enabled="true" android:exported="false" android:name="com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.MainProcessName" android:value="com.kubi.kucoin"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.version" android:value="5.4.4"/>
+        <service android:name="com.sensorsdata.abtest.service.GlobalLoopService"/>
+        <provider android:authorities="com.kubi.kucoin.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.tencent.liteav.audio2.permission.PermissionActivity" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <meta-data android:name="com.appsflyer.security.enable" android:value="true"/>
+        <meta-data android:name="com.appsflyer.security.uuid" android:value="249b0abb-c0ec-456a-9915-955d36a254c7"/>
+        <meta-data android:name="com.appsflyer.security.build.ts" android:value="01-07-2026 02:31:45"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="cn.jiguang.privates.common.component.JCommonActivity" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jiguang.privates.common.component.JCommonActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.kubi.kucoin"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.kubi.kucoin.JCommonProvider" android:exported="false" android:name="cn.jiguang.privates.common.component.JCommonProvider"/>
+        <meta-data android:name="JIGUANG_PRIVATES_APPKEY" android:value="dc4370d1bb2c470deb2f82a6"/>
+        <meta-data android:name="JIGUANG_PRIVATES_CHANNEL" android:value="produce"/>
+        <meta-data android:name="JIGUANG_PRIVATES_PROCESS" android:value=":push"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-identifier" android:value="ads-identifier:3.4.56.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:pps-phone:adsbrainkit" android:value="1"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <activity android:name="com.tencent.rtmp.video.TXScreenCapture$TXScreenCaptureAssistantActivity" android:theme="@android:style/Theme.Translucent"/>
+        <service android:exported="false" android:foregroundServiceType="mediaProjection" android:name="com.tencent.rtmp.video.ScreenCaptureService"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <provider android:authorities="com.kubi.kucoin.CP" android:exported="false" android:initOrder="2147483647" android:name="com.secneo.apkwrapper.CP"/>
+    </application>
+</manifest>

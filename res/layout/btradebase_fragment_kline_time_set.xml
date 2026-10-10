@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:id="@id/tvSubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:text="@string/kc_kline_default_timecycle_show" android:layout_marginHorizontal="@dimen/spacing_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_8" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_8" android:layout_marginHorizontal="@dimen/spacing_8" app:layout_constraintTop_toBottomOf="@id/tvSubTitle" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_20" android:layout_marginHorizontal="@dimen/spacing_16" app:layout_constraintBottom_toBottomOf="parent">
+        <com.kubi.resources.widget.button.KcSecondaryButton android:id="@id/tvReset" android:layout_width="0.0dip" android:text="@string/reset" android:layout_weight="1.0" android:layout_marginEnd="@dimen/spacing_6" style="@style/styleButton48Secondary" />
+        <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/tvConfirm" android:layout_width="0.0dip" android:text="@string/confirm" android:layout_weight="1.0" android:layout_marginStart="@dimen/spacing_6" style="@style/styleButton48" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

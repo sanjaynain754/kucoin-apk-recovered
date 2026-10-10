@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.resources.widget.chart.view.LineChartView android:id="@id/lineChart" android:layout_width="fill_parent" android:layout_height="200.0dip" app:chart_axis="none" app:chart_grid="horizontal" app:chart_gridColor="@color/c_transparent" app:chart_gridEffect="dashed" app:chart_gridStrokeWidth="1.0dip" app:chart_labelsColor="@color/c_text20" app:chart_labelsSize="10.0sp" app:chart_lineColor="@color/primary" app:chart_lineThickness="1.5dip" app:chart_smoothLine="false" />
+            <com.kubi.profit.loss.analysis.lib.AssetEmptyView android:gravity="center" android:id="@id/viewEmpty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/rangTypeListView" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginTop="4.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.kubi.resources.widget.KuCheckBox android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="start|center" android:layout_gravity="start" android:id="@id/check_fund" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:button="@null" android:text="@string/kc_asset_funds_button" android:drawablePadding="4.0dip" app:kcb_drawable_size="20.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/end_divider" app:layout_constraintTop_toTopOf="@id/rangTypeListView" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <ImageView android:layout_gravity="center" android:id="@id/loading" android:visibility="visible" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="40.0dip" android:layout_marginBottom="40.0dip" />
+    </FrameLayout>
+</LinearLayout>

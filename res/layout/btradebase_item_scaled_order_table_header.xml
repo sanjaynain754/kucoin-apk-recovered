@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/btradebase_bg_scaled_order_table_header" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="24.0dip" android:paddingHorizontal="8.0dip" android:paddingVertical="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:id="@id/tvHeaderPrice" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="@font/regular" android:textDirection="ltr" android:textAlignment="viewStart" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/amount" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/bkumex_twap_advance_price_percent" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+</LinearLayout>

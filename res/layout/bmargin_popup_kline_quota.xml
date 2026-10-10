@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/maskView" android:background="@color/c_40_black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.kubi.sdk.widget.shape.layout.ShapeLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:shape_bottomLeftRadius="@dimen/spacing_16" app:shape_bottomRightRadius="@dimen/spacing_16" app:shape_solidColor="@color/c_overlay">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_chart" />
+            <View android:background="@color/emphasis20" android:layout_width="0.5dip" android:layout_height="11.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+            <HorizontalScrollView android:scrollbarSize="@dimen/spacing_1" android:scrollbarThumbHorizontal="@color/c_60_e1e8f5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rb_main" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:textSize="12.0sp" android:textColor="@color/kucoin_selector_color_kline_item" android:gravity="center" android:id="@id/tv_kline_ma" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:button="@null" android:text="MA" />
+                    <RadioButton android:textSize="12.0sp" android:textColor="@color/kucoin_selector_color_kline_item" android:gravity="center" android:id="@id/tv_kline_ema" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:button="@null" android:text="EMA" />
+                    <RadioButton android:textSize="12.0sp" android:textColor="@color/kucoin_selector_color_kline_item" android:gravity="center" android:id="@id/tv_kline_boll" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:button="@null" android:text="BOLL" />
+                </RadioGroup>
+            </HorizontalScrollView>
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:id="@id/tv_hide_main" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hide" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sub_chart" />
+            <View android:background="@color/emphasis20" android:layout_width="0.5dip" android:layout_height="11.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+            <HorizontalScrollView android:scrollbarSize="@dimen/spacing_1" android:scrollbarThumbHorizontal="@color/c_60_e1e8f5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rb_no_main" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:textSize="12.0sp" android:textColor="@color/kucoin_selector_color_kline_item" android:gravity="center" android:id="@id/tv_kline_macd" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:button="@null" android:text="MACD" />
+                    <RadioButton android:textSize="12.0sp" android:textColor="@color/kucoin_selector_color_kline_item" android:gravity="center" android:id="@id/tv_kline_kdj" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:button="@null" android:text="KDJ" />
+                    <RadioButton android:textSize="12.0sp" android:textColor="@color/kucoin_selector_color_kline_item" android:gravity="center" android:id="@id/tv_kline_rsi" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:button="@null" android:text="RSI" />
+                </RadioGroup>
+            </HorizontalScrollView>
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:id="@id/tv_hide_no_main" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hide" />
+        </LinearLayout>
+    </com.kubi.sdk.widget.shape.layout.ShapeLinearLayout>
+</FrameLayout>

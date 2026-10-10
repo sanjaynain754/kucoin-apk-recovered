@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/layoutRoot" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.NavigationBar android:id="@id/naviBar" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="@dimen/ui_title_bar_height" />
+    <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.resources.widget.BaseTextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/c_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="16.0dip" android:text="@string/kc_third_account_cant_bind_title" android:fontFamily="@font/semi" android:layout_marginHorizontal="16.0dip" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/tvBindTips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:lineSpacingMultiplier="1.2" android:fontFamily="@font/regular" android:layout_marginHorizontal="16.0dip" />
+            <com.kubi.user.view.EmailPhoneInputView android:id="@id/extAccountCreateInputEmailPhone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:id="@id/goToLogin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="16.0dip" android:lineSpacingMultiplier="1.2" android:fontFamily="@font/regular" android:layout_marginHorizontal="16.0dip" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:id="@id/changeBind" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="16.0dip" android:lineSpacingMultiplier="1.2" android:fontFamily="@font/regular" android:layout_marginHorizontal="16.0dip" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_bottom_sheet_bg" android:paddingBottom="@dimen/spacing_20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_18" android:textColor="@color/c_text" android:id="@id/tv_dialog_title" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_24" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bold" android:paddingHorizontal="@dimen/spacing_16" />
+        <include android:id="@id/row_base_unit" layout="@layout/btradebase_item_market_amount_unit" />
+        <include android:id="@id/row_quote_unit" layout="@layout/btradebase_item_market_amount_unit" />
+    </LinearLayout>
+</LinearLayout>

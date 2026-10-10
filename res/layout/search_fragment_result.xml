@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/layoutContent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.kubi.resources.widget.flyco.SlidingTabLayout android:id="@id/searchTab" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/tab_bar_height" android:paddingHorizontal="4.0dip" app:tl_indicator_height="2.0dip" style="@style/tab_layout_indicator_level3" />
+        <com.kubi.resources.widget.rtlviewpager.RtlViewPager android:id="@id/searchPager" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:paddingHorizontal="16.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <include android:id="@id/emptyBinding" android:visibility="gone" layout="@layout/search_layout_empty" />
+    <include android:id="@id/loadingBinding" android:visibility="gone" layout="@layout/search_layout_loading" />
+</FrameLayout>

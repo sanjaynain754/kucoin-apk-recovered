@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/ku_mining_card_root" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BaseHomeWidgetCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/c_overlay" android:paddingTop="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_ku_mining_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_card_kuming_title" android:includeFontPadding="false" android:fontFamily="@font/regular" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/ic2_info_12" android:contentDescription="@null" android:layout_marginStart="6.0dip" app:tint="@color/c_icon60" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ku_mining_card_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="112.0dip" android:src="@drawable/ic2_common_empty" android:contentDescription="@null" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/home_card_kuming_empty_des" android:includeFontPadding="false" android:fontFamily="@font/regular" />
+        </LinearLayout>
+        <include android:id="@id/ku_mining_card_item_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" layout="@layout/kucoin_layout_cards_ku_mining_item_header" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/ll_ku_mining_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_ku_mining_list_loading" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/kucoin_layout_cards_ku_mining_item_loading" />
+                <include layout="@layout/kucoin_layout_cards_ku_mining_item_loading" />
+                <include layout="@layout/kucoin_layout_cards_ku_mining_item_loading" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

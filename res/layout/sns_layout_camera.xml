@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sumsub.sns.core.widget.SNSCameraBackgroundView android:id="@id/sns_camera_background" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.camera.view.PreviewView android:id="@id/sns_camera_preview" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginStart="@dimen/sns_margin_small_plus" android:layout_marginEnd="@dimen/sns_margin_small_plus" app:layout_constraintBottom_toTopOf="@id/sns_buttons_container" app:layout_constraintDimensionRatio="3:4" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sns_toolbar" app:layout_constraintVertical_bias="0.4" />
+    <com.sumsub.sns.core.widget.camera.SNSCornersOverlayView android:id="@id/sns_corners_overlay" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.sumsub.sns.core.widget.SNSToolbarViewInverse android:id="@id/sns_toolbar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <com.sumsub.sns.core.widget.SNSSubtitle1TextView android:gravity="center" android:id="@id/sns_toolbar_title" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:sns_textColor="@color/sns_cameraContent" />
+    </com.sumsub.sns.core.widget.SNSToolbarViewInverse>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sns_buttons_container" android:background="@android:color/transparent" android:paddingTop="@dimen/sns_margin_medium" android:paddingBottom="@dimen/sns_margin_huge" android:layout_width="0.0dip" android:layout_height="wrap_content" android:baselineAligned="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/sns_info" android:visibility="visible" android:layout_width="@dimen/sns_btn_info" android:layout_height="@dimen/sns_btn_info" android:adjustViewBounds="true" app:srcCompat="@drawable/sns_ic_info" app:tint="?android:textColorSecondaryInverse" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/sns_primary_button" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0">
+            <ImageView android:layout_gravity="center" android:id="@id/sns_button" android:layout_width="@dimen/sns_btn_take_picture" android:layout_height="@dimen/sns_btn_take_picture" android:adjustViewBounds="true" />
+            <com.sumsub.sns.core.widget.SNSProgressBarView android:layout_gravity="center" android:id="@id/sns_primary_button_progress" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminate="true" style="?android:progressBarStyle" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/sns_gallery" android:layout_width="@dimen/sns_btn_info" android:layout_height="@dimen/sns_btn_info" android:adjustViewBounds="true" app:srcCompat="@drawable/sns_ic_gallery" app:tint="?android:textColorSecondaryInverse" />
+        </FrameLayout>
+    </LinearLayout>
+</merge>

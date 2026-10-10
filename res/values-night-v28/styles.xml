@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LSite.switch_page" parent="@style/BaseAppTheme_28">
+        <item name="android:windowBackground">@color/c_overlay</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Wallet_Transparent" parent="@style/BaseAppTheme_28">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/Wallet_TransparentActivityAnimation</item>
+    </style>
+    <style name="kucoin_AppTheme_1" parent="@style/BaseAppTheme_28">
+        <item name="downColor">@color/secondary</item>
+        <item name="downColor12">@color/secondary12</item>
+        <item name="downColor16">@color/secondary16</item>
+        <item name="downColor20">@color/secondary20</item>
+        <item name="downColor4">@color/secondary4</item>
+        <item name="downColor8">@color/secondary8</item>
+        <item name="downDeepColor">@color/secondaryDeep</item>
+        <item name="upColor">@color/primary</item>
+        <item name="upColor12">@color/primary12</item>
+        <item name="upColor16">@color/primary16</item>
+        <item name="upColor20">@color/primary20</item>
+        <item name="upColor4">@color/primary4</item>
+        <item name="upColor8">@color/primary8</item>
+        <item name="upDeepColor">@color/primaryDeep</item>
+    </style>
+    <style name="kucoin_AppTheme_2" parent="@style/BaseAppTheme_28">
+        <item name="downColor">@color/primary</item>
+        <item name="downColor12">@color/primary12</item>
+        <item name="downColor16">@color/primary16</item>
+        <item name="downColor20">@color/primary20</item>
+        <item name="downColor4">@color/primary4</item>
+        <item name="downColor8">@color/primary8</item>
+        <item name="downDeepColor">@color/primaryDeep</item>
+        <item name="upColor">@color/secondary</item>
+        <item name="upColor12">@color/secondary12</item>
+        <item name="upColor16">@color/secondary16</item>
+        <item name="upColor20">@color/secondary20</item>
+        <item name="upColor4">@color/secondary4</item>
+        <item name="upColor8">@color/secondary8</item>
+        <item name="upDeepColor">@color/secondaryDeep</item>
+    </style>
+    <style name="kucoin_splash" parent="@style/BaseAppTheme_28">
+        <item name="android:windowBackground">@color/c_overlay</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="BaseAppTheme_28" parent="@style/BaseAppTheme">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:autofilledHighlight">@android:color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+</resources>

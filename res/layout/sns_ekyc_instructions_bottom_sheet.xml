@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/sns_margin_medium" android:paddingRight="@dimen/sns_margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/sns_margin_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sumsub.sns.core.widget.SNSBottomSheetHandleView android:id="@id/sns_ekyc_instructions_handle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_margin_medium" android:contentDescription="@null" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/sns_bg_rounded_divider" />
+    <androidx.core.widget.NestedScrollView android:id="@id/sns_ekyc_instructions_scroll" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_margin_medium" android:layout_marginBottom="@dimen/sns_margin_medium" android:overScrollMode="never" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@id/sns_ekyc_instructions_button" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sns_ekyc_instructions_handle" app:layout_constraintVertical_bias="0.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.sumsub.sns.core.widget.SNSH2TextView android:id="@id/sns_ekyc_instructions_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.sumsub.sns.core.widget.SNSBodyTextView android:id="@id/sns_ekyc_instructions_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_margin_small" android:lineSpacingExtra="@dimen/sns_line_spacing_extra_medium" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.sumsub.sns.core.widget.SNSPrimaryButton android:id="@id/sns_ekyc_instructions_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sns_margin_medium" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ll_sort" android:layout_width="fill_parent" android:layout_height="22.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="20.0dip" android:layout_marginStart="16.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_name" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pair" android:fontFamily="@font/regular" android:layout_marginEnd="2.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/iv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_sort_default" />
+        </LinearLayout>
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" android:fontFamily="@font/regular" android:layout_marginStart="2.0dip" android:layout_marginEnd="2.0dip" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_amount" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_gravity="center_vertical" android:id="@id/tv_sort_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deal_vol" android:fontFamily="@font/regular" android:layout_marginEnd="2.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/iv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_sort_default" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="end" android:id="@id/fl_price" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="20.0dip" android:layout_marginEnd="120.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="center_vertical" android:id="@id/tv_sort_price" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/price" android:fontFamily="@font/regular" android:layout_marginEnd="2.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_sort_default" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/fl_change_rate" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="30.0dip" android:layout_marginEnd="16.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="center" android:id="@id/tv_sort_change_rate" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/newcoin_change_rate_24h" android:fontFamily="@font/regular" android:layout_marginEnd="2.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_change_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_sort_default" />
+    </LinearLayout>
+</FrameLayout>

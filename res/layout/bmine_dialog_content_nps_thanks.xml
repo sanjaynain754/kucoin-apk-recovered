@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_darkoverlay_6r" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.round.widget.RoundImageView android:layout_width="fill_parent" android:layout_height="160.0dip" android:src="@mipmap/bmine_nps_thanks" android:contentDescription="@null" apps:round_corner_top_left="6.0dip" apps:round_corner_top_right="6.0dip" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/c_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/nps_easy_finish_msg" android:layout_marginHorizontal="24.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="24.0dip" android:text="@string/nps_easy_finish_tips" android:layout_marginHorizontal="24.0dip" />
+        <com.kubi.resources.widget.button.KcPrimaryButton android:textColor="@color/c_white" android:id="@id/btnIknow" android:background="@color/primary" android:layout_width="fill_parent" android:layout_marginLeft="24.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="24.0dip" android:text="@string/nps_easy_finish_button" android:layout_marginHorizontal="24.0dip" style="@style/styleButton40" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

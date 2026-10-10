@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" style="@style/kucoin_view_divider" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/primary" android:gravity="center" android:id="@id/tvType" android:background="@drawable/shape_primary16_2r" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/multi" android:paddingStart="3.0dip" android:paddingEnd="3.0dip" android:layout_marginEnd="8.0dip" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:id="@id/tvSymbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5.0dip" app:drawableEndCompat="@drawable/icon_arrow_right_mirrored" app:drawableTint="@color/c_text" />
+        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/margin_risk_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" />
+    </LinearLayout>
+    <com.kubi.assets.margin.isolated.IsolatedPositionView android:id="@id/positionView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

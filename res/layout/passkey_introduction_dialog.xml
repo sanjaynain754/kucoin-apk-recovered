@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/rootPasskeyIntroduction" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <ScrollView android:background="@drawable/shape_kc_bottom_sheet_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/spacing_16" android:paddingTop="20.0dip" android:paddingRight="@dimen/spacing_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="221.0dip" android:layout_height="132.0dip" android:src="@mipmap/passkey_empty" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_20" android:textColor="@color/c_text" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:text="@string/passkey_guide_top_title" android:fontFamily="@font/semi" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgFingerPrint" android:layout_width="20.0dip" android:layout_height="20.0dip" app:drawableTint="@color/c_text" app:srcCompat="@drawable/ic2_security_thin_20" />
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:gravity="center_vertical" android:id="@id/tvFingerPrint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passkey_guide_tip_first_title" android:includeFontPadding="false" android:layout_alignTop="@id/imgFingerPrint" android:lineSpacingMultiplier="1.3" android:fontFamily="@font/medium" android:layout_marginStart="@dimen/spacing_12" android:layout_toEndOf="@id/imgFingerPrint" />
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:text="@string/passkey_guide_tip_first_subtitle" android:layout_below="@id/tvFingerPrint" android:layout_alignStart="@id/tvFingerPrint" />
+            </RelativeLayout>
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/spacing_32" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgDevice" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" app:drawableTint="@color/c_text" app:srcCompat="@drawable/ic2_fingerprint_thin_20" />
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:gravity="center_vertical" android:id="@id/tvDevice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passkey_guide_tip_second_title" android:includeFontPadding="false" android:layout_alignTop="@id/imgDevice" android:lineSpacingMultiplier="1.3" android:fontFamily="@font/medium" android:layout_marginStart="@dimen/spacing_12" android:layout_toEndOf="@id/imgDevice" />
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:text="@string/passkey_guide_tip_second_subtitle" android:layout_below="@id/tvDevice" android:layout_alignStart="@id/tvDevice" />
+            </RelativeLayout>
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/spacing_32" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgSafe" android:layout_width="20.0dip" android:layout_height="20.0dip" app:drawableTint="@color/c_text" app:srcCompat="@drawable/ic2_mutidevice_thin_20" />
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:gravity="center_vertical" android:id="@id/tvSafe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passkey_guide_tip_third_title" android:includeFontPadding="false" android:layout_alignTop="@id/imgSafe" android:lineSpacingMultiplier="1.3" android:fontFamily="@font/medium" android:layout_marginStart="@dimen/spacing_12" android:layout_toEndOf="@id/imgSafe" />
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:text="@string/passkey_guide_tip_third_subtitle" android:layout_below="@id/tvSafe" android:layout_alignStart="@id/tvSafe" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:background="@color/c_bulletLayer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/btnAddPasskey" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="42.0dip" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:text="@string/passkey_guide_action_creat" android:layout_marginHorizontal="@dimen/spacing_16" style="@style/styleButton40" />
+    </LinearLayout>
+</LinearLayout>

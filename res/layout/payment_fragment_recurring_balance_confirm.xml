@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/spacing_16" android:paddingVertical="@dimen/spacing_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/spacing_24" app:layout_constraintBottom_toTopOf="@id/layout_footer" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.payment.fast.buy.widget.PaymentConfirmHeaderLayout android:id="@id/layout_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.kubi.payment.fast.buy.widget.PaymentConfirmRecurringLayout android:id="@id/layout_recurring" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_24" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+    <com.kubi.payment.fast.buy.widget.PaymentConfirmFooterLayout android:id="@id/layout_footer" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

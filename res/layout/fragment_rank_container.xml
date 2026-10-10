@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.flyco.RankSlidingTabLayout android:id="@id/actionTab" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" android:layout_weight="1.0" android:paddingHorizontal="@dimen/spacing_16" app:tl_indicator_color="@color/c_transparent" app:tl_textBold="SELECT" app:tl_underline_color="@color/c_transparent" style="@style/kc_indicator_radio" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btnHomeRankAction" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginEnd="16.0dip">
+            <ImageView android:layout_width="@dimen/spacing_16" android:layout_height="@dimen/spacing_16" android:src="@drawable/ic_kia_star" />
+            <com.kubi.sdk.widget.shape.view.ShapeTextView android:textSize="@dimen/font_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:text="@string/kc_quote_coin" app:shape_textCenterColor="#ff569cff" app:shape_textEndColor="#ffd750ff" app:shape_textGradientOrientation="horizontal" app:shape_textStartColor="#ff1ce9aa" />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.kubi.quotefacade.view.NoScrollQuoteViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.appcompat.widget.LinearLayoutCompat>

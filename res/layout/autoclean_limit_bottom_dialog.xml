@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <FrameLayout android:id="@id/fl_contentLayout" android:background="@drawable/shape_bottom_sheet_bg" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:paddingHorizontal="16.0dip">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/c_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="56.0dip" android:maxLines="1" />
+        <ViewStub android:id="@id/kyc_contentLayout" android:layout="@layout/kyc_autocleanlimit_bottom_content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="56.0dip" android:layout_marginBottom="52.0dip" />
+        <ViewStub android:id="@id/examine_contentLayout" android:layout="@layout/autoclean_informationreview_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="56.0dip" android:layout_marginBottom="52.0dip" />
+        <com.kubi.resources.widget.button.KcPrimaryButton android:layout_gravity="bottom" android:id="@id/tv_btn" android:layout_width="fill_parent" style="@style/styleButton40" />
+    </FrameLayout>
+</LinearLayout>

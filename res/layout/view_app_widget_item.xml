@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/item_widget" android:background="@drawable/selector_widget_item_bg" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="12.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/c_000D1D" android:ellipsize="end" android:id="@id/tv_trade_pair_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/c_60_000D1D" android:ellipsize="end" android:id="@id/tv_trade_pair_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textColor="@color/primary" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_lever" android:background="@drawable/bkucoin_shape_lever_border_green" android:visibility="gone" android:layout_width="wrap_content" android:singleLine="true" android:paddingEnd="3.0dip" android:layout_marginStart="5.0dip" style="@style/styleCommonLabel" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/c_60_000D1D" android:id="@id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="23.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/c_000D1D" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/c_60_000D1D" android:id="@id/tv_money_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/c_text_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="end|center" android:id="@id/tv_change_rate" android:layout_width="80.0dip" android:layout_height="28.0dip" android:minWidth="70.0dip" android:maxLines="1" android:singleLine="true" android:layout_marginEnd="12.0dip" />
+    </LinearLayout>
+    <TextView android:layout_gravity="bottom" android:background="@color/c_4_000D1D" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" />
+</FrameLayout>

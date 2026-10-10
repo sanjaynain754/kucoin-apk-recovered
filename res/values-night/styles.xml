@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseAppTheme_23" parent="@style/BaseAppTheme">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="InternalRevolutPay_BlackOutlined_Black" parent="@style/InternalRevolutPay_BlackButton" />
+    <style name="InternalRevolutPay_BlackOutlined_White" parent="@style/InternalRevolutPay_WhiteButton" />
+    <style name="InternalRevolutPay_BlackOutlined_WhiteOutlined" parent="@style/InternalRevolutPay_WhiteOutlinedButton" />
+    <style name="InternalRevolutPay_Black_BlackOutlined" parent="@style/InternalRevolutPay_BlackOutlinedButton" />
+    <style name="InternalRevolutPay_Black_White" parent="@style/InternalRevolutPay_WhiteButton" />
+    <style name="InternalRevolutPay_Black_WhiteOutlined" parent="@style/InternalRevolutPay_WhiteOutlinedButton" />
+    <style name="InternalRevolutPay_WhiteOutlined_Black" parent="@style/InternalRevolutPay_BlackButton" />
+    <style name="InternalRevolutPay_WhiteOutlined_BlackOutlined" parent="@style/InternalRevolutPay_BlackOutlinedButton" />
+    <style name="InternalRevolutPay_WhiteOutlined_White" parent="@style/InternalRevolutPay_WhiteButton" />
+    <style name="InternalRevolutPay_White_Black" parent="@style/InternalRevolutPay_BlackButton" />
+    <style name="InternalRevolutPay_White_BlackOutlined" parent="@style/InternalRevolutPay_BlackOutlinedButton" />
+    <style name="InternalRevolutPay_White_WhiteOutlined" parent="@style/InternalRevolutPay_WhiteOutlinedButton" />
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert" />
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth" />
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge" />
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="Theme.Material3.DayNight" parent="@style/Theme.Material3.Dark" />
+    <style name="Theme.Material3.DayNight.BottomSheetDialog" parent="@style/Theme.Material3.Dark.BottomSheetDialog" />
+    <style name="Theme.Material3.DayNight.Dialog" parent="@style/Theme.Material3.Dark.Dialog" />
+    <style name="Theme.Material3.DayNight.Dialog.Alert" parent="@style/Theme.Material3.Dark.Dialog.Alert" />
+    <style name="Theme.Material3.DayNight.Dialog.MinWidth" parent="@style/Theme.Material3.Dark.Dialog.MinWidth" />
+    <style name="Theme.Material3.DayNight.DialogWhenLarge" parent="@style/Theme.Material3.Dark.DialogWhenLarge" />
+    <style name="Theme.Material3.DayNight.NoActionBar" parent="@style/Theme.Material3.Dark.NoActionBar" />
+    <style name="Theme.Material3.DayNight.SideSheetDialog" parent="@style/Theme.Material3.Dark.SideSheetDialog" />
+    <style name="Theme.Material3.DynamicColors.DayNight" parent="@style/Theme.Material3.DynamicColors.Dark" />
+    <style name="Theme.Material3.DynamicColors.DayNight.NoActionBar" parent="@style/Theme.Material3.DynamicColors.Dark.NoActionBar" />
+    <style name="Theme.MaterialComponents.DayNight" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog" parent="@style/Theme.MaterialComponents.BottomSheetDialog" />
+    <style name="Theme.MaterialComponents.DayNight.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog" parent="@style/Theme.MaterialComponents.Dialog" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert" parent="@style/Theme.MaterialComponents.Dialog.Alert" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Alert.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize" parent="@style/Theme.MaterialComponents.Dialog.FixedSize" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge" parent="@style/Theme.MaterialComponents.Dialog.FixedSize.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth" parent="@style/Theme.MaterialComponents.Dialog.MinWidth" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge" parent="@style/Theme.MaterialComponents.Dialog.MinWidth.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge" parent="@style/Theme.MaterialComponents.DialogWhenLarge" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="@style/Theme.MaterialComponents.NoActionBar" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" parent="@style/Theme.MaterialComponents.NoActionBar.Bridge" />
+    <style name="Theme.SNSCore" parent="@style/Base.Theme.SNSCore">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="ThemeOverlay.AppCompat.DayNight" parent="@style/ThemeOverlay.AppCompat.Dark" />
+    <style name="ThemeOverlay.Material3.DynamicColors.DayNight" parent="@style/ThemeOverlay.Material3.DynamicColors.Dark" />
+    <style name="Widget.MaterialComponents.ActionBar.PrimarySurface" parent="@style/Widget.MaterialComponents.ActionBar.Surface" />
+    <style name="Widget.MaterialComponents.AppBarLayout.PrimarySurface" parent="@style/Widget.MaterialComponents.AppBarLayout.Surface" />
+    <style name="Widget.MaterialComponents.BottomAppBar.PrimarySurface" parent="@style/Widget.MaterialComponents.BottomAppBar" />
+    <style name="Widget.MaterialComponents.BottomNavigationView.PrimarySurface" parent="@style/Widget.MaterialComponents.BottomNavigationView" />
+    <style name="Widget.MaterialComponents.NavigationRailView.PrimarySurface" parent="@style/Widget.MaterialComponents.NavigationRailView" />
+    <style name="Widget.MaterialComponents.TabLayout.PrimarySurface" parent="@style/Widget.MaterialComponents.TabLayout" />
+    <style name="Widget.MaterialComponents.Toolbar.PrimarySurface" parent="@style/Widget.MaterialComponents.Toolbar.Surface" />
+    <style name="Widget.SNSCore.ModalBottomSheetDialog" parent="@style/Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@color/sns_color_background_100</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.SNSCore.LargeComponent</item>
+    </style>
+    <style name="kucoin_AppTheme_1" parent="@style/BaseAppTheme_23">
+        <item name="downColor">@color/secondary</item>
+        <item name="downColor12">@color/secondary12</item>
+        <item name="downColor16">@color/secondary16</item>
+        <item name="downColor20">@color/secondary20</item>
+        <item name="downColor4">@color/secondary4</item>
+        <item name="downColor8">@color/secondary8</item>
+        <item name="downDeepColor">@color/secondaryDeep</item>
+        <item name="upColor">@color/primary</item>
+        <item name="upColor12">@color/primary12</item>
+        <item name="upColor16">@color/primary16</item>
+        <item name="upColor20">@color/primary20</item>
+        <item name="upColor4">@color/primary4</item>
+        <item name="upColor8">@color/primary8</item>
+        <item name="upDeepColor">@color/primaryDeep</item>
+    </style>
+    <style name="kucoin_AppTheme_2" parent="@style/BaseAppTheme_23">
+        <item name="downColor">@color/primary</item>
+        <item name="downColor12">@color/primary12</item>
+        <item name="downColor16">@color/primary16</item>
+        <item name="downColor20">@color/primary20</item>
+        <item name="downColor4">@color/primary4</item>
+        <item name="downColor8">@color/primary8</item>
+        <item name="downDeepColor">@color/primaryDeep</item>
+        <item name="upColor">@color/secondary</item>
+        <item name="upColor12">@color/secondary12</item>
+        <item name="upColor16">@color/secondary16</item>
+        <item name="upColor20">@color/secondary20</item>
+        <item name="upColor4">@color/secondary4</item>
+        <item name="upColor8">@color/secondary8</item>
+        <item name="upDeepColor">@color/secondaryDeep</item>
+    </style>
+</resources>

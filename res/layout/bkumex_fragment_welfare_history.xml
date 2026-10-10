@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.flyco.SlidingTabLayout android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="@dimen/spacing_5" android:layout_marginStart="8.0dip" app:tl_indicator_width="@dimen/spacing_24" style="@style/kucoin_indicator_16" />
+    <com.kubi.resources.widget.rtlviewpager.RtlViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

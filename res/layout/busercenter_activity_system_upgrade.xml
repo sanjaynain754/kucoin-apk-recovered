@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@mipmap/busercenter_bg_account_move" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/sc_root" android:paddingBottom="48.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/c_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/kucoin_system_update" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@drawable/shape_user_update_asset_back" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+                    <ImageView android:id="@id/iv_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/busercenter_ic_update_avatar" android:layout_marginEnd="12.0dip" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/c_white" android:id="@id/tv_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@id/iv_avatar" />
+                    <com.kubi.resources.widget.ShowHideTextView android:textSize="15.0sp" android:textColor="@color/c_white" android:id="@id/tv_asset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_account" android:layout_toEndOf="@id/iv_avatar" />
+                </RelativeLayout>
+                <ImageView android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/busercenter_ic_account_update" android:layout_marginEnd="23.0dip" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/c_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_title1" />
+                <View android:background="@drawable/shape_user_update_underline" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <com.kubi.resources.widget.AlignTopTextView android:textSize="13.0sp" android:textColor="@color/c_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/update_content11" android:drawablePadding="10.0dip" app:drawableStartCompat="@mipmap/busercenter_ic_update_dot" />
+            <com.kubi.resources.widget.AlignTopTextView android:textSize="13.0sp" android:textColor="@color/c_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/update_content12" android:drawablePadding="10.0dip" app:drawableStartCompat="@mipmap/busercenter_ic_update_dot" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/c_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_title2" />
+                <View android:background="@drawable/shape_user_update_underline" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <com.kubi.resources.widget.AlignTopTextView android:textSize="13.0sp" android:textColor="@color/c_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/update_content21" android:drawablePadding="10.0dip" app:drawableStartCompat="@mipmap/busercenter_ic_update_dot" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/c_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_title3" />
+                <View android:background="@drawable/shape_user_update_underline" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <com.kubi.resources.widget.AlignTopTextView android:textSize="13.0sp" android:textColor="@color/c_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/update_content31" android:drawablePadding="10.0dip" app:drawableStartCompat="@mipmap/busercenter_ic_update_dot" />
+            <com.kubi.resources.widget.AlignTopTextView android:textSize="13.0sp" android:textColor="@color/c_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/update_content32" android:drawablePadding="10.0dip" app:drawableStartCompat="@mipmap/busercenter_ic_update_dot" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="18.0sp" android:textColor="@color/selector_color_for_button" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tv_next" android:background="@drawable/selector_btn_supplementary" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/next" />
+    <FrameLayout android:id="@id/fl_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

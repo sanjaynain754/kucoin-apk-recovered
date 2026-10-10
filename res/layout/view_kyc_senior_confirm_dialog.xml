@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/shape_largecolor_4r" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/manual_second_confirm" />
+    <TextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/manual_second_confirm_des" />
+    <TextView android:textSize="@dimen/font_14" android:textColor="@color/primary" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" />
+    <TextView android:textSize="@dimen/font_14" android:textColor="@color/primary" android:id="@id/tv_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" />
+    <TextView android:textSize="@dimen/font_14" android:textColor="@color/primary" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" />
+    <com.kubi.resources.widget.button.KcPrimaryButton android:textSize="16.0sp" android:gravity="center" android:id="@id/tv_confirm" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginTop="16.0dip" android:text="@string/determine" android:textAllCaps="false" style="@style/styleButton40" />
+    <com.kubi.resources.widget.button.KcPrimaryButton android:textSize="16.0sp" android:gravity="center" android:id="@id/tv_check_again" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/manual_second_confirm_check" android:textAllCaps="false" style="@style/styleButton40" />
+</LinearLayout>

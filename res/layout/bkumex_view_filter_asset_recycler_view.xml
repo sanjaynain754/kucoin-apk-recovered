@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:text="@string/type" android:fontFamily="@font/regular" android:layout_marginHorizontal="16.0dip" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:background="@drawable/shape_border_emphasis8_6r" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+        <com.kubi.assets.view.NonInterceptRecyclerView android:id="@id/recycler_view_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <View android:id="@id/line1" android:background="@color/emphasis4" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <com.kubi.assets.view.NonInterceptRecyclerView android:id="@id/recycler_view_right" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

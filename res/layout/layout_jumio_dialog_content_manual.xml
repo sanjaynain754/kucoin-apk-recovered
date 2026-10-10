@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_bg_manual_dailog" android:paddingLeft="10.0dip" android:paddingTop="30.0dip" android:paddingRight="10.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="10.0dip" android:paddingVertical="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_18" android:textStyle="bold" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notice_prompt" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <TextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/prod_kyc_senior_scan_result_tip_1" android:drawableStart="@drawable/facesdk_point_prefix" />
+        <TextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/prod_kyc_senior_scan_result_tip_2" android:drawableStart="@drawable/facesdk_point_prefix" />
+        <TextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/prod_kyc_senior_scan_result_tip_3" android:drawableStart="@drawable/facesdk_point_prefix" />
+        <TextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/prod_kyc_senior_scan_result_tip_4" android:drawableStart="@drawable/facesdk_point_prefix" />
+    </LinearLayout>
+    <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/tvRetry" android:layout_width="fill_parent" android:layout_marginTop="24.0dip" android:text="@string/kyc_retery" style="@style/styleButton40" />
+    <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/tvMaual" android:layout_width="fill_parent" android:layout_marginTop="16.0dip" android:text="@string/prod_kyc_senior_scan_manual" style="@style/styleButton40Secondary" />
+</LinearLayout>

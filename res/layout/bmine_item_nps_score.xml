@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="16.0sp" android:textColor="@color/c_text" android:gravity="center" android:id="@id/tvScore" android:background="@drawable/bmine_selector_nps_score_bg" android:layout_width="fill_parent" android:layout_height="32.0dip" android:minWidth="27.0dip" android:textDirection="ltr" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

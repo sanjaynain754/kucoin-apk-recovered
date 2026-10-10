@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="?internalRevolutPay_buttonBackgroundColor_disabled" />
+            <corners android:radius="32.0dip" />
+            <stroke android:width="?internalRevolutPay_borderWidth" android:color="?internalRevolutPay_buttonStrokeColor" />
+        </shape>
+    </item>
+    <item>
+        <ripple android:color="?internalRevolutPay_buttonBackgroundColor_ripple">
+            <item android:id="@id/rippleContent">
+                <shape>
+                    <solid android:color="?internalRevolutPay_buttonBackgroundColor" />
+                    <corners android:radius="32.0dip" />
+                    <stroke android:width="?internalRevolutPay_borderWidth" android:color="?internalRevolutPay_buttonStrokeColor" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</selector>

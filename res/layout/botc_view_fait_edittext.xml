@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/view_input" android:layout_width="fill_parent" android:layout_height="53.0dip" app:layout_constraintTop_toTopOf="parent">
+        <com.kubi.resources.widget.FilterEmojiEditText android:textSize="40.0sp" android:textColor="@color/c_text" android:textColorHint="@color/c_text40" android:gravity="start" android:id="@id/et_fiat_input" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:hint="0" android:lines="1" android:inputType="numberDecimal" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/shape_primary_cursor" android:textAlignment="viewStart" android:layout_marginEnd="10.0dip" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="40.0sp" android:textColor="@color/c_text40" android:id="@id/tv_input_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:id="@id/view_input_line" android:background="@drawable/selector_line_primary" android:layout_width="fill_parent" android:layout_marginTop="8.0dip" app:layout_constraintTop_toBottomOf="@id/view_input" style="@style/kucoin_view_divider" />
+</merge>

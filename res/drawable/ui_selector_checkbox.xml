@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/ui_ic_checkbox_22" />
+    <item android:state_checked="true" android:drawable="@drawable/ui_ic_checkbox_22" />
+    <item android:state_selected="false" android:drawable="@mipmap/ui_ic_single_unselected" />
+    <item android:state_checked="false" android:drawable="@mipmap/ui_ic_single_unselected" />
+    <item android:drawable="@mipmap/ui_ic_single_unselected" />
+</selector>

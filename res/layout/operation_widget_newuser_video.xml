@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.media3.ui.PlayerView android:id="@id/playerView" android:background="@color/c_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:resize_mode="fill" app:surface_type="texture_view" app:use_controller="false" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivPlaceholder" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/operation_img_newuser" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_root" android:background="@color/c_121212" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.trtc.uikit.livekit.common.ui.RoundFrameLayout android:id="@id/fl_video_view_container" android:background="@color/common_design_standard_g1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="44.0dip" android:layout_marginBottom="96.0dip" />
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/rl_anchor_preview_mask" android:background="@drawable/anchor_prepare_preview_mask" android:layout_width="fill_parent" android:layout_height="300.0dip" />
+    <ImageView android:id="@id/iv_back" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="56.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic2_arrow_left2_20" android:importantForAccessibility="no" app:tint="@color/c_white" />
+</FrameLayout>

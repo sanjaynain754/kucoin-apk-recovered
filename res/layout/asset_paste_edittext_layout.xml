@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" android:layout_marginVertical="@dimen/spacing_16" app:layout_constraintTop_toBottomOf="@id/withdrawSettingTips"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.ClearEditText android:layout_gravity="center_vertical" android:id="@id/addrSearch" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search" style="@style/KcSearchBarLarge" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/primary" android:layout_gravity="end|center" android:id="@id/tvPaste" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:text="@string/paste" android:fontFamily="@font/regular" android:layout_marginEnd="@dimen/spacing_16" />
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/delegateHeaderNsv" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" app:layout_constraintBottom_toTopOf="@id/recycler_view" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/topLl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <HorizontalScrollView android:id="@id/hsl" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingVertical="7.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/tagsLl" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/headerOperationsLl" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <com.kubi.resources.widget.KuCheckBox android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="center_vertical" android:id="@id/showOnlyCurContractCb" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:minHeight="32.0dip" android:text="@string/bkumex_only_show_current_contract" android:drawablePadding="5.0dip" android:layout_weight="1.0" android:layout_marginEnd="10.0dip" app:fontFamily="@font/regular" app:kcb_drawable_size="16.0dip" />
+                <com.kubi.resources.widget.button.KcSecondaryButton android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:id="@id/createStrategyTv" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="4.0dip" android:clickable="true" android:layout_width="wrap_content" android:text="@string/HoldingPage_Bot_CreateButton" android:paddingHorizontal="12.0dip" android:paddingVertical="4.0dip" app:fontFamily="@font/semi" style="@style/styleButton28Secondary" />
+            </LinearLayout>
+            <View android:id="@id/viewDivider" android:layout_width="fill_parent" style="@style/kucoin_view_divider" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/delegateHeaderNsv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

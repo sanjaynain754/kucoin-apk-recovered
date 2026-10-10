@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layoutContent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="bottom" android:id="@id/ivImage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/bg_share_app" android:scaleType="fitXY" android:contentDescription="@null" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/share_layout_footer" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

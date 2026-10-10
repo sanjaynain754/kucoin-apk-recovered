@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <cache-path name="payment_share_pdf" path="payment/" />
+    <cache-path name="file_bridge_cache" path="file_bridge/" />
+    <external-path name="grow_share_image1" path="." />
+    <external-files-path name="grow_share_image2" path="." />
+    <external-cache-path name="grow_share_image3" path="." />
+</paths>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/avatar" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@mipmap/icon_default_head" />
+    <FrameLayout android:gravity="center" android:layout_gravity="end|bottom|center" android:id="@id/flAvatarStatusContainer" android:background="@drawable/bg_circle_avatar" android:visibility="gone" android:layout_width="34.0dip" android:layout_height="34.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/imgAvatarStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_camera_mine" app:tint="@color/c_text" />
+    </FrameLayout>
+    <FrameLayout android:gravity="center" android:id="@id/flAvatarLoadingContainer" android:background="@drawable/bg_upload_avatar_loading" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/ivUploadAvatarLoading" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/bmine_avatar_upload_loading" />
+    </FrameLayout>
+</FrameLayout>

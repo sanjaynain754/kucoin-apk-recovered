@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/ui_home_realtime_card_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.home.realtime.frame.view.CardStackView android:id="@id/real_time_card" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.kubi.resources.widget.KcLabelView android:textSize="@dimen/font_12" android:gravity="center" android:layout_gravity="end" android:id="@id/label_realtime_count" android:layout_width="wrap_content" android:layout_height="18.0dip" android:includeFontPadding="false" android:translationY="-2.0dip" android:fontFamily="@font/bold" app:klv_cornerRadius="24.0dip" app:klv_level="LIGHT_GREEN" app:klv_paddingHorizontal="6.0dip" app:klv_paddingVertical="1.0dip" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:id="@id/button_close" android:visibility="gone" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10" android:src="@drawable/ic2_close_12" android:layout_marginEnd="@dimen/dp_10" app:tint="@color/c_text30" />
+</FrameLayout>

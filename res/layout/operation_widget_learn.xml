@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="96.0dip" style="@style/BaseHomeWidgetCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_bg_home_widget" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:id="@id/tvTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:fontFamily="@font/bold" android:layout_marginEnd="8.0dip" app:layout_constraintEnd_toStartOf="@id/ivImage" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivImage" android:layout_width="85.0dip" android:layout_height="64.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/brandGreen" android:id="@id/tvTips" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/homepage_watch_now" android:drawablePadding="4.0dip" android:drawableStart="@drawable/ic2_play_16" android:fontFamily="@font/medium" android:layout_marginEnd="8.0dip" app:drawableTint="@color/brandGreen" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/ivImage" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" />
+        <androidx.constraintlayout.widget.Group android:id="@id/groupContent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="tvTitle,ivImage,tvTips" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/shimmerLearn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:id="@id/v1" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="118.0dip" android:layout_height="16.0dip" android:layout_marginBottom="8.0dip" />
+                <View android:id="@id/v2" android:background="@drawable/shape_shimmer_rectangle_4r" android:layout_width="66.0dip" android:layout_height="16.0dip" android:layout_marginBottom="8.0dip" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <View android:id="@id/v3" android:background="@drawable/shape_shimmer_rectangle_12r" android:layout_width="85.0dip" android:layout_height="64.0dip" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

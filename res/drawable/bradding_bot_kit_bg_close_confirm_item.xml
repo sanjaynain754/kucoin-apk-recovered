@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="5.0dip" />
+            <gradient android:startColor="@color/emphasis4" android:endColor="@color/emphasis4" android:angle="0.0" />
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="5.0dip" />
+                    <gradient android:startColor="@color/emphasis4" android:endColor="@color/emphasis4" android:angle="0.0" />
+                    <stroke android:width="@dimen/line_width" android:color="@color/primary" />
+                </shape>
+            </item>
+            <item>
+                <bitmap android:gravity="bottom|center|right" android:src="@mipmap/kucoin_icon_strategy_chose_item" />
+            </item>
+        </layer-list>
+    </item>
+</selector>

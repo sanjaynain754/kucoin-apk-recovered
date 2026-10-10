@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/kucoin_ic_experience_gold" android:layout_marginStart="@dimen/spacing_2" />
+    <TextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:id="@id/tvNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/semi" android:layout_marginStart="@dimen/spacing_4" />
+</androidx.appcompat.widget.LinearLayoutCompat>

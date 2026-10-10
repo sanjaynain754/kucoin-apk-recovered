@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.loan.view.ChooseCoinView android:id="@id/currencyTab" android:background="@drawable/shape_border_emphasis8_8r" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginHorizontal="12.0dip" />
+            <com.kubi.resources.widget.SelectGroup android:orientation="horizontal" android:id="@id/currencyTabPair" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginHorizontal="12.0dip">
+                <com.kubi.resources.widget.ShortCoinView android:id="@id/baseCurrency" android:background="@drawable/bloan_selector_select_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <com.kubi.resources.widget.ShortCoinView android:id="@id/quoteCurrency" android:background="@drawable/bloan_selector_select_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/spacing_8" />
+            </com.kubi.resources.widget.SelectGroup>
+            <include android:id="@id/cl_available" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginHorizontal="12.0dip" layout="@layout/bloan_layout_borrow_overview" />
+            <View android:background="@color/c_divider8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginHorizontal="12.0dip" />
+            <com.kubi.loan.view.LeverInputViewNew android:id="@id/borrowAmount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:kucoin_liv_all="@string/maximun" app:kucoin_liv_all_show="true" app:kucoin_liv_fiat_show="true" app:kucoin_liv_title="@string/borrow_amount" app:kucoin_liv_title_color="@color/emphasis60" app:kucoin_liv_title_notice="false" app:kucoin_liv_underline_color_error="@color/secondary" app:kucoin_liv_underline_color_normal="@color/primary" />
+            <include android:id="@id/business_pause" android:visibility="gone" layout="@layout/bloan_include_business_pause" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/confirm" android:visibility="gone" android:layout_width="fill_parent" android:layout_margin="@dimen/spacing_12" android:text="@string/confirm_borrow" style="@style/styleButton48" />
+</LinearLayout>

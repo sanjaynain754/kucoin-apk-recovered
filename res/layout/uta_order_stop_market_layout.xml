@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:id="@id/tvStopPriceTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trigger_price" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tvStopPriceValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textDirection="locale" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:id="@id/tvStopPriceUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:id="@id/tvPriceTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delegation_price" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tvPriceValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textDirection="locale" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llOrderValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:id="@id/tvOrderValueTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unify_delegation_money" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tvOrderValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textDirection="locale" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:id="@id/tvOrderValueUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llQuantity" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:id="@id/tvQuantityTitle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/unify_delegation_amount" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tvQuantityValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textDirection="locale" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:id="@id/tvQuantityUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+</LinearLayout>

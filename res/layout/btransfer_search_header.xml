@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/viewSearch" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:paddingStart="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.FocusEditTextLinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.kubi.resources.widget.ClearEditText android:textSize="16.0sp" android:textColor="@color/c_text" android:textColorHint="@color/c_text20" android:gravity="center_vertical" android:id="@id/etSearch" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/search" android:singleLine="true" android:drawablePadding="12.0dip" android:layout_weight="1.0" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/shape_primary_cursor" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:drawableStartCompat="@drawable/ic2_search_20" app:drawableTint="@color/c_icon40" />
+    </com.kubi.resources.widget.FocusEditTextLinearLayout>
+    <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/brandGreen" android:gravity="center" android:id="@id/tvClose" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" android:paddingStart="14.0dip" android:paddingEnd="@dimen/spacing_16" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/shape_cover2_0r" />
+    <item android:state_pressed="true" android:drawable="@drawable/shape_cover2_0r" />
+    <item android:state_selected="false" android:drawable="@drawable/asset_shape_bullet_layer_0r" />
+    <item android:drawable="@drawable/shape_bullet_layer_0r" />
+</selector>

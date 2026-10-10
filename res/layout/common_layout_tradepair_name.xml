@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layutTradePairName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.BaseTextView android:textSize="15.0sp" android:textColor="@color/c_text" android:id="@id/tvCurrencyBase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@font/medium" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="13.0sp" android:textColor="@color/c_text40" android:id="@id/tvCurrencyQuote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@font/regular" />
+</androidx.appcompat.widget.LinearLayoutCompat>

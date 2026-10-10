@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@drawable/shape_bottom_sheet_bg" android:paddingTop="@dimen/font_16" android:paddingBottom="@dimen/font_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/font_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/view_fast" android:layout_width="fill_parent" android:layout_height="64.0dip" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_fast_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/botc_ic_pay_fast" android:layout_marginStart="19.0dip" app:layout_constraintBottom_toBottomOf="@id/view_fast" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/view_fast" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15.0dip" app:layout_constraintBottom_toBottomOf="@id/view_fast" app:layout_constraintStart_toEndOf="@id/iv_fast_icon" app:layout_constraintTop_toTopOf="@id/view_fast">
+        <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:id="@id/tv_fast_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/otc_fast_trade" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/pay_fast_trade_tab_sub" />
+    </LinearLayout>
+    <View android:id="@id/view_p2p" android:layout_width="fill_parent" android:layout_height="64.0dip" app:layout_constraintTop_toBottomOf="@id/view_fast" />
+    <ImageView android:id="@id/iv_p2p_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/botc_ic_pay_p2p" android:layout_marginStart="19.0dip" app:layout_constraintBottom_toBottomOf="@id/view_p2p" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/view_p2p" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15.0dip" app:layout_constraintBottom_toBottomOf="@id/view_p2p" app:layout_constraintStart_toEndOf="@id/iv_p2p_icon" app:layout_constraintTop_toTopOf="@id/view_p2p">
+        <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:id="@id/tv_p2p_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/otc" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/pay_fast_p2p_tab_sub" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

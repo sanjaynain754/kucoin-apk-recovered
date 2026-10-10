@@ -1,0 +1,1830 @@
+{
+    "version": "5",
+    "routes": {
+        "task/article": {
+            "biz": "",
+            "path": "kucoin://flutter?route=task/article",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "account/inout/detail": {
+            "biz": "",
+            "path": "kucoin://account/inout/detail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "assets/coinDetail": {
+            "biz": "",
+            "path": "kucoin://assets/coinDetail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lite/earn/homepage": {
+            "biz": "",
+            "path": "kucoin://krn/router?biz=earn&entry=main&component=kucoin_earn_rn&isEmbedMode=true&route=HomePage",
+            "fallback": "",
+            "mode": [
+                "lite"
+            ]
+        },
+        "lever/borrow": {
+            "biz": "margin",
+            "path": "kucoin://lever/borrow",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "welfare/encourage": {
+            "biz": "",
+            "path": "kucoin://flutter?route=welfare/encourage",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/airdropDetail": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/airdropDetail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lite/home": {
+            "biz": "",
+            "path": "kucoin://flutter?route=lite/home",
+            "fallback": "",
+            "mode": [
+                "lite"
+            ]
+        },
+        "homepage/deposit": {
+            "biz": "",
+            "path": "kucoin://homepage/deposit",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "staffService": {
+            "biz": "",
+            "path": "kucoin://staffService",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "quotes": {
+            "biz": "",
+            "path": "kucoin://quotes",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "boonCenter": {
+            "biz": "",
+            "path": "kucoin://flutter?route=boonCenter",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lite/feed/index": {
+            "biz": "app_homepage_feed",
+            "path": "kucoin://flutter?route=lite/feed/index",
+            "fallback": "",
+            "mode": [
+                "lite"
+            ]
+        },
+        "market/alphaKline": {
+            "biz": "alpha",
+            "path": "kucoin://flutter?route=market/alphaKline",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "margin/orders": {
+            "biz": "margin",
+            "path": "kucoin://margin/orders",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "account/deposit": {
+            "biz": "",
+            "path": "kucoin://account/deposit",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "market/feed/pick_detail": {
+            "biz": "feed",
+            "path": "kucoin://flutter?route=market/feed/pick_detail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "card/config": {
+            "biz": "",
+            "path": "kucoin://card/config",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "otc": {
+            "biz": "",
+            "path": "kucoin://otc",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "assets/payment": {
+            "biz": "",
+            "path": "kucoin://assets/payment",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lite/market/coin/details": {
+            "biz": "",
+            "path": "kucoin://flutter?route=lite/market/coin/details",
+            "fallback": "",
+            "mode": [
+                "lite"
+            ]
+        },
+        "user/login": {
+            "biz": "",
+            "path": "kucoin://user/login",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "open/contract": {
+            "biz": "futures",
+            "path": "kucoin://open/contract",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/markets": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/markets",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "margin/kline": {
+            "biz": "margin",
+            "path": "kucoin://margin/kline",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "in_out_stats": {
+            "biz": "",
+            "path": "kucoin://flutter?route=in_out_stats",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "safe/gestureUnlock": {
+            "biz": "",
+            "path": "kucoin://safe/gestureUnlock",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lite/earn-h5/auto-earn": {
+            "biz": "",
+            "path": "https://www.kucoin.com/earn-h5/auto-earn",
+            "fallback": "",
+            "mode": [
+                "lite"
+            ]
+        },
+        "lever/borrow/record/payed": {
+            "biz": "margin",
+            "path": "kucoin://lever/borrow/record/payed",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "planalysis": {
+            "biz": "",
+            "path": "kucoin://flutter?route=planalysis",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/fastTrade/buy/confirm": {
+            "biz": "",
+            "path": "kucoin://payment/fastTrade/buy/confirm",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "etf/redeem": {
+            "biz": "",
+            "path": "kucoin://flutter?route=etf/redeem",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "safe/verify": {
+            "biz": "",
+            "path": "kucoin://safe/verify",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "trade/setting": {
+            "biz": "",
+            "path": "kucoin://trade/setting",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "trade/preview": {
+            "biz": "",
+            "path": "kucoin://trade/preview",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "market/search": {
+            "biz": "",
+            "path": "kucoin://flutter?route=market/search",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "account/asset": {
+            "biz": "",
+            "path": "kucoin://account/asset",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/channel/withdraw/cj/input": {
+            "biz": "",
+            "path": "kucoin://payment/channel/withdraw/cj/input",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/fastTrade": {
+            "biz": "fast_trade",
+            "path": "kucoin://payment/fastTrade",
+            "fallback": "",
+            "mode": [
+                "pro"
+            ]
+        },
+        "zh/disable/deposit": {
+            "biz": "",
+            "path": "kucoin://zh/disable/deposit",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "pro/home": {
+            "biz": "",
+            "path": "kucoin://home",
+            "fallback": "",
+            "mode": [
+                "pro"
+            ]
+        },
+        "safe/thirdAccountSetting": {
+            "biz": "",
+            "path": "kucoin://safe/thirdAccountSetting",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "user/registerGuidance": {
+            "biz": "",
+            "path": "kucoin://user/registerGuidance",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lite/earn-h5/history-account-bill": {
+            "biz": "",
+            "path": "https://www.kucoin.com/earn-h5/history/account-bill",
+            "fallback": "",
+            "mode": [
+                "lite"
+            ]
+        },
+        "payment/channel/capitual/kyc/submit": {
+            "biz": "fiat_deposit",
+            "path": "kucoin://payment/channel/capitual/kyc/submit",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lever/open": {
+            "biz": "margin",
+            "path": "kucoin://lever/open",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "safe/tradePwdCheck": {
+            "biz": "",
+            "path": "kucoin://safe/tradePwdCheck",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "otc/fiat/withdraw": {
+            "biz": "fiat_deposit",
+            "path": "kucoin://otc/fiat/withdraw",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "assets/settings": {
+            "biz": "",
+            "path": "kucoin://assets/settings",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/walletConnect": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/walletConnect",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "newcoin/home": {
+            "biz": "",
+            "path": "kucoin://flutter?route=newcoin/home",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "user/safeSetting": {
+            "biz": "",
+            "path": "kucoin://user/safeSetting",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lever/borrow-repay": {
+            "biz": "margin",
+            "path": "kucoin://lever/borrow-repay",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lever/target/lend": {
+            "biz": "",
+            "path": "kucoin://flutter?route=lever/target/lend",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "Payment/limitsAlert": {
+            "biz": "p2p",
+            "path": "kucoin://Payment/limitsAlert",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "choosePhoneArea": {
+            "biz": "",
+            "path": "kucoin://choosePhoneArea",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/channel/plaid/linkBank": {
+            "biz": "",
+            "path": "kucoin://payment/channel/plaid/linkBank",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/gemDrop": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/gemDrop",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "search": {
+            "biz": "",
+            "path": "kucoin://search",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "safe/authLogin": {
+            "biz": "",
+            "path": "kucoin://safe/authLogin",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "join/beta": {
+            "biz": "",
+            "path": "kucoin://join/beta",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "notice/push": {
+            "biz": "",
+            "path": "kucoin://flutter?route=station/letter/detail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/p2p/market/available/list": {
+            "biz": "p2p",
+            "path": "kucoin://flutter?route=payment/p2p/market/available/list",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "task/center": {
+            "biz": "",
+            "path": "kucoin://flutter?route=task/center",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "user/nickname": {
+            "biz": "",
+            "path": "kucoin://user/nickname",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "welfare/invite": {
+            "biz": "",
+            "path": "kucoin://welfare/invite",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "account/withdraw": {
+            "biz": "",
+            "path": "kucoin://account/withdraw",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "delistcoin": {
+            "biz": "",
+            "path": "kucoin://flutter?route=delistcoin",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/gemDropStaking": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/gemDropStaking",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "kumex/market": {
+            "biz": "futures",
+            "path": "kucoin://kumex/market",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/fastTrade/buy/ivyConfirm": {
+            "biz": "",
+            "path": "kucoin://payment/fastTrade/buy/ivyConfirm",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "walletTransfer": {
+            "biz": "",
+            "path": "kucoin://walletTransfer",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "user/reset": {
+            "biz": "",
+            "path": "kucoin://user/reset",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/walletConnect/wc": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/walletConnect/wc",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/walletConnectwc": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/walletConnectwc",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "alpha/trade": {
+            "biz": "",
+            "path": "kucoin://alpha/trade",
+            "fallback": "",
+            "mode": [
+                "pro"
+            ]
+        },
+        "safe/freezingActivity": {
+            "biz": "",
+            "path": "kucoin://safe/freezingActivity",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "notice/login": {
+            "biz": "",
+            "path": "kucoin://flutter?route=station/letter/detail&subject=notification.login",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "otc/new/order": {
+            "biz": "",
+            "path": "kucoin://otc/new/order",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/earnDetail": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/earnDetail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "user/register": {
+            "biz": "",
+            "path": "kucoin://user/register",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "etf/records": {
+            "biz": "margin",
+            "path": "kucoin://flutter?route=etf/records",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/walletConnect/": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/walletConnect/",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "help/customerservice": {
+            "biz": "",
+            "path": "kucoin://help/customerservice",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lever/bonus": {
+            "biz": "margin",
+            "path": "kucoin://flutter?route=lever/bonus",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "otc/ads": {
+            "biz": "p2p",
+            "path": "kucoin://otc/ads",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "help": {
+            "biz": "",
+            "path": "kucoin://help",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "otc/fiat/withdraw/orderDetail": {
+            "biz": "fiat_deposit",
+            "path": "kucoin://otc/fiat/withdraw/orderDetail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "widget/setting": {
+            "biz": "",
+            "path": "kucoin://widget/setting",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lite/trade": {
+            "biz": "",
+            "path": "kucoin://krn/router?biz=fasttrade&entry=main&component=kucoin_fasttrade_rn&isEmbedMode=true&route=TradeHome",
+            "fallback": "",
+            "mode": [
+                "lite"
+            ]
+        },
+        "etf/apply": {
+            "biz": "",
+            "path": "kucoin://flutter?route=etf/apply",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "user/mineHome": {
+            "biz": "",
+            "path": "kucoin://user/mineHome",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/p2p": {
+            "biz": "",
+            "path": "kucoin://payment/p2p",
+            "fallback": "",
+            "mode": [
+                "pro"
+            ]
+        },
+        "lever/market": {
+            "biz": "margin",
+            "path": "kucoin://lever/market",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "user/kyc": {
+            "biz": "",
+            "path": "kucoin://user/kyc",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/swap": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/swap",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "mode/selector": {
+            "biz": "",
+            "path": "kucoin://mode/selector",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/airdrop": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/airdrop",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "otc/orderDetail": {
+            "biz": "",
+            "path": "kucoin://otc/orderDetail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "welfare/other": {
+            "biz": "",
+            "path": "kucoin://welfare/other",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "home/userPay": {
+            "biz": "",
+            "path": "kucoin://home/userPay",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/channel/plaid/deposit": {
+            "biz": "",
+            "path": "kucoin://payment/channel/plaid/deposit",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "kumex/welfare": {
+            "biz": "futures",
+            "path": "kucoin://kumex/welfare",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/bankcard/sell/confirm": {
+            "biz": "",
+            "path": "kucoin://payment/bankcard/sell/confirm",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "assets/summary": {
+            "biz": "",
+            "path": "kucoin://assets/summary",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "account/inout": {
+            "biz": "",
+            "path": "kucoin://account/inout",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lever/wholeTrade": {
+            "biz": "",
+            "path": "kucoin://lever/wholeTrade",
+            "fallback": "",
+            "mode": [
+                "pro"
+            ]
+        },
+        "assets/multiAddFunds": {
+            "biz": "",
+            "path": "kucoin://assets/multiAddFunds",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "kumex/trade": {
+            "biz": "futures",
+            "path": "kucoin://kumex/trade",
+            "fallback": "",
+            "mode": [
+                "pro"
+            ]
+        },
+        "payment/p2p/market/manager": {
+            "biz": "p2p",
+            "path": "kucoin://flutter?route=payment/p2p/market/manager",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "otc/fiat/channel/kyc/result": {
+            "biz": "fiat_deposit",
+            "path": "kucoin://otc/fiat/channel/kyc/result",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "redpacket/send": {
+            "biz": "",
+            "path": "kucoin://redpacket/send",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/p2p/market/result/add": {
+            "biz": "p2p",
+            "path": "kucoin://flutter?route=payment/p2p/market/result/add",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "site/waitMigration": {
+            "biz": "",
+            "path": "kucoin://site/waitMigration",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "unify/account/switch": {
+            "biz": "",
+            "path": "kucoin://unify/account/switch",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "otc/fiat/orderList": {
+            "biz": "fiat_deposit",
+            "path": "kucoin://otc/fiat/orderList",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "redpacket/receive": {
+            "biz": "",
+            "path": "kucoin://redpacket/receive",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/TokenDetailExternal": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/TokenDetailExternal",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/TokenDetail": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/TokenDetail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "fallback/global": {
+            "biz": "",
+            "path": "kucoin://fallback/global",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "settings": {
+            "biz": "",
+            "path": "kucoin://settings",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/earn": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/earn",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "external/link": {
+            "biz": "",
+            "path": "kucoin://external/link",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/wallet/login": {
+            "biz": "kucard",
+            "path": "kucoin://payment/wallet/login",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "Payment/wayList": {
+            "biz": "p2p",
+            "path": "kucoin://Payment/wayList",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lite/earn-h5/purchase": {
+            "biz": "",
+            "path": "https://www.kucoin.com/earn-h5/purchase",
+            "fallback": "",
+            "mode": [
+                "lite"
+            ]
+        },
+        "market/feed/news_detail": {
+            "biz": "feed",
+            "path": "kucoin://flutter?route=market/feed/news_detail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/splash": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/splash",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "otc/fiat/recharge/orderDetail": {
+            "biz": "fiat_deposit",
+            "path": "kucoin://otc/fiat/recharge/orderDetail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lite/earn/holds": {
+            "biz": "",
+            "path": "kucoin://krn/router?biz=earn&entry=main&component=kucoin_earn_rn&route=HoldAssetsPage",
+            "fallback": "",
+            "mode": [
+                "lite"
+            ]
+        },
+        "wallet/smartMoney": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/smartMoney",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lever/borrow/record/paying": {
+            "biz": "margin",
+            "path": "kucoin://lever/borrow/record/paying",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "kumex/settlement/record": {
+            "biz": "futures",
+            "path": "kucoin://kumex/settlement/record",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "link/loadingAnimationWeb": {
+            "biz": "",
+            "path": "kucoin://link/loadingAnimationWeb",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lever/isolatedTrade": {
+            "biz": "",
+            "path": "kucoin://lever/isolatedTrade",
+            "fallback": "",
+            "mode": [
+                "pro"
+            ]
+        },
+        "redpacket/history": {
+            "biz": "",
+            "path": "kucoin://redpacket/history",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/p2p/merchant/details": {
+            "biz": "p2p",
+            "path": "kucoin://flutter?route=payment/p2p/merchant/details",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "market": {
+            "biz": "",
+            "path": "kucoin://market",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "live/enterRoom": {
+            "biz": "live",
+            "path": "kucoin://live/enterRoom",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "safe/fishCode": {
+            "biz": "",
+            "path": "kucoin://safe/fishCode",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lever/trade": {
+            "biz": "",
+            "path": "kucoin://lever/trade",
+            "fallback": "",
+            "mode": [
+                "pro"
+            ]
+        },
+        "account/coinDetail": {
+            "biz": "",
+            "path": "kucoin://account/coinDetail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "delistcoin_history": {
+            "biz": "",
+            "path": "kucoin://flutter?route=delistcoin_history",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "paymentMethod": {
+            "biz": "p2p",
+            "path": "kucoin://paymentMethod",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "market/feed/userFansPage": {
+            "biz": "feed",
+            "path": "kucoin://flutter?route=market/feed/userFansPage",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite"
+            ]
+        },
+        "otc/orderList": {
+            "biz": "",
+            "path": "kucoin://otc/orderList",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/p2p/market/result/exit": {
+            "biz": "p2p",
+            "path": "kucoin://flutter?route=payment/p2p/market/result/exit",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "coin": {
+            "biz": "",
+            "path": "kucoin://coin",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "market/feed/person_detail": {
+            "biz": "feed",
+            "path": "kucoin://flutter?route=market/feed/person_detail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "market/feed/post_detail": {
+            "biz": "feed",
+            "path": "kucoin://flutter?route=market/feed/post_detail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "welfare/rules": {
+            "biz": "",
+            "path": "kucoin://welfare/rules",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "candy": {
+            "biz": "",
+            "path": "kucoin://flutter?route=candy",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/p2p/market/exit/reasons": {
+            "biz": "p2p",
+            "path": "kucoin://flutter?route=payment/p2p/market/exit/reasons",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "user/setTradePassword": {
+            "biz": "",
+            "path": "kucoin://user/setTradePassword",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "link": {
+            "biz": "",
+            "path": "kucoin://link",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "user/safe/check": {
+            "biz": "",
+            "path": "kucoin://user/safe/check",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "etf/apply/records": {
+            "biz": "margin",
+            "path": "kucoin://etf/apply/records",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "link/video": {
+            "biz": "",
+            "path": "kucoin://link/video",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "assets/holdEarnDialog": {
+            "biz": "",
+            "path": "kucoin://assets/holdEarnDialog",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/kucoinpay/qrcode": {
+            "biz": "kucoin_pay",
+            "path": "kucoin://payment/kucoinpay/qrcode",
+            "fallback": "",
+            "mode": [
+                "pro"
+            ]
+        },
+        "account/transfer": {
+            "biz": "",
+            "path": "kucoin://account/transfer",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/dapp_kc": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/dapp_kc",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "notice": {
+            "biz": "",
+            "path": "kucoin://flutter?route=station/letter/list",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "news": {
+            "biz": "",
+            "path": "kucoin://flutter?route=station/letter/news/list",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/bankcard/confirm": {
+            "biz": "",
+            "path": "kucoin://payment/bankcard/confirm",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "user/passkeyManager": {
+            "biz": "",
+            "path": "kucoin://user/passkeyManager",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "user/resetPasswordAccountPage": {
+            "biz": "",
+            "path": "kucoin://user/resetPasswordAccountPage",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "lite/asset": {
+            "biz": "",
+            "path": "kucoin://flutter?route=lite/asset",
+            "fallback": "",
+            "mode": [
+                "lite"
+            ]
+        },
+        "wallet/gemDropId": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/gemDropId",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/channel/withdraw/ee/input": {
+            "biz": "fiat_deposit",
+            "path": "kucoin://payment/channel/withdraw/ee/input",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "live/replay": {
+            "biz": "live",
+            "path": "kucoin://live/replay",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/dappInDiscover": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/dappInDiscover",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "user/telegramLogin": {
+            "biz": "",
+            "path": "kucoin://user/telegramLogin",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "market/feed/sight_detail": {
+            "biz": "feed",
+            "path": "kucoin://flutter?route=market/feed/sight_detail",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "assets/multiUseAccount": {
+            "biz": "",
+            "path": "kucoin://assets/multiUseAccount",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "home": {
+            "biz": "",
+            "path": "kucoin://home",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "welfare/encourage/record": {
+            "biz": "",
+            "path": "kucoin://welfare/encourage/record",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "wallet/h5": {
+            "biz": "",
+            "path": "kucoin://flutter?route=wallet/h5",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "trade": {
+            "biz": "",
+            "path": "kucoin://trade",
+            "fallback": "",
+            "mode": [
+                "pro"
+            ]
+        },
+        "trade/futures/grid": {
+            "biz": "trading_bot",
+            "path": "kucoin://trade/futures/grid",
+            "fallback": "",
+            "mode": [
+                "pro"
+            ]
+        },
+        "futures/history/delegation/twapDetails": {
+            "biz": "",
+            "path": "kucoin://flutter?route=futures/history/delegation/twapDetails",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "trade/spot/grid": {
+            "biz": "trading_bot",
+            "path": "kucoin://trade/spot/grid",
+            "fallback": "",
+            "mode": [
+                "pro"
+            ]
+        },
+        "trade/delegate/record": {
+            "biz": "",
+            "path": "kucoin://trade/delegate/record",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "kumex/contract/record": {
+            "biz": "futures",
+            "path": "kucoin://kumex/contract/record",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/fastTrade/sell/confirm": {
+            "biz": "",
+            "path": "kucoin://payment/fastTrade/sell/confirm",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "otc/fiat/recharge": {
+            "biz": "fiat_deposit",
+            "path": "kucoin://otc/fiat/recharge",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        },
+        "payment/channel/recharge/ivyConfirm": {
+            "biz": "fiat_deposit",
+            "path": "kucoin://payment/channel/recharge/ivyConfirm",
+            "fallback": "",
+            "mode": [
+                "pro",
+                "lite",
+                "web3"
+            ]
+        }
+    }
+}

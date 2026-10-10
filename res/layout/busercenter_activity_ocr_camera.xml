@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:background="@color/c_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl" android:layout_width="fill_parent" android:layout_height="42.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/ivBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_arrow_left2_20" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:tint="@color/c_text" />
+        <ImageView android:id="@id/ivSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_take_photo" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/flTakePicZone" android:layout_width="wrap_content" android:layout_height="0.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.kubi.kyc.ui.CameraPreview android:id="@id/camera_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.kubi.kyc.ui.CameraTopRectView android:id="@id/topRectView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/btn_take" android:background="@drawable/shape_action_camera_btn" android:layout_width="76.0dip" android:layout_height="76.0dip" android:layout_marginBottom="30.0dip" android:src="@mipmap/ic_action_camera" android:scaleType="centerInside" android:contentDescription="@string/kyc_camera" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llShowPicZone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:paddingStart="36.0dip" android:paddingEnd="36.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/rl">
+        <TextView android:textSize="18.0sp" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" android:text="@string/kyc_camera_id" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" android:text="@string/kyc_camera_result_tip1" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" android:text="@string/kyc_camera_result_tip2" />
+        <ImageView android:id="@id/thumbnailView" android:layout_width="fill_parent" android:layout_height="350.0dip" android:layout_marginTop="28.0dip" android:scaleType="centerInside" />
+        <Button android:textSize="16.0sp" android:textColor="@color/c_text_white" android:id="@id/btnConfirmUpload" android:background="@drawable/shape_primary_4r" android:layout_width="180.0dip" android:layout_height="40.0dip" android:layout_marginTop="24.0dip" android:text="@string/kyc_camera_confirm" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/c_text" android:id="@id/tvRetry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/kyc_camera_retry" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

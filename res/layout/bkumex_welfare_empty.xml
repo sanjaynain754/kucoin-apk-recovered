@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0dip" android:textColor="@color/c_text40" android:gravity="center" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kumex_welfare_rewards_empty" android:drawablePadding="8.0dip" app:drawableTopCompat="@drawable/ic2_common_empty" />
+    <com.kubi.resources.widget.button.KcPrimaryButton android:textSize="16.0sp" android:gravity="center" android:id="@id/tv_confirm" android:layout_width="240.0dip" android:layout_marginTop="13.0dip" android:text="@string/kumex_welfare_go_rewards_center" style="@style/styleButton40" />
+</androidx.appcompat.widget.LinearLayoutCompat>

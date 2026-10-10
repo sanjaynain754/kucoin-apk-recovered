@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.search.widget.TouchableView android:id="@id/layoutContent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <androidx.fragment.app.FragmentContainerView android:id="@id/fHistory" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <androidx.fragment.app.FragmentContainerView android:id="@id/fTopSearch" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <androidx.fragment.app.FragmentContainerView android:id="@id/fRecommend" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:layout_width="fill_parent" android:layout_height="24.0dip" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+    </com.kubi.search.widget.TouchableView>
+    <include android:id="@id/emptyBinding" android:visibility="gone" layout="@layout/search_layout_empty" />
+    <include android:id="@id/loadingBinding" android:visibility="gone" layout="@layout/search_layout_loading" />
+</FrameLayout>

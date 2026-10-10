@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@mipmap/ui_ic_single_selected_20" android:tint="@color/c_text" android:autoMirrored="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

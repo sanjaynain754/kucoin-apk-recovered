@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/common_design_standard_g1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_back" android:background="@drawable/live_shape_bg_circle_button" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="58.0dip" android:src="@drawable/livekit_ic_audience_exit" android:importantForAccessibility="no" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" />
+    <io.trtc.tuikit.atomicx.widget.basicwidget.label.AtomicLabel android:textSize="@dimen/text_size_20" android:textColor="@color/text_color_primary" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" android:text="@string/common_live_has_stop" android:layout_centerHorizontal="true" android:fontFamily="@font/medium" />
+    <io.trtc.tuikit.atomicx.widget.basicwidget.avatar.AtomicAvatar android:id="@id/iv_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_below="@id/tv_title" android:layout_centerHorizontal="true" app:avatarSize="xxl" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/common_design_standard_flowkit_white" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/iv_head" android:layout_centerHorizontal="true" />
+</RelativeLayout>

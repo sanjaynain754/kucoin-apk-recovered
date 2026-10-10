@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutRoot" android:layout_width="fill_parent" android:layout_height="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivLeft" android:background="@mipmap/ic_compare_updown_up" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivMiddle" android:background="@mipmap/ic_compare_updown_unchange" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginHorizontal="1.0dip" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivRight" android:background="@mipmap/ic_compare_updown_down" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</androidx.appcompat.widget.LinearLayoutCompat>

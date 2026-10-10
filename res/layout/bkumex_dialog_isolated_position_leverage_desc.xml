@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_bottom_background_bg" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_24" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16" android:paddingVertical="@dimen/spacing_24">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_20" android:textColor="@color/c_text" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kumex_isolated_real_leverage" android:fontFamily="@font/semi" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text60" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="12.0dip" android:text="@string/kumex_isolated_leverage_cal" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/kumex_isolated_leverage_guide_desc" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_16" android:textColor="@color/c_text" android:id="@id/more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/confirm" android:layout_width="fill_parent" android:layout_height="@dimen/size_48" android:layout_marginTop="28.0dip" android:text="@string/i_already_know" style="@style/styleButton48Secondary" />
+    </LinearLayout>
+</LinearLayout>

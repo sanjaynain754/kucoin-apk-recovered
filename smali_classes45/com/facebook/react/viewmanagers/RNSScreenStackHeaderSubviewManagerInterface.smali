@@ -1,0 +1,30 @@
+.class public interface abstract Lcom/facebook/react/viewmanagers/RNSScreenStackHeaderSubviewManagerInterface;
+.super Ljava/lang/Object;
+.source "RNSScreenStackHeaderSubviewManagerInterface.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Landroid/view/View;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract setType(Landroid/view/View;Ljava/lang/String;)V
+    .param p2    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+.end method

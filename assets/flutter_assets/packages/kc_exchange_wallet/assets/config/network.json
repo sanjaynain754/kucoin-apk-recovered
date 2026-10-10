@@ -1,0 +1,594 @@
+[{
+  "fullName": "0G",
+  "symbol": "0G",
+  "name": "0G",
+  "chainId": 16661,
+  "realChainId": 16661,
+  "decimals": 18,
+  "baseCoinId": 6780646,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://evmrpc.0g.ai"],
+  "explorerUrl": "https://chainscan.0g.ai",
+  "explorerTokenUrl": "https://chainscan.0g.ai/address/{address}?tab=transfers-ERC20",
+  "explorerAddressUrl": "https://chainscan.0g.ai/address/{address}?tab=transaction",
+  "imageUrl": "https://static-public.kuweb3.net/web3/ee647d5d-1274-4a79-bcf1-10aac9b18701.png",
+  "kcName": "0g",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0x1f3AA82227281cA364bFb3d253B0f1af1Da6473E"
+  }],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "Arbitrum One",
+  "symbol": "ARB_ETH",
+  "name": "Arbitrum",
+  "chainId": 42161,
+  "realChainId": 42161,
+  "decimals": 18,
+  "baseCoinId": 3012,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://rpc.ankr.com/arbitrum", "https://arbitrum-one.public.blastapi.io"],
+  "explorerUrl": "https://arbiscan.io",
+  "explorerTokenUrl": "https://arbiscan.io/token/{tokenAddress}?a={address}",
+  "explorerAddressUrl": "https://arbiscan.io/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/network/ArbitrumOne.png",
+  "kcName": "ARBITRUM",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"
+  }, {
+    "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+  }],
+  "isSupportHolderSummary": true,
+  "isSupportMarket": true
+}, {
+  "fullName": "Avalanche C",
+  "symbol": "AVAX",
+  "name": "Avalanche",
+  "chainId": 43114,
+  "realChainId": 43114,
+  "decimals": 18,
+  "baseCoinId": 3127,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://api.avax.network/ext/bc/C/rpc", "https://ava-mainnet.public.blastapi.io/ext/bc/C/rpc"],
+  "explorerUrl": "https://snowtrace.io",
+  "explorerTokenUrl": "https://snowtrace.io/address/{address}",
+  "explorerAddressUrl": "https://snowtrace.io/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/network/Avalanche.png",
+  "kcName": "AVAX C-Chain",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7"
+  }, {
+    "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E"
+  }],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": true
+}, {
+  "fullName": "BNB Smart Chain",
+  "symbol": "BNB",
+  "name": "BSC",
+  "chainId": 56,
+  "realChainId": 56,
+  "decimals": 18,
+  "baseCoinId": 1398,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://bsc-dataseed.bnbchain.org", "https://bsc-mainnet.public.blastapi.io"],
+  "explorerUrl": "https://bscscan.com",
+  "explorerTokenUrl": "https://bscscan.com/token/{tokenAddress}?a={address}",
+  "explorerAddressUrl": "https://bscscan.com/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/network/BinanceCoin.png",
+  "kcName": "BEP20",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0x55d398326f99059ff775485246999027b3197955"
+  }, {
+    "address": "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"
+  }],
+  "isSupportHolderSummary": true,
+  "isSupportMarket": true
+}, {
+  "fullName": "Base",
+  "symbol": "BASE_ETH",
+  "name": "Base",
+  "chainId": 8453,
+  "realChainId": 8453,
+  "decimals": 18,
+  "baseCoinId": 2979,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://mainnet.base.org/", "https://base-mainnet.public.blastapi.io"],
+  "explorerUrl": "https://basescan.org",
+  "explorerTokenUrl": "https://basescan.org/token/{tokenAddress}?a={address}",
+  "explorerAddressUrl": "https://basescan.org/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/network/Base.png",
+  "kcName": "Base",
+  "l2Type": "evm_op",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0xfde4c96c8593536e31f229ea8f37b2ada2699bb2"
+  }, {
+    "address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+  }],
+  "isSupportHolderSummary": true,
+  "isSupportMarket": true
+}, {
+  "fullName": "Berachain",
+  "symbol": "BERA",
+  "name": "Berachain",
+  "chainId": 80094,
+  "realChainId": 80094,
+  "decimals": 18,
+  "baseCoinId": 6311081,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://rpc.berachain.com/"],
+  "explorerUrl": "https://berascan.com/",
+  "explorerTokenUrl": "https://berascan.com/token/{tokenAddress}?a={address}",
+  "explorerAddressUrl": "https://berascan.com/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/web3/592cb40f-3512-491a-a039-de4886536e98.png",
+  "kcName": "BERA",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0x549943e04f40284185054145c6E4e9568C1D3241"
+  }],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "Bitcoin",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "chainId": 0,
+  "realChainId": 0,
+  "decimals": 8,
+  "baseCoinId": 1,
+  "appBaseChain": "bitcoin",
+  "rpcUrl": ["https://wallet.okex.org/priapi/v1/wallet/rpc/send?chainId=0"],
+  "explorerUrl": "https://www.blockchain.com/explorer",
+  "explorerTokenUrl": "https://www.blockchain.com/explorer/addresses/btc/{address}",
+  "explorerAddressUrl": "https://www.blockchain.com/explorer/addresses/btc/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/network/Bitcoin.png",
+  "kcName": "BTC",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 0,
+  "swapTokens": [],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "Conflux",
+  "symbol": "CFX",
+  "name": "Conflux",
+  "chainId": 1030,
+  "realChainId": 1030,
+  "decimals": 18,
+  "baseCoinId": 2867,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://evm.confluxrpc.com"],
+  "explorerUrl": "https://evm.confluxscan.net",
+  "explorerTokenUrl": "https://evm.confluxscan.org/token/{tokenAddress}?a={address}",
+  "explorerAddressUrl": "https://evm.confluxscan.org/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/web3/7d5929ff-4d9a-4a78-bb3e-c3109c7ddbae.png",
+  "kcName": "CFX",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0x6963efed0ab40f6c3d7bda44a05dcf1437c44372"
+  }, {
+    "address": "0xfe97e85d13abd9c1c33384e796f10b73905637ce"
+  }],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "Ethereum",
+  "symbol": "ETH",
+  "name": "Ethereum",
+  "chainId": 1,
+  "realChainId": 1,
+  "decimals": 18,
+  "baseCoinId": 4,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://eth-mainnet.public.blastapi.io", "https://rpc.ankr.com/eth"],
+  "explorerUrl": "https://etherscan.io",
+  "explorerTokenUrl": "https://etherscan.io/token/{tokenAddress}?a={address}",
+  "explorerAddressUrl": "https://etherscan.io/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/network/Ethereum.png",
+  "kcName": "ERC20",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+  }, {
+    "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+  }],
+  "isSupportHolderSummary": true,
+  "isSupportMarket": true
+}, {
+  "fullName": "Gravity Alpha",
+  "symbol": "G",
+  "name": "Gravity Alpha",
+  "chainId": 1625,
+  "realChainId": 1625,
+  "decimals": 18,
+  "baseCoinId": 6311079,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://rpc.gravity.xyz"],
+  "explorerUrl": "https://explorer.gravity.xyz/",
+  "explorerTokenUrl": "https://explorer.gravity.xyz/address/{address}?tab=token_transfers",
+  "explorerAddressUrl": "https://explorer.gravity.xyz/address/{address}?tab=txs",
+  "imageUrl": "https://static-public.kuweb3.net/web3/96429147-b718-4e18-9d37-2d830d25a03c.png",
+  "kcName": "Gravity",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 0,
+  "swapTokens": [],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "HyperEVM",
+  "symbol": "HYPE",
+  "name": "HyperEVM",
+  "chainId": 999,
+  "realChainId": 999,
+  "decimals": 18,
+  "baseCoinId": 7817946,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://rpc.hyperliquid.xyz/evm"],
+  "explorerUrl": "https://hyperevmscan.io/",
+  "explorerTokenUrl": "https://hyperevmscan.io/token/{tokenAddress}?a={address}",
+  "explorerAddressUrl": "https://hyperevmscan.io/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/web3/ef894790-d63f-4f49-a2bd-6bb2a58bf89e.png",
+  "kcName": "HyperEvm",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"
+  }, {
+    "address": "0xb88339CB7199b77E23DB6E890353E22632Ba630f"
+  }],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "KuCoin Community Chain",
+  "symbol": "KCS",
+  "name": "KCC",
+  "chainId": 321,
+  "realChainId": 321,
+  "decimals": 18,
+  "baseCoinId": 2481,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://rpc-mainnet.kcc.network"],
+  "explorerUrl": "https://scan.kcc.io",
+  "explorerTokenUrl": "https://scan.kcc.io/address/{address}",
+  "explorerAddressUrl": "https://scan.kcc.io/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/network/KCC.png",
+  "kcName": "KCC",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 0,
+  "swapTokens": [],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "Monad",
+  "symbol": "MON",
+  "name": "Monad",
+  "chainId": 143,
+  "realChainId": 143,
+  "decimals": 18,
+  "baseCoinId": 6455793,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://rpc.monad.xyz", "https://rpc-mainnet.monadinfra.com"],
+  "explorerUrl": "https://monadvision.com",
+  "explorerTokenUrl": "https://monadvision.com/address/{address}?tab=Token",
+  "explorerAddressUrl": "https://monadvision.com/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/web3/143/main.png",
+  "kcName": "Monad",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0x754704Bc059F8C67012fEd69BC8A327a5aafb603"
+  }],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "Monad Testnet",
+  "symbol": "tMON",
+  "name": "Monad Testnet",
+  "chainId": 10143,
+  "realChainId": 10143,
+  "decimals": 18,
+  "baseCoinId": 2356598,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://testnet-rpc.monad.xyz", "https://monad-testnet.drpc.org"],
+  "explorerUrl": "https://testnet.monadexplorer.com/",
+  "explorerTokenUrl": "https://testnet.monadexplorer.com/address/{address}",
+  "explorerAddressUrl": "https://testnet.monadexplorer.com/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/network/tMON.png",
+  "kcName": "",
+  "l2Type": "",
+  "isTestnet": true,
+  "isSupportTrade": 0,
+  "swapTokens": [],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "Optimism",
+  "symbol": "OP_ETH",
+  "name": "Optimism",
+  "chainId": 10,
+  "realChainId": 10,
+  "decimals": 18,
+  "baseCoinId": 1240,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://optimism-mainnet.public.blastapi.io", "https://mainnet.optimism.io"],
+  "explorerUrl": "https://optimistic.etherscan.io",
+  "explorerTokenUrl": "https://optimistic.etherscan.io/token/{tokenAddress}?a={address}",
+  "explorerAddressUrl": "https://optimistic.etherscan.io/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/network/Optimism.png",
+  "kcName": "OPTIMISM",
+  "l2Type": "evm_op",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58"
+  }, {
+    "address": "0x0b2c639c533813f4aa9d7837caf62653d097ff85"
+  }],
+  "isSupportHolderSummary": true,
+  "isSupportMarket": true
+}, {
+  "fullName": "Pharos",
+  "symbol": "PROS",
+  "name": "Pharos",
+  "chainId": 1672,
+  "realChainId": 1672,
+  "decimals": 18,
+  "baseCoinId": 9148522,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://rpc.pharos.xyz"],
+  "explorerUrl": "https://www.pharosscan.xyz/",
+  "explorerTokenUrl": "https://www.pharosscan.xyz/token/{tokenAddress}",
+  "explorerAddressUrl": "https://www.pharosscan.xyz/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/web3/bffec3e0-03a7-42b4-93cf-8ffd61f34cec.png",
+  "kcName": "Pharos Mainnet",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0xc879c018db60520f4355c26ed1a6d572cdac1815"
+  }],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "Plume",
+  "symbol": "PLUME",
+  "name": "Plume",
+  "chainId": 98866,
+  "realChainId": 98866,
+  "decimals": 18,
+  "baseCoinId": 5184949,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://rpc.plume.org"],
+  "explorerUrl": "https://explorer.plume.org",
+  "explorerTokenUrl": "https://explorer.plume.org/address/{address}?tab=token_transfers",
+  "explorerAddressUrl": "https://explorer.plume.org/address/{address}?tab=txs",
+  "imageUrl": "https://static-public.kuweb3.net/web3/1f0169df-1f7e-4284-8ce0-86c865a1d3be.png",
+  "kcName": "",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 0,
+  "swapTokens": [{
+    "address": "0xda6087E69C51E7D31b6DBAD276a3c44703DFdCAd"
+  }, {
+    "address": "0xdddD73F5Df1F0DC31373357beAC77545dC5A6f3F"
+  }],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "Polygon",
+  "symbol": "POL",
+  "name": "Polygon",
+  "chainId": 137,
+  "realChainId": 137,
+  "decimals": 18,
+  "baseCoinId": 2154,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://polygon-rpc.com/", "https://polygon-mainnet.public.blastapi.io"],
+  "explorerUrl": "https://polygonscan.com",
+  "explorerTokenUrl": "https://polygonscan.com/token/{tokenAddress}?a={address}",
+  "explorerAddressUrl": "https://polygonscan.com/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/network/Polygon.png",
+  "kcName": "Polygon POS",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f"
+  }, {
+    "address": "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359"
+  }],
+  "isSupportHolderSummary": true,
+  "isSupportMarket": true
+}, {
+  "fullName": "Sei EVM",
+  "symbol": "SEI",
+  "name": "Sei EVM",
+  "chainId": 1329,
+  "realChainId": 1329,
+  "decimals": 18,
+  "baseCoinId": 5184950,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://evm-rpc.sei-apis.com"],
+  "explorerUrl": "https://seitrace.com",
+  "explorerTokenUrl": "https://seitrace.com/address/{address}?chain=pacific-1\u0026tab=token_transfers",
+  "explorerAddressUrl": "https://seitrace.com/address/{address}?chain=pacific-1\u0026tab=transactions",
+  "imageUrl": "https://static-public.kuweb3.net/web3/22ed9a7e-9535-4914-a20a-f6f9ce548723.png",
+  "kcName": "Seievm",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0x9151434b16b9763660705744891fA906F660EcC5"
+  }, {
+    "address": "0xe15fC38F6D8c56aF07bbCBe3BAf5708A2Bf42392"
+  }],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "Solana",
+  "symbol": "SOL",
+  "name": "Solana",
+  "chainId": 501,
+  "realChainId": 0,
+  "decimals": 9,
+  "baseCoinId": 2514,
+  "appBaseChain": "solana",
+  "rpcUrl": ["https://wallet.okex.org/fullnode/sol/discover/rpc"],
+  "explorerUrl": "https://solscan.io",
+  "explorerTokenUrl": "https://solscan.io/account/{address}",
+  "explorerAddressUrl": "https://solscan.io/account/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/network/Solana.png",
+  "kcName": "SOL",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"
+  }, {
+    "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+  }],
+  "isSupportHolderSummary": true,
+  "isSupportMarket": true
+}, {
+  "fullName": "Somnia",
+  "symbol": "SOMI",
+  "name": "Somnia",
+  "chainId": 5031,
+  "realChainId": 5031,
+  "decimals": 18,
+  "baseCoinId": 5184948,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://api.infra.mainnet.somnia.network"],
+  "explorerUrl": "https://explorer.somnia.network",
+  "explorerTokenUrl": "https://explorer.somnia.network/address/{address}?tab=token_transfers",
+  "explorerAddressUrl": "https://explorer.somnia.network/address/{address}?tab=txs",
+  "imageUrl": "https://static-public.kuweb3.net/web3/a0f79c82-e1f4-45bd-a4d0-3ed571053674.png",
+  "kcName": "Somnia",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 0,
+  "swapTokens": [],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "TRON",
+  "symbol": "TRX",
+  "name": "TRON",
+  "chainId": 195,
+  "realChainId": 0,
+  "decimals": 6,
+  "baseCoinId": 2297,
+  "appBaseChain": "tron",
+  "rpcUrl": ["https://api.trongrid.io"],
+  "explorerUrl": "https://tronscan.org",
+  "explorerTokenUrl": "https://tronscan.org/#/address/{address}",
+  "explorerAddressUrl": "https://tronscan.org/#/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/network/TRON.png",
+  "kcName": "TRC20",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 0,
+  "swapTokens": [],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "The Open Network",
+  "symbol": "GRAM",
+  "name": "TON",
+  "chainId": 607,
+  "realChainId": 607,
+  "decimals": 9,
+  "baseCoinId": 8947685,
+  "appBaseChain": "ton",
+  "rpcUrl": ["https://toncenter.com/api/v2/jsonRPC"],
+  "explorerUrl": "https://tonviewer.com/",
+  "explorerTokenUrl": "https://tonviewer.com/{address}/jetton/{tokenAddress}",
+  "explorerAddressUrl": "https://tonviewer.com/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/web3/416bb138-a498-40a0-91e0-f7c5698b3e29.png",
+  "kcName": "TON",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs"
+  }, {
+    "address": "EQAvlWFDxGF2lXm67y4yzC17wYKD9A0guwPkMs1gOsM__NOT"
+  }],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "X Layer",
+  "symbol": "OKB",
+  "name": "X Layer",
+  "chainId": 196,
+  "realChainId": 196,
+  "decimals": 18,
+  "baseCoinId": 6311076,
+  "appBaseChain": "ethereum",
+  "rpcUrl": ["https://rpc.xlayer.tech", "https://xlayerrpc.okx.com"],
+  "explorerUrl": "https://www.oklink.com/x-layer",
+  "explorerTokenUrl": "https://www.oklink.com/x-layer/token/{tokenAddress}?address={address}",
+  "explorerAddressUrl": "https://www.oklink.com/x-layer/address/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/web3/208095fd-64aa-4fb3-8e8c-80845274fd1f.png",
+  "kcName": "X Layer",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "swapTokens": [{
+    "address": "0x1e4a5963abfd975d8c9021ce480b42188849d41d"
+  }, {
+    "address": "0x74b7f16337b8972027f6196a17a631ac6de26d22"
+  }],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}, {
+  "fullName": "Sui Network",
+  "symbol": "SUI",
+  "name": "SUI",
+  "chainId": 784,
+  "realChainId": 784,
+  "decimals": 9,
+  "baseCoinId": 2677,
+  "appBaseChain": "sui",
+  "rpcUrl": ["https://fullnode.mainnet.sui.io"],
+  "explorerUrl": "https://suivision.xyz/",
+  "explorerTokenUrl": "https://suivision.xyz/coin/{tokenAddress}",
+  "explorerAddressUrl": "https://suivision.xyz/account/{address}",
+  "imageUrl": "https://static-public.kuweb3.net/web3/7f103366-a08d-4042-9529-12aa2fa070fe.png",
+  "kcName": "SUI",
+  "l2Type": "",
+  "isTestnet": false,
+  "isSupportTrade": 1,
+  "isSupportLimitOrder": 0,
+  "swapTokens": [{
+    "address": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC"
+  }],
+  "isSupportHolderSummary": false,
+  "isSupportMarket": false
+}
+]

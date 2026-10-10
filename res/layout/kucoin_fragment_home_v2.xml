@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/homeRootView" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/refreshLayoutContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/ui_title_bar_height" />
+        <com.kubi.resources.widget.KuCoinRefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.kubi.home.widgets.HomeRecyclerView android:id="@id/homeCardContainer" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.kubi.home.v2.biz.HomeShimmerLayoutV2 android:id="@id/layoutShimmer" android:background="@color/c_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </com.kubi.resources.widget.KuCoinRefreshLayout>
+    </LinearLayout>
+    <com.kubi.home.widgets.feed.HomeFeedWrapperTabLayout android:layout_gravity="bottom" android:id="@id/fake_flutter_tab" android:background="@color/c_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/home_fake_feed_container_height" android:elevation="20.0dip" />
+    <com.kubi.home.widgets.feed.HomeFeedActionLayout android:layout_gravity="end|bottom|center" android:id="@id/home_feed_action_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/homeNavigationContainer" android:layout_width="fill_parent" android:layout_height="@dimen/ui_title_bar_height">
+        <androidx.fragment.app.FragmentContainerView android:name="com.kubi.home.navigation.NavigationCard" android:id="@id/homeNavigation" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

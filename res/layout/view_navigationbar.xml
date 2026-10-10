@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="16.0dip" android:paddingEnd="50.0dip">
+        <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/m_iv_navigation_back" android:layout_width="wrap_content" android:layout_height="27.0dip" android:src="@drawable/ic2_arrow_left2_20" app:tint="@color/c_text" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="center" android:id="@id/mLeftText" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/ic2_arrow_left2_20" />
+        <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/m_iv_navigation_bg" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="33.0dip" />
+    </FrameLayout>
+    <com.kubi.resources.widget.BaseTextView android:textSize="18.0sp" android:textColor="@color/c_text" android:ellipsize="end" android:gravity="center" android:id="@id/m_tv_navigation_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxEms="8" android:singleLine="true" android:layout_centerInParent="true" android:fontFamily="@font/semi" />
+    <ViewStub android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/view_stup" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="4.0dip">
+            <ImageView android:id="@id/iv_right_one" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+            <ImageView android:id="@id/iv_right_two" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+            <ImageView android:id="@id/iv_right_three" android:padding="13.0dip" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text60" android:gravity="center" android:id="@id/m_tv_navigation_right_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+    </FrameLayout>
+</merge>

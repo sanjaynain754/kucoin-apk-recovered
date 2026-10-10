@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textColor="@color/c_transparent" android:id="@id/et_input_fake" android:background="@color/c_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" android:cursorVisible="false" android:maxEms="6" android:singleLine="true" android:maxLength="6" android:inputType="number" />
+    <LinearLayout android:id="@id/layout_codes" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckedTextView android:textSize="16.0sp" android:gravity="center" android:id="@id/ctv_code1" android:background="@drawable/selector_bg_code_input" android:layout_width="48.0dip" android:layout_height="48.0dip" android:textAlignment="center" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <CheckedTextView android:textSize="16.0sp" android:gravity="center" android:id="@id/ctv_code2" android:background="@drawable/selector_bg_code_input" android:layout_width="48.0dip" android:layout_height="48.0dip" android:textAlignment="center" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <CheckedTextView android:textSize="16.0sp" android:gravity="center" android:id="@id/ctv_code3" android:background="@drawable/selector_bg_code_input" android:layout_width="48.0dip" android:layout_height="48.0dip" android:textAlignment="center" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <CheckedTextView android:textSize="16.0sp" android:gravity="center" android:id="@id/ctv_code4" android:background="@drawable/selector_bg_code_input" android:layout_width="48.0dip" android:layout_height="48.0dip" android:textAlignment="center" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <CheckedTextView android:textSize="16.0sp" android:gravity="center" android:id="@id/ctv_code5" android:background="@drawable/selector_bg_code_input" android:layout_width="48.0dip" android:layout_height="48.0dip" android:textAlignment="center" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <CheckedTextView android:textSize="16.0sp" android:gravity="center" android:id="@id/ctv_code6" android:background="@drawable/selector_bg_code_input" android:layout_width="48.0dip" android:layout_height="48.0dip" android:textAlignment="center" />
+    </LinearLayout>
+</FrameLayout>

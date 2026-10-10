@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stub" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_24" android:textStyle="bold" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/forget_pwd" android:layout_marginStart="@dimen/user_page_padding" />
+        <com.kubi.user.view.EmailPhoneInputView android:id="@id/resetInputEmailPhone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+        <com.kubi.resources.widget.button.KcPrimaryButton android:enabled="false" android:id="@id/btnNext" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/user_page_padding" android:layout_marginTop="40.0dip" android:layout_marginRight="@dimen/user_page_padding" android:text="@string/next" android:layout_marginHorizontal="@dimen/user_page_padding" style="@style/styleButton48" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

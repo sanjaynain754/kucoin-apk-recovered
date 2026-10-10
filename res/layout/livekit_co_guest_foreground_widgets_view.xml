@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_root" android:background="@color/common_design_standard_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|bottom|center" android:orientation="horizontal" android:id="@id/ll_user_info" android:background="@drawable/livekit_user_name_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_marginStart="10.0dip">
+        <ImageView android:id="@id/iv_mute_audio" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="16.0dip" android:src="@drawable/livekit_audio_input" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/common_design_standard_flowkit_white" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="60.0dip" android:maxLines="1" android:layout_marginEnd="5.0dip" />
+    </LinearLayout>
+</FrameLayout>

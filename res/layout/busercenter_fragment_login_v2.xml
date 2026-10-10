@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/ll_root" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.NavigationBar android:id="@id/naviBar" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="@dimen/ui_title_bar_height" />
+    <androidx.core.widget.NestedScrollView android:id="@id/nsv_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.resources.widget.BaseTextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/login" android:layout_marginStart="@dimen/user_page_padding" />
+            <com.kubi.user.view.EmailPhoneInputView android:id="@id/loginInputEmailPhone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llPwd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Space android:layout_width="fill_parent" android:layout_height="32.0dip" />
+                <include android:id="@id/bindingPwd" layout="@layout/busercenter_layout_signup_by_password" />
+                <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="start" android:layout_gravity="start" android:id="@id/tvForgetPwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/user_page_padding" android:layout_marginTop="24.0dip" android:layout_marginRight="@dimen/user_page_padding" android:text="@string/forget_pwd" android:layout_marginHorizontal="@dimen/user_page_padding" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/flBtn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/user_page_padding" android:layout_marginTop="40.0dip" android:layout_marginRight="@dimen/user_page_padding" android:layout_marginHorizontal="@dimen/user_page_padding">
+                <com.kubi.resources.widget.button.KcPrimaryButton android:enabled="false" android:id="@id/btnLogin" android:visibility="gone" android:layout_width="fill_parent" android:text="@string/login" style="@style/styleButton48" />
+                <com.kubi.resources.widget.button.KcPrimaryButton android:enabled="false" android:id="@id/btnNext" android:layout_width="fill_parent" android:text="@string/login_next_check" style="@style/styleButton48" />
+            </FrameLayout>
+            <include android:id="@id/bindingExtAccount" layout="@layout/busercenter_layout_login_external_account_entrance" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

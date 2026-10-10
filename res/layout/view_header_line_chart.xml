@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lineChatBg" android:background="@mipmap/asset_small_linechat_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.chart.view.LineChartView android:id="@id/lineChart" android:visibility="gone" android:layout_width="75.0dip" android:layout_height="46.0dip" android:layout_marginBottom="6.0dip" app:chart_axis="none" app:chart_gridColor="@color/c_transparent" app:chart_gridStrokeWidth="0.0dip" app:chart_labelsSize="0.0sp" app:chart_lineColor="@color/primary" app:chart_lineThickness="1.5dip" app:chart_smoothLine="true" />
+</LinearLayout>

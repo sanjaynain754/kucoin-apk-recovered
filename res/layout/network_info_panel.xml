@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_design_standard_g7" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_live_info" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_host_stream_status" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip">
+            <ImageView android:id="@id/iv_video_status" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/network_info_video_status_normal" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/common_design_standard_g7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_video_status" android:layout_marginStart="5.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/common_design_standard_g7" android:id="@id/tv_video_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_normal" android:layout_marginStart="5.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/common_text_color_secondary" android:id="@id/tv_video_quality" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/common_video_stream_smooth" android:layout_weight="1.0" android:layout_marginStart="5.0dip" />
+                    <View android:layout_gravity="bottom" android:background="@color/common_stroke_color_module" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginHorizontal="10.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/common_text_color_secondary" android:gravity="start" android:id="@id/tv_resolution" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip">
+            <ImageView android:id="@id/iv_audio_status" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/network_info_audio_status_normal" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/common_design_standard_g7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_audio_status" android:layout_marginStart="5.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/common_design_standard_g7" android:id="@id/tv_audio_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_normal" android:layout_marginStart="5.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <HorizontalScrollView android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="5.0dip">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/common_text_color_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_audio_tips_proper_volume" android:maxLines="1" />
+                    </HorizontalScrollView>
+                    <View android:layout_gravity="bottom" android:background="@color/common_stroke_color_module" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginHorizontal="10.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_audio_mode" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginStart="5.0dip">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/common_text_color_secondary" android:gravity="start" android:id="@id/tv_audio_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_audio_mode_default" />
+                        <ImageView android:layout_gravity="bottom" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/network_info_audio_mode" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <SeekBar android:id="@id/sb_audio_volume" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="100" android:progress="100" android:progressDrawable="@drawable/audio_effect_seekbar_progress" android:thumb="@drawable/network_info_seekbar_thumb" android:layout_weight="1.0" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/common_design_standard_g7" android:id="@id/tv_audio_volume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+        <ImageView android:id="@id/iv_device_temp" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/network_info_device_temp_normal" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_design_standard_g7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_device_temp" android:layout_marginStart="5.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_design_standard_g7" android:id="@id/tv_device_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_normal" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/common_text_color_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_audio_tips_regular_checks" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip">
+        <ImageView android:id="@id/iv_network_status" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/network_info_network_status_good" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_design_standard_g7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_wifi_or_mobile_network" android:layout_marginStart="5.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_design_standard_g7" android:id="@id/tv_network_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_normal" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/common_text_color_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_network_switch_tips" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_network_info" android:background="@drawable/network_info_statistics_bg" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginTop="15.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/tv_rtt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_text_color_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_rtt" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/tv_down_loss" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_text_color_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_down_loss" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/tv_up_loss" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_text_color_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_up_loss" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_bottom_background_bg" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_16" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:paddingHorizontal="@dimen/spacing_16">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_20" android:textColor="@color/c_text" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:text="@string/bkumex_funding" android:fontFamily="@font/semi" />
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16">
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/funding_rate_settlement_cycle" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:id="@id/settlementPeriod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_10">
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:id="@id/currentRateLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/funding_rate_current_rate_annualized" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:id="@id/currentRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/nextRateContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_10">
+                    <com.kubi.resources.widget.DrawableDashTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:id="@id/nextRateLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/kumex_funding_rate_estimate" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+                    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/nextRateLl" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:id="@id/nextRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium" />
+                        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:id="@id/currencyTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_10">
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/funding_rate_direction" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:id="@id/direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_10">
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/funding_rate_countdown" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:id="@id/countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium" />
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginVertical="@dimen/spacing_16" style="@style/kucoin_view_divider" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/funding_rate_previous_rate_annualized" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:id="@id/previousRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_10">
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:id="@id/rateLimitLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/kumex_funding_rate_limit" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:id="@id/rateLimit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/medium" />
+                </LinearLayout>
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:text="@string/kumex_funding_rate_new_desc" android:lineSpacingMultiplier="1.1" android:fontFamily="@font/regular" />
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:id="@id/desc1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:text="@string/kumex_funding_rate_calculate" android:lineSpacingMultiplier="1.1" android:fontFamily="@font/regular" />
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:id="@id/learnMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:text="@string/learn_more" android:drawablePadding="@dimen/spacing_2" android:fontFamily="@font/regular" app:drawableEndCompat="@drawable/ic2_arrow_right_12" app:drawableTint="@color/c_text" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.kubi.resources.widget.button.KcPrimaryButton android:gravity="center" android:id="@id/tv_confirm" android:layout_width="fill_parent" android:layout_marginTop="@dimen/spacing_32" android:text="@string/kumex_funding_rate_history" style="@style/styleButton40" />
+        <com.kubi.resources.widget.button.KcSecondaryButton android:gravity="center" android:id="@id/tv_confirm1" android:layout_width="fill_parent" android:layout_marginTop="@dimen/spacing_12" android:text="@string/kumex_funding_rate_arbitrage" style="@style/styleButton40Secondary" />
+    </LinearLayout>
+</LinearLayout>

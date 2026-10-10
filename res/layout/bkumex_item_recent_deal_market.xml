@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="start|center" android:id="@id/dealTime" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/stub" android:singleLine="true" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/primary" android:gravity="center" android:id="@id/dealPrice" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/stub" android:singleLine="true" android:layout_centerHorizontal="true" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="end|center" android:id="@id/dealVol" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/stub" android:singleLine="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:paddingTop="@dimen/spacing_8" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@drawable/shape_bottom_k_line_background_bg" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_12" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/spacing_8" android:paddingHorizontal="@dimen/spacing_16">
+        <View android:layout_gravity="center_horizontal" android:id="@id/view_drag_label" android:background="@drawable/shape_bottom_sheet_k_line_indicator" android:layout_width="40.0dip" android:layout_height="4.0dip" android:layout_marginTop="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout android:id="@id/header_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:layout_constraintTop_toBottomOf="@id/view_drag_label" />
+        <FrameLayout android:id="@id/input_panel" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/header_panel" />
+        <FrameLayout android:id="@id/footer_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/input_panel" />
+        <View android:id="@id/view_keyboard_placeholder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintTop_toBottomOf="@id/footer_panel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

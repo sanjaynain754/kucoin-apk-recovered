@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cpiz.android.bubbleview.BubbleLinearLayout android:orientation="horizontal" android:id="@id/newCoinLaunchBubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" app:bb_arrowDirection="Up" app:bb_arrowHeight="6.0dip" app:bb_arrowPosDelta="28.0dip" app:bb_arrowPosPolicy="SelfBegin" app:bb_arrowWidth="10.0dip" app:bb_cornerBottomLeftRadius="8.0dip" app:bb_cornerBottomRightRadius="8.0dip" app:bb_cornerTopLeftRadius="8.0dip" app:bb_cornerTopRightRadius="8.0dip" app:bb_fillColor="@color/c_toolTip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_white" android:id="@id/newCoinContent" android:padding="@dimen/spacing_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="290.0dip" android:layout_weight="1.0" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/newCoinClose" android:padding="@dimen/spacing_6" android:layout_width="28.0dip" android:layout_height="28.0dip" android:scaleType="fitXY" app:srcCompat="@drawable/ic_close_24" app:tint="@color/c_icon" />
+</com.cpiz.android.bubbleview.BubbleLinearLayout>

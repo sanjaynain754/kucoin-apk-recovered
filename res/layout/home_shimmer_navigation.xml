@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="@dimen/home_content_padding_horizontal" android:layout_marginRight="@dimen/home_content_padding_horizontal" android:layout_marginHorizontal="@dimen/home_content_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/icon" android:background="@drawable/shape_shimmer_oval" android:layout_width="26.0dip" android:layout_height="26.0dip" />
+    <View android:id="@id/v1" android:background="@drawable/shape_shimmer_rectangle_16r" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginStart="8.0dip" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,949 @@
+.class public final Ltg0/x;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "tg0/y",
+        "tg0/b0"
+    }
+    d2 = {}
+    k = 0x4
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method public static final a(Lyg0/a;Lkotlin/reflect/KClass;)Ltg0/d;
+    .locals 0
+    .param p0    # Lyg0/a;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p1    # Lkotlin/reflect/KClass;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lyg0/a;",
+            "Lkotlin/reflect/KClass<",
+            "*>;)",
+            "Ltg0/d<",
+            "*>;"
+        }
+    .end annotation
+
+    .annotation build Lkotlin/PublishedApi;
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0, p1}, Ltg0/b0;->e(Lyg0/a;Lkotlin/reflect/KClass;)Ltg0/d;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+.end method
+
+.method public static final b(Lkotlin/reflect/KClass;Ljava/util/List;Lkotlin/jvm/functions/Function0;)Ltg0/d;
+    .locals 0
+    .param p0    # Lkotlin/reflect/KClass;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p1    # Ljava/util/List;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Lkotlin/jvm/functions/Function0;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/reflect/KClass<",
+            "Ljava/lang/Object;",
+            ">;",
+            "Ljava/util/List<",
+            "+",
+            "Ltg0/d<",
+            "Ljava/lang/Object;",
+            ">;>;",
+            "Lkotlin/jvm/functions/Function0<",
+            "+",
+            "Lkotlin/reflect/KClassifier;",
+            ">;)",
+            "Ltg0/d<",
+            "+",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0, p1, p2}, Ltg0/b0;->g(Lkotlin/reflect/KClass;Ljava/util/List;Lkotlin/jvm/functions/Function0;)Ltg0/d;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+.end method
+
+.method public static final c(Lkotlin/reflect/KClass;)Ltg0/d;
+    .locals 0
+    .param p0    # Lkotlin/reflect/KClass;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lkotlin/reflect/KClass<",
+            "TT;>;)",
+            "Ltg0/d<",
+            "TT;>;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0}, Ltg0/b0;->l(Lkotlin/reflect/KClass;)Ltg0/d;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+.end method
+
+.method public static final d(Lyg0/a;Ljava/lang/reflect/Type;)Ltg0/d;
+    .locals 0
+    .param p0    # Lyg0/a;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p1    # Ljava/lang/reflect/Type;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lyg0/a;",
+            "Ljava/lang/reflect/Type;",
+            ")",
+            "Ltg0/d<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0, p1}, Ltg0/y;->f(Lyg0/a;Ljava/lang/reflect/Type;)Ltg0/d;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+.end method
+
+.method public static final e(Lyg0/a;Lkotlin/reflect/KType;)Ltg0/d;
+    .locals 0
+    .param p0    # Lyg0/a;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p1    # Lkotlin/reflect/KType;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lyg0/a;",
+            "Lkotlin/reflect/KType;",
+            ")",
+            "Ltg0/d<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0, p1}, Ltg0/b0;->m(Lyg0/a;Lkotlin/reflect/KType;)Ltg0/d;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+.end method
+
+.method public static final f(Lyg0/a;Ljava/util/List;Z)Ljava/util/List;
+    .locals 0
+    .param p0    # Lyg0/a;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p1    # Ljava/util/List;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lyg0/a;",
+            "Ljava/util/List<",
+            "+",
+            "Lkotlin/reflect/KType;",
+            ">;Z)",
+            "Ljava/util/List<",
+            "Ltg0/d<",
+            "Ljava/lang/Object;",
+            ">;>;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0, p1, p2}, Ltg0/b0;->n(Lyg0/a;Ljava/util/List;Z)Ljava/util/List;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+.end method
+
+.method public static final synthetic serializer()Ltg0/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">()",
+            "Ltg0/d<",
+            "TT;>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x6
+
+    .line 1
+    const-string v1, "T"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->reifiedOperationMarker(ILjava/lang/String;)V
+
+    const-string v0, "kotlinx.serialization.serializer.simple"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/MagicApiIntrinsics;->voidMagicApiCall(Ljava/lang/Object;)V
+
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Ltg0/x;->serializer(Lkotlin/reflect/KType;)Ltg0/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static final serializer(Ljava/lang/reflect/Type;)Ltg0/d;
+    .locals 0
+    .param p0    # Ljava/lang/reflect/Type;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/reflect/Type;",
+            ")",
+            "Ltg0/d<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 2
+    invoke-static {p0}, Ltg0/y;->serializer(Ljava/lang/reflect/Type;)Ltg0/d;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final serializer(Lkotlin/reflect/KClass;)Ltg0/d;
+    .locals 0
+    .param p0    # Lkotlin/reflect/KClass;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lkotlin/reflect/KClass<",
+            "TT;>;)",
+            "Ltg0/d<",
+            "TT;>;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 3
+    invoke-static {p0}, Ltg0/b0;->serializer(Lkotlin/reflect/KClass;)Ltg0/d;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final serializer(Lkotlin/reflect/KClass;Ljava/util/List;Z)Ltg0/d;
+    .locals 0
+    .param p0    # Lkotlin/reflect/KClass;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p1    # Ljava/util/List;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/reflect/KClass<",
+            "*>;",
+            "Ljava/util/List<",
+            "+",
+            "Ltg0/d<",
+            "*>;>;Z)",
+            "Ltg0/d<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 4
+    invoke-static {p0, p1, p2}, Ltg0/b0;->serializer(Lkotlin/reflect/KClass;Ljava/util/List;Z)Ltg0/d;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final serializer(Lkotlin/reflect/KType;)Ltg0/d;
+    .locals 0
+    .param p0    # Lkotlin/reflect/KType;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/reflect/KType;",
+            ")",
+            "Ltg0/d<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 5
+    invoke-static {p0}, Ltg0/b0;->serializer(Lkotlin/reflect/KType;)Ltg0/d;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final synthetic serializer(Lyg0/a;)Ltg0/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lyg0/a;",
+            ")",
+            "Ltg0/d<",
+            "TT;>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x6
+
+    .line 6
+    const-string v1, "T"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->reifiedOperationMarker(ILjava/lang/String;)V
+
+    const-string v0, "kotlinx.serialization.serializer.withModule"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/MagicApiIntrinsics;->voidMagicApiCall(Ljava/lang/Object;)V
+
+    const/4 v0, 0x0
+
+    invoke-static {p0, v0}, Ltg0/x;->serializer(Lyg0/a;Lkotlin/reflect/KType;)Ltg0/d;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final serializer(Lyg0/a;Ljava/lang/reflect/Type;)Ltg0/d;
+    .locals 0
+    .param p0    # Lyg0/a;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p1    # Ljava/lang/reflect/Type;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lyg0/a;",
+            "Ljava/lang/reflect/Type;",
+            ")",
+            "Ltg0/d<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 7
+    invoke-static {p0, p1}, Ltg0/y;->serializer(Lyg0/a;Ljava/lang/reflect/Type;)Ltg0/d;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final serializer(Lyg0/a;Lkotlin/reflect/KClass;Ljava/util/List;Z)Ltg0/d;
+    .locals 0
+    .param p0    # Lyg0/a;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p1    # Lkotlin/reflect/KClass;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/util/List;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lyg0/a;",
+            "Lkotlin/reflect/KClass<",
+            "*>;",
+            "Ljava/util/List<",
+            "+",
+            "Ltg0/d<",
+            "*>;>;Z)",
+            "Ltg0/d<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 8
+    invoke-static {p0, p1, p2, p3}, Ltg0/b0;->serializer(Lyg0/a;Lkotlin/reflect/KClass;Ljava/util/List;Z)Ltg0/d;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final serializer(Lyg0/a;Lkotlin/reflect/KType;)Ltg0/d;
+    .locals 0
+    .param p0    # Lyg0/a;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p1    # Lkotlin/reflect/KType;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lyg0/a;",
+            "Lkotlin/reflect/KType;",
+            ")",
+            "Ltg0/d<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 9
+    invoke-static {p0, p1}, Ltg0/b0;->serializer(Lyg0/a;Lkotlin/reflect/KType;)Ltg0/d;
+
+    move-result-object p0
+
+    return-object p0
+.end method

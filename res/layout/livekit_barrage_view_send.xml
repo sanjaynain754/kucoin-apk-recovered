@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_barrage_view" android:background="@drawable/livekit_barrage_btn_background" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_emoticons" android:background="@drawable/live_barrage_ic_emoticons" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" android:layout_marginEnd="8.0dip" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#7af3f3f3" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/live_barrage_text_hint" android:maxLines="1" android:singleLine="true" android:fontFamily="@font/regular" android:layout_marginStart="16.0dip" android:layout_toStartOf="@id/rl_emoticons" />
+</RelativeLayout>

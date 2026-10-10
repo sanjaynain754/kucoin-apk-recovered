@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="20.0dip" android:width="20.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ff1d1d1d" android:pathData="M13 2C13 1.45 12.55 1 12 1 11.45 1 11 1.45 11 2V3.5C11 4.05 11.45 4.5 12 4.5 12.55 4.5 13 4.05 13 3.5V2Z" />
+    <path android:fillColor="#ff1d1d1d" android:pathData="M4.22 4.22C4.61 3.83 5.25 3.83 5.64 4.22L6.7 5.28C7.09 5.67 7.09 6.31 6.7 6.7 6.31 7.09 5.67 7.09 5.28 6.7L4.22 5.64C3.83 5.24 3.83 4.61 4.22 4.22Z" />
+    <path android:fillColor="#ff1d1d1d" android:pathData="M1 12C1 11.45 1.45 11 2 11H3.5C4.05 11 4.5 11.45 4.5 12 4.5 12.55 4.05 13 3.5 13H2C1.45 13 1 12.55 1 12Z" />
+    <path android:fillColor="#ff1d1d1d" android:pathData="M6.7 18.72C7.09 18.33 7.09 17.69 6.7 17.3 6.31 16.91 5.67 16.91 5.28 17.3L4.22 18.36C3.83 18.75 3.83 19.39 4.22 19.78 4.61 20.17 5.25 20.17 5.64 19.78L6.7 18.72Z" />
+    <path android:fillColor="#ff1d1d1d" android:pathData="M17.3 17.3C17.69 16.91 18.33 16.91 18.72 17.3L19.78 18.37C20.17 18.76 20.17 19.39 19.78 19.78 19.39 20.17 18.75 20.17 18.36 19.78L17.3 18.72C16.91 18.33 16.91 17.7 17.3 17.3Z" />
+    <path android:fillColor="#ff1d1d1d" android:pathData="M20.5 11C19.95 11 19.5 11.45 19.5 12 19.5 12.55 19.95 13 20.5 13H22C22.55 13 23 12.55 23 12 23 11.45 22.55 11 22 11H20.5Z" />
+    <path android:fillColor="#ff1d1d1d" android:pathData="M19.78 4.22C20.17 4.61 20.17 5.25 19.78 5.64L18.72 6.7C18.33 7.09 17.69 7.09 17.3 6.7 16.91 6.31 16.91 5.67 17.3 5.28L18.36 4.22C18.75 3.83 19.39 3.83 19.78 4.22Z" />
+    <path android:fillColor="#ff1d1d1d" android:pathData="M5.29 12C5.29 8.29 8.29 5.29 12 5.29 15.71 5.29 18.71 8.29 18.71 12 18.71 15.71 15.71 18.71 12 18.71 8.29 18.71 5.29 15.71 5.29 12ZM12 7.29C9.4 7.29 7.29 9.4 7.29 12 7.29 14.6 9.4 16.71 12 16.71 14.6 16.71 16.71 14.6 16.71 12 16.71 9.4 14.6 7.29 12 7.29Z" android:fillType="evenOdd" />
+    <path android:fillColor="#ff1d1d1d" android:pathData="M13 20.5C13 19.95 12.55 19.5 12 19.5 11.45 19.5 11 19.95 11 20.5V22C11 22.55 11.45 23 12 23 12.55 23 13 22.55 13 22V20.5Z" />
+</vector>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:id="@id/tvAccountName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:fontFamily="@font/medium" android:layout_marginStart="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text40" android:id="@id/tvAssetValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/regular" app:layout_constraintStart_toStartOf="@id/tvAccountName" app:layout_constraintTop_toBottomOf="@id/tvAccountName" />
+    <View android:layout_width="1.0dip" android:layout_height="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvAssetValue" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivDragIcon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic2_drag_20" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="@color/c_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/tencent/bugly/proguard/i;
+.super Ljava/lang/Object;
+.source "BUGLY"
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/String;)V
+.end method
+
+.method public abstract onBackground()V
+.end method
+
+.method public abstract onForeground()V
+.end method

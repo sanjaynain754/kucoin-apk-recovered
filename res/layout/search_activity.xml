@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginStart="16.0dip">
+        <com.kubi.resources.widget.ClearEditText android:textSize="16.0sp" android:textColor="@color/c_text" android:textColorHint="@color/c_text30" android:gravity="center_vertical" android:id="@id/searchInput" android:background="@drawable/search_input_search" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:hint="@string/search" android:singleLine="true" android:maxLength="50" android:drawablePadding="8.0dip" android:layout_weight="1.0" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/shape_primary_cursor" android:layout_marginVertical="10.0dip" android:paddingHorizontal="20.0dip" app:drawableStartCompat="@drawable/ic2_search_20" app:drawableTint="@color/c_icon40" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:gravity="center" android:id="@id/tvCancel" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" android:paddingHorizontal="16.0dip" />
+    </LinearLayout>
+    <ViewSwitcher android:id="@id/searchSwitcher" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.fragment.app.FragmentContainerView android:id="@id/fragment_container_recent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <androidx.fragment.app.FragmentContainerView android:id="@id/fragment_container_result" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ViewSwitcher>
+</LinearLayout>

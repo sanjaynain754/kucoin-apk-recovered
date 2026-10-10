@@ -1,0 +1,1736 @@
+.class public final Lcom/kubi/flutter/proto/kline/Response;
+.super Lcom/google/protobuf/GeneratedMessageLite;
+.source "Response.java"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/kubi/flutter/proto/kline/Response$BodyCase;,
+        Lcom/kubi/flutter/proto/kline/Response$b;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite<",
+        "Lcom/kubi/flutter/proto/kline/Response;",
+        "Lcom/kubi/flutter/proto/kline/Response$b;",
+        ">;",
+        "Lcom/google/protobuf/MessageLiteOrBuilder;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final CODE_FIELD_NUMBER:I = 0x1
+
+.field private static final DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+.field public static final MESSAGE_FIELD_NUMBER:I = 0x2
+
+.field private static volatile PARSER:Lcom/google/protobuf/Parser;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/protobuf/Parser<",
+            "Lcom/kubi/flutter/proto/kline/Response;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field private bodyCase_:I
+
+.field private body_:Ljava/lang/Object;
+
+.field private code_:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    .line 2
+    new-instance v0, Lcom/kubi/flutter/proto/kline/Response;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {v0}, Lcom/kubi/flutter/proto/kline/Response;-><init>()V
+
+    .line 6
+    .line 7
+    sput-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    .line 8
+    .line 9
+    const-class v1, Lcom/kubi/flutter/proto/kline/Response;
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-static {v1, v0}, Lcom/google/protobuf/GeneratedMessageLite;->registerDefaultInstance(Ljava/lang/Class;Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    .line 13
+    return-void
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method private constructor <init>()V
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
+
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    .line 6
+    iput v0, p0, Lcom/kubi/flutter/proto/kline/Response;->bodyCase_:I
+
+    .line 7
+    return-void
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public static synthetic access$000()Lcom/kubi/flutter/proto/kline/Response;
+    .locals 1
+
+    .line 1
+    .line 2
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public static synthetic access$100(Lcom/kubi/flutter/proto/kline/Response;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lcom/kubi/flutter/proto/kline/Response;->clearBody()V
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public static synthetic access$200(Lcom/kubi/flutter/proto/kline/Response;I)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/kubi/flutter/proto/kline/Response;->setCode(I)V
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+.end method
+
+.method public static synthetic access$300(Lcom/kubi/flutter/proto/kline/Response;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lcom/kubi/flutter/proto/kline/Response;->clearCode()V
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public static synthetic access$400(Lcom/kubi/flutter/proto/kline/Response;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/kubi/flutter/proto/kline/Response;->setMessage(Ljava/lang/String;)V
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+.end method
+
+.method public static synthetic access$500(Lcom/kubi/flutter/proto/kline/Response;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lcom/kubi/flutter/proto/kline/Response;->clearMessage()V
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public static synthetic access$600(Lcom/kubi/flutter/proto/kline/Response;Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/kubi/flutter/proto/kline/Response;->setMessageBytes(Lcom/google/protobuf/ByteString;)V
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+.end method
+
+.method private clearBody()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    .line 3
+    iput v0, p0, Lcom/kubi/flutter/proto/kline/Response;->bodyCase_:I
+
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    .line 6
+    iput-object v0, p0, Lcom/kubi/flutter/proto/kline/Response;->body_:Ljava/lang/Object;
+
+    .line 7
+    return-void
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method private clearCode()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    .line 3
+    iput v0, p0, Lcom/kubi/flutter/proto/kline/Response;->code_:I
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method private clearMessage()V
+    .locals 2
+
+    .line 1
+    .line 2
+    iget v0, p0, Lcom/kubi/flutter/proto/kline/Response;->bodyCase_:I
+
+    .line 3
+    const/4 v1, 0x2
+
+    .line 4
+    .line 5
+    if-ne v0, v1, :cond_0
+
+    .line 6
+    const/4 v0, 0x0
+
+    .line 7
+    .line 8
+    iput v0, p0, Lcom/kubi/flutter/proto/kline/Response;->bodyCase_:I
+
+    .line 9
+    const/4 v0, 0x0
+
+    .line 10
+    .line 11
+    iput-object v0, p0, Lcom/kubi/flutter/proto/kline/Response;->body_:Ljava/lang/Object;
+
+    .line 12
+    :cond_0
+    return-void
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public static getDefaultInstance()Lcom/kubi/flutter/proto/kline/Response;
+    .locals 1
+
+    .line 1
+    .line 2
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public static newBuilder()Lcom/kubi/flutter/proto/kline/Response$b;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder()Lcom/google/protobuf/GeneratedMessageLite$Builder;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kubi/flutter/proto/kline/Response$b;
+
+    return-object v0
+.end method
+
+.method public static newBuilder(Lcom/kubi/flutter/proto/kline/Response;)Lcom/kubi/flutter/proto/kline/Response$b;
+    .locals 1
+
+    .line 2
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    invoke-virtual {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$Builder;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/kubi/flutter/proto/kline/Response$b;
+
+    return-object p0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;)Lcom/kubi/flutter/proto/kline/Response;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/kubi/flutter/proto/kline/Response;
+
+    return-object p0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kubi/flutter/proto/kline/Response;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 2
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/kubi/flutter/proto/kline/Response;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;)Lcom/kubi/flutter/proto/kline/Response;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 3
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/kubi/flutter/proto/kline/Response;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kubi/flutter/proto/kline/Response;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 4
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/kubi/flutter/proto/kline/Response;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;)Lcom/kubi/flutter/proto/kline/Response;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 9
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/CodedInputStream;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/kubi/flutter/proto/kline/Response;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kubi/flutter/proto/kline/Response;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 10
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/kubi/flutter/proto/kline/Response;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;)Lcom/kubi/flutter/proto/kline/Response;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 7
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/kubi/flutter/proto/kline/Response;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kubi/flutter/proto/kline/Response;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 8
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/kubi/flutter/proto/kline/Response;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/nio/ByteBuffer;)Lcom/kubi/flutter/proto/kline/Response;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/kubi/flutter/proto/kline/Response;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kubi/flutter/proto/kline/Response;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 2
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/kubi/flutter/proto/kline/Response;
+
+    return-object p0
+.end method
+
+.method public static parseFrom([B)Lcom/kubi/flutter/proto/kline/Response;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 5
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[B)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/kubi/flutter/proto/kline/Response;
+
+    return-object p0
+.end method
+
+.method public static parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/kubi/flutter/proto/kline/Response;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 6
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/kubi/flutter/proto/kline/Response;
+
+    return-object p0
+.end method
+
+.method public static parser()Lcom/google/protobuf/Parser;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/protobuf/Parser<",
+            "Lcom/kubi/flutter/proto/kline/Response;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    sget-object v0, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/Parser;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method private setCode(I)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput p1, p0, Lcom/kubi/flutter/proto/kline/Response;->code_:I
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method private setMessage(Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    const/4 v0, 0x2
+
+    .line 5
+    .line 6
+    iput v0, p0, Lcom/kubi/flutter/proto/kline/Response;->bodyCase_:I
+
+    .line 7
+    .line 8
+    iput-object p1, p0, Lcom/kubi/flutter/proto/kline/Response;->body_:Ljava/lang/Object;
+
+    .line 9
+    return-void
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method private setMessageBytes(Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p1}, Lcom/google/protobuf/AbstractMessageLite;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
+
+    .line 7
+    move-result-object p1
+
+    .line 8
+    .line 9
+    iput-object p1, p0, Lcom/kubi/flutter/proto/kline/Response;->body_:Ljava/lang/Object;
+
+    .line 10
+    const/4 p1, 0x2
+
+    .line 11
+    .line 12
+    iput p1, p0, Lcom/kubi/flutter/proto/kline/Response;->bodyCase_:I
+
+    .line 13
+    return-void
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+
+# virtual methods
+.method public final dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$MethodToInvoke;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    .line 2
+    sget-object p2, Lcom/kubi/flutter/proto/kline/Response$a;->a:[I
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 6
+    move-result p1
+
+    .line 7
+    .line 8
+    aget p1, p2, p1
+
+    .line 9
+    const/4 p2, 0x0
+
+    .line 10
+    .line 11
+    .line 12
+    packed-switch p1, :pswitch_data_0
+
+    .line 13
+    .line 14
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 18
+    throw p1
+
+    .line 19
+    :pswitch_0
+    return-object p2
+
+    .line 20
+    :pswitch_1
+    const/4 p1, 0x1
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-static {p1}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    .line 24
+    move-result-object p1
+
+    .line 25
+    return-object p1
+
+    .line 26
+    .line 27
+    :pswitch_2
+    sget-object p1, Lcom/kubi/flutter/proto/kline/Response;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 28
+    .line 29
+    if-nez p1, :cond_1
+
+    .line 30
+    .line 31
+    const-class p2, Lcom/kubi/flutter/proto/kline/Response;
+
+    .line 32
+    monitor-enter p2
+
+    .line 33
+    .line 34
+    :try_start_0
+    sget-object p1, Lcom/kubi/flutter/proto/kline/Response;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 35
+    .line 36
+    if-nez p1, :cond_0
+
+    .line 37
+    .line 38
+    new-instance p1, Lcom/google/protobuf/GeneratedMessageLite$DefaultInstanceBasedParser;
+
+    .line 39
+    .line 40
+    sget-object p3, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    .line 41
+    .line 42
+    .line 43
+    invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$DefaultInstanceBasedParser;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    .line 44
+    .line 45
+    sput-object p1, Lcom/kubi/flutter/proto/kline/Response;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 46
+    goto :goto_0
+
+    .line 47
+    :catchall_0
+    move-exception p1
+
+    .line 48
+    goto :goto_1
+
+    .line 49
+    :cond_0
+    :goto_0
+    monitor-exit p2
+
+    .line 50
+    return-object p1
+
+    .line 51
+    :goto_1
+    monitor-exit p2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 52
+    throw p1
+
+    .line 53
+    :cond_1
+    return-object p1
+
+    .line 54
+    .line 55
+    :pswitch_3
+    sget-object p1, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    .line 56
+    return-object p1
+
+    .line 57
+    .line 58
+    :pswitch_4
+    const-string p1, "body_"
+
+    .line 59
+    .line 60
+    const-string p2, "bodyCase_"
+
+    .line 61
+    .line 62
+    const-string p3, "code_"
+
+    .line 63
+    .line 64
+    .line 65
+    filled-new-array {p1, p2, p3}, [Ljava/lang/Object;
+
+    .line 66
+    move-result-object p1
+
+    .line 67
+    .line 68
+    const-string p2, "\u0000\u0002\u0001\u0000\u0001\u0002\u0002\u0000\u0000\u0000\u0001\u0004\u0002\u023b\u0000"
+
+    .line 69
+    .line 70
+    sget-object p3, Lcom/kubi/flutter/proto/kline/Response;->DEFAULT_INSTANCE:Lcom/kubi/flutter/proto/kline/Response;
+
+    .line 71
+    .line 72
+    .line 73
+    invoke-static {p3, p2, p1}, Lcom/google/protobuf/GeneratedMessageLite;->newMessageInfo(Lcom/google/protobuf/MessageLite;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 74
+    move-result-object p1
+
+    .line 75
+    return-object p1
+
+    .line 76
+    .line 77
+    :pswitch_5
+    new-instance p1, Lcom/kubi/flutter/proto/kline/Response$b;
+
+    .line 78
+    .line 79
+    .line 80
+    invoke-direct {p1, p2}, Lcom/kubi/flutter/proto/kline/Response$b;-><init>(Lcom/kubi/flutter/proto/kline/Response$a;)V
+
+    .line 81
+    return-object p1
+
+    .line 82
+    .line 83
+    :pswitch_6
+    new-instance p1, Lcom/kubi/flutter/proto/kline/Response;
+
+    .line 84
+    .line 85
+    .line 86
+    invoke-direct {p1}, Lcom/kubi/flutter/proto/kline/Response;-><init>()V
+
+    .line 87
+    return-object p1
+
+    .line 88
+    nop
+
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+.end method
+
+.method public getBodyCase()Lcom/kubi/flutter/proto/kline/Response$BodyCase;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget v0, p0, Lcom/kubi/flutter/proto/kline/Response;->bodyCase_:I
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {v0}, Lcom/kubi/flutter/proto/kline/Response$BodyCase;->forNumber(I)Lcom/kubi/flutter/proto/kline/Response$BodyCase;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public getCode()I
+    .locals 1
+
+    .line 1
+    .line 2
+    iget v0, p0, Lcom/kubi/flutter/proto/kline/Response;->code_:I
+
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public getMessage()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    .line 2
+    iget v0, p0, Lcom/kubi/flutter/proto/kline/Response;->bodyCase_:I
+
+    .line 3
+    const/4 v1, 0x2
+
+    .line 4
+    .line 5
+    if-ne v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Lcom/kubi/flutter/proto/kline/Response;->body_:Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    check-cast v0, Ljava/lang/String;
+
+    .line 10
+    return-object v0
+
+    .line 11
+    .line 12
+    :cond_0
+    const-string v0, ""
+
+    .line 13
+    return-object v0
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public getMessageBytes()Lcom/google/protobuf/ByteString;
+    .locals 2
+
+    .line 1
+    .line 2
+    iget v0, p0, Lcom/kubi/flutter/proto/kline/Response;->bodyCase_:I
+
+    .line 3
+    const/4 v1, 0x2
+
+    .line 4
+    .line 5
+    if-ne v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Lcom/kubi/flutter/proto/kline/Response;->body_:Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    check-cast v0, Ljava/lang/String;
+
+    .line 10
+    goto :goto_0
+
+    .line 11
+    .line 12
+    :cond_0
+    const-string v0, ""
+
+    .line 13
+    .line 14
+    .line 15
+    :goto_0
+    invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+
+    .line 16
+    move-result-object v0
+
+    .line 17
+    return-object v0
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public hasMessage()Z
+    .locals 2
+
+    .line 1
+    .line 2
+    iget v0, p0, Lcom/kubi/flutter/proto/kline/Response;->bodyCase_:I
+
+    .line 3
+    const/4 v1, 0x2
+
+    .line 4
+    .line 5
+    if-ne v0, v1, :cond_0
+
+    .line 6
+    const/4 v0, 0x1
+
+    .line 7
+    return v0
+
+    .line 8
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 9
+    return v0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method

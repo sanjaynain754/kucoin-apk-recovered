@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_instruction" android:layout_width="fill_parent" android:layout_height="@dimen/size_200" android:scaleType="fitXY" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:id="@id/tv_introduction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:text="@string/kc_tb_guide_spot_desc" />
+    </LinearLayout>
+</ScrollView>

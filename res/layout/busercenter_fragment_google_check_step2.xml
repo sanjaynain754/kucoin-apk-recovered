@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.safe.lib.ui.account.StepLayout android:id="@id/step_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+        <com.kubi.resources.widget.AlertTipsTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/safe_page_padding" android:layout_marginTop="12.0dip" android:text="@string/change_2fa_tips_subtitle" android:drawableStart="@drawable/ic2_warning_16" app:att_startDrawableTint="@color/complementary" app:att_tipsLevel="WARNING" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="15.0sp" android:textColor="@color/c_text" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/safe_download_tips_two" android:lineSpacingMultiplier="1.3" android:layout_marginStart="22.0dip" android:layout_marginEnd="22.0dip" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_qr_code" android:layout_width="136.0dip" android:layout_height="136.0dip" android:layout_marginTop="24.0dip" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="15.0sp" android:textColor="@color/c_text" android:layout_gravity="center_horizontal" android:id="@id/tv_google_keyword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" />
+        <com.kubi.resources.widget.button.KcSecondaryButton android:id="@id/tv_copy" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="40.0dip" android:layout_marginRight="@dimen/spacing_16" android:text="@string/copy_private_key" android:layout_marginHorizontal="@dimen/spacing_16" style="@style/styleButton48Secondary" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="13.0sp" android:textColor="@color/secondary" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/please_safe_save_pwd" />
+        <Space android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/tv_next" android:layout_width="fill_parent" android:layout_marginTop="7.0dip" android:layout_marginBottom="32.0dip" android:text="@string/next" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/styleButton48" />
+    </LinearLayout>
+</ScrollView>

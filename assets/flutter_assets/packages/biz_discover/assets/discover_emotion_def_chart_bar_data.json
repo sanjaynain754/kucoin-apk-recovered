@@ -1,0 +1,59 @@
+{
+  "slots": [
+    {
+      "desc": ">10%",
+      "count": 15,
+      "status": "UNCHANGED"
+    },
+    {
+      "desc": "7-10%",
+      "count": 25,
+      "status": "UNCHANGED"
+    },
+    {
+      "desc": "5-7%",
+      "count": 20,
+      "status": "UNCHANGED"
+    },
+    {
+      "desc": "3-5%",
+      "count": 30,
+      "status": "UNCHANGED"
+    },
+    {
+      "desc": "0-3%",
+      "count": 40,
+      "status": "UNCHANGED"
+    },
+    {
+      "desc": "0%",
+      "count": 10,
+      "status": "UNCHANGED"
+    },
+    {
+      "desc": "0-3%",
+      "count": 60,
+      "status": "UNCHANGED"
+    },
+    {
+      "desc": "3-5%",
+      "count": 40,
+      "status": "UNCHANGED"
+    },
+    {
+      "desc": "5-7%",
+      "count": 50,
+      "status": "UNCHANGED"
+    },
+    {
+      "desc": "7-10%",
+      "count": 20,
+      "status": "UNCHANGED"
+    },
+    {
+      "desc": ">10%",
+      "count": 15,
+      "status": "UNCHANGED"
+    }
+  ]
+}

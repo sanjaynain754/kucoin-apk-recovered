@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="jumio_dv_retry_encrypted">"Il-fajl tal-PDF magħżul huwa protett b'password"</string>
+    <string name="jumio_dv_retry_maximum_size_limit_exceeded">Inqabeż il-limitu massimu tad-daqs</string>
+    <string name="jumio_dv_retry_not_readable">Il-fajl tal-PDF magħżul ma jistax jiġi pproċessat</string>
+    <string name="jumio_dv_retry_page_limit">"Il-limitu tan-numru massimu ta' paġni fil-PDF inqabeż"</string>
+    <string name="jumio_dv_retry_selected_file_cannot_be_processed">Il-fajl magħżul ma jistax jiġi pproċessat</string>
+    <string name="jumio_error_case_auth_failed">L-awtentikazzjoni ma rnexxietx</string>
+    <string name="jumio_error_case_cancelled">Kkanċellat</string>
+    <string name="jumio_error_case_cancelled_by_user">Ikkanċellata mill-utent aħħari</string>
+    <string name="jumio_error_case_certificate_not_valid_anymore">"Iċ-ċertifikat m'għadux aktar validu. Jekk jogħġbok aġġorna l-applikazzjoni tiegħek."</string>
+    <string name="jumio_error_case_device_is_offline">Jekk jogħġbok iċċekkja li qiegħed online</string>
+    <string name="jumio_error_case_network_problems">"Iltqajna ma' problema fil-komunikazzjoni tan-netwerk"</string>
+    <string name="jumio_error_case_no_camera_connection">L-aċċess għall-kamera huwa ddiżattivat</string>
+    <string name="jumio_error_case_scanning_not_possible">Bħalissa ma tistax tiskennja, jekk jogħġbok ikkuntattja lit-tim tal-appoġġ</string>
+    <string name="jumio_error_case_session_expired">Is-sessjoni Skadiet</string>
+    <string name="jumio_idtype_di">ID diġitali</string>
+    <string name="jumio_idtype_dl">Liċenzja tas-Sewqan</string>
+    <string name="jumio_idtype_id">Kard tal-Identità</string>
+    <string name="jumio_idtype_pp">Passaport</string>
+    <string name="jumio_idtype_visa">Visa</string>
+</resources>

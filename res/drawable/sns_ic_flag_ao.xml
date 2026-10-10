@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="18.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="18.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <group>
+            <clip-path android:pathData="M2 0h20a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" />
+            <path android:fillColor="@drawable/$sns_ic_flag_ao__0" android:pathData="M0 0h24v18H0z" />
+            <path android:fillColor="#ff262626" android:pathData="M0 18h24V9.6H0z" android:fillType="evenOdd" />
+            <path android:fillColor="#ffdd2137" android:pathData="M0 9.6h24V0H0z" android:fillType="evenOdd" />
+            <path android:fillColor="#fff8d84b" android:pathData="M11.8 5.13a3.62 3.62 0 0 1 2.08 5.27l0.72 0.5c0.27 0.18 0.34 0.56 0.16 0.83a0.55 0.55 0 0 1-0.8 0.17l-0.8-0.57a3.3 3.3 0 0 1-3.14 0.76 0.6 0.6 0 0 1-0.4-0.74c0.08-0.32 0.39-0.5 0.7-0.42 0.64 0.18 1.3 0.05 1.83-0.3L10.54 9.5a0.6 0.6 0 0 1-0.16-0.83 0.55 0.55 0 0 1 0.8-0.17l1.75 1.23q0.11-0.23 0.18-0.5c0.33-1.28-0.4-2.6-1.61-2.94a0.6 0.6 0 0 1-0.4-0.73c0.08-0.32 0.39-0.51 0.7-0.43M10.86 6.6c0.31 0 0.57 0.27 0.57 0.6s-0.26 0.6-0.57 0.6a0.6 0.6 0 0 1-0.57-0.6c0-0.33 0.25-0.6 0.57-0.6" android:fillType="evenOdd" />
+        </group>
+    </group>
+</vector>

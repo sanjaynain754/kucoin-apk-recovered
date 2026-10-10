@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.sdk.widget.shape.view.ShapeTextView android:textSize="@dimen/font_10" android:textColor="#fff3f3f3" android:gravity="center" android:id="@id/leaderAvatarShapeTv" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="8.0dip" android:maxLength="2" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shape_radius="20.0dip" app:shape_strokeColor="@color/brandGreen" app:shape_strokeWidth="1.0dip" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_white" android:id="@id/leaderNameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Theresa Webb" android:layout_marginStart="@dimen/spacing_8" app:layout_constraintBottom_toBottomOf="@id/leaderAvatarShapeTv" app:layout_constraintStart_toEndOf="@id/leaderAvatarShapeTv" app:layout_constraintTop_toTopOf="@id/leaderAvatarShapeTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

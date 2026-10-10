@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line" android:background="@color/emphasis4" android:layout_width="fill_parent" android:layout_height="@dimen/spacing_8" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_18" android:textColor="@color/c_text" android:id="@id/commonHead" android:background="@color/c_overlay" android:paddingLeft="16.0dip" android:paddingTop="@dimen/spacing_24" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/stub" android:fontFamily="@font/semi" android:paddingHorizontal="16.0dip" />
+</LinearLayout>

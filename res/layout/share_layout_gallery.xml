@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/layoutContent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.rtlviewpager.RtlViewPager android:id="@id/viewPager" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" android:paddingStart="45.0dip" android:paddingEnd="45.0dip" />
+    <com.kubi.share.lib.widget.ShareChannelView android:id="@id/shareChannelView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,20 @@
+{
+  "open_margin_trade_answered": "정답 개수: <span>{3/12}</span>",
+  "kc_transferpro_earn_guide": "이제 금융 계정 이체가 지원됩니다. 금융 계정으로 이체하거나 이체를 받아 자유 기간 Earn 상품에 자동으로 가입하거나 상환받을 수 있습니다.",
+  "earn_account": "금융 계정",
+  "kc_transferpro_earn_coin_tip": "자유 기간 Earn 상품의 자산만 파이낸스 계정을 통해 이체할 수 있습니다.",
+  "earn_title": "금융",
+  "asset_bind_google": "Google 이중 인증",
+  "kc_kline_unrealized_pnl": "",
+  "register_guide_title_2": "<span>4천만</span> 사용자가 선택한 쿠코인에 오신 것을 환영합니다",
+  "kc_asset_auto_renewal": "",
+  "payment_see_more": "프로모션 더 보기",
+  "kc_hold_earn_open_desc": "",
+  "kumex_welfare_position_use_desc": "<span>{100 USDT}</span> 체험 펀드 사용",
+  "margin_isolated_guide1": "마진 계정으로 자산을 이체하여 암호화폐 담보 대출을 이용할 수 있습니다. 교차 마진은 모든 코인을 지원합니다.",
+  "quote_holding_not_login": "내 포지션을 보려면 로그인하세요.",
+  "asset_withdraw_chain_tip1": "선택한 네트워크가 입력한 주소와 일치하는지 확인하세요. 그렇지 않으면 자금이 손실될 수 있습니다.",
+  "kc_symbol_base_info_title": "쌍 세부정보",
+  "kc_kline_positions_costs": "",
+  "beep_p2p": "P2P 알림"
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/drawer_recommend_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text40" android:gravity="center" android:layout_gravity="center" android:id="@id/tipTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_24" android:layout_marginTop="42.0dip" android:layout_marginRight="@dimen/spacing_24" android:text="@string/fav_empty" android:drawableTop="@drawable/ic2_common_empty" android:fontFamily="@font/regular" android:layout_marginHorizontal="@dimen/spacing_24" />
+    <FrameLayout android:id="@id/recommend_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" />
+</LinearLayout>

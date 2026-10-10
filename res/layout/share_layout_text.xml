@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/layoutShareContent" android:background="@drawable/shape_dialog_bg_bulletlayer" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginHorizontal="24.0dip">
+            <com.kubi.sdk.site.widget.SiteLogoImageView android:layout_width="82.599976dip" android:layout_height="20.299988dip" android:layout_marginBottom="12.0dip" android:scaleType="fitXY" app:siteLogo="LogoGeneralGreenPng" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:lineSpacingMultiplier="1.4" android:fontFamily="@font/medium" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:ellipsize="end" android:id="@id/tvContent" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:lineSpacingMultiplier="1.4" android:fontFamily="@font/regular" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.kubi.share.lib.widget.ShareChannelView android:id="@id/shareChannelView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+</LinearLayout>

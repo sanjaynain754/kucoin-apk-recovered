@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="24.0dip" android:paddingEnd="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.PrefixTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:id="@id/prefix_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.kubi.resources.widget.FilterEmojiEditText android:textSize="15.0sp" android:textColor="@color/c_text" android:textColorHint="@color/c_text20" android:gravity="center_vertical" android:id="@id/et_input" android:background="@drawable/shape_edittext_border_background_with_error" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="4.0dip" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/shape_primary_cursor" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/secondary60" android:gravity="center_vertical" android:id="@id/tv_error_msg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="27.0dip" />
+</LinearLayout>

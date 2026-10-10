@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_darkoverlay_8r" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_18" android:textColor="@color/c_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prod_kyc_senior_permission_hint_title" />
+    <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/tvConfirm" android:layout_width="fill_parent" android:layout_marginTop="20.0dip" android:text="@string/confirm" style="@style/styleButton48" />
+    <TextView android:textSize="@dimen/font_16" android:textColor="@color/c_text60" android:gravity="center" android:id="@id/tvCancel" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/cancel" />
+</LinearLayout>

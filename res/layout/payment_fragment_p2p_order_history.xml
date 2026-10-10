@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/p2p_common_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/p2p_common_title_bar" />
+    <com.kubi.resources.widget.viewpager2.SlidingTabLayout android:id="@id/tab" android:layout_width="fill_parent" android:layout_height="@dimen/tab_bar_height" android:layout_marginLeft="@dimen/spacing_4" android:layout_marginRight="@dimen/spacing_4" android:layout_marginHorizontal="@dimen/spacing_4" app:tl_underline_color="@color/c_transparent" style="@style/tab_layout_indicator_level2" />
+    <View style="@style/kucoin_view_divider" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

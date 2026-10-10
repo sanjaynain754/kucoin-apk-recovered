@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/viewSearch" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:paddingStart="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.ClearEditText android:id="@id/etSearch" android:layout_width="0.0dip" android:hint="@string/search" android:layout_weight="1.0" style="@style/KcSearchBarLarge" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:gravity="center" android:id="@id/tvClose" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" android:fontFamily="@font/medium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+</LinearLayout>

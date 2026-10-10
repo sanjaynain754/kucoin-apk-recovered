@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_primary20_primary12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:layout_marginHorizontal="16.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="@dimen/spacing_10" android:layout_marginBottom="@dimen/spacing_10" android:scaleType="fitXY" android:tint="@color/primary" android:layout_marginStart="16.0dip" android:layout_marginEnd="@dimen/spacing_4" app:srcCompat="@drawable/ic2_announcement_16" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="center_vertical" android:id="@id/notice" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:layout_marginBottom="@dimen/spacing_8" android:layout_weight="1.0" android:layout_marginStart="8.0dip" />
+        <ImageView android:id="@id/close" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="fitXY" android:layout_marginEnd="6.0dip" android:paddingHorizontal="10.0dip" android:paddingVertical="10.0dip" app:srcCompat="@drawable/ic_close_16" app:tint="@color/c_icon" />
+    </LinearLayout>
+</FrameLayout>

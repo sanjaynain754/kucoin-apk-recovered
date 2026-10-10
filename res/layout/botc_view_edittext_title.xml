@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:id="@id/tv_view_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/rl_input" android:background="@drawable/shape_edittext_title" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="4.0dip">
+        <com.kubi.resources.widget.FilterEmojiEditText android:textSize="14.0sp" android:textColor="@color/c_text" android:textColorHint="@color/c_text20" android:gravity="center_vertical" android:id="@id/et_view_text_input" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:textCursorDrawable="@drawable/shape_primary_cursor" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text60" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_view_text_unit" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="12.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/view_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="@color/emphasis20" android:layout_width="1.0dip" android:layout_height="20.0dip" android:layout_marginEnd="12.0dip" />
+            <com.kubi.resources.widget.BaseTextView android:textColor="@color/primary" android:id="@id/tv_view_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="12.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/secondary" android:gravity="center_vertical" android:id="@id/tv_error" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+</LinearLayout>

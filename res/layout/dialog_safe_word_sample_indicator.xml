@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tabIndicator" android:layout_width="57.0dip" android:layout_height="4.0dip" android:src="@drawable/shape_safe_word_sample_indicator" />
+    <View android:background="@android:color/transparent" android:layout_width="8.0dip" android:layout_height="fill_parent" />
+</LinearLayout>

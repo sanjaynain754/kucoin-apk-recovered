@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="20.0dip" android:layout_marginHorizontal="20.0dip">
+                    <View android:background="@drawable/ic_asset_tab_setting_header_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <HorizontalScrollView android:id="@id/flPreviewTabLayout" android:paddingTop="23.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="148.0dip">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/tabContainer" android:paddingLeft="@dimen/spacing_8" android:paddingRight="@dimen/spacing_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_8" />
+                    </HorizontalScrollView>
+                </FrameLayout>
+                <include android:id="@id/sortOptions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_24" layout="@layout/asset_sort_options" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/layoutTip" android:background="@drawable/asset_sort_tip_bg" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" android:paddingHorizontal="12.0dip" android:paddingVertical="10.0dip">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic2_info_16" app:tint="@color/c_icon" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:layout_gravity="center_vertical" android:id="@id/tvTipContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:text="@string/kc_asset_sort_mode_simple_desc" android:layout_marginStart="8.0dip" app:lineHeight="16.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:layout_marginHorizontal="16.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutSortByValue" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text40" android:id="@id/tvAssetCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kc_asset_sort_funds_count" />
+                        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivSortIcon" android:layout_width="@dimen/spacing_16" android:layout_height="@dimen/spacing_16" android:layout_marginTop="1.0dip" android:src="@drawable/ic2_sortdown_16" android:layout_marginStart="2.0dip" app:tint="@color/c_icon60" />
+                    </LinearLayout>
+                    <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/asset_move_sort" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="end|center|top" android:id="@id/lottieHandGuide" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="false" app:lottie_loop="false" app:lottie_rawRes="@raw/asset_sort_hand_lottie" app:lottie_renderMode="hardware" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

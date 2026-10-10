@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/c_text" android:gravity="center" android:id="@id/tvHead" android:background="@drawable/shape_cover4_6r" android:paddingTop="@dimen/spacing_4" android:paddingBottom="@dimen/spacing_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" android:text="@string/market_alpha_premium" android:includeFontPadding="false" android:paddingStart="@dimen/spacing_8" android:paddingEnd="@dimen/spacing_8" android:layout_marginStart="@dimen/spacing_14" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/btnHomeRankAction" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_marginEnd="16.0dip">
+            <ImageView android:layout_width="@dimen/spacing_16" android:layout_height="@dimen/spacing_16" android:src="@drawable/ic_kia_star" />
+            <com.kubi.sdk.widget.shape.view.ShapeTextView android:textSize="@dimen/font_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:text="@string/kc_quote_coin" app:shape_textCenterColor="#ff569cff" app:shape_textEndColor="#ffd750ff" app:shape_textGradientOrientation="horizontal" app:shape_textStartColor="#ff1ce9aa" />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <include android:id="@id/viewSort" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginTop="8.0dip" layout="@layout/quote_item_view_sort" />
+    <com.kubi.quotefacade.view.RankShimmer android:id="@id/rsLoading" android:paddingLeft="@dimen/spacing_12" android:paddingRight="@dimen/spacing_12" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="320.0dip" android:paddingHorizontal="@dimen/spacing_12" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="320.0dip" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="horizontal" android:id="@id/layoutViewMore" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:gravity="center" android:id="@id/tvViewMore" android:paddingTop="@dimen/spacing_8" android:paddingBottom="@dimen/spacing_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="37.0dip" android:text="@string/view_more" android:includeFontPadding="false" app:drawableEndCompat="@drawable/ic2_arrow_right_12" app:drawableTint="@color/c_icon40" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

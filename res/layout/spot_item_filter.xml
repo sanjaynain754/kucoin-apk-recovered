@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kubi.sdk.widget.shape.view.ShapeTextView android:textSize="@dimen/font_14" android:gravity="center_vertical" android:id="@id/tvName" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="fill_parent" android:layout_height="48.0dip" android:fontFamily="@font/regular" android:paddingHorizontal="@dimen/spacing_16" app:shape_solidPressedColor="@color/c_cover4" app:shape_textColor="@color/c_text" app:shape_textSelectedColor="@color/brandGreen"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

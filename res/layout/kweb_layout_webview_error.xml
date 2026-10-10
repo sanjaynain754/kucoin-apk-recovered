@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/ic2_common_network_error" android:paddingVertical="12.0dip" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/c_text" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/connection_timeout" android:fontFamily="@font/medium" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/c_text40" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/connection_timeout_tip" android:fontFamily="@font/regular" />
+    <com.kubi.resources.widget.button.KcPrimaryButton android:layout_gravity="center_horizontal" android:id="@id/btn_reload" android:paddingLeft="24.0dip" android:paddingTop="10.0dip" android:paddingRight="24.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/reload" android:paddingHorizontal="24.0dip" android:paddingVertical="10.0dip" style="@style/styleButton40" />
+</LinearLayout>

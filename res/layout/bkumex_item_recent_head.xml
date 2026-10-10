@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:gravity="start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/time" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/price" android:layout_weight="1.0" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text60" android:gravity="end" android:id="@id/amountLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/amount" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View style="@style/kucoin_view_divider" />
+</LinearLayout>

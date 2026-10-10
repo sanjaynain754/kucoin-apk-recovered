@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:id="@id/tab_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/iv_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="42.0dip" android:src="@drawable/ic2_arrow_left2_20" android:paddingStart="16.0dip" android:paddingEnd="8.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="@color/c_icon" />
+        <View android:id="@id/view_divider" android:background="@color/emphasis8" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="18.0dip" app:layout_constraintBottom_toBottomOf="@id/iv_back" app:layout_constraintStart_toEndOf="@id/iv_back" app:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.kubi.resources.widget.flyco.SlidingTabLayout android:id="@id/tab_layout_assetv2" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginStart="6.0dip" app:tl_underline_color="@color/c_transparent" style="@style/asset_indicator" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:layout_width="@dimen/spacing_24" android:layout_height="@dimen/dp_40" android:src="@drawable/asset_sort_icon_gradient" />
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/btnSortTab" android:visibility="visible" android:layout_width="36.0dip" android:layout_height="40.0dip" android:src="@drawable/ic2_sortdown_20" android:paddingStart="4.0dip" android:paddingEnd="12.0dip" app:tint="@color/c_icon" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.kubi.resources.widget.CustomViewPager android:id="@id/vp_assetv2" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tab_bar_layout" app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

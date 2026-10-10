@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text60" android:id="@id/tvBottomBuy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:text="@string/kc_trade_oco_lower" android:layout_marginStart="@dimen/spacing_4" />
+    <com.kubi.resources.widget.TradeInputLayoutProxy android:id="@id/et_limit_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/kucoin_trade_num_ab_input_view" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="10.0sp" android:textColor="@color/c_text40" android:id="@id/tv_limit_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:fontFamily="@font/regular" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text60" android:id="@id/tvChaseBuy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:text="@string/kc_trade_oco_buy_more" android:layout_marginStart="@dimen/spacing_4" />
+    <com.kubi.resources.widget.TradeInputLayoutProxy android:id="@id/et_stop_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/kucoin_trade_num_ab_input_view" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="10.0sp" android:textColor="@color/c_text40" android:id="@id/tv_stop_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:fontFamily="@font/regular" />
+    <com.kubi.resources.widget.TradeInputLayoutProxy android:id="@id/et_stop_limit_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" style="@style/kucoin_trade_num_ab_input_view" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="10.0sp" android:textColor="@color/c_text40" android:id="@id/tv_stop_limit_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:fontFamily="@font/regular" />
+    <com.kubi.resources.widget.TradeInputLayoutProxy android:id="@id/et_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:layout_marginBottom="10.0dip" style="@style/kucoin_trade_num_ab_input_view" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/include_trade_input_base_quote_value" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_fee" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.DashTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:ellipsize="end" android:id="@id/tv_fee" android:tag="dash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/estimate_fee" android:singleLine="true" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text" android:gravity="end" android:id="@id/tv_fee_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+    </LinearLayout>
+</LinearLayout>

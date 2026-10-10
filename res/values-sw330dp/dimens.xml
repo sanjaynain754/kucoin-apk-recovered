@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="order_book_text_size_big">12.0sp</dimen>
+    <dimen name="order_book_text_size_medium">11.0sp</dimen>
+    <dimen name="order_book_text_size_small">10.0sp</dimen>
+</resources>

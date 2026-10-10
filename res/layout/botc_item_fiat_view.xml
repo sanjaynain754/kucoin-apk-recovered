@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_darkoverlay_click" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.CoinAvatarView android:id="@id/iv_fiat_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginStart="@dimen/spacing_16" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="17.0sp" android:textColor="@color/c_text" android:id="@id/tv_fiat_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="10.0sp" android:textColor="@color/c_text40" android:id="@id/tv_fiat_name_full" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" />
+    <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:layout_gravity="end|center" android:id="@id/tv_fiat_balance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="start" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_13" android:textColor="@color/c_text" android:id="@id/symbolTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/semi" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_11" android:textColor="@color/c_text40" android:id="@id/priceChangeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/regular" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="start" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_13" android:textColor="@color/c_text" android:id="@id/assetsTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.12345678" android:fontFamily="@font/regular" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_11" android:textColor="@color/c_text40" android:id="@id/pnlTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00001234" android:fontFamily="@font/regular" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="start" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_13" android:textColor="@color/c_text" android:id="@id/curPriceTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="104,719.23" android:fontFamily="@font/regular" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_11" android:textColor="@color/c_text40" android:id="@id/averagePriceTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="104,719.23" android:fontFamily="@font/regular" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="end" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_13" android:textColor="@color/c_text" android:id="@id/presetTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="70%" android:fontFamily="@font/regular" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_11" android:textColor="@color/c_text40" android:id="@id/actualPercentTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="70.12%" android:fontFamily="@font/regular" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

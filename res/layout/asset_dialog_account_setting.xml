@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/shape_bottom_sheet_bg" android:paddingTop="@dimen/spacing_12" android:paddingBottom="@dimen/spacing_20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.KuCheckBox android:textSize="14.0sp" android:textColor="@color/c_text" android:id="@id/cbHideSmall" android:background="@null" android:paddingLeft="16.0dip" android:paddingTop="@dimen/spacing_12" android:paddingRight="16.0dip" android:paddingBottom="@dimen/spacing_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:text="@string/kc_assets_coin_empty_dialog" android:drawablePadding="8.0dip" android:paddingHorizontal="16.0dip" android:paddingVertical="@dimen/spacing_12" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutManageAccounts" android:paddingLeft="16.0dip" android:paddingTop="@dimen/spacing_12" android:paddingRight="16.0dip" android:paddingBottom="@dimen/spacing_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="@dimen/spacing_12">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic2_indicator_16" app:tint="@color/c_icon" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kc_asset_sort_manage" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

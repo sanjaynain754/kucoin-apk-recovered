@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/layout_hot" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:id="@id/header_hot" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_8" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assets_deposit_hot" android:lineSpacingMultiplier="1.3" android:layout_marginEnd="50.0dip" android:paddingHorizontal="@dimen/spacing_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/history_list" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/hot_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="30.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:spanCount="3" />
+</androidx.appcompat.widget.LinearLayoutCompat>

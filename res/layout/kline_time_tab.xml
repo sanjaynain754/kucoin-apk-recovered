@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:id="@id/tab_type" android:background="@null" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_weight="1.0" app:tabIndicatorHeight="0.0dip" app:tabMinWidth="30.0dip" app:tabMode="scrollable" app:tabPadding="0.0dip" app:tabPaddingEnd="4.0dip" app:tabPaddingStart="4.0dip" app:tabRippleColor="@color/c_transparent" />
+    <ImageView android:id="@id/iv_contract" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic2_triangle_top_12" android:scaleType="center" android:paddingStart="@dimen/spacing_12" android:paddingEnd="@dimen/spacing_16" app:tint="@color/c_icon60" />
+</androidx.appcompat.widget.LinearLayoutCompat>

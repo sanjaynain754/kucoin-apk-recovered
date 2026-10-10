@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/shape_complementary8_8r" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_8" android:layout_marginHorizontal="@dimen/spacing_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_11" android:textColor="@color/complementary" android:id="@id/tvTip" android:paddingTop="@dimen/spacing_6" android:paddingBottom="@dimen/spacing_6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/spacing_8" android:paddingEnd="0.0dip" android:paddingVertical="@dimen/spacing_6" />
+    <ImageView android:id="@id/ivClose" android:paddingTop="@dimen/spacing_6" android:paddingBottom="@dimen/spacing_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_12" android:paddingStart="@dimen/spacing_8" android:paddingEnd="@dimen/spacing_8" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kubi.resources.widget.BaseTextView android:textSize="20.0sp" android:textColor="@color/c_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/deposit_info_blocks" android:fontFamily="@font/semi" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text60" android:id="@id/tv_normal_account_tip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/kc_deposit_confirm_content" android:fontFamily="@font/regular" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text60" android:id="@id/address_title_normal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/address" android:fontFamily="@font/regular" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:id="@id/tv_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:fontFamily="@font/medium" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text60" android:id="@id/memo_title_normal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:fontFamily="@font/regular" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:id="@id/memo_content_normal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:fontFamily="@font/medium" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_check" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+        <CheckBox android:id="@id/cb_check" android:background="@drawable/selector_checkbox_button_gray" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="2.0dip" android:button="@null" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text60" android:id="@id/tv_replace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deposit_account_tip1" android:fontFamily="@font/regular" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+</LinearLayout>

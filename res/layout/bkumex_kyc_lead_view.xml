@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/bkumex_kyc_lead_view_bg" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_24" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16" android:paddingVertical="@dimen/spacing_24"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivIcon" android:background="@drawable/bkumex_kyc_lead_ic_bg" android:padding="@dimen/dp_10" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/ic2_security_lock_20" app:tint="@color/c_icon" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:id="@id/tvMessage" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/spacing_12" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/btnVerify" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/spacing_16" android:text="@string/kyc_goto_verify" style="@style/styleButton32" />
+</androidx.appcompat.widget.LinearLayoutCompat>

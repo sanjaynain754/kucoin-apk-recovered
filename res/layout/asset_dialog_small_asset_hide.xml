@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_bottom_sheet_top_indicator" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/shape_bottom_sheet_bg" android:paddingTop="@dimen/spacing_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.kubi.resources.widget.KuCheckBox android:textSize="14.0sp" android:textColor="@color/c_text" android:id="@id/cbHideSmall" android:background="@null" android:paddingLeft="16.0dip" android:paddingTop="@dimen/spacing_12" android:paddingRight="16.0dip" android:paddingBottom="@dimen/spacing_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/kc_assets_coin_empty_dialog" android:drawablePadding="8.0dip" android:paddingHorizontal="16.0dip" android:paddingVertical="@dimen/spacing_12" />
+        <com.kubi.resources.widget.button.KcSecondaryButton android:id="@id/tvCancel" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_12" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_20" android:text="@string/cancel" android:layout_marginHorizontal="@dimen/spacing_16" style="@style/styleButton48Secondary" />
+    </LinearLayout>
+</LinearLayout>

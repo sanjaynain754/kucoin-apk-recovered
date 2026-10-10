@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="24.0dip" android:width="24.0dip">
+        <shape android:shape="oval">
+            <solid android:color="@color/primary4" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="12.0dip" android:width="12.0dip">
+        <vector android:height="12.0dip" android:width="12.0dip" android:viewportWidth="12.0" android:viewportHeight="12.0">
+            <path android:fillColor="@color/primary" android:pathData="M2.317,3.726V7.587H1.241C0.707,7.587 0.439,8.233 0.817,8.611L2.985,10.783C3.22,11.017 3.6,11.017 3.834,10.783L6.003,8.611C6.38,8.233 6.113,7.587 5.578,7.587H4.503V3.726C4.503,3.395 4.234,3.126 3.903,3.126H2.917C2.585,3.126 2.317,3.395 2.317,3.726ZM7.393,1.6V5.46H6.317C5.783,5.46 5.515,6.106 5.893,6.484L8.061,8.656C8.296,8.891 8.676,8.891 8.91,8.656L11.079,6.484C11.456,6.106 11.189,5.46 10.654,5.46H10.179C9.848,5.46 9.579,5.191 9.579,4.86V1.6C9.579,1.268 9.31,1 8.979,1H7.993C7.661,1 7.393,1.268 7.393,1.6Z" android:fillType="evenOdd" />
+        </vector>
+    </item>
+</layer-list>

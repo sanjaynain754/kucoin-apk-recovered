@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sumsub.sns.core.widget.SNSH1TextView android:gravity="center" android:id="@id/sns_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_margin_medium_plus" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.sumsub.sns.core.widget.SNSSubtitle2TextView android:gravity="center" android:id="@id/sns_subtitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_margin_small" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sns_title" />
+    <com.sumsub.sns.core.widget.SNSTextInputLayout android:id="@id/sns_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sns_margin_large" app:endIconMode="clear_text" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sns_subtitle" style="@style/Widget.SNSTextInputLayout">
+        <com.sumsub.sns.core.widget.SNSTextInputEditText android:id="@id/sns_email_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:imeOptions="actionDone" style="@style/Widget.SNSTextEdit" />
+    </com.sumsub.sns.core.widget.SNSTextInputLayout>
+</merge>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_15" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/card_icon" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_15" android:textColor="@color/c_text" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/medium" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4">
+            <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_11" android:textColor="@color/c_text40" android:ellipsize="end" android:id="@id/tv_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="@font/regular" android:layout_marginEnd="@dimen/spacing_8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:id="@id/card_icon" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginEnd="@dimen/spacing_16" app:cardBackgroundColor="@color/c_transparent" app:cardCornerRadius="@dimen/spacing_8" app:cardElevation="0.0dip" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

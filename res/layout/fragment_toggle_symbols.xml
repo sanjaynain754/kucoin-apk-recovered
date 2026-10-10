@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fl_root" android:background="@color/c_bulletLayer" android:paddingTop="50.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_18" android:textColor="@color/c_text" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_contract" android:layout_marginStart="@dimen/spacing_16" />
+    <com.kubi.resources.widget.ClearEditText android:textSize="12.0sp" android:textColor="@color/c_text" android:textColorHint="@color/c_text20" android:gravity="center_vertical" android:id="@id/et_search" android:background="@drawable/shape_emphasis4_24r" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="4.0dip" android:hint="@string/search" android:singleLine="true" android:drawablePadding="20.0dip" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/shape_primary_cursor" android:fontFamily="@font/medium" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:drawableStartCompat="@drawable/kucoin_icon_search_mirrored" />
+    <ViewSwitcher android:id="@id/view_switcher" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.resources.widget.flyco.SlidingTabLayout android:id="@id/tab_layout" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/tab_bar_height" android:paddingHorizontal="2.0dip" style="@style/tab_layout_indicator_level3" />
+            <com.kubi.resources.widget.rtlviewpager.RtlViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rcv_search" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </ViewSwitcher>
+</LinearLayout>

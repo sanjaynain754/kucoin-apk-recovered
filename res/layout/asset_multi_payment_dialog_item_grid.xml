@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jumpRoot" android:background="@drawable/asset_merge_jump_item_bg_selector" android:padding="@dimen/spacing_16" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivIcon" android:layout_width="@dimen/spacing_24" android:layout_height="@dimen/spacing_24" app:tint="@color/c_text" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:ellipsize="end" android:id="@id/tvRow1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:fontFamily="@font/medium" android:layout_marginStart="@dimen/spacing_16" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.kubi.sdk.widget.shape.view.ShapeTextView android:textSize="@dimen/font_10" android:textColor="@color/primary" android:layout_gravity="end|center|top" android:id="@id/tvLastUse" android:paddingLeft="@dimen/spacing_6" android:paddingTop="@dimen/spacing_2" android:paddingRight="@dimen/spacing_6" android:paddingBottom="@dimen/spacing_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assets_chain_last_use" android:paddingHorizontal="@dimen/spacing_6" android:paddingVertical="@dimen/spacing_2" app:shape_bottomLeftRadius="@dimen/spacing_12" app:shape_solidColor="@color/primary8" app:shape_topRightRadius="@dimen/spacing_12" />
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/vNavigationBg" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutContent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/layoutAvatar" android:layout_width="42.0dip" android:layout_height="40.0dip" android:layout_marginStart="8.0dip">
+            <FrameLayout android:layout_gravity="center" android:id="@id/flAvatar" android:layout_width="26.0dip" android:layout_height="26.0dip">
+                <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text" android:gravity="center" android:id="@id/mLeftText" android:background="@drawable/shape_user_center_white_circle_33" android:visibility="visible" android:layout_width="26.0dip" android:layout_height="26.0dip" android:fontFamily="@font/semi" />
+                <ImageView android:id="@id/ivAvatar" android:visibility="gone" android:layout_width="26.0dip" android:layout_height="26.0dip" />
+            </FrameLayout>
+            <ImageView android:id="@id/ivAvatarMask" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@null" />
+            <ImageView android:layout_gravity="end|bottom|center" android:id="@id/ivKycStatus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:contentDescription="@null" android:layout_marginEnd="3.0dip" />
+        </FrameLayout>
+        <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text30" android:gravity="center_vertical" android:id="@id/et_search" android:background="@drawable/shape_border_emphasis12_24r" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="32.0dip" android:maxLines="1" android:singleLine="true" android:drawablePadding="2.0dip" android:layout_weight="1.0" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" android:paddingHorizontal="8.0dip" app:drawableStartCompat="@drawable/kucoin_icon_search_mirrored" />
+        <ImageView android:id="@id/iv_customer" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic2_customer_service_20" android:scaleType="center" android:paddingHorizontal="6.0dip" app:tint="@color/emphasis" />
+        <ImageView android:id="@id/iv_qr_code" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic2_scan_20" android:scaleType="center" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" app:tint="@color/emphasis" />
+        <ImageView android:id="@id/iv_massage" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic2_notification_20" android:scaleType="center" android:paddingStart="6.0dip" android:paddingEnd="12.0dip" app:tint="@color/emphasis" />
+        <ImageView android:id="@id/iv_customer_service" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic2_customer_service_20" android:scaleType="center" android:paddingStart="6.0dip" android:paddingEnd="12.0dip" app:tint="@color/emphasis" />
+        <ImageView android:id="@id/iv_kucoin_pay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic2_kucoinpay_bold_20" android:scaleType="center" android:paddingEnd="6.0dip" app:tint="@color/emphasis" />
+        <Space android:layout_width="10.0dip" android:layout_height="1.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <include android:layout_gravity="center" android:id="@id/navigationTab" android:visibility="gone" android:layout_width="110.0dip" android:layout_height="30.0dip" layout="@layout/kucoin_navigation_tab" />
+    <com.kubi.home.main.shimmer.NavigationShimmerLayout android:id="@id/navigationShimmer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/c_overlay" android:padding="@dimen/spacing_12" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="11.0dip" android:fillViewport="true" app:layout_constraintBottom_toTopOf="@id/check_read_agree" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.resources.widget.BaseTextView android:textSize="18.0sp" android:textColor="@color/c_text" android:gravity="center" android:id="@id/tv_nickname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_8" android:text="@string/delete_account" android:drawablePadding="@dimen/spacing_8" app:drawableTopCompat="@drawable/busercenter_delete_account" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_delete_account_tip" android:padding="@dimen/spacing_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_10" android:text="@string/delete_account_after" />
+                <LinearLayout android:id="@id/llDeleteAccountAfter1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/usercenter_shape_point_text" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delete_account1_after1" android:layout_marginStart="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/llDeleteAccountAfter2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                    <ImageView android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/usercenter_shape_point_text" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delete_account1_after3" android:layout_marginStart="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/llDeleteAccountAfter3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                    <ImageView android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/usercenter_shape_point_text" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delete_account1_after2" android:layout_marginStart="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/llDeleteAccountAfter4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                    <ImageView android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/usercenter_shape_point_text" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delete_account1_after4" android:layout_marginStart="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/llDeleteAccountAfter5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                    <ImageView android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/usercenter_shape_point_text" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text60" android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/eu_delete_account1_after5" android:layout_marginStart="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_complementary16_2r" android:paddingTop="@dimen/spacing_8" android:paddingBottom="@dimen/spacing_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:paddingStart="@dimen/spacing_10" android:paddingEnd="@dimen/spacing_10">
+                    <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/kucoin_icon_login_warning_small" app:tint="@color/complementary" />
+                    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text60" android:id="@id/tv_delete_account_warning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_6" />
+                </LinearLayout>
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_12" android:textColor="@color/c_text40" android:id="@id/tv_delete_account_privacy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <CheckBox android:textSize="12.0sp" android:textColor="@color/c_text60" android:id="@id/check_read_agree" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" android:button="@null" android:text="@string/tv_delete_account_read_agree" android:drawablePadding="4.0dip" android:drawableStart="@drawable/ui_selector_checkbox_20" android:layout_marginStart="@dimen/spacing_12" android:layout_marginEnd="14.0dip" app:layout_constraintBottom_toTopOf="@id/btn_apply" app:layout_constraintStart_toStartOf="@id/btn_apply" />
+    <com.kubi.resources.widget.button.KcPrimaryButton android:enabled="false" android:gravity="center" android:id="@id/btn_apply" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/spacing_4" android:layout_marginRight="@dimen/spacing_4" android:layout_marginBottom="@dimen/spacing_32" android:text="@string/delete_account" android:textAllCaps="false" android:layout_marginHorizontal="@dimen/spacing_4" app:layout_constraintBottom_toBottomOf="parent" style="@style/styleButton48" />
+</androidx.constraintlayout.widget.ConstraintLayout>

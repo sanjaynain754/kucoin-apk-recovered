@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.kubi.assets.withdraw.view.WithdrawNoticeView android:id="@id/sortSettingNoticeView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layoutHiddenSmallAssetEmpty" android:paddingLeft="@dimen/spacing_32" android:paddingRight="@dimen/spacing_32" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:paddingHorizontal="@dimen/spacing_32">
+                <com.kubi.sdk.widget.shape.layout.ShapeFrameLayout android:layout_width="40.0dip" android:layout_height="40.0dip" app:shape_radius="@dimen/spacing_24" app:shape_solidColor="@color/c_cover4">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic2_eye_close_20" android:scaleType="center" android:contentDescription="@null" app:tint="@color/c_text40" />
+                </com.kubi.sdk.widget.shape.layout.ShapeFrameLayout>
+                <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_text" android:gravity="center" android:id="@id/tvHiddenSmallAssetTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" android:text="@string/kc_assets_coin_empty_dialog" android:fontFamily="@font/medium" />
+                <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/btnCancelHide" android:layout_width="wrap_content" android:layout_marginTop="@dimen/spacing_12" android:text="@string/kc_asset_sort_hide_small_cancel" android:paddingStart="22.0dip" android:paddingEnd="24.0dip" style="@style/styleButton40" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="9.0dip" android:nestedScrollingEnabled="false" app:layoutManager="com.kubi.assets.overview.CustomLinearLayoutManager" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout android:id="@id/loadLayout" android:layout_width="fill_parent" android:layout_height="400.0dip">
+        <View android:layout_gravity="center" android:id="@id/loadView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

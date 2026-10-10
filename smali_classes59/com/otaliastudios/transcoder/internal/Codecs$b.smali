@@ -1,0 +1,740 @@
+.class public final Lcom/otaliastudios/transcoder/internal/Codecs$b;
+.super Ljava/lang/Object;
+.source "Codecs.kt"
+
+# interfaces
+.implements Lw90/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/otaliastudios/transcoder/internal/Codecs;-><init>(Lcom/otaliastudios/transcoder/internal/a;Lcom/otaliastudios/transcoder/internal/e;Lw90/l;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lw90/l<",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0015\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0006*\u0001\u0000\u0008\n\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001J\u0017\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0003H\u0016\u00a2\u0006\u0004\u0008\u0005\u0010\u0006J\u0018\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0003H\u0096\u0002\u00a2\u0006\u0004\u0008\u0007\u0010\u0008\u00a8\u0006\t"
+    }
+    d2 = {
+        "com/otaliastudios/transcoder/internal/Codecs$b",
+        "Lw90/l;",
+        "",
+        "Lcom/otaliastudios/transcoder/common/TrackType;",
+        "type",
+        "w",
+        "(Lcom/otaliastudios/transcoder/common/TrackType;)Z",
+        "b",
+        "(Lcom/otaliastudios/transcoder/common/TrackType;)Ljava/lang/Boolean;",
+        "lib_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x5,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field public final synthetic b:Lcom/otaliastudios/transcoder/internal/Codecs;
+
+
+# direct methods
+.method public constructor <init>(Lcom/otaliastudios/transcoder/internal/Codecs;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/otaliastudios/transcoder/internal/Codecs$b;->b:Lcom/otaliastudios/transcoder/internal/Codecs;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+.end method
+
+
+# virtual methods
+.method public C()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0}, Lw90/l$a;->d(Lw90/l;)Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+.end method
+
+.method public E()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0}, Lw90/l$a;->c(Lw90/l;)Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+.end method
+
+.method public bridge synthetic J()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/otaliastudios/transcoder/internal/Codecs$b;->a()Ljava/lang/Boolean;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+.end method
+
+.method public bridge synthetic M(Lcom/otaliastudios/transcoder/common/TrackType;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lcom/otaliastudios/transcoder/internal/Codecs$b;->b(Lcom/otaliastudios/transcoder/common/TrackType;)Ljava/lang/Boolean;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+.end method
+
+.method public a()Ljava/lang/Boolean;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0}, Lw90/l$a;->a(Lw90/l;)Ljava/lang/Object;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    .line 6
+    check-cast v0, Ljava/lang/Boolean;
+
+    .line 7
+    return-object v0
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+.end method
+
+.method public b(Lcom/otaliastudios/transcoder/common/TrackType;)Ljava/lang/Boolean;
+    .locals 2
+    .param p1    # Lcom/otaliastudios/transcoder/common/TrackType;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    const-string/jumbo v0, "type"
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    iget-object v0, p0, Lcom/otaliastudios/transcoder/internal/Codecs$b;->b:Lcom/otaliastudios/transcoder/internal/Codecs;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-static {v0}, Lcom/otaliastudios/transcoder/internal/Codecs;->a(Lcom/otaliastudios/transcoder/internal/Codecs;)Lw90/l;
+
+    .line 12
+    move-result-object v0
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-interface {v0, p1}, Lw90/l;->M(Lcom/otaliastudios/transcoder/common/TrackType;)Ljava/lang/Object;
+
+    .line 16
+    move-result-object v0
+
+    .line 17
+    .line 18
+    check-cast v0, Ljava/lang/Number;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    .line 22
+    move-result v0
+
+    .line 23
+    .line 24
+    iget-object v1, p0, Lcom/otaliastudios/transcoder/internal/Codecs$b;->b:Lcom/otaliastudios/transcoder/internal/Codecs;
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-static {v1}, Lcom/otaliastudios/transcoder/internal/Codecs;->b(Lcom/otaliastudios/transcoder/internal/Codecs;)Lcom/otaliastudios/transcoder/internal/a;
+
+    .line 28
+    move-result-object v1
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v1, p1}, Lcom/otaliastudios/transcoder/internal/a;->e(Lcom/otaliastudios/transcoder/common/TrackType;)Ljava/util/List;
+
+    .line 32
+    move-result-object p1
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-static {p1}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
+
+    .line 36
+    move-result p1
+
+    .line 37
+    .line 38
+    if-ne v0, p1, :cond_0
+
+    .line 39
+    const/4 p1, 0x1
+
+    .line 40
+    goto :goto_0
+
+    .line 41
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 42
+    .line 43
+    .line 44
+    :goto_0
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 45
+    move-result-object p1
+
+    .line 46
+    return-object p1
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+.end method
+
+.method public c()Ljava/lang/Boolean;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0}, Lw90/l$a;->b(Lw90/l;)Ljava/lang/Object;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    .line 6
+    check-cast v0, Ljava/lang/Boolean;
+
+    .line 7
+    return-object v0
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+.end method
+
+.method public d(Lcom/otaliastudios/transcoder/common/TrackType;)Ljava/lang/Boolean;
+    .locals 0
+    .param p1    # Lcom/otaliastudios/transcoder/common/TrackType;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0, p1}, Lw90/l$a;->e(Lw90/l;Lcom/otaliastudios/transcoder/common/TrackType;)Ljava/lang/Object;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    .line 6
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 7
+    return-object p1
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+.end method
+
+.method public e()Ljava/lang/Boolean;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0}, Lw90/l$a;->g(Lw90/l;)Ljava/lang/Object;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    .line 6
+    check-cast v0, Ljava/lang/Boolean;
+
+    .line 7
+    return-object v0
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+.end method
+
+.method public f()Ljava/lang/Boolean;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0}, Lw90/l$a;->i(Lw90/l;)Ljava/lang/Object;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    .line 6
+    check-cast v0, Ljava/lang/Boolean;
+
+    .line 7
+    return-object v0
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+.end method
+
+.method public getSize()I
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0}, Lw90/l$a;->f(Lw90/l;)I
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+.end method
+
+.method public iterator()Ljava/util/Iterator;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Iterator<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0}, Lw90/l$a;->h(Lw90/l;)Ljava/util/Iterator;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+.end method
+
+.method public bridge synthetic o()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/otaliastudios/transcoder/internal/Codecs$b;->e()Ljava/lang/Boolean;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+.end method
+
+.method public bridge synthetic p()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/otaliastudios/transcoder/internal/Codecs$b;->c()Ljava/lang/Boolean;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+.end method
+
+.method public bridge synthetic q()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/otaliastudios/transcoder/internal/Codecs$b;->f()Ljava/lang/Boolean;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+.end method
+
+.method public bridge synthetic u(Lcom/otaliastudios/transcoder/common/TrackType;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lcom/otaliastudios/transcoder/internal/Codecs$b;->d(Lcom/otaliastudios/transcoder/common/TrackType;)Ljava/lang/Boolean;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+.end method
+
+.method public w(Lcom/otaliastudios/transcoder/common/TrackType;)Z
+    .locals 1
+    .param p1    # Lcom/otaliastudios/transcoder/common/TrackType;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    .line 2
+    .line 3
+    const-string/jumbo v0, "type"
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 7
+    const/4 p1, 0x1
+
+    .line 8
+    return p1
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+.end method

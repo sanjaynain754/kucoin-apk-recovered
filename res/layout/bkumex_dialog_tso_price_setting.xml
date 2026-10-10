@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/bottom_sheet" layout="@layout/view_bottom_sheet_top_indicator" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/shape_bottom_sheet_bg" android:paddingLeft="16.0dip" android:paddingTop="24.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="20.0sp" android:textColor="@color/c_text" android:gravity="start" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kc_tb_high_settings_title" android:fontFamily="@font/semi" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/kumex_tso_activie_price" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/kumex_tso_activie_price_desc" android:lineSpacingMultiplier="1.3" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/kumex_tso_delegation_price" />
+        <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/kumex_tso_delegation_price_desc" android:lineSpacingMultiplier="1.3" android:fontFamily="@font/regular" />
+        <com.kubi.resources.widget.button.KcPrimaryButton android:id="@id/tvBtnOk" android:layout_width="fill_parent" android:layout_marginTop="50.0dip" android:text="@string/confirm" style="@style/styleButton40" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

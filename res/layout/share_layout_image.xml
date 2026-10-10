@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/layoutContent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="24.0dip" android:fillViewport="true" android:layout_weight="1.0" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+        <ImageView android:layout_gravity="center|top" android:id="@id/ivShareImage" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="@null" />
+    </ScrollView>
+    <com.kubi.resources.widget.button.KcPrimaryButton android:layout_gravity="center_horizontal" android:id="@id/customDisplay" android:paddingLeft="@dimen/spacing_20" android:paddingRight="@dimen/spacing_20" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/floating_window_customize_display" android:drawablePadding="5.0dip" android:drawableStart="@drawable/ic2_edit_16" android:paddingHorizontal="@dimen/spacing_20" app:drawableTint="@color/c_textEmphasis" style="@style/styleButton32" />
+    <com.kubi.share.lib.widget.ShareChannelView android:id="@id/shareChannelView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</androidx.appcompat.widget.LinearLayoutCompat>

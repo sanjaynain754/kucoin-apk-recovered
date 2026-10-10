@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_bottom_sheet_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="8.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="18.0sp" android:textColor="@color/c_text" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:text="@string/unify_borrow_leverage_multiplier" android:layout_weight="1.0" android:fontFamily="@font/semi" android:layout_marginHorizontal="@dimen/spacing_16" />
+        <ImageView android:id="@id/tv_close" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_close_withcircle_24" android:paddingHorizontal="16.0dip" android:paddingVertical="8.0dip" app:tint="@color/c_text" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/coin" android:fontFamily="@font/medium" />
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/shape_border_emphasis12_8r" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:paddingHorizontal="12.0dip">
+            <com.kubi.resources.widget.BaseTextView android:textSize="16.0sp" android:textColor="@color/c_text" android:gravity="center_vertical" android:id="@id/tv_currency" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="USDT" android:layout_weight="1.0" android:fontFamily="@font/medium" android:textAlignment="viewStart" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_currency_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_arrow_down_20" app:tint="@color/c_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip">
+            <com.kubi.sdk.widget.shape.view.ShapeImageView android:gravity="center" android:id="@id/tv_minus" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_sub_16" app:shape_radius="40.0dip" app:shape_solidColor="@color/c_cover4" app:tint="@color/c_icon" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="36.0sp" android:textColor="@color/c_text" android:gravity="center" android:id="@id/tv_leverage" android:layout_width="140.0dip" android:layout_height="wrap_content" android:text="5x" android:includeFontPadding="false" android:fontFamily="@font/semi" />
+            <com.kubi.sdk.widget.shape.view.ShapeImageView android:gravity="center" android:id="@id/tv_plus" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_plus_16" app:shape_radius="40.0dip" app:shape_solidColor="@color/c_cover4" app:tint="@color/c_icon" />
+        </LinearLayout>
+        <com.kubi.resources.widget.bubbleseekbar.KcSeekBar android:id="@id/seekbar_leverage" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="0.0dip" app:bsb_seek_step_section="false" app:bsb_vibrate="false" style="@style/kc_seek_bar_leverage" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="24.0dip" android:paddingRight="16.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.kubi.sdk.widget.shape.view.ShapeView android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="5.0dip" app:shape_radius="10.0dip" app:shape_solidColor="@color/c_icon60" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:id="@id/tvMaxBorrowAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/regular" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12">
+            <com.kubi.sdk.widget.shape.view.ShapeView android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="5.0dip" app:shape_radius="10.0dip" app:shape_solidColor="@color/c_icon60" />
+            <com.kubi.resources.widget.BaseTextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unify_leverage_order_potential_borrow" android:fontFamily="@font/regular" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.kubi.resources.widget.button.KcPrimaryButton android:layout_gravity="bottom" android:id="@id/btn_confirm" android:layout_width="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="24.0dip" android:text="@string/confirm" android:layout_marginHorizontal="16.0dip" android:layout_marginVertical="24.0dip" style="@style/styleButton48" />
+</LinearLayout>

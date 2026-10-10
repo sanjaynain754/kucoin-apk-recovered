@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="14.0sp" android:textColor="@color/c_text60" android:id="@id/tv_sub_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sub_account" android:drawablePadding="4.0dip" android:paddingEnd="4.0dip" app:drawableEndCompat="@drawable/ic2_info_16" app:drawableTint="@color/c_icon60" />
+    <FrameLayout android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="13.0dip">
+        <com.kubi.resources.widget.BaseTextView android:textSize="18.0sp" android:textColor="@color/c_text" android:layout_gravity="start|center" android:id="@id/tv_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/assetv2_show_sub" android:layout_marginEnd="100.0dip" />
+        <com.kubi.resources.widget.KcSwitchButton android:layout_gravity="end|center" android:id="@id/switch_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

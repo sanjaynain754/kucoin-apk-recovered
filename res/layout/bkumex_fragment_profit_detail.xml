@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kubi.resources.widget.KuCoinRefreshLayout android:id="@id/profitRefresh" android:background="@color/c_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlDisableContentWhenLoading="true" app:srlDisableContentWhenRefresh="true" app:srlEnableOverScrollDrag="true" app:srlHeaderTriggerRate="1.3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</com.kubi.resources.widget.KuCoinRefreshLayout>

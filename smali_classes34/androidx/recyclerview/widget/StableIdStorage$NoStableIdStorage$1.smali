@@ -1,0 +1,89 @@
+.class Landroidx/recyclerview/widget/StableIdStorage$NoStableIdStorage$1;
+.super Ljava/lang/Object;
+.source "StableIdStorage.java"
+
+# interfaces
+.implements Landroidx/recyclerview/widget/StableIdStorage$StableIdLookup;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/recyclerview/widget/StableIdStorage$NoStableIdStorage;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Landroidx/recyclerview/widget/StableIdStorage$NoStableIdStorage;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/recyclerview/widget/StableIdStorage$NoStableIdStorage;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Landroidx/recyclerview/widget/StableIdStorage$NoStableIdStorage$1;->this$0:Landroidx/recyclerview/widget/StableIdStorage$NoStableIdStorage;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+
+# virtual methods
+.method public localToGlobal(J)J
+    .locals 0
+
+    .line 1
+    .line 2
+    const-wide/16 p1, -0x1
+
+    .line 3
+    return-wide p1
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method

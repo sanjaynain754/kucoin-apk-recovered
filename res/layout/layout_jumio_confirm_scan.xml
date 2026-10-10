@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/c_overlay" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:src="@drawable/ic2_arrow_left2_20" android:scaleType="center" android:contentDescription="@null" app:tint="@color/c_text" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="40.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" android:text="@string/kyc_camera_id" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" android:text="@string/kyc_camera_result_tip1" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/c_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" android:text="@string/kyc_camera_result_tip2" />
+        <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="350.0dip" android:layout_marginTop="48.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/confirmViewList" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </HorizontalScrollView>
+        <com.kubi.resources.widget.button.KcPrimaryButton android:textSize="16.0sp" android:layout_gravity="center_horizontal" android:id="@id/btnConfirmUpload" android:layout_width="303.0dip" android:layout_marginTop="24.0dip" android:text="@string/kyc_camera_confirm" style="@style/styleButton40" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/c_text60" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvRetry" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="24.0dip" android:text="@string/kyc_camera_retry" android:paddingHorizontal="24.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_15" android:textColor="@color/c_text40" android:id="@id/tvPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/regular" android:layout_marginEnd="@dimen/spacing_8" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvPaymentMethod" />
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_15" android:textColor="@color/c_text" android:id="@id/tvPriceValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/regular" android:layout_marginEnd="@dimen/spacing_8" app:layout_constraintBottom_toBottomOf="@id/tvPrice" app:layout_constraintEnd_toStartOf="@id/layoutCountDown" app:layout_constraintTop_toTopOf="@id/tvPrice" app:layout_goneMarginEnd="0.0dip" />
+    <FrameLayout android:id="@id/layoutCountDown" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/tvPrice" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/tvPrice">
+        <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_15" android:textColor="@color/c_text40" android:id="@id/tvCountDown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/regular" />
+        <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:indeterminate="true" android:indeterminateTint="@color/brandGreen" />
+    </FrameLayout>
+</merge>

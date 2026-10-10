@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/input" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.kubi.resources.widget.KcTextInputLayout android:id="@id/textInput" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextInputLayoutStyle">
+            <com.kubi.resources.widget.FilterEmojiEditText android:textSize="18.0sp" android:textColor="@color/c_text" android:textColorHint="@color/c_text20" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/et_input" android:background="@null" android:layout_width="fill_parent" android:layout_height="56.0dip" android:inputType="numberDecimal" android:textCursorDrawable="@drawable/shape_primary_cursor" android:textDirection="locale" app:layout_constraintEnd_toStartOf="@id/tv_currency" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_title" style="@style/EditTextStyle.Alignment" />
+        </com.kubi.resources.widget.KcTextInputLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_gravity="end|center|top" android:orientation="horizontal" android:id="@id/endView" android:layout_width="wrap_content" android:layout_height="65.0dip">
+            <com.kubi.resources.widget.ShowHideTextView android:textSize="16.0sp" android:textColor="@color/c_text40" android:gravity="center" android:id="@id/tv_currency" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintEnd_toStartOf="@id/divider" app:layout_goneMarginEnd="0.0dip" />
+            <View android:id="@id/divider" android:background="@color/emphasis20" android:layout_width="0.5dip" android:layout_height="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginStart="10.0dip" app:layout_constraintEnd_toStartOf="@id/tv_all" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/primary" android:gravity="center" android:id="@id/tv_all" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingHorizontal="12.0dip" app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:id="@id/tv_fiat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" app:layout_constraintBottom_toBottomOf="parent" />
+</LinearLayout>

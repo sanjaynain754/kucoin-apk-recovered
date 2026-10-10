@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_transparent_bg" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="28.0dip" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/ll_transparent_bg">
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_design_standard_g7" android:gravity="center" android:id="@id/tv_anchor_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_not_standard_grey" android:id="@id/tv_user_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_user_id" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/ll_fans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_not_standard_grey" android:id="@id/tv_fans" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_not_standard_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_fan_count" />
+        </LinearLayout>
+        <io.trtc.tuikit.atomicx.widget.basicwidget.button.AtomicButton android:layout_gravity="center" android:id="@id/atomic_btn_follow" android:layout_width="275.0dip" android:layout_height="40.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="34.0dip" android:text="@string/common_follow_anchor" app:buttonColorType="primary" app:buttonIconPosition="none" app:buttonTextSize="14.0sp" app:buttonVariant="filled" />
+        <LinearLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="34.0dip" app:layout_constraintBottom_toBottomOf="parent" />
+    </LinearLayout>
+    <io.trtc.tuikit.atomicx.widget.basicwidget.avatar.AtomicAvatar android:id="@id/iv_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:avatarSize="l" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:strokeColor="@color/common_not_standard_blue_d1" app:strokeWidth="0.86dip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cpiz.android.bubbleview.BubbleLinearLayout android:orientation="horizontal" android:id="@id/layoutBubble" android:layout_width="wrap_content" android:layout_height="wrap_content" app:bb_arrowDirection="Up" app:bb_arrowHeight="9.0dip" app:bb_arrowPosPolicy="SelfCenter" app:bb_arrowWidth="16.0dip" app:bb_cornerRadius="8.0dip" app:bb_fillColor="@color/c_toolTip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kubi.resources.widget.BaseTextView android:textSize="@dimen/font_14" android:textColor="@color/c_white" android:id="@id/tvMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:layout_marginBottom="@dimen/spacing_8" android:text="@string/kline_ai_coin_insights_tip" android:fontFamily="@font/regular" android:layout_marginStart="@dimen/spacing_8" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/ivClose" android:layout_width="12.0dip" android:layout_height="12.0dip" android:contentDescription="@null" android:layout_marginStart="4.0dip" android:layout_marginEnd="@dimen/spacing_8" app:srcCompat="@drawable/ic2_close_16" app:tint="@color/c_icon" />
+</com.cpiz.android.bubbleview.BubbleLinearLayout>

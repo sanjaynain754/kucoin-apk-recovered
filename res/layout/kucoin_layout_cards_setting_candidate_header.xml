@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="24.0dip" android:paddingStart="42.0dip" android:paddingEnd="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_vertical" style="@style/kucoin_view_divider" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/c_text40" android:layout_gravity="center" android:background="@color/c_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_edit_wait" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" />
+</FrameLayout>

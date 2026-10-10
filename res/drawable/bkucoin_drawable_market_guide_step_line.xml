@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="bottom|center" android:height="12.0dip" android:width="12.0dip">
+        <shape android:shape="oval">
+            <solid android:color="@color/c_bulletLayer20" />
+        </shape>
+    </item>
+    <item android:gravity="bottom|center" android:height="6.0dip" android:width="6.0dip" android:bottom="3.0dip">
+        <shape android:shape="oval">
+            <solid android:color="@color/c_bulletLayer" />
+        </shape>
+    </item>
+    <item android:gravity="center_horizontal" android:height="29.0dip" android:width="2.0dip" android:bottom="8.0dip">
+        <shape>
+            <gradient android:startColor="@color/c_bulletLayer0" android:endColor="@color/c_bulletLayer" android:angle="270.0" />
+        </shape>
+    </item>
+</layer-list>
